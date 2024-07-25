@@ -23,7 +23,7 @@
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-VIP.jpg"
     },
-        {
+    {
         "name": "Black Box",
         "xws": "blackbox",
         "type": "scenario",
@@ -35,5 +35,155 @@
             }
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Black-Box.jpg"
+    },
+    {
+        "name": "Probing Problem",
+        "xws": "probingproblem",
+        "type": "scenario",
+        "text": "Setup: Each player places 2 scenario tokens representing Probes [Scenario] within range 2 of their player board edge and beyond range 3 of another [Scenario]. [Scenario] can be targeted by primary weapon attacks after round 3. [Scenario] cannot be removed by ships, pilots or upgrades ability. System Phase: Probes relocate using speed 1 or 2 bank ([Bank Left] [Bank Right]) or straight ([Straight]) templates. Scorring: When you destroy an enemy [Scenario], score 30 points.",
+        "components": [
+            {
+                "type": "token",
+                "value": 4
+            },
+            {
+                "type": "card",
+                "xws": "d10probe",
+                "value": 2
+            },
+            {
+                "type": "card",
+                "xws": "dioprobe",
+                "value": 2
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Probing-Problem.jpg"
+    },
+    {
+        "name": "Emplacements",
+        "xws": "emplacements",
+        "type": "scenario",
+        "text": "Setup: After placing obstacles, starting with the second player, each player places 2 scenario tokens representing Defensive Batteries ([Scenario]). [Scenario] must be placed within range 3 of the controlling player's board edge and beyond range 2 of another [Scenario]. [Scenario] cannot be removed by ships, pilots or upgrades ability. Scoring: After calculating scores, each player gains 30 points for each enemy [Scenario] destroyed.",
+        "components": [
+            {
+                "type": "token",
+                "value": 4
+            },
+            {
+                "type": "card",
+                "xws": "defensivebatterya1",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "defensivebatteryb1",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "defensivebatterya2",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "defensivebatteryb2",
+                "value": 1
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Emplacements.jpg"
+    },
+    {
+        "name": "Contraband",
+        "xws": "contraband",
+        "type": "scenario",
+        "text": "Setup: After placing obstacles, starting with the second player, players place scenario tokens representing Contraband ([Scenario]). The first [Scenario] must be placed in the center of the play area. Other [Scenario] are placed beyond range 1 of each other and within range 5 of players board edges. Before you engage, you may claim a [Scenario] in your firing arc at range 0-1 and place [Scenario] on the pilot card. Then skip the rest of your engagement. A ship may only have 1 [Scenario] at any given time. If a ship with [Scenario] suffers [Scenario], is Ionized, destroyed or flees from a board edge other than its own player's, that ship must jettison its [Scenario]. During the Activation Phase, if a ship with [Scenario] would flee from its player board edge, place it in reserve instead and remove [Scenario]. During the End Phase, if a ship with [Scenario] is at range 1 of its player board edge, place that ship in reserve and remove [Scenario]. During the next Planning Phase, that ship is deployed within range 1 of its player board edge and beyond range 3 (2, 1) of all enemy ships, if able. Scoring: After calculating scores, each player scores 30 points for each [Scenario] they removed.",
+        "components": [
+            {
+                "type": "token",
+                "value": 3
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Contraband.jpg"
+    },
+    {
+        "name": "Escort",
+        "xws": "escort",
+        "type": "scenario",
+        "text": "Setup: Before placing forces, the defending player places a scenario token representing a CSS-1 Shuttle ([Scenario]) in need of escort at range 3 of their board edge. During the System Phase, if a friendly ship is at range 0-3, [Scenario] may relocate using the 4 [Straight] or any speed 3 template. [Scenario] may flee off the opponent's board edge. [Scenario] cannot be removed by ships, pilots or upgrades ability. Scoring: If [Scenario] is destroyed, the attacking player gains 50 points. If the the [Scenario] flees off the opponent's board edge, the defending palyer gains 50 points.",
+        "components": [
+            {
+                "type": "token",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "css1shuttle",
+                "value": 1
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Escort.jpg"
+    },
+    {
+        "name": "Holocron",
+        "xws": "holocron",
+        "type": "scenario",
+        "text": "Setup: Place a scenario token representing a Holocron ([Scenario]) in the center of the play area. Give each player a Holocron card. During the End Phase, a ship may claim [Scenario] in its [Front Arc] at range 0-1, if it is not stressed, and place [Scenario] on its pilot card. Then that ship gains 1 stress token. If a ship with [Scenario] suffers [Critical Hit], is Ionized, destroyed or flees from a board edge, that ship must jettison its [Scenario]. Scoring: At the end of the game, each player scores 10 points for each active [Force] on the their holocron card.",
+        "components": [
+            {
+                "type": "token",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "holocron",
+                "value": 2
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Holocron.jpg"
+    },
+    {
+        "name": "Sabotage",
+        "xws": "sabotage",
+        "type": "scenario",
+        "text": "Setup: Before placing forces, the defending player places a scenario token representing a Station ([Scenario]) beyond range 3 of their board edge, beyond range 1 of neutral edges and beyond range 0 of any obstacles. [Scenario] can be locked only by scenario action. Scoring: At the end of the game, if [Scenario] is destroyed, the attacking player scores 50 points. If [Scenario] is Operational, the defending player scores 50 points.",
+        "components": [
+            {
+                "type": "token",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "station",
+                "value": 1
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Sabotage.jpg"
+    },
+    {
+        "name": "Hyperspace Telemetry",
+        "xws": "hyperspacetelemetry",
+        "type": "scenario",
+        "text": "Setup: Place a scenario token representing a Hyperspace Jump Point ([Scenario]) in the center of the play area. Give each player a Telemetry card. During the End Phase, if [Scenario] was scanned, the second player rolls 1 attack die and chooses an obstacle for [Scenario] relocation: • on a blank or a [Focus], [Scenario] must relocate to an obstacle at range 3 of its current position, • on a [Hit], [Scenario] must relocate to an obstacle at range 2 of its current position, • on a [Critical Hit], [Scenario] must relocate to an obstacle at range 1 of its current position. The first player chooses [Scenario] position at range 0 of the chosen obstacle. If [Scenario] cannot be relocated, [Scenario] stays in its place. Scoring: After calculating scores, each player gains 50 points for 5 [Charge] recovered.",
+        "components": [
+            {
+                "type": "token",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "telemetry",
+                "value": 2
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Hyperspace-Telemetry.jpg"
+    },
+    {
+        "name": "Dantooine",
+        "xws": "dantooine",
+        "type": "scenario",
+        "text": "Setup: Use standard rules for this scenario.",
+        "components": [
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Dantooine.jpg"
     }
 ]
