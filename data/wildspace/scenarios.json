@@ -7,10 +7,33 @@
         "components": [
             {
                 "type": "card",
-                "xws": "entourage",
-                "value": 6
+                "xws": "entouragea",
+                "value": 2
+            },
+            {
+                "type": "card",
+                "xws": "entourageb",
+                "value": 2
+            },
+            {
+                "type": "card",
+                "xws": "entouragec",
+                "value": 2
             }
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-VIP.jpg"
+    },
+        {
+        "name": "Black Box",
+        "xws": "blackbox",
+        "type": "scenario",
+        "text": "Setup: After obstacles are placed, each player places 2 scenario tokens [Scenario] within range 2 of their player board edge and beyond range 3 of another [Scenario]. End Phase: During the End Phase, ships at range 1 of an opponent's [Scenario] may remove that [Scenario] unless there is an enemy ship at range 1 of that token. Scoring: After calculating scores, each player gains 30 points for each opponent's [Scenario] removed.",
+        "components": [
+            {
+                "type": "token",
+                "value": 4
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Black-Box.jpg"
     }
 ]
