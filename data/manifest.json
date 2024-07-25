@@ -182,5 +182,10 @@
     "data/quick-builds/resistance.json",
     "data/quick-builds/scum-and-villainy.json",
     "data/quick-builds/separatist-alliance.json"
+  ],
+  "wildspace-cards": [
+    "data/wildspace/environments.json",
+    "data/wildspace/scenarios.json",
+    "data/wildspace/wilds.json"
   ]
 }

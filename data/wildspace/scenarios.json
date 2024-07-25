@@ -1,0 +1,16 @@
+[
+    {
+        "name": "VIP",
+        "xws": "vip",
+        "type": "scenario",
+        "text": "Setup: After placing forces, each player assigns each of their three Entourage cards to one or more of their ships. The ship with the Queen cannot be placed in reserves. Scoring: If the ship equipped with the Queen card is destroyed, the opposing player gains 50 points.",
+        "components": [
+            {
+                "type": "card",
+                "xws": "entourage",
+                "value": 6
+            }
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-VIP.jpg"
+    }
+]

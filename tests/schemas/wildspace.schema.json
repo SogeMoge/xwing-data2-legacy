@@ -1,0 +1,118 @@
+{
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "xws": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "wild",
+                "scenario",
+                "environment"
+            ]
+        },
+        "text": {
+            "type": "string"
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "card"
+                                ]
+                            },
+                            "xws": {
+                                "type": "string",
+                                "pattern": "^[a-z0-9-]+$"
+                            },
+                            "value": {
+                                "type": "integer",
+                                "minimum": 1
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "xws",
+                            "value"
+                        ],
+                        "additionalProperties": false
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "token"
+                                ]
+                            },
+                            "value": {
+                                "type": "integer",
+                                "minimum": 1
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "value"
+                        ],
+                        "additionalProperties": false
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "obstacle"
+                                ]
+                            },
+                            "kind": {
+                                "type": "string",
+                                "enum": [
+                                    "Any",
+                                    "Asteroid",
+                                    "Debris Cloud",
+                                    "Gas Cloud",
+                                    "Non-Asteroid"
+                                ]
+                            },
+                            "value": {
+                                "type": "integer",
+                                "minimum": 1
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "value",
+                            "kind"
+                        ],
+                        "additionalProperties": false
+                    }
+                ]
+            }
+        },
+        "image": {
+            "type": "string"
+        },
+        "placementschema": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "xws",
+        "type",
+        "text"
+    ],
+    "additionalProperties": false
+}
