@@ -23,7 +23,7 @@
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-VIP.jpg"
     },
-        {
+    {
         "name": "Black Box",
         "xws": "blackbox",
         "type": "scenario",
