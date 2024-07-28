@@ -7,18 +7,33 @@
         "components": [
             {
                 "type": "card",
-                "xws": "entouragea",
-                "value": 2
+                "xws": "entouragea1",
+                "value": 1
             },
             {
                 "type": "card",
-                "xws": "entourageb",
-                "value": 2
+                "xws": "entourageb1",
+                "value": 1
             },
             {
                 "type": "card",
-                "xws": "entouragec",
-                "value": 2
+                "xws": "entouragec1",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "entouragea2",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "entourageb2",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "entouragec2",
+                "value": 1
             }
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-VIP.jpg"
