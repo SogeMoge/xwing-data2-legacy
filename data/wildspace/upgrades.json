@@ -1,6 +1,6 @@
 [
   {
-    "name": "Operational Station",
+    "name": "Station",
     "limited": 1,
     "xws": "station",
     "sides": [
@@ -20,6 +20,134 @@
     ],
     "standard": false,
     "wildspace": true,
-    "epic": true
-  }
+    "epic": false
+  },
+  {
+    "name": "Entorage",
+    "limited": 3,
+    "xws": "entouragea1",
+    "sides": [
+      {
+        "ability": "Setup: Place this faceup. When you would be dealt a damage card, flip this card.",
+        "title": "Entorage",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Entourage-A-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A.jpg"
+      },
+      {
+        "ability": "",
+        "title": "Handmaiden",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-A1-Art.jpg.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A1.jpg.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+    "name": "Entorage",
+    "limited": 3,
+    "xws": "entourageb1",
+    "sides": [
+      {
+        "ability": "Setup: Place this faceup. When you would be dealt a damage card, flip this card.",
+        "title": "Entorage",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Entourage-A-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A.jpg"
+      },
+      {
+        "ability": "Place 2 evade tokens on this card. While attacking or defending, you may remove up to two evade tokens from this card to gain matching tokens.",
+        "title": "Queen",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Queen-A-Art.jpg.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A2.jpg.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+    "name": "Entorage",
+    "limited": 3,
+    "xws": "entouragec1",
+    "sides": [
+      {
+        "ability": "Setup: Place this faceup. When you would be dealt a damage card, flip this card.",
+        "title": "Entorage",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Entourage-A-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A.jpg"
+      },
+      {
+        "ability": "",
+        "title": "Handmaiden",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-A2-Art.jpg.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A3.jpg.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+  {
+    "name": "Entorage",
+    "limited": 3,
+    "xws": "entouragea2",
+    "sides": [
+      {
+        "ability": "Setup: Place this faceup. When you would be dealt a damage card, flip this card.",
+        "title": "Entorage",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Entourage-B-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B.jpg"
+      },
+      {
+        "ability": "",
+        "title": "Handmaiden",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-B1-Art.jpg.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B1.jpg.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+    "name": "Entorage",
+    "limited": 3,
+    "xws": "entourageb2",
+    "sides": [
+      {
+        "ability": "Setup: Place this faceup. When you would be dealt a damage card, flip this card.",
+        "title": "Entorage",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Entourage-B-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B.jpg"
+      },
+      {
+        "ability": "Place 2 evade tokens on this card. While attacking or defending, you may remove up to two evade tokens from this card to gain matching tokens.",
+        "title": "Queen",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Queen-B-Art.jpg.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B2.jpg.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+    "name": "Entorage",
+    "limited": 3,
+    "xws": "entouragec2",
+    "sides": [
+      {
+        "ability": "Setup: Place this faceup. When you would be dealt a damage card, flip this card.",
+        "title": "Entorage",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Entourage-B-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B.jpg"
+      },
+      {
+        "ability": "",
+        "title": "Handmaiden",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-B2-Art.jpg.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B3.jpg.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
 ]
