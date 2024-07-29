@@ -36,8 +36,8 @@
       {
         "ability": "",
         "title": "Handmaiden",
-        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-A1-Art.jpg.jpg",
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A1.jpg.jpg"
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-A1-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A1.jpg"
       }
     ],
     "standard": false,
@@ -58,8 +58,8 @@
       {
         "ability": "Place 2 evade tokens on this card. While attacking or defending, you may remove up to two evade tokens from this card to gain matching tokens.",
         "title": "Queen",
-        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Queen-A-Art.jpg.jpg",
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A2.jpg.jpg"
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Queen-A-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A2.jpg"
       }
     ],
     "standard": false,
@@ -80,8 +80,8 @@
       {
         "ability": "",
         "title": "Handmaiden",
-        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-A2-Art.jpg.jpg",
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A3.jpg.jpg"
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-A2-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A3.jpg"
       }
     ],
     "standard": false,
@@ -102,8 +102,8 @@
       {
         "ability": "",
         "title": "Handmaiden",
-        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-B1-Art.jpg.jpg",
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B1.jpg.jpg"
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-B1-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B1.jpg"
       }
     ],
     "standard": false,
@@ -124,8 +124,8 @@
       {
         "ability": "Place 2 evade tokens on this card. While attacking or defending, you may remove up to two evade tokens from this card to gain matching tokens.",
         "title": "Queen",
-        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Queen-B-Art.jpg.jpg",
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B2.jpg.jpg"
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Queen-B-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B2.jpg"
       }
     ],
     "standard": false,
@@ -146,8 +146,91 @@
       {
         "ability": "",
         "title": "Handmaiden",
-        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-B2-Art.jpg.jpg",
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B3.jpg.jpg"
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-B2-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B3.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+   {
+    "name": "There Is Another",
+    "limited": 1,
+    "xws": "secretjedi",
+    "sides": [
+      {
+        "title": "There Is Another",
+        "ability": "",
+        "force": { "value": 1, "recovers": 1 },
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Another-One-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Wild-There-Is-Another.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },  
+   {
+    "name": "Ysalamiri",
+    "limited": 1,
+    "xws": "ysalamir",
+    "sides": [
+      {
+        "title": "Ysalamiri",
+        "ability": "Each ship at range 0-1 cannot spend, lose or recover [Force]. The attacker cannot spend [Force] to perform attacks or modify their attack dice. The attacker cannot spend [Force] to modify your attack or defence dice. When you would be dealt a damage card, remove this card.",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Ysalamir-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Wild-Ysalamiri.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },  
+   {
+    "name": "Vornskrs",
+    "limited": 1,
+    "xws": "vornskr",
+    "sides": [
+      {
+        "title": "Vornskrs",
+        "ability": "While you perform an attack against a ship with [Force], you may reroll 1 attack die. When you would be dealt a damage card, remove this card.",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Vornskr-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Wild-Vornskrs.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },  
+   {
+    "name": "Holocron",
+    "limited": 0,
+    "xws": "jediholocron",
+    "sides": [
+      {
+        "title": "Holocron",
+        "ability": "Setup: Lose 5 [Force]. At the Start of the Engagement Phase, if you have the holocron, recover 1 [Force] on this card. While you have the holocron, you may spend [Force] from this card as though your ship had spent that number of [Force].",
+        "force": { "value": 5, "recovers": 0 },       
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Holocron-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Holocron.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },  
+   {
+    "name": "Telemetry",
+    "limited": 0,
+    "xws": "telemetry",
+    "sides": [
+      {
+        "title": "Telemetry",
+        "ability": "Setup: Lose 5 [Charge]. Scenario Action: Scan - when a ship performs a scan action, choose a [Scenario]  at range 0–1. Then recover 1 [Charge] on this card and gain one a. Only 1 [Charge] on this card can be recovered per round.",
+        "charges": { "value": 5, "recovers": 0 },     
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Telemetry-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Telemetry.jpg"
       }
     ],
     "standard": false,
