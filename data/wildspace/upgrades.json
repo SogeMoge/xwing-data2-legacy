@@ -1,1 +1,25 @@
-{}
+[
+  {
+    "name": "Operational Station",
+    "limited": 1,
+    "xws": "station",
+    "sides": [
+      {
+        "ability": "Setup: Place this side faceup. During the End Phase remove all red tokens from the station. Scenario Action: Transmit - an attacking player’s ship may acquire a lock on the station at range 0-2. Before an attacking player’s ship engages, it may gain 1 disarm token to spend its lock on the station and roll 1 attack die. On a [Focus] flip this card.",
+        "title": "Operational Station",
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Station-A-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Station-A.jpg"
+      },
+      {
+        "ability": "If there are no [Charge] on this card, the station is destroyed and each ship at range 0-2 is dealt 1 faceup damage card. Then remove the station. Scenario Action: Transmit - a defending player’s ship may acquire a lock on the station at range 0-2. Before a defending player’s ship engages, it may gain 1 disarm token to spend its lock on the station to recover 1 [Charge] or roll 1 attack die. On a [Critical Hit] flip this card.",
+        "title": "Sabotaged Station",
+        "charges": { "value": 3, "recovers": -1 },
+        "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Station-B-Art.jpg",
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Station-B.jpg"
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": true
+  }
+]
