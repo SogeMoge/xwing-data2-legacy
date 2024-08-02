@@ -17,8 +17,6 @@
         "xws": "tritianiamdeposits",
         "type": "wild",
         "text": "The range of detonating bombs is increased by 1.",
-        "components": [
-],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-Tritianiam-Deposits.jpg"
     },
     {
@@ -26,8 +24,6 @@
         "xws": "emergencyreinforcements",
         "type": "wild",
         "text": "Setup: Before placing forces, each player chooses 1 small or medium ship and places it in reserve. After a friendly ship is dealt a damage card, you may place a ship from your reserve within range 1 of any board edge and beyond range 3 of any enemy ship.",
-        "components": [
-],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-Emergency-Reinforcements.jpg"
     },
     {
@@ -35,8 +31,6 @@
         "xws": "fracturedsensors",
         "type": "wild",
         "text": "When a ship locks, it cannot acquire locks on ships obstructed by obstacles. When a ship moves through or overlaps a gas cloud, it must break all of its locks and all locks on it.",
-        "components": [
-],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-Fractured-Sensors.jpg"
     },
     {
@@ -44,8 +38,6 @@
         "xws": "unstablefuel",
         "type": "wild",
         "text": "After a ship is destroyed, every ship at range 0-1 rolls 1 attack die. On a [Hit] result, the ship suffers one [Hit] damage.",
-        "components": [
-],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-Unstable-Fuel.jpg"
     },
     {
@@ -53,8 +45,6 @@
         "xws": "theyexplodenow",
         "type": "wild",
         "text": "At the start of the Planning Phase, roll 1 attack die for each standard obstacle. On a [Critical Hit] result, each ship and remote at range 0–1 of that obstacle is dealt 1 facedown damage card. Then remove that obstacle.",
-        "components": [
-],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-They-Explode-Now.jpg"
     },
     {
@@ -62,8 +52,6 @@
         "xws": "ionstorm",
         "type": "wild",
         "text": "When a ship rolls an attack die due to moving through or overlapping a standard obstacle, roll a defence die and resolve the following (in addition to the normal effects): on an [Evade] result gain 1 ion token.",
-        "components": [
-],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-Ion-Storm.jpg"
     },
     {
@@ -77,7 +65,7 @@
                 "xws": "secretjedi",
                 "value": 2
             }
-],
+        ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-There-Is-Another.jpg"
     },
     {
@@ -95,7 +83,7 @@
                 "type": "token",
                 "value": 2
             }
-],
+        ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-Ysalamiri.jpg"
     },
     {
@@ -113,7 +101,7 @@
                 "type": "token",
                 "value": 2
             }
-],
+        ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-Vornskrs.jpg"
     },
     {
@@ -121,8 +109,6 @@
         "xws": "agamar",
         "type": "wild",
         "text": "Setup: Use standard rules.",
-        "components": [
-],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Wild-Agamar.jpg"
     }
 ]

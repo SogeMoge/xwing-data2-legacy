@@ -27,7 +27,7 @@
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Conjoined.jpg"
     },
-      {
+    {
         "name": "Nebula",
         "xws": "nebula",
         "type": "environment",
@@ -46,7 +46,7 @@
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Nebula.jpg"
     },
-      {
+    {
         "name": "Old Wreckage",
         "xws": "oldwreckage",
         "type": "environment",
