@@ -197,8 +197,6 @@
         "xws": "dantooine",
         "type": "scenario",
         "text": "Setup: Use standard rules for this scenario.",
-        "components": [
-        ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Dantooine.jpg"
     }
 ]
