@@ -11,7 +11,8 @@
                 "value": 10
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Asteroid-Field.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Asteroid-Field.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Asteroid-Field-Map.jpg"
     },
     {
         "name": "Conjoined",
@@ -25,7 +26,8 @@
                 "value": 8
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Conjoined.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Conjoined.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Conjoined-Map.jpg"
     },
     {
         "name": "Nebula",
@@ -44,7 +46,8 @@
                 "value": 3
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Nebula.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Nebula.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Nebula-Map.jpg"
     },
     {
         "name": "Old Wreckage",
@@ -63,7 +66,8 @@
                 "value": 5
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Old-Wreckage.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Old-Wreckage.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Old-Wreckage-Map.jpg"
     },
     {
         "name": "Planetary Ring",
@@ -77,7 +81,8 @@
                 "value": 8
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Planetary-Ring.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Planetary-Ring.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Planetary-Ring-Map.jpg"
     },
     {
         "name": "Binary Suns",
@@ -96,7 +101,8 @@
                 "value": 6
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Binary-Suns.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Binary-Suns.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Binary-Suns-Map.jpg"
     },
     {
         "name": "Junkyard",
@@ -110,7 +116,8 @@
                 "value": 9
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Junkyard.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Junkyard.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Junkyard-Map.jpg"
     },
     {
         "name": "Comet",
@@ -134,7 +141,8 @@
                 "value": 2
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Comet.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Comet.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Comet-Map.jpg"
     },
     {
         "name": "Intergalactic Void",
@@ -148,7 +156,8 @@
                 "value": 6
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Intergalactic-Void.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Intergalactic-Void.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-Intergalactic-Void-Map.jpg"
     },
     {
         "name": "The Maw",
@@ -166,6 +175,7 @@
                 "value": 1
             }
         ],
-        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-The-Maw.jpg"
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-The-Maw.jpg",
+        "map": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Environment-The-Maw-Map.jpg"
     }
 ]

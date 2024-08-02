@@ -104,7 +104,7 @@
         "image": {
             "type": "string"
         },
-        "placementschema": {
+        "map": {
             "type": "string"
         }
     },
