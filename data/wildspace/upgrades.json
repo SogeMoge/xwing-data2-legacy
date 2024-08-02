@@ -37,7 +37,7 @@
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A.jpg"
       },
       {
-        "ability": "",
+        "text": "Responsible for assisting the Queen with everyday tasks, handmaidens also serve as her bodyguards and those chosen to join the entourage often closely resembled the current queen, allowing them to function as decoys should the need arise.",
         "title": "Handmaiden",
         "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-A1-Art.jpg",
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A1.jpg"
@@ -81,7 +81,7 @@
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A.jpg"
       },
       {
-        "ability": "",
+        "text": "Responsible for assisting the Queen with everyday tasks, handmaidens also serve as her bodyguards and those chosen to join the entourage often closely resembled the current queen, allowing them to function as decoys should the need arise.",
         "title": "Handmaiden",
         "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-A2-Art.jpg",
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-A3.jpg"
@@ -103,7 +103,7 @@
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B.jpg"
       },
       {
-        "ability": "",
+        "text": "Responsible for assisting the Queen with everyday tasks, handmaidens also serve as her bodyguards and those chosen to join the entourage often closely resembled the current queen, allowing them to function as decoys should the need arise.",
         "title": "Handmaiden",
         "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-B1-Art.jpg",
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B1.jpg"
@@ -147,7 +147,7 @@
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B.jpg"
       },
       {
-        "ability": "",
+        "text": "Responsible for assisting the Queen with everyday tasks, handmaidens also serve as her bodyguards and those chosen to join the entourage often closely resembled the current queen, allowing them to function as decoys should the need arise.",
         "title": "Handmaiden",
         "artwork": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Arts/Handmaiden-B2-Art.jpg",
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-VIP-B3.jpg"
@@ -164,7 +164,7 @@
     "sides": [
       {
         "title": "There Is Another",
-        "ability": "",
+        "text": "It's an energy field created by all living things. It surrounds us and penetrates us; it binds the galaxy together.",
         "force": {
           "value": 1,
           "recovers": 1
