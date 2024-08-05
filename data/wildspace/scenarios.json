@@ -134,8 +134,19 @@
                 "type": "card",
                 "xws": "css1shuttle",
                 "value": 1
-            }
+                "device": 
+                {
+          "name": "CSS1 Shuttle",
+          "type": "Remote",
+          "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Shuttle.jpg",
+          "effect": "While defending, roll an additional defense die for each friendly ship in the attack arc",
+          "initiative": 0,
+          "stats": [
+            { "type": "agility", "value": 1 },
+            { "type": "hull", "value": 8 }
+         
         ],
+             },        
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Escort.jpg"
     },
     {
