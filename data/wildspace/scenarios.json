@@ -133,7 +133,7 @@
             {
                 "type": "card",
                 "xws": "css1shuttle",
-                "value": 1
+                "value": 1,
                 "device": 
                 {
           "name": "CSS1 Shuttle",
