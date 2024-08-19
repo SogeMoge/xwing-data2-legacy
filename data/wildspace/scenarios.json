@@ -120,35 +120,41 @@
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Contraband.jpg"
     },
-   {
-    "name": "Escort",
-    "xws": "escort",
-    "type": "scenario",
-    "text": "Setup: Before placing forces, the defending player places a scenario token representing a CSS-1 Shuttle ([Scenario]) in need of escort at range 3 of their board edge. During the System Phase, if a friendly ship is at range 0-3, [Scenario] may relocate using the 4 [Straight] or any speed 3 template. [Scenario] may flee off the opponent's board edge. [Scenario] cannot be removed by ships, pilots or upgrades ability. Scoring: If [Scenario] is destroyed, the attacking player gains 50 points. If the the [Scenario] flees off the opponent's board edge, the defending palyer gains 50 points.",
-    "components": [
-        {
-            "type": "token",
-            "value": 1
-        },
-        {
-            "type": "card",
-            "xws": "css1shuttle",
-            "value": 1,
-            "device": {
-                "name": "CSS1 Shuttle",
-                "type": "Remote",
-                "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Shuttle.jpg",
-                "effect": "While defending, roll an additional defense die for each friendly ship in the attack arc",
-                "initiative": 0,
-                "stats": [
-                    { "type": "agility", "value": 1 },
-                    { "type": "hull", "value": 8 }
-                ]
+    {
+        "name": "Escort",
+        "xws": "escort",
+        "type": "scenario",
+        "text": "Setup: Before placing forces, the defending player places a scenario token representing a CSS-1 Shuttle ([Scenario]) in need of escort at range 3 of their board edge. During the System Phase, if a friendly ship is at range 0-3, [Scenario] may relocate using the 4 [Straight] or any speed 3 template. [Scenario] may flee off the opponent's board edge. [Scenario] cannot be removed by ships, pilots or upgrades ability. Scoring: If [Scenario] is destroyed, the attacking player gains 50 points. If the the [Scenario] flees off the opponent's board edge, the defending palyer gains 50 points.",
+        "components": [
+            {
+                "type": "token",
+                "value": 1
+            },
+            {
+                "type": "card",
+                "xws": "css1shuttle",
+                "value": 1,
+                "device": {
+                    "name": "CSS1 Shuttle",
+                    "type": "Remote",
+                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Shuttle.jpg",
+                    "effect": "While defending, roll an additional defense die for each friendly ship in the attack arc",
+                    "initiative": 0,
+                    "stats": [
+                        {
+                            "type": "agility",
+                            "value": 1
+                        },
+                        {
+                            "type": "hull",
+                            "value": 8
+                        }
+                    ]
+                }
             }
-        }
-    ],
-    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Escort.jpg"
-},
+        ],
+        "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Escort.jpg"
+    },
     {
         "name": "Holocron",
         "xws": "holocron",
