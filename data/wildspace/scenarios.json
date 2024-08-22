@@ -69,7 +69,7 @@
                     "name": "D10 (Probe)",
                     "limited": 2,
                     "type": "Remote",
-                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Probe-D10",
+                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Probe-D10.jpg",
                     "effect": "During the System Phase, recover 1 shield. During the Engagement Phase, at initiative 0, you may choose a ship at range 0-1. That ship gains a strain token and rolls 1 attack die. On a [Hit] result, it gains 1 stress token.",
                     "initiative": 0,
                     "stats": [
@@ -96,7 +96,7 @@
                     "name": "DIO (Probe)",
                     "limited": 2,
                     "type": "Remote",
-                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Probe-DIO",
+                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Probe-DIO.jpg",
                     "effect": "During the System Phase, recover 1 shield. During the Engagement Phase, at initiative 0, you may choose a ship at range 0-1. That ship gains a strain token and rolls 1 attack die. On a [Hit] result, it gains 1 stress token.",
                     "initiative": 0,
                     "stats": [
@@ -129,13 +129,13 @@
                 "value": 4
             },
             {
-               "type": "card",
+                "type": "card",
                 "xws": "defensivebatterya1",
-               "value": 1,
+                "value": 1,
                 "device": {
                     "name": "Defensive Battery (A)",
                     "type": "Remote",
-                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Emplacements-A1",
+                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Emplacements-A1.jpg",
                     "effect": "While defending, if the attack would hit and there is more than one [Hit]/{Critacal Hit] result remaining, add one [Evade] result.",
                     "initiative": 0,
                     "stats": [
@@ -148,20 +148,12 @@
                             "value": 5
                         },
                         {
-                        "type": "attack",
-                        "arc": "Full Front Arc",
-                        "value": 3,
-                        "minrange": 2,
-                        "maxrange": 3,
-                        "ordnance": true
-                        },
-                        {
-                        "type": "attack",
-                        "arc": "Full Back Arc",
-                        "value": 3,
-                       "minrange": 2,
-                        "maxrange": 3,
-                        "ordnance": true
+                            "type": "attack",
+                            "arc": "Full Arc",
+                            "value": 3,
+                            "minrange": 2,
+                            "maxrange": 3,
+                            "ordnance": true
                         }
                     ]
                 }
@@ -173,7 +165,7 @@
                 "device": {
                     "name": "Defensive Battery (B)",
                     "type": "Remote",
-                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Emplacements-B1",
+                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Emplacements-B1.jpg",
                     "effect": "While defending, if the attack would hit and there is more than one [Hit]/{Critacal Hit] result remaining, add one [Evade] result.",
                     "initiative": 0,
                     "stats": [
@@ -186,20 +178,12 @@
                             "value": 5
                         },
                         {
-                        "type": "attack",
-                        "arc": "Full Front Arc",
-                        "value": 3,
-                        "minrange": 2,
-                        "maxrange": 3,
-                        "ordnance": true
-                        },
-                        {
-                        "type": "attack",
-                        "arc": "Full Back Arc",
-                        "value": 3,
-                        "minrange": 2,
-                        "maxrange": 3,
-                       "ordnance": true
+                            "type": "attack",
+                            "arc": "Full Arc",
+                            "value": 3,
+                            "minrange": 2,
+                            "maxrange": 3,
+                            "ordnance": true
                         }
                     ]
                 }
@@ -211,7 +195,7 @@
                 "device": {
                     "name": "Defensive Battery (A)",
                     "type": "Remote",
-                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Emplacements-A2",
+                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Emplacements-A2.jpg",
                     "effect": "While defending, if the attack would hit and there is more than one [Hit]/{Critacal Hit] result remaining, add one [Evade] result.",
                     "initiative": 0,
                     "stats": [
@@ -224,23 +208,15 @@
                             "value": 5
                         },
                         {
-                        "type": "attack",
-                        "arc": "Full Front Arc",
-                        "value": 3,
-                        "minrange": 2,
-                        "maxrange": 3,
-                        "ordnance": true
-                        },
-                        {
-                        "type": "attack",
-                        "arc": "Full Back Arc",
-                        "value": 3,
-                        "minrange": 2,
-                        "maxrange": 3,
-                        "ordnance": true
+                            "type": "attack",
+                            "arc": "Full Arc",
+                            "value": 3,
+                            "minrange": 2,
+                            "maxrange": 3,
+                            "ordnance": true
                         }
                     ]
-               }
+                }
             },
             {
                 "type": "card",
@@ -249,7 +225,7 @@
                 "device": {
                     "name": "Defensive Battery (B)",
                     "type": "Remote",
-                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Emplacements-B2",
+                    "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Assets/Card-Scenario-Emplacements-B2.jpeg",
                     "effect": "While defending, if the attack would hit and there is more than one [Hit]/{Critacal Hit] result remaining, add one [Evade] result.",
                     "initiative": 0,
                     "stats": [
@@ -262,25 +238,17 @@
                             "value": 5
                         },
                         {
-                        "type": "attack",
-                        "arc": "Full Front Arc",
-                        "value": 3,
-                       "minrange": 2,
-                       "maxrange": 3,
-                       "ordnance": true
-                       },
-                       {
-                       "type": "attack",
-                       "arc": "Full Back Arc",
-                        "value": 3,
-                        "minrange": 2,
-                        "maxrange": 3,
-                        "ordnance": true
-                       }
+                            "type": "attack",
+                            "arc": "Full Arc",
+                            "value": 3,
+                            "minrange": 2,
+                            "maxrange": 3,
+                            "ordnance": true
+                        }
                     ]
                 }
             }
-         ],
+        ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Scenario-Emplacements.jpg"
     },
     {
