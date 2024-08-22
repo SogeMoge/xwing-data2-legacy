@@ -127,7 +127,8 @@
                                                                 "Front Arc",
                                                                 "Bullseye Arc",
                                                                 "Single Turret Arc",
-                                                                "Rear Arc"
+                                                                "Rear Arc",
+                                                                "Full Arc"
                                                             ]
                                                         },
                                                         "value": {
