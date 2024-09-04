@@ -7,15 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [17.x]
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn install
+    - run: npm install
     - name: Validating JSON
-      run: yarn run validate:json
+      run: npm run validate:json
     - name: Running tests
-      run: yarn run validate:tests --ci
+      run: npm run validate:tests --ci
