@@ -410,7 +410,7 @@
       {
         "ability": "Attack ([Lock]): Spend 1 [Charge]. After this attack hits, the defender loses 1 shield.",
         "attack": {
-          "arc": "Full Arc",
+          "arc": "Front Arc",
           "maxrange": 3,
           "minrange": 1,
           "ordnance": true,
