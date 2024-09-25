@@ -20,20 +20,55 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": ["TAS"],
+  "dialCodes": [
+    "TAS"
+  ],
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 3 },
-    { "type": "agility", "value": 0 },
-    { "type": "hull", "value": 10 },
-    { "type": "shields", "value": 4, "recovers": 1 },
-    { "type": "energy", "value": 3, "recovers": 2 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 3
+    },
+    {
+      "type": "agility",
+      "value": 0
+    },
+    {
+      "type": "hull",
+      "value": 10
+    },
+    {
+      "type": "shields",
+      "value": 4,
+      "recovers": 1
+    },
+    {
+      "type": "energy",
+      "value": 3,
+      "recovers": 2
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "Red", "type": "Evade" },
-    { "difficulty": "Red", "type": "Reinforce" },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "Red", "type": "Coordinate" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Evade"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Reinforce"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Coordinate"
+    }
   ],
   "pilots": [
     {
@@ -41,8 +76,8 @@
       "initiative": 8,
       "cost": 85,
       "limited": 0,
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lawlesspirates.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/lawlesspirates.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lawlesspirates.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lawlesspirates.png",
       "shipAbility": {
         "name": "Tractor Grasp",
         "text": "After you perform a Tractor Tentacles attack that hits, the defender gains 1 tractor token."

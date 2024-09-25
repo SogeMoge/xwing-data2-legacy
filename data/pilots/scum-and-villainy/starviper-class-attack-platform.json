@@ -20,25 +20,52 @@
     "3PR",
     "4FW"
   ],
-  "dialCodes": ["SV"],
+  "dialCodes": [
+    "SV"
+  ],
   "faction": "scumandvillainy",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 3 },
-    { "type": "agility", "value": 3 },
-    { "type": "hull", "value": 4 },
-    { "type": "shields", "value": 1 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 3
+    },
+    {
+      "type": "agility",
+      "value": 3
+    },
+    {
+      "type": "hull",
+      "value": 4
+    },
+    {
+      "type": "shields",
+      "value": 1
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Lock" },
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Focus" },
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "White",
+      "linked": {
+        "difficulty": "Red",
+        "type": "Focus"
+      },
       "type": "Barrel Roll"
     },
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Focus" },
+      "linked": {
+        "difficulty": "Red",
+        "type": "Focus"
+      },
       "type": "Boost"
     }
   ],
@@ -51,13 +78,19 @@
       "cost": 45,
       "xws": "blacksunassassin",
       "text": "Although assassinations can be handled with a shot in the dark or a dire substance added to a drink, a flaming shuttle tumbling from the sky sends a special kind of message.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/blacksunassassin.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunassassin.png",
       "shipAbility": {
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": ["Talent", "Tech", "Torpedo", "Modification", "Title"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/blacksunassassin.png",
+      "slots": [
+        "Talent",
+        "Tech",
+        "Torpedo",
+        "Modification",
+        "Title"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunassassin.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -69,13 +102,18 @@
       "cost": 42,
       "xws": "blacksunenforcer",
       "text": "Prince Xizor himself collaborated with MandalMotors to design the StarViper-class attack platform, one of the most formidable starfighters in the galaxy.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/blacksunenforcer.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunenforcer.png",
       "shipAbility": {
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": ["Tech", "Torpedo", "Modification", "Title"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/blacksunenforcer.png",
+      "slots": [
+        "Tech",
+        "Torpedo",
+        "Modification",
+        "Title"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunenforcer.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -88,16 +126,24 @@
       "cost": 46,
       "xws": "dalanoberos-starviperclassattackplatform",
       "ability": "After you fully execute a maneuver, you may gain 1 stress token to rotate your ship 90°.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/dalanoberos-starviperclassattackplatform.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dalanoberos-starviperclassattackplatform.png",
       "shipAbility": {
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": ["Talent", "Tech", "Torpedo", "Modification", "Title"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dalanoberos-starviperclassattackplatform.png",
+      "slots": [
+        "Talent",
+        "Tech",
+        "Torpedo",
+        "Modification",
+        "Title"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dalanoberos-starviperclassattackplatform.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Bounty Hunter"],
+      "keywords": [
+        "Bounty Hunter"
+      ],
       "epic": true
     },
     {
@@ -108,18 +154,30 @@
       "cost": 59,
       "xws": "guri",
       "ability": "At the start of the Engagement Phase, if there is at least 1 enemy ship at range 0-1, you may gain 1 focus token.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/guri.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/guri.png",
       "shipActions": [
-        { "difficulty": "White", "type": "Calculate" },
-        { "difficulty": "White", "type": "Lock" },
         {
           "difficulty": "White",
-          "linked": { "difficulty": "Red", "type": "Calculate" },
+          "type": "Calculate"
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Calculate"
+          },
           "type": "Barrel Roll"
         },
         {
           "difficulty": "White",
-          "linked": { "difficulty": "Red", "type": "Calculate" },
+          "linked": {
+            "difficulty": "Red",
+            "type": "Calculate"
+          },
           "type": "Boost"
         }
       ],
@@ -127,11 +185,19 @@
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": ["Talent", "Tech", "Torpedo", "Modification", "Title"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/guri.png",
+      "slots": [
+        "Talent",
+        "Tech",
+        "Torpedo",
+        "Modification",
+        "Title"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/guri.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -142,13 +208,19 @@
       "cost": 46,
       "xws": "princexizor",
       "ability": "While you defend, after the Neutralize Results step, another friendly ship at range 0-1 and in the attack arc may suffer 1 [Hit] or [Critical Hit] damage. If it does, cancel 1 matching result.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/princexizor.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/princexizor.png",
       "shipAbility": {
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": ["Talent", "Tech", "Torpedo", "Modification", "Title"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/princexizor.png",
+      "slots": [
+        "Talent",
+        "Tech",
+        "Torpedo",
+        "Modification",
+        "Title"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/princexizor.png",
       "standard": true,
       "wildspace": true,
       "epic": true

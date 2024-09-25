@@ -20,20 +20,50 @@
     "3NW",
     "3YR"
   ],
-  "dialCodes": ["Ups"],
+  "dialCodes": [
+    "Ups"
+  ],
   "faction": "firstorder",
   "stats": [
-    { "type": "attack", "value": 4, "arc": "Front Arc" },
-    { "type": "agility", "value": 1 },
-    { "type": "hull", "value": 6 },
-    { "type": "shields", "value": 6 }
+    {
+      "type": "attack",
+      "value": 4,
+      "arc": "Front Arc"
+    },
+    {
+      "type": "agility",
+      "value": 1
+    },
+    {
+      "type": "hull",
+      "value": 6
+    },
+    {
+      "type": "shields",
+      "value": 6
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "White", "type": "Reinforce" },
-    { "difficulty": "White", "type": "Coordinate" },
-    { "difficulty": "White", "type": "Jam" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "White",
+      "type": "Reinforce"
+    },
+    {
+      "difficulty": "White",
+      "type": "Coordinate"
+    },
+    {
+      "difficulty": "White",
+      "type": "Jam"
+    }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/first-order/I_UpsilonShuttle.png",
   "pilots": [
@@ -59,8 +89,8 @@
         "Tech",
         "Tech"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/lieutenantdormitz.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantdormitz.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantdormitz.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantdormitz.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -87,8 +117,8 @@
         "Tech",
         "Tech"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/majorstridan.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/majorstridan.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorstridan.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorstridan.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -100,7 +130,10 @@
       "initiative": 1,
       "limited": 1,
       "cost": 59,
-      "charges": { "value": 1, "recovers": 1 },
+      "charges": {
+        "value": 1,
+        "recovers": 1
+      },
       "ability": "During the Activation or Engagement Phase, after a ship in your [Front Arc] at range 0-2 gains 1 stress token, you may spend 1 [Charge]. If you do, that ship gains 1 tractor token.",
       "shipAbility": {
         "name": "Linked Battery",
@@ -116,8 +149,8 @@
         "Tech",
         "Tech"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/pettyofficerthanisson.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/pettyofficerthanisson.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/pettyofficerthanisson.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/pettyofficerthanisson.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -143,8 +176,8 @@
         "Tech",
         "Tech"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/starkillerbasepilot.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/starkillerbasepilot.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/starkillerbasepilot.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/starkillerbasepilot.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -157,7 +190,10 @@
       "cost": 64,
       "xws": "lieutenanttavson",
       "ability": "After you suffer damage, you may spend 1 [Charge] to perform an action.",
-      "charges": { "value": 2, "recovers": 1 },
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
       "shipAbility": {
         "name": "Linked Battery",
         "text": "While you perform a [Cannon] attack, roll 1 additional die."
@@ -172,8 +208,8 @@
         "Tech",
         "Tech"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/lieutenanttavson.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lieutenanttavson.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenanttavson.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenanttavson.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -190,7 +226,10 @@
         "name": "Linked Battery",
         "text": "While you perform a [Cannon] attack, roll 1 additional die."
       },
-      "charges": { "value": 2, "recovers": 0 },
+      "charges": {
+        "value": 2,
+        "recovers": 0
+      },
       "slots": [
         "Sensor",
         "Cannon",
@@ -201,8 +240,8 @@
         "Tech",
         "Tech"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/captaincardinal.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/captaincardinal.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captaincardinal.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captaincardinal.png",
       "standard": true,
       "wildspace": true,
       "epic": true

@@ -19,28 +19,58 @@
     "3YR",
     "4FW"
   ],
-  "dialCodes": ["HK"],
+  "dialCodes": [
+    "HK"
+  ],
   "faction": "rebelalliance",
   "stats": [
-    { "arc": "Single Turret Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 2 },
-    { "type": "hull", "value": 3 },
-    { "type": "shields", "value": 2 }
+    {
+      "arc": "Single Turret Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 2
+    },
+    {
+      "type": "hull",
+      "value": 3
+    },
+    {
+      "type": "shields",
+      "value": 2
+    }
   ],
   "actions": [
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Rotate Arc" },
+      "linked": {
+        "difficulty": "Red",
+        "type": "Rotate Arc"
+      },
       "type": "Focus"
     },
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Rotate Arc" },
+      "linked": {
+        "difficulty": "Red",
+        "type": "Rotate Arc"
+      },
       "type": "Lock"
     },
-    { "difficulty": "Red", "type": "Boost" },
-    { "difficulty": "White", "type": "Rotate Arc" },
-    { "difficulty": "Red", "type": "Jam" }
+    {
+      "difficulty": "Red",
+      "type": "Boost"
+    },
+    {
+      "difficulty": "White",
+      "type": "Rotate Arc"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Jam"
+    }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/rebel-alliance/I_HWK-290.png",
   "pilots": [
@@ -52,7 +82,7 @@
       "cost": 44,
       "xws": "janors",
       "ability": "While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may gain 1 stress token. If you do, that ship may roll 1 additional attack die.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/janors.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/janors.png",
       "slots": [
         "Talent",
         "Crew",
@@ -61,10 +91,12 @@
         "Modification",
         "Title"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/janors.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/janors.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Freighter"],
+      "keywords": [
+        "Freighter"
+      ],
       "epic": true
     },
     {
@@ -75,7 +107,7 @@
       "cost": 32,
       "xws": "kylekatarn",
       "ability": "At the start of the Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/kylekatarn.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kylekatarn.png",
       "slots": [
         "Talent",
         "Crew",
@@ -84,10 +116,12 @@
         "Modification",
         "Title"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/kylekatarn.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kylekatarn.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Freighter"],
+      "keywords": [
+        "Freighter"
+      ],
       "epic": true
     },
     {
@@ -97,12 +131,20 @@
       "cost": 26,
       "xws": "rebelscout",
       "text": "Designed to look like a bird in flight by the Corellian Engineering Corporation, “hawk” series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/rebelscout.png",
-      "slots": ["Crew", "Device", "Modification", "Modification", "Title"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/rebelscout.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rebelscout.png",
+      "slots": [
+        "Crew",
+        "Device",
+        "Modification",
+        "Modification",
+        "Title"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rebelscout.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Freighter"],
+      "keywords": [
+        "Freighter"
+      ],
       "epic": true
     },
     {
@@ -113,7 +155,7 @@
       "cost": 37,
       "xws": "roarkgarnet",
       "ability": "At the start of the Engagement Phase, you may choose 1 ship in your firing arc. If you do, it engages at initiative 7 instead of its standard initiative value this phase.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/roarkgarnet.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/roarkgarnet.png",
       "slots": [
         "Talent",
         "Crew",
@@ -122,10 +164,12 @@
         "Modification",
         "Title"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/roarkgarnet.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/roarkgarnet.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Freighter"],
+      "keywords": [
+        "Freighter"
+      ],
       "epic": true
     }
   ]

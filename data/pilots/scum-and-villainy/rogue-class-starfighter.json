@@ -23,32 +23,62 @@
     "5FW",
     "5KR"
   ],
-  "dialCodes": ["RCS"],
+  "dialCodes": [
+    "RCS"
+  ],
   "faction": "scumandvillainy",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 2 },
-    { "type": "hull", "value": 5 },
-    { "type": "shields", "value": 2 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 2
+    },
+    {
+      "type": "hull",
+      "value": 5
+    },
+    {
+      "type": "shields",
+      "value": 2
+    }
   ],
   "actions": [
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Boost" },
+      "linked": {
+        "difficulty": "Red",
+        "type": "Boost"
+      },
       "type": "Focus"
     },
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Barrel Roll" },
+      "linked": {
+        "difficulty": "Red",
+        "type": "Barrel Roll"
+      },
       "type": "Focus"
     },
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Barrel Roll" },
+      "linked": {
+        "difficulty": "Red",
+        "type": "Barrel Roll"
+      },
       "type": "Evade"
     },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "Red", "type": "Boost" }
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Boost"
+    }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_Rogue.png",
   "pilots": [
@@ -72,9 +102,11 @@
         "name": "Dead to Rights",
         "text": "While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/durge.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/durge.png",
-      "keywords": ["Bounty Hunter"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/durge.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/durge.png",
+      "keywords": [
+        "Bounty Hunter"
+      ],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -95,14 +127,19 @@
         "Title"
       ],
       "ability": "After you perform an attack that hits, you may spend 2 [Charge] to transfer 1 of your non-lock red or orange tokens to the defender.",
-      "charges": { "value": 2, "recovers": 1 },
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
       "shipAbility": {
         "name": "Dead to Rights",
         "text": "While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/cadbane.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/cadbane.png",
-      "keywords": ["Bounty Hunter"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cadbane.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cadbane.png",
+      "keywords": [
+        "Bounty Hunter"
+      ],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -127,9 +164,11 @@
         "name": "Dead to Rights",
         "text": "While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/viktorhel-rogueclassstarfighter.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/viktorhel-rogueclassstarfighter.png",
-      "keywords": ["Bounty Hunter"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/viktorhel-rogueclassstarfighter.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/viktorhel-rogueclassstarfighter.png",
+      "keywords": [
+        "Bounty Hunter"
+      ],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -141,15 +180,23 @@
       "limited": 1,
       "cost": 35,
       "xws": "nomlumb-rogueclassstarfighter",
-      "slots": ["Cannon", "Cannon", "Illicit", "Modification", "Title"],
+      "slots": [
+        "Cannon",
+        "Cannon",
+        "Illicit",
+        "Modification",
+        "Title"
+      ],
       "ability": "At the start of the Engagement Phase, you may choose 1 enemy ship in your [Front Arc]. If you do, treat your initiative as equal to that ship's until the end of the round.",
       "shipAbility": {
         "name": "Dead to Rights",
         "text": "While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/nomlumb-rogueclassstarfighter.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/nomlumb-rogueclassstarfighter.png",
-      "keywords": ["Bounty Hunter"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nomlumb-rogueclassstarfighter.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nomlumb-rogueclassstarfighter.png",
+      "keywords": [
+        "Bounty Hunter"
+      ],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -173,9 +220,11 @@
         "name": "Dead to Rights",
         "text": "While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/outerrimhunter.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/outerrimhunter.png",
-      "keywords": ["Bounty Hunter"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/outerrimhunter.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimhunter.png",
+      "keywords": [
+        "Bounty Hunter"
+      ],
       "standard": true,
       "wildspace": true,
       "epic": true

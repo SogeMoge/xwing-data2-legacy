@@ -22,21 +22,48 @@
     "3RR",
     "4FW"
   ],
-  "dialCodes": ["Trb"],
+  "dialCodes": [
+    "Trb"
+  ],
   "faction": "galacticempire",
   "stats": [
-    { "arc": "Single Turret Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 1 },
-    { "type": "hull", "value": 8 }
+    {
+      "arc": "Single Turret Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 1
+    },
+    {
+      "type": "hull",
+      "value": 8
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Reinforce" },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "Red", "type": "Barrel Roll" },
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Calculate" },
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Reinforce"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Barrel Roll"
+    },
+    {
+      "difficulty": "White",
+      "linked": {
+        "difficulty": "Red",
+        "type": "Calculate"
+      },
       "type": "Rotate Arc"
     }
   ],
@@ -61,9 +88,11 @@
       "wildspace": true,
       "text": "At Carida Academy, Imperial Navy cadets are taught to be ruthless and loyal, prioritizing victory over the lives of their comrades.",
       "limited": 0,
-      "image": "https://infinitearenas.com/xw2/images/pilots/caridaacademycadet.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/caridaacademycadet.png",
-      "keywords": ["TIE"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/caridaacademycadet.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caridaacademycadet.png",
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -87,9 +116,11 @@
       "wildspace": true,
       "text": "The TIE/rb heavy, sometimes called the “brute”, is designed for operational flexibility. Its heavy armor and capacity to house an integrated MGK-300 droid co-pilot make it an excellent patrol craft.",
       "limited": 0,
-      "image": "https://infinitearenas.com/xw2/images/pilots/onyxsquadronsentry.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/onyxsquadronsentry.png",
-      "keywords": ["TIE"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/onyxsquadronsentry.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronsentry.png",
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -114,9 +145,11 @@
       },
       "standard": true,
       "wildspace": true,
-      "image": "https://infinitearenas.com/xw2/images/pilots/rampage.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/rampage.png",
-      "keywords": ["TIE"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rampage.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rampage.png",
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -140,9 +173,11 @@
       },
       "standard": true,
       "wildspace": true,
-      "image": "https://infinitearenas.com/xw2/images/pilots/lyttandree.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lyttandree.png",
-      "keywords": ["TIE"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lyttandree.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lyttandree.png",
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -167,9 +202,11 @@
       },
       "standard": true,
       "wildspace": true,
-      "image": "https://infinitearenas.com/xw2/images/pilots/flightleaderubbel.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/flightleaderubbel.png",
-      "keywords": ["TIE"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/flightleaderubbel.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/flightleaderubbel.png",
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     }
   ],

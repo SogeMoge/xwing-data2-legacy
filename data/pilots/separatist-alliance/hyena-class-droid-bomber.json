@@ -22,22 +22,46 @@
     "4FW",
     "5FR"
   ],
-  "dialCodes": ["HDB"],
+  "dialCodes": [
+    "HDB"
+  ],
   "faction": "separatistalliance",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 2 },
-    { "type": "hull", "value": 5 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 2
+    },
+    {
+      "type": "hull",
+      "value": 5
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Calculate" },
-    { "difficulty": "White", "type": "Lock" },
+    {
+      "difficulty": "White",
+      "type": "Calculate"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
     {
       "difficulty": "White",
       "type": "Barrel Roll",
-      "linked": { "difficulty": "Red", "type": "Lock" }
+      "linked": {
+        "difficulty": "Red",
+        "type": "Lock"
+      }
     },
-    { "difficulty": "Red", "type": "Reload" }
+    {
+      "difficulty": "Red",
+      "type": "Reload"
+    }
   ],
   "pilots": [
     {
@@ -60,9 +84,11 @@
         "Configuration"
       ],
       "text": "Baktoid Armor Workshop developed the Hyena as a strike craft compatible with Trade Federation Vulture swarm tactics.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/technounionbomber.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/technounionbomber.png",
-      "keywords": ["Droid"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/technounionbomber.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/technounionbomber.png",
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -76,13 +102,21 @@
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
       "ability": "If you would drop a device, you may launch that device instead, using the same template.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/bombardmentdrone.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bombardmentdrone.png",
       "standard": true,
       "wildspace": true,
       "cost": 31,
-      "slots": ["Sensor", "Device", "Device", "Modification", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/bombardmentdrone.png",
-      "keywords": ["Droid"],
+      "slots": [
+        "Sensor",
+        "Device",
+        "Device",
+        "Modification",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bombardmentdrone.png",
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -106,9 +140,11 @@
         "Configuration"
       ],
       "ability": "You can perform primary attacks at range 0. While you perform an attack at attack range 0-1, you must roll 1 additional die. After the attack hits, suffer 1 [Critical Hit] damage.",
-      "image": "https://sb-cdn.fantasyflightgames.com/card_images/en/3e647295c7237a5eb36b94d887eb8e56.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dbs404.png",
-      "keywords": ["Droid"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dbs404.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404.png",
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -118,7 +154,7 @@
       "initiative": 1,
       "limited": 2,
       "ability": "While you perform a special attack, if a friendly ship with the Networked Calculations ship ability has a lock on the defender, you may ignore the [Focus], [Calculate], or [Lock] requirement of that attack.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/baktoidprototype.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/baktoidprototype.png",
       "shipAbility": {
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
@@ -133,8 +169,10 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/baktoidprototype.png",
-      "keywords": ["Droid"],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype.png",
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -143,7 +181,7 @@
       "initiative": 3,
       "limited": 0,
       "text": "The droid armies of the Separatists are callous to the plight of civilians and make no effort to limit collateral damage.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/separatistbomber.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistbomber.png",
       "shipAbility": {
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
@@ -158,8 +196,10 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/separatistbomber.png",
-      "keywords": ["Droid"],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistbomber.png",
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -169,27 +209,46 @@
       "limited": 1,
       "initiative": 3,
       "ability": "At the start of the Engagement Phase, you may spend 1 calculate token to perform a [Coordinate] action. You cannot coordinate ships that do not have the Networked Calculations ship ability.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/dbs32c.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dbs32c.png",
       "shipAbility": {
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
       "shipActions": [
-        { "difficulty": "White", "type": "Calculate" },
-        { "difficulty": "White", "type": "Lock" },
+        {
+          "difficulty": "White",
+          "type": "Calculate"
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
         {
           "difficulty": "White",
           "type": "Barrel Roll",
-          "linked": { "difficulty": "Red", "type": "Lock" }
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
         },
-        { "difficulty": "Red", "type": "Jam" }
+        {
+          "difficulty": "Red",
+          "type": "Jam"
+        }
       ],
       "standard": true,
       "wildspace": true,
       "cost": 37,
-      "slots": ["Sensor", "Tactical Relay", "Modification", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dbs32c.png",
-      "keywords": ["Droid"],
+      "slots": [
+        "Sensor",
+        "Tactical Relay",
+        "Modification",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c.png",
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -198,7 +257,10 @@
       "initiative": 3,
       "limited": 1,
       "cost": 38,
-      "charges": { "value": 2, "recovers": 0 },
+      "charges": {
+        "value": 2,
+        "recovers": 0
+      },
       "xws": "dbs32c-siegeofcoruscant",
       "ability": "After you perform a [Calculate] action, you may spend 1 [Charge] to perform a [Jam] action.",
       "shipAbility": {
@@ -206,25 +268,39 @@
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
       "shipActions": [
-        { "difficulty": "White", "type": "Calculate" },
-        { "difficulty": "White", "type": "Lock" },
+        {
+          "difficulty": "White",
+          "type": "Calculate"
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
         {
           "difficulty": "White",
           "type": "Barrel Roll",
-          "linked": { "difficulty": "Red", "type": "Lock" }
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
         },
-        { "difficulty": "Red", "type": "Jam" }
+        {
+          "difficulty": "Red",
+          "type": "Jam"
+        }
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/dbs32c-siegeofcoruscant.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dbs32c-siegeofcoruscant.png",
       "standardLoadout": [
         "plasmatorpedoes",
         "contingencyprotocol-siegeofcoruscant",
         "strutlockoverride-siegeofcoruscant"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dbs32c.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -233,7 +309,10 @@
       "initiative": 3,
       "limited": 1,
       "cost": 30,
-      "charges": { "value": 2, "recovers": 0 },
+      "charges": {
+        "value": 2,
+        "recovers": 0
+      },
       "xws": "dbs32c-siegeofcoruscant-lsl",
       "ability": "After you perform a [Calculate] action, you may spend 1 [Charge] to perform a [Jam] action.",
       "shipAbility": {
@@ -241,21 +320,40 @@
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
       "shipActions": [
-        { "difficulty": "White", "type": "Calculate" },
-        { "difficulty": "White", "type": "Lock" },
+        {
+          "difficulty": "White",
+          "type": "Calculate"
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
         {
           "difficulty": "White",
           "type": "Barrel Roll",
-          "linked": { "difficulty": "Red", "type": "Lock" }
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
         },
-        { "difficulty": "Red", "type": "Jam" }
+        {
+          "difficulty": "Red",
+          "type": "Jam"
+        }
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/dbs32c-siegeofcoruscant.png",
-      "slots": ["Sensor", "Tactical Relay", "Modification", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dbs32c.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dbs32c-siegeofcoruscant-lsl.png",
+      "slots": [
+        "Sensor",
+        "Tactical Relay",
+        "Modification",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -270,16 +368,18 @@
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/dbs404-siegeofcoruscant.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dbs404-siegeofcoruscant.png",
       "standardLoadout": [
         "advprotontorpedoes",
         "contingencyprotocol-siegeofcoruscant",
         "strutlockoverride-siegeofcoruscant"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dbs404.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -294,7 +394,7 @@
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/dbs404-siegeofcoruscant.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dbs404-siegeofcoruscant-lsl.png",
       "slots": [
         "Torpedo",
         "Missile",
@@ -302,10 +402,12 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dbs404.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -320,16 +422,18 @@
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/baktoidprototype-siegeofcoruscant.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/baktoidprototype-siegeofcoruscant.png",
       "standardLoadout": [
         "homingmissiles",
         "contingencyprotocol-siegeofcoruscant",
         "strutlockoverride-siegeofcoruscant"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/baktoidprototype.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -344,7 +448,7 @@
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/baktoidprototype-siegeofcoruscant.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/baktoidprototype-siegeofcoruscant-lsl.png",
       "slots": [
         "Sensor",
         "Missile",
@@ -352,10 +456,12 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/baktoidprototype.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     }
   ],

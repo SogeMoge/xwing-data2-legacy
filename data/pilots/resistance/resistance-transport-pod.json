@@ -19,19 +19,46 @@
     "3KR",
     "4FR"
   ],
-  "dialCodes": ["RTP"],
+  "dialCodes": [
+    "RTP"
+  ],
   "faction": "resistance",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 2 },
-    { "type": "hull", "value": 3 },
-    { "type": "shields", "value": 1 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 2
+    },
+    {
+      "type": "hull",
+      "value": 3
+    },
+    {
+      "type": "shields",
+      "value": 1
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "Red", "type": "Lock" },
-    { "difficulty": "Red", "type": "Barrel Roll" },
-    { "difficulty": "Red", "type": "Jam" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Barrel Roll"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Jam"
+    }
   ],
   "pilots": [
     {
@@ -42,18 +69,37 @@
       "standard": true,
       "wildspace": true,
       "cost": 23,
-      "slots": ["Talent", "Tech", "Crew", "Modification"],
+      "slots": [
+        "Talent",
+        "Tech",
+        "Crew",
+        "Modification"
+      ],
       "ability": "During the System Phase, you may perform a red [Barrel Roll] or [Boost] action.",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/bb8.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/bb8.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bb8.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bb8.png",
       "shipActions": [
-        { "difficulty": "White", "type": "Calculate" },
-        { "difficulty": "Red", "type": "Lock" },
-        { "difficulty": "Red", "type": "Barrel Roll" },
-        { "difficulty": "Red", "type": "Jam" }
+        {
+          "difficulty": "White",
+          "type": "Calculate"
+        },
+        {
+          "difficulty": "Red",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "Red",
+          "type": "Barrel Roll"
+        },
+        {
+          "difficulty": "Red",
+          "type": "Jam"
+        }
       ],
       "caption": "Full of Surprises",
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -65,10 +111,15 @@
       "standard": true,
       "wildspace": true,
       "cost": 26,
-      "slots": ["Talent", "Tech", "Crew", "Modification"],
+      "slots": [
+        "Talent",
+        "Tech",
+        "Crew",
+        "Modification"
+      ],
       "ability": "While you defend or perform an attack, you may reroll up to 1 of your results for each other friendly ship in the attack arc.",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/rosetico.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/rosetico.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rosetico.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rosetico.png",
       "epic": true
     },
     {
@@ -80,11 +131,17 @@
       "standard": true,
       "wildspace": true,
       "cost": 24,
-      "slots": ["Tech", "Crew", "Modification"],
+      "slots": [
+        "Tech",
+        "Crew",
+        "Modification"
+      ],
       "ability": "Setup: After placing forces, assign the Compromising Intel condition to 1 enemy ship.",
-      "conditions": ["compromisingintel"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/vimoradi.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/vimoradi.png",
+      "conditions": [
+        "compromisingintel"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vimoradi.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vimoradi.png",
       "epic": true
     },
     {
@@ -96,10 +153,15 @@
       "standard": true,
       "wildspace": true,
       "cost": 31,
-      "slots": ["Talent", "Tech", "Crew", "Modification"],
+      "slots": [
+        "Talent",
+        "Tech",
+        "Crew",
+        "Modification"
+      ],
       "ability": "While you defend or perform an attack, you may add 1 blank result, or you may gain 1 strain token to add 1 focus result instead.",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/finn.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/finn.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/finn.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/finn.png",
       "epic": true
     }
   ],

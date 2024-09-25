@@ -21,18 +21,43 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": ["XW", "T65"],
+  "dialCodes": [
+    "XW",
+    "T65"
+  ],
   "faction": "rebelalliance",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 3 },
-    { "type": "agility", "value": 2 },
-    { "type": "hull", "value": 4 },
-    { "type": "shields", "value": 2 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 3
+    },
+    {
+      "type": "agility",
+      "value": 2
+    },
+    {
+      "type": "hull",
+      "value": 4
+    },
+    {
+      "type": "shields",
+      "value": 2
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "White", "type": "Barrel Roll" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "White",
+      "type": "Barrel Roll"
+    }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/rebel-alliance/I_X-wing-T65.png",
   "pilots": [
@@ -44,12 +69,19 @@
       "cost": 44,
       "xws": "biggsdarklighter",
       "ability": "While another friendly ship at range 0-1 defends, before the Neutralize Results step, if you are in the attack arc, you may suffer 1 [Hit] or [Critical Hit] damage to cancel 1 matching result.",
-      "slots": ["Torpedo", "Astromech", "Modification", "Configuration"],
-      "image": "https://infinitearenas.com/xw2/images/pilots/biggsdarklighter.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png",
+      "slots": [
+        "Torpedo",
+        "Astromech",
+        "Modification",
+        "Configuration"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/biggsdarklighter.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -59,18 +91,25 @@
       "cost": 38,
       "xws": "bluesquadronescort",
       "text": "Designed by Incom Corporation, the T-65 X-wing quickly proved to be one of the most effective and versatile military vehicles in the galaxy and a boon to the Rebellion.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/bluesquadronescort.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronescort.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronescort.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronescort.png",
       "alt": [
         {
           "image": "https://images-cdn.fantasyflightgames.com/filer_public/9c/1a/9c1ad7ef-dfb1-427c-b700-747d857f53fc/op066-blue-squadron-pilot.png",
           "source": "X-Wing Second Edition Launch Party"
         }
       ],
-      "slots": ["Torpedo", "Astromech", "Modification", "Configuration"],
+      "slots": [
+        "Torpedo",
+        "Astromech",
+        "Modification",
+        "Configuration"
+      ],
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -87,11 +126,14 @@
         "Modification",
         "Configuration"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/cavernangelszealot.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/cavernangelszealot.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cavernangelszealot.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cavernangelszealot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Partisan", "X-wing"],
+      "keywords": [
+        "Partisan",
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -102,7 +144,7 @@
       "cost": 41,
       "xws": "edriotwotubes",
       "ability": "Before you activate, if you are focused, you may perform an action.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/edriotwotubes.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/edriotwotubes.png",
       "slots": [
         "Torpedo",
         "Astromech",
@@ -110,10 +152,13 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/edriotwotubes.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/edriotwotubes.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Partisan", "X-wing"],
+      "keywords": [
+        "Partisan",
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -124,7 +169,7 @@
       "cost": 46,
       "xws": "garvendreis-t65xwing",
       "ability": "After you spend a focus token, you may choose 1 friendly ship at range 1-3. That ship gains 1 focus token.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/garvendreis-t65xwing.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/garvendreis-t65xwing.png",
       "slots": [
         "Talent",
         "Torpedo",
@@ -132,10 +177,12 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-t65xwing.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -153,11 +200,13 @@
         "Modification",
         "Configuration"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/jekporkins.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jekporkins.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -168,7 +217,7 @@
       "cost": 42,
       "xws": "kullbeesperado",
       "ability": "After you perform a [Barrel Roll] or [Boost] action, you may flip your equipped [Configuration] upgrade card.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/kullbeesperado.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kullbeesperado.png",
       "slots": [
         "Talent",
         "Torpedo",
@@ -177,10 +226,13 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/kullbeesperado.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kullbeesperado.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Partisan", "X-wing"],
+      "keywords": [
+        "Partisan",
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -191,7 +243,7 @@
       "cost": 41,
       "xws": "leevantenza",
       "ability": "After you perform a [Barrel Roll] or [Boost] action, you may perform a red [Evade] action.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/leevantenza.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leevantenza.png",
       "slots": [
         "Talent",
         "Torpedo",
@@ -200,10 +252,13 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/leevantenza.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leevantenza.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Partisan", "X-wing"],
+      "keywords": [
+        "Partisan",
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -214,8 +269,14 @@
       "cost": 60,
       "xws": "lukeskywalker",
       "ability": "After you become the defender (before dice are rolled), you may recover 1 [Force].",
-      "image": "https://infinitearenas.com/xw2/images/pilots/lukeskywalker.png",
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker.png",
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "alt": [
         {
           "image": "https://images-cdn.fantasyflightgames.com/filer_public/5b/aa/5baa3742-b7b2-47d7-9bec-07f02fafaf1c/op066-luke-skywalker.png",
@@ -233,10 +294,13 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Light Side", "X-wing"],
+      "keywords": [
+        "Light Side",
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -253,11 +317,13 @@
         "Modification",
         "Configuration"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/redsquadronveteran.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/redsquadronveteran.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/redsquadronveteran.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redsquadronveteran.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -268,7 +334,7 @@
       "cost": 47,
       "xws": "thanekyrell",
       "ability": "While you perform an attack, you may spend 1 [Focus], [Hit], or [Critical Hit] result to look at the defender's facedown damage cards, choose 1, and expose it.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/thanekyrell.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/thanekyrell.png",
       "slots": [
         "Talent",
         "Torpedo",
@@ -276,10 +342,12 @@
         "Modification",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/thanekyrell.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/thanekyrell.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -297,11 +365,13 @@
         "Modification",
         "Configuration"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/wedgeantilles.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -322,11 +392,13 @@
         "protontorpedoes",
         "r2f2-battleofyavin"
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/biggsdarklighter-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/biggsdarklighter-battleofyavin.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -341,12 +413,19 @@
         "name": "Hope",
         "text": "After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action."
       },
-      "slots": ["Torpedo", "Astromech", "Modification", "Configuration"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/biggsdarklighter-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png",
+      "slots": [
+        "Torpedo",
+        "Astromech",
+        "Modification",
+        "Configuration"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/biggsdarklighter-battleofyavin-lsl.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -361,12 +440,17 @@
         "name": "Hope",
         "text": "After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action."
       },
-      "standardLoadout": ["advprotontorpedoes", "r5k6-battleofyavin"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/garvendreis-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png",
+      "standardLoadout": [
+        "advprotontorpedoes",
+        "r5k6-battleofyavin"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/garvendreis-battleofyavin.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -381,12 +465,19 @@
         "name": "Hope",
         "text": "After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action."
       },
-      "slots": ["Torpedo", "Astromech", "Modification", "Configuration"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/garvendreis-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png",
+      "slots": [
+        "Torpedo",
+        "Astromech",
+        "Modification",
+        "Configuration"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/garvendreis-battleofyavin-lsl.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -406,11 +497,13 @@
         "r5d8-battleofyavin",
         "unstablesublightengines-battleofyavin"
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jekporkins-battleofyavin.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -425,12 +518,19 @@
         "name": "Hope",
         "text": "After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action."
       },
-      "slots": ["Torpedo", "Astromech", "Modification", "Configuration"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png",
+      "slots": [
+        "Torpedo",
+        "Astromech",
+        "Modification",
+        "Configuration"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jekporkins-battleofyavin-lsl.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -441,7 +541,13 @@
       "cost": 79,
       "xws": "lukeskywalker-battleofyavin",
       "ability": "After you are declared as the defender during an attack, you may recover 1 [Force].",
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "shipAbility": {
         "name": "Hope",
         "text": "After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action."
@@ -452,11 +558,13 @@
         "protontorpedoes",
         "r2d2-battleofyavin"
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker-battleofyavin.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -467,7 +575,13 @@
       "cost": 61,
       "xws": "lukeskywalker-battleofyavin-lsl",
       "ability": "After you are declared as the defender during an attack, you may recover 1 [Force].",
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "shipAbility": {
         "name": "Hope",
         "text": "After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action."
@@ -479,11 +593,13 @@
         "Modification",
         "Configuration"
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker-battleofyavin-lsl.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -504,11 +620,13 @@
         "protontorpedoes",
         "r2a3-battleofyavin"
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-battleofyavin.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -523,12 +641,19 @@
         "name": "Hope",
         "text": "After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action."
       },
-      "slots": ["Torpedo", "Astromech", "Modification", "Configuration"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleofyavin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png",
+      "slots": [
+        "Torpedo",
+        "Astromech",
+        "Modification",
+        "Configuration"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-battleofyavin-lsl.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -546,11 +671,13 @@
         "Modification",
         "Configuration"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/corranhorn-t65xwing.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/corranhorn-t65xwing.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/corranhorn-t65xwing.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/corranhorn-t65xwing.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -561,7 +688,10 @@
       "cost": 49,
       "xws": "wesjanson",
       "ability": "After you perform an attack, you may spend 1 [Charge] to assign the defender 1 jam token. After you defend, you may spend 1 [Charge] to assign the attacker 1 jam token.",
-      "charges": { "value": 1, "recovers": 1 },
+      "charges": {
+        "value": 1,
+        "recovers": 1
+      },
       "slots": [
         "Talent",
         "Torpedo",
@@ -569,11 +699,13 @@
         "Modification",
         "Configuration"
       ],
-      "image": "https://infinitearenas.com/xw2/images/pilots/wesjanson.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/wesjanson.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wesjanson.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wesjanson.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -584,13 +716,25 @@
       "cost": 75,
       "xws": "lukeskywalker-swz106",
       "ability": "After you are declared as the defender during an attack, you may recover 1 [Force].",
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
-      "standardLoadout": ["instinctiveaim", "protontorpedoes", "r2d2"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-swz106.png",
-      "artwork": "",
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
+      "standardLoadout": [
+        "instinctiveaim",
+        "protontorpedoes",
+        "r2d2"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker-swz106.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-swz106.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -601,12 +745,18 @@
       "cost": 54,
       "xws": "jekporkins-swz106",
       "ability": "After you receive a stress token, you may roll 1 attack die to remove it. On a [Hit] result, suffer 1 [Hit] damage.",
-      "standardLoadout": ["predator", "protontorpedoes", "r5d8-battleofyavin"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-swz106.png",
-      "artwork": "",
+      "standardLoadout": [
+        "predator",
+        "protontorpedoes",
+        "r5d8-battleofyavin"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jekporkins-swz106.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-swz106.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -622,23 +772,63 @@
         "text": "After you perform a [Boost] action, gain a deplete token."
       },
       "shipStats": [
-        { "arc": "Front Arc", "type": "attack", "value": 3 },
-        { "type": "agility", "value": 2 },
-        { "type": "hull", "value": 4 },
-        { "type": "shields", "value": 3 }
+        {
+          "arc": "Front Arc",
+          "type": "attack",
+          "value": 3
+        },
+        {
+          "type": "agility",
+          "value": 2
+        },
+        {
+          "type": "hull",
+          "value": 4
+        },
+        {
+          "type": "shields",
+          "value": 3
+        }
       ],
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Boost" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Focus" } },
-        { "difficulty": "White", "type": "Boost"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Boost"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Focus"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Boost"
+        }
       ],
-      "standardLoadout": ["itsatrap-battleoverendor", "predator", "advprotontorpedoes", "r2a3-battleoverendor"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleoverendor.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-battleoverendor.png",
+      "standardLoadout": [
+        "itsatrap-battleoverendor",
+        "predator",
+        "advprotontorpedoes",
+        "r2a3-battleoverendor"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-battleoverendor.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleoverendor.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -654,27 +844,62 @@
         "text": "After you perform a [Boost] action, gain a deplete token."
       },
       "shipStats": [
-        { "arc": "Front Arc", "type": "attack", "value": 3 },
-        { "type": "agility", "value": 2 },
-        { "type": "hull", "value": 4 },
-        { "type": "shields", "value": 3 }
+        {
+          "arc": "Front Arc",
+          "type": "attack",
+          "value": 3
+        },
+        {
+          "type": "agility",
+          "value": 2
+        },
+        {
+          "type": "hull",
+          "value": 4
+        },
+        {
+          "type": "shields",
+          "value": 3
+        }
       ],
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Boost" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Focus" } },
-        { "difficulty": "White", "type": "Boost"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Boost"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Focus"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Boost"
+        }
       ],
       "slots": [
         "Talent",
         "Torpedo",
         "Astromech"
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleoverendor.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-battleoverendor.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-battleoverendor-lsl.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -690,17 +915,43 @@
         "text": "After you perform a [Boost] action, gain a deplete token."
       },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Boost" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Focus" } },
-        { "difficulty": "White", "type": "Boost"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Boost"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Focus"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Boost"
+        }
       ],
-      "standardLoadout": ["itsatrap-battleoverendor", "plasmatorpedoes", "stabilizingastromech-battleoverendor"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/yendor-battleoverendor.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/yendor-battleoverendor.png",
+      "standardLoadout": [
+        "itsatrap-battleoverendor",
+        "plasmatorpedoes",
+        "stabilizingastromech-battleoverendor"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/yendor-battleoverendor.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yendor-battleoverendor.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -716,10 +967,30 @@
         "text": "After you perform a [Boost] action, gain a deplete token."
       },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Boost" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Focus" } },
-        { "difficulty": "White", "type": "Boost"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Boost"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Focus"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Boost"
+        }
       ],
       "slots": [
         "Talent",
@@ -727,11 +998,13 @@
         "Astromech",
         "Modification"
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/yendor-battleoverendor.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/yendor-battleoverendor.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/yendor-battleoverendor-lsl.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yendor-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -747,17 +1020,44 @@
         "text": "After you perform a [Boost] action, gain a deplete token."
       },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Boost" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Focus" } },
-        { "difficulty": "White", "type": "Boost"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Boost"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Focus"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Boost"
+        }
       ],
-      "standardLoadout": ["itsatrap-battleoverendor", "ionmissiles", "modifiedr4punit-battleoverendor", "chaffparticles-battleoverendor"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/kendyidele-battleoverendor.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/kendyidele-battleoverendor.png",
+      "standardLoadout": [
+        "itsatrap-battleoverendor",
+        "ionmissiles",
+        "modifiedr4punit-battleoverendor",
+        "chaffparticles-battleoverendor"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kendyidele-battleoverendor.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kendyidele-battleoverendor.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     },
     {
@@ -773,10 +1073,30 @@
         "text": "After you perform a [Boost] action, gain a deplete token."
       },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Boost" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Focus" } },
-        { "difficulty": "White", "type": "Boost"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Boost"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Focus"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Boost"
+        }
       ],
       "slots": [
         "Talent",
@@ -784,11 +1104,13 @@
         "Astromech",
         "Modification"
       ],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/kendyidele-battleoverendor.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/kendyidele-battleoverendor.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kendyidele-battleoverendor-lsl.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kendyidele-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["X-wing"],
+      "keywords": [
+        "X-wing"
+      ],
       "epic": true
     }
   ]

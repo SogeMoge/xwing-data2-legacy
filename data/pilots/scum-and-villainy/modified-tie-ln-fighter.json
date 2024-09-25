@@ -19,17 +19,38 @@
     "4FW",
     "5FR"
   ],
-  "dialCodes": ["Tmg"],
+  "dialCodes": [
+    "Tmg"
+  ],
   "faction": "scumandvillainy",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 3 },
-    { "type": "hull", "value": 3 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 3
+    },
+    {
+      "type": "hull",
+      "value": 3
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Evade" },
-    { "difficulty": "White", "type": "Barrel Roll" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Evade"
+    },
+    {
+      "difficulty": "White",
+      "type": "Barrel Roll"
+    }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_MiningGuild_TIE.png",
   "pilots": [
@@ -45,12 +66,17 @@
         "name": "Notched Stabilizers",
         "text": "While you move, you ignore asteroids."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/ahhav.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/ahhav.png",
-      "slots": ["Talent", "Modification"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahhav.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ahhav.png",
+      "slots": [
+        "Talent",
+        "Modification"
+      ],
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -61,17 +87,25 @@
       "cost": 31,
       "xws": "captainseevor",
       "ability": "While you defend or perform an attack, before attack dice are rolled, if you are not in the enemy ship's [Bullseye Arc], you may spend 1 [Charge]. If you do, the enemy ship gains 1 jam token.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/captainseevor.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/captainseevor.png",
-      "charges": { "value": 1, "recovers": 1 },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainseevor.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainseevor.png",
+      "charges": {
+        "value": 1,
+        "recovers": 1
+      },
       "shipAbility": {
         "name": "Notched Stabilizers",
         "text": "While you move, you ignore asteroids."
       },
-      "slots": ["Talent", "Modification"],
+      "slots": [
+        "Talent",
+        "Modification"
+      ],
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -86,12 +120,17 @@
         "name": "Notched Stabilizers",
         "text": "While you move, you ignore asteroids."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/foremanproach.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/foremanproach.png",
-      "slots": ["Talent", "Modification"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/foremanproach.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/foremanproach.png",
+      "slots": [
+        "Talent",
+        "Modification"
+      ],
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -105,12 +144,17 @@
         "name": "Notched Stabilizers",
         "text": "While you move, you ignore asteroids."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/miningguildsurveyor.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/miningguildsurveyor.png",
-      "slots": ["Talent", "Modification"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/miningguildsurveyor.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/miningguildsurveyor.png",
+      "slots": [
+        "Talent",
+        "Modification"
+      ],
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -125,13 +169,20 @@
         "name": "Notched Stabilizers",
         "text": "While you move, you ignore asteroids."
       },
-      "charges": { "value": 1, "recovers": 1 },
-      "image": "https://infinitearenas.com/xw2/images/pilots/overseeryushyn.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/overseeryushyn.png",
-      "slots": ["Modification"],
+      "charges": {
+        "value": 1,
+        "recovers": 1
+      },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/overseeryushyn.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/overseeryushyn.png",
+      "slots": [
+        "Modification"
+      ],
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -145,12 +196,16 @@
         "name": "Notched Stabilizers",
         "text": "While you move, you ignore asteroids."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/miningguildsentry.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/miningguildsentry.png",
-      "slots": ["Modification"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/miningguildsentry.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/miningguildsentry.png",
+      "slots": [
+        "Modification"
+      ],
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -165,12 +220,16 @@
         "name": "Notched Stabilizers",
         "text": "While you move, you ignore asteroids."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/lapin.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lapin.png",
-      "slots": ["Modification"],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lapin.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lapin.png",
+      "slots": [
+        "Modification"
+      ],
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     }
   ]

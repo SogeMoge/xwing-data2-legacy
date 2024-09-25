@@ -21,19 +21,46 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": ["YT24"],
+  "dialCodes": [
+    "YT24"
+  ],
   "faction": "scumandvillainy",
   "stats": [
-    { "arc": "Double Turret Arc", "type": "attack", "value": 3 },
-    { "type": "agility", "value": 2 },
-    { "type": "hull", "value": 6 },
-    { "type": "shields", "value": 4 }
+    {
+      "arc": "Double Turret Arc",
+      "type": "attack",
+      "value": 3
+    },
+    {
+      "type": "agility",
+      "value": 2
+    },
+    {
+      "type": "hull",
+      "value": 6
+    },
+    {
+      "type": "shields",
+      "value": 4
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "Red", "type": "Barrel Roll" },
-    { "difficulty": "White", "type": "Rotate Arc" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Barrel Roll"
+    },
+    {
+      "difficulty": "White",
+      "type": "Rotate Arc"
+    }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/rebel-alliance/I_YT-2400.png",
   "pilots": [
@@ -55,11 +82,14 @@
         "leebo-swz103",
         "outrider"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dashrendar.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/dashrendar-initforhimself-scumandvillainy.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar-swz103-sl-scumandvillainy.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-sl-scumandvillainy.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["Droid", "Freighter"],
+      "keywords": [
+        "Droid",
+        "Freighter"
+      ],
       "epic": true
     },
     {
@@ -83,11 +113,14 @@
         "name": "Sensor Blackout",
         "text": "While you perform a primary attack at attack range 0-1, you roll 1 fewer die. While you defend at range 1, you roll 1 fewer defense die."
       },
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dashrendar.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/dashrendar-initforhimself-scumandvillainy.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar-swz103-lsl-scumandvillainy.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-lsl-scumandvillainy.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid", "Freighter"],
+      "keywords": [
+        "Droid",
+        "Freighter"
+      ],
       "epic": true
     },
     {
@@ -99,14 +132,26 @@
       "xws": "leebo-swz103-sl-scumandvillainy",
       "ability": "At the end of the Engagement Phase, you may spend a calculate token to acquire a lock on an enemy ship at range 2-3.",
       "shipActions": [
-        { "difficulty": "White", "type": "Calculate" },
         {
           "difficulty": "White",
-          "linked": { "difficulty": "Red", "type": "Rotate Arc" },
+          "type": "Calculate"
+        },
+        {
+          "difficulty": "White",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Rotate Arc"
+          },
           "type": "Lock"
         },
-        { "difficulty": "Red", "type": "Barrel Roll" },
-        { "difficulty": "White", "type": "Rotate Arc" }
+        {
+          "difficulty": "Red",
+          "type": "Barrel Roll"
+        },
+        {
+          "difficulty": "White",
+          "type": "Rotate Arc"
+        }
       ],
       "shipAbility": {
         "name": "Sensor Blackout",
@@ -117,11 +162,14 @@
         "seekermissiles-swz103",
         "outrider"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/leebo.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/leebo-hethinkshesfunny-scumandvillainy.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo-swz103-sl-scumandvillainy.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-sl-scumandvillainy.png",
       "standard": false,
       "wildspace": true,
-      "keywords": ["Droid", "Freighter"],
+      "keywords": [
+        "Droid",
+        "Freighter"
+      ],
       "epic": true
     },
     {
@@ -141,24 +189,39 @@
       ],
       "ability": "At the end of the Engagement Phase, you may spend a calculate token to acquire a lock on an enemy ship at range 2-3.",
       "shipActions": [
-        { "difficulty": "White", "type": "Calculate" },
         {
           "difficulty": "White",
-          "linked": { "difficulty": "Red", "type": "Rotate Arc" },
+          "type": "Calculate"
+        },
+        {
+          "difficulty": "White",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Rotate Arc"
+          },
           "type": "Lock"
         },
-        { "difficulty": "Red", "type": "Barrel Roll" },
-        { "difficulty": "White", "type": "Rotate Arc" }
+        {
+          "difficulty": "Red",
+          "type": "Barrel Roll"
+        },
+        {
+          "difficulty": "White",
+          "type": "Rotate Arc"
+        }
       ],
       "shipAbility": {
         "name": "Sensor Blackout",
         "text": "While you perform a primary attack at attack range 0-1, you roll 1 fewer die. While you defend at range 1, you roll 1 fewer defense die."
       },
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/leebo.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/leebo-hethinkshesfunny-scumandvillainy.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo-swz103-lsl-scumandvillainy.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-lsl-scumandvillainy.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid", "Freighter"],
+      "keywords": [
+        "Droid",
+        "Freighter"
+      ],
       "epic": true
     }
   ]

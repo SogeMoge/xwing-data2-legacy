@@ -23,17 +23,39 @@
     "5FW",
     "5KR"
   ],
-  "dialCodes": ["NTX"],
+  "dialCodes": [
+    "NTX"
+  ],
   "faction": "separatistalliance",
   "stats": [
-    { "arc": "Bullseye Arc", "type": "attack", "value": 3 },
-    { "arc": "Single Turret Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 3 },
-    { "type": "hull", "value": 4 }
+    {
+      "arc": "Bullseye Arc",
+      "type": "attack",
+      "value": 3
+    },
+    {
+      "arc": "Single Turret Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 3
+    },
+    {
+      "type": "hull",
+      "value": 4
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Evade" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Evade"
+    }
   ],
   "pilots": [
     {
@@ -48,10 +70,12 @@
       "standard": true,
       "wildspace": true,
       "text": "Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/stalgasinhiveguard.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/stalgasinhiveguard.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/stalgasinhiveguard.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/stalgasinhiveguard.png",
       "cost": 33,
-      "slots": ["Talent"],
+      "slots": [
+        "Talent"
+      ],
       "epic": true
     },
     {
@@ -66,11 +90,14 @@
       "standard": true,
       "wildspace": true,
       "caption": "Archduke’s Enforcer",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/sunfac.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/sunfac.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sunfac.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sunfac.png",
       "ability": "While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.",
       "cost": 41,
-      "slots": ["Talent", "Talent"],
+      "slots": [
+        "Talent",
+        "Talent"
+      ],
       "epic": true
     },
     {
@@ -85,11 +112,14 @@
       "standard": true,
       "wildspace": true,
       "caption": "Hive Guard Captain",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/berwerkret.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/berwerkret.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/berwerkret.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/berwerkret.png",
       "ability": "After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.",
       "cost": 36,
-      "slots": ["Talent", "Talent"],
+      "slots": [
+        "Talent",
+        "Talent"
+      ],
       "epic": true
     },
     {
@@ -104,22 +134,24 @@
       "standard": true,
       "wildspace": true,
       "caption": "Opportunistic Ace",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/chertek.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/chertek.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chertek.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/chertek.png",
       "ability": "While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.",
       "cost": 36,
-      "slots": ["Talent", "Talent"],
+      "slots": [
+        "Talent",
+        "Talent"
+      ],
       "epic": true
     },
     {
       "name": "Gorgol",
       "caption": "Handy Engineer",
-
       "limited": 1,
       "initiative": 2,
       "xws": "gorgol",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/gorgol.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/gorgol.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gorgol.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gorgol.png",
       "shipAbility": {
         "name": "Pinpoint Tractor Array",
         "text": "You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you fully execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action."
@@ -128,7 +160,10 @@
       "cost": 29,
       "standard": true,
       "wildspace": true,
-      "slots": ["Talent", "Modification"],
+      "slots": [
+        "Talent",
+        "Modification"
+      ],
       "epic": true
     },
     {
@@ -137,8 +172,8 @@
       "limited": 0,
       "initiative": 4,
       "xws": "petranakiarenaace",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/petranakiarenaace.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/petranakiarenaace.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/petranakiarenaace.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/petranakiarenaace.png",
       "shipAbility": {
         "name": "Pinpoint Tractor Array",
         "text": "You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action."
@@ -146,7 +181,10 @@
       "text": "The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.",
       "standard": true,
       "wildspace": true,
-      "slots": ["Talent", "Talent"],
+      "slots": [
+        "Talent",
+        "Talent"
+      ],
       "epic": true
     }
   ],

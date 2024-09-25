@@ -20,20 +20,55 @@
     "4FR",
     "5FR"
   ],
-  "dialCodes": ["CRC-SE"],
+  "dialCodes": [
+    "CRC-SE"
+  ],
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 3 },
-    { "type": "agility", "value": 0 },
-    { "type": "hull", "value": 12 },
-    { "type": "shields", "value": 4, "recovers": 1 },
-    { "type": "energy", "value": 4, "recovers": 1 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 3
+    },
+    {
+      "type": "agility",
+      "value": 0
+    },
+    {
+      "type": "hull",
+      "value": 12
+    },
+    {
+      "type": "shields",
+      "value": 4,
+      "recovers": 1
+    },
+    {
+      "type": "energy",
+      "value": 4,
+      "recovers": 1
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "Red", "type": "Coordinate" },
-    { "difficulty": "White", "type": "Reinforce" },
-    { "difficulty": "White", "type": "Jam" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Coordinate"
+    },
+    {
+      "difficulty": "White",
+      "type": "Reinforce"
+    },
+    {
+      "difficulty": "White",
+      "type": "Jam"
+    }
   ],
   "pilots": [
     {
@@ -41,8 +76,8 @@
       "initiative": 7,
       "cost": 63,
       "limited": 0,
-      "image": "https://infinitearenas.com/xw2/images/pilots/separatistprivateers.png",
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/separatistprivateers.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistprivateers.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistprivateers.png",
       "shipAbility": {
         "name": "Overdrive Burners",
         "text": "While you defend, if your revealed maneuver is speed 3-5, roll 1 additional defense die."

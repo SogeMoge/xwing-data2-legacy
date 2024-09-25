@@ -8,14 +8,28 @@
         "title": "Cloaking Device",
         "type": "Illicit",
         "ability": "Action: Spend 1 [Charge] to perform a [Cloak] action. At the start of the Planning Phase, roll 1 attack die. On a [Focus] result, decloak or discard your cloak token.",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/cloakingdevice.png",
-        "slots": ["Illicit"],
-        "charges": { "value": 2, "recovers": 0 },
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/cloakingdevice.png"
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cloakingdevice.png",
+        "slots": [
+          "Illicit"
+        ],
+        "charges": {
+          "value": 2,
+          "recovers": 0
+        },
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cloakingdevice.png"
       }
     ],
-    "cost": { "value": 3 },
-    "restrictions": [{ "sizes": ["Small", "Medium"] }],
+    "cost": {
+      "value": 3
+    },
+    "restrictions": [
+      {
+        "sizes": [
+          "Small",
+          "Medium"
+        ]
+      }
+    ],
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -29,13 +43,20 @@
         "title": "Contraband Cybernetics",
         "type": "Illicit",
         "ability": "Before you activate, you may spend 1 [Charge]. If you do, until the end of the round, you can perform actions and execute red maneuvers, even while stressed.",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/contrabandcybernetics.png",
-        "slots": ["Illicit"],
-        "charges": { "value": 1, "recovers": 0 },
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/contrabandcybernetics.png"
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/contrabandcybernetics.png",
+        "slots": [
+          "Illicit"
+        ],
+        "charges": {
+          "value": 1,
+          "recovers": 0
+        },
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/contrabandcybernetics.png"
       }
     ],
-    "cost": { "value": 3 },
+    "cost": {
+      "value": 3
+    },
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -49,12 +70,16 @@
         "title": "Deadman's Switch",
         "type": "Illicit",
         "ability": "After you are destroyed, each other ship at range 0-1 suffers 1 [Hit] damage.",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/deadmansswitch.png",
-        "slots": ["Illicit"],
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/deadmansswitch.png"
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/deadmansswitch.png",
+        "slots": [
+          "Illicit"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/deadmansswitch.png"
       }
     ],
-    "cost": { "value": 2 },
+    "cost": {
+      "value": 2
+    },
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -68,12 +93,16 @@
         "title": "Feedback Array",
         "type": "Illicit",
         "ability": "Before you engage, you may gain 1 ion token and 1 disarm token. If you do, each ship at range 0 suffers 1 [Hit] damage.",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/feedbackarray.png",
-        "slots": ["Illicit"],
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/feedbackarray.png"
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/feedbackarray.png",
+        "slots": [
+          "Illicit"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/feedbackarray.png"
       }
     ],
-    "cost": { "value": 2 },
+    "cost": {
+      "value": 2
+    },
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -87,9 +116,11 @@
         "title": "Inertial Dampeners",
         "type": "Illicit",
         "ability": "Before you would execute a maneuver, you may spend 1 shield. If you do, execute a white [0 [Stationary]] instead of the maneuver you revealed, then gain 1 stress token.",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/inertialdampeners.png",
-        "slots": ["Illicit"],
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/inertialdampeners.png"
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/inertialdampeners.png",
+        "slots": [
+          "Illicit"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/inertialdampeners.png"
       }
     ],
     "cost": {
@@ -119,19 +150,33 @@
         "title": "Rigged Cargo Chute",
         "type": "Illicit",
         "ability": "Action: Spend 1 [Charge]. Drop 1 loose cargo using the [1 [Straight]] template.",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/riggedcargochute.png",
-        "slots": ["Illicit"],
-        "charges": { "value": 1, "recovers": 0 },
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/riggedcargochute.png",
+        "slots": [
+          "Illicit"
+        ],
+        "charges": {
+          "value": 1,
+          "recovers": 0
+        },
         "device": {
           "name": "Loose Cargo",
           "type": "Obstacle",
           "effect": "Loose cargo is a debris cloud."
         },
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/riggedcargochute.png"
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/riggedcargochute.png"
       }
     ],
-    "cost": { "value": 4 },
-    "restrictions": [{ "sizes": ["Medium", "Large"] }],
+    "cost": {
+      "value": 4
+    },
+    "restrictions": [
+      {
+        "sizes": [
+          "Medium",
+          "Large"
+        ]
+      }
+    ],
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -145,12 +190,16 @@
         "ability": "You can perform the [SLAM] action even while stressed. If you do, you suffer 1 [Critical Hit] damage unless you expose 1 of your damage cards. After you partially execute a maneuver, you may expose 1 of your damage cards or suffer 1 [Critical Hit] damage to perform a [SLAM] action.",
         "title": "Coaxium Hyperfuel",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/coaxiumhyperfuel.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/coaxiumhyperfuel.png"
+        "slots": [
+          "Illicit"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/coaxiumhyperfuel.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/coaxiumhyperfuel.png"
       }
     ],
-    "cost": { "value": 1 },
+    "cost": {
+      "value": 1
+    },
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -164,14 +213,27 @@
         "ability": "During the System Phase, you may spend 1 [Charge] to drop 1 cargo crate drift in your [Rear Arc] at range 0. It cannot overlap a ship this way.. This card's [Charge] cannot be recovered.",
         "title": "Quick-Release Locks",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "charges": { "value": 2, "recovers": 0 },
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/quickreleaselocks.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/quickreleaselocks.png"
+        "slots": [
+          "Illicit"
+        ],
+        "charges": {
+          "value": 2,
+          "recovers": 0
+        },
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/quickreleaselocks.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/quickreleaselocks.png"
       }
     ],
-    "cost": { "value": 4 },
-    "restrictions": [{ "sizes": ["Huge"] }],
+    "cost": {
+      "value": 4
+    },
+    "restrictions": [
+      {
+        "sizes": [
+          "Huge"
+        ]
+      }
+    ],
     "standard": false,
     "wildspace": false,
     "epic": true
@@ -185,13 +247,23 @@
         "ability": "At the end of Setup, you may spend up to 1 [Charge] from each of your equipped Mine upgrades to place the corresponding device in the play area beyond range 2 of any enemy ship, strategic marker, or other device.",
         "title": "Saboteur's Map",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/saboteursmap.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/saboteursmap.png"
+        "slots": [
+          "Illicit"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/saboteursmap.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/saboteursmap.png"
       }
     ],
-    "cost": { "value": 2 },
-    "restrictions": [{ "sizes": ["Huge"] }],
+    "cost": {
+      "value": 2
+    },
+    "restrictions": [
+      {
+        "sizes": [
+          "Huge"
+        ]
+      }
+    ],
     "standard": false,
     "wildspace": false,
     "epic": true
@@ -205,13 +277,23 @@
         "ability": "At the end of Setup, you may choose any number of other friendly, non-huge ships in your deployment area at range 0-1. If you do, place those ships anywhere in the same deployment area.",
         "title": "Scanner Baffler",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/scannerbaffler.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/scannerbaffler.png"
+        "slots": [
+          "Illicit"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/scannerbaffler.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/scannerbaffler.png"
       }
     ],
-    "cost": { "value": 7 },
-    "restrictions": [{ "sizes": ["Huge"] }],
+    "cost": {
+      "value": 7
+    },
+    "restrictions": [
+      {
+        "sizes": [
+          "Huge"
+        ]
+      }
+    ],
     "standard": false,
     "wildspace": false,
     "epic": true
@@ -225,13 +307,20 @@
         "ability": "After you acquire a lock on an object or an object acquires a lock on you, if you have 1 active [Charge], lose 1 [Charge] and jam that object, ignoring range restrictions.",
         "title": "False Transponder Codes",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "charges": { "value": 1, "recovers": 0 },
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/falsetranspondercodes.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/falsetranspondercodes.png"
+        "slots": [
+          "Illicit"
+        ],
+        "charges": {
+          "value": 1,
+          "recovers": 0
+        },
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/falsetranspondercodes.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/falsetranspondercodes.png"
       }
     ],
-    "cost": { "value": 3 },
+    "cost": {
+      "value": 3
+    },
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -245,14 +334,28 @@
         "ability": "Before you would gain a non-lock red or orange token, you may spend 1 [Charge] to place it on this card instead. During the System Phase, if there are 1 or more tokens on this card, you must spend 1 [Charge]. If you cannot, remove those tokens and gain matching tokens.",
         "title": "Babu Frik",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "charges": { "value": 3, "recovers": 0 },
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/babufrik.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/babufrik.png"
+        "slots": [
+          "Illicit"
+        ],
+        "charges": {
+          "value": 3,
+          "recovers": 0
+        },
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/babufrik.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/babufrik.png"
       }
     ],
-    "restrictions": [{ "factions": ["scumandvillainy", "resistance"] }],
-    "cost": { "value": 7 },
+    "restrictions": [
+      {
+        "factions": [
+          "scumandvillainy",
+          "resistance"
+        ]
+      }
+    ],
+    "cost": {
+      "value": 7
+    },
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -266,13 +369,20 @@
         "ability": "During the System Phase, if you are not stressed, you may spend 1 [Charge] to gain 3 calculate tokens. During the End Phase, if your [Charge] is inactive, for each green token you remove, gain 1 strain token.",
         "title": "Overtuned Modulators",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "charges": { "value": 1, "recovers": 0 },
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/overtunedmodulators.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/overtunedmodulators.png"
+        "slots": [
+          "Illicit"
+        ],
+        "charges": {
+          "value": 1,
+          "recovers": 0
+        },
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/overtunedmodulators.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/overtunedmodulators.png"
       }
     ],
-    "cost": { "value": 3 },
+    "cost": {
+      "value": 3
+    },
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -286,14 +396,26 @@
         "ability": "Setup: After placing forces, choose an opponent: they assign the Marked for Elimination condition to 1 of their ships. They must assign it to a limited ship, if able. You ignore range restrictions while acquiring locks on the ship with the Marked for Elimination condition.",
         "title": "Tracking Fob",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "conditions": ["markedforelimination"],
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/trackingfob.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/trackingfob.png"
+        "slots": [
+          "Illicit"
+        ],
+        "conditions": [
+          "markedforelimination"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/trackingfob.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/trackingfob.png"
       }
     ],
-    "restrictions": [{ "keywords": ["Bounty Hunter"] }],
-    "cost": { "value": 4 },
+    "restrictions": [
+      {
+        "keywords": [
+          "Bounty Hunter"
+        ]
+      }
+    ],
+    "cost": {
+      "value": 4
+    },
     "standard": true,
     "wildspace": true,
     "epic": true
@@ -307,8 +429,13 @@
         "ability": "This attack can be performed at range 0. Attack: Spend 1 [Charge].",
         "title": "Hotshot Tail Blaster",
         "type": "Illicit",
-        "slots": ["Illicit"],
-        "charges": { "value": 2, "recovers": 0 },
+        "slots": [
+          "Illicit"
+        ],
+        "charges": {
+          "value": 2,
+          "recovers": 0
+        },
         "attack": {
           "arc": "Rear Arc",
           "value": 2,
@@ -316,12 +443,21 @@
           "maxrange": 1,
           "ordnance": true
         },
-        "artwork": "https://infinitearenas.com/xw2/images/artwork/upgrades/hotshottailblaster.png",
-        "image": "https://infinitearenas.com/xw2/images/upgrades/hotshottailblaster.png"
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hotshottailblaster.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hotshottailblaster.png"
       }
     ],
-    "cost": { "value": 2 },
-    "restrictions": [{ "sizes": ["Medium", "Large"] }],
+    "cost": {
+      "value": 2
+    },
+    "restrictions": [
+      {
+        "sizes": [
+          "Medium",
+          "Large"
+        ]
+      }
+    ],
     "standard": true,
     "wildspace": true,
     "epic": true

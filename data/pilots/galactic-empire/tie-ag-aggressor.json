@@ -19,20 +19,44 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": ["TAg"],
+  "dialCodes": [
+    "TAg"
+  ],
   "faction": "galacticempire",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 2 },
-    { "type": "hull", "value": 4 },
-    { "type": "shields", "value": 1 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 2
+    },
+    {
+      "type": "hull",
+      "value": 4
+    },
+    {
+      "type": "shields",
+      "value": 1
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "White", "type": "Lock" },
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Evade" },
+      "type": "Focus"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "White",
+      "linked": {
+        "difficulty": "Red",
+        "type": "Evade"
+      },
       "type": "Barrel Roll"
     }
   ],
@@ -46,7 +70,7 @@
       "cost": 27,
       "xws": "doubleedge",
       "ability": "After you perform a [Turret] or [Missile] attack that misses, you may perform a bonus attack using a different weapon.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/doubleedge.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/doubleedge.png",
       "slots": [
         "Talent",
         "Sensor",
@@ -56,10 +80,12 @@
         "Modification",
         "Gunner"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/doubleedge.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/doubleedge.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -70,7 +96,7 @@
       "cost": 28,
       "xws": "lieutenantkestal",
       "ability": "While you perform an attack, after the defender rolls defense dice, you may spend 1 focus token to cancel all of the defender's blank/[Focus] results.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/lieutenantkestal.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkestal.png",
       "slots": [
         "Talent",
         "Sensor",
@@ -80,10 +106,12 @@
         "Modification",
         "Gunner"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantkestal.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkestal.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -93,7 +121,7 @@
       "cost": 27,
       "xws": "onyxsquadronscout",
       "text": "Designed for extended engagements, the TIE/ag is flown primarily by elite pilots trained to leverage both its unique weapons loadout and its maneuverability to full effect.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/onyxsquadronscout.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/onyxsquadronscout.png",
       "slots": [
         "Talent",
         "Sensor",
@@ -103,10 +131,12 @@
         "Modification",
         "Gunner"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/onyxsquadronscout.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronscout.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     },
     {
@@ -116,7 +146,7 @@
       "cost": 26,
       "xws": "sienarspecialist",
       "text": "During the development of the TIE aggressor, Sienar Fleet Systems valued performance and versatility over raw cost efficiency.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/sienarspecialist.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sienarspecialist.png",
       "slots": [
         "Sensor",
         "Turret",
@@ -125,10 +155,12 @@
         "Modification",
         "Gunner"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/sienarspecialist.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sienarspecialist.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["TIE"],
+      "keywords": [
+        "TIE"
+      ],
       "epic": true
     }
   ]

@@ -20,22 +20,49 @@
     "4FR",
     "5FR"
   ],
-  "dialCodes": ["HMP"],
+  "dialCodes": [
+    "HMP"
+  ],
   "faction": "separatistalliance",
   "stats": [
-    { "arc": "Full Front Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 1 },
-    { "type": "hull", "value": 5 },
-    { "type": "shields", "value": 3 }
+    {
+      "arc": "Full Front Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 1
+    },
+    {
+      "type": "hull",
+      "value": 5
+    },
+    {
+      "type": "shields",
+      "value": 3
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Calculate" },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "Red", "type": "Barrel Roll" },
+    {
+      "difficulty": "White",
+      "type": "Calculate"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "Red",
+      "type": "Barrel Roll"
+    },
     {
       "difficulty": "White",
       "type": "Reload",
-      "linked": { "difficulty": "Red", "type": "Calculate" }
+      "linked": {
+        "difficulty": "Red",
+        "type": "Calculate"
+      }
     }
   ],
   "pilots": [
@@ -55,8 +82,8 @@
         "Tactical Relay"
       ],
       "limited": 1,
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dgs047.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/dgs047.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dgs047.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dgs047.png",
       "shipAbility": {
         "name": "Networked Aim",
         "text": "You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender."
@@ -64,7 +91,9 @@
       "ability": "After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -82,8 +111,8 @@
         "Tactical Relay"
       ],
       "limited": 0,
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/baktoiddrone.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/baktoiddrone.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoiddrone.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/baktoiddrone.png",
       "shipAbility": {
         "name": "Networked Aim",
         "text": "You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender."
@@ -91,7 +120,9 @@
       "text": "A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -110,8 +141,8 @@
         "Tactical Relay"
       ],
       "limited": 2,
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/geonosianprototype.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/geonosianprototype.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/geonosianprototype.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/geonosianprototype.png",
       "shipAbility": {
         "name": "Networked Aim",
         "text": "You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender."
@@ -119,7 +150,9 @@
       "ability": "While you perform a [Missile] or [Cannon] attack, you may remove 1 tractor token from the defender to reroll up to 2 attack dice.",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -138,8 +171,8 @@
         "Tactical Relay"
       ],
       "limited": 1,
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/dgs286.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/dgs286.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dgs286.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dgs286.png",
       "shipAbility": {
         "name": "Networked Aim",
         "text": "You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender."
@@ -147,7 +180,9 @@
       "ability": "Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -166,8 +201,8 @@
         "Tactical Relay"
       ],
       "limited": 2,
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/onderonoppressor.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/onderonoppressor.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onderonoppressor.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/onderonoppressor.png",
       "shipAbility": {
         "name": "Networked Aim",
         "text": "You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender."
@@ -175,7 +210,9 @@
       "ability": "After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.",
       "standard": true,
       "wildspace": true,
-      "keywords": ["Droid"],
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     },
     {
@@ -200,9 +237,11 @@
         "Configuration",
         "Tactical Relay"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/separatistpredator.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/separatistpredator.png",
-      "keywords": ["Droid"],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistpredator.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistpredator.png",
+      "keywords": [
+        "Droid"
+      ],
       "epic": true
     }
   ],

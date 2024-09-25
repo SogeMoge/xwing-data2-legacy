@@ -21,22 +21,46 @@
     "3NR",
     "4FR"
   ],
-  "dialCodes": ["BW"],
+  "dialCodes": [
+    "BW"
+  ],
   "faction": "rebelalliance",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 3 },
-    { "type": "agility", "value": 1 },
-    { "type": "hull", "value": 4 },
-    { "type": "shields", "value": 4 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 3
+    },
+    {
+      "type": "agility",
+      "value": 1
+    },
+    {
+      "type": "hull",
+      "value": 4
+    },
+    {
+      "type": "shields",
+      "value": 4
+    }
   ],
   "actions": [
     {
       "difficulty": "White",
-      "linked": { "difficulty": "Red", "type": "Barrel Roll" },
+      "linked": {
+        "difficulty": "Red",
+        "type": "Barrel Roll"
+      },
       "type": "Focus"
     },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "White", "type": "Barrel Roll" }
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "White",
+      "type": "Barrel Roll"
+    }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/rebel-alliance/I_B-wing.png",
   "pilots": [
@@ -47,7 +71,7 @@
       "cost": 41,
       "xws": "bladesquadronveteran",
       "text": "A unique gyrostabilization system surrounds the B-wing's cockpit, ensuring that the pilot always remains stationary during flight.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/bladesquadronveteran.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bladesquadronveteran.png",
       "slots": [
         "Talent",
         "Sensor",
@@ -58,10 +82,12 @@
         "Title",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/bladesquadronveteran.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bladesquadronveteran.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["B-wing"],
+      "keywords": [
+        "B-wing"
+      ],
       "epic": true
     },
     {
@@ -71,7 +97,7 @@
       "cost": 39,
       "xws": "bluesquadronpilot",
       "text": "Due to its heavy weapons array and resilient shielding, the B-wing has solidified itself as the Rebel Alliance's most innovative assault fighter.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/bluesquadronpilot.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronpilot.png",
       "slots": [
         "Sensor",
         "Cannon",
@@ -87,10 +113,12 @@
           "source": "Season Three 2018"
         }
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronpilot.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["B-wing"],
+      "keywords": [
+        "B-wing"
+      ],
       "epic": true
     },
     {
@@ -101,7 +129,7 @@
       "cost": 52,
       "xws": "braylenstramm",
       "ability": "While you defend or perform an attack, if you are stressed, you may reroll up to 2 of your dice.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/braylenstramm.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm.png",
       "slots": [
         "Talent",
         "Sensor",
@@ -112,10 +140,12 @@
         "Title",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/braylenstramm.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["B-wing"],
+      "keywords": [
+        "B-wing"
+      ],
       "epic": true
     },
     {
@@ -126,7 +156,7 @@
       "cost": 49,
       "xws": "tennumb",
       "ability": "While you defend or perform an attack, you may spend 1 stress token to change all of your [Focus] results to [Evade] or [Hit] results.",
-      "image": "https://infinitearenas.com/xw2/images/pilots/tennumb.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tennumb.png",
       "slots": [
         "Talent",
         "Sensor",
@@ -137,10 +167,12 @@
         "Title",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/tennumb.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tennumb.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["B-wing"],
+      "keywords": [
+        "B-wing"
+      ],
       "epic": true
     },
     {
@@ -161,11 +193,13 @@
         "Title",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/ginamoonsong.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/ginamoonsong.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ginamoonsong.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["B-wing"],
+      "keywords": [
+        "B-wing"
+      ],
       "epic": true
     },
     {
@@ -186,11 +220,14 @@
         "Title",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/herasyndulla-asf01bwing.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/herasyndulla-asf01bwing.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla-asf01bwing.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla-asf01bwing.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["B-wing", "Spectre"],
+      "keywords": [
+        "B-wing",
+        "Spectre"
+      ],
       "epic": true
     },
     {
@@ -211,11 +248,13 @@
         "Title",
         "Configuration"
       ],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/netrempollard.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/netrempollard.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/netrempollard.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/netrempollard.png",
       "standard": true,
       "wildspace": true,
-      "keywords": ["B-wing"],
+      "keywords": [
+        "B-wing"
+      ],
       "epic": true
     },
     {
@@ -230,17 +269,47 @@
         "name": "Gyro-Cockpit",
         "text": "After you gain a stress token, you may spend 2 [Charge] to gain an evade token. When you drop a device, you may spend 1 [Charge] to set the template with its middle line aligned with the hashmark on your ship's left or right side instead of your rear guides."
       },
-      "charges": { "value": 2, "recovers": 1 },
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Barrel Roll" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Lock" } },
-        { "difficulty": "Red", "type": "Reload"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Barrel Roll"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
+        },
+        {
+          "difficulty": "Red",
+          "type": "Reload"
+        }
       ],
-      "standardLoadout": ["itsatrap-battleoverendor", "partinggift-battleoverendor", "protonrockets", "protonbombs"],
-      "keywords": ["B-wing"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/adonfox-battleoverendor.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/adonfox-battleoverendor.png",
+      "standardLoadout": [
+        "itsatrap-battleoverendor",
+        "partinggift-battleoverendor",
+        "protonrockets",
+        "protonbombs"
+      ],
+      "keywords": [
+        "B-wing"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adonfox-battleoverendor.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adonfox-battleoverendor.png",
       "standard": false,
       "wildspace": true,
       "epic": true
@@ -257,12 +326,35 @@
         "name": "Gyro-Cockpit",
         "text": "After you gain a stress token, you may spend 2 [Charge] to gain an evade token. When you drop a device, you may spend 1 [Charge] to set the template with its middle line aligned with the hashmark on your ship's left or right side instead of your rear guides."
       },
-      "charges": { "value": 2, "recovers": 1 },
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Barrel Roll" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Lock" } },
-        { "difficulty": "Red", "type": "Reload"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Barrel Roll"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
+        },
+        {
+          "difficulty": "Red",
+          "type": "Reload"
+        }
       ],
       "slots": [
         "Sensor",
@@ -273,9 +365,11 @@
         "Title",
         "Configuration"
       ],
-      "keywords": ["B-wing"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/adonfox-battleoverendor.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/adonfox-battleoverendor.png",
+      "keywords": [
+        "B-wing"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adonfox-battleoverendor-lsl.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adonfox-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -293,22 +387,65 @@
         "text": "After you gain a stress token, you may spend 2 [Charge] to gain an evade token. When you drop a device, you may spend 1 [Charge] to set the template with its middle line aligned with the hashmark on your ship's left or right side instead of your rear guides."
       },
       "shipStats": [
-        { "arc": "Front Arc", "type": "attack", "value": 3 },
-        { "type": "agility", "value": 1 },
-        { "type": "hull", "value": 4 },
-        { "type": "shields", "value": 5 }
+        {
+          "arc": "Front Arc",
+          "type": "attack",
+          "value": 3
+        },
+        {
+          "type": "agility",
+          "value": 1
+        },
+        {
+          "type": "hull",
+          "value": 4
+        },
+        {
+          "type": "shields",
+          "value": 5
+        }
       ],
-      "charges": { "value": 2, "recovers": 1 },
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Barrel Roll" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Lock" } },
-        { "difficulty": "Red", "type": "Reload"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Barrel Roll"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
+        },
+        {
+          "difficulty": "Red",
+          "type": "Reload"
+        }
       ],
-      "standardLoadout": ["itsatrap-battleoverendor", "juke", "protontorpedoes", "ionbombs"],
-      "keywords": ["B-wing"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/ginamoonsong-battleoverendor.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/ginamoonsong-battleoverendor.png",
+      "standardLoadout": [
+        "itsatrap-battleoverendor",
+        "juke",
+        "protontorpedoes",
+        "ionbombs"
+      ],
+      "keywords": [
+        "B-wing"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ginamoonsong-battleoverendor.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong-battleoverendor.png",
       "standard": false,
       "wildspace": true,
       "epic": true
@@ -326,17 +463,53 @@
         "text": "After you gain a stress token, you may spend 2 [Charge] to gain an evade token. When you drop a device, you may spend 1 [Charge] to set the template with its middle line aligned with the hashmark on your ship's left or right side instead of your rear guides."
       },
       "shipStats": [
-        { "arc": "Front Arc", "type": "attack", "value": 3 },
-        { "type": "agility", "value": 1 },
-        { "type": "hull", "value": 4 },
-        { "type": "shields", "value": 5 }
+        {
+          "arc": "Front Arc",
+          "type": "attack",
+          "value": 3
+        },
+        {
+          "type": "agility",
+          "value": 1
+        },
+        {
+          "type": "hull",
+          "value": 4
+        },
+        {
+          "type": "shields",
+          "value": 5
+        }
       ],
-      "charges": { "value": 2, "recovers": 1 },
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Barrel Roll" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Lock" } },
-        { "difficulty": "Red", "type": "Reload"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Barrel Roll"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
+        },
+        {
+          "difficulty": "Red",
+          "type": "Reload"
+        }
       ],
       "slots": [
         "Talent",
@@ -347,9 +520,11 @@
         "Title",
         "Configuration"
       ],
-      "keywords": ["B-wing"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/ginamoonsong-battleoverendor.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/ginamoonsong-battleoverendor.png",
+      "keywords": [
+        "B-wing"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ginamoonsong-battleoverendor-lsl.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -367,22 +542,65 @@
         "text": "After you gain a stress token, you may spend 2 [Charge] to gain an evade token. When you drop a device, you may spend 1 [Charge] to set the template with its middle line aligned with the hashmark on your ship's left or right side instead of your rear guides."
       },
       "shipStats": [
-        { "arc": "Front Arc", "type": "attack", "value": 3 },
-        { "type": "agility", "value": 1 },
-        { "type": "hull", "value": 4 },
-        { "type": "shields", "value": 5 }
+        {
+          "arc": "Front Arc",
+          "type": "attack",
+          "value": 3
+        },
+        {
+          "type": "agility",
+          "value": 1
+        },
+        {
+          "type": "hull",
+          "value": 4
+        },
+        {
+          "type": "shields",
+          "value": 5
+        }
       ],
-      "charges": { "value": 2, "recovers": 1 },
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Barrel Roll" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Lock" } },
-        { "difficulty": "Red", "type": "Reload"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Barrel Roll"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
+        },
+        {
+          "difficulty": "Red",
+          "type": "Reload"
+        }
       ],
-      "standardLoadout": ["itsatrap-battleoverendor", "homingmissiles", "protonbombs", "delayedfuses"],
-      "keywords": ["B-wing"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/braylenstramm-battleoverendor.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/braylenstramm-battleoverendor.png",
+      "standardLoadout": [
+        "itsatrap-battleoverendor",
+        "homingmissiles",
+        "protonbombs",
+        "delayedfuses"
+      ],
+      "keywords": [
+        "B-wing"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm-battleoverendor.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm-battleoverendor.png",
       "standard": false,
       "wildspace": true,
       "epic": true
@@ -400,17 +618,53 @@
         "text": "After you gain a stress token, you may spend 2 [Charge] to gain an evade token. When you drop a device, you may spend 1 [Charge] to set the template with its middle line aligned with the hashmark on your ship's left or right side instead of your rear guides."
       },
       "shipStats": [
-        { "arc": "Front Arc", "type": "attack", "value": 3 },
-        { "type": "agility", "value": 1 },
-        { "type": "hull", "value": 4 },
-        { "type": "shields", "value": 5 }
+        {
+          "arc": "Front Arc",
+          "type": "attack",
+          "value": 3
+        },
+        {
+          "type": "agility",
+          "value": 1
+        },
+        {
+          "type": "hull",
+          "value": 4
+        },
+        {
+          "type": "shields",
+          "value": 5
+        }
       ],
-      "charges": { "value": 2, "recovers": 1 },
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
       "shipActions": [
-        { "difficulty": "White", "type": "Focus", "linked": { "difficulty": "Red", "type": "Barrel Roll" } },
-        { "difficulty": "White", "type": "Lock" },
-        { "difficulty": "White", "type": "Barrel Roll", "linked": { "difficulty": "Red", "type": "Lock" } },
-        { "difficulty": "Red", "type": "Reload"}
+        {
+          "difficulty": "White",
+          "type": "Focus",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Barrel Roll"
+          }
+        },
+        {
+          "difficulty": "White",
+          "type": "Lock"
+        },
+        {
+          "difficulty": "White",
+          "type": "Barrel Roll",
+          "linked": {
+            "difficulty": "Red",
+            "type": "Lock"
+          }
+        },
+        {
+          "difficulty": "Red",
+          "type": "Reload"
+        }
       ],
       "slots": [
         "Talent",
@@ -421,9 +675,11 @@
         "Title",
         "Configuration"
       ],
-      "keywords": ["B-wing"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/braylenstramm-battleoverendor.png",
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/braylenstramm-battleoverendor.png",
+      "keywords": [
+        "B-wing"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm-battleoverendor-lsl.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
       "epic": true

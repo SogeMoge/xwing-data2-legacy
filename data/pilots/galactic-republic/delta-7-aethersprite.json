@@ -22,20 +22,50 @@
     "5FW",
     "5KR"
   ],
-  "dialCodes": ["D7A"],
+  "dialCodes": [
+    "D7A"
+  ],
   "faction": "galacticrepublic",
   "stats": [
-    { "arc": "Front Arc", "type": "attack", "value": 2 },
-    { "type": "agility", "value": 3 },
-    { "type": "hull", "value": 3 },
-    { "type": "shields", "value": 1 }
+    {
+      "arc": "Front Arc",
+      "type": "attack",
+      "value": 2
+    },
+    {
+      "type": "agility",
+      "value": 3
+    },
+    {
+      "type": "hull",
+      "value": 3
+    },
+    {
+      "type": "shields",
+      "value": 1
+    }
   ],
   "actions": [
-    { "difficulty": "White", "type": "Focus" },
-    { "difficulty": "Purple", "type": "Evade" },
-    { "difficulty": "White", "type": "Lock" },
-    { "difficulty": "White", "type": "Barrel Roll" },
-    { "difficulty": "White", "type": "Boost" }
+    {
+      "difficulty": "White",
+      "type": "Focus"
+    },
+    {
+      "difficulty": "Purple",
+      "type": "Evade"
+    },
+    {
+      "difficulty": "White",
+      "type": "Lock"
+    },
+    {
+      "difficulty": "White",
+      "type": "Barrel Roll"
+    },
+    {
+      "difficulty": "White",
+      "type": "Boost"
+    }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Delta-7.png",
   "pilots": [
@@ -49,14 +79,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/jediknight.png",
-      "force": { "value": 1, "recovers": 1, "side": ["light"] },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jediknight.png",
+      "force": {
+        "value": 1,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
       "cost": 35,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/jediknight.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jediknight.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -70,14 +114,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/obiwankenobi.png",
-      "force": { "value": 3, "recovers": 1, "side": ["light"] },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/obiwankenobi.png",
+      "force": {
+        "value": 3,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
       "cost": 48,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/obiwankenobi.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -91,14 +149,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/plokoon.png",
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/plokoon.png",
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
       "cost": 45,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/plokoon.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/plokoon.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -112,14 +184,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/saeseetiin.png",
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/saeseetiin.png",
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": false,
       "wildspace": true,
       "cost": 39,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/saeseetiin.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/saeseetiin.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -133,14 +219,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "image": "https://infinitearenas.com/xw2/images/pilots/macewindu.png",
-      "force": { "value": 3, "recovers": 1, "side": ["light"] },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/macewindu.png",
+      "force": {
+        "value": 3,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
       "cost": 42,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/macewindu.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/macewindu.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -154,14 +254,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "force": { "value": 3, "recovers": 1, "side": ["light"] },
+      "force": {
+        "value": 3,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
-      "image": "https://infinitearenas.com/xw2/images/pilots/anakinskywalker.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker.png",
       "cost": 55,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -175,14 +289,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
-      "image": "https://infinitearenas.com/xw2/images/pilots/ahsokatano.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahsokatano.png",
       "cost": 38,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/ahsokatano.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ahsokatano.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -196,14 +324,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "force": { "value": 1, "recovers": 1, "side": ["light"] },
+      "force": {
+        "value": 1,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
-      "image": "https://infinitearenas.com/xw2/images/pilots/barrissoffee.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/barrissoffee.png",
       "cost": 35,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/barrissoffee.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/barrissoffee.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -217,14 +359,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
-      "image": "https://infinitearenas.com/xw2/images/pilots/luminaraunduli.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/luminaraunduli.png",
       "cost": 39,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/luminaraunduli.png",
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/luminaraunduli.png",
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     },
     {
@@ -238,14 +394,28 @@
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
       },
-      "force": { "value": 2, "recovers": 1, "side": ["light"] },
+      "force": {
+        "value": 2,
+        "recovers": 1,
+        "side": [
+          "light"
+        ]
+      },
       "standard": true,
       "wildspace": true,
-      "artwork": "https://infinitearenas.com/xw2/images/artwork/pilots/adigallia.png",
-      "image": "https://infinitearenas.com/xw2/images/pilots/adigallia.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adigallia.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adigallia.png",
       "cost": 46,
-      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
-      "keywords": ["Jedi", "Light Side"],
+      "slots": [
+        "Astromech",
+        "Modification",
+        "Force Power",
+        "Configuration"
+      ],
+      "keywords": [
+        "Jedi",
+        "Light Side"
+      ],
       "epic": true
     }
   ]
