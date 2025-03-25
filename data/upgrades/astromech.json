@@ -591,7 +591,7 @@
       }
     ],
     "cost": {
-      "value": 5
+      "value": 4
     },
     "restrictions": [
       {
@@ -621,7 +621,7 @@
       }
     ],
     "cost": {
-      "value": 2
+      "value": 1
     },
     "restrictions": [
       {
@@ -899,7 +899,13 @@
       }
     ],
     "cost": {
-      "value": 3
+      "variable": "agility",
+      "values": {
+        "0": 3,
+        "1": 3,
+        "2": 3,
+        "3": 5
+      }
     },
     "restrictions": [
       {

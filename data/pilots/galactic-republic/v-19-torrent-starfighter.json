@@ -262,7 +262,7 @@
         "name": "Born for This",
         "text": "While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token."
       },
-      "cost": 33,
+      "cost": 32,
       "xws": "kickback-siegeofcoruscant-lsl",
       "ability": "After you perform a [Barrel Roll] action, you may perform a red [Lock] action. If you do, before you perfrom the [Lock] action, you may gain 1 strain to treat it as white.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kickback-siegeofcoruscant-lsl.png",
@@ -342,7 +342,7 @@
         "name": "Born for This",
         "text": "While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token."
       },
-      "cost": 31,
+      "cost": 30,
       "xws": "axe-siegeofcoruscant-lsl",
       "ability": "After you perform an attack, you may choose another friendly ship with the Born for This ability at range 0-2 in your [Left Arc] or [Right Arc]. The chosen ship gains a lock on the defender.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/axe-siegeofcoruscant-lsl.png",

@@ -70,7 +70,7 @@
       "xws": "hawk",
       "caption": "Valkyrie 2929",
       "initiative": 4,
-      "cost": 50,
+      "cost": 48,
       "charges": {
         "value": 2,
         "recovers": 1
@@ -81,6 +81,7 @@
         "Missile",
         "Crew",
         "Crew",
+        "Astromech",
         "Modification",
         "Gunner",
         "Gunner"
@@ -105,7 +106,7 @@
       "xws": "hound",
       "caption": "Vigilant Tracker",
       "initiative": 2,
-      "cost": 47,
+      "cost": 46,
       "charges": {
         "value": 2,
         "recovers": 1
@@ -116,6 +117,7 @@
         "Missile",
         "Crew",
         "Crew",
+        "Astromech",
         "Modification",
         "Gunner",
         "Gunner"
@@ -150,6 +152,7 @@
         "Missile",
         "Crew",
         "Crew",
+        "Astromech",
         "Modification",
         "Gunner",
         "Gunner"
@@ -177,7 +180,7 @@
       "text": "Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.",
       "standard": true,
       "wildspace": true,
-      "cost": 46,
+      "cost": 45,
       "charges": {
         "value": 2,
         "recovers": 1
@@ -187,6 +190,7 @@
         "Missile",
         "Crew",
         "Crew",
+        "Astromech",
         "Modification",
         "Gunner",
         "Gunner"
@@ -207,7 +211,7 @@
       "xws": "sicko",
       "caption": "CT-1127/549",
       "initiative": 2,
-      "cost": 49,
+      "cost": 47,
       "charges": {
         "value": 2,
         "recovers": 1
@@ -217,6 +221,7 @@
         "Missile",
         "Crew",
         "Crew",
+        "Astromech",
         "Modification",
         "Gunner",
         "Gunner"
