@@ -96,7 +96,7 @@
       "caption": "Soft-Spoken Slayer",
       "initiative": 5,
       "limited": 1,
-      "cost": 61,
+      "cost": 60,
       "xws": "whisper",
       "ability": "After you perform an attack that hits, gain 1 evade token.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper.png",

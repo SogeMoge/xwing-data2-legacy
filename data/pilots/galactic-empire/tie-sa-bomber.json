@@ -453,7 +453,7 @@
       "caption": "Scimitar Veteran",
       "initiative": 5,
       "limited": 1,
-      "cost": 37,
+      "cost": 38,
       "xws": "tomaxbren-swz98-lsl",
       "ability": "After you perform a [Barrel Roll] action, you may spend 2 [Charge]. If you do, gain a focus token.",
       "charges": {

@@ -126,7 +126,7 @@
     {
       "name": "“Rampage”",
       "caption": "Implacable Pursuer",
-      "cost": 37,
+      "cost": 36,
       "initiative": 4,
       "limited": 1,
       "slots": [
@@ -155,7 +155,7 @@
     {
       "name": "Lyttan Dree",
       "caption": "Onyx 2",
-      "cost": 37,
+      "cost": 36,
       "initiative": 3,
       "limited": 1,
       "slots": [
@@ -183,7 +183,7 @@
     {
       "name": "Flight Leader Ubbel",
       "caption": "Onyx Leader",
-      "cost": 42,
+      "cost": 43,
       "initiative": 5,
       "limited": 1,
       "slots": [

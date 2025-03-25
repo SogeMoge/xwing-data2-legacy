@@ -88,7 +88,7 @@
       "caption": "Pragmatic Survivor",
       "initiative": 4,
       "limited": 1,
-      "cost": 39,
+      "cost": 38,
       "xws": "majorvynder",
       "ability": "While you defend, if you are disarmed, roll 1 additional defense die.",
       "slots": [
