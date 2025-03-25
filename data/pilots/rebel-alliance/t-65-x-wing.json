@@ -266,7 +266,7 @@
       "caption": "Red Five",
       "initiative": 5,
       "limited": 1,
-      "cost": 60,
+      "cost": 59,
       "xws": "lukeskywalker",
       "ability": "After you become the defender (before dice are rolled), you may recover 1 [Force].",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker.png",
@@ -572,7 +572,7 @@
       "caption": "Battle of Yavin",
       "initiative": 5,
       "limited": 1,
-      "cost": 61,
+      "cost": 60,
       "xws": "lukeskywalker-battleofyavin-lsl",
       "ability": "After you are declared as the defender during an attack, you may recover 1 [Force].",
       "force": {

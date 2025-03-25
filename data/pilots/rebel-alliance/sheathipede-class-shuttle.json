@@ -65,7 +65,7 @@
       "caption": "Spectre-4",
       "initiative": 2,
       "limited": 1,
-      "cost": 31,
+      "cost": 30,
       "xws": "zeborrelios-sheathipedeclassshuttle",
       "ability": "While you defend, [Critical Hit] results are neutralized before [Hit] results.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zeborrelios-sheathipedeclassshuttle.png",
