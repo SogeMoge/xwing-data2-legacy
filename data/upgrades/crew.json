@@ -1140,7 +1140,7 @@
       }
     ],
     "cost": {
-      "value": 4
+      "value": 3
     },
     "restrictions": [
       {
@@ -3214,7 +3214,13 @@
       }
     ],
     "cost": {
-      "value": 6
+      "variable": "size",
+      "values": {
+        "Small": 3,
+        "Medium": 6,
+        "Large": 8,
+        "Huge": 15
+      }
     },
     "restrictions": [
       {
@@ -3327,7 +3333,7 @@
       }
     ],
     "cost": {
-      "value": 7
+      "value": 5
     },
     "restrictions": [
       {
