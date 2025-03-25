@@ -93,7 +93,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sunfac.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sunfac.png",
       "ability": "While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.",
-      "cost": 42,
+      "cost": 43,
       "slots": [
         "Talent",
         "Talent"

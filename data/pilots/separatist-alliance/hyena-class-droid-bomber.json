@@ -161,7 +161,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 26,
+      "cost": 25,
       "slots": [
         "Sensor",
         "Missile",
@@ -441,7 +441,7 @@
       "caption": "Siege of Coruscant",
       "initiative": 1,
       "limited": 2,
-      "cost": 26,
+      "cost": 25,
       "xws": "baktoidprototype-siegeofcoruscant-lsl",
       "ability": "While you perform a special attack, if a friendly ship with the Networked Calculations ship ability has a lock on the defender, you may ignore the [Focus], [Calculate], or [Lock] requirement of that attack.",
       "shipAbility": {
