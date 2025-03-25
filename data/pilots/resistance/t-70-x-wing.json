@@ -359,7 +359,7 @@
       "initiative": 1,
       "limited": 1,
       "xws": "jaycristubbs",
-      "cost": 45,
+      "cost": 44,
       "ability": "After you fully execute a blue maneuver, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.",
       "shipAbility": {
         "name": "Weapon Hardpoint",

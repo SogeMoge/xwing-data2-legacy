@@ -161,7 +161,7 @@
           "light"
         ]
       },
-      "cost": 70,
+      "cost": 71,
       "slots": [
         "Missile",
         "Crew",
@@ -226,7 +226,7 @@
         "value": 3,
         "recovers": 1
       },
-      "cost": 70,
+      "cost": 71,
       "slots": [
         "Talent",
         "Missile",
