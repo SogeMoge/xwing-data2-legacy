@@ -971,5 +971,45 @@
     "wildspace": true,
     "epic": true,
     "standardLoadoutOnly": true
+  },
+  {
+    "name": "Contingency Protocol",
+    "limited": 0,
+    "xws": "contingencyprotocol-rsl",
+    "sides": [
+      {
+        "title": "Contingency Protocol",
+        "type": "Modification",
+        "ability": "After this ship is destroyed another friendly ship at range 0-3 with Contingency Protocol may perform an action, even while stressed.",
+        "slots": [
+          "Modification"
+        ],
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/contingencyprotocol.jpg",
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/contingencyprotocol.png"
+      }
+    ],
+    "cost": {
+      "value": 2
+    },
+    "restrictions": [
+      {
+        "factions": [
+          "separatistalliance"
+        ]
+      },
+      {
+        "equipped": [
+          "Relay"
+        ]
+      },
+      {
+        "keywords": [
+          "Droid"
+        ]
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
   }
 ]

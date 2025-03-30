@@ -1476,5 +1476,119 @@
     "wildspace": true,
     "epic": true,
     "standardLoadoutOnly": true
+  },
+  {
+    "name": "No Escape",
+    "limited": 0,
+    "xws": "noescape-rsl",
+    "sides": [
+      {
+        "ability": "While you perform a primary attack, if there are more friendly ships then other enemy ships at range 0-1 of the defender, you may reroll 1 of your blank results.",
+        "title": "No Escape",
+        "type": "Talent",
+        "slots": [
+          "Talent"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/noescape.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/noescape.jpg"
+      }
+    ],
+    "cost": {
+      "value": 3
+    },
+    "restrictions": [
+      {
+        "factions": [
+          "galacticempire"
+        ]
+      },
+      {
+        "non-limited": true
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+  {
+    "name": "Silent Hunter",
+    "limited": 1,
+    "xws": "silenthunter-rsl",
+    "sides": [
+      {
+        "ability": "After you decloak, you may acquire a lock on an enemy ship in your [Bullseye Arc].",
+        "title": "Silent Hunter",
+        "type": "Talent",
+        "slots": [
+          "Talent"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/silenthunter.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/silenthunter.jpg"
+      }
+    ],
+    "cost": {
+      "value": 3
+    },
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+  {
+    "name": "Parting Gift",
+    "limited": 1,
+    "xws": "partinggift-rsl",
+    "sides": [
+      {
+        "ability": "When you are destroyed, before you are removed, you may spend 1 [Charge] on an equipped Device upgrade to drop or launch a bomb using the speed 1 [Straight], [Bank Left] or [Bank Right] otemplate.",
+        "title": "Parting Gift",
+        "type": "Talent",
+        "slots": [
+          "Talent"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/partinggift.jpg",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/partinggift.png"
+      }
+    ],
+    "cost": {
+      "value": 3
+    },
+    "standard": false,
+    "wildspace": true,
+    "epic": false
+  },
+  {
+    "name": "Formed Up",
+    "limited": 2,
+    "xws": "formedup-rsl",
+    "sides": [
+      {
+        "ability": "At the end of the End Phase, if there are at least 2 other friendly TIE/ln Fighters or 1 other ship with Formed Up at range 0-1, you may remove 1 non-lock red token.",
+        "title": "Formed Up",
+        "type": "Talent",
+        "slots": [
+          "Talent"
+        ],
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/formedup.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/formedup.jpg"
+      }
+    ],
+    "cost": {
+      "value": 3
+    },
+    "restrictions": [
+      {
+        "factions": [
+          "galacticempire"
+        ]
+      },
+      {
+        "ships": [
+          "tielnfighter"
+        ]
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
   }
 ]

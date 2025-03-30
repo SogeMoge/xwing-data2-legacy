@@ -454,5 +454,35 @@
     "wildspace": true,
     "epic": true,
     "standardLoadoutOnly": true
+  },
+  {
+    "name": "Roiling Anger",
+    "limited": 0,
+    "xws": "roilinganger-rsl",
+    "sides": [
+      {
+        "title": "Roiling Anger",
+        "type": "Force Power",
+        "ability": "At the start of the Engagement Phase, if you are in an enemy ship's [Front Arc], you may gain 1 strain to recover 1 [Force]..",
+        "slots": [
+          "Force Power"
+        ],
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/roilinganger.jpg",
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/roilinganger.png"
+      }
+    ],
+    "cost": {
+      "value": 3
+    },
+    "restrictions": [
+      {
+        "force_side": [
+          "dark"
+        ]
+      }
+    ],
+    "standard": false,
+    "wildspace": true,
+    "epic": false
   }
 ]

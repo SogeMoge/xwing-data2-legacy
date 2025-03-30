@@ -515,5 +515,40 @@
     "wildspace": true,
     "epic": true,
     "standardLoadoutOnly": true
+  },
+  {
+    "name": "Seeker Missiles",
+    "limited": 0,
+    "xws": "seekermissiles-rsl",
+    "sides": [
+      {
+        "title": "Seeker Missiles",
+        "type": "Missile",
+        "ability": "Attack ([Lock]): Spend 1 [Charge]. During the Modify Attack Dice step, you may spend up to 2 additional [Charge]. Change one [Focus] result to a [Hit] result for each [Charge] spent in this way.",
+        "slots": [
+          "Missile",
+          "Missile"
+        ],
+        "charges": {
+          "value": 4,
+          "recovers": 0
+        },
+        "attack": {
+          "arc": "Front Arc",
+          "value": 3,
+          "minrange": 2,
+          "maxrange": 3,
+          "ordnance": true
+        },
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seekermissiles.jpg",
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seekermissiles.png"
+      }
+    ],
+    "cost": {
+      "value": 7
+    },
+    "standard": false,
+    "wildspace": true,
+    "epic": false
   }
 ]
