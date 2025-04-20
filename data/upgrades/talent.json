@@ -1489,8 +1489,8 @@
         "slots": [
           "Talent"
         ],
-        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/noescape.png",
-        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/noescape.jpg"
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/noescape-rsl.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/noescape-rsl.png"
       }
     ],
     "cost": {
@@ -1522,8 +1522,8 @@
         "slots": [
           "Talent"
         ],
-        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/silenthunter.png",
-        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/silenthunter.jpg"
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/silenthunter-rsl.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/silenthunter-rsl.png"
       }
     ],
     "cost": {
@@ -1545,8 +1545,8 @@
         "slots": [
           "Talent"
         ],
-        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/partinggift.jpg",
-        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/partinggift.png"
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/partinggift-rsl.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/partinggift-rsl.png"
       }
     ],
     "cost": {
@@ -1568,8 +1568,8 @@
         "slots": [
           "Talent"
         ],
-        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/formedup.png",
-        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/formedup.jpg"
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/formedup-rsl.png",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/formedup-rsl.png"
       }
     ],
     "cost": {

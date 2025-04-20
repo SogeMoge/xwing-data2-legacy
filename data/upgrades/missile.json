@@ -540,8 +540,8 @@
           "maxrange": 3,
           "ordnance": true
         },
-        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seekermissiles.jpg",
-        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seekermissiles.png"
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seekermissiles-rsl.png",
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seekermissiles-rsl.png"
       }
     ],
     "cost": {

@@ -471,7 +471,7 @@
         "title": "Chaff Particles",
         "type": "Illicit",
         "ability": "While defending, at the end of the Neutralize Results step, you may spend 1 [Charge] and 1 [Focus] or [Evade] result to remove 1 red or orange token.",
-        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chaffparticles.jpg",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chaffparticles-rsl.png",
         "slots": [
           "Illicit"
         ],
@@ -479,7 +479,7 @@
           "value": 1,
           "recovers": 0
         },
-        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chaffparticles.png"
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chaffparticles-rsl.png"
       }
     ],
     "cost": {
@@ -505,7 +505,7 @@
         "title": "Fuel Injection Override",
         "type": "Illicit",
         "ability": "While you perform a [Boost] or [Barrel Roll] action, you may spend 1 [Charge] to use a template of 1 speed higher instead.",
-        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fuelinjectionoverride.jpg",
+        "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fuelinjectionoverride-rsl.png",
         "slots": [
           "Illicit"
         ],
@@ -513,7 +513,7 @@
           "value": 1,
           "recovers": 0
         },
-        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/fuelinjectionoverride.png"
+        "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/fuelinjectionoverride-rsl.png"
       }
     ],
     "cost": {
