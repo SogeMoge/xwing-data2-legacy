@@ -3,7 +3,7 @@
         "name": "Asteroid Field",
         "xws": "asteroidfield",
         "type": "environment",
-        "text": "Setup: Obstacles may be placed within range 1 of each other and at range 2 of the neutral board edges.",
+        "text": "Setup: Obstacles can be placed at range 1-2 of the neutral board edges.",
         "components": [
             {
                 "type": "obstacle",
@@ -33,7 +33,7 @@
         "name": "Nebula",
         "xws": "nebula",
         "type": "environment",
-        "text": "Setup: After the second obstacle is placed, any additional obstacles must be placed within range 1-2 of another obstacle and beyond range 3 of the player board edges. Obstacles may be placed at range 2 of the neutral board edges.",
+        "text": "Setup: After the second obstacle is placed, any additional obstacles must be placed within range 1-2 of another obstacle and beyond range 3 of the player board edges. Obstacles can be placed at range 2 of the neutral board edges.",
         "components": [
             {
                 "type": "obstacle",
@@ -53,7 +53,7 @@
         "name": "Old Wreckage",
         "xws": "oldwreckage",
         "type": "environment",
-        "text": "Setup: Asteroids must be placed first. All asteroids after the first one must be placed within range 1-2 of other Asteroids. Debris Clouds must be placed touching an Asteroid and may be placed at range 1 of other Debris Clouds. They may be placed at range 2 of the neutral board edges.",
+        "text": "Asteroids must be placed first. All Asteroids after the first one must be place beyond range 2 of another obstacle. Debris Clouds must be placed touching an Asteroid that has 1 or fewer Debris Clouds touching the Asteroid. Debris Clouds can be placed at range 2 of the neutral board edges and  at range 1 of other Debris Clouds.",
         "components": [
             {
                 "type": "obstacle",
@@ -73,7 +73,7 @@
         "name": "Planetary Ring",
         "xws": "planetaryring",
         "type": "environment",
-        "text": "Setup: Obstacles must be placed beyond range 3 of the player board edges and range 0 of the neutral board edges.",
+        "text": "Setup: Obstacles must be placed beyond range 3 of the player board edges. Obstacles can be placed at range 1-2 of the neutral board edges.",
         "components": [
             {
                 "type": "obstacle",
@@ -88,7 +88,7 @@
         "name": "Binary Suns",
         "xws": "binarysuns",
         "type": "environment",
-        "text": "Setup: Asteroids must be placed first. Asteroids must be placed beyond range 3 of each other and beyond range 3 of the players board edge. Gas clouds must be placed at range 1 of an asteroid and beyond range 1 of another gas cloud. Gas clouds may be placed at range 2 of the neutral board edges.",
+        "text": "Setup: Asteroids must be placed first. Asteroids must be placed beyond range 3 of each other and beyond range 3 of the players board edge. Gas clouds must be placed at range 1 of an asteroid and beyond range 1 of another gas cloud. Gas clouds can be placed at range 2 of the neutral board edges.",
         "components": [
             {
                 "type": "obstacle",
@@ -108,7 +108,7 @@
         "name": "Junkyard",
         "xws": "junkyard",
         "type": "environment",
-        "text": "Setup: After the first obstacle is placed, all other obstacles must be placed at range 2 of at least one obstacle and beyond range 1 of any other obstacle. Obstacles may be placed at range 1 of the neutral board edges.",
+        "text": "Setup: Obstacles can be placed at range 1-2 of the neutral board edges.",
         "components": [
             {
                 "type": "obstacle",
@@ -123,7 +123,7 @@
         "name": "Comet",
         "xws": "comet",
         "type": "environment",
-        "text": "Setup: Asteroids must be placed first, then debris clouds, then gas clouds. The first asteroid must be placed within range 3 of any players board edge and neutral board edge. Each additional asteroid must be placed at range 1 of the previous asteroid, beyond range 1 of other ateroids, and within range 4 of the players board edges. Each debris cloud must be placed at range 1 of any asteroid, beyond range 1 of another debris cloud, and at range 5 of the players board edges. Each gas cloud must be placed at range 1 of any debris cloud, beyond range 1 of another gas cloud, and at range 4 of the players board edges.",
+        "text": "Setup: Asteroids must be placed first, then Debris Clouds, then Gas Clouds. The first Asteroid must be placed within range 3 of any players board edge and neutral board edge. Each dditional Asteroid must be placed within range 2 of the first Asteroid and at range 3 of any board edge. The Debris Cloud must be placed beyond range 4 of  all board edges. Each Gas Cloud must be placed at range 2 of the Debris Cloud and beyond range 2 of all Asteroids.",
         "components": [
             {
                 "type": "obstacle",
@@ -133,12 +133,12 @@
             {
                 "type": "obstacle",
                 "kind": "Debris Cloud",
-                "value": 2
+                "value": 1
             },
             {
                 "type": "obstacle",
                 "kind": "Gas Cloud",
-                "value": 2
+                "value": 3
             }
         ],
         "image": "https://raw.githubusercontent.com/meftyster/WSS/main/Optimized/WS-Cards/Environment-Comet.jpg",
@@ -163,7 +163,7 @@
         "name": "The Maw",
         "xws": "themaw",
         "type": "environment",
-        "text": "Setup: Before placing obstacles, the first player must place 1 environment token representing the Maw ([Environment]) in the center of the play area. Other obstacles must be placed beyond range 1 of [Environment]. The Maw: This environment token is an obstacle that cannot be removed from play, cannot be chosen for the effects of devices, and cannot be placed elsewhere after initial placement. After executing a maneuver, if a ship is at range 1 of [Environment], assign 3 tractor tokens to that ship. If a ship becomes tractored due to [Environment], instead of standard tractor effects, the controlling player must perform a barrel roll to the side corresponding to the bearing of the ship's executed [Bank Left], [Bank Right], [Turn Left], or [Turn Right] maneuver, or must perform a [Straight] boost if the ship's executed maneuver was straight or advanced. If a ship overlaps or moves through [Environment], that ship gains 1 strain token and 1 deplete token. During the Planning Phase, a ship at range 0 of [Environment] must set its fastest straight blue maneuver.",
+        "text": "Setup: Before placing obstacles, place 1 environment token representing the Maw ([Environment]) in the center of the play area. Other obstacles must be placed beyond range 2 of [Environment].  The Maw: This Obstacle that cannot be removed from play, cannot be chosen for the effects of devices, and cannot be placed elsewhere after initial placement. After executing a maneuver, if a ship is at range 1 of [Environment], assign 3 tractor tokens to that ship. If a ship becomes tractored due to [Environment], instead of standard tractor effects, the controlling player must perform a barrel roll to the side corresponding to the bearing of the ship's executed [Bank Left], [Bank Right], [Turn Left], or [Turn Right] maneuver, or must perform a [Straight] boost if the ship's executed maneuver was straight or advanced. If a ship overlaps or moves through [Environment], that ship gains 1 strain token and 1 deplete token. During the Planning Phase, a ship at range 0 of [Environment] must set its fastest straight blue maneuver.",
         "components": [
             {
                 "type": "obstacle",
