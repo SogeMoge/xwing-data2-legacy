@@ -3,7 +3,7 @@
         "name": "Outpost",
         "xws": "outpost",
         "type": "wild",
-        "text": "Setup: After placing obstacles, each player places 1 wild token representing an Outpost ([Wild]) at range 0 of an obstacle. Obstacles may have 1 or fewer [Wild] at range 0. Combat: While a ship defends at range 1 of an obstacle with a h, that ship may convert 1 [Focus] to an {Evade] result.",
+        "text": "Setup: After placing obstacles, each player places 1 wild token representing an Outpost ([Wild]) at range 0 of an obstacle. Obstacles may have 1 or fewer [Wild] at range 0. Combat: While a ship defends at range 1 of an obstacle with a [Wild], that ship may convert 1 [Focus] to an {Evade] result.",
         "components": [
             {
                 "type": "token",
