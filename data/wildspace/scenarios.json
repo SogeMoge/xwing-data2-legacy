@@ -42,7 +42,7 @@
         "name": "Black Box",
         "xws": "blackbox",
         "type": "scenario",
-        "text": "Setup: After obstacles are placed, each player places 2 scenario tokens [Scenario] within range 2 of their player board edge and beyond range 3 of another [Scenario]. End Phase: During the End Phase, ships at range 1 of an opponent's [Scenario] may remove that [Scenario] unless there is an enemy ship at range 1 of that token. Scoring: After calculating scores, each player gains 30 points for each opponent's [Scenario] removed.",
+        "text": "Setup: After obstacles are placed, each player places 2 scenario tokens [Scenario] at range 2 of their board edge, beyond range 1 of neutral board edges and beyond range 3 of another [Scenario]. End Phase: During the End Phase, ships at range 1 of an opponent's [Scenario] may remove that [Scenario] unless there is an enemy ship at range 1 of that token. Scoring: After calculating scores, each player gains 30 points for each opponent's [Scenario] removed.",
         "components": [
             {
                 "type": "token",
@@ -149,7 +149,15 @@
                         },
                         {
                             "type": "attack",
-                            "arc": "Full Arc",
+                            "arc": "Full Front Arc",
+                            "value": 3,
+                            "minrange": 2,
+                            "maxrange": 3,
+                            "ordnance": true
+                        },
+                        {
+                            "type": "attack",
+                            "arc": "Full Back Arc",
                             "value": 3,
                             "minrange": 2,
                             "maxrange": 3,
@@ -339,7 +347,7 @@
         "name": "Hyperspace Telemetry",
         "xws": "hyperspacetelemetry",
         "type": "scenario",
-        "text": "Setup: Place a scenario token representing a Hyperspace Jump Point ([Scenario]) in the center of the play area. Give each player a Telemetry card. During the End Phase, if [Scenario] was scanned, the second player rolls 1 attack die and chooses an obstacle for [Scenario] relocation: • on a blank or a [Focus], [Scenario] must relocate to an obstacle at range 3 of its current position, • on a [Hit], [Scenario] must relocate to an obstacle at range 2 of its current position, • on a [Critical Hit], [Scenario] must relocate to an obstacle at range 1 of its current position. The first player chooses [Scenario] position at range 0 of the chosen obstacle. If [Scenario] cannot be relocated, [Scenario] stays in its place. Scoring: After calculating scores, each player gains 50 points for 5 [Charge] recovered.",
+        "text": "Setup: Place a scenario token representing a Hyperspace Jump Point ([Scenario]) in the center of the play area. Give each player a Telemetry card. During the End Phase, if [Scenario] was scanned, the second player rolls 1 attack die and chooses an obstacle for [Scenario] relocation: • on a blank or a [Focus], [Scenario] must relocate to an obstacle at range 1 of its current position, • on a [Hit], [Scenario] must relocate to an obstacle at range 2 of its current position, • on a [Critical Hit], [Scenario] must relocate to an obstacle at range 3 of its current position. The first player chooses [Scenario] position at range 0 of the chosen obstacle. If [Scenario] cannot be relocated, [Scenario] stays in its place. Scoring: At the end of the game, each player scores 10 points for each active [Charge] on the their telemetry card.",
         "components": [
             {
                 "type": "token",
