@@ -980,7 +980,7 @@
       {
         "title": "Contingency Protocol",
         "type": "Modification",
-        "ability": "After this ship is destroyed another friendly ship at range 0-3 with Contingency Protocol may perform an action, even while stressed.",
+        "ability": "After this ship is destroyed, another friendly ship with Contingency Protocol at range 0-3 may perform an action, even while stressed.",
         "slots": [
           "Modification"
         ],
@@ -989,7 +989,12 @@
       }
     ],
     "cost": {
-      "value": 2
+      "variable": "size",
+      "values": {
+        "Small": 1,
+        "Medium": 2,
+        "Large": 2
+      }
     },
     "restrictions": [
       {

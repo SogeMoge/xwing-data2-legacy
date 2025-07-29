@@ -1483,7 +1483,7 @@
     "xws": "noescape-rsl",
     "sides": [
       {
-        "ability": "While you perform a primary attack, if there are more friendly ships then other enemy ships at range 0-1 of the defender, you may reroll 1 of your blank results.",
+        "ability": "While you perform a primary attack, if there are more friendly ships than enemy ships at range 0-1 of the defender, you may reroll one of your blank results.",
         "title": "No Escape",
         "type": "Talent",
         "slots": [
@@ -1494,7 +1494,7 @@
       }
     ],
     "cost": {
-      "value": 3
+      "value": 1
     },
     "restrictions": [
       {
@@ -1504,6 +1504,11 @@
       },
       {
         "non-limited": true
+      },
+      {
+        "ships": [
+          "tielnfighter"
+        ]
       }
     ],
     "standard": false,
@@ -1512,7 +1517,7 @@
   },
   {
     "name": "Silent Hunter",
-    "limited": 1,
+    "limited": 0,
     "xws": "silenthunter-rsl",
     "sides": [
       {
@@ -1527,15 +1532,15 @@
       }
     ],
     "cost": {
-      "value": 3
+      "value": 2
     },
     "standard": false,
     "wildspace": true,
     "epic": false
-  },
+  },  
   {
     "name": "Parting Gift",
-    "limited": 1,
+    "limited": 0,
     "xws": "partinggift-rsl",
     "sides": [
       {
@@ -1550,7 +1555,7 @@
       }
     ],
     "cost": {
-      "value": 3
+      "value": 1
     },
     "standard": false,
     "wildspace": true,
@@ -1558,11 +1563,11 @@
   },
   {
     "name": "Formed Up",
-    "limited": 2,
+    "limited": 3,
     "xws": "formedup-rsl",
     "sides": [
       {
-        "ability": "At the end of the End Phase, if there are at least 2 other friendly TIE/ln Fighters or 1 other ship with Formed Up at range 0-1, you may remove 1 non-lock red token.",
+        "ability": "At the end of the End Phase, if there are at least 2 other friendly TIE/ln Fighters or another friendly ship with Formed Up at Range 0-1, you may remove 1 non-lock red token.",
         "title": "Formed Up",
         "type": "Talent",
         "slots": [
@@ -1573,14 +1578,9 @@
       }
     ],
     "cost": {
-      "value": 3
+      "value": 1
     },
     "restrictions": [
-      {
-        "factions": [
-          "galacticempire"
-        ]
-      },
       {
         "ships": [
           "tielnfighter"

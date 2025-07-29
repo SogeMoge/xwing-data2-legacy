@@ -518,19 +518,18 @@
   },
   {
     "name": "Seeker Missiles",
-    "limited": 0,
+    "limited": 2,
     "xws": "seekermissiles-rsl",
     "sides": [
       {
         "title": "Seeker Missiles",
         "type": "Missile",
-        "ability": "Attack ([Lock]): Spend 1 [Charge]. During the Modify Attack Dice step, you may spend up to 2 additional [Charge]. Change one [Focus] result to a [Hit] result for each [Charge] spent in this way.",
+        "ability": "Attack ([Lock]): Spend 1 [Charge]. If this attack misses and 1 or more [Hit]/[Crit] results were neutralized, the defender gains 1 strain token.",
         "slots": [
-          "Missile",
           "Missile"
         ],
         "charges": {
-          "value": 4,
+          "value": 2,
           "recovers": 0
         },
         "attack": {
@@ -545,7 +544,7 @@
       }
     ],
     "cost": {
-      "value": 7
+      "value": 5
     },
     "standard": false,
     "wildspace": true,

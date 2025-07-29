@@ -504,7 +504,7 @@
       {
         "title": "Fuel Injection Override",
         "type": "Illicit",
-        "ability": "While you perform a [Boost] or [Barrel Roll] action, you may spend 1 [Charge] to use a template of 1 speed higher instead.",
+        "ability": "Before you activate, you may spend 1 charge and gain 1 strain. If you do, until the end of the round, while you move, you must use a template of 1 speed higher, if able.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fuelinjectionoverride-rsl.png",
         "slots": [
           "Illicit"
@@ -517,15 +517,8 @@
       }
     ],
     "cost": {
-      "value": 3
+      "value": 2
     },
-    "restrictions": [
-      {
-        "sizes": [
-          "Small"
-        ]
-      }
-    ],
     "standard": false,
     "wildspace": true,
     "epic": false
