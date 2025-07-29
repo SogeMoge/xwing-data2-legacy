@@ -1544,7 +1544,7 @@
     "xws": "partinggift-rsl",
     "sides": [
       {
-        "ability": "When you are destroyed, before you are removed, you may spend 1 [Charge] on an equipped Device upgrade to drop or launch a bomb using the speed 1 [Straight], [Bank Left] or [Bank Right] otemplate.",
+        "ability": "After you are destroyed, before you are removed, you may drop 1 bomb. If you do, you must place it in the play area touching you instead.",
         "title": "Parting Gift",
         "type": "Talent",
         "slots": [
