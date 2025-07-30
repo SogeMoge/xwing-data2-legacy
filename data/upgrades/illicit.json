@@ -470,7 +470,7 @@
       {
         "title": "Chaff Particles",
         "type": "Illicit",
-        "ability": "While defending, at the end of the Neutralize Results step, you may spend 1 [Charge] and 1 [Focus] or [Evade] result to remove 1 red or orange token.",
+        "ability": "While you defend, at the end of the Neutralize Results step, you may spend 1 [Charge] and 1 [Focus] or [Evade] result to remove 1 red or orange token.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chaffparticles-rsl.png",
         "slots": [
           "Illicit"
@@ -504,7 +504,7 @@
       {
         "title": "Fuel Injection Override",
         "type": "Illicit",
-        "ability": "Before you activate, you may spend 1 charge and gain 1 strain. If you do, until the end of the round, while you move, you must use a template of 1 speed higher, if able.",
+        "ability": "Before you activate, you may spend 1 charge and gain 1 strain token. If you do, until the end of the round, while you move, you must use a template of 1 speed higher if able.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fuelinjectionoverride-rsl.png",
         "slots": [
           "Illicit"
