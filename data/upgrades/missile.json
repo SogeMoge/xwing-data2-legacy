@@ -524,7 +524,7 @@
       {
         "title": "Seeker Missiles",
         "type": "Missile",
-        "ability": "Attack ([Lock]): Spend 1 [Charge]. If this attack misses and 1 or more [Hit]/[Critical Hit] results were neutralized, the defender gains 1 strain token.",
+        "ability": "Attack ([Lock]): Spend 1 [Charge]. After this attack misses, if 1 or more [Hit]/[Critical Hit] results were neutralized, the defender gains 1 strain token.",
         "slots": [
           "Missile"
         ],
