@@ -980,7 +980,7 @@
       {
         "title": "Contingency Protocol",
         "type": "Modification",
-        "ability": "After this ship is destroyed, another friendly ship with Contingency Protocol at range 0-3 may perform an action, even while stressed.",
+        "ability": "After you are destroyed, you may choose a friendly ship with the Contingency Protocol upgrade at range 0-3. If you do, it may perform an action, even while stressed",
         "slots": [
           "Modification"
         ],
