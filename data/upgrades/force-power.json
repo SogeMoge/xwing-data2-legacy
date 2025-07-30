@@ -463,7 +463,7 @@
       {
         "title": "Roiling Anger",
         "type": "Force Power",
-        "ability": "At the start of the Engagement Phase, if you are in the [Front Arc] of an enemy ship, you may gain 1 strain to recover 1 [Force].",
+        "ability": "At the start of the Engagement Phase, if you are in the [Front Arc] of an enemy ship, you may gain 1 strain token to recover 1 [Force].",
         "slots": [
           "Force Power"
         ],
