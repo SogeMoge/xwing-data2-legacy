@@ -1483,7 +1483,7 @@
     "xws": "noescape-rsl",
     "sides": [
       {
-        "ability": "While you perform a primary attack, if there are more friendly ships than enemy ships at range 0-1 of the defender, you may reroll one of your blank results.",
+        "ability": "While you perform a primary attack, if there are more friendly ships than enemy ships at range 0-1 of the defender, you may reroll 1 of your blank results.",
         "title": "No Escape",
         "type": "Talent",
         "slots": [
@@ -1544,7 +1544,7 @@
     "xws": "partinggift-rsl",
     "sides": [
       {
-        "ability": "After you are destroyed, before you are removed, you may drop 1 bomb. If you do, you must place it in the play area touching you instead.",
+        "ability": "After you are destroyed, you may drop 1 bomb. If you do, you must place it in the play area touching you instead.",
         "title": "Parting Gift",
         "type": "Talent",
         "slots": [
@@ -1567,7 +1567,7 @@
     "xws": "formedup-rsl",
     "sides": [
       {
-        "ability": "At the end of the End Phase, if there are at least 2 other friendly TIE/ln Fighters or another friendly ship with Formed Up at Range 0-1, you may remove 1 non-lock red token.",
+        "ability": "At the end of the End Phase, if there are at least 2 other friendly TIE/ln Fighters at range 0-1 or another friendly ship with the Formed Up upgrade at range 0-1, you may remove 1 non-lock red token.",
         "title": "Formed Up",
         "type": "Talent",
         "slots": [
