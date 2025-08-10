@@ -1582,6 +1582,11 @@
     },
     "restrictions": [
       {
+        "factions": [
+          "galacticempire"
+        ]
+      },
+      {
         "ships": [
           "tielnfighter"
         ]
