@@ -1504,11 +1504,6 @@
       },
       {
         "non-limited": true
-      },
-      {
-        "ships": [
-          "tielnfighter"
-        ]
       }
     ],
     "standard": false,
