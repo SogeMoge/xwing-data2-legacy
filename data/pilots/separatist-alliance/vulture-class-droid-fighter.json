@@ -215,6 +215,59 @@
       "epic": true
     },
     {
+      "name": "OOM Uplink Prototype",
+      "xws": "oomuplinkprototype-wat1",
+      "initiative": 1,
+      "limited": 1,
+      "caption": "Second-in-Command",
+      "shipAbility": {
+        "name": "Networked Calculations",
+        "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
+      },
+      "ability": "While a friendly ship at range 0-1 resolves <b/>Networked Calculations</b>, it may treat friendly ships at range 0-1 of you as being at range 1.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs081.png",
+      "standard": false,
+      "wildspace": true,
+      "cost": 23,
+      "slots": [
+        "Missile",
+        "Modification",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081.png",
+      "keywords": [
+        "Droid"
+      ],
+      "epic": true
+    },
+    {
+      "name": "DFS-420",
+      "xws": "dfs420-wat1",
+      "initiative": 4,
+      "limited": 1,
+      "caption": "Marcan Deployer",
+      "shipAbility": {
+        "name": "Networked Calculations",
+        "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
+      },
+      "ability": "You can perform primary attacks at range 0. After you execute a red maneuver or perform a red action, if there is an enemy ship at range 0-1, you may remove 1 stress token.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs081.png",
+      "standard": false,
+      "wildspace": true,
+      "cost": 25,
+      "slots": [
+        "Talent",
+        "Missile",
+        "Modification",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081.png",
+      "keywords": [
+        "Droid"
+      ],
+      "epic": true
+    },
+    {
       "name": "DFS-081",
       "caption": "Siege of Coruscant",
       "initiative": 3,

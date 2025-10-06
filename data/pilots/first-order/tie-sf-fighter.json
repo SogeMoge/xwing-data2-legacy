@@ -261,6 +261,35 @@
         "TIE"
       ],
       "epic": true
+    },
+    {
+      "name": "“Strife”",
+      "caption": "Committed Combatant",
+      "initiative": 3,
+      "limited": 1,
+      "cost": 34,
+      "xws": "strife-wat1",
+      "ability": "After an enemy ship in your [Single Turret Arc] defends, if you are not strained, you may gain 1 strain token to acquire a lock on that ship.",
+      "shipAbility": {
+        "name": "Heavy Weapon Turret",
+        "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc]."
+      },
+      "slots": [
+        "Talent",
+        "Sensor",
+        "Missile",
+        "Modification",
+        "Gunner",
+        "Tech"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/backdraft.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/backdraft.png",
+      "standard": false,
+      "wildspace": true,
+      "keywords": [
+        "TIE"
+      ],
+      "epic": true
     }
   ]
 }

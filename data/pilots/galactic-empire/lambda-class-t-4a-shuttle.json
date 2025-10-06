@@ -135,6 +135,32 @@
       "epic": true
     },
     {
+      "name": "Captain Yorr",
+      "caption": "ST-321 Shuttle Pilot",
+      "initiative": 2,
+      "limited": 1,
+      "cost": 47,
+      "xws": "captainyorr-wat1",
+      "ability": "Before a friendly ship at range 0-3 would gain a non-lock red or orange token, if you have no tokens of that type, you may spend 2 [Charge] to gain that token instead.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/coloneljendon.png",
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
+      "slots": [
+        "Sensor",
+        "Cannon",
+        "Crew",
+        "Crew",
+        "Modification",
+        "Title"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon.png",
+      "standard": false,
+      "wildspace": true,
+      "epic": true
+    },
+    {
       "name": "Omicron Group Pilot",
       "initiative": 1,
       "limited": 0,

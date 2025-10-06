@@ -190,6 +190,33 @@
         "Droid"
       ],
       "epic": true
+    },
+    {
+      "name": "Torra Doza",
+      "xws": "torradoza-wat1",
+      "initiative": 3,
+      "limited": 1,
+      "shipAbility": {
+        "name": "Explosion with Wings",
+        "text": "Setup: You are dealt 1 facedown damage card. After you perform a [SLAM] action, you may expose 1 damage card to remove 1 disarm token."
+      },
+      "standard": false,
+      "wildspace": true,
+      "slots": [
+        "Talent",
+        "Missile",
+        "Astromech",
+        "Illicit",
+        "Modification",
+        "Modification",
+        "Title"
+      ],
+      "cost": 27,
+      "ability": "After a friendly ship at range 0-3 exposes a damage card, you may gain 1 deplete or stress token to repair that card without resolving its effects. After you remove 1 or more red tokens, remove 1 additional token of the same type.",
+      "caption": "Daughter of the Resistance",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jarekyeager.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jarekyeager.png",
+      "epic": true
     }
   ]
 }

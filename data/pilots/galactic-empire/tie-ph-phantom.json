@@ -119,6 +119,37 @@
       "epic": true
     },
     {
+      "name": "Captain Saxton",
+      "caption": "Unpredictable Menace",
+      "initiative": 4,
+      "limited": 1,
+      "cost": 43,
+      "xws": "captainsaxton-wat1",
+      "ability": "While a friendly ship at range 0-2 decloaks, you may spend 2 [Charge] to have that ship use a template of speed 1 higher or lower.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper.png",
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
+      "shipAbility": {
+        "name": "Stygium Array",
+        "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
+      },
+      "slots": [
+        "Talent",
+        "Sensor",
+        "Modification",
+        "Gunner"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/whisper.png",
+      "standard": false,
+      "wildspace": true,
+      "keywords": [
+        "TIE"
+      ],
+      "epic": true
+    },
+    {
       "name": "Imdaar Test Pilot",
       "initiative": 3,
       "limited": 0,

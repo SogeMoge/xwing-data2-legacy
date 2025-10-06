@@ -392,6 +392,27 @@
         "TIE"
       ],
       "epic": true
+    },
+    {
+      "name": "FN-2187",
+      "caption": "“Finn”",
+      "initiative": 1,
+      "limited": 1,
+      "cost": 30,
+      "xws": "fn2187-wat1",
+      "ability": "At the start of the Engagement Phase, you may gain 1 strain token to choose an enemy ship in your [front arc]. If you do, that ship gains 1 deplete token.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/commandermalarus.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/commandermalarus.png",
+      "slots": [
+        "Modification",
+        "Tech"
+      ],
+      "standard": false,
+      "wildspace": true,
+      "keywords": [
+        "TIE"
+      ],
+      "epic": true
     }
   ]
 }

@@ -197,6 +197,30 @@
       "standard": true,
       "wildspace": true,
       "epic": true
+    },
+    {
+      "name": "Hallio Bas",
+      "caption": "Skakoan Male",
+      "initiative": 5,
+      "limited": 1,
+      "xws": "halliobas-wat1",
+      "ability": "Before you defend or perform an attack, if there are no other friendly ships at range 0-2, you may spend 1 [charge] to remove 1 red token or spend 2 [charge] during the Modify Dice step to reroll all your dice.",
+      "charges": {
+        "value": 2,
+        "recovers": 1
+      },
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wattambor.png",
+      "standard": false,
+      "wildspace": true,
+      "cost": 39,
+      "slots": [
+        "Talent",
+        "Modification",
+        "Title",
+        "Tactical Relay"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wattambor.png",
+      "epic": true
     }
   ]
 }

@@ -258,6 +258,33 @@
       "epic": true
     },
     {
+      "name": "Nera Dantels",
+      "caption": "Blue Dagger",
+      "initiative": 3,
+      "limited": 1,
+      "cost": 44,
+      "xws": "neradantels-wat1",
+      "ability": "Gain a [Single Turret Arc] indicator. You must treat the [front arc] requirement of your equipped [torpedo] upgrades as [single turret arc]. After you gain a stress token, you may rotate your [single turret arc] indicator.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm.png",
+      "slots": [
+        "Talent",
+        "Sensor",
+        "Cannon",
+        "Cannon",
+        "Torpedo",
+        "Modification",
+        "Title",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm.png",
+      "standard": false,
+      "wildspace": true,
+      "keywords": [
+        "B-wing"
+      ],
+      "epic": true
+    },
+    {
       "name": "Adon Fox",
       "caption": "Battle Over Endor",
       "xws": "adonfox-battleoverendor",
