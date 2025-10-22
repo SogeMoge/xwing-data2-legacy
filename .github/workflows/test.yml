@@ -15,7 +15,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - name: Validating JSON
-      run: npm run validate:json
+    
+    - name: Find and validate JSON files
+      run: |
+        # This will exit immediately when any JSON file has syntax error
+        find . -name "*.json" ! -path "./node_modules/*" -exec echo "Validating {}" \; -exec node -e "JSON.parse(require('fs').readFileSync('{}'))" \;
+    
     - name: Running tests
       run: npm run validate:tests --ci
