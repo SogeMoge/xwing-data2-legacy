@@ -392,6 +392,27 @@
         "TIE"
       ],
       "epic": true
+    },
+    {
+      "name": "FN-2187",
+      "caption": "Eight-Seven",
+      "initiative": 1,
+      "limited": 1,
+      "cost": 30,
+      "xws": "fn2187-wat1",
+      "ability": "At the start of the Engagement Phase, you may gain 1 strain token to choose an enemy ship in your [Front Arc]. If you do, that ship gains 1 deplete token.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/fn2187-wat1.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fn2187-wat1.png",
+      "slots": [
+        "Modification",
+        "Tech"
+      ],
+      "standard": false,
+      "wildspace": true,
+      "keywords": [
+        "TIE"
+      ],
+      "epic": true
     }
   ]
 }
