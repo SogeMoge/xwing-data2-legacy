@@ -163,6 +163,26 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/finn.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/finn.png",
       "epic": true
+    },
+    {
+      "name": "DJ",
+      "xws": "dj-wat1",
+      "initiative": 2,
+      "limited": 1,
+      "caption": "Don't Join",
+      "standard": false,
+      "wildspace": true,
+      "cost": 26,
+      "slots": [
+        "Illicit",
+        "Tech",
+        "Crew",
+        "Modification"
+      ],
+      "ability": "At the start of the Engagement Phase, you may spend 1 green token to perform a [Jam] action, even while stressed.",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dj-wat1.png",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dj-wat1.png",
+      "epic": true
     }
   ],
   "icon": "https://infinitearenas.com/xw2/images/shipicons/resistance/I_Resistance_Transport_Cockpit_Pod.png"
