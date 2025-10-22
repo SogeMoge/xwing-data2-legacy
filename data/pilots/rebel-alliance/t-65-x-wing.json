@@ -1112,6 +1112,30 @@
         "X-wing"
       ],
       "epic": true
-    }
+    },
+    {
+      "name": "Antoc Merrick",
+      "caption": "Blue Leader",
+      "initiative": 4,
+      "limited": 1,
+      "cost": 47,
+      "xws": "antocmerrick-wat1",
+      "ability": "After you perform a [Boost] or [Barrel Roll] action, you may choose another friendly ship at range 0-3. If you do, that ship may perform the same action on their action bar.",
+      "slots": [
+        "Talent",
+        "Torpedo",
+        "Astromech",
+        "Modification",
+        "Configuration"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/antocmerrick-wat1.png",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/antocmerrick-wat1.png",
+      "standard": false,
+      "wildspace": true,
+      "keywords": [
+        "X-wing"
+      ],
+      "epic": true
+    },
   ]
 }
