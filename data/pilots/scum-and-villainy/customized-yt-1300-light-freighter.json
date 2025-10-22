@@ -191,6 +191,34 @@
         "YT-1300"
       ],
       "epic": true
+    },
+    {
+      "name": "Rio Durant",
+      "caption": "Four Armed Bandit",
+      "initiative": 3,
+      "limited": 1,
+      "cost": 42,
+      "xws": "riodurant-wat1",
+      "ability": "After you perform an attack, you may rotate your [Single Turret Arc] indicator.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/riodurant-wat1.png",
+      "slots": [
+        "Talent",
+        "Missile",
+        "Crew",
+        "Crew",
+        "Illicit",
+        "Modification",
+        "Title",
+        "Gunner"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/riodurant-wat1.png",
+      "standard": false,
+      "wildspace": true,
+      "keywords": [
+        "Freighter",
+        "YT-1300"
+      ],
+      "epic": true
     }
   ]
 }
