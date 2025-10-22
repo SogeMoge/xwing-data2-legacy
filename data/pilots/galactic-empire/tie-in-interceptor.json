@@ -1060,6 +1060,33 @@
       "standard": true,
       "wildspace": true,
       "epic": true
+    },
+        {
+      "name": "Carnor Jax",
+      "caption": "Emperor's Revenge",
+      "initiative": 5,
+      "limited": 1,
+      "cost": 49,
+      "xws": "carnorjax-wat1",
+      "ability": "At the start of the Engagement Phase, you may choose 1 ship in your [Front Arc] at range 0-1 . If you do so, that ship gains 1 jam token.",
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/carnorjax-wat1.png",
+      "shipAbility": {
+        "name": "Autothrusters",
+        "text": "After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action."
+      },
+      "slots": [
+        "Talent",
+        "Modification",
+        "Modification",
+        "Configuration"
+      ],
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/carnorjax-wat1.png",
+      "standard": false,
+      "wildspace": true,
+      "keywords": [
+        "TIE"
+      ],
+      "epic": true
     }
   ]
 }
