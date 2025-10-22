@@ -1,5 +1,12 @@
 [
   {
+    "name": "Liberated",
+    "limited": 1,
+    "ability": "While a friendly Tarfful at range 0-2 defends, after the Neutralize Results step, if there are 2 or more [Hit]/[Critical Hit] results, you may suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result. After you are destroyed, you must choose another friendly Wookiee or non-limited ship and assign this condition to it, if able. Tarfful cannot be assigned this condition.",
+    "xws": "liberated-wat1",
+    "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/Condition/liberated-wat1.png"
+  },
+  {
     "name": "Hunted",
     "limited": 1,
     "ability": "After you are destroyed, you must choose another friendly ship and assign this condition to it, if able.",
