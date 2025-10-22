@@ -245,6 +245,34 @@
       "standard": true,
       "wildspace": true,
       "epic": true
+    },
+        {
+      "name": "Enric Pryde",
+      "caption": "Steadfast",
+      "initiative": 2,
+      "limited": 1,
+      "cost": 62,
+      "xws": "enricpryde-wat1",
+      "ability": "After you perform an attack, you may choose a friendly ship at range 0-3. If you do, you and the chosen ship may perform a bonus attack. Then, the chosen ship is destroyed.",
+      "shipAbility": {
+        "name": "Linked Battery",
+        "text": "While you perform a [Cannon] attack, roll 1 additional die."
+      },
+      "slots": [
+        "Sensor",
+        "Cannon",
+        "Crew",
+        "Crew",
+        "Crew",
+        "Modification",
+        "Tech",
+        "Tech"
+      ],
+      "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/enricpryde-wat1",
+      "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/enricpryde-wat1",
+      "standard": false,
+      "wildspace": true,
+      "epic": true
     }
   ]
 }
