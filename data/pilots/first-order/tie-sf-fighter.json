@@ -267,9 +267,9 @@
       "caption": "Committed Combatant",
       "initiative": 3,
       "limited": 1,
-      "cost": 34,
+      "cost": 200,
       "xws": "strife-wat1",
-      "ability": "After an enemy ship in your [Single Turret Arc] defends, if you are not strained, you may gain 1 strain token to acquire a lock on that ship.",
+      "ability": "Wat?!",
       "shipAbility": {
         "name": "Heavy Weapon Turret",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc]."

@@ -251,9 +251,9 @@
       "caption": "Steadfast",
       "initiative": 2,
       "limited": 1,
-      "cost": 62,
+      "cost": 200,
       "xws": "enricpryde-wat1",
-      "ability": "After you perform an attack, you may choose a friendly ship at range 0-3. If you do, you and the chosen ship may perform a bonus attack. Then, the chosen ship is destroyed.",
+      "ability": "Wat?!",
       "shipAbility": {
         "name": "Linked Battery",
         "text": "While you perform a [Cannon] attack, roll 1 additional die."
