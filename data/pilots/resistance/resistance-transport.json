@@ -193,7 +193,7 @@
       "caption": "Orbak Rider",
       "standard": false,
       "wildspace": true,
-      "cost": 42,
+      "cost": 200,
       "slots": [
         "Talent",
         "Tech",
@@ -205,7 +205,7 @@
         "Astromech",
         "Modification"
       ],
-      "ability": "After you perform an action added to your action bar by a [Crew] upgrade, you may perform a [Reinforce] action.",
+      "ability": "Wat?!",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jannah-wat1.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jannah-wat1.png",
       "epic": true
