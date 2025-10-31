@@ -459,11 +459,11 @@
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
-      "ability": "While a friendly ship at range 0-1 resolves Networked Calculations, it may treat friendly ships at range 0-1 of you as being at range 1.",
+      "ability": "Wat?!",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/00muplinkprototype-wat1.png",
       "standard": false,
       "wildspace": true,
-      "cost": 23,
+      "cost": 200,
       "slots": [
         "Missile",
         "Modification",
@@ -485,11 +485,11 @@
         "name": "Networked Calculations",
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
-      "ability": "You can perform primary attacks at range 0. After you execute a red maneuver or perform a red action, if there is an enemy ship at range 0-1, you may remove 1 stress token.",
+      "ability": "Wat?!",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs420-wat1.png",
       "standard": false,
       "wildspace": true,
-      "cost": 25,
+      "cost": 200,
       "slots": [
         "Talent",
         "Missile",

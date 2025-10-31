@@ -204,7 +204,7 @@
       "initiative": 5,
       "limited": 1,
       "xws": "halliobas-wat1",
-      "ability": "While you defend or perform an attack, before attack dice are rolled, if there are no other friendly ships at range 0-1, you may spend 1 [Charge] to remove 1 red or orange token.",
+      "ability": "Wat?!",
       "charges": {
         "value": 2,
         "recovers": 1
@@ -212,7 +212,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/halliobas-wat1.png",
       "standard": false,
       "wildspace": true,
-      "cost": 39,
+      "cost": 200,
       "slots": [
         "Talent",
         "Modification",
