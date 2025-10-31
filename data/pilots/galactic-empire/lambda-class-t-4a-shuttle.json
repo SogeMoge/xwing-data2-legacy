@@ -160,9 +160,9 @@
       "caption": "ST-321 Shuttle Pilot",
       "initiative": 2,
       "limited": 1,
-      "cost": 47,
+      "cost": 200,
       "xws": "captainyorr-wat1",
-      "ability": "Before a friendly ship at range 0-3 would gain a non-lock red or orange token, if you have no tokens of that type, you may spend 2 [Charge] to gain that token instead.",
+      "ability": "Wat?!",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainyorr-wat1.png",
       "charges": {
         "value": 2,

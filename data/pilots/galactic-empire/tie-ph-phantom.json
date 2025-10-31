@@ -174,9 +174,9 @@
       "caption": "Unpredictable Menace",
       "initiative": 4,
       "limited": 1,
-      "cost": 43,
+      "cost": 200,
       "xws": "captainsaxton-wat1",
-      "ability": "While a friendly ship at range 0-2 decloaks, you may spend 2 [Charge]. If you do, that ship may use a template of speed 1 higher or lower.",
+      "ability": "Wat?!",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainsaxton-wat1.png",
       "charges": {
         "value": 2,
