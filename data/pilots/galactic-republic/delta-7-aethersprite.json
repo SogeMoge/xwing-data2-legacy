@@ -424,7 +424,7 @@
       "initiative": 3,
       "limited": 1,
       "xws": "depabillaba-wat1",
-      "ability": "While a friendly ship in your [Full Front Arc] defends or performs an attack, if that ship has more inactive [Force] than active [Force], it may spend your [Force] as if that ship has them.",
+      "ability": "Wat?!",
       "shipAbility": {
         "name": "Fine-tuned Controls",
         "text": "After you fully execute a maneuver, you may spend 1 [Force] to perform a [Boost] or [Barrel Roll] action."
@@ -439,7 +439,7 @@
       },
       "standard": false,
       "wildspace": true,
-      "cost": 38,
+      "cost": 200,
       "slots": [
         "Astromech",
         "Modification",
