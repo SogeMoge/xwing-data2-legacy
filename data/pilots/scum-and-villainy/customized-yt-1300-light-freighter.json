@@ -197,9 +197,9 @@
       "caption": "Four Armed Bandit",
       "initiative": 3,
       "limited": 1,
-      "cost": 42,
+      "cost": 200,
       "xws": "riodurant-wat1",
-      "ability": "After you perform an attack, you may rotate your [Single Turret Arc] indicator.",
+      "ability": "Wat?!",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/riodurant-wat1.png",
       "slots": [
         "Talent",
