@@ -1118,9 +1118,9 @@
       "caption": "Blue Leader",
       "initiative": 4,
       "limited": 1,
-      "cost": 47,
+      "cost": 200,
       "xws": "antocmerrick-wat1",
-      "ability": "After you perform a [Boost] or [Barrel Roll] action, you may choose another friendly ship at range 0-3. If you do, that ship may perform the same action on their action bar.",
+      "ability": "Wat?!",
       "slots": [
         "Talent",
         "Torpedo",
@@ -1136,6 +1136,6 @@
         "X-wing"
       ],
       "epic": true
-    }
+    },
   ]
 }

@@ -689,9 +689,9 @@
       "caption": "Blue Dagger",
       "initiative": 3,
       "limited": 1,
-      "cost": 44,
+      "cost": 200,
       "xws": "neradantels-wat1",
-      "ability": "Gain a [Single Turret Arc] indicator. You must treat the [Front Arc] requirement of your equipped [Torpedo] upgrades as [Single Turret Arc]. After you gain a stress token, you may rotate your [Single Turret Arc] indicator.",
+      "ability": "Wat?!",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/neradantels-wat1.png",
       "slots": [
         "Talent",
