@@ -258,7 +258,7 @@
       "caption": "Echo Five",
       "standard": false,
       "wildspace": true,
-      "cost": 45,
+      "cost": 46,
       "slots": [
         "Talent",
         "Illicit",
@@ -283,7 +283,7 @@
       "caption": "Bravo Seven",
       "standard": false,
       "wildspace": true,
-      "cost": 37,
+      "cost": 38,
       "slots": [
         "Talent",
         "Talent",

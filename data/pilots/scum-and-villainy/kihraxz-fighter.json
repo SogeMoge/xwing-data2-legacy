@@ -198,7 +198,7 @@
       "caption": "Vaksai Pilot",
       "initiative": 4,
       "limited": 2,
-      "cost": 42,
+      "cost": 40,
       "xws": "blacksunbodyguard-wat1",
       "ability": "Setup: Lose 2 [Charge]. After you suffer damage, recover 1 [Charge]. Before you engage, you may spend 2 [Charge] to recover 1 [Charge] on 1 of your equipped upgrades.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunbodyguard-wat1.png",

@@ -212,7 +212,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/halliobas-wat1.png",
       "standard": false,
       "wildspace": true,
-      "cost": 39,
+      "cost": 43,
       "slots": [
         "Talent",
         "Modification",
