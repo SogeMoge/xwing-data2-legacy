@@ -140,7 +140,7 @@
       "standard": true,
       "wildspace": true,
       "ability": "While you defend, if there are no other friendly ships at range 0-2, you may change 1 of your blank results to a [Focus] result.",
-      "cost": 68,
+      "cost": 66,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bobafett-firesprayclasspatrolcraft.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bobafett-firesprayclasspatrolcraft.png",
       "slots": [

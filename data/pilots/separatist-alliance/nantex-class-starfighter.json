@@ -115,7 +115,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/berwerkret.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/berwerkret.png",
       "ability": "After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.",
-      "cost": 36,
+      "cost": 35,
       "slots": [
         "Talent",
         "Talent"
