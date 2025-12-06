@@ -70,7 +70,7 @@
       "xws": "anakinskywalker-nabooroyaln1starfighter",
       "standard": true,
       "wildspace": true,
-      "cost": 41,
+      "cost": 40,
       "slots": [
         "Talent",
         "Sensor",
@@ -109,7 +109,7 @@
       "caption": "Bravo Leader",
       "standard": true,
       "wildspace": true,
-      "cost": 44,
+      "cost": 43,
       "slots": [
         "Talent",
         "Talent",
@@ -159,7 +159,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 30,
+      "cost": 29,
       "slots": [
         "Talent",
         "Talent",
@@ -210,7 +210,7 @@
         "decoyed"
       ],
       "ability": "Setup: After placing forces, assign the Decoyed condition to 1 friendly ship other than Naboo Handmaiden.",
-      "cost": 31,
+      "cost": 30,
       "slots": [
         "Talent",
         "Sensor",
@@ -233,7 +233,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 31,
+      "cost": 30,
       "slots": [
         "Talent",
         "Talent",
