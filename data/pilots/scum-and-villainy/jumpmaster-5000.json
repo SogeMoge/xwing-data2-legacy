@@ -94,7 +94,7 @@
       "caption": "Vengeful Corellian",
       "initiative": 6,
       "limited": 1,
-      "cost": 54,
+      "cost": 53,
       "xws": "dengar",
       "ability": "After you defend, if the attacker is in your [Front Arc], you may spend 1 [Charge] to perform a bonus attack against the attacker.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dengar.png",
@@ -131,7 +131,7 @@
       "caption": "Graceful Aruzan",
       "initiative": 3,
       "limited": 1,
-      "cost": 45,
+      "cost": 43,
       "xws": "manaroo",
       "ability": "At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, transfer all green tokens assigned to you to that ship.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/manaroo.png",
@@ -199,7 +199,7 @@
         "Title"
       ],
       "ability": "After you become the defender, if the attacker is not in your [Single Turret Arc], you must rotate your [Single Turret Arc] indicator to a standard arc the attacker is in.",
-      "cost": 39,
+      "cost": 37,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nomlumb.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nomlumb.png",
       "keywords": [
