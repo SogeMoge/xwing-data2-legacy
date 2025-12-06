@@ -164,7 +164,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 45,
+      "cost": 44,
       "slots": [
         "Talent",
         "Talent",
@@ -193,7 +193,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 45,
+      "cost": 43,
       "slots": [
         "Talent",
         "Talent",
@@ -223,7 +223,7 @@
       "text": "Commanded by Supreme Leader Kylo Ren, the 709th Legion fights without mercy or remorse to crush the Resistance and bring the galaxy under the First Order's dominion.",
       "standard": true,
       "wildspace": true,
-      "cost": 44,
+      "cost": 43,
       "slots": [
         "Talent",
         "Talent",

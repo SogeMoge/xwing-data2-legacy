@@ -66,7 +66,7 @@
       "caption": "Devious Provocateur",
       "xws": "agentterex",
       "initiative": 3,
-      "cost": 34,
+      "cost": 32,
       "slots": [
         "Talent",
         "Crew",
@@ -112,7 +112,7 @@
       "name": "First Order Courier",
       "xws": "firstordercourier",
       "initiative": 2,
-      "cost": 32,
+      "cost": 30,
       "slots": [
         "Crew",
         "Crew",
@@ -137,7 +137,7 @@
       "ability": "While you or a friendly small ship at range 0-2 performs a primary attack against a damaged defender, if the attacker rolled 2 or fewer attack dice, it may gain 1 strain token to roll 1 additional attack die.",
       "standard": true,
       "wildspace": true,
-      "cost": 40,
+      "cost": 38,
       "slots": [
         "Talent",
         "Crew",
