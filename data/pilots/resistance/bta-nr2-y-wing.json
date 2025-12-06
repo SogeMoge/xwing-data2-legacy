@@ -168,7 +168,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 32,
+      "cost": 31,
       "slots": [
         "Tech",
         "Turret",
@@ -260,7 +260,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 31,
+      "cost": 30,
       "slots": [
         "Tech",
         "Turret",
@@ -290,7 +290,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 31,
+      "cost": 30,
       "slots": [
         "Talent",
         "Tech",
