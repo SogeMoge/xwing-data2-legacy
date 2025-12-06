@@ -128,7 +128,7 @@
       "caption": "Raised by the Rebellion",
       "initiative": 3,
       "limited": 1,
-      "cost": 50,
+      "cost": 49,
       "xws": "cassianandor",
       "ability": "At the start of the Activation Phase, you may choose 1 friendly ship at range 1-3. If you do, that ship removes 1 stress token.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cassianandor.png",
