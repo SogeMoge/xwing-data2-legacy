@@ -384,7 +384,7 @@
       "caption": "Black Leader",
       "initiative": 6,
       "limited": 1,
-      "cost": 6,
+      "cost": 75,
       "xws": "darthvader-swz105",
       "ability": "After you perform an action, you may spend 1 [Force] to perform an action.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthvader-swz105.png",
@@ -438,7 +438,7 @@
       "caption": "Servant of the Empire",
       "initiative": 5,
       "limited": 1,
-      "cost": 5,
+      "cost": 53,
       "standardLoadout": [
         "elusive",
         "outmaneuver",
