@@ -214,7 +214,7 @@
       "caption": "Enigmatic Gunslinger",
       "initiative": 4,
       "limited": 1,
-      "cost": 41,
+      "cost": 42,
       "xws": "kullbeesperado",
       "ability": "After you perform a [Barrel Roll] or [Boost] action, you may flip your equipped [Configuration] upgrade card.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kullbeesperado.png",
