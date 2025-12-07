@@ -69,7 +69,7 @@
       "caption": "Omega Leader",
       "initiative": 6,
       "limited": 1,
-      "cost": 35,
+      "cost": 34,
       "xws": "midnight",
       "ability": "While you defend or perform an attack, if you have a lock on the enemy ship, that ship's dice cannot be modified.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/midnight.png",
