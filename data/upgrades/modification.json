@@ -1016,5 +1016,51 @@
     "standard": false,
     "wildspace": true,
     "epic": false
+  },
+  {
+    "name": "Stygium Reserve",
+    "limited": 0,
+    "xws": "stygiumreserve-tiephphantom",
+    "sides": [
+      {
+        "title": "Stygium Reserve",
+        "type": "Modification",
+        "charges": {
+          "value": 1,
+          "recovers": 0
+        },
+        "ability": "After you fully execute a maneuver, you may spend 1 [Charge] to perform a [Boost] action, even while stressed.",
+        "slots": [
+          "Modification"
+        ]
+      }
+    ],
+    "standard": false,
+    "wildspace": false,
+    "epic": false,
+    "standardLoadoutOnly": true
+  },
+  {
+    "name": "Manual Ailerons",
+    "limited": 0,
+    "xws": "manualailerons-tiephphantom",
+    "sides": [
+      {
+        "title": "Manual Ailerons",
+        "type": "Modification",
+        "charges": {
+          "value": 2,
+          "recovers": 0
+        },
+        "ability": "When you decloak, you may spend 1 [Charge] to use the [2 [Bank Left]] or [2 [Bank Right]] template instead of the [2 [Straight]] template.",
+        "slots": [
+          "Modification"
+        ]
+      }
+    ],
+    "standard": false,
+    "wildspace": false,
+    "epic": false,
+    "standardLoadoutOnly": true
   }
 ]

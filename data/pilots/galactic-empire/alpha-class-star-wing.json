@@ -196,7 +196,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkarsabi-pnp.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkarsabi.png",
       "standard": false,
-      "extended": false,
+      "wildspace": false,
       "epic": false
     },
     {
@@ -252,7 +252,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkarsabi-pnp-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkarsabi.png",
       "standard": true,
-      "extended": true,
+      "wildspace": true,
       "epic": true
     },
     {
@@ -305,7 +305,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvynder-pnp.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvynder.png",
       "standard": false,
-      "extended": false,
+      "wildspace": false,
       "epic": false
     },
     {
@@ -361,7 +361,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvynder-pnp-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvynder.png",
       "standard": true,
-      "extended": true,
+      "wildspace": true,
       "epic": true
     }
   ]
