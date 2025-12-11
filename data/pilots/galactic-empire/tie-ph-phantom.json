@@ -172,7 +172,7 @@
     {
       "name": "Captain Saxton",
       "caption": "Unpredictable Menace",
-      "initiative": 3,
+      "initiative": 4,
       "limited": 1,
       "cost": 45,
       "xws": "captainsaxton-wat1",

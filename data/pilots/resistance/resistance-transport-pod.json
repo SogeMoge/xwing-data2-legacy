@@ -179,7 +179,7 @@
         "Crew",
         "Modification"
       ],
-      "ability": "After you perform a [Jam] action, you may gain 1 cloak token.",
+      "ability": "At the start of the Engagement Phase, you may spend 1 green token to perform a [Jam] action, even while stressed.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dj-wat1.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dj-wat1.png",
       "epic": true
