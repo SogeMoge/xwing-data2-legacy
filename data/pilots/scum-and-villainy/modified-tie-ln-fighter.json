@@ -19,9 +19,7 @@
     "4FW",
     "5FR"
   ],
-  "dialCodes": [
-    "Tmg"
-  ],
+  "dialCodes": ["Tmg"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -68,15 +66,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahhav.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ahhav.png",
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -97,15 +90,10 @@
         "name": "Notched Stabilizers",
         "text": "While you move, you ignore asteroids."
       },
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -122,15 +110,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/foremanproach.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/foremanproach.png",
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -146,15 +129,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/miningguildsurveyor.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/miningguildsurveyor.png",
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -175,14 +153,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/overseeryushyn.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/overseeryushyn.png",
-      "slots": [
-        "Modification"
-      ],
+      "slots": ["Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -198,14 +172,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/miningguildsentry.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/miningguildsentry.png",
-      "slots": [
-        "Modification"
-      ],
+      "slots": ["Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -222,14 +192,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lapin.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lapin.png",
-      "slots": [
-        "Modification"
-      ],
+      "slots": ["Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ]

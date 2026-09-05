@@ -20,9 +20,7 @@
     "3KR",
     "4FR"
   ],
-  "dialCodes": [
-    "ShS"
-  ],
+  "dialCodes": ["ShS"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -73,19 +71,11 @@
         "name": "Comms Shuttle",
         "text": "While you are docked, your carrier ship gains [Coordinate]. Before your carrier ship activates, it may perform a [Coordinate] action."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Astromech",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Crew", "Astromech", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios-sheathipedeclassshuttle.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Spectre"
-      ],
+      "keywords": ["Spectre"],
       "epic": true
     },
     {
@@ -111,20 +101,11 @@
         "name": "Comms Shuttle",
         "text": "While you are docked, your carrier ship gains [Coordinate]. Before your carrier ship activates, it may perform a [Coordinate] action."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Astromech",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Crew", "Astromech", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ap5.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid",
-        "Spectre"
-      ],
+      "keywords": ["Droid", "Spectre"],
       "epic": true
     },
     {
@@ -139,28 +120,17 @@
       "force": {
         "value": 1,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "shipAbility": {
         "name": "Comms Shuttle",
         "text": "While you are docked, your carrier ship gains [Coordinate]. Before your carrier ship activates, it may perform a [Coordinate] action."
       },
-      "slots": [
-        "Force Power",
-        "Crew",
-        "Astromech",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Force Power", "Crew", "Astromech", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger-sheathipedeclassshuttle.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Light Side",
-        "Spectre"
-      ],
+      "keywords": ["Light Side", "Spectre"],
       "epic": true
     },
     {
@@ -176,20 +146,11 @@
         "name": "Comms Shuttle",
         "text": "While you are docked, your carrier ship gains [Coordinate]. Before your carrier ship activates, it may perform a [Coordinate] action."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Astromech",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Crew", "Astromech", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fennrau-sheathipedeclassshuttle.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian",
-        "Spectre"
-      ],
+      "keywords": ["Mandalorian", "Spectre"],
       "epic": true
     }
   ]

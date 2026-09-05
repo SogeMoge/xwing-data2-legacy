@@ -19,9 +19,7 @@
     "3YR",
     "4KR"
   ],
-  "dialCodes": [
-    "TPu"
-  ],
+  "dialCodes": ["TPu"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -92,9 +90,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathrain.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -119,9 +115,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redline.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -145,9 +139,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cutlasssquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ]

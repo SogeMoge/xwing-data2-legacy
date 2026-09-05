@@ -8,9 +8,7 @@
         "title": "Advanced Sensors",
         "type": "Sensor",
         "ability": "After you reveal your dial, you may perform 1 action. If you do, you cannot perform another action during your activation.",
-        "slots": [
-          "Sensor"
-        ],
+        "slots": ["Sensor"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/advancedsensors.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/advancedsensors.png"
       }
@@ -37,9 +35,7 @@
         "title": "Collision Detector",
         "type": "Sensor",
         "ability": "While you boost or barrel roll, you can move through and overlap obstacles. After you move through or overlap an obstacle, you may spend 1 [Charge] to ignore its effects until the end of the round.",
-        "slots": [
-          "Sensor"
-        ],
+        "slots": ["Sensor"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -64,9 +60,7 @@
         "title": "Fire-Control System",
         "type": "Sensor",
         "ability": "While you perform an attack, if you have a lock on the defender, you may reroll 1 attack die. If you do, you cannot spend your lock during this attack.",
-        "slots": [
-          "Sensor"
-        ],
+        "slots": ["Sensor"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/firecontrolsystem.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/firecontrolsystem.png"
       }
@@ -87,9 +81,7 @@
         "title": "Trajectory Simulator",
         "type": "Sensor",
         "ability": "During the System Phase, if you would drop or launch a bomb, you may launch it using the [5 [Straight]] template instead.",
-        "slots": [
-          "Sensor"
-        ],
+        "slots": ["Sensor"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/trajectorysimulator.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/trajectorysimulator.png"
       }
@@ -116,9 +108,7 @@
         "ability": "Action: Spend 1 [Charge]. You can only perform this action in your Perform Action step. While your [Charge] is inactive, you cannot be coordinated. Before you engage, if your [Charge] is inactive, you may perform a [Calculate] or [Lock] action.",
         "title": "Passive Sensors",
         "type": "Sensor",
-        "slots": [
-          "Sensor"
-        ],
+        "slots": ["Sensor"],
         "charges": {
           "value": 1,
           "recovers": 1
@@ -158,9 +148,7 @@
           "recovers": 0
         },
         "ability": "Before you perform a [Lock] action, you may spend 1 [Charge]. If you do, you may acquire a lock on an object at any range during that action.",
-        "slots": [
-          "Sensor"
-        ]
+        "slots": ["Sensor"]
       }
     ],
     "standard": false,
@@ -177,9 +165,7 @@
         "title": "Relay System",
         "type": "Sensor",
         "ability": "After a friendly ship at range 0-2 performs a [Lock] action, you may acquire a lock on the same object. After you perform an attack that hits, you may spend a lock you have on the defender. If you do, another friendly ship at range 0-1 may acquire a lock on the defender.",
-        "slots": [
-          "Sensor"
-        ]
+        "slots": ["Sensor"]
       }
     ],
     "standard": false,

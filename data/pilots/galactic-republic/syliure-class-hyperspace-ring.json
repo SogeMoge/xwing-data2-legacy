@@ -24,9 +24,7 @@
       "xws": "transgalmegcontrollink",
       "initiative": 0,
       "cost": 4,
-      "slots": [
-        "Hyperdrive"
-      ],
+      "slots": ["Hyperdrive"],
       "limited": 0,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/transgalmegcontrollink.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/transgalmegcontrollink.png",

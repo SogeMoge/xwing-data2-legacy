@@ -19,9 +19,7 @@
     "3YW",
     "4FW"
   ],
-  "dialCodes": [
-    "YV6"
-  ],
+  "dialCodes": ["YV6"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -87,10 +85,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bossk.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter",
-        "Freighter"
-      ],
+      "keywords": ["Bounty Hunter", "Freighter"],
       "epic": true
     },
     {
@@ -116,10 +111,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lattsrazzi.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter",
-        "Freighter"
-      ],
+      "keywords": ["Bounty Hunter", "Freighter"],
       "epic": true
     },
     {
@@ -149,9 +141,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/moraloeval.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -175,9 +165,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/trandoshanslaver.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -207,9 +195,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     }
   ]

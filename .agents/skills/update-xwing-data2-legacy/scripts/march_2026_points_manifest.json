@@ -1,0 +1,1184 @@
+[
+  {
+    "sheet": "Upgrades",
+    "row": 4,
+    "sheetName": "Trickshot",
+    "sheetType": "Talent",
+    "sheetOldPts": "4",
+    "sheetCollated": "3",
+    "kind": "upgrade",
+    "file": "data/upgrades/talent.json",
+    "canonicalName": "Trick Shot",
+    "xws": "trickshot",
+    "oldFileCost": {
+      "value": 4
+    },
+    "newCost": {
+      "value": 3
+    }
+  },
+  {
+    "sheet": "Upgrades",
+    "row": 5,
+    "sheetName": "Engine Upgrade",
+    "sheetType": "Talent",
+    "sheetOldPts": "base:3,4,7",
+    "sheetCollated": "base:2,4,7",
+    "kind": "upgrade",
+    "file": "data/upgrades/modification.json",
+    "canonicalName": "Engine Upgrade",
+    "xws": "engineupgrade",
+    "oldFileCost": {
+      "variable": "size",
+      "values": {
+        "Small": 3,
+        "Medium": 4,
+        "Large": 7
+      }
+    },
+    "newCost": {
+      "variable": "size",
+      "values": {
+        "Small": 2,
+        "Medium": 4,
+        "Large": 7
+      }
+    }
+  },
+  {
+    "sheet": "Upgrades",
+    "row": 6,
+    "sheetName": "Tierfon Belly Run",
+    "sheetType": "Talent",
+    "sheetOldPts": "(i:0,0,0,0,1,1,1)",
+    "sheetCollated": "0",
+    "kind": "upgrade",
+    "file": "data/upgrades/talent.json",
+    "canonicalName": "Tierfon Belly Run",
+    "xws": "tierfonbellyrun",
+    "oldFileCost": {
+      "variable": "initiative",
+      "values": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      }
+    },
+    "newCost": {
+      "value": 0
+    }
+  },
+  {
+    "sheet": "Upgrades",
+    "row": 7,
+    "sheetName": "Mag-Pulse Warhead",
+    "sheetType": "Missile",
+    "sheetOldPts": "4/4/4/5/5/5/5 init 0-6",
+    "sheetCollated": "4",
+    "kind": "upgrade",
+    "file": "data/upgrades/missile.json",
+    "canonicalName": "Mag-Pulse Warheads",
+    "xws": "magpulsewarheads",
+    "oldFileCost": {
+      "variable": "initiative",
+      "values": {
+        "0": 4,
+        "1": 4,
+        "2": 4,
+        "3": 5,
+        "4": 5,
+        "5": 5,
+        "6": 5
+      }
+    },
+    "newCost": {
+      "value": 4
+    }
+  },
+  {
+    "sheet": "Upgrades",
+    "row": 8,
+    "sheetName": "Plasma Torpedo",
+    "sheetType": "Torpedo",
+    "sheetOldPts": "6/6/6/7/7/7/7 init 0-6",
+    "sheetCollated": "(i:5,5,5,7,7,7,7)",
+    "kind": "upgrade",
+    "file": "data/upgrades/torpedo.json",
+    "canonicalName": "Plasma Torpedoes",
+    "xws": "plasmatorpedoes",
+    "oldFileCost": {
+      "variable": "initiative",
+      "values": {
+        "0": 6,
+        "1": 6,
+        "2": 6,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 7
+      }
+    },
+    "newCost": {
+      "variable": "initiative",
+      "values": {
+        "0": 5,
+        "1": 5,
+        "2": 5,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 7
+      }
+    }
+  },
+  {
+    "sheet": "Upgrades",
+    "row": 9,
+    "sheetName": "Ablative plating",
+    "sheetType": "Modification",
+    "sheetOldPts": "3",
+    "sheetCollated": "4",
+    "kind": "upgrade",
+    "file": "data/upgrades/modification.json",
+    "canonicalName": "Ablative Plating",
+    "xws": "ablativeplating",
+    "oldFileCost": {
+      "value": 3
+    },
+    "newCost": {
+      "value": 4
+    }
+  },
+  {
+    "sheet": "Rebellion",
+    "row": 4,
+    "sheetName": "Wes Janson",
+    "sheetType": "T-65 X-Wing",
+    "sheetOldPts": "50",
+    "sheetCollated": "51",
+    "kind": "pilot",
+    "file": "data/pilots/rebel-alliance/t-65-x-wing.json",
+    "canonicalName": "Wes Janson",
+    "xws": "wesjanson",
+    "oldFileCost": 50,
+    "newCost": 51
+  },
+  {
+    "sheet": "Rebellion",
+    "row": 5,
+    "sheetName": "Wedge Antilles (BoY)",
+    "sheetType": "T-65 X-Wing",
+    "sheetOldPts": "49",
+    "sheetCollated": "51",
+    "kind": "pilot",
+    "file": "data/pilots/rebel-alliance/t-65-x-wing.json",
+    "canonicalName": "Wedge Antilles",
+    "xws": "wedgeantilles-battleofyavin-lsl",
+    "oldFileCost": 49,
+    "newCost": 51
+  },
+  {
+    "sheet": "Rebellion",
+    "row": 6,
+    "sheetName": "Rebel Scout",
+    "sheetType": "HWK",
+    "sheetOldPts": "26",
+    "sheetCollated": "27",
+    "kind": "pilot",
+    "file": "data/pilots/rebel-alliance/hwk-290-light-freighter.json",
+    "canonicalName": "Rebel Scout",
+    "xws": "rebelscout",
+    "oldFileCost": 26,
+    "newCost": 27
+  },
+  {
+    "sheet": "Rebellion",
+    "row": 7,
+    "sheetName": "Adon Fox",
+    "sheetType": "B-wing",
+    "sheetOldPts": "46",
+    "sheetCollated": "44",
+    "kind": "pilot",
+    "file": "data/pilots/rebel-alliance/a-sf-01-b-wing.json",
+    "canonicalName": "Adon Fox",
+    "xws": "adonfox-battleoverendor-lsl",
+    "oldFileCost": 46,
+    "newCost": 44
+  },
+  {
+    "sheet": "Rebellion",
+    "row": 8,
+    "sheetName": "Netrem Pollard",
+    "sheetType": "B-wing",
+    "sheetOldPts": "42",
+    "sheetCollated": "41",
+    "kind": "pilot",
+    "file": "data/pilots/rebel-alliance/a-sf-01-b-wing.json",
+    "canonicalName": "Netrem Pollard",
+    "xws": "netrempollard",
+    "oldFileCost": 42,
+    "newCost": 41
+  },
+  {
+    "sheet": "Empire",
+    "row": 4,
+    "sheetName": "Black Squadron Scout",
+    "sheetType": "TIE Striker",
+    "sheetOldPts": "34",
+    "sheetCollated": "33",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-sk-striker.json",
+    "canonicalName": "Black Squadron Scout",
+    "xws": "blacksquadronscout",
+    "oldFileCost": 34,
+    "newCost": 33
+  },
+  {
+    "sheet": "Empire",
+    "row": 5,
+    "sheetName": "Pure Sabacc",
+    "sheetType": "TIE Striker",
+    "sheetOldPts": "41",
+    "sheetCollated": "40",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-sk-striker.json",
+    "canonicalName": "“Pure Sabacc”",
+    "xws": "puresabacc",
+    "oldFileCost": 41,
+    "newCost": 40
+  },
+  {
+    "sheet": "Empire",
+    "row": 6,
+    "sheetName": "Flight Leader Ubbel",
+    "sheetType": "Tie/RB Heavy",
+    "sheetOldPts": "43",
+    "sheetCollated": "42",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-rb-heavy.json",
+    "canonicalName": "Flight Leader Ubbel",
+    "xws": "flightleaderubbel",
+    "oldFileCost": 43,
+    "newCost": 42
+  },
+  {
+    "sheet": "Empire",
+    "row": 7,
+    "sheetName": "Lieutenant Karsabi (LSL)",
+    "sheetType": "Alpha-Class StarWing",
+    "sheetOldPts": "38",
+    "sheetCollated": "44",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/alpha-class-star-wing.json",
+    "canonicalName": "Lieutenant Karsabi",
+    "xws": "lieutenantkarsabi-pnp-lsl",
+    "oldFileCost": 38,
+    "newCost": 44
+  },
+  {
+    "sheet": "Empire",
+    "row": 8,
+    "sheetName": "Major Vynder (LSL)",
+    "sheetType": "Alpha-Class StarWing",
+    "sheetOldPts": "46",
+    "sheetCollated": "49",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/alpha-class-star-wing.json",
+    "canonicalName": "Major Vynder",
+    "xws": "majorvynder-pnp-lsl",
+    "oldFileCost": 46,
+    "newCost": 49
+  },
+  {
+    "sheet": "Empire",
+    "row": 9,
+    "sheetName": "\"Echo\" (LSL)",
+    "sheetType": "TIE Phantom",
+    "sheetOldPts": "48",
+    "sheetCollated": "53",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-ph-phantom.json",
+    "canonicalName": "“Echo”",
+    "xws": "echo-pnp-lsl",
+    "oldFileCost": 48,
+    "newCost": 53
+  },
+  {
+    "sheet": "Empire",
+    "row": 10,
+    "sheetName": "\"Whisper\" (LSL)",
+    "sheetType": "TIE Phantom",
+    "sheetOldPts": "57",
+    "sheetCollated": "61",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-ph-phantom.json",
+    "canonicalName": "“Whisper”",
+    "xws": "whisper-pnp-lsl",
+    "oldFileCost": 57,
+    "newCost": 61
+  },
+  {
+    "sheet": "Empire",
+    "row": 11,
+    "sheetName": "Whisper",
+    "sheetType": "TIE Phantom",
+    "sheetOldPts": "60",
+    "sheetCollated": "59",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-ph-phantom.json",
+    "canonicalName": "“Whisper”",
+    "xws": "whisper",
+    "oldFileCost": 60,
+    "newCost": 59
+  },
+  {
+    "sheet": "Empire",
+    "row": 12,
+    "sheetName": "Soontir Fel",
+    "sheetType": "Tie Interceptor",
+    "sheetOldPts": "56",
+    "sheetCollated": "54",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-in-interceptor.json",
+    "canonicalName": "Soontir Fel",
+    "xws": "soontirfel",
+    "oldFileCost": 56,
+    "newCost": 54
+  },
+  {
+    "sheet": "Empire",
+    "row": 13,
+    "sheetName": "Lt. Sai",
+    "sheetType": "Lambda Shuttle",
+    "sheetOldPts": "45",
+    "sheetCollated": "46",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/lambda-class-t-4a-shuttle.json",
+    "canonicalName": "Lieutenant Sai",
+    "xws": "lieutenantsai",
+    "oldFileCost": 45,
+    "newCost": 46
+  },
+  {
+    "sheet": "Empire",
+    "row": 14,
+    "sheetName": "RAC",
+    "sheetType": "Decimator",
+    "sheetOldPts": "76",
+    "sheetCollated": "77",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/vt-49-decimator.json",
+    "canonicalName": "Rear Admiral Chiraneau",
+    "xws": "rearadmiralchiraneau",
+    "oldFileCost": 76,
+    "newCost": 77
+  },
+  {
+    "sheet": "Empire",
+    "row": 15,
+    "sheetName": "Vult Skerris",
+    "sheetType": "Tie Defender",
+    "sheetOldPts": "76",
+    "sheetCollated": "75",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-d-defender.json",
+    "canonicalName": "Vult Skerris",
+    "xws": "vultskerris",
+    "oldFileCost": 76,
+    "newCost": 75
+  },
+  {
+    "sheet": "Empire",
+    "row": 16,
+    "sheetName": "Baron of the Empire",
+    "sheetType": "TIE Adv v1",
+    "sheetOldPts": "30",
+    "sheetCollated": "31",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-advanced-v1.json",
+    "canonicalName": "Baron of the Empire",
+    "xws": "baronoftheempire",
+    "oldFileCost": 30,
+    "newCost": 31
+  },
+  {
+    "sheet": "Scum",
+    "row": 4,
+    "sheetName": "Lando Calrissian",
+    "sheetType": "Crew",
+    "sheetOldPts": "6",
+    "sheetCollated": "5",
+    "kind": "upgrade",
+    "file": "data/upgrades/crew.json",
+    "canonicalName": "Lando Calrissian",
+    "xws": "landocalrissian-crew",
+    "oldFileCost": {
+      "value": 6
+    },
+    "newCost": {
+      "value": 5
+    }
+  },
+  {
+    "sheet": "Scum",
+    "row": 5,
+    "sheetName": "Gand Findsman",
+    "sheetType": "G-1A",
+    "sheetOldPts": "39",
+    "sheetCollated": "41",
+    "kind": "pilot",
+    "file": "data/pilots/scum-and-villainy/g-1a-starfighter.json",
+    "canonicalName": "Gand Findsman",
+    "xws": "gandfindsman",
+    "oldFileCost": 39,
+    "newCost": 41
+  },
+  {
+    "sheet": "Scum",
+    "row": 6,
+    "sheetName": "The Mandalorian",
+    "sheetType": "ST-70",
+    "sheetOldPts": "49",
+    "sheetCollated": "50",
+    "kind": "pilot",
+    "file": "data/pilots/scum-and-villainy/st-70-assault-ship.json",
+    "canonicalName": "The Mandalorian",
+    "xws": "themandalorian",
+    "oldFileCost": 49,
+    "newCost": 50
+  },
+  {
+    "sheet": "Scum",
+    "row": 7,
+    "sheetName": "Q9-0",
+    "sheetType": "ST-70",
+    "sheetOldPts": "50",
+    "sheetCollated": "51",
+    "kind": "pilot",
+    "file": "data/pilots/scum-and-villainy/st-70-assault-ship.json",
+    "canonicalName": "Q9-0",
+    "xws": "q90",
+    "oldFileCost": 50,
+    "newCost": 51
+  },
+  {
+    "sheet": "Scum",
+    "row": 8,
+    "sheetName": "Skull Squadron",
+    "sheetType": "Fang Fighter",
+    "sheetOldPts": "44",
+    "sheetCollated": "45",
+    "kind": "pilot",
+    "file": "data/pilots/scum-and-villainy/fang-fighter.json",
+    "canonicalName": "Skull Squadron Pilot",
+    "xws": "skullsquadronpilot",
+    "oldFileCost": 44,
+    "newCost": 45
+  },
+  {
+    "sheet": "Scum",
+    "row": 9,
+    "sheetName": "Asajj Ventress",
+    "sheetType": "Lancer",
+    "sheetOldPts": "66",
+    "sheetCollated": "67",
+    "kind": "pilot",
+    "file": "data/pilots/scum-and-villainy/lancer-class-pursuit-craft.json",
+    "canonicalName": "Asajj Ventress",
+    "xws": "asajjventress",
+    "oldFileCost": 66,
+    "newCost": 67
+  },
+  {
+    "sheet": "Scum",
+    "row": 10,
+    "sheetName": "Ketsu",
+    "sheetType": "Lancer",
+    "sheetOldPts": "66",
+    "sheetCollated": "67",
+    "kind": "pilot",
+    "file": "data/pilots/scum-and-villainy/lancer-class-pursuit-craft.json",
+    "canonicalName": "Ketsu Onyo",
+    "xws": "ketsuonyo",
+    "oldFileCost": 66,
+    "newCost": 67
+  },
+  {
+    "sheet": "Scum",
+    "row": 11,
+    "sheetName": "Spice Runner",
+    "sheetType": "HWK",
+    "sheetOldPts": "26",
+    "sheetCollated": "27",
+    "kind": "pilot",
+    "file": "data/pilots/scum-and-villainy/hwk-290-light-freighter.json",
+    "canonicalName": "Spice Runner",
+    "xws": "spicerunner",
+    "oldFileCost": 26,
+    "newCost": 27
+  },
+  {
+    "sheet": "Resistance",
+    "row": 4,
+    "sheetName": "Logistics Division Pilot",
+    "sheetType": "Transport",
+    "sheetOldPts": "30",
+    "sheetCollated": "31",
+    "kind": "pilot",
+    "file": "data/pilots/resistance/resistance-transport.json",
+    "canonicalName": "Logistics Division Pilot",
+    "xws": "logisticsdivisionpilot",
+    "oldFileCost": 30,
+    "newCost": 31
+  },
+  {
+    "sheet": "Resistance",
+    "row": 5,
+    "sheetName": "Cova Nell",
+    "sheetType": "Transport",
+    "sheetOldPts": "38",
+    "sheetCollated": "37",
+    "kind": "pilot",
+    "file": "data/pilots/resistance/resistance-transport.json",
+    "canonicalName": "Cova Nell",
+    "xws": "covanell",
+    "oldFileCost": 38,
+    "newCost": 37
+  },
+  {
+    "sheet": "Resistance",
+    "row": 6,
+    "sheetName": "Heroic",
+    "sheetType": "Talent",
+    "sheetOldPts": "1",
+    "sheetCollated": "2",
+    "kind": "upgrade",
+    "file": "data/upgrades/talent.json",
+    "canonicalName": "Heroic",
+    "xws": "heroic",
+    "oldFileCost": {
+      "value": 1
+    },
+    "newCost": {
+      "value": 2
+    }
+  },
+  {
+    "sheet": "Resistance",
+    "row": 7,
+    "sheetName": "Cobalt Sq. Bomber",
+    "sheetType": "StarFortress",
+    "sheetOldPts": "49",
+    "sheetCollated": "50",
+    "kind": "pilot",
+    "file": "data/pilots/resistance/mg-100-starfortress-sf-17.json",
+    "canonicalName": "Cobalt Squadron Bomber",
+    "xws": "cobaltsquadronbomber",
+    "oldFileCost": 49,
+    "newCost": 50
+  },
+  {
+    "sheet": "Resistance",
+    "row": 8,
+    "sheetName": "Jaycris",
+    "sheetType": "T-70",
+    "sheetOldPts": "44",
+    "sheetCollated": "43",
+    "kind": "pilot",
+    "file": "data/pilots/resistance/t-70-x-wing.json",
+    "canonicalName": "Jaycris Tubbs",
+    "xws": "jaycristubbs",
+    "oldFileCost": 44,
+    "newCost": 43
+  },
+  {
+    "sheet": "Resistance",
+    "row": 9,
+    "sheetName": "Chewbacca",
+    "sheetType": "Crew",
+    "sheetOldPts": "4",
+    "sheetCollated": "3",
+    "kind": "upgrade",
+    "file": "data/upgrades/crew.json",
+    "canonicalName": "Chewbacca",
+    "xws": "chewbacca-crew-swz19",
+    "oldFileCost": {
+      "value": 4
+    },
+    "newCost": {
+      "value": 3
+    }
+  },
+  {
+    "sheet": "Resistance",
+    "row": 10,
+    "sheetName": "Amilyn Holdo",
+    "sheetType": "Crew",
+    "sheetOldPts": "5",
+    "sheetCollated": "4",
+    "kind": "upgrade",
+    "file": "data/upgrades/crew.json",
+    "canonicalName": "Amilyn Holdo",
+    "xws": "amilynholdo",
+    "oldFileCost": {
+      "value": 5
+    },
+    "newCost": {
+      "value": 4
+    }
+  },
+  {
+    "sheet": "Resistance",
+    "row": 11,
+    "sheetName": "Kaydel Connnix",
+    "sheetType": "Crew",
+    "sheetOldPts": "5",
+    "sheetCollated": "4",
+    "kind": "upgrade",
+    "file": "data/upgrades/crew.json",
+    "canonicalName": "Kaydel Connix",
+    "xws": "kaydelconnix",
+    "oldFileCost": {
+      "value": 5
+    },
+    "newCost": {
+      "value": 4
+    }
+  },
+  {
+    "sheet": "Resistance",
+    "row": 12,
+    "sheetName": "R5-X3",
+    "sheetType": "Astromech",
+    "sheetOldPts": "5",
+    "sheetCollated": "3",
+    "kind": "upgrade",
+    "file": "data/upgrades/astromech.json",
+    "canonicalName": "R5-X3",
+    "xws": "r5x3",
+    "oldFileCost": {
+      "value": 5
+    },
+    "newCost": {
+      "value": 3
+    }
+  },
+  {
+    "sheet": "Resistance",
+    "row": 13,
+    "sheetName": "R2-HA",
+    "sheetType": "Astromech",
+    "sheetOldPts": "3",
+    "sheetCollated": "2",
+    "kind": "upgrade",
+    "file": "data/upgrades/astromech.json",
+    "canonicalName": "R2-HA",
+    "xws": "r2ha",
+    "oldFileCost": {
+      "value": 3
+    },
+    "newCost": {
+      "value": 2
+    }
+  },
+  {
+    "sheet": "Resistance",
+    "row": 14,
+    "sheetName": "R1-J5",
+    "sheetType": "Astromech",
+    "sheetOldPts": "5",
+    "sheetCollated": "4",
+    "kind": "upgrade",
+    "file": "data/upgrades/astromech.json",
+    "canonicalName": "R1-J5",
+    "xws": "r1j5",
+    "oldFileCost": {
+      "value": 5
+    },
+    "newCost": {
+      "value": 4
+    }
+  },
+  {
+    "sheet": "First Order",
+    "row": 4,
+    "sheetName": "Fanatical",
+    "sheetType": "Talent",
+    "sheetOldPts": "1",
+    "sheetCollated": "2",
+    "kind": "upgrade",
+    "file": "data/upgrades/talent.json",
+    "canonicalName": "Fanatical",
+    "xws": "fanatical",
+    "oldFileCost": {
+      "value": 1
+    },
+    "newCost": {
+      "value": 2
+    }
+  },
+  {
+    "sheet": "First Order",
+    "row": 5,
+    "sheetName": "Lt. Rivas",
+    "sheetType": "TIE/fo",
+    "sheetOldPts": "27",
+    "sheetCollated": "28",
+    "kind": "pilot",
+    "file": "data/pilots/first-order/tie-fo-fighter.json",
+    "canonicalName": "Lieutenant Rivas",
+    "xws": "lieutenantrivas",
+    "oldFileCost": 27,
+    "newCost": 28
+  },
+  {
+    "sheet": "First Order",
+    "row": 6,
+    "sheetName": "TN-3465",
+    "sheetType": "TIE/fo",
+    "sheetOldPts": "27",
+    "sheetCollated": "28",
+    "kind": "pilot",
+    "file": "data/pilots/first-order/tie-fo-fighter.json",
+    "canonicalName": "TN-3465",
+    "xws": "tn3465",
+    "oldFileCost": 27,
+    "newCost": 28
+  },
+  {
+    "sheet": "First Order",
+    "row": 7,
+    "sheetName": "Muse",
+    "sheetType": "TIE/fo",
+    "sheetOldPts": "29",
+    "sheetCollated": "28",
+    "kind": "pilot",
+    "file": "data/pilots/first-order/tie-fo-fighter.json",
+    "canonicalName": "“Muse”",
+    "xws": "muse",
+    "oldFileCost": 29,
+    "newCost": 28
+  },
+  {
+    "sheet": "First Order",
+    "row": 8,
+    "sheetName": "Lin Gaava",
+    "sheetType": "TIE/fo",
+    "sheetOldPts": "32",
+    "sheetCollated": "30",
+    "kind": "pilot",
+    "file": "data/pilots/first-order/tie-fo-fighter.json",
+    "canonicalName": "Lin Gaava",
+    "xws": "lingaava",
+    "oldFileCost": 32,
+    "newCost": 30
+  },
+  {
+    "sheet": "First Order",
+    "row": 9,
+    "sheetName": "Lt. Galek",
+    "sheetType": "TIE/fo",
+    "sheetOldPts": "31",
+    "sheetCollated": "30",
+    "kind": "pilot",
+    "file": "data/pilots/first-order/tie-fo-fighter.json",
+    "canonicalName": "Lieutenant Galek",
+    "xws": "lieutenantgalek",
+    "oldFileCost": 31,
+    "newCost": 30
+  },
+  {
+    "sheet": "First Order",
+    "row": 10,
+    "sheetName": "Kylo Ren",
+    "sheetType": "TIE/vn Silencer",
+    "sheetOldPts": "79",
+    "sheetCollated": "78",
+    "kind": "pilot",
+    "file": "data/pilots/first-order/tie-vn-silencer.json",
+    "canonicalName": "Kylo Ren",
+    "xws": "kyloren",
+    "oldFileCost": 79,
+    "newCost": 78
+  },
+  {
+    "sheet": "First Order",
+    "row": 11,
+    "sheetName": "Vonreg",
+    "sheetType": "TIE/ba Interceptor",
+    "sheetOldPts": "54",
+    "sheetCollated": "53",
+    "kind": "pilot",
+    "file": "data/pilots/first-order/tie-ba-interceptor.json",
+    "canonicalName": "Major Vonreg",
+    "xws": "majorvonreg",
+    "oldFileCost": 54,
+    "newCost": 53
+  },
+  {
+    "sheet": "Republic",
+    "row": 4,
+    "sheetName": "7th Sky Corps",
+    "sheetType": "Clone Z95",
+    "sheetOldPts": "22",
+    "sheetCollated": "23",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-republic/clone-z-95-headhunter.json",
+    "canonicalName": "7th Sky Corps Pilot",
+    "xws": "7thskycorpspilot",
+    "oldFileCost": 22,
+    "newCost": 23
+  },
+  {
+    "sheet": "Republic",
+    "row": 5,
+    "sheetName": "Killer",
+    "sheetType": "Clone Z95",
+    "sheetOldPts": "25",
+    "sheetCollated": "24",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-republic/clone-z-95-headhunter.json",
+    "canonicalName": "“Killer”",
+    "xws": "killer",
+    "oldFileCost": 25,
+    "newCost": 24
+  },
+  {
+    "sheet": "Republic",
+    "row": 6,
+    "sheetName": "Boost",
+    "sheetType": "Clone Z95",
+    "sheetOldPts": "25",
+    "sheetCollated": "24",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-republic/clone-z-95-headhunter.json",
+    "canonicalName": "“Boost”",
+    "xws": "boost",
+    "oldFileCost": 25,
+    "newCost": 24
+  },
+  {
+    "sheet": "Republic",
+    "row": 7,
+    "sheetName": "Drift",
+    "sheetType": "Clone Z95",
+    "sheetOldPts": "30",
+    "sheetCollated": "29",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-republic/clone-z-95-headhunter.json",
+    "canonicalName": "“Drift”",
+    "xws": "drift",
+    "oldFileCost": 30,
+    "newCost": 29
+  },
+  {
+    "sheet": "Republic",
+    "row": 8,
+    "sheetName": "Stub",
+    "sheetType": "Clone Z95",
+    "sheetOldPts": "30",
+    "sheetCollated": "29",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-republic/clone-z-95-headhunter.json",
+    "canonicalName": "“Stub”",
+    "xws": "stub",
+    "oldFileCost": 30,
+    "newCost": 29
+  },
+  {
+    "sheet": "Republic",
+    "row": 9,
+    "sheetName": "Slider",
+    "sheetType": "Clone Z95",
+    "sheetOldPts": "26",
+    "sheetCollated": "25",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-republic/clone-z-95-headhunter.json",
+    "canonicalName": "“Slider”",
+    "xws": "slider",
+    "oldFileCost": 26,
+    "newCost": 25
+  },
+  {
+    "sheet": "Republic",
+    "row": 10,
+    "sheetName": "Naboo Handmaiden",
+    "sheetType": "Naboo Royal N-1 Starfighter",
+    "sheetOldPts": "30",
+    "sheetCollated": "29",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-republic/naboo-royal-n-1-starfighter.json",
+    "canonicalName": "Naboo Handmaiden",
+    "xws": "naboohandmaiden",
+    "oldFileCost": 31,
+    "newCost": 29
+  },
+  {
+    "sheet": "Separatist",
+    "row": 4,
+    "sheetName": "Collicoid Interceptor",
+    "sheetType": "Droid Trifighter",
+    "sheetOldPts": "34",
+    "sheetCollated": "33",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/droid-tri-fighter.json",
+    "canonicalName": "Colicoid Interceptor",
+    "xws": "colicoidinterceptor",
+    "oldFileCost": 34,
+    "newCost": 33
+  },
+  {
+    "sheet": "Separatist",
+    "row": 5,
+    "sheetName": "Separatist Interceptor",
+    "sheetType": "Droid Trifighter",
+    "sheetOldPts": "35",
+    "sheetCollated": "34",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/droid-tri-fighter.json",
+    "canonicalName": "Separatist Interceptor",
+    "xws": "separatistinterceptor",
+    "oldFileCost": 35,
+    "newCost": 34
+  },
+  {
+    "sheet": "Separatist",
+    "row": 6,
+    "sheetName": "Fearsome Predator",
+    "sheetType": "Droid Trifighter",
+    "sheetOldPts": "35",
+    "sheetCollated": "34",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/droid-tri-fighter.json",
+    "canonicalName": "Fearsome Predator",
+    "xws": "fearsomepredator",
+    "oldFileCost": 35,
+    "newCost": 34
+  },
+  {
+    "sheet": "Separatist",
+    "row": 7,
+    "sheetName": "Kelrodo-Ai Holdout",
+    "sheetType": "Vulture",
+    "sheetOldPts": "22",
+    "sheetCollated": "21",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/vulture-class-droid-fighter.json",
+    "canonicalName": "Kelrodo-Ai Holdout",
+    "xws": "kelrodoaiholdout",
+    "oldFileCost": 22,
+    "newCost": 21
+  },
+  {
+    "sheet": "Separatist",
+    "row": 8,
+    "sheetName": "DIS-347",
+    "sheetType": "Droid Trifighter",
+    "sheetOldPts": "35",
+    "sheetCollated": "34",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/droid-tri-fighter.json",
+    "canonicalName": "DIS-347",
+    "xws": "dis347",
+    "oldFileCost": 35,
+    "newCost": 34
+  },
+  {
+    "sheet": "Separatist",
+    "row": 9,
+    "sheetName": "DIS-347 (SoC)",
+    "sheetType": "Droid Trifighter",
+    "sheetOldPts": "35",
+    "sheetCollated": "34",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/droid-tri-fighter.json",
+    "canonicalName": "DIS-347",
+    "xws": "dis347-siegeofcoruscant-lsl",
+    "oldFileCost": 35,
+    "newCost": 34
+  },
+  {
+    "sheet": "Separatist",
+    "row": 10,
+    "sheetName": "Volan Das",
+    "sheetType": "Droid Trifighter",
+    "sheetOldPts": "41",
+    "sheetCollated": "40",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/droid-tri-fighter.json",
+    "canonicalName": "Volan Das",
+    "xws": "volandas",
+    "oldFileCost": 41,
+    "newCost": 40
+  },
+  {
+    "sheet": "Separatist",
+    "row": 11,
+    "sheetName": "Cad Bane",
+    "sheetType": "Rogue-class",
+    "sheetOldPts": "42",
+    "sheetCollated": "41",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/rogue-class-starfighter.json",
+    "canonicalName": "Cad Bane",
+    "xws": "cadbane-separatistalliance",
+    "oldFileCost": 42,
+    "newCost": 41
+  },
+  {
+    "sheet": "Separatist",
+    "row": 12,
+    "sheetName": "Durge",
+    "sheetType": "Rogue-class",
+    "sheetOldPts": "45",
+    "sheetCollated": "44",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/rogue-class-starfighter.json",
+    "canonicalName": "Durge",
+    "xws": "durge-separatistalliance",
+    "oldFileCost": 45,
+    "newCost": 44
+  },
+  {
+    "sheet": "Separatist",
+    "row": 13,
+    "sheetName": "Chertek",
+    "sheetType": "Nantex",
+    "sheetOldPts": "36",
+    "sheetCollated": "37",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/nantex-class-starfighter.json",
+    "canonicalName": "Chertek",
+    "xws": "chertek",
+    "oldFileCost": 36,
+    "newCost": 37
+  },
+  {
+    "sheet": "Separatist",
+    "row": 14,
+    "sheetName": "Ensnare",
+    "sheetType": "Talent",
+    "sheetOldPts": "i:15/15/15/15/15/16/17",
+    "sheetCollated": "i:12/12/12/15/15/15/15",
+    "kind": "upgrade",
+    "file": "data/upgrades/talent.json",
+    "canonicalName": "Ensnare",
+    "xws": "ensnare",
+    "oldFileCost": {
+      "variable": "initiative",
+      "values": {
+        "0": 15,
+        "1": 15,
+        "2": 15,
+        "3": 15,
+        "4": 15,
+        "5": 16,
+        "6": 17
+      }
+    },
+    "newCost": {
+      "variable": "initiative",
+      "values": {
+        "0": 12,
+        "1": 12,
+        "2": 12,
+        "3": 15,
+        "4": 15,
+        "5": 15,
+        "6": 15
+      }
+    }
+  },
+  {
+    "sheet": "Separatist",
+    "row": 15,
+    "sheetName": "Boba Fett",
+    "sheetType": "Firespray",
+    "sheetOldPts": "66",
+    "sheetCollated": "65",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/firespray-class-patrol-craft.json",
+    "canonicalName": "Boba Fett",
+    "xws": "bobafett-firesprayclasspatrolcraft",
+    "oldFileCost": 66,
+    "newCost": 65
+  },
+  {
+    "sheet": "RSL",
+    "row": 4,
+    "sheetName": "Leebo",
+    "sheetType": "Crew",
+    "sheetOldPts": "1",
+    "sheetCollated": "3",
+    "kind": "upgrade",
+    "file": "data/upgrades/crew.json",
+    "canonicalName": "Leebo",
+    "xws": "leebo-rsl",
+    "oldFileCost": {
+      "value": 1
+    },
+    "newCost": {
+      "value": 3
+    }
+  },
+  {
+    "sheet": "WaT",
+    "row": 5,
+    "sheetName": "Carnor Jax",
+    "sheetType": "TIE Interceptor",
+    "sheetOldPts": "49",
+    "sheetCollated": "50",
+    "kind": "pilot",
+    "file": "data/pilots/galactic-empire/tie-in-interceptor.json",
+    "canonicalName": "Carnor Jax",
+    "xws": "carnorjax-wat1",
+    "oldFileCost": 49,
+    "newCost": 50
+  },
+  {
+    "sheet": "WaT",
+    "row": 6,
+    "sheetName": "Black Sun Bodyguards",
+    "sheetType": "Kihraxz",
+    "sheetOldPts": "40",
+    "sheetCollated": "43",
+    "kind": "pilot",
+    "file": "data/pilots/scum-and-villainy/kihraxz-fighter.json",
+    "canonicalName": "Black Sun Bodyguard",
+    "xws": "blacksunbodyguard-wat1",
+    "oldFileCost": 40,
+    "newCost": 43
+  },
+  {
+    "sheet": "WaT",
+    "row": 7,
+    "sheetName": "OOM Uplink Prototype",
+    "sheetType": "Vulture",
+    "sheetOldPts": "23",
+    "sheetCollated": "22",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/vulture-class-droid-fighter.json",
+    "canonicalName": "00M Uplink Prototype",
+    "xws": "00muplinkprototype-wat1",
+    "oldFileCost": 23,
+    "newCost": 22
+  },
+  {
+    "sheet": "WaT",
+    "row": 8,
+    "sheetName": "Hallio Bas",
+    "sheetType": "Belbullab",
+    "sheetOldPts": "43",
+    "sheetCollated": "47",
+    "kind": "pilot",
+    "file": "data/pilots/separatist-alliance/belbullab-22-starfighter.json",
+    "canonicalName": "Hallio Bas",
+    "xws": "halliobas-wat1",
+    "oldFileCost": 43,
+    "newCost": 47
+  }
+]

@@ -19,9 +19,7 @@
     "3YR",
     "4FR"
   ],
-  "dialCodes": [
-    "LAT"
-  ],
+  "dialCodes": ["LAT"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -96,9 +94,7 @@
       "ability": "At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -132,9 +128,7 @@
       "ability": "After a friendly small ship in your [Single Turret Arc] gains a deplete or strain token, if you have no tokens of that type, you may transfer that token to yourself.",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -167,9 +161,7 @@
       "ability": "After you or a friendly non-limited ship at range 0-2 are destroyed during the Engagement Phase, that ship is not removed until the end of that phase.",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -201,9 +193,7 @@
         "name": "Fire Convergence",
         "text": "While a friendly ship performs a non-[Single Turret Arc] attack, if the defender is in your [Single Turret Arc], you may spend 1 [Charge]. If you do, the attacker rerolls up to 2 attack dice."
       },
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -234,14 +224,10 @@
         "text": "While a friendly ship performs a non-[Single Turret Arc] attack, if the defender is in your [Single Turret Arc], you may spend 1 [Charge]. If you do, the attacker rerolls up to 2 attack dice."
       },
       "ability": "After you execute a basic maneuver, you may assign the Sickening Maneuver condition to yourself.",
-      "conditions": [
-        "sickeningmaneuver"
-      ],
+      "conditions": ["sickeningmaneuver"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     }
   ],

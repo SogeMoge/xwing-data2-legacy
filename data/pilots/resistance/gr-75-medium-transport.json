@@ -17,9 +17,7 @@
     "3FR",
     "4FR"
   ],
-  "dialCodes": [
-    "GR75-RES"
-  ],
+  "dialCodes": ["GR75-RES"],
   "stats": [
     {
       "arc": "Front Arc",

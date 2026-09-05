@@ -21,9 +21,7 @@
     "4FR",
     "4KR"
   ],
-  "dialCodes": [
-    "G1A"
-  ],
+  "dialCodes": ["G1A"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -95,34 +93,22 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/4lom.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter",
-        "Droid"
-      ],
+      "keywords": ["Bounty Hunter", "Droid"],
       "epic": true
     },
     {
       "name": "Gand Findsman",
       "initiative": 1,
       "limited": 0,
-      "cost": 39,
+      "cost": 41,
       "xws": "gandfindsman",
       "text": "The legendary Findsmen of Gand worship the enshrouding mists of their home planet, using signs, augurs, and mystical rituals to track their quarry.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gandfindsman.png",
-      "slots": [
-        "Sensor",
-        "Crew",
-        "Crew",
-        "Illicit",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Sensor", "Crew", "Crew", "Illicit", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gandfindsman.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     },
     {
@@ -152,9 +138,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zuckuss.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     }
   ]

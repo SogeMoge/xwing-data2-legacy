@@ -22,9 +22,7 @@
     "3RR",
     "4FR"
   ],
-  "dialCodes": [
-    "FB"
-  ],
+  "dialCodes": ["FB"],
   "faction": "resistance",
   "stats": [
     {
@@ -186,9 +184,7 @@
           "type": "SLAM"
         }
       ],
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {

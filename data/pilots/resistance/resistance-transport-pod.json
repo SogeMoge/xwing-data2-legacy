@@ -19,9 +19,7 @@
     "3KR",
     "4FR"
   ],
-  "dialCodes": [
-    "RTP"
-  ],
+  "dialCodes": ["RTP"],
   "faction": "resistance",
   "stats": [
     {
@@ -69,12 +67,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 23,
-      "slots": [
-        "Talent",
-        "Tech",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Talent", "Tech", "Crew", "Modification"],
       "ability": "During the System Phase, you may perform a red [Barrel Roll] or [Boost] action.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bb8.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bb8.png",
@@ -97,9 +90,7 @@
         }
       ],
       "caption": "Full of Surprises",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -111,12 +102,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 26,
-      "slots": [
-        "Talent",
-        "Tech",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Talent", "Tech", "Crew", "Modification"],
       "ability": "While you defend or perform an attack, you may reroll up to 1 of your results for each other friendly ship in the attack arc.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rosetico.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rosetico.png",
@@ -131,15 +117,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 24,
-      "slots": [
-        "Tech",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Tech", "Crew", "Modification"],
       "ability": "Setup: After placing forces, assign the Compromising Intel condition to 1 enemy ship.",
-      "conditions": [
-        "compromisingintel"
-      ],
+      "conditions": ["compromisingintel"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vimoradi.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vimoradi.png",
       "epic": true
@@ -153,12 +133,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 31,
-      "slots": [
-        "Talent",
-        "Tech",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Talent", "Tech", "Crew", "Modification"],
       "ability": "While you defend or perform an attack, you may add 1 blank result, or you may gain 1 strain token to add 1 focus result instead.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/finn.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/finn.png",
@@ -173,12 +148,7 @@
       "standard": false,
       "wildspace": true,
       "cost": 25,
-      "slots": [
-        "Illicit",
-        "Tech",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Illicit", "Tech", "Crew", "Modification"],
       "ability": "After you perform a [Jam] action, you may gain 1 cloak token.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dj-wat1.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dj-wat1.png",

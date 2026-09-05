@@ -19,9 +19,7 @@
     "4FR",
     "4KR"
   ],
-  "dialCodes": [
-    "YwB"
-  ],
+  "dialCodes": ["YwB"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -85,10 +83,7 @@
         "Modification",
         "Gunner"
       ],
-      "keywords": [
-        "Clone",
-        "Y-wing"
-      ],
+      "keywords": ["Clone", "Y-wing"],
       "epic": true
     },
     {
@@ -103,9 +98,7 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
@@ -123,11 +116,7 @@
         "Gunner",
         "Force Power"
       ],
-      "keywords": [
-        "Jedi",
-        "Light Side",
-        "Y-wing"
-      ],
+      "keywords": ["Jedi", "Light Side", "Y-wing"],
       "epic": true
     },
     {
@@ -173,10 +162,7 @@
         "Gunner"
       ],
       "initiative": 2,
-      "keywords": [
-        "Droid",
-        "Y-wing"
-      ],
+      "keywords": ["Droid", "Y-wing"],
       "epic": true
     },
     {
@@ -204,10 +190,7 @@
         "Modification",
         "Gunner"
       ],
-      "keywords": [
-        "Clone",
-        "Y-wing"
-      ],
+      "keywords": ["Clone", "Y-wing"],
       "epic": true
     },
     {
@@ -235,10 +218,7 @@
         "Modification",
         "Gunner"
       ],
-      "keywords": [
-        "Clone",
-        "Y-wing"
-      ],
+      "keywords": ["Clone", "Y-wing"],
       "epic": true
     },
     {
@@ -266,10 +246,7 @@
         "Modification",
         "Gunner"
       ],
-      "keywords": [
-        "Clone",
-        "Y-wing"
-      ],
+      "keywords": ["Clone", "Y-wing"],
       "epic": true
     },
     {
@@ -296,10 +273,7 @@
         "Modification",
         "Gunner"
       ],
-      "keywords": [
-        "Clone",
-        "Y-wing"
-      ],
+      "keywords": ["Clone", "Y-wing"],
       "epic": true
     },
     {
@@ -325,10 +299,7 @@
         "Modification",
         "Gunner"
       ],
-      "keywords": [
-        "Clone",
-        "Y-wing"
-      ],
+      "keywords": ["Clone", "Y-wing"],
       "epic": true
     }
   ],

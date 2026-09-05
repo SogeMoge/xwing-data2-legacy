@@ -20,9 +20,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "TF"
-  ],
+  "dialCodes": ["TF"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -64,16 +62,11 @@
       "xws": "zeborrelios-tielnfighter",
       "ability": "While you defend, [Critical Hit] results are neutralized before [Hit] results.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zeborrelios-tielnfighter.png",
-      "slots": [
-        "Modification"
-      ],
+      "slots": ["Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios-tielnfighter.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE",
-        "Spectre"
-      ],
+      "keywords": ["TIE", "Spectre"],
       "epic": true
     },
     {
@@ -85,19 +78,12 @@
       "xws": "captainrex",
       "ability": "After you perform an attack, assign the Suppressive Fire condition to the defender.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainrex.png",
-      "conditions": [
-        "suppressivefire"
-      ],
-      "slots": [
-        "Modification"
-      ],
+      "conditions": ["suppressivefire"],
+      "slots": ["Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainrex.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone",
-        "TIE"
-      ],
+      "keywords": ["Clone", "TIE"],
       "epic": true
     },
     {
@@ -112,22 +98,13 @@
       "force": {
         "value": 1,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
-      "slots": [
-        "Force Power",
-        "Modification"
-      ],
+      "slots": ["Force Power", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger-tielnfighter.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Light Side",
-        "Spectre",
-        "TIE"
-      ],
+      "keywords": ["Light Side", "Spectre", "TIE"],
       "epic": true
     },
     {
@@ -139,18 +116,11 @@
       "xws": "sabinewren-tielnfighter",
       "ability": "Before you activate, you may perform a [Barrel Roll] or [Boost] action.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sabinewren-tielnfighter.png",
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren-tielnfighter.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian",
-        "TIE",
-        "Spectre"
-      ],
+      "keywords": ["Mandalorian", "TIE", "Spectre"],
       "epic": true
     }
   ]

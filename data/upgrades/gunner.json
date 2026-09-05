@@ -8,9 +8,7 @@
         "title": "Agile Gunner",
         "type": "Gunner",
         "ability": "During the End Phase, you may rotate your [Single Turret Arc] indicator.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agilegunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agilegunner.png"
       }
@@ -32,9 +30,7 @@
         "type": "Gunner",
         "ability": "While you perform an attack, you may change 1 [Hit] result to a [Critical Hit] result for each stress token the defender has.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bt1.png",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bt1.png"
       }
     ],
@@ -43,12 +39,8 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ],
-        "names": [
-          "Darth Vader"
-        ]
+        "factions": ["scumandvillainy"],
+        "names": ["Darth Vader"]
       }
     ],
     "standard": true,
@@ -64,9 +56,7 @@
         "title": "Bistan",
         "type": "Gunner",
         "ability": "After you perform a primary attack, if you are focused, you may perform a bonus [Single Turret Arc] attack against a ship you have not already attacked this round.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bistan.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bistan.png"
       }
@@ -76,9 +66,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -95,9 +83,7 @@
         "type": "Gunner",
         "ability": "After you perform a primary attack that misses, if you are not stressed, you must receive 1 stress token to perform a bonus primary attack against the same target.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bossk.png",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bossk.png"
       }
     ],
@@ -106,9 +92,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -125,9 +109,7 @@
         "type": "Gunner",
         "ability": "After you defend, if the attacker is in your firing arc, you may spend 1 [Charge]. If you do, roll 1 attack die unless the attacker chooses to remove 1 green token. On a [Hit] or [Critical Hit] result, the attacker suffers 1 [Hit] damage.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/dengar.png",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "charges": {
           "value": 1,
           "recovers": 1
@@ -140,9 +122,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -159,9 +139,7 @@
         "type": "Gunner",
         "ability": "After you perform a primary attack, you may spend 1 [Force] to perform a bonus [Single Turret Arc] attack from a [Single Turret Arc] you have not attacked from this round. If you do and you are stressed, you may reroll 1 attack die.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ezrabridger.png",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -174,9 +152,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -193,9 +169,7 @@
         "type": "Gunner",
         "ability": "While you perform an attack, you may spend 1 [Force] to change 1 of your [Focus] results to a [Critical Hit] result.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fifthbrother.png",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -208,9 +182,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -227,9 +199,7 @@
         "type": "Gunner",
         "ability": "While you perform an attack, you may spend 1 [Charge] to change 1 [Hit] result to a [Critical Hit] result. While you defend, if your [Charge] is active, the attacker may change 1 [Hit] result to a [Critical Hit] result.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/greedo.png",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "charges": {
           "value": 1,
           "recovers": 1
@@ -242,9 +212,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -260,9 +228,7 @@
         "title": "Han Solo",
         "type": "Gunner",
         "ability": "During the Engagement Phase, at initiative 7, you may perform a [Single Turret Arc] attack. You cannot attack from that [Single Turret Arc] again this round.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hansolo.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hansolo.png"
       }
@@ -272,9 +238,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -290,9 +254,7 @@
         "title": "Han Solo",
         "type": "Gunner",
         "ability": "Before you engage, you may perform a red [Focus] action.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hansolo-gunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hansolo-gunner.png"
       }
@@ -302,9 +264,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -320,9 +280,7 @@
         "title": "Hotshot Gunner",
         "type": "Gunner",
         "ability": "While you perform a [Single Turret Arc] attack, after the Modify Defense Dice step, the defender removes 1 focus or calculate token.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hotshotgunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hotshotgunner.png"
       }
@@ -343,9 +301,7 @@
         "title": "Luke Skywalker",
         "type": "Gunner",
         "ability": "At the start of the Engagement Phase, you may spend 1 [Force] to rotate your [Single Turret Arc] indicator.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -359,9 +315,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -377,9 +331,7 @@
         "title": "Skilled Bombardier",
         "type": "Gunner",
         "ability": "If you would drop or launch a device, you may use a template of the same bearing with a speed 1 higher or lower.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/skilledbombardier.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/skilledbombardier.png"
       }
@@ -400,9 +352,7 @@
         "title": "Special Forces Gunner",
         "type": "Gunner",
         "ability": "While you perform a primary [Front Arc] attack, if your [Single Turret Arc] is in your [Front Arc], you may roll 1 additional attack die. After you perform a primary [Front Arc] attack, if your [Single Turret Arc] is in your [Rear Arc], you may perform a bonus primary [Single Turret Arc] attack.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/specialforcesgunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/specialforcesgunner.png"
       }
@@ -412,14 +362,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       },
       {
-        "ships": [
-          "tiesffighter"
-        ]
+        "ships": ["tiesffighter"]
       }
     ],
     "standard": true,
@@ -435,9 +381,7 @@
         "title": "Veteran Tail Gunner",
         "type": "Gunner",
         "ability": "After you perform a primary [Front Arc] attack, you may perform a bonus primary [Rear Arc] attack.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/veterantailgunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/veterantailgunner.png"
       }
@@ -447,9 +391,7 @@
     },
     "restrictions": [
       {
-        "arcs": [
-          "Rear Arc"
-        ]
+        "arcs": ["Rear Arc"]
       }
     ],
     "standard": true,
@@ -465,9 +407,7 @@
         "title": "Veteran Turret Gunner",
         "type": "Gunner",
         "ability": "After you perform a primary attack, you may perform a bonus [Single Turret Arc] attack using a [Single Turret Arc] you did not already attack from this round.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/veteranturretgunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/veteranturretgunner.png"
       }
@@ -501,9 +441,7 @@
         "title": "Finn",
         "type": "Gunner",
         "ability": "While you defend or perform a primary attack, if the enemy ship is in your [Front Arc], you may add 1 blank result to your roll (this die can be rerolled or otherwise modified).",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/finn.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/finn.png"
       }
@@ -513,9 +451,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -531,9 +467,7 @@
         "title": "Paige Tico",
         "type": "Gunner",
         "ability": "After you perform a primary attack, you may drop 1 bomb or rotate your [Single Turret Arc]. After you are destroyed, you may drop 1 bomb.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/paigetico.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/paigetico.png"
       }
@@ -543,9 +477,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -561,9 +493,7 @@
         "title": "Rey",
         "type": "Gunner",
         "ability": "While you defend or perform an attack, if the enemy ship is in your [Single Turret Arc], you may spend 1 [Force] to change 1 of your blank results to a [Evade] or [Hit] result.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -574,9 +504,7 @@
     ],
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "cost": {
@@ -594,9 +522,7 @@
       {
         "title": "Seventh Fleet Gunner",
         "type": "Gunner",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "ability": "While another friendly ship performs a primary attack, if the defender is in your firing arc, you may spend 1 [Charge]. If you do, the attacker rolls 1 additional die, to a maximum of 4. During the System Phase, you may gain 1 disarm token to recover 1 [Charge].",
         "charges": {
           "value": 1,
@@ -608,9 +534,7 @@
     ],
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "cost": {
@@ -628,9 +552,7 @@
       {
         "title": "Clone Commander Cody",
         "type": "Gunner",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "ability": "After you perform an attack that missed, if 1 or more [Hit]/[Critical Hit] results were neutralized, the defender gains 1 strain token.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/clonecommandercody.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/clonecommandercody.png"
@@ -638,9 +560,7 @@
     ],
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "cost": {
@@ -660,9 +580,7 @@
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ahsokatano.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ahsokatano.png",
         "ability": "After you execute a maneuver, you may spend 1 [Force] and choose a friendly ship at range 1-3 in your firing arc. If you do, it may perform a red [Focus] action, even while stressed.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -685,9 +603,7 @@
       {
         "title": "Clone Captain Rex",
         "type": "Gunner",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/clonecaptainrex.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/clonecaptainrex.png",
         "ability": "While you perform an attack, you may spend 1 [Focus] result. If you do, each friendly ship that has the defender in its [Bullseye Arc] may gain 1 strain to perform a [Focus] action."
@@ -708,9 +624,7 @@
       {
         "title": "Suppressive Gunner",
         "type": "Gunner",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/suppressivegunner.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/suppressivegunner.png",
         "ability": "While you perform an attack, you may spend 1 [Focus] result. If you do, the defender gains 1 deplete token unless it chooses to suffer 1 [Hit] damage."
@@ -732,9 +646,7 @@
         "ability": "While you perform an attack, if there are no other ships in the attack arc, you may change 1 of your [Focus] results to a [Hit] result.",
         "title": "Boba Fett",
         "type": "Gunner",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bobafett-gunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bobafett-gunner.png"
       }
@@ -755,9 +667,7 @@
         "ability": "After you perform a special attack with the [Lock] requirement, you may acquire a lock on the defender.",
         "title": "Weapons Systems Officer",
         "type": "Gunner",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/weaponssystemsofficer.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/weaponssystemsofficer.png"
       }
@@ -778,9 +688,7 @@
         "ability": "After you perform a special attack, you may choose a number of friendly ships at range 0-3 of the defender up to the number of damage cards dealt to the defender during that attack. Each chosen ship may remove 1 strain or stress token.",
         "title": "Sabine Wren",
         "type": "Gunner",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sabinewren-gunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sabinewren-gunner.png"
       }
@@ -801,9 +709,7 @@
         "title": "DT-798",
         "type": "Gunner",
         "ability": "At the start of the Engagement Phase, you may choose a friendly ship in your firing arc. If you do, that ship gains 1 strain token. While you perform an attack, you may reroll up to 1 die for each ship in the attack arc with 1 or more non-lock red or orange tokens.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/dt798.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/dt798.png"
       }
@@ -813,9 +719,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       }
     ],
     "standard": true,
@@ -831,9 +735,7 @@
         "title": "First Order Ordnance Tech",
         "type": "Gunner",
         "text": "The First Order trains its pilots and gunners to be fanatically loyal, prioritizing victory even over survival.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "grants": [
           {
             "type": "action",
@@ -856,9 +758,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       }
     ],
     "standard": true,
@@ -874,9 +774,7 @@
         "title": "Gar Saxon",
         "type": "Gunner",
         "ability": "While you perform the [Lock] action, you can only choose an object in your [Front Arc] or [Rear Arc]. While you perform a primary attack, if the defender is in your [Front Arc] or [Rear Arc], you may remove 1 orange or red token from the defender to roll 1 additional die, to a maximum of 4.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/garsaxon-gunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/garsaxon-gunner.png"
       }
@@ -886,15 +784,10 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Large",
-          "Huge"
-        ]
+        "sizes": ["Large", "Huge"]
       },
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -910,9 +803,7 @@
         "title": "Tiber Saxon",
         "type": "Gunner",
         "ability": "After you perform an attack at attack range 1-2 that hits, if the defender has no faceup damage cards, you may spend 1 or more [Charge]. For each [Charge] you spend, the defender gains 1 strain token.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "charges": {
           "value": 2,
           "recovers": 1
@@ -926,9 +817,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -944,9 +833,7 @@
         "title": "Ursa Wren",
         "type": "Gunner",
         "ability": "After you acquire a lock on an enemy unit beyond range 2, if there are no friendly units at range 0-1 of the locked unit, gain 1 calculate token.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ursawren-gunner.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ursawren-gunner.png"
       }
@@ -956,10 +843,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic",
-          "separatistalliance"
-        ]
+        "factions": ["galacticrepublic", "separatistalliance"]
       }
     ],
     "standard": true,
@@ -975,9 +859,7 @@
         "title": "Migs Mayfeld",
         "type": "Gunner",
         "ability": "After you perform a [Front Arc] attack, you may perform a [Rear Arc] or [Single Turret Arc] attack as a bonus attack against a different target with 1 or more red or orange tokens.",
-        "slots": [
-          "Gunner"
-        ],
+        "slots": ["Gunner"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/migsmayfeld.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/migsmayfeld.png"
       }
@@ -993,10 +875,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire",
-          "scumandvillainy"
-        ]
+        "factions": ["galacticempire", "scumandvillainy"]
       }
     ],
     "standard": true,

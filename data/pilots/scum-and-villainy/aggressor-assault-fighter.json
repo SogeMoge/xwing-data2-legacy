@@ -21,9 +21,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "AgF"
-  ],
+  "dialCodes": ["AgF"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -90,10 +88,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88a.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter",
-        "Droid"
-      ],
+      "keywords": ["Bounty Hunter", "Droid"],
       "epic": true
     },
     {
@@ -128,10 +123,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88b.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter",
-        "Droid"
-      ],
+      "keywords": ["Bounty Hunter", "Droid"],
       "epic": true
     },
     {
@@ -160,10 +152,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88c.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter",
-        "Droid"
-      ],
+      "keywords": ["Bounty Hunter", "Droid"],
       "epic": true
     },
     {
@@ -192,10 +181,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88d.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter",
-        "Droid"
-      ],
+      "keywords": ["Bounty Hunter", "Droid"],
       "epic": true
     }
   ]

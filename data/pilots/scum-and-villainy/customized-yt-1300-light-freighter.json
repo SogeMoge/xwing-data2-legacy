@@ -21,9 +21,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "CY"
-  ],
+  "dialCodes": ["CY"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -84,10 +82,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/freightercaptain.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -112,10 +107,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -157,11 +149,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/l337.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid",
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Droid", "Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -186,10 +174,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -214,10 +199,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/riodurant-wat1.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     }
   ]

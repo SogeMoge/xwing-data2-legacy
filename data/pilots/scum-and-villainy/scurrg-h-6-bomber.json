@@ -20,9 +20,7 @@
     "3RR",
     "4FR"
   ],
-  "dialCodes": [
-    "SRG"
-  ],
+  "dialCodes": ["SRG"],
   "faction": "scumandvillainy",
   "stats": [
     {

@@ -20,9 +20,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "TAS"
-  ],
+  "dialCodes": ["TAS"],
   "stats": [
     {
       "arc": "Front Arc",

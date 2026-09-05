@@ -19,9 +19,7 @@
     "3YR",
     "4FW"
   ],
-  "dialCodes": [
-    "Xi"
-  ],
+  "dialCodes": ["Xi"],
   "faction": "firstorder",
   "stats": [
     {
@@ -92,14 +90,7 @@
       "xws": "commandermalarus-xiclasslightshuttle",
       "initiative": 5,
       "cost": 44,
-      "slots": [
-        "Talent",
-        "Crew",
-        "Crew",
-        "Modification",
-        "Tech",
-        "Tech"
-      ],
+      "slots": ["Talent", "Crew", "Crew", "Modification", "Tech", "Tech"],
       "limited": 1,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/commandermalarus-xiclasslightshuttle.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/commandermalarus-xiclasslightshuttle.png",
@@ -113,13 +104,7 @@
       "xws": "firstordercourier",
       "initiative": 2,
       "cost": 30,
-      "slots": [
-        "Crew",
-        "Crew",
-        "Modification",
-        "Tech",
-        "Tech"
-      ],
+      "slots": ["Crew", "Crew", "Modification", "Tech", "Tech"],
       "limited": 0,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstordercourier.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstordercourier.png",
@@ -138,14 +123,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 38,
-      "slots": [
-        "Talent",
-        "Crew",
-        "Crew",
-        "Modification",
-        "Tech",
-        "Tech"
-      ],
+      "slots": ["Talent", "Crew", "Crew", "Modification", "Tech", "Tech"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gideonhask-xiclasslightshuttle.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gideonhask-xiclasslightshuttle.png",
       "epic": true
@@ -157,20 +135,11 @@
       "limited": 1,
       "xws": "agenttierny",
       "ability": "Setup: After placing forces, you must assign the Broken Trust condition to an enemy ship.",
-      "conditions": [
-        "brokentrust"
-      ],
+      "conditions": ["brokentrust"],
       "standard": true,
       "wildspace": true,
       "cost": 49,
-      "slots": [
-        "Talent",
-        "Crew",
-        "Crew",
-        "Modification",
-        "Tech",
-        "Tech"
-      ],
+      "slots": ["Talent", "Crew", "Crew", "Modification", "Tech", "Tech"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/agenttierny.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/agenttierny.png",
       "epic": true

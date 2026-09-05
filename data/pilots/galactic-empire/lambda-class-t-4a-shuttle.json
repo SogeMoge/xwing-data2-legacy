@@ -16,9 +16,7 @@
     "3FW",
     "3NR"
   ],
-  "dialCodes": [
-    "LS"
-  ],
+  "dialCodes": ["LS"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -73,14 +71,7 @@
       "xws": "captainkagi",
       "ability": "At the start of the Engagement Phase, you may choose 1 or more friendly ships at range 0-3. If you do, transfer all enemy lock tokens from the chosen ships to you.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainkagi.png",
-      "slots": [
-        "Sensor",
-        "Cannon",
-        "Crew",
-        "Crew",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Sensor", "Cannon", "Crew", "Crew", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainkagi.png",
       "standard": true,
       "wildspace": true,
@@ -99,14 +90,7 @@
         "value": 2,
         "recovers": 0
       },
-      "slots": [
-        "Sensor",
-        "Cannon",
-        "Crew",
-        "Crew",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Sensor", "Cannon", "Crew", "Crew", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon.png",
       "standard": true,
       "wildspace": true,
@@ -117,18 +101,11 @@
       "caption": "Death Squadron Veteran",
       "initiative": 3,
       "limited": 1,
-      "cost": 45,
+      "cost": 46,
       "xws": "lieutenantsai",
       "ability": "After you a perform a [Coordinate] action, if the ship you chose performed an action on your action bar, you may perform that action.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantsai.png",
-      "slots": [
-        "Sensor",
-        "Cannon",
-        "Crew",
-        "Crew",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Sensor", "Cannon", "Crew", "Crew", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantsai.png",
       "standard": true,
       "wildspace": true,
@@ -142,20 +119,13 @@
       "xws": "omicrongrouppilot",
       "text": "Noted for its tri-wing design and advanced sensor suite, the Lambda-class shuttle serves a critical role as a light utility craft in the Imperial Navy.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/omicrongrouppilot.png",
-      "slots": [
-        "Sensor",
-        "Cannon",
-        "Crew",
-        "Crew",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Sensor", "Cannon", "Crew", "Crew", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/omicrongrouppilot.png",
       "standard": true,
       "wildspace": true,
       "epic": true
     },
-        {
+    {
       "name": "Captain Yorr",
       "caption": "ST-321 Shuttle Pilot",
       "initiative": 2,
@@ -168,14 +138,7 @@
         "value": 2,
         "recovers": 1
       },
-      "slots": [
-        "Sensor",
-        "Cannon",
-        "Crew",
-        "Crew",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Sensor", "Cannon", "Crew", "Crew", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainyorr-wat1.png",
       "standard": false,
       "wildspace": true,

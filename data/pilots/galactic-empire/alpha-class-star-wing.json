@@ -18,9 +18,7 @@
     "3YW",
     "4FR"
   ],
-  "dialCodes": [
-    "SW"
-  ],
+  "dialCodes": ["SW"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -204,7 +202,7 @@
       "caption": "Payload Courier",
       "initiative": 3,
       "limited": 1,
-      "cost": 38,
+      "cost": 44,
       "xws": "lieutenantkarsabi-pnp-lsl",
       "ability": "When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].",
       "shipAbility": {
@@ -313,7 +311,7 @@
       "caption": "Helping Hand",
       "initiative": 4,
       "limited": 1,
-      "cost": 46,
+      "cost": 49,
       "xws": "majorvynder-pnp-lsl",
       "ability": "After you perform a [Missile] attack, you may perform a bonus [Cannon] attack. While you perform this bonus attack, you may change 1 [Focus] result to a [Hit] result.",
       "shipAbility": {

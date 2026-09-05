@@ -21,9 +21,7 @@
     "5FB",
     "5KR"
   ],
-  "dialCodes": [
-    "AW"
-  ],
+  "dialCodes": ["AW"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -81,18 +79,11 @@
         "name": "Vectored Thrusters",
         "text": "After you perform an action, you may perform a red [Boost] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -107,18 +98,11 @@
         "name": "Vectored Thrusters",
         "text": "After you perform an action, you may perform a red [Boost] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greensquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -134,18 +118,11 @@
         "name": "Vectored Thrusters",
         "text": "After you perform an action, you may perform a red [Boost] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakefarrell.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -160,17 +137,11 @@
         "name": "Vectored Thrusters",
         "text": "After you perform an action, you may perform a red [Boost] action."
       },
-      "slots": [
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/phoenixsquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -185,15 +156,8 @@
         "name": "Vectored Thrusters",
         "text": "After you perform an action, you may perform a red [Boost] action."
       },
-      "keywords": [
-        "A-wing"
-      ],
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "keywords": ["A-wing"],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "standard": true,
       "wildspace": true,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-rz1awing.png",
@@ -211,17 +175,9 @@
       },
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing",
-        "Mandalorian"
-      ],
+      "keywords": ["A-wing", "Mandalorian"],
       "cost": 35,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "ability": "While you defend or perform an attack, if the attack range is 1 and you are in the enemy ship's [Front Arc], you may change 1 of your results to an [Evade] or [Hit] result.",
       "caption": "Daughter of Mandalore",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren-rz1awing.png",
@@ -241,17 +197,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 48,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "ability": "While another friendly ship at range 1-2 defends or performs an attack, during a Modify Dice step, you may transfer 1 of your focus tokens, evade tokens, or locks to that ship.",
-      "keywords": [
-        "A-wing",
-        "Spectre"
-      ],
+      "keywords": ["A-wing", "Spectre"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla-rz1awing.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla-rz1awing.png",
       "epic": true
@@ -273,17 +221,9 @@
         "recovers": 1
       },
       "cost": 50,
-      "slots": [
-        "Force Power",
-        "Force Power",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Force Power", "Force Power", "Missile", "Configuration"],
       "ability": "After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 [Force]. That ship may perform an action, even while stressed.",
-      "keywords": [
-        "A-wing",
-        "Light Side"
-      ],
+      "keywords": ["A-wing", "Light Side"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ahsokatano-rz1awing.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahsokatano-rz1awing.png",
       "epic": true
@@ -301,16 +241,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 32,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "ability": "While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sharabey-rz1awing.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sharabey-rz1awing.png",
       "epic": true
@@ -328,15 +261,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 30,
-      "slots": [
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Missile", "Configuration"],
       "ability": "After you acquire or spend a lock, you may remove 1 red token from yourself.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/derekklivian.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/derekklivian.png",
       "epic": true
@@ -358,16 +285,9 @@
         "value": 1,
         "recovers": 0
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "ability": "If you have no active [Force], after you reveal a bank [[Bank Left] or [Bank Right]] or turn [[Turn Left] or [Turn Right]] maneuver, you may increase the difficulty of the maneuver. If you do, perform that maneuver as a sideslip and recover 1 [Force].",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/keovenzee.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/keovenzee.png",
       "epic": true
@@ -385,16 +305,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 38,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Configuration"],
       "ability": "While you have 2 or fewer stress tokens, you may perform actions, even while stressed.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tychocelchu.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tychocelchu.png",
       "epic": true
@@ -412,16 +325,11 @@
         "name": "Vectored Thrusters",
         "text": "After you perform an action, you may perform a red [Boost] action."
       },
-      "standardLoadout": [
-        "predator",
-        "afterburners"
-      ],
+      "standardLoadout": ["predator", "afterburners"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd-swz106.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -437,17 +345,11 @@
         "name": "Vectored Thrusters",
         "text": "After you perform an action, you may perform a red [Boost] action."
       },
-      "standardLoadout": [
-        "elusive",
-        "outmaneuver",
-        "ionmissiles"
-      ],
+      "standardLoadout": ["elusive", "outmaneuver", "ionmissiles"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakefarrell-swz106.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -463,14 +365,9 @@
       "standard": false,
       "wildspace": true,
       "cost": 36,
-      "standardLoadout": [
-        "hopeful",
-        "concussionmissiles"
-      ],
+      "standardLoadout": ["hopeful", "concussionmissiles"],
       "ability": "While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sharabey-swz106.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sharabey-swz106.png",
       "epic": true
@@ -541,9 +438,7 @@
         "protonrockets"
       ],
       "ability": "While defending, you may gain a strain token to change 1 [Focus] result to an [Evade] result.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd-battleoverendor.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arvelcrynyd-battleoverendor.png",
       "standard": false,
@@ -610,15 +505,9 @@
           "type": "SLAM"
         }
       ],
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile"
-      ],
+      "slots": ["Talent", "Talent", "Missile"],
       "ability": "While defending, you may gain a strain token to change 1 [Focus] result to an [Evade] result.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd-battleoverendor-lsl.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arvelcrynyd-battleoverendor-lsl.png",
       "standard": true,
@@ -692,9 +581,7 @@
         "chaffparticles-battleoverendor"
       ],
       "ability": "While you are disarmed, you can still perform [Missile] attacks. When you perform a [Missile] attack while disarmed, roll a maximum of 4 dice.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tychocelchu-battleoverendor.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tychocelchu-battleoverendor.png",
       "standard": false,
@@ -761,15 +648,9 @@
           }
         }
       ],
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile"
-      ],
+      "slots": ["Talent", "Talent", "Missile"],
       "ability": "While you are disarmed, you can still perform [Missile] attacks. When you perform a [Missile] attack while disarmed, roll a maximum of 4 dice.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tychocelchu-battleoverendor-lsl.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tychocelchu-battleoverendor-lsl.png",
       "standard": true,
@@ -813,9 +694,7 @@
         "targetassistalgorithm-battleoverendor"
       ],
       "ability": "While defending, you may gain 1 strain token to change up to 2 of your blank results to [Focus] results.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gemmersojan-battleoverendor.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gemmersojan-battleoverendor.png",
       "standard": false,
@@ -852,14 +731,9 @@
           "value": 2
         }
       ],
-      "slots": [
-        "Talent",
-        "Missile"
-      ],
+      "slots": ["Talent", "Missile"],
       "ability": "While defending, you may gain 1 strain token to change up to 2 of your blank results to [Focus] results.",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gemmersojan-battleoverendor-lsl.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gemmersojan-battleoverendor-lsl.png",
       "standard": true,

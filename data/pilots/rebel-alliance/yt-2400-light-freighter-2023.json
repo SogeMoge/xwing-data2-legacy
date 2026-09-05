@@ -21,9 +21,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "YT24"
-  ],
+  "dialCodes": ["YT24"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -89,9 +87,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-rebelalliance.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -119,10 +115,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-lsl-rebelalliance.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid",
-        "Freighter"
-      ],
+      "keywords": ["Droid", "Freighter"],
       "epic": true
     },
     {
@@ -147,10 +140,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-sl-rebelalliance.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Droid",
-        "Freighter"
-      ],
+      "keywords": ["Droid", "Freighter"],
       "epic": true
     },
     {
@@ -195,10 +185,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-rebelalliance.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid",
-        "Freighter"
-      ],
+      "keywords": ["Droid", "Freighter"],
       "epic": true
     },
     {
@@ -247,10 +234,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-lsl-rebelalliance.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid",
-        "Freighter"
-      ],
+      "keywords": ["Droid", "Freighter"],
       "epic": true
     },
     {
@@ -296,10 +280,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-sl-rebelalliance.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Droid",
-        "Freighter"
-      ],
+      "keywords": ["Droid", "Freighter"],
       "epic": true
     }
   ]

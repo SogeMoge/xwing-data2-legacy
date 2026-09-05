@@ -20,9 +20,7 @@
     "3FB",
     "3NW"
   ],
-  "dialCodes": [
-    "TR"
-  ],
+  "dialCodes": ["TR"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -76,17 +74,11 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Crew",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Crew", "Crew", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vizier.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -102,18 +94,11 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Talent", "Crew", "Crew", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainferoph.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -129,18 +114,11 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Talent", "Crew", "Crew", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvermeil.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -161,16 +139,11 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Crew", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scarifbasepilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ]

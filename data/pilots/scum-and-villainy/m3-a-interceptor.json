@@ -20,9 +20,7 @@
     "5FW",
     "5KR"
   ],
-  "dialCodes": [
-    "M3A"
-  ],
+  "dialCodes": ["M3A"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -75,9 +73,7 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Modification"
-      ],
+      "slots": ["Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cartelspacer.png",
       "standard": true,
       "wildspace": true,
@@ -96,10 +92,7 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/genesisred.png",
       "standard": true,
       "wildspace": true,
@@ -118,9 +111,7 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Modification"
-      ],
+      "slots": ["Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/inaldra.png",
       "standard": true,
       "wildspace": true,
@@ -139,10 +130,7 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/laetinashera.png",
       "standard": true,
       "wildspace": true,
@@ -161,16 +149,11 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/quinnjast.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     },
     {
@@ -186,10 +169,7 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/serissu.png",
       "standard": true,
       "wildspace": true,
@@ -208,9 +188,7 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Modification"
-      ],
+      "slots": ["Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sunnybounder.png",
       "standard": true,
       "wildspace": true,
@@ -228,10 +206,7 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tansariipointveteran.png",
       "standard": true,
       "wildspace": true,
@@ -249,9 +224,7 @@
       "caption": "Tilted Droid",
       "standard": true,
       "wildspace": true,
-      "slots": [
-        "Modification"
-      ],
+      "slots": ["Modification"],
       "ability": "After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.",
       "cost": 25,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/g4rgorvm.png",
@@ -274,9 +247,7 @@
           "type": "Barrel Roll"
         }
       ],
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     }
   ]

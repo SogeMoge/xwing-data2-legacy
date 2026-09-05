@@ -22,9 +22,7 @@
     "4FW",
     "5FW"
   ],
-  "dialCodes": [
-    "B22"
-  ],
+  "dialCodes": ["B22"],
   "faction": "separatistalliance",
   "stats": [
     {
@@ -84,12 +82,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 44,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Title",
-        "Tactical Relay"
-      ],
+      "slots": ["Talent", "Modification", "Title", "Tactical Relay"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/generalgrievous.png",
       "epic": true
     },
@@ -104,12 +97,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 39,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Title",
-        "Tactical Relay"
-      ],
+      "slots": ["Talent", "Modification", "Title", "Tactical Relay"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wattambor.png",
       "epic": true
     },
@@ -149,15 +137,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 34,
-      "slots": [
-        "Modification",
-        "Title",
-        "Tactical Relay"
-      ],
+      "slots": ["Modification", "Title", "Tactical Relay"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/feethanottrawautopilot.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -171,11 +153,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 44,
-      "slots": [
-        "Modification",
-        "Title",
-        "Tactical Relay"
-      ],
+      "slots": ["Modification", "Title", "Tactical Relay"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainsear.png",
       "epic": true
     },
@@ -183,12 +161,7 @@
       "name": "Skakoan Ace",
       "xws": "skakoanace",
       "cost": 37,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Title",
-        "Tactical Relay"
-      ],
+      "slots": ["Talent", "Modification", "Title", "Tactical Relay"],
       "initiative": 3,
       "limited": 0,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/skakoanace.png",
@@ -212,13 +185,8 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/halliobas-wat1.png",
       "standard": false,
       "wildspace": true,
-      "cost": 43,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Title",
-        "Tactical Relay"
-      ],
+      "cost": 47,
+      "slots": ["Talent", "Modification", "Title", "Tactical Relay"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/halliobas-wat1.png",
       "epic": true
     }

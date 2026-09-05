@@ -20,9 +20,7 @@
     "4FR",
     "5FR"
   ],
-  "dialCodes": [
-    "CR90-REB"
-  ],
+  "dialCodes": ["CR90-REB"],
   "stats": [
     {
       "arc": "Left Arc",

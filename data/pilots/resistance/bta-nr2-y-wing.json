@@ -19,9 +19,7 @@
     "4FR",
     "5KR"
   ],
-  "dialCodes": [
-    "NR2"
-  ],
+  "dialCodes": ["NR2"],
   "faction": "resistance",
   "stats": [
     {
@@ -91,9 +89,7 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zoriibliss.png",
       "caption": "Corsair of Kijimi",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -122,9 +118,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tezanasz.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tezanasz.png",
       "caption": "Old Soldier",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -152,9 +146,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wilsateshlo.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wilsateshlo.png",
       "caption": "Veiled Sorority Privateer",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -182,9 +174,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shasazaro.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shasazaro.png",
       "caption": "Artistic Ace",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -213,9 +203,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/legafossang.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/legafossang.png",
       "caption": "Hero of Humbarine",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -244,9 +232,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/aftabackbar.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/aftabackbar.png",
       "caption": "“Junior”",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -274,9 +260,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coruskapellim.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/coruskapellim.png",
       "caption": "“Gentleman Flyer”",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -305,9 +289,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caithrenalli-btanr2ywing.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/caithrenalli-btanr2ywing.png",
       "caption": "Tenacious Survivor",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -335,9 +317,7 @@
       "text": "Designed for customization, the BTA-NR2 Y-wing is used by numerous military organizations across the galaxy in a variety of roles, from law enforcement craft to wartime bombers.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/newrepublicpatrol.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/newrepublicpatrol.png",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -364,9 +344,7 @@
       "text": "Led by Zorii Bliss, the Kijimi Spice Runners set aside their usual mercenary ways to take the fight to the Final Order at the Battle of Exegol.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kijimispicerunner.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kijimispicerunner.png",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     }
   ],

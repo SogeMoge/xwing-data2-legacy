@@ -19,9 +19,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "TAg"
-  ],
+  "dialCodes": ["TAg"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -83,9 +81,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/doubleedge.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -109,9 +105,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkestal.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -134,9 +128,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronscout.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -158,9 +150,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sienarspecialist.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ]

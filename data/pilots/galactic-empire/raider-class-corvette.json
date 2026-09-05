@@ -20,9 +20,7 @@
     "4FW",
     "5FR"
   ],
-  "dialCodes": [
-    "RDR-I"
-  ],
+  "dialCodes": ["RDR-I"],
   "stats": [
     {
       "arc": "Full Front Arc",

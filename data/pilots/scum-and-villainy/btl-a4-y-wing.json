@@ -19,9 +19,7 @@
     "4FR",
     "4KR"
   ],
-  "dialCodes": [
-    "YW"
-  ],
+  "dialCodes": ["YW"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -82,9 +80,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/crymorahgoon.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -109,9 +105,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/drearenthal.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -135,9 +129,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hiredgun.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -162,9 +154,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kavil.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -174,9 +164,7 @@
       "limited": 1,
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "cost": 37,
       "slots": [
         "Talent",
@@ -200,9 +188,7 @@
       "limited": 1,
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "cost": 35,
       "slots": [
         "Talent",
@@ -237,9 +223,7 @@
         "Astromech",
         "Device"
       ],
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/amaxinewarrior.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/amaxinewarrior.png",
       "epic": true
@@ -263,9 +247,7 @@
         "Device"
       ],
       "ability": "After a friendly device that you have locked detonates, each enemy ship at range 0-1 of that device gains 1 strain token.",
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/padric.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/padric.png",
       "epic": true
@@ -279,17 +261,8 @@
       "standard": true,
       "wildspace": true,
       "cost": 39,
-      "slots": [
-        "Tech",
-        "Turret",
-        "Torpedo",
-        "Missile",
-        "Astromech",
-        "Device"
-      ],
-      "keywords": [
-        "Y-wing"
-      ],
+      "slots": ["Tech", "Turret", "Torpedo", "Missile", "Astromech", "Device"],
+      "keywords": ["Y-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jinatasecurityofficer.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jinatasecurityofficer.png",
       "epic": true

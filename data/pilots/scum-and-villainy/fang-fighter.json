@@ -21,9 +21,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "Fng"
-  ],
+  "dialCodes": ["Fng"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -81,16 +79,11 @@
         "name": "Concordia Faceoff",
         "text": "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result."
       },
-      "slots": [
-        "Talent",
-        "Torpedo"
-      ],
+      "slots": ["Talent", "Torpedo"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fennrau.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "epic": true
     },
     {
@@ -106,17 +99,11 @@
         "name": "Concordia Faceoff",
         "text": "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result."
       },
-      "slots": [
-        "Talent",
-        "Torpedo",
-        "Modification"
-      ],
+      "slots": ["Talent", "Torpedo", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/joyrekkoff.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "epic": true
     },
     {
@@ -132,17 +119,11 @@
         "name": "Concordia Faceoff",
         "text": "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result."
       },
-      "slots": [
-        "Talent",
-        "Torpedo",
-        "Modification"
-      ],
+      "slots": ["Talent", "Torpedo", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kadsolus.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "epic": true
     },
     {
@@ -158,24 +139,18 @@
         "name": "Concordia Faceoff",
         "text": "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result."
       },
-      "slots": [
-        "Talent",
-        "Torpedo",
-        "Modification"
-      ],
+      "slots": ["Talent", "Torpedo", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oldteroch.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "epic": true
     },
     {
       "name": "Skull Squadron Pilot",
       "initiative": 4,
       "limited": 0,
-      "cost": 44,
+      "cost": 45,
       "xws": "skullsquadronpilot",
       "text": "The aces of Skull Squadron favor an aggressive approach, using their craft's pivot wing technology to achieve unmatched agility in the pursuit of their quarry.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/skullsquadronpilot.png",
@@ -183,17 +158,11 @@
         "name": "Concordia Faceoff",
         "text": "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result."
       },
-      "slots": [
-        "Talent",
-        "Torpedo",
-        "Modification"
-      ],
+      "slots": ["Talent", "Torpedo", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/skullsquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "epic": true
     },
     {
@@ -208,16 +177,11 @@
         "name": "Concordia Faceoff",
         "text": "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result."
       },
-      "slots": [
-        "Torpedo",
-        "Modification"
-      ],
+      "slots": ["Torpedo", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zealousrecruit.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "epic": true
     },
     {
@@ -232,17 +196,11 @@
         "name": "Concordia Faceoff",
         "text": "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result."
       },
-      "slots": [
-        "Talent",
-        "Torpedo",
-        "Modification"
-      ],
+      "slots": ["Talent", "Torpedo", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mandalorianroyalguard.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "caption": "Selfless Protector",
       "epic": true
     },
@@ -260,16 +218,10 @@
         "name": "Concordia Faceoff",
         "text": "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result."
       },
-      "slots": [
-        "Talent",
-        "Torpedo",
-        "Modification"
-      ],
+      "slots": ["Talent", "Torpedo", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "epic": true
     }
   ]

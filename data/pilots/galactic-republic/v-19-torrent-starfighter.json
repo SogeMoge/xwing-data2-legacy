@@ -21,9 +21,7 @@
     "3KR",
     "4FW"
   ],
-  "dialCodes": [
-    "V19*"
-  ],
+  "dialCodes": ["V19*"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -75,15 +73,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 27,
-      "slots": [
-        "Talent",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kickback.png",
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -97,15 +89,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 29,
-      "slots": [
-        "Talent",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball.png",
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -119,14 +105,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 26,
-      "slots": [
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/swoop.png",
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -140,15 +121,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 26,
-      "slots": [
-        "Talent",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/axe.png",
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -162,14 +137,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 25,
-      "slots": [
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tucker.png",
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -182,15 +152,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 26,
-      "slots": [
-        "Talent",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronprotector.png",
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -203,14 +167,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 25,
-      "slots": [
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/goldsquadrontrooper.png",
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -227,10 +186,7 @@
       "ability": "After you perform a [Barrel Roll] action, you may perform a red [Lock] action. If you do, before you perfrom the [Lock] action, you may gain 1 strain to treat it as white.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kickback-siegeofcoruscant.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kickback-siegeofcoruscant.png",
-      "standardLoadout": [
-        "diamondboronmissiles",
-        "munitionsfailsafe"
-      ],
+      "standardLoadout": ["diamondboronmissiles", "munitionsfailsafe"],
       "shipStats": [
         {
           "arc": "Front Arc",
@@ -248,9 +204,7 @@
       ],
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -267,10 +221,7 @@
       "ability": "After you perform a [Barrel Roll] action, you may perform a red [Lock] action. If you do, before you perfrom the [Lock] action, you may gain 1 strain to treat it as white.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kickback-siegeofcoruscant-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kickback-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Talent",
-        "Missile"
-      ],
+      "slots": ["Talent", "Missile"],
       "shipStats": [
         {
           "arc": "Front Arc",
@@ -288,9 +239,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -307,10 +256,7 @@
       "ability": "After you perform an attack, you may choose another friendly ship with the Born for This ability at range 0-2 in your [Left Arc] or [Right Arc]. The chosen ship gains a lock on the defender.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/axe-siegeofcoruscant.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/axe-siegeofcoruscant.png",
-      "standardLoadout": [
-        "deadeyeshot",
-        "barragerockets"
-      ],
+      "standardLoadout": ["deadeyeshot", "barragerockets"],
       "shipStats": [
         {
           "arc": "Front Arc",
@@ -328,9 +274,7 @@
       ],
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -347,10 +291,7 @@
       "ability": "After you perform an attack, you may choose another friendly ship with the Born for This ability at range 0-2 in your [Left Arc] or [Right Arc]. The chosen ship gains a lock on the defender.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/axe-siegeofcoruscant-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/axe-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Talent",
-        "Missile"
-      ],
+      "slots": ["Talent", "Missile"],
       "shipStats": [
         {
           "arc": "Front Arc",
@@ -368,9 +309,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -387,15 +326,10 @@
       "standard": true,
       "wildspace": true,
       "cost": 34,
-      "slots": [
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/slammer.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/slammer.png",
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     }
   ]

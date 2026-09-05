@@ -22,9 +22,7 @@
     "3RR",
     "4FW"
   ],
-  "dialCodes": [
-    "Trb"
-  ],
+  "dialCodes": ["Trb"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -90,9 +88,7 @@
       "limited": 0,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/caridaacademycadet.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caridaacademycadet.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -118,9 +114,7 @@
       "limited": 0,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/onyxsquadronsentry.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronsentry.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -147,9 +141,7 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rampage.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rampage.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -175,15 +167,13 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lyttandree.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lyttandree.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
       "name": "Flight Leader Ubbel",
       "caption": "Onyx Leader",
-      "cost": 43,
+      "cost": 42,
       "initiative": 5,
       "limited": 1,
       "slots": [
@@ -204,9 +194,7 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/flightleaderubbel.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/flightleaderubbel.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ],

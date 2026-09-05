@@ -18,9 +18,7 @@
     "3YR",
     "4FW"
   ],
-  "dialCodes": [
-    "GtF"
-  ],
+  "dialCodes": ["GtF"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -69,9 +67,7 @@
       "name": "Maul",
       "caption": "Lord of the Shadow Collective",
       "force": {
-        "side": [
-          "dark"
-        ],
+        "side": ["dark"],
         "value": 3,
         "recovers": 1
       },
@@ -95,9 +91,7 @@
         "Title"
       ],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maul.png",
-      "keywords": [
-        "Dark Side"
-      ]
+      "keywords": ["Dark Side"]
     },
     {
       "name": "Rook Kast",
@@ -122,9 +116,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rookkast.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rookkast.png",
-      "keywords": [
-        "Mandalorian"
-      ]
+      "keywords": ["Mandalorian"]
     },
     {
       "name": "Shadow Collective Operator",
@@ -147,9 +139,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shadowcollectiveoperator.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowcollectiveoperator.png",
-      "keywords": [
-        "Mandalorian"
-      ]
+      "keywords": ["Mandalorian"]
     }
   ]
 }

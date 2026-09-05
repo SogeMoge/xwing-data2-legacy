@@ -22,9 +22,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "TAx"
-  ],
+  "dialCodes": ["TAx"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -83,28 +81,17 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "dark"
-        ]
+        "side": ["dark"]
       },
       "shipAbility": {
         "name": "Advanced Targeting Computer",
         "text": "While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result."
       },
-      "slots": [
-        "Sensor",
-        "Missile",
-        "Modification",
-        "Force Power"
-      ],
+      "slots": ["Sensor", "Missile", "Modification", "Force Power"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "Sith",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "Sith", "TIE"],
       "epic": true
     },
     {
@@ -120,18 +107,11 @@
         "name": "Advanced Targeting Computer",
         "text": "While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maarekstele.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -146,18 +126,11 @@
         "name": "Advanced Targeting Computer",
         "text": "While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/stormsquadronace.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -177,18 +150,12 @@
         "name": "Advanced Targeting Computer",
         "text": "While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result."
       },
-      "slots": [
-        "Sensor",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Sensor", "Missile", "Modification"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tempestsquadronpilot.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tempestsquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -204,18 +171,11 @@
         "name": "Advanced Targeting Computer",
         "text": "While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vedfoslo.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -231,17 +191,11 @@
         "name": "Advanced Targeting Computer",
         "text": "While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result."
       },
-      "slots": [
-        "Sensor",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Sensor", "Missile", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zertikstrom.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -256,9 +210,7 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "dark"
-        ]
+        "side": ["dark"]
       },
       "shipAbility": {
         "name": "Advanced Targeting Computer",
@@ -283,19 +235,11 @@
           "value": 3
         }
       ],
-      "standardLoadout": [
-        "marksmanship",
-        "hate",
-        "afterburners"
-      ],
+      "standardLoadout": ["marksmanship", "hate", "afterburners"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "Sith",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "Sith", "TIE"],
       "epic": true
     },
     {
@@ -310,9 +254,7 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "dark"
-        ]
+        "side": ["dark"]
       },
       "shipAbility": {
         "name": "Advanced Targeting Computer",
@@ -337,19 +279,11 @@
           "value": 3
         }
       ],
-      "slots": [
-        "Sensor",
-        "Missile",
-        "Force Power"
-      ],
+      "slots": ["Sensor", "Missile", "Force Power"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "Sith",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "Sith", "TIE"],
       "epic": true
     },
     {
@@ -366,17 +300,10 @@
         "name": "Advanced Targeting Computer",
         "text": "While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Missile", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -391,9 +318,7 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "dark"
-        ]
+        "side": ["dark"]
       },
       "shipAbility": {
         "name": "Advanced Targeting Computer",
@@ -418,19 +343,11 @@
           "value": 3
         }
       ],
-      "standardLoadout": [
-        "hate",
-        "ionmissiles",
-        "afterburners"
-      ],
+      "standardLoadout": ["hate", "ionmissiles", "afterburners"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-swz105.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "Sith",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "Sith", "TIE"],
       "epic": true
     },
     {
@@ -439,11 +356,7 @@
       "initiative": 5,
       "limited": 1,
       "cost": 53,
-      "standardLoadout": [
-        "elusive",
-        "outmaneuver",
-        "afterburners"
-      ],
+      "standardLoadout": ["elusive", "outmaneuver", "afterburners"],
       "xws": "maarekstele-swz105",
       "ability": "While you perform an attack, if the defender would be dealt a faceup damage card, instead draw 3 damage cards, choose 1, and discard the rest.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maarekstele-swz105.png",
@@ -454,9 +367,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maarekstele-swz105.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ]

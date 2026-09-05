@@ -23,9 +23,7 @@
     "5FW",
     "5KR"
   ],
-  "dialCodes": [
-    "RCS"
-  ],
+  "dialCodes": ["RCS"],
   "faction": "separatistalliance",
   "stats": [
     {
@@ -87,7 +85,7 @@
       "caption": "On His Own Time",
       "initiative": 5,
       "limited": 1,
-      "cost": 45,
+      "cost": 44,
       "charges": {
         "value": 1,
         "recovers": 0
@@ -108,9 +106,7 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/durge-separatistalliance.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/durge-separatistalliance.png",
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -120,7 +116,7 @@
       "caption": "Needs No Introduction",
       "initiative": 4,
       "limited": 1,
-      "cost": 42,
+      "cost": 41,
       "xws": "cadbane-separatistalliance",
       "slots": [
         "Talent",
@@ -141,9 +137,7 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cadbane-separatistalliance.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cadbane-separatistalliance.png",
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -155,13 +149,7 @@
       "limited": 1,
       "cost": 39,
       "xws": "ig101",
-      "slots": [
-        "Talent",
-        "Cannon",
-        "Cannon",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Cannon", "Cannon", "Modification", "Title"],
       "ability": "At the start of the System Phase, you may repair 1 faceup damage card.",
       "shipAbility": {
         "name": "Networked Calculations",
@@ -203,9 +191,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig101.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig101.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -216,13 +202,7 @@
       "limited": 0,
       "cost": 37,
       "xws": "magnaguardexecutioner",
-      "slots": [
-        "Talent",
-        "Cannon",
-        "Cannon",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Cannon", "Cannon", "Modification", "Title"],
       "text": "In addition to guarding Separatist leaders, MagneGuard droids are sometimes dispatched in swift Rogue-class Starfighters to eliminate their enemies.",
       "shipAbility": {
         "name": "Networked Calculations",
@@ -264,9 +244,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/magnaguardexecutioner.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/magnaguardexecutioner.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -278,13 +256,7 @@
       "limited": 2,
       "cost": 39,
       "xws": "magnaguardprotector",
-      "slots": [
-        "Talent",
-        "Cannon",
-        "Cannon",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Cannon", "Cannon", "Modification", "Title"],
       "ability": "After placing forces, assign the Guarded condition to 1 friendly ship other than MagnaGuard Protector.",
       "shipAbility": {
         "name": "Networked Calculations",
@@ -326,9 +298,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/magnaguardprotector.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/magnaguardprotector.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -340,13 +310,7 @@
       "limited": 1,
       "cost": 39,
       "xws": "ig102",
-      "slots": [
-        "Talent",
-        "Cannon",
-        "Cannon",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Cannon", "Cannon", "Modification", "Title"],
       "ability": "While you defend, if the attacker's initiative is equal to or greater than yours, you may change 1 blank result to a [Focus] result.",
       "shipAbility": {
         "name": "Networked Calculations",
@@ -388,9 +352,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig102.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig102.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -402,13 +364,7 @@
       "limited": 1,
       "cost": 37,
       "xws": "ig111",
-      "slots": [
-        "Talent",
-        "Cannon",
-        "Cannon",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Cannon", "Cannon", "Modification", "Title"],
       "ability": "After you perform an attack that missed, you may choose 1 enemy ship in your [Bullseye Arc] and gain 1 deplete token. If you do, that ship suffers 1 [Hit] damage.",
       "shipAbility": {
         "name": "Networked Calculations",
@@ -450,9 +406,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig111.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig111.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "standard": true,
       "wildspace": true,
       "epic": true

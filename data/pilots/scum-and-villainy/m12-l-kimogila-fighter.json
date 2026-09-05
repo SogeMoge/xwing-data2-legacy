@@ -20,9 +20,7 @@
     "3YW",
     "4KR"
   ],
-  "dialCodes": [
-    "M12"
-  ],
+  "dialCodes": ["M12"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -118,9 +116,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dalanoberos.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     },
     {
@@ -148,9 +144,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/toranikulda.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     }
   ]

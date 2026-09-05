@@ -19,9 +19,7 @@
     "4FR",
     "4KR"
   ],
-  "dialCodes": [
-    "YW"
-  ],
+  "dialCodes": ["YW"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -83,9 +81,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -109,9 +105,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/evaanverlaine.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -140,9 +134,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/goldsquadronveteran.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -164,9 +156,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/graysquadronbomber.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -190,9 +180,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hortonsalm.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -216,9 +204,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/norrawexley-btla4ywing.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -233,18 +219,12 @@
         "name": "Hope",
         "text": "After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action."
       },
-      "standardLoadout": [
-        "dorsalturret",
-        "advprotontorpedoes",
-        "r4astromech"
-      ],
+      "standardLoadout": ["dorsalturret", "advprotontorpedoes", "r4astromech"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dextiree-battleofyavin.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dextiree-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -271,9 +251,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dextiree-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -297,9 +275,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -326,9 +302,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -352,9 +326,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holokand-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -381,9 +353,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holokand-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -407,9 +377,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/popskrail-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -436,9 +404,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/popskrail-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -461,9 +427,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -474,17 +438,12 @@
       "cost": 4,
       "xws": "dutchvander-swz106",
       "ability": "After you perform the [Lock] action, you may choose 1 friendly ship at range 1-3. That ship may acquire a lock on the object you locked, ignoring range restrictions.",
-      "standardLoadout": [
-        "ioncannonturret",
-        "protonbombs"
-      ],
+      "standardLoadout": ["ioncannonturret", "protonbombs"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dutchvander-swz106.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-swz106.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     },
     {
@@ -495,17 +454,12 @@
       "cost": 4,
       "xws": "hortonsalm-swz106",
       "ability": "While you perform an attack, you may reroll 1 attack die for each other friendly ship at range 0-1 of the defender.",
-      "standardLoadout": [
-        "ioncannonturret",
-        "proximitymines"
-      ],
+      "standardLoadout": ["ioncannonturret", "proximitymines"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hortonsalm-swz106.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hortonsalm-swz106.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Y-wing"
-      ],
+      "keywords": ["Y-wing"],
       "epic": true
     }
   ]

@@ -21,9 +21,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "E2A"
-  ],
+  "dialCodes": ["E2A"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -78,9 +76,7 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
@@ -91,17 +87,8 @@
       "cost": 51,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker-eta2actis.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker-eta2actis.png",
-      "slots": [
-        "Talent",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
-      "keywords": [
-        "Dark Side",
-        "Jedi",
-        "Light Side"
-      ],
+      "slots": ["Talent", "Force Power", "Astromech", "Modification"],
+      "keywords": ["Dark Side", "Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -124,16 +111,8 @@
       "cost": 48,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/obiwankenobi-eta2actis.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/obiwankenobi-eta2actis.png",
-      "slots": [
-        "Talent",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "slots": ["Talent", "Force Power", "Astromech", "Modification"],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -156,16 +135,8 @@
       "cost": 47,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/aaylasecura.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/aaylasecura.png",
-      "slots": [
-        "Talent",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "slots": ["Talent", "Force Power", "Astromech", "Modification"],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -188,16 +159,8 @@
       "cost": 45,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shaakti.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shaakti.png",
-      "slots": [
-        "Talent",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "slots": ["Talent", "Force Power", "Astromech", "Modification"],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -219,16 +182,8 @@
       "cost": 41,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jedigeneral.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jedigeneral.png",
-      "slots": [
-        "Force Power",
-        "Cannon",
-        "Astromech",
-        "Modification"
-      ],
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "slots": ["Force Power", "Cannon", "Astromech", "Modification"],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -251,16 +206,8 @@
       "cost": 43,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/yoda.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yoda.png",
-      "slots": [
-        "Force Power",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "slots": ["Force Power", "Force Power", "Astromech", "Modification"],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -288,11 +235,7 @@
       ],
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Dark Side", "Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -313,19 +256,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker-siegeofcoruscant-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Talent",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
+      "slots": ["Talent", "Force Power", "Astromech", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Dark Side", "Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -353,10 +287,7 @@
       ],
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -377,18 +308,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/obiwankenobi-siegeofcoruscant-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/obiwankenobi-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Talent",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
+      "slots": ["Talent", "Force Power", "Astromech", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -417,10 +340,7 @@
       ],
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -441,18 +361,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shaakti-siegeofcoruscant-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shaakti-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Talent",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
+      "slots": ["Talent", "Force Power", "Astromech", "Modification"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -475,16 +387,8 @@
       "cost": 41,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kitfisto.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kitfisto.png",
-      "slots": [
-        "Talent",
-        "Force Power",
-        "Astromech",
-        "Modification"
-      ],
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "slots": ["Talent", "Force Power", "Astromech", "Modification"],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     }
   ],

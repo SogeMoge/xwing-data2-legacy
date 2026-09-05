@@ -10,9 +10,7 @@
         "ability": "Attack ([Lock]): Spend 1 [Charge]. After you declare the defender, the defender may choose to suffer 1 [Critical Hit] damage. If it does, skip the Attack and Defense Dice steps and the attack is treated as hitting.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/homingtorpedoes.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/homingtorpedoes.png",
-        "slots": [
-          "Torpedo"
-        ],
+        "slots": ["Torpedo"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -42,9 +40,7 @@
         "title": "Adv. Proton Torpedoes",
         "type": "Torpedo",
         "ability": "Attack ([Lock]): Spend 1 [Charge]. Change 1 [Hit] result to a [Critical Hit] result.",
-        "slots": [
-          "Torpedo"
-        ],
+        "slots": ["Torpedo"],
         "charges": {
           "value": 1,
           "recovers": 0
@@ -76,9 +72,7 @@
         "title": "Ion Torpedoes",
         "type": "Torpedo",
         "ability": "Attack ([Lock]): Spend 1 [Charge]. If this attack hits, spend 1 [Hit] or [Critical Hit] result to cause the defender to suffer 1 [Hit] damage. All remaining [Hit]/[Critical Hit] results inflict ion tokens instead of damage.",
-        "slots": [
-          "Torpedo"
-        ],
+        "slots": ["Torpedo"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -111,9 +105,7 @@
         "type": "Torpedo",
         "ability": "Attack ([Lock]): Spend 1 [Charge]. Change 1 [Hit] result to a [Critical Hit] result.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protontorpedoes.png",
-        "slots": [
-          "Torpedo"
-        ],
+        "slots": ["Torpedo"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -144,9 +136,7 @@
         "ability": "Attack ([Lock]): Spend 1 [Charge]. During the Neutralize Results step, [Critical Hit] results are canceled before [Hit] results. After this attack hits, the defender loses 1 shield.",
         "title": "Plasma Torpedoes",
         "type": "Torpedo",
-        "slots": [
-          "Torpedo"
-        ],
+        "slots": ["Torpedo"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -165,9 +155,9 @@
     "cost": {
       "variable": "initiative",
       "values": {
-        "0": 6,
-        "1": 6,
-        "2": 6,
+        "0": 5,
+        "1": 5,
+        "2": 5,
         "3": 7,
         "4": 7,
         "5": 7,
@@ -187,9 +177,7 @@
         "title": "Tracking Torpedoes",
         "type": "Torpedo",
         "ability": "During the System Phase, you may spend up to 3 [Charge] to launch that many tracking torpedoes using the [3 [Bank Left]], [4 [Straight]], and [3 [Bank Right]] templates. Each device must use a seperate template. Then each device may acquire a lock on an object you have locked, ignoring range restrictions. This card's [Charge] cannot be recovered.",
-        "slots": [
-          "Torpedo"
-        ],
+        "slots": ["Torpedo"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -203,9 +191,7 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       }
     ],
     "standard": false,

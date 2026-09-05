@@ -22,9 +22,7 @@
     "4FW",
     "5FR"
   ],
-  "dialCodes": [
-    "HDB"
-  ],
+  "dialCodes": ["HDB"],
   "faction": "separatistalliance",
   "stats": [
     {
@@ -86,9 +84,7 @@
       "text": "Baktoid Armor Workshop developed the Hyena as a strike craft compatible with Trade Federation Vulture swarm tactics.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/technounionbomber.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/technounionbomber.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -106,17 +102,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 31,
-      "slots": [
-        "Sensor",
-        "Device",
-        "Device",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Sensor", "Device", "Device", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bombardmentdrone.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -142,9 +130,7 @@
       "ability": "You can perform primary attacks at range 0. While you perform an attack at attack range 0-1, you must roll 1 additional die. After the attack hits, suffer 1 [Critical Hit] damage.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dbs404.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -170,9 +156,7 @@
         "Configuration"
       ],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -197,9 +181,7 @@
         "Configuration"
       ],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistbomber.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -239,16 +221,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 37,
-      "slots": [
-        "Sensor",
-        "Tactical Relay",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Sensor", "Tactical Relay", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -298,9 +273,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -342,18 +315,11 @@
         }
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dbs32c-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Sensor",
-        "Tactical Relay",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Sensor", "Tactical Relay", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -377,9 +343,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -405,9 +369,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -431,9 +393,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -459,9 +419,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     }
   ],

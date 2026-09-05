@@ -20,9 +20,7 @@
     "3FB",
     "3NW"
   ],
-  "dialCodes": [
-    "TS"
-  ],
+  "dialCodes": ["TS"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -68,18 +66,11 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Talent",
-        "Device",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Device", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdown.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -95,18 +86,11 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Talent",
-        "Device",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Device", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/duchess.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -114,7 +98,7 @@
       "caption": "Confident Gambler",
       "initiative": 4,
       "limited": 1,
-      "cost": 41,
+      "cost": 40,
       "xws": "puresabacc",
       "ability": "While you perform an attack, if you have 1 or fewer damage cards, you may roll 1 additional attack die.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/puresabacc.png",
@@ -122,25 +106,18 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Talent",
-        "Device",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Device", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/puresabacc.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
       "name": "Black Squadron Scout",
       "initiative": 3,
       "limited": 0,
-      "cost": 34,
+      "cost": 33,
       "xws": "blacksquadronscout",
       "text": "These heavily armed atmospheric craft employ their specialized moveable wings to gain additional speed and maneuverability.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksquadronscout.png",
@@ -148,18 +125,11 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Talent",
-        "Device",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Device", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksquadronscout.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -174,17 +144,11 @@
         "name": "Adaptive Ailerons",
         "text": "Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver."
       },
-      "slots": [
-        "Device",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Device", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/planetarysentinel.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -199,19 +163,12 @@
       "caption": "Destitute Demolitionist",
       "standard": true,
       "wildspace": true,
-      "slots": [
-        "Talent",
-        "Gunner",
-        "Device",
-        "Modification"
-      ],
+      "slots": ["Talent", "Gunner", "Device", "Modification"],
       "ability": "After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.",
       "cost": 32,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vagabond.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vagabond.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ]
