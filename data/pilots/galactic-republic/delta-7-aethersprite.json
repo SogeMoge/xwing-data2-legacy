@@ -22,9 +22,7 @@
     "5FW",
     "5KR"
   ],
-  "dialCodes": [
-    "D7A"
-  ],
+  "dialCodes": ["D7A"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -83,24 +81,14 @@
       "force": {
         "value": 1,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "cost": 35,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jediknight.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -118,24 +106,14 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "cost": 48,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/obiwankenobi.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -153,24 +131,14 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "cost": 45,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/plokoon.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -188,24 +156,14 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": false,
       "wildspace": true,
       "cost": 39,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/saeseetiin.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -223,24 +181,14 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "cost": 42,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/macewindu.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -257,25 +205,15 @@
       "force": {
         "value": 3,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker.png",
       "cost": 55,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -292,25 +230,15 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahsokatano.png",
       "cost": 38,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ahsokatano.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -327,25 +255,15 @@
       "force": {
         "value": 1,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/barrissoffee.png",
       "cost": 35,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/barrissoffee.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -362,25 +280,15 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/luminaraunduli.png",
       "cost": 39,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/luminaraunduli.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -397,25 +305,15 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": true,
       "wildspace": true,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adigallia.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adigallia.png",
       "cost": 46,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     },
     {
@@ -433,24 +331,14 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "standard": false,
       "wildspace": true,
       "cost": 38,
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Force Power",
-        "Configuration"
-      ],
+      "slots": ["Astromech", "Modification", "Force Power", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/depabillaba-wat1.png",
-      "keywords": [
-        "Jedi",
-        "Light Side"
-      ],
+      "keywords": ["Jedi", "Light Side"],
       "epic": true
     }
   ]

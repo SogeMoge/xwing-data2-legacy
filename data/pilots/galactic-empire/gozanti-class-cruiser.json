@@ -17,9 +17,7 @@
     "3FB",
     "4FR"
   ],
-  "dialCodes": [
-    "GOZ-I"
-  ],
+  "dialCodes": ["GOZ-I"],
   "stats": [
     {
       "arc": "Front Arc",

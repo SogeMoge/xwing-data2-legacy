@@ -20,9 +20,7 @@
     "3PR",
     "4FW"
   ],
-  "dialCodes": [
-    "SV"
-  ],
+  "dialCodes": ["SV"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -83,13 +81,7 @@
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Torpedo",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Tech", "Torpedo", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunassassin.png",
       "standard": true,
       "wildspace": true,
@@ -107,12 +99,7 @@
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": [
-        "Tech",
-        "Torpedo",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Tech", "Torpedo", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunenforcer.png",
       "standard": true,
       "wildspace": true,
@@ -131,19 +118,11 @@
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Torpedo",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Tech", "Torpedo", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dalanoberos-starviperclassattackplatform.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     },
     {
@@ -185,19 +164,11 @@
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Torpedo",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Tech", "Torpedo", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/guri.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -213,13 +184,7 @@
         "name": "Microthrusters",
         "text": "While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Torpedo",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Tech", "Torpedo", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/princexizor.png",
       "standard": true,
       "wildspace": true,

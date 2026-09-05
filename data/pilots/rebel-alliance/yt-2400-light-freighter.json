@@ -21,9 +21,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "YT24"
-  ],
+  "dialCodes": ["YT24"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -106,10 +104,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid",
-        "Freighter"
-      ],
+      "keywords": ["Droid", "Freighter"],
       "epic": true
     },
     {
@@ -137,9 +132,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -154,20 +147,11 @@
         "name": "Sensor Blindspot",
         "text": "While you perform a primary attack at attack range 0-1, do not apply the range 0-1 bonus and roll 1 fewer attack die."
       },
-      "slots": [
-        "Missile",
-        "Crew",
-        "Crew",
-        "Illicit",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Missile", "Crew", "Crew", "Illicit", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wildspacefringer.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     }
   ]

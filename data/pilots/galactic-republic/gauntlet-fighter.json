@@ -18,9 +18,7 @@
     "3YR",
     "4FW"
   ],
-  "dialCodes": [
-    "GtF"
-  ],
+  "dialCodes": ["GtF"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -85,9 +83,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bokatankryze.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bokatankryze.png",
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -112,9 +108,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/niteowlliberator.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/niteowlliberator.png",
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "standard": true,
       "wildspace": true,
       "epic": true

@@ -22,9 +22,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "A3N"
-  ],
+  "dialCodes": ["A3N"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -84,15 +82,8 @@
       "cost": 29,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wilhufftarkin.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wilhufftarkin.png",
-      "slots": [
-        "Talent",
-        "Astromech",
-        "Modification",
-        "Configuration"
-      ],
-      "keywords": [
-        "TIE"
-      ],
+      "slots": ["Talent", "Astromech", "Modification", "Configuration"],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -111,16 +102,8 @@
       "cost": 30,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball-nimbusclassvwing.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball-nimbusclassvwing.png",
-      "slots": [
-        "Talent",
-        "Astromech",
-        "Modification",
-        "Configuration"
-      ],
-      "keywords": [
-        "Clone",
-        "TIE"
-      ],
+      "slots": ["Talent", "Astromech", "Modification", "Configuration"],
+      "keywords": ["Clone", "TIE"],
       "epic": true
     },
     {
@@ -139,16 +122,8 @@
       "cost": 31,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/contrail.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/contrail.png",
-      "slots": [
-        "Talent",
-        "Astromech",
-        "Modification",
-        "Configuration"
-      ],
-      "keywords": [
-        "Clone",
-        "TIE"
-      ],
+      "slots": ["Talent", "Astromech", "Modification", "Configuration"],
+      "keywords": ["Clone", "TIE"],
       "epic": true
     },
     {
@@ -171,16 +146,8 @@
       "cost": 30,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/klick.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/klick.png",
-      "slots": [
-        "Talent",
-        "Astromech",
-        "Modification",
-        "Configuration"
-      ],
-      "keywords": [
-        "Clone",
-        "TIE"
-      ],
+      "slots": ["Talent", "Astromech", "Modification", "Configuration"],
+      "keywords": ["Clone", "TIE"],
       "epic": true
     },
     {
@@ -198,16 +165,8 @@
       "cost": 28,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shadowsquadronescort.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowsquadronescort.png",
-      "slots": [
-        "Talent",
-        "Astromech",
-        "Modification",
-        "Configuration"
-      ],
-      "keywords": [
-        "Clone",
-        "TIE"
-      ],
+      "slots": ["Talent", "Astromech", "Modification", "Configuration"],
+      "keywords": ["Clone", "TIE"],
       "epic": true
     },
     {
@@ -225,14 +184,8 @@
       "cost": 26,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/loyalistvolunteer.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/loyalistvolunteer.png",
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Configuration"
-      ],
-      "keywords": [
-        "TIE"
-      ],
+      "slots": ["Astromech", "Modification", "Configuration"],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -253,11 +206,7 @@
         "value": 1,
         "recovers": 1
       },
-      "standardLoadout": [
-        "r3astromech",
-        "precisionionengines",
-        "alpha3eesk"
-      ],
+      "standardLoadout": ["r3astromech", "precisionionengines", "alpha3eesk"],
       "shipStats": [
         {
           "arc": "Front Arc",
@@ -279,9 +228,7 @@
       ],
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Clone"
-      ],
+      "keywords": ["Clone"],
       "epic": true
     },
     {
@@ -302,12 +249,7 @@
         "value": 1,
         "recovers": 1
       },
-      "slots": [
-        "Talent",
-        "Astromech",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Astromech", "Modification", "Configuration"],
       "shipStats": [
         {
           "arc": "Front Arc",
@@ -329,10 +271,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone",
-        "TIE"
-      ],
+      "keywords": ["Clone", "TIE"],
       "epic": true
     },
     {
@@ -357,10 +296,7 @@
       ],
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Clone",
-        "TIE"
-      ],
+      "keywords": ["Clone", "TIE"],
       "epic": true
     },
     {
@@ -377,18 +313,10 @@
       "ability": "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/contrail-siegeofcoruscant-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/contrail-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Talent",
-        "Astromech",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Astromech", "Modification", "Configuration"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Clone",
-        "TIE"
-      ],
+      "keywords": ["Clone", "TIE"],
       "epic": true
     }
   ],

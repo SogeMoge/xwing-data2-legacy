@@ -21,9 +21,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "AS"
-  ],
+  "dialCodes": ["AS"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -77,19 +75,11 @@
         "name": "Locked and Loaded",
         "text": "While you are docked, after your carrier ship performs a primary [Front Arc] or [Turret] attack, it may perform a bonus primary [Rear Arc] attack."
       },
-      "slots": [
-        "Talent",
-        "Turret",
-        "Crew",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Turret", "Crew", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Spectre"
-      ],
+      "keywords": ["Spectre"],
       "epic": true
     },
     {
@@ -104,28 +94,17 @@
       "force": {
         "value": 1,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "shipAbility": {
         "name": "Locked and Loaded",
         "text": "While you are docked, after your carrier ship performs a primary [Front Arc] or [Turret] attack, it may perform a bonus primary [Rear Arc] attack."
       },
-      "slots": [
-        "Turret",
-        "Crew",
-        "Modification",
-        "Title",
-        "Force Power"
-      ],
+      "slots": ["Turret", "Crew", "Modification", "Title", "Force Power"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Light Side",
-        "Spectre"
-      ],
+      "keywords": ["Light Side", "Spectre"],
       "epic": true
     },
     {
@@ -141,19 +120,11 @@
         "name": "Locked and Loaded",
         "text": "While you are docked, after your carrier ship performs a primary [Front Arc] or [Turret] attack, it may perform a bonus primary [Rear Arc] attack."
       },
-      "slots": [
-        "Talent",
-        "Turret",
-        "Crew",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Turret", "Crew", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Spectre"
-      ],
+      "keywords": ["Spectre"],
       "epic": true
     },
     {
@@ -169,20 +140,11 @@
         "name": "Locked and Loaded",
         "text": "While you are docked, after your carrier ship performs a primary [Front Arc] or [Turret] attack, it may perform a bonus primary [Rear Arc] attack."
       },
-      "slots": [
-        "Talent",
-        "Turret",
-        "Crew",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Talent", "Turret", "Crew", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Mandalorian",
-        "Spectre"
-      ],
+      "keywords": ["Mandalorian", "Spectre"],
       "epic": true
     }
   ]

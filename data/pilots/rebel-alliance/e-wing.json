@@ -24,9 +24,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "EW"
-  ],
+  "dialCodes": ["EW"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -143,13 +141,7 @@
         "name": "Experimental Scanners",
         "text": "You can acquire locks beyond range 3. You cannot acquire locks at range 1."
       },
-      "slots": [
-        "Sensor",
-        "Tech",
-        "Torpedo",
-        "Astromech",
-        "Modification"
-      ],
+      "slots": ["Sensor", "Tech", "Torpedo", "Astromech", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/knavesquadronescort.png",
       "standard": true,
       "wildspace": true,

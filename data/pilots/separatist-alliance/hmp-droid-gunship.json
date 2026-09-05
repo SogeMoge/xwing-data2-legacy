@@ -20,9 +20,7 @@
     "4FR",
     "5FR"
   ],
-  "dialCodes": [
-    "HMP"
-  ],
+  "dialCodes": ["HMP"],
   "faction": "separatistalliance",
   "stats": [
     {
@@ -91,9 +89,7 @@
       "ability": "After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -120,9 +116,7 @@
       "text": "A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -150,9 +144,7 @@
       "ability": "While you perform a [Missile] or [Cannon] attack, you may remove 1 tractor token from the defender to reroll up to 2 attack dice.",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -180,9 +172,7 @@
       "ability": "Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -210,9 +200,7 @@
       "ability": "After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -239,9 +227,7 @@
       ],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistpredator.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistpredator.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     }
   ],

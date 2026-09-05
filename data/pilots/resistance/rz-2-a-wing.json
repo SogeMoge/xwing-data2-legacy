@@ -21,9 +21,7 @@
     "5FB",
     "5KR"
   ],
-  "dialCodes": [
-    "RZ2"
-  ],
+  "dialCodes": ["RZ2"],
   "faction": "resistance",
   "stats": [
     {
@@ -80,19 +78,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Tech"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lulolampar.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lulolampar.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -113,17 +104,10 @@
         "value": 1,
         "recovers": 1
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Tech"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -140,17 +124,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zaribangel.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zaribangel.png",
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Tech"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -167,17 +144,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/greersonnel.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greersonnel.png",
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Tech"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -191,19 +161,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Tech"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/greensquadronexpert.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greensquadronexpert.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -217,18 +180,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Missile", "Tech"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronrecruit.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronrecruit.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -247,19 +204,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Tech",
-        "Missile"
-      ],
+      "slots": ["Talent", "Talent", "Tech", "Missile"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zizitlo.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zizitlo.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -274,18 +224,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Missile"
-      ],
+      "slots": ["Talent", "Tech", "Missile"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ronithblario.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ronithblario.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -300,18 +244,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Missile", "Tech"],
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/merlcobben.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/merlcobben.png",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -326,19 +264,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Tech"],
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/suralindajavos.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/suralindajavos.png",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -353,19 +284,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Tech"],
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wrobietyce.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wrobietyce.png",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     },
     {
@@ -380,19 +304,12 @@
         "name": "Refined Gyrostabilizers",
         "text": "You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action."
       },
-      "slots": [
-        "Talent",
-        "Talent",
-        "Missile",
-        "Tech"
-      ],
+      "slots": ["Talent", "Talent", "Missile", "Tech"],
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/seftinvanik.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/seftinvanik.png",
-      "keywords": [
-        "A-wing"
-      ],
+      "keywords": ["A-wing"],
       "epic": true
     }
   ]

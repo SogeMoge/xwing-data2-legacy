@@ -8,9 +8,7 @@
         "title": "Heavy Laser Cannon",
         "type": "Cannon",
         "ability": "Attack: After the Modify Attack Dice step, change all [Critical Hit] results to [Hit] results.",
-        "slots": [
-          "Cannon"
-        ],
+        "slots": ["Cannon"],
         "attack": {
           "arc": "Bullseye Arc",
           "value": 4,
@@ -38,9 +36,7 @@
         "title": "Ion Cannon",
         "type": "Cannon",
         "ability": "Attack: If this attack hits, spend 1 [Hit] or [Critical Hit] result to cause the defender to suffer 1 [Hit] damage. All remaining [Hit]/[Critical Hit] results inflict ion tokens instead of damage.",
-        "slots": [
-          "Cannon"
-        ],
+        "slots": ["Cannon"],
         "attack": {
           "arc": "Front Arc",
           "value": 3,
@@ -68,9 +64,7 @@
         "title": "Jamming Beam",
         "type": "Cannon",
         "ability": "Attack: If this attack hits, all [Hit]/[Critical Hit] results inflict jam tokens instead of damage.",
-        "slots": [
-          "Cannon"
-        ],
+        "slots": ["Cannon"],
         "attack": {
           "arc": "Front Arc",
           "value": 3,
@@ -98,9 +92,7 @@
         "title": "Tractor Beam",
         "type": "Cannon",
         "ability": "Attack: If this attack hits, all [Hit]/[Critical Hit] results inflict tractor tokens instead of damage.",
-        "slots": [
-          "Cannon"
-        ],
+        "slots": ["Cannon"],
         "attack": {
           "arc": "Front Arc",
           "value": 3,
@@ -128,9 +120,7 @@
         "ability": "Attack: If the defender is in your [Bullseye Arc], roll 1 additional die. During the Neutralize Results step, if you are not in the defender's [Front Arc], [Evade] results do not cancel [Critical Hit] results.",
         "title": "Autoblasters",
         "type": "Cannon",
-        "slots": [
-          "Cannon"
-        ],
+        "slots": ["Cannon"],
         "attack": {
           "arc": "Front Arc",
           "value": 2,
@@ -157,10 +147,7 @@
       {
         "title": "Synced Laser Cannons",
         "type": "Cannon",
-        "slots": [
-          "Cannon",
-          "Cannon"
-        ],
+        "slots": ["Cannon", "Cannon"],
         "attack": {
           "arc": "Front Arc",
           "value": 3,
@@ -195,10 +182,7 @@
         },
         "title": "Proton Cannons",
         "type": "Cannon",
-        "slots": [
-          "Cannon",
-          "Cannon"
-        ],
+        "slots": ["Cannon", "Cannon"],
         "attack": {
           "arc": "Bullseye Arc",
           "value": 4,
@@ -224,9 +208,7 @@
         "ability": "After an enemy ship executes a maneuver, you may perform this attack against it as a bonus attack. Attack ([Lock]):Your dice can be modified only by spending a lock for the default effect.",
         "title": "Underslung Blaster Cannon",
         "type": "Cannon",
-        "slots": [
-          "Cannon"
-        ],
+        "slots": ["Cannon"],
         "attack": {
           "arc": "Single Turret Arc",
           "value": 2,
@@ -263,9 +245,7 @@
         "ability": "While you perform a primary attack, before rolling attack dice, you may spend 2 [Charge]. If you do, your [Critical Hit] results inflict ion tokens instead of damage.",
         "title": "Ancillary Ion Weapons",
         "type": "Cannon",
-        "slots": [
-          "Cannon"
-        ],
+        "slots": ["Cannon"],
         "charges": {
           "value": 2,
           "recovers": 1

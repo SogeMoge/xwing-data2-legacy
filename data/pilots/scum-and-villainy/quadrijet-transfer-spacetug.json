@@ -22,9 +22,7 @@
     "3FB",
     "3NW"
   ],
-  "dialCodes": [
-    "QUA"
-  ],
+  "dialCodes": ["QUA"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -70,14 +68,7 @@
         "name": "Spacetug Tractor Array",
         "text": "Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Device",
-        "Illicit",
-        "Modification",
-        "Tech"
-      ],
+      "slots": ["Talent", "Crew", "Device", "Illicit", "Modification", "Tech"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/constablezuvio.png",
       "standard": true,
       "wildspace": true,
@@ -95,13 +86,7 @@
         "name": "Spacetug Tractor Array",
         "text": "Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1."
       },
-      "slots": [
-        "Crew",
-        "Device",
-        "Illicit",
-        "Modification",
-        "Tech"
-      ],
+      "slots": ["Crew", "Device", "Illicit", "Modification", "Tech"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakkugunrunner.png",
       "standard": true,
       "wildspace": true,
@@ -120,20 +105,11 @@
         "name": "Spacetug Tractor Array",
         "text": "Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Device",
-        "Illicit",
-        "Modification",
-        "Tech"
-      ],
+      "slots": ["Talent", "Crew", "Device", "Illicit", "Modification", "Tech"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sarcoplank.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     },
     {
@@ -149,13 +125,7 @@
         "name": "Spacetug Tractor Array",
         "text": "Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1."
       },
-      "slots": [
-        "Crew",
-        "Device",
-        "Illicit",
-        "Modification",
-        "Tech"
-      ],
+      "slots": ["Crew", "Device", "Illicit", "Modification", "Tech"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/unkarplutt.png",
       "standard": true,
       "wildspace": true,

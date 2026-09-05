@@ -8,9 +8,7 @@
         "ability": "You are a wing leader. Your wingmates must be 2, 3, 4, or 5 TIE/ln fighters. While you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.",
         "title": "Agent of the Empire",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agentoftheempire.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agentoftheempire.png"
       }
@@ -31,9 +29,7 @@
         "ability": "While you perform an attack against a huge ship, if the attack deals a faceup damage card to the defender and the defender is in your [Bullseye Arc], you may apply the Precision Shot effect even if you are not in the specified arc.",
         "title": "Dreadnought Hunter",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/dreadnoughthunter.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/dreadnoughthunter.png"
       }
@@ -54,9 +50,7 @@
         "ability": "You are a wing leader. Your wingmates must be 2 or 3 TIE/fo fighters or TIE/sf fighters. While you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.",
         "title": "First Order Elite",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/firstorderelite.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/firstorderelite.png"
       }
@@ -77,9 +71,7 @@
         "ability": "You are a wing leader. Your wingmates must be 2, 3, 4, or 5 other ships of your ship type. While you defend, up to 2 of your wingmates in the attack arc may suffer 1 [Hit] or [Critical Hit] damage to cancel a matching result.",
         "title": "Veteran Wing Leader",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/veteranwingleader.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/veteranwingleader.png"
       }
@@ -100,10 +92,7 @@
         "ability": "While a friendly large or huge ship at range 0-3 executes a maneuver, it may suffer 1 [Hit] damage to execute a maneuver of the same bearing and difficulty of a speed 1 higher or lower instead.",
         "title": "Admiral Ozzel",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/admiralozzel.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/admiralozzel.png"
       }
@@ -124,10 +113,7 @@
         "ability": "During the End Phase, you may choose up to 2 friendly ships at range 0-1. If you do, each of these ships does not remove 1 calculate or evade token.",
         "title": "Azmorigan",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/azmorigan.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/azmorigan.png"
       }
@@ -148,10 +134,7 @@
         "ability": "After a friendly ship at range 0-4 reveals its dial, you may spend 1 [Charge]. If you do, it sets its dial to another maneuver of the same difficulty and speed.",
         "title": "Captain Needa",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "charges": {
           "value": 4,
           "recovers": 0
@@ -176,10 +159,7 @@
         "ability": "After a friendly ship at range 0-2 is destroyed, you may choose a friendly ship at range 0-2. If you do, it may perform a red [Evade] action.",
         "title": "Carlist Rieekan",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "grants": [
           {
             "type": "action",
@@ -209,10 +189,7 @@
         "ability": "Friendly ships at range 0-3 can spend your focus and evade tokens.",
         "title": "Jan Dodonna",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jandodonna.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jandodonna.png"
       }
@@ -233,10 +210,7 @@
         "ability": "After you are destroyed, each friendly ship at range 0-1 gains 1 focus token. After you are destroyed, you are not removed until the end of the End Phase.",
         "title": "Raymus Antilles",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/raymusantilles.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/raymusantilles.png"
       }
@@ -257,10 +231,7 @@
         "ability": "After you are destroyed, you are not removed until the end of the End Phase.",
         "title": "Stalwart Captain",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/stalwartcaptain.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/stalwartcaptain.png"
       }
@@ -270,9 +241,7 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       }
     ],
     "standard": false,
@@ -288,10 +257,7 @@
         "ability": "After a friendly ship at range 0-4 reveals its dial, you may spend 1 [Charge]. If you do, it sets its dial to another maneuver of the same difficulty and speed.",
         "title": "Strategic Commander",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -305,9 +271,7 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       }
     ],
     "standard": false,
@@ -323,9 +287,7 @@
         "ability": "Setup: Equip this side faceup. You are a wing leader. Your wingmates must be 2-5 V-19 Torrents or 2-5 Nimbus-class V-wings. After you are placed, flip this card.",
         "title": "Jedi Commander",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jedicommander-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jedicommander-sideb.png"
       },
@@ -333,9 +295,7 @@
         "ability": "While your wingmates execute purple maneuvers, they treat those maneuvers as red, instead. While you defend, up to 2 of your wingmates in the attack arc may each suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.",
         "title": "Jedi Commander",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jedicommander.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jedicommander.png"
       }
@@ -345,15 +305,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       },
       {
-        "ships": [
-          "delta7aethersprite",
-          "eta2actis"
-        ]
+        "ships": ["delta7aethersprite", "eta2actis"]
       }
     ],
     "standard": false,
@@ -369,10 +324,7 @@
         "ability": "Add [Gunner] slot. Attack ([Lock]): Gain 1 ion token to perform this attack. If this attack hits, the defender suffers 1 additional [Hit]/[Critical Hit] damage for each matching uncanceled result after the first.",
         "title": "B6 Blade Wing Prototype",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Title"
-        ],
+        "slots": ["Command", "Title"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/b6bladewingprototype-command.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/b6bladewingprototype-command.png"
       }
@@ -382,14 +334,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       },
       {
-        "ships": [
-          "asf01bwing"
-        ]
+        "ships": ["asf01bwing"]
       }
     ],
     "standard": false,
@@ -405,9 +353,7 @@
         "ability": "Setup: Equip this side faceup. You can be included in Separatist, Imperial, and First Order squads. After you perform an attack, if the defender was a limited ship and was destroyed, you may recover 1 [Charge] on your ship card and each of your upgrade cards. Then flip this card.",
         "title": "Bounty (Hired)",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bounty.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bounty.png"
       },
@@ -415,9 +361,7 @@
         "text": "Bounty hunting is a complicated profession. Any assassin can kill, but the best hunters are renowned for their ability to bring a mark in alive, as doing so is more difficult but invariably commands a much greater reward.",
         "title": "Bounty (Paid)",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bounty-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bounty-sideb.png"
       }
@@ -438,9 +382,7 @@
         "ability": "Setup: Equip this side faceup. You are a wing leader. Your wingmates must be 2-5 of the following: 0-1 Attack Shuttle 0-1 Sheathipede-class Shuttle 0-5 RZ-1 A-wings After you are placed, flip this card.",
         "title": "Phoenix Squadron",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/phoenixsquadron-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/phoenixsquadron-sideb.png"
       },
@@ -448,9 +390,7 @@
         "ability": "At the start of the Planning Phase, 1 of your wingmates that is docked with you may join your wing without gaining a stress token. While you or your Attack Shuttle wingmate or Sheathipede-class wingmate defends, up to 2 of your RZ-1 A-wing wingmates in the attack arc may each suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.",
         "title": "Phoenix Squadron",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/phoenixsquadron.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/phoenixsquadron.png"
       }
@@ -471,9 +411,7 @@
         "ability": "Setup: Equip this side faceup. You are a wing leader. Your wingmates must be 2-5 other ships of your type. After you are placed, flip this card.",
         "title": "Shadow Wing",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/shadowwing-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/shadowwing-sideb.png"
       },
@@ -481,9 +419,7 @@
         "ability": "Your wingmates can perform [Barrel Roll] or [Boost] actions. If they do, they voluntarily split from the wing. While you defend, up to 2 of your wingmates in the attack arc may each suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.",
         "title": "Shadow Wing",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/shadowwing.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/shadowwing.png"
       }
@@ -504,9 +440,7 @@
         "ability": "Setup: Equip this side faceup. You are a wing leader. Your wingmates must be 2-5 TIE/ln Fighters with initiative lower than yours. After you are placed, flip this card.",
         "title": "Skystrike Academy Class",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/skystrikeacademyclass-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/skystrikeacademyclass-sideb.png"
       },
@@ -514,9 +448,7 @@
         "ability": "After you barrel roll or boost, each of your wingmates is forced to split from the wing. While you defend, up to 5 of your wingmates in the attack arc may each suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.",
         "title": "Skystrike Academy Class",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/skystrikeacademyclass.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/skystrikeacademyclass.png"
       }
@@ -537,9 +469,7 @@
         "ability": "Setup: Equip this side faceup. You can be included in Republic, Rebel, and Resistance squads. After an allied limited ship in your squad is destroyed, gain 1 focus token and flip this card.",
         "title": "In It For The Money",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/initforthemoney.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/initforthemoney.png"
       },
@@ -547,9 +477,7 @@
         "ability": "Non-Scum ships in your squad are treated as friendly instead of allied.",
         "title": "In It For Your Rebellion",
         "type": "Command",
-        "slots": [
-          "Command"
-        ],
+        "slots": ["Command"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/initforthemoney-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/initforthemoney-sideb.png"
       }
@@ -559,9 +487,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       },
       {
         "standardized": true
@@ -583,10 +509,7 @@
         "ability": "Setup: After placing forces, choose 1 friendly wing of ships with [Calculate] on their action bars and place that wing in reserve. During the End Phase, you may place that wing within your deployment area or beyond range 2 of any enemy shp. Then you may choose 1 enemy ship at range 0-1 of you; each ship in that wing acquires a lock on it.",
         "title": "Mar Tuuk",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/martuuk.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/martuuk.png"
       }
@@ -596,14 +519,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       },
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       }
     ],
     "standard": false,
@@ -619,10 +538,7 @@
         "ability": "During the Engagement Phase, at initiative 5, you may spend 1 [Energy] to perform a bonus [Hardpoint] attack. After you perform an attack, if the defender was dealt 1 or more faceup damage cards, it gains 2 strain tokens.",
         "title": "Riff Tamson",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/rifftamson.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/rifftamson.png"
       }
@@ -632,14 +548,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       },
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       }
     ],
     "standard": false,
@@ -655,10 +567,7 @@
         "ability": "During the System Phase, you may spend 1 [Force]. IF you do, each enemy ship in your [Front Arc] at range 0-1 gains 1 strain token unless it chooses to gain 1 jam token.",
         "title": "Asajj Ventress",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "grants": [
           {
             "type": "action",
@@ -674,9 +583,7 @@
           {
             "type": "force",
             "value": {
-              "side": [
-                "dark"
-              ]
+              "side": ["dark"]
             },
             "amount": 1
           }
@@ -690,15 +597,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance",
-          "scumandvillainy"
-        ]
+        "factions": ["separatistalliance", "scumandvillainy"]
       },
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       }
     ],
     "standard": false,
@@ -714,10 +616,7 @@
         "ability": "During the Engagement Phase, at initiative 4, you may spend 1 [Energy] to perform a bonus [Hardpoint] attack.",
         "title": "Zealous Captain",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/zealouscaptain.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/zealouscaptain.png"
       }
@@ -727,9 +626,7 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       }
     ],
     "standard": false,
@@ -749,10 +646,7 @@
         },
         "title": "Hondo Ohnaka",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "grants": [
           {
             "type": "action",
@@ -775,9 +669,7 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       }
     ],
     "standard": false,
@@ -793,10 +685,7 @@
         "ability": "During the Engagement Phase, at initiative 4, you may spend 1 [Energy] to perform a bonus [Hardpoint] attack. You can perform attacks against friendly ships. After you perform an attack, if the defender was destroyed, each friendly ship at range 0-2 of it may perform a [Calculate] action.",
         "title": "General Grievous",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Crew"
-        ],
+        "slots": ["Command", "Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/generalgrievouscommand.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/generalgrievouscommand.png"
       }
@@ -806,14 +695,10 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Huge"
-        ]
+        "sizes": ["Huge"]
       },
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       }
     ],
     "standard": false,
@@ -829,10 +714,7 @@
         "ability": "During the System Phase, if you would drop a [Crew] remote and there is an enemy medium, large, or huge ship at range 0-1 in your [Rear Arc], you may place that device in the play area in your [Rear Arc] at range 0-1 so that it is at range 0 of that enemy ship instead. Then, that enemy ship gains 1 deplete, strain, or stress token of your choice.",
         "title": "Combat Boarding Tube",
         "type": "Command",
-        "slots": [
-          "Command",
-          "Configuration"
-        ],
+        "slots": ["Command", "Configuration"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/combatboardingtube.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/combatboardingtube.png"
       }
@@ -842,9 +724,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "gauntletfighter"
-        ]
+        "ships": ["gauntletfighter"]
       }
     ],
     "standard": false,

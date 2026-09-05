@@ -18,9 +18,7 @@
     "3YR",
     "4FW"
   ],
-  "dialCodes": [
-    "GtF"
-  ],
+  "dialCodes": ["GtF"],
   "faction": "separatistalliance",
   "stats": [
     {
@@ -89,9 +87,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bokatankryze-separatistalliance.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bokatankryze-separatistalliance.png",
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -120,9 +116,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/previzsla.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/previzsla.png",
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -147,9 +141,7 @@
       ],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/deathwatchwarrior.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathwatchwarrior.png",
-      "keywords": [
-        "Mandalorian"
-      ],
+      "keywords": ["Mandalorian"],
       "standard": true,
       "wildspace": true,
       "epic": true

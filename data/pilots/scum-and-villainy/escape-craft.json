@@ -17,9 +17,7 @@
     "3NW",
     "3KR"
   ],
-  "dialCodes": [
-    "ES"
-  ],
+  "dialCodes": ["ES"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -91,9 +89,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/autopilotdrone.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -123,17 +119,11 @@
         "name": "Co-Pilot",
         "text": "While you are docked, your carrier ship has your pilot ability in addition to its own."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Talent", "Crew", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/l337-escapecraft.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -148,11 +138,7 @@
         "name": "Co-Pilot",
         "text": "While you are docked, your carrier ship has your pilot ability in addition to its own."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Talent", "Crew", "Modification"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/landocalrissian-escapecraft.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-escapecraft.png",
       "standard": true,
@@ -172,11 +158,7 @@
         "name": "Co-Pilot",
         "text": "While you are docked, your carrier ship has your pilot ability in addition to its own."
       },
-      "slots": [
-        "Talent",
-        "Crew",
-        "Modification"
-      ],
+      "slots": ["Talent", "Crew", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimpioneer.png",
       "standard": true,
       "wildspace": true,

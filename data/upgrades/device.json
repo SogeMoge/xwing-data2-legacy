@@ -8,10 +8,7 @@
         "title": "Bomblet Generator",
         "type": "Device",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Bomblet with the [1 [Straight]] template. At the start of the Activation Phase, you may spend 1 shield to recover 2 [Charge].",
-        "slots": [
-          "Device",
-          "Device"
-        ],
+        "slots": ["Device", "Device"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -41,9 +38,7 @@
         "title": "Blazer Bomb",
         "type": "Device",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Blazer Bomb using the [1 [Straight]] template.",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "charges": {
           "value": 1,
           "recovers": 0
@@ -73,9 +68,7 @@
         "title": "Conner Nets",
         "type": "Device",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Conner Net using the [1 [Straight]] template. This card's [Charge] cannot be recovered.",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "charges": {
           "value": 1,
           "recovers": 0
@@ -106,9 +99,7 @@
         "type": "Device",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Proton Bomb using the [1 [Straight]] template.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protonbombs.png",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -137,9 +128,7 @@
         "title": "Proximity Mines",
         "type": "Device",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Proximity Mine using the [1 [Straight]] template. This card's [Charge] cannot be recovered.",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -171,9 +160,7 @@
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Seismic Charge with the [1 [Straight]] template.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seismiccharges.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seismiccharges.png",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -203,9 +190,7 @@
         "ability": "During the End Phase, you may spend 1 [Charge] to drop or launch 1 DRK-1 probe droid using a speed 3 template. This card's [Charge] cannot be recovered.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/drk1probedroids.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/drk1probedroids.png",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -234,9 +219,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       }
     ],
     "standard": true,
@@ -254,10 +237,7 @@
         "ability": "During the System Phase, you may spend 1 [Charge] to drop an Electro-Proton Bomb with the [1 [Straight]] template. Then place 1 fuse marker on that device. This card's [Charge] cannot be recovered.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/electroprotonbomb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/electroprotonbomb.png",
-        "slots": [
-          "Device",
-          "Modification"
-        ],
+        "slots": ["Device", "Modification"],
         "charges": {
           "value": 1,
           "recovers": 0
@@ -292,9 +272,7 @@
       {
         "title": "Cluster Mines",
         "type": "Device",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/clustermines.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/clustermines.png",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Cluster Mine set using the [1 [Straight]] template. This card's [Charge] cannot be recovered.",
@@ -324,9 +302,7 @@
       {
         "title": "Ion Bombs",
         "type": "Device",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ionbombs.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ionbombs.png",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop an Ion Bomb using the [1 [Straight]] template.",
@@ -356,9 +332,7 @@
       {
         "title": "Concussion Bombs",
         "type": "Device",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/concussionbombs.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/concussionbombs.png",
         "ability": "During the System Phase, if any of this card's [Charge] are inactive, you must spend 1 [Charge] to drop 1 concussion bomb using the [1 [Straight]] template, if able. Otherwise, you may spend 1 [Charge] to drop 1 concussion bomb.",
@@ -389,9 +363,7 @@
         "ability": "During the System Phase, you may spend up to 2 [Charge] to drop that many Thermal Detonators using the [1 [Straight]] or [2 [Straight]] template. Each must be placed using a different template. When you reload this card, recover 1 additional [Charge].",
         "title": "Thermal Detonators",
         "type": "Device",
-        "slots": [
-          "Device"
-        ],
+        "slots": ["Device"],
         "charges": {
           "value": 4,
           "recovers": 0

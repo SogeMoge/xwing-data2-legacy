@@ -8,9 +8,7 @@
         "title": "Integrated S-foils (Closed)",
         "type": "Configuration",
         "ability": "While you perform a primary attack, if the defender is not in your [Bullseye Arc], roll 1 fewer attack die. Before you activate, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "action",
@@ -38,9 +36,7 @@
         "title": "Integrated S-foils (Open)",
         "type": "Configuration",
         "ability": "Before you activate, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/integratedsfoils.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/integratedsfoils-sideb.png"
       }
@@ -50,9 +46,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "t70xwing"
-        ]
+        "ships": ["t70xwing"]
       }
     ],
     "standard": true,
@@ -68,9 +62,7 @@
         "title": "Os-1 Arsenal Loadout",
         "type": "Configuration",
         "ability": "While you have exactly 1 disarm token, you can still perform [Torpedo] and [Missile] attacks against targets you have locked. If you do, you cannot spend your lock during the attack. Add [Torpedo] and [Missile] slots.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "slot",
@@ -92,9 +84,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "alphaclassstarwing"
-        ]
+        "ships": ["alphaclassstarwing"]
       }
     ],
     "standard": false,
@@ -110,9 +100,7 @@
         "title": "Pivot Wing (Closed)",
         "type": "Configuration",
         "ability": "While you defend, roll 1 fewer defense die. After you execute a [0 [Stationary]] maneuver, you may rotate your ship 90° or 180°. Before you activate, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pivotwing-sideb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pivotwing.png"
       },
@@ -120,9 +108,7 @@
         "title": "Pivot Wing (Open)",
         "type": "Configuration",
         "ability": "Before you activate, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pivotwing.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pivotwing-sideb.png"
       }
@@ -132,9 +118,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "ut60duwing"
-        ]
+        "ships": ["ut60duwing"]
       }
     ],
     "standard": true,
@@ -150,9 +134,7 @@
         "title": "Swivel Wing (Down)",
         "type": "Configuration",
         "ability": "After you execute a [0 [Stationary]] maneuver, you may rotate your ship 90° or 180°. If you do, you must flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/swivelwing.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/swivelwing.png"
       },
@@ -160,9 +142,7 @@
         "title": "Swivel Wing (Up)",
         "type": "Configuration",
         "ability": "While you defend, roll 1 fewer defense die. After you fully execute a non-stationary ([Stationary]) maneuver, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/swivelwing-sideb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/swivelwing-sideb.png"
       }
@@ -172,9 +152,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "gauntletfighter"
-        ]
+        "ships": ["gauntletfighter"]
       }
     ],
     "standard": true,
@@ -190,9 +168,7 @@
         "title": "Servomotor S-foils (Closed)",
         "type": "Configuration",
         "ability": "While you perform a primary attack, roll 1 fewer attack die. Before you activate, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "actions": [
           {
             "type": "Boost",
@@ -234,9 +210,7 @@
         "title": "Servomotor S-foils (Open)",
         "type": "Configuration",
         "ability": "Before you activate, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/servomotorsfoils.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/servomotorsfoils-sideb.png"
       }
@@ -246,9 +220,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "t65xwing"
-        ]
+        "ships": ["t65xwing"]
       }
     ],
     "standard": true,
@@ -264,9 +236,7 @@
         "title": "Xg-1 Assault Configuration",
         "type": "Configuration",
         "ability": "While you have exactly 1 disarm token, you can still perform [Cannon] attacks. While you perform a [Cannon] attack while disarmed, roll a maximum of 3 attack dice. Add [Cannon] slot.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "slot",
@@ -283,9 +253,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "alphaclassstarwing"
-        ]
+        "ships": ["alphaclassstarwing"]
       }
     ],
     "standard": false,
@@ -301,9 +269,7 @@
         "title": "Grappling Struts (Closed)",
         "type": "Configuration",
         "ability": "Setup: Equip this side faceup. While you execute a maneuver, if you overlap an asteroid or debris cloud and there are 1 or fewer other friendly ships at range 0 of that obstacle, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/grapplingstruts.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/grapplingstruts.png"
       },
@@ -311,18 +277,14 @@
         "title": "Grappling Struts (Open)",
         "type": "Configuration",
         "ability": "You ignore obstacles at range 0 and while you move through them. After you reveal your dial, if you reveal a maneuver other than a [2 [Straight]] and are at range 0 of an asteroid or debris cloud, skip your Execute Maneuver step and remove 1 stress token; if you revealed a right or left maneuver, rotate your ship 90° in that direction. After you execute a maneuver, flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/grapplingstruts-sideb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/grapplingstruts-sideb.png"
       }
     ],
     "restrictions": [
       {
-        "ships": [
-          "vultureclassdroidfighter"
-        ]
+        "ships": ["vultureclassdroidfighter"]
       }
     ],
     "cost": {
@@ -340,9 +302,7 @@
       {
         "title": "Delta-7B",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "stat",
@@ -380,9 +340,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "delta7aethersprite"
-        ]
+        "ships": ["delta7aethersprite"]
       }
     ],
     "standard": false,
@@ -397,10 +355,7 @@
       {
         "title": "Calibrated Laser Targeting",
         "type": "Configuration",
-        "slots": [
-          "Configuration",
-          "Modification"
-        ],
+        "slots": ["Configuration", "Modification"],
         "ability": "While you perform a primary attack, if the defender is in your [Bullseye Arc], add 1 [Focus] result.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/calibratedlasertargeting.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/calibratedlasertargeting.png"
@@ -420,9 +375,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "delta7aethersprite"
-        ]
+        "ships": ["delta7aethersprite"]
       }
     ],
     "standard": true,
@@ -438,9 +391,7 @@
         "title": "Landing Struts (Closed)",
         "type": "Configuration",
         "ability": "Setup: Equip this side faceup. While you execute a maneuver, if you overlap an asteroid or debris cloud and there are 1 or fewer other friendly ships at range 0 of that obstacle, you may flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landingstruts.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/landingstruts.png"
       },
@@ -448,9 +399,7 @@
         "title": "Landing Struts (Open)",
         "type": "Configuration",
         "ability": "You ignore obstacles at range 0 and while you move through them. After you reveal your dial, if you reveal a maneuver other than a [2 [Straight]] and are at range 0 of an asteroid or debris cloud, skip your Execute Maneuver step and remove 1 stress token; if you revealed a right or left maneuver, rotate your ship 90° in that direction. After you execute a maneuver, flip this card.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landingstruts-sideb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/landingstruts-sideb.png"
       }
@@ -460,9 +409,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "hyenaclassdroidbomber"
-        ]
+        "ships": ["hyenaclassdroidbomber"]
       }
     ],
     "standard": true,
@@ -478,9 +425,7 @@
         "ability": "Add [Cannon], [Turret], and [Missile] slots. Bonus Attack: Spend 1 [Energy] to perform a [Cannon], [Turret], or [Missile] attack.",
         "title": "Corsair Refit",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "slot",
@@ -522,9 +467,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "croccruiser"
-        ]
+        "ships": ["croccruiser"]
       }
     ],
     "standard": false,
@@ -540,9 +483,7 @@
         "ability": "Before you activate, if you are not critically damaged, you may flip this card.",
         "title": "Stabilized S-foils (Closed)",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "action",
@@ -570,9 +511,7 @@
         "ability": "After you perform an attack, you may spend your lock on the defender to perform a bonus [Cannon] attack against that ship using a [Cannon] upgrade you have not attacked with this turn. Before you activate, if you are not critically damaged, you may flip this card.",
         "title": "Stabilized S-foils (Open)",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "action",
@@ -605,9 +544,7 @@
       {
         "title": "Repulsorlift Stabilizers (Inactive)",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/repulsorliftstabilizers.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/repulsorliftstabilizers.png",
         "ability": "Setup: Equip this side faceup. Reduce the difficulty of your straight ([Straight]) maneuvers. After you fully execute a maneuver, you may flip this card."
@@ -615,9 +552,7 @@
       {
         "title": "Repulsorlift Stabilizers (Active)",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/repulsorliftstabilizers-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/repulsorliftstabilizers-sideb.png",
         "ability": "After you reveal a bank ([Bank Left] or [Bank Right]) or turn ([Turn Left] or [Turn Right]) maneuver, you must perform that maneuver as a sideslip, then flip this card. After you fully execute a non-sideslip maneuver, you may flip this card."
@@ -639,9 +574,7 @@
         "ability": "While you perform a primary attack, you may spend your lock on the defender to change 1 of your blank or [Focus] results to a [Hit] result. Add [Device] slot.",
         "title": "Alpha-3B “Besh”",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/alpha3bbesh.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/alpha3bbesh.png"
       }
@@ -662,9 +595,7 @@
         "ability": "While you perform a primary attack, before rolling attack dice, you may spend 2 [Charge]. If you do, your [Critical Hit] results inflict ion tokens instead of damage.",
         "title": "Alpha-3E “Esk”",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "charges": {
           "value": 2,
           "recovers": 1
@@ -689,9 +620,7 @@
         "ability": "Setup: Equip this side faceup. During the System Phase, gain 1 disarm token unless you flip this card. At the end of the End Phase, if you have no active [Charge], flip this card.",
         "title": "Intercept Booster (Attached)",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "charges": {
           "value": 3,
           "recovers": -1
@@ -716,9 +645,7 @@
         "text": "Unhindered by the frailty of an organic pilot, Droid Tri-Fighters are capable of radical acceleration and acute maneuvering. Fitted with booster rockets and fired from the missile tubes of Separatist capital ships, they can intercept hostiles well beyond the range of conventionally deployed starfighters.",
         "title": "Intercept Booster (Detached)",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/interceptbooster-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/interceptbooster-sideb.png"
       }
@@ -739,9 +666,7 @@
         "ability": "Reduce the difficulty of your speed 3 straight ([Straight]) and bank ([Bank Left] or [Bank Right]) maneuvers.",
         "title": "Maneuver-Assist MGK-300",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "action",
@@ -782,9 +707,7 @@
         "ability": "Before you engage, if you have no green tokens and you are not stressed, gain 1 calculate token for each enemy ship at range 2-3 in your firing arc, to a maximum of 2.",
         "title": "Target-Assist MGK-300",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "grants": [
           {
             "type": "action",
@@ -829,18 +752,14 @@
         },
         "title": "Sensitive Controls",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sensitivecontrols.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sensitivecontrols.png"
       }
     ],
     "restrictions": [
       {
-        "shipAbility": [
-          "Autothrusters"
-        ]
+        "shipAbility": ["Autothrusters"]
       },
       {
         "standardized": true
@@ -866,23 +785,17 @@
         },
         "title": "TIE Defender Elite",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tiedefenderelite.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tiedefenderelite.png"
       }
     ],
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       },
       {
-        "ships": [
-          "tieddefender"
-        ]
+        "ships": ["tieddefender"]
       },
       {
         "standardized": true
@@ -908,9 +821,7 @@
         },
         "title": "Vectored Cannons (RZ-1)",
         "type": "Configuration",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "attack": {
           "arc": "Single Turret Arc",
           "value": 2,
@@ -933,9 +844,7 @@
     },
     "restrictions": [
       {
-        "shipAbility": [
-          "Vectored Thrusters"
-        ]
+        "shipAbility": ["Vectored Thrusters"]
       },
       {
         "standardized": true
@@ -953,10 +862,7 @@
       {
         "title": "Wartime Loadout",
         "type": "Configuration",
-        "slots": [
-          "Configuration",
-          "Modification"
-        ],
+        "slots": ["Configuration", "Modification"],
         "ability": "Gain 1 [Torpedo] slot and 1 [Missile] slot. Replace your ship ability with the following:",
         "shipAbility": {
           "name": "Devastating Barrage",
@@ -992,9 +898,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "btanr2ywing"
-        ]
+        "ships": ["btanr2ywing"]
       },
       {
         "standardized": true
@@ -1012,10 +916,7 @@
       {
         "title": "Enhanced Jamming Suite",
         "type": "Configuration",
-        "slots": [
-          "Configuration",
-          "Tech"
-        ],
+        "slots": ["Configuration", "Tech"],
         "ability": "While you jam, you can choose yourself or another friendly ship. While you defend, if the attacker has no green tokens or there is a jammed ship in the attack arc, you may roll 1 additional defense die.",
         "grants": [
           {
@@ -1068,9 +969,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "tiewiwhispermodifiedinterceptor"
-        ]
+        "ships": ["tiewiwhispermodifiedinterceptor"]
       }
     ],
     "standard": true,
@@ -1086,9 +985,7 @@
         "title": "L3-37's Programming",
         "type": "Configuration",
         "ability": "If you are not shielded, decrease the difficulty of your bank ([Bank Left] and [Bank Right]) maneuvers.",
-        "slots": [
-          "Configuration"
-        ]
+        "slots": ["Configuration"]
       }
     ],
     "standard": false,
@@ -1109,9 +1006,7 @@
           "value": 2,
           "recovers": 0
         },
-        "slots": [
-          "Configuration"
-        ]
+        "slots": ["Configuration"]
       }
     ],
     "standard": false,

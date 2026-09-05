@@ -20,9 +20,7 @@
     "4FR",
     "5FR"
   ],
-  "dialCodes": [
-    "CRC-SC"
-  ],
+  "dialCodes": ["CRC-SC"],
   "stats": [
     {
       "arc": "Front Arc",

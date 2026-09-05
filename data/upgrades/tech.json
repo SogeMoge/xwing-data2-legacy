@@ -8,9 +8,7 @@
         "title": "Advanced Optics",
         "type": "Tech",
         "ability": "While you perform an attack, you may spend 1 focus token to change 1 of your blank results to a [Hit] result.",
-        "slots": [
-          "Tech"
-        ],
+        "slots": ["Tech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/advancedoptics.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/advancedoptics.png"
       }
@@ -31,9 +29,7 @@
         "title": "Ferrosphere Paint",
         "type": "Tech",
         "ability": "After an enemy ship locks you, if you are not in that ship's [Bullseye Arc], that ship gains 1 stress token.",
-        "slots": [
-          "Tech"
-        ],
+        "slots": ["Tech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ferrospherepaint.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ferrospherepaint.png"
       }
@@ -43,9 +39,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -61,9 +55,7 @@
         "title": "Hyperspace Tracking Data",
         "type": "Tech",
         "ability": "Setup: Before placing forces, you may choose a number between 0 and 6. Treat your initiative as the chosen value during Setup. After Setup, assign 1 focus or evade token to each friendly ship at range 0-2.",
-        "slots": [
-          "Tech"
-        ],
+        "slots": ["Tech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hyperspacetrackingdata.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hyperspacetrackingdata.png"
       }
@@ -73,14 +65,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       },
       {
-        "sizes": [
-          "Large"
-        ]
+        "sizes": ["Large"]
       }
     ],
     "standard": true,
@@ -98,9 +86,7 @@
         "ability": "While you have 2 or fewer stress tokens, you can perform [Barrel Roll] and [Boost] actions even while stressed.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/primedthrusters.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/primedthrusters.png",
-        "slots": [
-          "Tech"
-        ]
+        "slots": ["Tech"]
       }
     ],
     "cost": {
@@ -117,9 +103,7 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Small"
-        ]
+        "sizes": ["Small"]
       }
     ],
     "standard": true,
@@ -137,9 +121,7 @@
         "ability": "While a friendly ship at range 1-2 performs an attack against a target you have locked, that ship ignores the [Lock] attack requirement.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/targetingsynchronizer.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/targetingsynchronizer.png",
-        "slots": [
-          "Tech"
-        ]
+        "slots": ["Tech"]
       }
     ],
     "cost": {
@@ -158,9 +140,7 @@
         "title": "Pattern Analyzer",
         "type": "Tech",
         "ability": "While you fully execute a red maneuver, before the Check Difficulty step, you may perform 1 action.",
-        "slots": [
-          "Tech"
-        ],
+        "slots": ["Tech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/patternanalyzer.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/patternanalyzer.png"
       }
@@ -181,9 +161,7 @@
         "title": "Biohexacrypt Codes",
         "type": "Tech",
         "ability": "While you coordinate or jam, if you have a lock on a ship, you may spend that lock to choose that ship, ignoring range restrictions.",
-        "slots": [
-          "Tech"
-        ],
+        "slots": ["Tech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/biohexacryptcodes.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/biohexacryptcodes.png"
       }
@@ -193,9 +171,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       },
       {
         "action": {
@@ -220,10 +196,7 @@
         },
         "title": "Deuterium Power Cells",
         "type": "Tech",
-        "slots": [
-          "Tech",
-          "Modification"
-        ],
+        "slots": ["Tech", "Modification"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/deuteriumpowercells.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/deuteriumpowercells.png"
       }
@@ -249,9 +222,7 @@
       {
         "title": "Automated Target Priority",
         "type": "Tech",
-        "slots": [
-          "Tech"
-        ],
+        "slots": ["Tech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/automatedtargetpriority.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/automatedtargetpriority.png",
         "ability": "While you perform an attack, you must choose a defender at the closest valid attack range. After you perform an attack that missed, place 1 calculate token on this card. Before you engage, you may remove 1 calculate token from this card to gain a matching token."
@@ -272,9 +243,7 @@
       {
         "title": "Sensor Buoy Suite",
         "type": "Tech",
-        "slots": [
-          "Tech"
-        ],
+        "slots": ["Tech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sensorbuoysuite.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sensorbuoysuite.png",
         "ability": "Setup: Before placing forces, place 2 sensor buoy remotes beyond range 2 of any edge. Before you engage, you may acquire a lock on a ship at range 0-1 of a friendly sensor buoy, ignoring range restrictions.",
@@ -302,15 +271,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       },
       {
-        "sizes": [
-          "Medium",
-          "Large"
-        ]
+        "sizes": ["Medium", "Large"]
       }
     ],
     "standard": true,
@@ -326,9 +290,7 @@
         "title": "Sensor Scramblers",
         "type": "Tech",
         "ability": "Setup: Gain 1 cloak token. While you are cloaked, other ships cannot acquire locks on you. During the End Phase, if you are cloaked and there is an enemy ship at range 0-3, you must decloak. If you do and that decloak fails, lose 1 cloak token.",
-        "slots": [
-          "Tech"
-        ],
+        "slots": ["Tech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sensorscramblers.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sensorscramblers.png"
       }
@@ -338,10 +300,7 @@
     },
     "restrictions": [
       {
-        "ships": [
-          "tiewiwhispermodifiedinterceptor",
-          "tievnsilencer"
-        ]
+        "ships": ["tiewiwhispermodifiedinterceptor", "tievnsilencer"]
       }
     ],
     "standard": true,

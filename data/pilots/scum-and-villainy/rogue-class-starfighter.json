@@ -23,9 +23,7 @@
     "5FW",
     "5KR"
   ],
-  "dialCodes": [
-    "RCS"
-  ],
+  "dialCodes": ["RCS"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -104,9 +102,7 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/durge.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/durge.png",
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -137,9 +133,7 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cadbane.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cadbane.png",
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -166,9 +160,7 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/viktorhel-rogueclassstarfighter.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/viktorhel-rogueclassstarfighter.png",
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -180,13 +172,7 @@
       "limited": 1,
       "cost": 35,
       "xws": "nomlumb-rogueclassstarfighter",
-      "slots": [
-        "Cannon",
-        "Cannon",
-        "Illicit",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Cannon", "Cannon", "Illicit", "Modification", "Title"],
       "ability": "At the start of the Engagement Phase, you may choose 1 enemy ship in your [Front Arc]. If you do, treat your initiative as equal to that ship's until the end of the round.",
       "shipAbility": {
         "name": "Dead to Rights",
@@ -194,9 +180,7 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nomlumb-rogueclassstarfighter.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nomlumb-rogueclassstarfighter.png",
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "standard": true,
       "wildspace": true,
       "epic": true
@@ -222,9 +206,7 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/outerrimhunter.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimhunter.png",
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "standard": true,
       "wildspace": true,
       "epic": true

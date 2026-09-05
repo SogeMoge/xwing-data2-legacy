@@ -19,9 +19,7 @@
     "4FR",
     "4KR"
   ],
-  "dialCodes": [
-    "AR"
-  ],
+  "dialCodes": ["AR"],
   "faction": "rebelalliance",
   "stats": [
     {

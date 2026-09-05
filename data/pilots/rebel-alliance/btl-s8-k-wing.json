@@ -15,9 +15,7 @@
     "3FW",
     "3NW"
   ],
-  "dialCodes": [
-    "KW"
-  ],
+  "dialCodes": ["KW"],
   "faction": "rebelalliance",
   "stats": [
     {

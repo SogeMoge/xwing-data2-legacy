@@ -20,9 +20,7 @@
     "3PR",
     "4FR"
   ],
-  "dialCodes": [
-    "sYT"
-  ],
+  "dialCodes": ["sYT"],
   "faction": "resistance",
   "stats": [
     {
@@ -83,10 +81,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -111,10 +106,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -139,10 +131,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -157,9 +146,7 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "cost": 71,
       "slots": [
@@ -174,11 +161,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "Light Side",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "Light Side", "YT-1300"],
       "epic": true
     },
     {
@@ -207,10 +190,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -239,10 +219,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     }
   ]

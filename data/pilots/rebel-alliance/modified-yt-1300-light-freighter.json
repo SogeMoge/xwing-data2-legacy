@@ -21,9 +21,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "YT13"
-  ],
+  "dialCodes": ["YT13"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -90,11 +88,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chewbacca.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300",
-        "Wookiee"
-      ],
+      "keywords": ["Freighter", "YT-1300", "Wookiee"],
       "epic": true
     },
     {
@@ -119,10 +113,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-modifiedyt1300lightfreighter.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -147,10 +138,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-modifiedyt1300lightfreighter.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -173,10 +161,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimsmuggler.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -190,9 +175,7 @@
       "force": {
         "value": 1,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "slots": [
         "Force Power",
@@ -208,11 +191,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leiaorgana.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300",
-        "Light Side"
-      ],
+      "keywords": ["Freighter", "YT-1300", "Light Side"],
       "epic": true
     },
     {
@@ -241,10 +220,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-battleofyavin.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -277,10 +253,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-battleofyavin-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -340,10 +313,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-battleoverendor.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     },
     {
@@ -406,10 +376,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter",
-        "YT-1300"
-      ],
+      "keywords": ["Freighter", "YT-1300"],
       "epic": true
     }
   ]

@@ -20,9 +20,7 @@
     "3NW",
     "3YR"
   ],
-  "dialCodes": [
-    "Ups"
-  ],
+  "dialCodes": ["Ups"],
   "faction": "firstorder",
   "stats": [
     {
@@ -246,7 +244,7 @@
       "wildspace": true,
       "epic": true
     },
-        {
+    {
       "name": "Enric Pryde",
       "caption": "Steadfast",
       "initiative": 2,
