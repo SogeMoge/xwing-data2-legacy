@@ -41,6 +41,7 @@ xwing-data2-legacy/
 │   ├── quick-builds.test.js            # Validates quick builds and references valid XWS IDs
 │   └── xws.test.js                     # Enforces global uniqueness of XWS IDs
 ├── scripts/                            # SCRAPING, INGESTION & ASSET TOOLS
+│   ├── validate-json.js                # Fast zero-dependency JSON syntax validator
 │   ├── ffgscrape.js                    # Downloads raw JSON from FFG API
 │   ├── ffgprocess.js                   # Ingests downloaded cards into data/ files with git diffs
 │   ├── ffg2xws.js                      # Generates data/ffg-xws.json mappings

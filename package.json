@@ -6,22 +6,21 @@
   "maintainer": "Artem Kropachev @SogeMoge",
   "license": "MIT",
   "scripts": {
-    "validate:json": "jsonlint-cli data/**/*.json",
-    "validate:tests": "jest tests/**.test.js",
-    "validate:tests:watch": "jest --watch tests/**.test.js",
+    "test": "jest tests",
+    "validate:json": "node scripts/validate-json.js",
+    "validate:tests": "jest tests",
+    "validate:tests:watch": "jest --watch tests",
     "format": "prettier --loglevel warn --write \"data/**/*.json\"",
     "changelog": "git log --pretty=format:'- %s (%h)' --no-merges"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
-    "exceljs": "^4.3",
     "git-diff": "^2.0.6",
     "husky": "^4.2.1",
     "jest": "^29.3.1",
     "jest-json-schema": "^2.1.0",
     "json-stable-stringify": "^1.0.1",
     "jsonfile": "^5.0.0",
-    "jsonlint-cli": "^1.0.1",
     "lint-staged": "^10.0.7",
     "node-fetch": "^3.1.1",
     "prettier": "^1.19.1",
@@ -33,18 +32,12 @@
       "prettier --write"
     ],
     "{data,tests}/**/*.{js,json}": [
-      "yarn validate:tests --bail"
+      "npm run validate:tests -- --bail"
     ],
     "*.json": "prettier --write"
   },
   "prettier": {
     "tabWidth": 2,
     "printWidth": 80
-  },
-  "dependencies": {
-    "core-js": "^3.33.0",
-    "lodash": "^4.17.21",
-    "nomnom": "^1.5.3",
-    "string-math": "^1.2.2"
   }
 }

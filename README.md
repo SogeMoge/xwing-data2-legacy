@@ -34,13 +34,13 @@ You can run these scripts using `npm` or `yarn`. For example:
 
 ### Scripts to work with the repository
 
-| Script                          | Description                                                                                                                                                 |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `yarn run format`               | Format all `.json` files in the `data` folder using [Prettier](https://prettier.io/)                                                                        |
-| `yarn run changelog A...B`      | Generate a changelog between commits `A` and `B`, to be used in the release description on GitHub.<br />Example usage: `yarn run changelog 1.24.0...1.25.0` |
-| `yarn run validate:json`        | Validate that all `.json` files contain valid JSON                                                                                                          |
-| `yarn run validate:tests`       | Run all unit tests                                                                                                                                          |
-| `yarn run validate:tests:watch` | Run all unit tests in watch mode                                                                                                                            |
+| Script                                             | Description                                                                                                                                                 |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run format` / `yarn run format`               | Format all `.json` files in the `data` folder using [Prettier](https://prettier.io/)                                                                        |
+| `npm run validate:json` / `yarn run validate:json` | Validate that all `.json` files contain valid JSON                                                                                                          |
+| `npm test` / `npm run validate:tests`              | Run all unit tests                                                                                                                                          |
+| `npm run validate:tests:watch`                     | Run all unit tests in watch mode                                                                                                                            |
+| `npm run changelog A...B`                          | Generate a changelog between commits `A` and `B`, to be used in the release description on GitHub.<br />Example usage: `npm run changelog 1.24.0...1.25.0` |
 
 ## Creating a pull request
 
@@ -48,7 +48,7 @@ Before opening a pull request, see the following checklist:
 
 1. Use sensible commit messages. Good: `add rebel fangs`. Bad: `create fang-fighter.json`
 1. Ensure there are no merge conflicts with `master` (rebase on top of `master` or merge it into your branch)
-1. Ensure tests pass: `yarn run validate:tests`
+1. Ensure tests pass: `npm test` (or `npm run validate:tests` / `yarn run validate:tests`)
 1. Use a sensible PR message, eg `add pride of mandalore rebel content`. PR messages can be the same as commit messages for single-commit PRs.
 
 ## Creating a release

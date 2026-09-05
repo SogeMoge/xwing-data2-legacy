@@ -4,7 +4,6 @@
 
 const fs = require("fs");
 const gitdiff = require("git-diff");
-const stringMath = require("string-math");
 const diffOpts = {
   color: true,
   noHeaders: true,
