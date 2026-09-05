@@ -9,9 +9,7 @@
         "type": "Crew",
         "ability": "During the Perform Action step, you may perform 1 action, even while stressed. After you perform an action while stressed, suffer 1 [Hit] damage unless you expose 1 of your damage cards.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chopper-crew.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chopper-crew.png"
       }
     ],
@@ -20,9 +18,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -38,9 +34,7 @@
         "title": "“Zeb” Orrelios",
         "type": "Crew",
         "ability": "You can perform primary attacks at range 0. Enemy ships at range 0 can perform primary attacks against you.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/zeborrelios.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/zeborrelios.png"
       }
@@ -50,9 +44,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -69,9 +61,7 @@
         "type": "Crew",
         "ability": "At the start of the Engagement Phase, you may choose 1 enemy ship at range 0-1. If you do, you gain 1 calculate token unless that ship chooses to gain 1 stress token.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/000.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/000.png"
       }
     ],
@@ -80,12 +70,8 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ],
-        "names": [
-          "Darth Vader"
-        ]
+        "factions": ["scumandvillainy"],
+        "names": ["Darth Vader"]
       }
     ],
     "standard": true,
@@ -102,9 +88,7 @@
         "type": "Crew",
         "ability": "While you perform an attack, after rolling attack dice, you may name a type of green token. If you do, gain 2 ion tokens and, during this attack, the defender cannot spend tokens of the named type.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/4lom.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/4lom.png"
       }
     ],
@@ -113,9 +97,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -132,9 +114,7 @@
         "type": "Crew",
         "ability": "After another friendly ship at range 0-3 defends, if it is destroyed, the attacker gains 2 stress tokens. While a friendly ship at range 0-3 performs an attack against a stressed ship, it may reroll 1 attack die.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/admiralsloane.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/admiralsloane.png"
       }
     ],
@@ -143,9 +123,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -162,12 +140,8 @@
         "type": "Crew",
         "ability": "Setup: After placing forces, assign the Hunted condition to 1 enemy ship. While you perform an attack against the ship with the Hunted condition, you may change 1 of your [Focus] results to a [Hit] result.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agentkallus.png",
-        "conditions": [
-          "hunted"
-        ],
-        "slots": [
-          "Crew"
-        ],
+        "conditions": ["hunted"],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agentkallus.png"
       }
     ],
@@ -176,9 +150,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -194,9 +166,7 @@
         "title": "Baze Malbus",
         "type": "Crew",
         "ability": "While you perform a [Focus] action, you may treat it as red. If you do, gain 1 additional focus token for each enemy ship at range 0-1, to a maximum of 2.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bazemalbus.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bazemalbus.png"
       }
@@ -206,9 +176,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -225,9 +193,7 @@
         "type": "Crew",
         "ability": "Setup: Start in reserve. At the end of Setup, place yourself at range 0 of an obstacle and beyond range 3 of any enemy ship.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bobafett.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bobafett.png"
       }
     ],
@@ -236,9 +202,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -254,9 +218,7 @@
         "title": "C-3PO",
         "type": "Crew",
         "ability": "Before rolling defense dice, you may spend 1 calculate token to guess aloud a number 1 or higher. If you do and you roll exactly that many [Evade] results, add 1 [Evade] result. After you perform the [Calculate] action, gain 1 calculate token.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "actions": [
           {
             "type": "Calculate",
@@ -281,9 +243,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -300,9 +260,7 @@
         "type": "Crew",
         "ability": "After you drop or launch a device, you may perform a red [Boost] action.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cadbane.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cadbane.png"
       }
     ],
@@ -311,9 +269,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -329,9 +285,7 @@
         "title": "Captain Phasma",
         "type": "Crew",
         "ability": "At the end of the Engagement Phase, each enemy ship at range 0-1 that is not stressed gains 1 stress token.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/captainphasma.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/captainphasma.png"
       }
@@ -341,9 +295,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       }
     ],
     "standard": true,
@@ -359,9 +311,7 @@
         "title": "Cassian Andor",
         "type": "Crew",
         "ability": "During the System Phase, you may choose 1 enemy ship at range 1-2 and guess aloud a bearing and speed, then look at that ship's dial. If the chosen ship's bearing and speed match your guess, you may set your dial to another maneuver.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cassianandor.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cassianandor.png"
       }
@@ -371,9 +321,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -389,9 +337,7 @@
         "title": "Chewbacca",
         "type": "Crew",
         "ability": "At the start of the Engagement Phase, you may spend 2 [Charge] to repair 1 faceup damage card.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 2,
           "recovers": 1
@@ -405,9 +351,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -423,9 +367,7 @@
         "title": "Chewbacca",
         "type": "Crew",
         "ability": "At the start of the End Phase, you may spend 1 focus token to repair 1 of your faceup damage cards.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chewbacca-crew.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chewbacca-crew.png"
       }
@@ -435,9 +377,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -453,9 +393,7 @@
         "title": "Ciena Ree",
         "type": "Crew",
         "ability": "After you perform a [Coordinate] action, if the ship you coordinated performed a [Barrel Roll] or [Boost] action, it may gain 1 stress token to rotate 90°.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cienaree.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cienaree.png"
       }
@@ -465,9 +403,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       },
       {
         "action": {
@@ -489,9 +425,7 @@
         "type": "Crew",
         "ability": "During the End Phase, you may choose 2 [Illicit] upgrades equipped to friendly ships at range 0-1. If you do, you may exchange these upgrades. End of Game: Return all [Illicit] upgrades to their original ships.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cikatrovizago.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cikatrovizago.png"
       }
     ],
@@ -500,9 +434,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -518,9 +450,7 @@
         "title": "Darth Vader",
         "type": "Crew",
         "ability": "At the start of the Engagement Phase, you may choose 1 ship in your firing arc at range 0-2 and spend 1 [Force]. If you do, that ship suffers 1 [Hit] damage unless it chooses to remove 1 green token.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -534,9 +464,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -552,10 +480,7 @@
         "title": "Death Troopers",
         "type": "Crew",
         "ability": "During the Activation Phase, enemy ships at range 0-1 cannot remove stress tokens.",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/deathtroopers.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/deathtroopers.png"
       }
@@ -565,9 +490,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -590,12 +513,8 @@
             "source": "Store Championship 2018"
           }
         ],
-        "conditions": [
-          "optimizedprototype"
-        ],
-        "slots": [
-          "Crew"
-        ],
+        "conditions": ["optimizedprototype"],
+        "slots": ["Crew"],
         "actions": [
           {
             "type": "Lock",
@@ -619,9 +538,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -638,10 +555,7 @@
         "type": "Crew",
         "ability": "While another friendly ship defends or performs an attack, you may spend 1 [Force] to modify 1 of its dice as though that ship had spent 1 [Force].",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/emperorpalpatine.png",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -654,9 +568,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -672,9 +584,7 @@
         "title": "Freelance Slicer",
         "type": "Crew",
         "ability": "While you defend, before attack dice are rolled, you may spend a lock you have on the attacker to roll 1 attack die. If you do, the attacker gains 1 jam token. Then, on a [Hit] or [Critical Hit] result, gain 1 jam token.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/freelanceslicer.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/freelanceslicer.png"
       }
@@ -695,9 +605,7 @@
         "title": "General Hux",
         "type": "Crew",
         "ability": "While you perform a white [Coordinate] action, you may treat it as red. If you do, you may coordinate up to 2 additional ships of the same ship type, and each ship you coordinate must perform the same action, treating that action as red.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/generalhux.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/generalhux.png"
       }
@@ -707,9 +615,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       }
     ],
     "standard": true,
@@ -725,9 +631,7 @@
         "title": "GNK “Gonk” Droid",
         "type": "Crew",
         "ability": "Setup: Lose 1 [Charge]. Action: Recover 1 [Charge]. Action: Spend 1 [Charge] to recover 1 shield.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 1,
           "recovers": 0
@@ -753,9 +657,7 @@
         "type": "Crew",
         "ability": "After an enemy ship at range 0-2 reveals its dial, you may spend 1 [Force] to perform 1 white action on your action bar, treating that action as red.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/grandinquisitor.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -768,9 +670,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -787,9 +687,7 @@
         "type": "Crew",
         "ability": "During the System Phase, you may spend 2 [Charge]. If you do, each friendly ship may acquire a lock on a ship that you have locked.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/grandmofftarkin.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 2,
           "recovers": 1
@@ -802,9 +700,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       },
       {
         "action": {
@@ -826,9 +722,7 @@
         "type": "Crew",
         "ability": "You can execute red maneuvers even while stressed. After you fully execute a red maneuver, if you have 3 or more stress tokens, remove 1 stress token and suffer 1 [Hit] damage.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/herasyndulla.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/herasyndulla.png"
       }
     ],
@@ -837,9 +731,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -856,9 +748,7 @@
         "type": "Crew",
         "ability": "You have the pilot ability of each other friendly ship with the IG-2000 upgrade. After you perform a [Calculate] action, gain 1 calculate token.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ig88d.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "actions": [
           {
             "type": "Calculate",
@@ -882,9 +772,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -900,9 +788,7 @@
         "title": "ISB Slicer",
         "type": "Crew",
         "ability": "During the End Phase, enemy ships at range 1-2 cannot remove jam tokens.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/isbslicer.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/isbslicer.png"
       }
@@ -912,9 +798,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -930,12 +814,8 @@
         "title": "Informant",
         "type": "Crew",
         "ability": "Setup: After placing forces, choose 1 enemy ship and assign the Listening Device condition to it.",
-        "conditions": [
-          "listeningdevice"
-        ],
-        "slots": [
-          "Crew"
-        ],
+        "conditions": ["listeningdevice"],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/informant.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/informant.png"
       }
@@ -957,10 +837,7 @@
         "type": "Crew",
         "ability": "During the End Phase, you may choose 1 friendly ship at range 0-2 and spend 1 [Charge]. If you do, that ship recovers 1 [Charge] on 1 of its equipped [Illicit] upgrades.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jabbathehutt.png",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "charges": {
           "value": 4,
           "recovers": 0
@@ -973,9 +850,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -991,9 +866,7 @@
         "title": "Jyn Erso",
         "type": "Crew",
         "ability": "If a friendly ship at range 0-3 would gain a focus token, it may gain 1 evade token instead.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jynerso.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jynerso.png"
       }
@@ -1003,9 +876,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1021,9 +892,7 @@
         "title": "Kanan Jarrus",
         "type": "Crew",
         "ability": "After a friendly ship at range 0-2 fully executes a white maneuver, you may spend 1 [Force] to remove 1 stress token from that ship.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -1037,9 +906,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1056,9 +923,7 @@
         "type": "Crew",
         "ability": "At the start of the End Phase, you may choose 1 enemy ship at range 0-2 in your firing arc. If you do, that ship does not remove its tractor tokens.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ketsuonyo.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ketsuonyo.png"
       }
     ],
@@ -1067,9 +932,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -1085,12 +948,8 @@
         "title": "Kylo Ren",
         "type": "Crew",
         "ability": "Action: Choose 1 enemy ship at range 1-3. If you do, spend 1 [Force] to assign the I'll Show You the Dark Side condition to that ship.",
-        "conditions": [
-          "illshowyouthedarkside"
-        ],
-        "slots": [
-          "Crew"
-        ],
+        "conditions": ["illshowyouthedarkside"],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -1104,9 +963,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       }
     ],
     "standard": true,
@@ -1122,9 +979,7 @@
         "title": "L3-37",
         "type": "Crew",
         "ability": "Setup: Equip this side faceup. While you defend, you may flip this card. If you do, the attacker must reroll all attack dice.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/l337.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/l337-sideb.png"
       },
@@ -1132,9 +987,7 @@
         "title": "L3-37's Programming",
         "type": "Configuration",
         "ability": "If you are not shielded, decrease the difficulty of your bank ([Bank Left] and [Bank Right]) maneuvers.",
-        "slots": [
-          "Configuration"
-        ],
+        "slots": ["Configuration"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/l337-sideb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/l337.png"
       }
@@ -1144,9 +997,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -1162,21 +1013,17 @@
         "title": "Lando Calrissian",
         "type": "Crew",
         "ability": "After you roll dice, you may spend 1 green token to reroll up to 2 of your results.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landocalrissian-crew.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/landocalrissian-crew.png"
       }
     ],
     "cost": {
-      "value": 6
+      "value": 5
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -1192,9 +1039,7 @@
         "title": "Lando Calrissian",
         "type": "Crew",
         "ability": "Action: Roll 2 defense dice. For each [Focus] result, gain 1 focus token. For each [Evade] result, gain 1 evade token. If both results are blank, the opposing player chooses focus or evade. You gain 1 token of that type.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landocalrissian.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/landocalrissian.png"
       }
@@ -1204,9 +1049,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1223,9 +1066,7 @@
         "type": "Crew",
         "ability": "While you defend, if the attacker is stressed, you may remove 1 stress from the attacker to change 1 of your blank/[Focus] results to an [Evade] result.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/lattsrazzi.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/lattsrazzi.png"
       }
     ],
@@ -1234,9 +1075,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -1253,9 +1092,7 @@
         "type": "Crew",
         "ability": "At the start of the Activation Phase, you may spend 3 [Charge]. During this phase, each friendly ship reduces the difficulty of its red maneuvers.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/leiaorgana.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 3,
           "recovers": 1
@@ -1268,9 +1105,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1286,9 +1121,7 @@
         "title": "Magva Yarro",
         "type": "Crew",
         "ability": "After you defend, if the attack hit, you may acquire a lock on the attacker.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/magvayarro.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/magvayarro.png"
       }
@@ -1298,9 +1131,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1317,9 +1148,7 @@
         "type": "Crew",
         "ability": "After you suffer damage, you may gain 1 stress token to recover 1 [Force]. You can equip “Dark Side” upgrades.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/maul.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -1328,9 +1157,7 @@
           {
             "type": "force",
             "value": {
-              "side": [
-                "dark"
-              ]
+              "side": ["dark"]
             },
             "amount": 1
           }
@@ -1343,12 +1170,8 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ],
-        "names": [
-          "Ezra Bridger"
-        ]
+        "factions": ["scumandvillainy"],
+        "names": ["Ezra Bridger"]
       }
     ],
     "standard": true,
@@ -1365,9 +1188,7 @@
         "type": "Crew",
         "ability": "At the start of the Engagement Phase, if you are damaged, you may perform a red [Reinforce] action.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ministertua.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ministertua.png"
       }
     ],
@@ -1376,9 +1197,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -1395,9 +1214,7 @@
         "type": "Crew",
         "ability": "During the System Phase, you may spend 2 [Charge]. If you do, choose the [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] template. Each friendly ship may perform a red [Boost] action using that template.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/moffjerjerrod.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 2,
           "recovers": 1
@@ -1410,9 +1227,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       },
       {
         "action": {
@@ -1433,9 +1248,7 @@
         "title": "Nien Nunb",
         "type": "Crew",
         "ability": "Decrease the difficulty of your bank maneuvers ([Bank Left] and [Bank Right]).",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/niennunb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/niennunb.png"
       }
@@ -1445,9 +1258,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1463,9 +1274,7 @@
         "title": "Novice Technician",
         "type": "Crew",
         "ability": "At the end of the round, you may roll 1 attack die to repair 1 faceup damage card. Then on a [Hit] result, expose 1 damage card.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/novicetechnician.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/novicetechnician.png"
       }
@@ -1486,9 +1295,7 @@
         "title": "Perceptive Copilot",
         "type": "Crew",
         "ability": "After you perform a [Focus] action, gain 1 focus token.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/perceptivecopilot.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/perceptivecopilot.png"
       }
@@ -1509,9 +1316,7 @@
         "title": "Petty Officer Thanisson",
         "type": "Crew",
         "ability": "During the Activation or Engagement Phase, after an enemy ship in your [Front Arc] at range 0-1 gains a red or orange token, if you are not stressed, you may gain 1 stress token. If you do, that ship gains 1 additional token of the type that it gained.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pettyofficerthanisson.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pettyofficerthanisson.png"
       }
@@ -1521,9 +1326,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       }
     ],
     "standard": true,
@@ -1539,9 +1342,7 @@
         "title": "Qi'ra",
         "type": "Crew",
         "ability": "While you move and perform attacks, you ignore obstacles that you are locking.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/qira.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/qira.png"
       }
@@ -1551,9 +1352,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -1569,9 +1368,7 @@
         "title": "R2-D2",
         "type": "Crew",
         "ability": "During the End Phase, if you are damaged and not shielded, you may roll 1 attack die to recover 1 shield. On a [Hit] result, expose 1 of your damage cards.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2d2-crew.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2d2-crew.png"
       }
@@ -1581,9 +1378,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1599,9 +1394,7 @@
         "title": "Sabine Wren",
         "type": "Crew",
         "ability": "Setup: Place 1 ion, 1 jam, 1 stress, and 1 tractor token on this card. After a ship suffers the effect of a friendly bomb, you may remove 1 ion, jam, stress, or tractor token from this card. If you do, that ship gains a matching token.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sabinewren.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sabinewren.png"
       }
@@ -1611,9 +1404,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1629,9 +1420,7 @@
         "title": "Saw Gerrera",
         "type": "Crew",
         "ability": "While you perform an attack, you may suffer 1 [Hit] damage to change all of your [Focus] results to [Critical Hit] results.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sawgerrera.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sawgerrera.png"
       }
@@ -1641,9 +1430,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -1659,9 +1446,7 @@
         "title": "Seasoned Navigator",
         "type": "Crew",
         "ability": "After you reveal your dial, you may set your dial to another non-red maneuver of the same speed. While you execute that maneuver, increase its difficulty.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seasonednavigator.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seasonednavigator.png"
       }
@@ -1694,9 +1479,7 @@
         "type": "Crew",
         "ability": "If an enemy ship at range 0-1 would gain a stress token, you may spend 1 [Force] to have it gain 1 jam or tractor token instead.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seventhsister.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -1709,9 +1492,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -1727,10 +1508,7 @@
         "title": "Supreme Leader Snoke",
         "type": "Crew",
         "ability": "During the System Phase, you may choose any number of enemy ships beyond range 1. If you do, spend that many [Force] to flip each chosen ship's dial faceup.",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -1744,9 +1522,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "firstorder"
-        ]
+        "factions": ["firstorder"]
       }
     ],
     "standard": true,
@@ -1762,9 +1538,7 @@
         "title": "Tactical Officer",
         "type": "Crew",
         "text": "In the chaos of a starfighter battle, a single order can mean the difference between a victory and a massacre.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "actions": [
           {
             "type": "Coordinate",
@@ -1808,9 +1582,7 @@
         "title": "Tobias Beckett",
         "type": "Crew",
         "ability": "Setup: After placing forces, you may choose 1 obstacle in the play area. If you do, place it anywhere in the play area beyond range 2 of any board edge or ship and beyond range 1 of other obstacles.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tobiasbeckett.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tobiasbeckett.png"
       }
@@ -1820,9 +1592,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -1839,9 +1609,7 @@
         "type": "Crew",
         "ability": "After you partially execute a maneuver, you may suffer 1 [Hit] damage to perform 1 white action.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/unkarplutt.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/unkarplutt.png"
       }
     ],
@@ -1850,9 +1618,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -1869,9 +1635,7 @@
         "type": "Crew",
         "ability": "While you perform an attack, if you are not stressed, you may choose 1 defense die and gain 1 stress token. If you do, the defender must reroll that die.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/zuckuss.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/zuckuss.png"
       }
     ],
@@ -1880,9 +1644,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -1900,9 +1662,7 @@
         "ability": "While you coordinate, you can choose friendly ships beyond range 2 if they have [Calculate] on their action bar. After you perform the [Calculate] or [Coordinate] action, gain 1 calculate token.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c3po-crew.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c3po-crew.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -1926,9 +1686,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -1946,9 +1704,7 @@
         "ability": "After you perform an [Evade] action, gain additional evade tokens equal to the number of enemy ships at range 0-1.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hansolo-crew.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hansolo-crew.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -1965,9 +1721,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -1985,9 +1739,7 @@
         "ability": "Setup: Lose 1 [Charge]. After a friendly ship at range 0-3 is dealt 1 damage card, recover 1 [Charge]. While you perform an attack, you may spend 2 [Charge] to change 1 [Focus] result to a [Critical Hit] result.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chewbacca-crew-swz19.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chewbacca-crew-swz19.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -1995,13 +1747,11 @@
       }
     ],
     "cost": {
-      "value": 4
+      "value": 3
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2019,9 +1769,7 @@
         "ability": "While you defend or perform an attack, you may spend 1 of your results to acquire a lock on the enemy ship.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/rosetico.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/rosetico.png",
-        "slots": [
-          "Crew"
-        ]
+        "slots": ["Crew"]
       }
     ],
     "cost": {
@@ -2029,9 +1777,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2061,9 +1807,7 @@
             }
           }
         ],
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chancellorpalpatine-sideb.png"
       },
       {
@@ -2084,9 +1828,7 @@
             }
           }
         ],
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chancellorpalpatine.png"
       }
     ],
@@ -2095,10 +1837,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic",
-          "separatistalliance"
-        ]
+        "factions": ["galacticrepublic", "separatistalliance"]
       }
     ],
     "standard": true,
@@ -2119,9 +1858,7 @@
           "value": 1,
           "recovers": 1
         },
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/countdooku.png"
       }
     ],
@@ -2130,9 +1867,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       }
     ],
     "standard": true,
@@ -2153,9 +1888,7 @@
           "value": 1,
           "recovers": 0
         },
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/generalgrievous.png"
       }
     ],
@@ -2164,9 +1897,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       }
     ],
     "standard": true,
@@ -2182,21 +1913,17 @@
         "ability": "Before you engage, you may choose another friendly ship at range 1-2. You may transfer to that ship 1 token of a type that ship does not have. That ship may transfer 1 token to you of a type you do not have.",
         "title": "Amilyn Holdo",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/amilynholdo.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/amilynholdo.png"
       }
     ],
     "cost": {
-      "value": 5
+      "value": 4
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2210,14 +1937,10 @@
     "sides": [
       {
         "ability": "Setup: Before placing forces, you may spend 3-5 [Charge]. If you do, choose another friendly ship and assign the It's the Resistance condition to it.",
-        "conditions": [
-          "itstheresistance"
-        ],
+        "conditions": ["itstheresistance"],
         "title": "GA-97",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 5,
           "recovers": 1
@@ -2240,9 +1963,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2258,21 +1979,17 @@
         "ability": "After you reveal your dial, you may set your dial to a basic maneuver of the next higher speed. While you execute that maneuver, increase its difficulty.",
         "title": "Kaydel Connix",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kaydelconnix.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kaydelconnix.png"
       }
     ],
     "cost": {
-      "value": 5
+      "value": 4
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2288,9 +2005,7 @@
         "ability": "After you fully execute a blue maneuver, remove all of your stress tokens.",
         "title": "Korr Sella",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/korrsella.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/korrsella.png"
       }
@@ -2300,9 +2015,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2318,9 +2031,7 @@
         "ability": "While you have 2 or fewer stress tokens, you can perform [Reinforce], [Coordinate], and [Jam] actions, even while stressed. While you perform a white [Reinforce], [Coordinate], or [Jam] action, if you are stressed, treat that action as red.",
         "title": "Larma D'Acy",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/larmadacy.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/larmadacy.png"
       }
@@ -2330,9 +2041,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2348,10 +2057,7 @@
         "ability": "After a friendly ship reveals its dial, you may spend 1 [Force]. If you do, the chosen ship reduces the difficulty of that maneuver.",
         "title": "Leia Organa",
         "type": "Crew",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -2374,9 +2080,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2392,9 +2096,7 @@
         "ability": "At the end of the Activation Phase, you may choose 1 friendly ship at range 1-2. If you do, transfer 1 calculate token to that ship. If your revealed maneuver is blue, you may transfer 1 focus token instead.",
         "title": "PZ-4CO",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -2413,9 +2115,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -2432,9 +2132,7 @@
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c3po-republic.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c3po-republic.png",
         "ability": "While you defend, if you are calculating, you may reroll 1 defense die. After you perform a [Calculate] action, gain 1 calculate token.",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "type": "Crew",
         "grants": [
           {
@@ -2452,9 +2150,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -2470,9 +2166,7 @@
         "ability": "While an enemy ship in your [Bullseye Arc] performs an attack, if the defender is friendly and at range 0-2, the defender may change 1 blank result to a [Focus] result.",
         "title": "Aayla Secura",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -2510,16 +2204,12 @@
         "ability": "Setup: Equip this side faceup and place 3 calculate tokens on this card. At the start of the Engagement Phase, you may choose a friendly ship at range 0-3 and remove 1 calculate token from this card to have that ship gain a matching token. Then, if there are no calculate tokens on this card, flip it.",
         "title": "Agent Terex",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agentterex-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agentterex.png"
       },
       {
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "title": "Agent Terex (Cyborg)",
         "type": "Crew",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agentterex.png",
@@ -2543,9 +2233,7 @@
         "ability": "During the System Phase, you may choose a friendly ship at range 0-3. That ship gains 1 calculate and 1 stress token.",
         "title": "K-2SO",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -2586,9 +2274,7 @@
         },
         "title": "Plo Koon",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -2624,9 +2310,7 @@
         "ability": "After you coordinate a friendly ship, it may acquire a lock on a ship you are locking, ignoring range restrictions.",
         "title": "Toryn Farr",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -2659,9 +2343,7 @@
       {
         "title": "Kit Fisto",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kitfisto.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kitfisto.png",
         "ability": "At the start of the Engagement Phase, you may choose 1 friendly ship at range 0-1 and spend 1 [Force]. If you do, it may perform a red [Evade] action.",
@@ -2695,9 +2377,7 @@
       {
         "title": "Yoda",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/yoda.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/yoda.png",
         "ability": "After another friendly ship at range 0-2 fully executes a purple maneuver or performs a purple action, you may spend 1 [Force]. If you do, that ship recovers 1 [Force].",
@@ -2731,9 +2411,7 @@
       {
         "title": "“Fives”",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/fives.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fives.png",
         "ability": "After you perform an attack that missed, if the defender's initiative is equal to or greater than your initiative, place 1 evade or focus token on this card. Before you engage, you may remove 1 token from this card to gain 1 matching token."
@@ -2754,10 +2432,7 @@
       {
         "title": "Wolfpack",
         "type": "Crew",
-        "slots": [
-          "Crew",
-          "Gunner"
-        ],
+        "slots": ["Crew", "Gunner"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/wolfpack.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/wolfpack.png",
         "ability": "After a friendly ship at range 0-3 defends, if the attacker is in your firing arc, the defender may gain 1 strain token to acquire a lock on the attacker."
@@ -2778,9 +2453,7 @@
       {
         "title": "Commander Malarus",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/commandermalarus.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/commandermalarus.png",
         "ability": "Setup: Equip this side faceup. While a friendly non-limited ship at range 0-1 performs a primary attack, that ship may reroll 1 blank result. If it does and the attack does not hit, you must flip this card."
@@ -2788,9 +2461,7 @@
       {
         "title": "Commander Malarus (Perfected)",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/commandermalarus-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/commandermalarus-sideb.png",
         "ability": "While you perform an attack, if the defender is in your [Bullseye Arc], you must convert all [Focus] results to [Hit] results and gain 1 stress token. Then, if you have 2 or more stress tokens, suffer 1 [Hit] damage."
@@ -2811,10 +2482,7 @@
       {
         "title": "Ghost Company",
         "type": "Crew",
-        "slots": [
-          "Crew",
-          "Gunner"
-        ],
+        "slots": ["Crew", "Gunner"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ghostcompany.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ghostcompany.png",
         "ability": "After you perform a primary attack, if you are focused, you may perform a [Single Turret Arc] attack against a ship you have not attacked this round as a bonus attack.",
@@ -2848,9 +2516,7 @@
       {
         "title": "Commander Pyre",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/commanderpyre.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/commanderpyre.png",
         "ability": "Setup: After placing forces, choose an enemy ship. It gains 2 stress tokens. While you defend, if the attacker is stressed, you may reroll 1 defense die."
@@ -2872,9 +2538,7 @@
         "ability": "Action: Choose 2 ships at range 1-3 of you that are friendly to each other. Coordinate one of the chosen ships, then jam the other, ignoring range restrictions.",
         "title": "Hondo Ohnaka",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hondoohnaka.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hondoohnaka.png"
       }
@@ -2895,9 +2559,7 @@
         "ability": "While you defend or perform an attack, you may spend your lock on the enemy ship to change 1 of the enemy ship's [Focus] results to a blank result.",
         "title": "Jango Fett",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jangofett.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jangofett.png"
       }
@@ -2907,10 +2569,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "separatistalliance"
-        ]
+        "factions": ["scumandvillainy", "separatistalliance"]
       }
     ],
     "standard": true,
@@ -2926,13 +2585,8 @@
         "ability": "Setup: Lose 2 [Charge]. During the System Phase, you may assign 1 of your secret conditions to yourself facedown: You Should Thank Me You'd Better Mean Business",
         "title": "Zam Wesell",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
-        "conditions": [
-          "youdbettermeanbusiness",
-          "youshouldthankme"
-        ],
+        "slots": ["Crew"],
+        "conditions": ["youdbettermeanbusiness", "youshouldthankme"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -2946,10 +2600,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "separatistalliance"
-        ]
+        "factions": ["scumandvillainy", "separatistalliance"]
       }
     ],
     "standard": true,
@@ -2969,9 +2620,7 @@
           "recovers": 1
         },
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/gamutkey.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/gamutkey.png"
       }
@@ -2981,9 +2630,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -2999,9 +2646,7 @@
         "ability": "After you coordinate a friendly ship, you may transfer 1 orange or red token to the ship you coordinated.",
         "title": "Protectorate Gleb",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -3020,11 +2665,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "galacticempire",
-          "firstorder"
-        ]
+        "factions": ["scumandvillainy", "galacticempire", "firstorder"]
       }
     ],
     "standard": true,
@@ -3040,9 +2681,7 @@
         "ability": "During the End Phase, if you did not defend this round, recover 1 non-recurring [Force], if able.",
         "title": "The Mandalorian",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -3061,9 +2700,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -3079,9 +2716,7 @@
         "ability": "Setup: After placing forces, choose an opponent; they assign the Merciless Pursuit condition to 2 of their ships. Your [Force] lose the recurring icon. After you defend, if you suffer damage during that attack, recover 1 [Force].",
         "title": "The Child",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 2,
           "recovers": 0
@@ -3095,11 +2730,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire",
-          "rebelalliance",
-          "scumandvillainy"
-        ]
+        "factions": ["galacticempire", "rebelalliance", "scumandvillainy"]
       }
     ],
     "standard": true,
@@ -3118,9 +2749,7 @@
         "ability": "Setup: Equip this side faceup. Before you would be dealt a faceup damage card, you must place 1 fuse marker on this card and gain 1 calculate token instead. Then, if there are 2 fuse markers on this card, flip it.",
         "title": "IG-11",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -3137,9 +2766,7 @@
         "ability": "During the End Phase, remove 1 fuse marker from this card. Then, if this card has no fuse markers on it, you are destroyed and each other ship at range 0-1 suffers 1 [Critical Hit] damage. Action: Place 1 fuse marker on this card.",
         "title": "IG-11 (Anti-Capture Protocol)",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ig11-sideb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ig11-sideb.png"
       }
@@ -3149,9 +2776,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ]
   },
@@ -3164,9 +2789,7 @@
         "ability": "You can coordinate allied ships as if they were friendly ships. After you coordinate a ship, it may acquire a lock on an object you have locked.",
         "title": "Greef Karga",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -3185,9 +2808,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -3206,9 +2827,7 @@
         "ability": "Action: Roll 1 attack die for each damage card you have. For each [Hit] result, repair 1 faceup Ship damage card, then for each [Critical Hit] result, repair 1 facedown damage card. For each blank result, remove 1 orange token, then for each [Focus] result, gain 1 focus token.",
         "title": "Kuiil",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kuiil.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kuiil.png"
       }
@@ -3224,9 +2843,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ]
   },
@@ -3239,9 +2856,7 @@
         "ability": "During the System Phase, you may perform an action on 1 of your damage cards, even while stressed. After you repair a faceup Ship damage card, you may roll 1 attack die. On a [Hit] result, repair another faceup Ship damage card. On a [Critical Hit] result, expose 1 damage card.",
         "title": "Peli Motto",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pelimotto.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pelimotto.png"
       }
@@ -3251,15 +2866,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       },
       {
-        "sizes": [
-          "Medium",
-          "Large"
-        ]
+        "sizes": ["Medium", "Large"]
       }
     ],
     "standard": true,
@@ -3275,9 +2885,7 @@
         "ability": "Setup: Equip this side faceup. After a friendly ship at range 0-2 reveals a white maneuver, if it has no green tokens, it may gain 1 stress token to gain 1 calculate token. During the End Phase, if you have 2 or more stress tokens, flip this card. ",
         "title": "Prime Minister Almec",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/primeministeralmec.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/primeministeralmec.png"
       },
@@ -3285,9 +2893,7 @@
         "ability": "After a friendly ship at range 0-2 fully executes a red maneuver, that ship may perform a [Calculate] or [Focus] action on its action bar, even while stressed.",
         "title": "Almec, Maul's Puppet",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/primeministeralmec-sideb.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/primeministeralmec-sideb.png"
       }
@@ -3297,10 +2903,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "galacticrepublic"
-        ]
+        "factions": ["scumandvillainy", "galacticrepublic"]
       }
     ],
     "standard": true,
@@ -3316,9 +2919,7 @@
         "ability": "After you perform a red action, you may gain 1 strain token. While you perform an attack, if you are strained, you may change 1 of your blank or [Focus] results to a result.",
         "title": "Rook Kast",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/rookkast.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/rookkast.png",
         "grants": [
@@ -3337,9 +2938,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -3355,9 +2954,7 @@
         "ability": "After a friendly ship at range 0-2 spends a focus or evade token, you may spend 1 [Force]. If you do, that ship gains 1 focus token.",
         "title": "Obi-wan Kenobi",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -3371,9 +2968,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -3389,9 +2984,7 @@
         "ability": "While you perform an attack, if you are at range 0-1 of the defender, you may reroll 1 attack die.",
         "title": "Bo-Katan Kryze",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bokatankryze.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bokatankryze.png"
       }
@@ -3401,10 +2994,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic",
-          "separatistalliance"
-        ]
+        "factions": ["galacticrepublic", "separatistalliance"]
       }
     ],
     "standard": true,
@@ -3420,9 +3010,7 @@
         "ability": "After you perform an attack, if the defender was destroyed, each friendly ship at range 0-2 may remove 1 red or orange token.",
         "title": "Bo-Katan Kryze",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bokatankryze-rebel-scum.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bokatankryze-rebel-scum.png"
       }
@@ -3432,10 +3020,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "rebelalliance"
-        ]
+        "factions": ["scumandvillainy", "rebelalliance"]
       }
     ],
     "standard": true,
@@ -3453,9 +3038,7 @@
         "type": "Crew",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/korkiekryze.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/korkiekryze.png",
-        "slots": [
-          "Crew"
-        ]
+        "slots": ["Crew"]
       }
     ],
     "cost": {
@@ -3463,9 +3046,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -3481,9 +3062,7 @@
         "ability": "At the start of the Engagement Phase, you may spend 2 [Charge]. If you do, each friendly ship may choose to gain 1 deplete token and 1 focus tokken or to gain 1 disarm token and 1 evade token.",
         "title": "Satine Kryze",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 2,
           "recovers": 1
@@ -3497,9 +3076,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -3515,12 +3092,8 @@
         "ability": "Setup: Before placing forces, choose 1 enemy ship and assign the False Friend condition to it. Action: If the False Friend condition is not assigned to an enemy ship, assign it to an enemy ship in your [Front Arc] at range 0-2.",
         "title": "Tal Merrik",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
-        "conditions": [
-          "falsefriend"
-        ],
+        "slots": ["Crew"],
+        "conditions": ["falsefriend"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/talmerrik.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/talmerrik.png"
       }
@@ -3530,9 +3103,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       }
     ],
     "standard": true,
@@ -3548,9 +3119,7 @@
         "ability": "After a friendly ship in your [Front Arc] at range 1-2 gains a stress of strain token, you may spend 1 [Force]. If you do, that ship gains 1 focus token.",
         "title": "Savage Opress",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -3564,10 +3133,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "separatistalliance"
-        ]
+        "factions": ["scumandvillainy", "separatistalliance"]
       }
     ],
     "standard": true,
@@ -3583,9 +3149,7 @@
         "ability": "Before a friendly ship at range 0-2 engages, if its revealed maneuver is 1 speed or higher and there is an enemy ship in its [Front Arc] at range 1, that friendly ship may remove 1 non-lock red token.",
         "title": "Fenn Rau",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fennrau.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/fennrau.png"
       }
@@ -3595,10 +3159,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "rebelalliance"
-        ]
+        "factions": ["scumandvillainy", "rebelalliance"]
       }
     ],
     "standard": true,
@@ -3614,9 +3175,7 @@
         "ability": "While a friendly ship at range 1-3 with an initiative of 4 or lower performs an attack against a defender you have locked, the attacker may change 1 [Focus] result to a [Hit] result.",
         "title": "Gar Saxon",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/garsaxon.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/garsaxon.png"
       }
@@ -3626,9 +3185,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -3644,9 +3201,7 @@
         "ability": "While you perform a [Coordinate] action, you can choose a friendly [Crew] remote instead of another friendly ship. Instead of performing an action, that remote relocates forward using a [1 [Turn Left]], [1 [Turn Right]], or [2 [Straight]] template.",
         "title": "Pre Vizsla",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "grants": [
           {
             "type": "action",
@@ -3665,10 +3220,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "separatistalliance"
-        ]
+        "factions": ["scumandvillainy", "separatistalliance"]
       }
     ],
     "standard": true,
@@ -3684,9 +3236,7 @@
         "ability": "While a friendy unit at range 0-3 performs a [Ordnance] attack, you may spend 1 [Charge]. If you do, the attacker may change 1 [Hit] result to a [Critical Hit] result.",
         "title": "Tristan Wren",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tristanwren.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tristanwren.png",
         "charges": {
@@ -3700,12 +3250,8 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ],
-        "names": [
-          "Gar Saxon"
-        ]
+        "factions": ["rebelalliance"],
+        "names": ["Gar Saxon"]
       }
     ],
     "standard": true,
@@ -3721,9 +3267,7 @@
         "ability": "You can maintain up to 2 locks. Each lock must be on a different object. After a friendly ship at range 0-3 is locked by an enemy ship, you may acquire a lock on an enemy ship.",
         "title": "Ursa Wren",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ursawren.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ursawren.png"
       }
@@ -3733,9 +3277,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -3751,9 +3293,7 @@
         "ability": "After you fully execute a red maneuver, if you are not focused, you may spend 1 [Charge] to gain 1 focus token.",
         "title": "Captain Hark",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -3767,9 +3307,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       }
     ],
     "standard": true,
@@ -3785,9 +3323,7 @@
         "ability": "After you fully execute a maneuver, you may spend 1 [Force] to choose 1 friendly ship in your [Full Rear Arc] at range 1-2. If you do, that ship may perform a red [Focus] action, even while stressed.",
         "title": "Ahsoka Tano",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -3801,10 +3337,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "galacticrepublic"
-        ]
+        "factions": ["scumandvillainy", "galacticrepublic"]
       }
     ],
     "standard": true,
@@ -3820,10 +3353,7 @@
         "title": "Maul",
         "type": "Crew",
         "ability": "Add [Illicit] slot.",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "force": {
           "value": 1,
           "recovers": 1
@@ -3851,9 +3381,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -3869,10 +3397,7 @@
         "title": "Clan Wren Commandos",
         "type": "Crew",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Commando Team remote using the [1 [Straight]] template. You can place that device using its front or rear guides. This card's [Charge] cannot be recovered.",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -3915,16 +3440,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       },
       {
-        "sizes": [
-          "Medium",
-          "Large",
-          "Huge"
-        ]
+        "sizes": ["Medium", "Large", "Huge"]
       }
     ],
     "standard": true,
@@ -3940,10 +3459,7 @@
         "title": "Imperial Super Commandos",
         "type": "Crew",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Commando Team remote using the [1 [Straight]] template. You can place that device using its front or rear guides. This card's [Charge] cannot be recovered.",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -3986,16 +3502,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticempire"
-        ]
+        "factions": ["galacticempire"]
       },
       {
-        "sizes": [
-          "Medium",
-          "Large",
-          "Huge"
-        ]
+        "sizes": ["Medium", "Large", "Huge"]
       }
     ],
     "standard": true,
@@ -4011,10 +3521,7 @@
         "title": "Mandalorian Super Commandos",
         "type": "Crew",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Commando Team remote using the [1 [Straight]] template. You can place that device using its front or rear guides. This card's [Charge] cannot be recovered.",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -4057,16 +3564,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       },
       {
-        "sizes": [
-          "Medium",
-          "Large",
-          "Huge"
-        ]
+        "sizes": ["Medium", "Large", "Huge"]
       }
     ],
     "standard": true,
@@ -4082,10 +3583,7 @@
         "title": "Nite Owl Commandos",
         "type": "Crew",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Commando Team remote using the [1 [Straight]] template. You can place that device using its front or rear guides. This card's [Charge] cannot be recovered.",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -4128,16 +3626,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       },
       {
-        "sizes": [
-          "Medium",
-          "Large",
-          "Huge"
-        ]
+        "sizes": ["Medium", "Large", "Huge"]
       }
     ],
     "standard": true,
@@ -4153,10 +3645,7 @@
         "title": "Death Watch Commandos",
         "type": "Crew",
         "ability": "During the System Phase, you may spend 1 [Charge] to drop a Commando Team remote using the [1 [Straight]] template. You can place that device using its front or rear guides. This card's [Charge] cannot be recovered.",
-        "slots": [
-          "Crew",
-          "Crew"
-        ],
+        "slots": ["Crew", "Crew"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -4199,16 +3688,10 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       },
       {
-        "sizes": [
-          "Medium",
-          "Large",
-          "Huge"
-        ]
+        "sizes": ["Medium", "Large", "Huge"]
       }
     ],
     "standard": true,
@@ -4224,9 +3707,7 @@
         "title": "Chewbacca",
         "type": "Crew",
         "ability": "After you perform an [Evade] action, you may gain 1 focus token.",
-        "slots": [
-          "Crew"
-        ]
+        "slots": ["Crew"]
       }
     ],
     "standard": false,
@@ -4242,10 +3723,7 @@
       {
         "title": "Wolfpack",
         "type": "Crew",
-        "slots": [
-          "Crew",
-          "Gunner"
-        ],
+        "slots": ["Crew", "Gunner"],
         "ability": "While you perform an attack, you may spend a lock belonging to a friendly Plo Koon ship or ship with the Born for This ability that is on the defender to reroll any number of attack dice."
       }
     ],
@@ -4262,9 +3740,7 @@
       {
         "title": "“Leebo”",
         "type": "Crew",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "ability": "After you repair a damage card, you may perform an action from your action bar."
       }
     ],
@@ -4283,21 +3759,16 @@
         "type": "Crew",
         "ability": "After you repair a damage card, you may perform an action on your action bar.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/leebo-rsl.png",
-        "slots": [
-          "Crew"
-        ],
+        "slots": ["Crew"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/leebo-rsl.png"
       }
     ],
     "cost": {
-      "value": 1
+      "value": 3
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy",
-          "rebelalliance"
-        ]
+        "factions": ["scumandvillainy", "rebelalliance"]
       }
     ],
     "standard": false,

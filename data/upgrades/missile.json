@@ -8,10 +8,7 @@
         "title": "Barrage Rockets",
         "type": "Missile",
         "ability": "Attack ([Focus]): Spend 1 [Charge]. If the defender is in your [Bullseye Arc], you may spend 1 or more [Charge] to reroll that many attack dice.",
-        "slots": [
-          "Missile",
-          "Missile"
-        ],
+        "slots": ["Missile", "Missile"],
         "charges": {
           "value": 5,
           "recovers": 0
@@ -43,9 +40,7 @@
         "title": "Cluster Missiles",
         "type": "Missile",
         "ability": "Attack ([Lock]): Spend 1 [Charge]. After this attack, you may perform this attack as a bonus attack against a different target at range 0-1 of the defender, ignoring the [Lock] requirement.",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "charges": {
           "value": 4,
           "recovers": 0
@@ -87,9 +82,7 @@
         "type": "Missile",
         "ability": "Attack ([Lock]): Spend 1 [Charge]. After this attack hits, each ship at range 0-1 of the defender exposes 1 of its damage cards.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/concussionmissiles.png",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -120,9 +113,7 @@
         "title": "Homing Missiles",
         "type": "Missile",
         "ability": "Attack ([Lock]): Spend 1 [Charge]. After you declare the defender, the defender may choose to suffer 1 [Hit] damage. If it does, skip the Attack and Defense Dice steps and the attack is treated as hitting.",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -154,9 +145,7 @@
         "title": "Ion Missiles",
         "type": "Missile",
         "ability": "Attack ([Lock]): Spend 1 [Charge]. If this attack hits, spend 1 [Hit] or [Critical Hit] result to cause the defender to suffer 1 [Hit] damage. All remaining [Hit]/[Critical Hit] results inflict ion tokens instead of damage.",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -189,9 +178,7 @@
         "type": "Missile",
         "ability": "Attack ([Focus]): Spend 1 [Charge].",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protonrockets.png",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "charges": {
           "value": 1,
           "recovers": 0
@@ -234,9 +221,7 @@
           "ordnance": true
         },
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/energyshellcharges.png",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/energyshellcharges.png"
       }
     ],
@@ -248,9 +233,7 @@
         }
       },
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       }
     ],
     "cost": {
@@ -274,9 +257,7 @@
           "recovers": 0
         },
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/discordmissiles.png",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "device": {
           "name": "Buzz Droid Swarm",
           "type": "Remote",
@@ -302,9 +283,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "separatistalliance"
-        ]
+        "factions": ["separatistalliance"]
       }
     ],
     "standard": true,
@@ -319,10 +298,7 @@
       {
         "title": "Diamond-Boron Missiles",
         "type": "Missile",
-        "slots": [
-          "Missile",
-          "Missile"
-        ],
+        "slots": ["Missile", "Missile"],
         "ability": "Attack ([Lock]): Spend 1 [Charge]. After this attack hits, you may spend 1 [Charge]. If you do, each ship at range 0-1 of the defender with agility equal to or less than the defender's rolls 1 attack die and suffers 1 [Hit]/[Critical Hit] damage for each matching result.",
         "charges": {
           "value": 3,
@@ -366,24 +342,13 @@
         },
         "title": "Mag-Pulse Warheads",
         "type": "Missile",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/magpulsewarheads.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/magpulsewarheads.png"
       }
     ],
     "cost": {
-      "variable": "initiative",
-      "values": {
-        "0": 4,
-        "1": 4,
-        "2": 4,
-        "3": 5,
-        "4": 5,
-        "5": 5,
-        "6": 5
-      }
+      "value": 4
     },
     "standard": true,
     "wildspace": true,
@@ -402,10 +367,7 @@
         },
         "title": "Electro-Chaff Missiles",
         "type": "Missile",
-        "slots": [
-          "Missile",
-          "Device"
-        ],
+        "slots": ["Missile", "Device"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/electrochaffmissiles.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/electrochaffmissiles.png"
       }
@@ -437,10 +399,7 @@
         },
         "title": "Multi-Missile Pods",
         "type": "Missile",
-        "slots": [
-          "Missile",
-          "Missile"
-        ],
+        "slots": ["Missile", "Missile"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/multimissilepods.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/multimissilepods.png"
       }
@@ -472,9 +431,7 @@
         },
         "title": "XX-23 S-Thread Tracers",
         "type": "Missile",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/xx23sthreadtracers.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/xx23sthreadtracers.png"
       }
@@ -506,9 +463,7 @@
         },
         "title": "Seeker Missiles",
         "type": "Missile",
-        "slots": [
-          "Missile"
-        ]
+        "slots": ["Missile"]
       }
     ],
     "standard": false,
@@ -525,9 +480,7 @@
         "title": "Seeker Missiles",
         "type": "Missile",
         "ability": "Attack ([Lock]): Spend 1 [Charge]. After this attack misses, if 1 or more [Hit]/[Critical Hit] results were neutralized, the defender gains 1 strain token.",
-        "slots": [
-          "Missile"
-        ],
+        "slots": ["Missile"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -570,9 +523,7 @@
         },
         "title": "Saturation Rockets",
         "type": "Missile",
-        "slots": [
-          "Missile"
-        ]
+        "slots": ["Missile"]
       }
     ],
     "standard": false,
@@ -600,9 +551,7 @@
         },
         "title": "Heavy Plasma Missiles",
         "type": "Missile",
-        "slots": [
-          "Missile"
-        ]
+        "slots": ["Missile"]
       }
     ],
     "standard": false,

@@ -18,9 +18,7 @@
     "3FW",
     "3NR"
   ],
-  "dialCodes": [
-    "MG1"
-  ],
+  "dialCodes": ["MG1"],
   "faction": "resistance",
   "stats": [
     {
@@ -74,7 +72,7 @@
       "text": "Whether the ordnance silos of their StarFortresses are loaded with proton bombs or relief supplies, the heroic crews of Cobalt Squadron dedicate their lives to making a difference in the galaxy.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cobaltsquadronbomber.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cobaltsquadronbomber.png",
-      "cost": 49,
+      "cost": 50,
       "slots": [
         "Sensor",
         "Crew",
@@ -147,9 +145,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/benteene.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/benteene.png",
       "cost": 51,
-      "conditions": [
-        "rattled"
-      ],
+      "conditions": ["rattled"],
       "slots": [
         "Sensor",
         "Crew",

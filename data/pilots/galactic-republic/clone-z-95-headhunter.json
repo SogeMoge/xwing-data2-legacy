@@ -20,9 +20,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "Z95"
-  ],
+  "dialCodes": ["Z95"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -64,7 +62,7 @@
       "caption": "Dependable Closer",
       "initiative": 2,
       "limited": 1,
-      "cost": 25,
+      "cost": 24,
       "xws": "killer",
       "ability": "While you perform an attack, if the defender has 2 or fewer hull remaining, you may roll 1 additional attack die. If you do, gain 1 deplete token after rolling attack dice.",
       "shipAbility": {
@@ -73,23 +71,18 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/killer.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/killer.png",
-      "slots": [
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "“Drift”",
       "caption": "CT-1020",
       "initiative": 3,
       "limited": 1,
-      "cost": 30,
+      "cost": 29,
       "xws": "drift",
       "ability": "While a friendly ship at range 0-1 performs an attack, if you have exactly 1 non-lock red token or exactly 1 orange token, that ship may reroll 1 attack die.",
       "shipAbility": {
@@ -98,24 +91,18 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/drift.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/drift.png",
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "“Boost”",
       "caption": "CT-4860",
       "initiative": 3,
       "limited": 1,
-      "cost": 25,
+      "cost": 24,
       "xws": "boost",
       "ability": "At the start of the Engagement Phase, if there is a friendly ship at range 0-1 whose revealed maneuver is blue, you may perform a [Boost] action.",
       "shipAbility": {
@@ -124,24 +111,18 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/boost.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/boost.png",
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "“Stub”",
       "caption": "Scrappy Flier",
       "initiative": 3,
       "limited": 1,
-      "cost": 30,
+      "cost": 29,
       "xws": "stub",
       "ability": "While you defend, if the speed of your revealed maneuver is even, roll 1 additional defende die. While you perform a primary attack, if the speed of your revealed maneuver is odd, roll 1 additional attack die.",
       "shipAbility": {
@@ -150,17 +131,11 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/stub.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/stub.png",
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "“Knack”",
@@ -176,18 +151,11 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/knack.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/knack.png",
-      "slots": [
-        "Talent",
-        "Talent",
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Talent", "Talent", "Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "“Hawk”",
@@ -203,24 +171,17 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hawk-clonez95headhunter.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hawk-clonez95headhunter.png",
-      "slots": [
-        "Talent",
-        "Talent",
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Talent", "Talent", "Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "7th Sky Corps Pilot",
       "initiative": 2,
       "limited": 0,
-      "cost": 22,
+      "cost": 23,
       "xws": "7thskycorpspilot",
       "text": "",
       "shipAbility": {
@@ -229,16 +190,11 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/7thskycorpspilot.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/7thskycorpspilot.png",
-      "slots": [
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "Reaper Squadron Scout",
@@ -253,24 +209,18 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/reapersquadronscout.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/reapersquadronscout.png",
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "“Slider”",
       "caption": "Evasive Aviator",
       "initiative": 4,
       "limited": 1,
-      "cost": 26,
+      "cost": 25,
       "xws": "slider",
       "ability": "When you reveal a [2 [Bank Left]] or [2 [Bank Right]] maneuver, you may spend 2 [Charge] to execute it as a sideslip.",
       "charges": {
@@ -283,17 +233,11 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/slider.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/slider.png",
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     },
     {
       "name": "“Warthog”",
@@ -309,17 +253,11 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/warthog-clonez95headhunter.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/warthog-clonez95headhunter.png",
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification"
-      ],
+      "slots": ["Talent", "Sensor", "Modification"],
       "standard": true,
       "wildspace": true,
       "epic": true,
-      "keywords": [
-        "Clone"
-      ]
+      "keywords": ["Clone"]
     }
   ]
 }

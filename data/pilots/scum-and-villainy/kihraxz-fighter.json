@@ -20,9 +20,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "KXZ"
-  ],
+  "dialCodes": ["KXZ"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -141,9 +139,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/graz.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     },
     {
@@ -188,9 +184,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/viktorhel.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Bounty Hunter"
-      ],
+      "keywords": ["Bounty Hunter"],
       "epic": true
     },
     {
@@ -198,7 +192,7 @@
       "caption": "Vaksai Pilot",
       "initiative": 4,
       "limited": 2,
-      "cost": 40,
+      "cost": 43,
       "xws": "blacksunbodyguard-wat1",
       "ability": "Setup: Lose 2 [Charge]. After you suffer damage, recover 1 [Charge]. Before you engage, you may spend 2 [Charge] to recover 1 [Charge] on 1 of your equipped upgrades.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunbodyguard-wat1.png",

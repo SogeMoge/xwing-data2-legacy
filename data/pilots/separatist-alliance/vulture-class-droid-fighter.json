@@ -21,9 +21,7 @@
     "4FB",
     "5FW"
   ],
-  "dialCodes": [
-    "VDF"
-  ],
+  "dialCodes": ["VDF"],
   "faction": "separatistalliance",
   "stats": [
     {
@@ -74,15 +72,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 21,
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tradefederationdrone.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -100,15 +92,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 23,
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/precisehunter.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -126,15 +112,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 22,
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -152,15 +132,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 22,
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -177,15 +151,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 22,
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistdrone.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -203,15 +171,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 23,
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -239,9 +201,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -261,17 +221,11 @@
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs081-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -295,9 +249,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -313,17 +265,11 @@
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs311-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -347,9 +293,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype-siegeofcoruscant.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -365,17 +309,11 @@
         "text": "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result."
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/haorchallprototype-siegeofcoruscant-lsl.png",
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype-siegeofcoruscant-lsl.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -398,14 +336,8 @@
         "value": 3,
         "recovers": 0
       },
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
-      "keywords": [
-        "Droid"
-      ],
+      "slots": ["Missile", "Modification", "Configuration"],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -441,12 +373,8 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kelrodoaiholdout.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kelrodoaiholdout.png",
-      "cost": 22,
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "cost": 21,
+      "slots": ["Missile", "Modification", "Configuration"],
       "epic": true
     },
     {
@@ -463,16 +391,10 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/00muplinkprototype-wat1.png",
       "standard": false,
       "wildspace": true,
-      "cost": 23,
-      "slots": [
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "cost": 22,
+      "slots": ["Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/00muplinkprototype-wat1.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     },
     {
@@ -490,16 +412,9 @@
       "standard": false,
       "wildspace": true,
       "cost": 24,
-      "slots": [
-        "Talent",
-        "Missile",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Missile", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs420-wat1.png",
-      "keywords": [
-        "Droid"
-      ],
+      "keywords": ["Droid"],
       "epic": true
     }
   ]

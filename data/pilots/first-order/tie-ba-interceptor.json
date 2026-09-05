@@ -23,9 +23,7 @@
     "5FW",
     "5KR"
   ],
-  "dialCodes": [
-    "VT"
-  ],
+  "dialCodes": ["VT"],
   "faction": "firstorder",
   "stats": [
     {
@@ -75,26 +73,19 @@
       "caption": "Red Baron",
       "initiative": 6,
       "limited": 1,
-      "cost": 54,
+      "cost": 53,
       "xws": "majorvonreg",
       "ability": "During the System Phase, you may choose 1 enemy ship in your [Bullseye Arc]. That ship gains 1 deplete or strain token of your choice.",
       "shipAbility": {
         "name": "Fine-Tuned Thrusters",
         "text": "After you fully execute a maneuver, if you are not depleted or strained, you may gain 1 deplete or strain token to perform a [Lock] or [Barrel Roll] action."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Tech", "Missile", "Modification"],
       "standard": true,
       "wildspace": true,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvonreg.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvonreg.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -109,19 +100,12 @@
         "name": "Fine-Tuned Thrusters",
         "text": "After you fully execute a maneuver, if you are not depleted or strained, you may gain 1 deplete or strain token to perform a [Lock] or [Barrel Roll] action."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Tech", "Missile", "Modification"],
       "standard": true,
       "wildspace": true,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holo.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/holo.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -136,19 +120,12 @@
         "name": "Fine-Tuned Thrusters",
         "text": "After you fully execute a maneuver, if you are not depleted or strained, you may gain 1 deplete or strain token to perform a [Lock] or [Barrel Roll] action."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Tech", "Missile", "Modification"],
       "standard": true,
       "wildspace": true,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ember.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ember.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -162,19 +139,12 @@
         "name": "Fine-Tuned Thrusters",
         "text": "After you fully execute a maneuver, if you are not depleted or strained, you may gain 1 deplete or strain token to perform a [Lock] or [Barrel Roll] action."
       },
-      "slots": [
-        "Talent",
-        "Tech",
-        "Missile",
-        "Modification"
-      ],
+      "slots": ["Talent", "Tech", "Missile", "Modification"],
       "standard": true,
       "wildspace": true,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstorderprovocateur.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstorderprovocateur.png",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ]

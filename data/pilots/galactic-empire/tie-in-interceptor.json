@@ -21,9 +21,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "TI"
-  ],
+  "dialCodes": ["TI"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -72,17 +70,11 @@
         "name": "Autothrusters",
         "text": "After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action."
       },
-      "slots": [
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Modification", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/alphasquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -97,18 +89,11 @@
         "name": "Autothrusters",
         "text": "After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action."
       },
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabersquadronace.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -116,7 +101,7 @@
       "caption": "Ace of Legend",
       "initiative": 6,
       "limited": 1,
-      "cost": 56,
+      "cost": 54,
       "xws": "soontirfel",
       "ability": "At the start of the Engagement Phase, if there is an enemy ship in your [Bullseye Arc], gain 1 focus token.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/soontirfel.png",
@@ -124,18 +109,11 @@
         "name": "Autothrusters",
         "text": "After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action."
       },
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -151,18 +129,11 @@
         "name": "Autothrusters",
         "text": "After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action."
       },
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/turrphennir.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -176,16 +147,9 @@
       },
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "cost": 47,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "ability": "After you perform an attack, if the defender was destroyed, gain 1 stress token. After a friendly ship at range 0-3 is destroyed, remove 1 stress token.",
       "caption": "Look Through My Eyes",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cienaree.png",
@@ -204,16 +168,9 @@
       "caption": "Inferno Two",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "cost": 46,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "ability": "While you perform an attack against a damaged defender, roll 1 additional attack die.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gideonhask-tieininterceptor.png",
       "epic": true,
@@ -232,20 +189,13 @@
       "standard": true,
       "wildspace": true,
       "cost": 43,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "ability": "Action: Gain 1 strain token to recover 1 [Charge]. Before you engage, you may spend 1 [Charge] to perform an action.",
       "charges": {
         "value": 1,
         "recovers": -1
       },
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vultskerris-tieininterceptor.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vultskerris-tieininterceptor.png",
       "epic": true
@@ -264,15 +214,8 @@
       "standard": true,
       "wildspace": true,
       "cost": 43,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
-      "keywords": [
-        "TIE"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
+      "keywords": ["TIE"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/commandantgoran.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/commandantgoran.png",
       "epic": true
@@ -290,16 +233,9 @@
       "standard": true,
       "wildspace": true,
       "cost": 37,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "ability": "While you barrel roll, you must use the [[Bank Left] or [Bank Right]] template instead of the [[Straight]] template.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantlorrir.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantlorrir.png",
       "epic": true
@@ -321,16 +257,9 @@
         "value": 1,
         "recovers": 1
       },
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "ability": "During the Engagement Phase, after a friendly small ship at range 0-3 is destroyed, if that ship has not engaged this phase, you may spend 1 [Charge]. If you do, that ship engages at the current initiative.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nashwindrider.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nashwindrider.png",
       "epic": true
@@ -371,14 +300,9 @@
           "value": 1
         }
       ],
-      "standardLoadout": [
-        "predator",
-        "fanatic-battleofyavin"
-      ],
+      "standardLoadout": ["predator", "fanatic-battleofyavin"],
       "ability": "Before a friendly TIE at range 0-1 would suffer damage, you may spend 2 [Charge]. If you do, prevent 1 damage.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/idenversio-battleofyavin.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio-battleofyavin.png",
       "epic": true
@@ -419,14 +343,9 @@
           "value": 1
         }
       ],
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "ability": "Before a friendly TIE at range 0-1 would suffer damage, you may spend 2 [Charge]. If you do, prevent 1 damage.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/idenversio-battleofyavin-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio-battleofyavin-lsl.png",
       "epic": true
@@ -463,14 +382,9 @@
           "value": 4
         }
       ],
-      "standardLoadout": [
-        "disciplined",
-        "primedthrusters"
-      ],
+      "standardLoadout": ["disciplined", "primedthrusters"],
       "ability": "After you perform a [Barrel Roll] action, you may spend 1 [Charge] to perform a [Boost] action.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma4-battleofyavin.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma4-battleofyavin.png",
       "epic": true
@@ -507,14 +421,9 @@
           "value": 4
         }
       ],
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "ability": "After you perform a [Barrel Roll] action, you may spend 1 [Charge] to perform a [Boost] action.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma4-battleofyavin-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma4-battleofyavin-lsl.png",
       "epic": true
@@ -551,14 +460,9 @@
           "value": 4
         }
       ],
-      "standardLoadout": [
-        "sensorjammer-battleofyavin",
-        "elusive"
-      ],
+      "standardLoadout": ["sensorjammer-battleofyavin", "elusive"],
       "ability": "After you perform an attack that hits, you may spend 1 [Charge] to perform an [Evade] action.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma5-battleofyavin.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma5-battleofyavin.png",
       "epic": true
@@ -595,14 +499,9 @@
           "value": 4
         }
       ],
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "ability": "After you perform an attack that hits, you may spend 1 [Charge] to perform an [Evade] action.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma5-battleofyavin-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma5-battleofyavin-lsl.png",
       "epic": true
@@ -639,14 +538,9 @@
           "value": 4
         }
       ],
-      "standardLoadout": [
-        "daredevil",
-        "afterburners"
-      ],
+      "standardLoadout": ["daredevil", "afterburners"],
       "ability": "After you fully execute a speed 3-5 maneuver, you may spend 1 [Charge] to perform a [SLAM] action.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma6-battleofyavin.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma6-battleofyavin.png",
       "epic": true
@@ -683,14 +577,9 @@
           "value": 4
         }
       ],
-      "slots": [
-        "Talent",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification"],
       "ability": "After you fully execute a speed 3-5 maneuver, you may spend 1 [Charge] to perform a [SLAM] action.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma6-battleofyavin-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma6-battleofyavin-lsl.png",
       "epic": true
@@ -749,14 +638,9 @@
           "type": "Lock"
         }
       ],
-      "standardLoadout": [
-        "marksmanship",
-        "firecontrolsystem"
-      ],
+      "standardLoadout": ["marksmanship", "firecontrolsystem"],
       "ability": "During the System Phase, you may spend 1 [Charge] to acquire a lock on an enemy ship at range 0-1.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma7-battleofyavin.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma7-battleofyavin.png",
       "epic": true
@@ -815,13 +699,9 @@
           "type": "Lock"
         }
       ],
-      "slots": [
-        "Talent"
-      ],
+      "slots": ["Talent"],
       "ability": "During the System Phase, you may spend 1 [Charge] to acquire a lock on an enemy ship at range 0-1.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma7-battleofyavin-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma7-battleofyavin-lsl.png",
       "epic": true
@@ -839,21 +719,13 @@
       "standard": true,
       "wildspace": true,
       "cost": 47,
-      "slots": [
-        "Force Power",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Force Power", "Modification", "Modification", "Configuration"],
       "ability": "While you perform an attack, after the Neutralize Results step, if the attack hit, you may spend 2 [Force]. If you do, change all of your [Hit] results to [Critical Hit] results.",
       "force": {
         "value": 2,
         "recovers": 1
       },
-      "keywords": [
-        "Dark Side",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/secondsister.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/secondsister.png",
       "epic": true
@@ -876,9 +748,7 @@
         "targetingmatrix-battleoverendor"
       ],
       "ability": "While you defend, if you are focused, roll 1 additional defense die.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sapphire2-battleoverendor.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sapphire2-battleoverendor.png",
       "standard": false,
@@ -896,14 +766,9 @@
         "text": "During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action."
       },
       "cost": 38,
-      "slots": [
-        "Modification",
-        "Modification"
-      ],
+      "slots": ["Modification", "Modification"],
       "ability": "While you defend, if you are focused, roll 1 additional defense die.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sapphire2-battleoverendor-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sapphire2-battleoverendor-lsl.png",
       "standard": true,
@@ -932,9 +797,7 @@
         "feedbackemitter-battleoverendor"
       ],
       "ability": "After you perform an attack, you may spend 1 [Charge] and gain 1 deplete token to boost or barrel roll.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/soontirfel-battleoverendor.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel-battleoverendor.png",
       "standard": false,
@@ -956,15 +819,9 @@
         "recovers": 0
       },
       "cost": 49,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification", "Modification"],
       "ability": "After you perform an attack, you may spend 1 [Charge] and gain 1 deplete token to boost or barrel roll.",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/soontirfel-battleoverendor-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel-battleoverendor-lsl.png",
       "standard": true,
@@ -1007,9 +864,7 @@
         "fuelinjectionoverride-battleoverendor"
       ],
       "ability": "After you perform an [Evade] action, gain a calculate token",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mausmonare-battleoverendor.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mausmonare-battleoverendor.png",
       "standard": false,
@@ -1046,27 +901,21 @@
         "text": "During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action."
       },
       "cost": 42,
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification"
-      ],
+      "slots": ["Talent", "Modification", "Modification"],
       "ability": "After you perform an [Evade] action, gain a calculate token",
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mausmonare-battleoverendor-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mausmonare-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
       "epic": true
     },
-        {
+    {
       "name": "Carnor Jax",
       "caption": "Emperor's Revenge",
       "initiative": 5,
       "limited": 1,
-      "cost": 49,
+      "cost": 50,
       "xws": "carnorjax-wat1",
       "ability": "At the start of the Engagement Phase, you may choose 1 ship in your [Front Arc] at range 0-1 . If you do so, that ship gains 1 jam token.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/carnorjax-wat1.png",
@@ -1074,18 +923,11 @@
         "name": "Autothrusters",
         "text": "After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action."
       },
-      "slots": [
-        "Talent",
-        "Modification",
-        "Modification",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/carnorjax-wat1.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     }
   ]

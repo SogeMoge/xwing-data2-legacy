@@ -21,9 +21,7 @@
     "4FW",
     "5FW"
   ],
-  "dialCodes": [
-    "N1"
-  ],
+  "dialCodes": ["N1"],
   "faction": "galacticrepublic",
   "stats": [
     {
@@ -71,19 +69,12 @@
       "standard": true,
       "wildspace": true,
       "cost": 40,
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "slots": ["Talent", "Sensor", "Torpedo", "Astromech"],
       "ability": "Before you reveal your maneuver, you may spend 1 [Force] to barrel roll (this is not an action).",
       "force": {
         "value": 1,
         "recovers": 1,
-        "side": [
-          "light"
-        ]
+        "side": ["light"]
       },
       "shipAbility": {
         "name": "Full Throttle",
@@ -92,9 +83,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker-nabooroyaln1starfighter.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker-nabooroyaln1starfighter.png",
       "caption": "Hero of Naboo",
-      "keywords": [
-        "Light Side"
-      ],
+      "keywords": ["Light Side"],
       "epic": true
     },
     {
@@ -110,13 +99,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 43,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "slots": ["Talent", "Talent", "Sensor", "Torpedo", "Astromech"],
       "ability": "While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ricolie.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ricolie.png",
@@ -135,13 +118,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 35,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "slots": ["Talent", "Talent", "Sensor", "Torpedo", "Astromech"],
       "ability": "While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/padmeamidala.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/padmeamidala.png",
@@ -160,13 +137,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 29,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "slots": ["Talent", "Talent", "Sensor", "Torpedo", "Astromech"],
       "ability": "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dineeellberger.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dineeellberger.png",
@@ -185,11 +156,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 28,
-      "slots": [
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "slots": ["Sensor", "Torpedo", "Astromech"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bravoflightofficer.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bravoflightofficer.png",
       "epic": true
@@ -206,17 +173,10 @@
       },
       "standard": true,
       "wildspace": true,
-      "conditions": [
-        "decoyed"
-      ],
+      "conditions": ["decoyed"],
       "ability": "Setup: After placing forces, assign the Decoyed condition to 1 friendly ship other than Naboo Handmaiden.",
-      "cost": 31,
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "cost": 29,
+      "slots": ["Talent", "Sensor", "Torpedo", "Astromech"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/naboohandmaiden.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/naboohandmaiden.png",
       "epic": true
@@ -234,13 +194,7 @@
       "standard": true,
       "wildspace": true,
       "cost": 30,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "slots": ["Talent", "Talent", "Sensor", "Torpedo", "Astromech"],
       "ability": "While you defend or perform an attack, if the speed of your revealed maneuver is greater than the enemy ship's, you may reroll your blank results.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gavynsykes.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gavynsykes.png",
@@ -259,13 +213,7 @@
       "standard": false,
       "wildspace": true,
       "cost": 46,
-      "slots": [
-        "Talent",
-        "Illicit",
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "slots": ["Talent", "Illicit", "Sensor", "Torpedo", "Astromech"],
       "ability": "Before you or a friendly Essara Till at range 0-3 would gain a green token, that ship may perform a [Barrel Roll] action instead.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rhysdallows-wat1.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rhysdallows-wat1.png",
@@ -284,13 +232,7 @@
       "standard": false,
       "wildspace": true,
       "cost": 38,
-      "slots": [
-        "Talent",
-        "Talent",
-        "Sensor",
-        "Torpedo",
-        "Astromech"
-      ],
+      "slots": ["Talent", "Talent", "Sensor", "Torpedo", "Astromech"],
       "ability": "Before you or a friendly Rhys Dallows at range 0-3 would gain a green token, that ship may perform a [Lock] action instead.",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/essaratill-wat1.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/essaratill-wat1.png",

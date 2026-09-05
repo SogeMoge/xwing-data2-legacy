@@ -21,9 +21,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "T70"
-  ],
+  "dialCodes": ["T70"],
   "faction": "resistance",
   "stats": [
     {
@@ -88,9 +86,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -121,9 +117,7 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/poedameron-swz68.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/poedameron-swz68.png",
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -139,18 +133,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronrookie.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronrookie.png",
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Title",
-        "Configuration",
-        "Tech"
-      ],
+      "slots": ["Astromech", "Modification", "Title", "Configuration", "Tech"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -176,9 +162,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -204,9 +188,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -233,9 +215,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/elloasty.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -262,9 +242,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jophseastriker.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -291,9 +269,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/karekun.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -310,18 +286,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantbastian.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantbastian.png",
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Title",
-        "Configuration",
-        "Tech"
-      ],
+      "slots": ["Astromech", "Modification", "Title", "Configuration", "Tech"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -348,9 +316,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/niennunb.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -359,7 +325,7 @@
       "initiative": 1,
       "limited": 1,
       "xws": "jaycristubbs",
-      "cost": 44,
+      "cost": 43,
       "ability": "After you fully execute a blue maneuver, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.",
       "shipAbility": {
         "name": "Weapon Hardpoint",
@@ -367,18 +333,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jaycristubbs.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jaycristubbs.png",
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Title",
-        "Configuration",
-        "Tech"
-      ],
+      "slots": ["Astromech", "Modification", "Title", "Configuration", "Tech"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -399,18 +357,10 @@
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jessikapava.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jessikapava.png",
-      "slots": [
-        "Astromech",
-        "Modification",
-        "Title",
-        "Configuration",
-        "Tech"
-      ],
+      "slots": ["Astromech", "Modification", "Title", "Configuration", "Tech"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -437,9 +387,7 @@
       ],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -466,9 +414,7 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/temminwexley-swz68.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/temminwexley-swz68.png",
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -495,9 +441,7 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/caithrenalli.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caithrenalli.png",
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -512,20 +456,12 @@
         "name": "Weapon Hardpoint",
         "text": "You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade."
       },
-      "slots": [
-        "Tech",
-        "Astromech",
-        "Modification",
-        "Configuration",
-        "Title"
-      ],
+      "slots": ["Tech", "Astromech", "Modification", "Configuration", "Title"],
       "standard": true,
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nimichireen.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nimichireen.png",
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -552,9 +488,7 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/venisadoza.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/venisadoza.png",
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     },
     {
@@ -581,9 +515,7 @@
       "wildspace": true,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zayversio.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zayversio.png",
-      "keywords": [
-        "X-wing"
-      ],
+      "keywords": ["X-wing"],
       "epic": true
     }
   ]

@@ -23,9 +23,7 @@
     "4KR",
     "5FW"
   ],
-  "dialCodes": [
-    "TAv"
-  ],
+  "dialCodes": ["TAv"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -82,21 +80,15 @@
       "name": "Baron of the Empire",
       "initiative": 3,
       "limited": 0,
-      "cost": 30,
+      "cost": 31,
       "xws": "baronoftheempire",
       "text": "Sienar Fleet System's TIE Advanced v1 is a groundbreaking starfighter design, featuring upgraded engines, a missile launcher, and folding s-foils.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/baronoftheempire.png",
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Missile"
-      ],
+      "slots": ["Talent", "Sensor", "Missile"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baronoftheempire.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -111,22 +103,13 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "dark"
-        ]
+        "side": ["dark"]
       },
-      "slots": [
-        "Sensor",
-        "Missile",
-        "Force Power"
-      ],
+      "slots": ["Sensor", "Missile", "Force Power"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/grandinquisitor.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "TIE"],
       "epic": true
     },
     {
@@ -140,22 +123,13 @@
       "force": {
         "value": 1,
         "recovers": 1,
-        "side": [
-          "dark"
-        ]
+        "side": ["dark"]
       },
-      "slots": [
-        "Sensor",
-        "Missile",
-        "Force Power"
-      ],
+      "slots": ["Sensor", "Missile", "Force Power"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/inquisitor.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "TIE"],
       "epic": true
     },
     {
@@ -170,22 +144,13 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "dark"
-        ]
+        "side": ["dark"]
       },
-      "slots": [
-        "Sensor",
-        "Missile",
-        "Force Power"
-      ],
+      "slots": ["Sensor", "Missile", "Force Power"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/seventhsister.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "TIE"],
       "epic": true
     },
     {
@@ -199,23 +164,14 @@
       "force": {
         "value": 2,
         "recovers": 1,
-        "side": [
-          "dark"
-        ]
+        "side": ["dark"]
       },
-      "slots": [
-        "Force Power",
-        "Sensor",
-        "Missile"
-      ],
+      "slots": ["Force Power", "Sensor", "Missile"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fifthbrother.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/fifthbrother.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "TIE"],
       "epic": true
     }
   ]

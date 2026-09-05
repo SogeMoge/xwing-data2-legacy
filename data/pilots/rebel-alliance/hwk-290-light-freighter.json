@@ -19,9 +19,7 @@
     "3YR",
     "4FW"
   ],
-  "dialCodes": [
-    "HK"
-  ],
+  "dialCodes": ["HK"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -94,9 +92,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/janors.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -119,32 +115,22 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kylekatarn.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
       "name": "Rebel Scout",
       "initiative": 2,
       "limited": 0,
-      "cost": 26,
+      "cost": 27,
       "xws": "rebelscout",
       "text": "Designed to look like a bird in flight by the Corellian Engineering Corporation, “hawk” series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rebelscout.png",
-      "slots": [
-        "Crew",
-        "Device",
-        "Modification",
-        "Modification",
-        "Title"
-      ],
+      "slots": ["Crew", "Device", "Modification", "Modification", "Title"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rebelscout.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -167,9 +153,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/roarkgarnet.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     }
   ]

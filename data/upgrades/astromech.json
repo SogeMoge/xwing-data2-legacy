@@ -8,9 +8,7 @@
         "title": "“Chopper”",
         "type": "Astromech",
         "ability": "Action: Spend 1 non-recurring [Charge] from another equipped upgrade to recover 1 shield. Action: Spend 2 shields to recover 1 non-recurring [Charge] on an equipped upgrade.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chopper.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chopper.png"
       }
@@ -20,9 +18,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -39,9 +35,7 @@
         "type": "Astromech",
         "ability": "After you fully execute a maneuver, if you have not dropped or launched a device this round, you may drop 1 bomb.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/genius.png",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/genius.png"
       }
     ],
@@ -50,9 +44,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -68,9 +60,7 @@
         "title": "R2 Astromech",
         "type": "Astromech",
         "ability": "After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -102,9 +92,7 @@
         "type": "Astromech",
         "ability": "After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2d2.png",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -123,9 +111,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -141,9 +127,7 @@
         "title": "R3 Astromech",
         "type": "Astromech",
         "ability": "You can maintain up to 2 locks. Each lock must be on a different object. After you perform a [Lock] action, you may acquire a lock.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r3astromech.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r3astromech.png"
       }
@@ -164,9 +148,7 @@
         "title": "R4 Astromech",
         "type": "Astromech",
         "ability": "Decrease the difficulty of your speed 1-2 basic maneuvers ([Turn Left], [Bank Left], [Straight], [Bank Right], [Turn Right]).",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r4astromech.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r4astromech.png"
       }
@@ -176,9 +158,7 @@
     },
     "restrictions": [
       {
-        "sizes": [
-          "Small"
-        ]
+        "sizes": ["Small"]
       }
     ],
     "standard": true,
@@ -194,9 +174,7 @@
         "title": "R5 Astromech",
         "type": "Astromech",
         "ability": "Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -227,9 +205,7 @@
         "title": "R5-D8",
         "type": "Astromech",
         "ability": "Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -249,9 +225,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "rebelalliance"
-        ]
+        "factions": ["rebelalliance"]
       }
     ],
     "standard": true,
@@ -268,9 +242,7 @@
         "type": "Astromech",
         "ability": "While you perform an attack against a defender in your [Front Arc], you may spend 1 [Charge] to reroll 1 attack die. If the rerolled result is a [Critical Hit] result, suffer 1 [Critical Hit] damage.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r5p8.png",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -283,9 +255,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -302,9 +272,7 @@
         "type": "Astromech",
         "ability": "You can perform attacks against friendly ships.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r5tk.png",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r5tk.png"
       }
     ],
@@ -313,9 +281,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -336,20 +302,16 @@
         },
         "ability": "Before you activate or engage, you may spend 1 [Charge] to ignore obstacles until the end of this phase.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r5x3.png",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r5x3.png"
       }
     ],
     "cost": {
-      "value": 5
+      "value": 3
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -367,19 +329,15 @@
         "ability": "While you defend, you may spend your lock on the attacker to reroll any number of your defense dice.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2ha.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2ha.png",
-        "slots": [
-          "Astromech"
-        ]
+        "slots": ["Astromech"]
       }
     ],
     "cost": {
-      "value": 3
+      "value": 2
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -397,9 +355,7 @@
         "ability": "Before you execute a blue maneuver, you may spend 1 [Charge] to perform a [Barrel Roll] or [Boost] action.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bb8.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bb8.png",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -422,9 +378,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -442,9 +396,7 @@
         "ability": "Before you execute a blue maneuver, you may spend 1 [Charge] to perform a [Barrel Roll] action.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bbastromech.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bbastromech.png",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -467,9 +419,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -487,9 +437,7 @@
         "ability": "While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/m9g8.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/m9g8.png",
-        "slots": [
-          "Astromech"
-        ]
+        "slots": ["Astromech"]
       }
     ],
     "cost": {
@@ -497,9 +445,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -516,9 +462,7 @@
         "type": "Astromech",
         "ability": "While you perform an attack, you may spend 1 evade token to change 1 [Focus] result to a [Hit] result.",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2c4.png",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2c4.png"
       }
     ],
@@ -527,9 +471,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -545,9 +487,7 @@
         "title": "R4-P Astromech",
         "type": "Astromech",
         "ability": "Before you execute a basic maneuver, you may spend 1 [Charge]. If you do, while you execute that maneuver, reduce its difficulty.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -561,9 +501,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -579,9 +517,7 @@
         "title": "R4-P17",
         "type": "Astromech",
         "ability": "After you fully execute a red maneuver, you may spend 1 [Charge] to perform an action, even while stressed.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -595,9 +531,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -613,9 +547,7 @@
         "title": "R4-P44",
         "type": "Astromech",
         "ability": "After you fully execute a red maneuver, if there is an enemy ship in your [Bullseye Arc], gain 1 calculate token.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r4p44.png",
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r4p44.png"
       }
@@ -625,9 +557,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -643,9 +573,7 @@
         "ability": "After you reveal your dial, you may set your dial to a maneuver of the same bearing of a speed 1 higher or lower.",
         "title": "R2-A6",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2a6.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2a6.png"
       }
@@ -655,9 +583,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -674,9 +600,7 @@
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c110p.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c110p.png",
         "ability": "Setup: Equip this side faceup. After you execute a maneuver, you may spend 1 [Charge] to perform a red [Evade] action, even while stressed. During the End Phase, if this card has 0 active [Charge], flip it.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -688,9 +612,7 @@
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c110p-sideb.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c110p-sideb.png",
         "ability": "After you execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "type": "Astromech"
       }
     ],
@@ -699,9 +621,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -717,9 +637,7 @@
         "ability": "While you have 2 or fewer stress tokens, you can perform actions on damage cards even while stressed. After you repair a damage card with the Ship trait, you may spend 1 [Charge] to repair that card again.",
         "title": "R1-J5",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -729,13 +647,11 @@
       }
     ],
     "cost": {
-      "value": 5
+      "value": 4
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -751,9 +667,7 @@
         "ability": "While you barrel roll or boost, you can move through and overlap obstacles.",
         "title": "Q7 Astromech",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/q7astromech.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/q7astromech.png"
       }
@@ -783,9 +697,7 @@
         "ability": "After you activate, you may spend 1 [Charge] and gain 1 deplete token to repair 1 damage card, recover 1 shield, or remove 1 device at range 0-1.",
         "title": "R2-D2",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -805,9 +717,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -823,9 +733,7 @@
         "ability": "During the End Phase, you may spend 1 [Charge] and 1 shield to remove 1 red token. During the End Phase, if you have no active shields, you may spend 2 [Charge] to recover 1 shield and gain 1 deplete token.",
         "title": "R2-D2",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 4,
           "recovers": 0
@@ -839,9 +747,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -857,9 +763,7 @@
         "ability": "While you perform an attack, you may reroll a number of attack dice up to the number of friendly ships at range 0-3 that have the defender in their [Bullseye Arc].",
         "title": "R6-D8",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r6d8.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r6d8.png"
       }
@@ -869,9 +773,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ]
+        "factions": ["resistance"]
       }
     ],
     "standard": true,
@@ -887,9 +789,7 @@
         "ability": "While you perform an attack, you may spend 1 [Charge] to change 1 [Hit] result to a [Critical Hit] result.",
         "title": "R7-A7",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 3,
           "recovers": 0
@@ -909,9 +809,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "galacticrepublic"
-        ]
+        "factions": ["galacticrepublic"]
       }
     ],
     "standard": true,
@@ -927,9 +825,7 @@
         "ability": "While you perform an attack, you may remove 1 orange or red token from the defender to reroll any number of defense dice.",
         "title": "R4-B11",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r4b11.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r4b11.png"
       }
@@ -939,9 +835,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "scumandvillainy"
-        ]
+        "factions": ["scumandvillainy"]
       }
     ],
     "standard": true,
@@ -957,9 +851,7 @@
         "ability": "After you perform a [Reload] or [Rotate Arc] action, if you are in an enemy ship's firing arc, you may perform a red [Calculate] action.",
         "title": "Watchful Astromech",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/watchfulastromech.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/watchfulastromech.png"
       }
@@ -980,9 +872,7 @@
         "ability": "At the start of the Engagement Phase, you may transfer 1 calculate token to a friendly ship in your firing arc.",
         "title": "L4E-R5",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/l4er5.png",
         "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/l4er5.png",
         "grants": [
@@ -1005,9 +895,7 @@
     },
     "restrictions": [
       {
-        "factions": [
-          "resistance"
-        ],
+        "factions": ["resistance"],
         "action": {
           "type": "Rotate Arc"
         }
@@ -1026,9 +914,7 @@
         "title": "R2-A3",
         "type": "Astromech",
         "ability": "After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -1049,9 +935,7 @@
         "title": "R2-D2",
         "type": "Astromech",
         "ability": "After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -1072,9 +956,7 @@
         "title": "R2-F2",
         "type": "Astromech",
         "ability": "After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -1095,9 +977,7 @@
         "title": "R5-D8",
         "type": "Astromech",
         "ability": "Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -1118,9 +998,7 @@
         "title": "R5-K6",
         "type": "Astromech",
         "ability": "Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -1141,9 +1019,7 @@
         "ability": "After you perform an action, you may spend 1 [Charge] to perform a red [Lock] action.",
         "title": "Precise Astromech",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0
@@ -1164,9 +1040,7 @@
         "ability": "After you perform a [Lock] action, you may perform a red [Rotate Arc] action.",
         "title": "Targeting Astromech",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ]
+        "slots": ["Astromech"]
       }
     ],
     "standard": false,
@@ -1183,9 +1057,7 @@
         "ability": "When you would be dealt a damage card, if you are not defending, you may spend 1 [Charge] and gain 1 strain to discard it instead.",
         "title": "Targeting Astromech",
         "type": "Astromech",
-        "slots": [
-          "Astromech"
-        ],
+        "slots": ["Astromech"],
         "charges": {
           "value": 2,
           "recovers": 0

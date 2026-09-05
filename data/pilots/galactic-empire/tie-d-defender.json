@@ -22,9 +22,7 @@
     "4KW",
     "5FB"
   ],
-  "dialCodes": [
-    "TD"
-  ],
+  "dialCodes": ["TD"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -82,19 +80,11 @@
         "name": "Full Throttle",
         "text": "After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/colonelvessery.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -110,19 +100,11 @@
         "name": "Full Throttle",
         "text": "After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countessryad.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -137,19 +119,11 @@
         "name": "Full Throttle",
         "text": "After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deltasquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -164,19 +138,11 @@
         "name": "Full Throttle",
         "text": "After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronace.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -192,19 +158,11 @@
         "name": "Full Throttle",
         "text": "After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rexlerbrath.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -212,7 +170,7 @@
       "caption": "Arrogant Ace",
       "initiative": 5,
       "limited": 1,
-      "cost": 76,
+      "cost": 75,
       "xws": "vultskerris",
       "ability": "Action: Gain 1 strain token to recover 1 [Charge]. Before you engage, you may spend 1 [Charge] to perform an action.",
       "shipAbility": {
@@ -223,20 +181,12 @@
         "value": 1,
         "recovers": -1
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vultskerris.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vultskerris.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -255,21 +205,12 @@
         "value": 3,
         "recovers": 1
       },
-      "slots": [
-        "Force Power",
-        "Cannon",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Force Power", "Cannon", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-tieddefender.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthvader-tieddefender.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Dark Side",
-        "Sith",
-        "TIE"
-      ],
+      "keywords": ["Dark Side", "Sith", "TIE"],
       "epic": true
     },
     {
@@ -284,20 +225,12 @@
         "name": "Full Throttle",
         "text": "After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile",
-        "Configuration"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captaindobbs.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captaindobbs.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -397,12 +330,7 @@
           "type": "Boost"
         }
       ],
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainyorr-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,
@@ -497,12 +425,7 @@
           "type": "Boost"
         }
       ],
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Cannon",
-        "Missile"
-      ],
+      "slots": ["Talent", "Sensor", "Cannon", "Missile"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon-battleoverendor-lsl.png",
       "standard": true,
       "wildspace": true,

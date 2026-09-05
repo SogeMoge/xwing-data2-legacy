@@ -21,9 +21,7 @@
     "3NR",
     "4FR"
   ],
-  "dialCodes": [
-    "BW"
-  ],
+  "dialCodes": ["BW"],
   "faction": "rebelalliance",
   "stats": [
     {
@@ -85,9 +83,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bladesquadronveteran.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "epic": true
     },
     {
@@ -116,9 +112,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "epic": true
     },
     {
@@ -143,9 +137,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "epic": true
     },
     {
@@ -170,9 +162,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tennumb.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "epic": true
     },
     {
@@ -197,9 +187,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "epic": true
     },
     {
@@ -224,10 +212,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla-asf01bwing.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "B-wing",
-        "Spectre"
-      ],
+      "keywords": ["B-wing", "Spectre"],
       "epic": true
     },
     {
@@ -236,7 +221,7 @@
       "initiative": 3,
       "limited": 1,
       "xws": "netrempollard",
-      "cost": 42,
+      "cost": 41,
       "ability": "After you barrel roll, you may choose 1 friendly ship that is not stressed at range 0-1. That ship gains 1 stress token, then you rotate 180°.",
       "slots": [
         "Talent",
@@ -252,9 +237,7 @@
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/netrempollard.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "epic": true
     },
     {
@@ -305,9 +288,7 @@
         "protonrockets",
         "protonbombs"
       ],
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adonfox-battleoverendor.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adonfox-battleoverendor.png",
       "standard": false,
@@ -320,7 +301,7 @@
       "xws": "adonfox-battleoverendor-lsl",
       "initiative": 1,
       "limited": 1,
-      "cost": 46,
+      "cost": 44,
       "ability": "While you defend, if you are stressed, roll 1 additional defense die.",
       "shipAbility": {
         "name": "Gyro-Cockpit",
@@ -365,9 +346,7 @@
         "Title",
         "Configuration"
       ],
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adonfox-battleoverendor-lsl.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adonfox-battleoverendor-lsl.png",
       "standard": true,
@@ -441,9 +420,7 @@
         "protontorpedoes",
         "ionbombs"
       ],
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ginamoonsong-battleoverendor.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong-battleoverendor.png",
       "standard": false,
@@ -520,9 +497,7 @@
         "Title",
         "Configuration"
       ],
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ginamoonsong-battleoverendor-lsl.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong-battleoverendor-lsl.png",
       "standard": true,
@@ -596,9 +571,7 @@
         "protonbombs",
         "delayedfuses"
       ],
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm-battleoverendor.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm-battleoverendor.png",
       "standard": false,
@@ -675,9 +648,7 @@
         "Title",
         "Configuration"
       ],
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm-battleoverendor-lsl.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm-battleoverendor-lsl.png",
       "standard": true,
@@ -706,9 +677,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/neradantels-wat1.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "B-wing"
-      ],
+      "keywords": ["B-wing"],
       "epic": true
     }
   ]

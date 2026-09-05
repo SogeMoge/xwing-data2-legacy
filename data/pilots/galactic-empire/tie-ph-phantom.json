@@ -21,9 +21,7 @@
     "4FW",
     "4KR"
   ],
-  "dialCodes": [
-    "TPh"
-  ],
+  "dialCodes": ["TPh"],
   "faction": "galacticempire",
   "stats": [
     {
@@ -77,17 +75,10 @@
         "name": "Stygium Array",
         "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Sensor", "Modification", "Gunner"],
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true,
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/echo.png"
     },
@@ -96,7 +87,7 @@
       "caption": "Soft-Spoken Slayer",
       "initiative": 5,
       "limited": 1,
-      "cost": 60,
+      "cost": 59,
       "xws": "whisper",
       "ability": "After you perform an attack that hits, gain 1 evade token.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper.png",
@@ -104,18 +95,11 @@
         "name": "Stygium Array",
         "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Sensor", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/whisper.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -130,17 +114,11 @@
         "name": "Stygium Array",
         "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
       },
-      "slots": [
-        "Sensor",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Sensor", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/imdaartestpilot.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -155,18 +133,11 @@
         "name": "Stygium Array",
         "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Sensor", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigmasquadronace.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -186,18 +157,11 @@
         "name": "Stygium Array",
         "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Sensor", "Modification", "Gunner"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainsaxton-wat1.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "TIE"
-      ],
+      "keywords": ["TIE"],
       "epic": true
     },
     {
@@ -232,23 +196,18 @@
       "caption": "Unseen Assailant",
       "initiative": 5,
       "limited": 1,
-      "cost": 57,
+      "cost": 61,
       "charges": {
         "value": 2,
         "recovers": 0
       },
-      "xws": "whisper-pnp-ls",
+      "xws": "whisper-pnp-lsl",
       "ability": "After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.",
       "shipAbility": {
         "name": "Stygium Array",
         "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Sensor", "Modification", "Gunner"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper-pnp.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/whisper.png",
       "standard": true,
@@ -287,7 +246,7 @@
       "caption": "Copycat",
       "initiative": 4,
       "limited": 1,
-      "cost": 48,
+      "cost": 53,
       "charges": {
         "value": 1,
         "recovers": 1
@@ -298,12 +257,7 @@
         "name": "Stygium Array",
         "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
       },
-      "slots": [
-        "Talent",
-        "Sensor",
-        "Modification",
-        "Gunner"
-      ],
+      "slots": ["Talent", "Sensor", "Modification", "Gunner"],
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/echo-pnp-lsl.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/echo.png",
       "standard": true,

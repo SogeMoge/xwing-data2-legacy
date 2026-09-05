@@ -19,9 +19,7 @@
     "3YR",
     "4FW"
   ],
-  "dialCodes": [
-    "HK"
-  ],
+  "dialCodes": ["HK"],
   "faction": "scumandvillainy",
   "stats": [
     {
@@ -99,9 +97,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dacebonearm.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -125,16 +121,14 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/palobgodalhi.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
       "name": "Spice Runner",
       "initiative": 1,
       "limited": 0,
-      "cost": 26,
+      "cost": 27,
       "xws": "spicerunner",
       "text": "Though its cargo space is limited compared to other light freighters, the small, swift HWK-290 is a favorite choice of smugglers who specialize in discreetly transporting precious goods.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/spicerunner.png",
@@ -149,9 +143,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/spicerunner.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -174,9 +166,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/torkilmux.png",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -186,9 +176,7 @@
       "limited": 1,
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "cost": 31,
       "slots": [
         "Talent",
@@ -217,11 +205,7 @@
       "caption": "Lost Padawan",
       "standard": true,
       "wildspace": true,
-      "keywords": [
-        "Jedi",
-        "Light Side",
-        "Freighter"
-      ],
+      "keywords": ["Jedi", "Light Side", "Freighter"],
       "force": {
         "value": 1,
         "recovers": 1
@@ -262,9 +246,7 @@
       "ability": "During the End Phase, before an enemy ship in your [Single Turret Arc] recovers 1 recurring [Charge] or [Force], you may spend 2 [Charge]. If you do, that ship does not recover that [Charge] or [Force].",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tapusk.png",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tapusk.png",
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     },
     {
@@ -288,9 +270,7 @@
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/januskasmir-wat1.png",
       "standard": false,
       "wildspace": true,
-      "keywords": [
-        "Freighter"
-      ],
+      "keywords": ["Freighter"],
       "epic": true
     }
   ]
