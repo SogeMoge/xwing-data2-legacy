@@ -86,10 +86,9 @@ flowchart TD
     D --> E["5. Archive Col G to Col I & Rename Col G to New Cycle"]
     E --> F["6. Append any New/Missing Cards (e.g. RSL/WAT)"]
     F --> G["7. Batch Write New Points to Column G"]
-    G --> H["8. Apply Format Moves & Keyword Changes with Notes/Colors"]
-    H --> I["9. Publish New Changes Tab & Hide Previous"]
+    G --> H["8. Verify Calculate Summary Evaluates Expected Deltas"]
+    H --> I["9. Publish New Changes Tab (Mar26 changes) & Hide Previous"]
     I --> J["10. Run Automated Verification Tool"]
-    J --> K["11. Create PR, Await User Merge Confirmation & Publish Release"]
 ```
 
 ### Step 1: Ensure 100% Database Parity
@@ -151,15 +150,6 @@ When a balance update includes format/gamemode movements or keyword adjustments:
 ### Step 6: Update Introduction & Document Title
 - Update spreadsheet title to `X-Wing 2.0 Legacy Points document ([Month] [Year])`.
 - Update `Introduction` row 5 sample headers (`G5` = new cycle, `I5` = previous cycle).
-
-### Step 7: Pull Request & Release Creation
-Following verification of the database and spreadsheet:
-1. Push branch to remote and create a Pull Request targeting `master`.
-2. **Manual Confirmation**: Prompt the user to confirm when the PR has been reviewed and merged into `master`.
-3. Once confirmed by the user, pull `master` and create the GitHub Release & tag (aligned with semantic version without `v` prefix) via the release script:
-   ```bash
-   node .agents/skills/update-xwing-data2-legacy/scripts/create_release.js <PR_NUMBER> "<Month Year> Points Update"
-   ```
 
 ---
 
