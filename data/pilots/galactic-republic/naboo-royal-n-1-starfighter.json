@@ -210,7 +210,7 @@
         "text": "After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action."
       },
       "caption": "Echo Five",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "cost": 46,
       "slots": ["Talent", "Illicit", "Sensor", "Torpedo", "Astromech"],
@@ -229,7 +229,7 @@
         "text": "After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action."
       },
       "caption": "Bravo Seven",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "cost": 38,
       "slots": ["Talent", "Talent", "Sensor", "Torpedo", "Astromech"],

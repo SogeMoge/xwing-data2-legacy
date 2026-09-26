@@ -111,7 +111,7 @@ For each of the 8 faction & upgrade tabs:
 4. Refresh Column H formulas to ensure they reference `I`:
    `=IF(ISNUMBER(INDEX(I<row>:<row>; MATCH(FALSE; ISBLANK(I<row>:<row>); 0))); G<row>-INDEX(I<row>:<row>; MATCH(FALSE; ISBLANK(I<row>:<row>); 0)); "")`
 
-### Step 4: Batch Update Column G
+### Step 4: Batch Update Column G (Points)
 Apply updated point values to Column G for all changed cards. Format variable costs according to the standard convention:
 - **Base Size Variable**:
   ```text
@@ -127,6 +127,17 @@ Apply updated point values to Column G for all changed cards. Format variable co
   2=5 / 3=7 /
   4=7 / 5=7 / 6=7
   ```
+
+### Step 4b: Apply Format (Column A) & Keyword (Column F) Updates
+When a balance update includes format/gamemode movements or keyword adjustments:
+1. **Format Moves (Column A)**:
+   - Update Column A cell value to the new format (e.g., `"Standard"`).
+   - Add a cell note describing the change and effective date: e.g., `"Moved to Standard format (September 2026)"`.
+   - Set cell background color to soft blue (`#C8DAF8` / `{ red: 0.784, green: 0.855, blue: 0.973 }`) to visibly indicate the state change.
+2. **Keyword Changes (Column F)**:
+   - Update Column F cell value to include the new keyword (e.g., `"Clone"` → `"Clone, TIE"`).
+   - Add a cell note with effective date: e.g., `'Added "TIE" keyword (September 2026)'`.
+   - Set cell background color to soft blue (`#C8DAF8`).
 
 ### Step 5: Publish New Changes Tab
 1. Ensure `Calculate Summary!A1` formula encompasses all 8 tabs (starting at row 3 for `Generic upgrades`, row 4 for all factions).
@@ -162,5 +173,42 @@ Validates:
 - `Calculate Summary` and archived changes tabs are properly hidden.
 - The new changes tab is visible and populated.
 - All 8 faction tabs have correct Column G and Column I headers.
-- 100% agreement between `Calculate Summary` and the input update manifest (0 missing cards, 0 unexpected changes).
+- 100% agreement between `Calculate Summary` and points-changed manifest cards (0 missing cards, 0 unexpected changes).
+- Verification of Column A format changes and Column F keyword changes, including cell notes and background color.
+
+---
+
+## 6. Edge Cases & Matching Guidelines
+
+### 6.1 Gamemode & Format Moves (`"MOVE TO STANDARD"` / `"MOVED"`)
+- **Balance Sheet Identification**: Entries in the Collation column indicating format updates (e.g. `"MOVE TO STANDARD"`, `"MOVED"`, `"MOVE TO EXTENDED"`).
+- **Database Action**: Toggle `"standard": true` (or `false`) in the pilot's ship file under `data/pilots/<faction>/<ship>.json`.
+- **Spreadsheet Action**:
+  - Update Column A (*Format*) to `"Standard"`.
+  - Add a cell note stating the movement and effective date: e.g. `"Moved to Standard format (September 2026)"`.
+  - Apply soft blue background color (`#C8DAF8` / `{ red: 0.784, green: 0.855, blue: 0.973 }`).
+- **`Calculate Summary` Behavior**: Cards that *only* change format without a points change have equal values in Column G and Column I (`Col7 == Col9`), producing a difference of 0 in Column H. Hence, they are not selected by the `Calculate Summary` query. Cards that change *both* format and points (e.g. `Antoc Merrick`, `FN-2187`, `“Strife”`) will appear in `Calculate Summary` as expected.
+
+### 6.2 Keyword Changes (`ADD "<KEYWORD>"` / `"REMOVE <KEYWORD>"`)
+- **Balance Sheet Identification**: Collation entries indicating keyword changes (e.g., `35, ADD "TIE" KEYWORD`).
+- **Database Action**:
+  - Add or remove the keyword from the `keywords` array in the ship JSON file.
+  - **Audit all card faces**: Check both customizable LSL (`<xws>-lsl`) and Standard Loadout SL (`<xws>`) versions of the pilot card to ensure keywords remain consistent across chassis variants (e.g. `klick-siegeofcoruscant`).
+- **Spreadsheet Action**:
+  - Update Column F (*Keywords*) to include the keyword (e.g. `"Clone"` → `"Clone, TIE"`).
+  - Add a cell note with effective date: e.g. `'Added "TIE" keyword (September 2026)'`.
+  - Apply soft blue background color (`#C8DAF8`).
+
+### 6.3 Disambiguation, Typos & Multi-Variant Cards
+1. **Source Sheet Typos**:
+   Balance spreadsheets maintained by committee members frequently contain slight spelling discrepancies compared to canonical database names:
+   - Pilot name typos: `Depa Billoba` → `Depa Billaba`, `Essara Rill` → `Essara Till`, `Rhys Dallow` → `Rhys Dallows`, `OOM Uplink Prototype` → `00-M Uplink Prototype` (zeros vs capital O's).
+   - Chassis name differences: `Upsilon-class Shuttle` → `Upsilon-Class Command Shuttle`, `Vulture-class Droid Fighter` → `Vulture-class Droid Starfighter`.
+2. **Customizable (LSL) vs Standard Loadout (SL) Cards**:
+   - Community balance records and tournament points almost exclusively adjust the **customizable / LSL** version of pack pilots (e.g. `•Iden Versio (BoY)` at 64 → 54 pts, `•Scythe 6 (BoE)` at 42 → 34 pts).
+   - In faction tabs, customizable LSL pilots are listed near the top of the chassis group (with labels like `(BoY)`, `(BoE)`, `(SoC)` or `(PnP)`), while fixed Standard Loadout cards are grouped at the bottom under Epic / Wild Space with `(BoY SL)` or `(BoE SL)`.
+   - Never apply standard points updates to the fixed Standard Loadout rows unless explicitly specified.
+3. **Cross-Chassis Pilot Names**:
+   - Generic and unique pilots can appear across multiple ship types (e.g., `Garven Dreis` on `T-65 X-wing` vs `ARC-170 Starfighter`). Always check the ship chassis (`Type`) column before applying updates.
+
 

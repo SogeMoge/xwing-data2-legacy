@@ -580,7 +580,7 @@
       }
     ],
     "cost": {
-      "value": 0
+      "value": 1
     },
     "standard": true,
     "wildspace": true,

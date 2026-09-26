@@ -268,7 +268,7 @@
         "Title"
       ],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/januskasmir-wat1.png",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "keywords": ["Freighter"],
       "epic": true

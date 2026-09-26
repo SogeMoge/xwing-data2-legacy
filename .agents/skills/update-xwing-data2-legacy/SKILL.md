@@ -57,12 +57,15 @@ For the full architectural breakdown, data schemas, and invariants, consult the 
 2. Request the ship `icon` URL from the user if not provided.
 3. **Crucial**: Register the file path in [data/manifest.json](file:///p:/xwing-data2-legacy/data/manifest.json) under `"pilots"` for the respective faction.
 
-### 4. Updating Points
+### 4. Updating Points & Balance Records
 1. **Version Bump**:
-   - Points updates **MUST bump the minor semantic version number** (e.g., `3.9.1` -> `3.10.0`) in both [`package.json`](file:///p:/xwing-data2-legacy/package.json) and [`data/manifest.json`](file:///p:/xwing-data2-legacy/data/manifest.json).
+   - Points updates **MUST bump the minor semantic version number** (e.g., `3.10.0` -> `3.11.0`) in both [`package.json`](file:///p:/xwing-data2-legacy/package.json) and [`data/manifest.json`](file:///p:/xwing-data2-legacy/data/manifest.json).
 2. **Apply Changes**:
    - Update points across pilots and upgrades according to the balance sheet/manifest.
-   - For configurable Standard Loadout cards (e.g. BoY, BoE, SoC), apply points to the `-lsl` cards.
+   - **Configurable Standard Loadout (LSL) Cards**: Apply points to the customizable `-lsl` cards (e.g. BoY, BoE, SoC), not the fixed Standard Loadout cards (`standardLoadout: [...]`).
+   - **Gamemode & Format Moves**: Balance collation columns may specify format movements (e.g. `"MOVE TO STANDARD"` or `"MOVED"`). Toggle `"standard": true` (or `false`) on the target cards in their chassis JSON files.
+   - **Keyword Changes**: Collation entries may specify keyword additions (e.g. `ADD "TIE" KEYWORD`). Append the keyword to the card's `keywords` array, and audit all variants (both customizable LSL and standard loadout SL) so card keywords remain aligned.
+   - **Disambiguation & Typos**: Check chassis names when pilots share names across ships (e.g. `Garven Dreis` on `T-65 X-wing` vs `ARC-170`), and account for committee spelling typos (e.g. `Depa Billoba` → `Depa Billaba`, `Essara Rill` → `Essara Till`, `Rhys Dallow` → `Rhys Dallows`, `OOM Uplink` → `00-M Uplink`).
 3. **Validation & Update Report**:
    - Validate updated values and generate an **Update Report** stored in the `changelog/` directory (e.g., `changelog/<YYYY-MM>-points-update.md`) using the skill validation script:
      ```bash

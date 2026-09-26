@@ -85,7 +85,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 37,
+      "cost": 36,
       "slots": [
         "Talent",
         "Tech",

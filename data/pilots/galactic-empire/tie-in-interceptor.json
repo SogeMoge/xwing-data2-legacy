@@ -319,7 +319,7 @@
       },
       "standard": true,
       "wildspace": true,
-      "cost": 64,
+      "cost": 54,
       "charges": {
         "value": 2,
         "recovers": 1
@@ -925,7 +925,7 @@
       },
       "slots": ["Talent", "Modification", "Modification", "Configuration"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/carnorjax-wat1.png",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "keywords": ["TIE"],
       "epic": true
