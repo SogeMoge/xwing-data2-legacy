@@ -197,7 +197,7 @@
         "Gunner"
       ],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/riodurant-wat1.png",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "keywords": ["Freighter", "YT-1300"],
       "epic": true

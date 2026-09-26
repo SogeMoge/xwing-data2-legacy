@@ -216,7 +216,7 @@
       "caption": "Inferno Leader",
       "initiative": 4,
       "limited": 1,
-      "cost": 42,
+      "cost": 40,
       "xws": "idenversio",
       "ability": "Before a friendly TIE/ln fighter at range 0-1 would suffer 1 or more damage, you may spend 1 [Charge]. If you do, prevent that damage.",
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/idenversio.png",
@@ -879,7 +879,7 @@
           }
         }
       ],
-      "cost": 42,
+      "cost": 34,
       "slots": [],
       "ability": "While you perform an attack at attack range 1-2, roll 1 additional attack die.",
       "keywords": ["TIE"],

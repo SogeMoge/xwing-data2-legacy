@@ -103,7 +103,7 @@
       "standard": true,
       "wildspace": true,
       "ability": "During the System Phase, you may spend your lock on a ship to look at that ship's dial.",
-      "cost": 38,
+      "cost": 37,
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/phlacarphoccprototype.png",
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/phlacarphoccprototype.png",
       "slots": ["Talent", "Sensor", "Missile", "Modification", "Configuration"],

@@ -183,7 +183,7 @@
         "recovers": 1
       },
       "image": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/halliobas-wat1.png",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "cost": 47,
       "slots": ["Talent", "Modification", "Title", "Tactical Relay"],

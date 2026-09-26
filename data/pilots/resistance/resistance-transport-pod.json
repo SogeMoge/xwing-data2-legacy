@@ -145,7 +145,7 @@
       "initiative": 2,
       "limited": 1,
       "caption": "Don't Join",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "cost": 25,
       "slots": ["Illicit", "Tech", "Crew", "Modification"],

@@ -189,7 +189,7 @@
       "initiative": 5,
       "limited": 1,
       "caption": "Orbak Rider",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "cost": 42,
       "slots": [

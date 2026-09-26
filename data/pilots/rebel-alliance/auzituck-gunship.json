@@ -115,7 +115,7 @@
       "conditions": ["liberated-wat1"],
       "slots": ["Talent", "Crew", "Crew", "Modification"],
       "artwork": "https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tarfful-wat1.png",
-      "standard": false,
+      "standard": true,
       "wildspace": true,
       "keywords": ["Wookiee"],
       "epic": true
