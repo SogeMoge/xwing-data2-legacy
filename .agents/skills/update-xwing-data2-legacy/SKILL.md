@@ -91,3 +91,36 @@ npm run validate:tests
 npm run format
 ```
 
+### 6. Pull Request & Release Workflow
+
+Following verification, formatting, and points sheet synchronization:
+
+1. **Commit & Push to Feature Branch**:
+   - Stage all changes (`data/`, `package.json`, `changelog/`, manifests).
+   - Commit using `--no-gpg-sign` to avoid hanging on GPG pinentry:
+     ```bash
+     git commit --no-gpg-sign -m "feat: apply <Month> <Year> points and balance update"
+     git push -u origin <branch-name>
+     ```
+2. **Create Pull Request**:
+   - Create a pull request targeting `master` via GitHub MCP tool or GitHub UI with a complete summary of points changes, format movements, keyword updates, and validation results.
+3. **Ask User for Confirmation Before Release (Manual Merge Step)**:
+   > [!IMPORTANT]
+   > Pull request review and merging is a manual process performed by the repository maintainer.
+   > **The agent MUST ask the user for confirmation that the pull request has been merged into `master` before creating the release or tag.** Do not proceed to release creation until the user explicitly confirms the merge.
+4. **Create GitHub Release & Tag**:
+   - Once the user confirms the PR is merged, checkout `master` and pull latest changes:
+     ```bash
+     git checkout master
+     git pull origin master
+     ```
+   - Execute the release automation script:
+     ```bash
+     node .agents/skills/update-xwing-data2-legacy/scripts/create_release.js <PR_NUMBER> "<Month Year> Points Update"
+     # Example:
+     node .agents/skills/update-xwing-data2-legacy/scripts/create_release.js 41 "September 2026 Points Update"
+     ```
+   - **Tag Naming Invariant**: Tags in this repository **must NOT have a `v` prefix** (e.g. use `3.11.0`, not `v3.11.0`), matching historical repository release conventions.
+   - The script automatically creates the tag on `master`, creates the GitHub release with links to the PR and changelog report, and fetches the tag into the local git repository.
+
+
