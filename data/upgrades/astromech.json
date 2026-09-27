@@ -686,7 +686,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "factions": ["galacticrepublic"]
+      }
+    ]
   },
   {
     "name": "R2-D2",

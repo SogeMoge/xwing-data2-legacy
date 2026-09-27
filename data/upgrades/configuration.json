@@ -534,7 +534,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "ships": ["asf01bwing"]
+      }
+    ]
   },
   {
     "name": "Repulsorlift Stabilizers",
@@ -563,7 +568,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "ships": ["hmpdroidgunship"]
+      }
+    ]
   },
   {
     "name": "Alpha-3B “Besh”",
@@ -584,7 +594,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "ships": ["nimbusclassvwing"]
+      }
+    ]
   },
   {
     "name": "Alpha-3E “Esk”",
@@ -609,7 +624,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "ships": ["nimbusclassvwing"]
+      }
+    ]
   },
   {
     "name": "Intercept Booster",
@@ -655,7 +675,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "ships": ["droidtrifighter"]
+      }
+    ]
   },
   {
     "name": "Maneuver-Assist MGK-300",
@@ -696,7 +721,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "ships": ["tierbheavy"]
+      }
+    ]
   },
   {
     "name": "Target-Assist MGK-300",
@@ -737,7 +767,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "ships": ["tierbheavy"]
+      }
+    ]
   },
   {
     "name": "Sensitive Controls",

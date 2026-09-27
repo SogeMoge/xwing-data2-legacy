@@ -129,7 +129,14 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "action": {
+          "type": "Lock"
+        }
+      }
+    ]
   },
   {
     "name": "Pattern Analyzer",
@@ -212,7 +219,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "factions": ["firstorder"]
+      }
+    ]
   },
   {
     "name": "Automated Target Priority",
@@ -233,7 +245,14 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "initiative": {
+          "max": 3
+        }
+      }
+    ]
   },
   {
     "name": "Sensor Buoy Suite",
