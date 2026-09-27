@@ -291,7 +291,17 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "sizes": ["Small"]
+      },
+      {
+        "action": {
+          "type": "Boost"
+        }
+      }
+    ]
   },
   {
     "name": "Compassion",

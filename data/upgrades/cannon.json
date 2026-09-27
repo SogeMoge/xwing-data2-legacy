@@ -234,7 +234,15 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "factions": ["resistance"]
+      },
+      {
+        "keywords": ["X-wing"]
+      }
+    ]
   },
   {
     "name": "Ancillary Ion Weapons",

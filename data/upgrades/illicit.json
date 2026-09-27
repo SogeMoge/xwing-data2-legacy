@@ -182,7 +182,14 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "action": {
+          "type": "SLAM"
+        }
+      }
+    ]
   },
   {
     "name": "Quick-Release Locks",

@@ -156,6 +156,14 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "factions": ["separatistalliance"]
+      },
+      {
+        "solitary": true
+      }
+    ]
   }
 ]

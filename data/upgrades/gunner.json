@@ -593,7 +593,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "factions": ["galacticrepublic"]
+      }
+    ]
   },
   {
     "name": "Clone Captain Rex",
@@ -614,7 +619,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "factions": ["galacticrepublic"]
+      }
+    ]
   },
   {
     "name": "Suppressive Gunner",
@@ -656,7 +666,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "factions": ["separatistalliance", "scumandvillainy"]
+      }
+    ]
   },
   {
     "name": "Weapons Systems Officer",
@@ -698,7 +713,12 @@
     },
     "standard": true,
     "wildspace": true,
-    "epic": true
+    "epic": true,
+    "restrictions": [
+      {
+        "factions": ["rebelalliance"]
+      }
+    ]
   },
   {
     "name": "DT-798",
