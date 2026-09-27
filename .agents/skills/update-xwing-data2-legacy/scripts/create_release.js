@@ -61,21 +61,23 @@ async function createRelease(options = {}) {
   }
 
   const prevTag = getPreviousTag(version);
-  const releaseTitle = `${version} ${cycleName}`;
+  const releaseTitle = options.title || `${version} ${cycleName}`;
   const changelogFile = `changelog/${new Date().toISOString().slice(0, 7)}-points-update.md`;
 
   let prLine = '';
   if (prNumber) {
-    prLine = `* Points Update (v${version}) by @${owner} in https://github.com/${owner}/${repo}/pull/${prNumber}\n\n`;
+    prLine = `* ${options.prTitle || `Points Update (v${version})`} by @${owner} in https://github.com/${owner}/${repo}/pull/${prNumber}\n\n`;
   }
 
-  const releaseBody = `## What's Changed
+  const defaultReleaseBody = `## What's Changed
 ${prLine}### Highlights
 - Points and balance adjustments aligned with **${cycleName}**.
 - Retrospect report: [${changelogFile}](https://github.com/${owner}/${repo}/blob/master/${changelogFile})
 - Retrospective points document: [X-Wing 2.0 Legacy Points Sheet](https://docs.google.com/spreadsheets/d/1kgEwq-1UtA7w8Q5sXAr_bt0AZHfaaZDnVRC9lnyAoBY)
 
 **Full Changelog**: https://github.com/${owner}/${repo}/compare/${prevTag}...${version}`;
+
+  const releaseBody = options.body || defaultReleaseBody;
 
   const payload = JSON.stringify({
     tag_name: version,
