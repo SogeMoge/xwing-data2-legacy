@@ -957,6 +957,174 @@ body {
   font-size: 1rem;
 }
 
+/* Chassis & Slot Grouping Headers */
+.chassis-header-row td {
+  background: linear-gradient(90deg, #182333 0%, #111827 100%) !important;
+  padding: 0.65rem 1rem !important;
+  border-top: 2px solid #253347 !important;
+  border-bottom: 1px solid #1e293b !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease;
+}
+
+.chassis-header-row:hover td {
+  background: linear-gradient(90deg, #1e2d42 0%, #172033 100%) !important;
+}
+
+.slot-header-row td {
+  background: linear-gradient(90deg, #182333 0%, #111827 100%) !important;
+  padding: 0.65rem 1rem !important;
+  border-top: 2px solid #253347 !important;
+  border-bottom: 1px solid #1e293b !important;
+  cursor: default !important;
+}
+
+.chassis-header-content,
+.slot-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.chassis-header-left,
+.slot-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.chassis-header-right,
+.slot-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chassis-header-glyph {
+  font-size: 1.8rem;
+  color: #38bdf8;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chassis-header-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: 0.02em;
+}
+
+.chassis-header-size {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #94a3b8;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.chassis-header-stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0.4rem;
+}
+
+.chassis-stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+}
+
+.chassis-stat-pill.stat-attack { background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); }
+.chassis-stat-pill.stat-agility { background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); }
+.chassis-stat-pill.stat-hull { background: rgba(234, 179, 8, 0.15); border: 1px solid rgba(234, 179, 8, 0.3); }
+.chassis-stat-pill.stat-shields { background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); }
+.chassis-stat-pill.stat-energy { background: rgba(236, 72, 153, 0.15); border: 1px solid rgba(236, 72, 153, 0.3); }
+
+.chassis-dial-btn {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s;
+}
+
+.chassis-dial-btn:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.chassis-pilot-count,
+.slot-card-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Slot Grouping Header */
+.slot-header-glyph {
+  font-size: 1.5rem;
+  color: #f59e0b;
+}
+
+.slot-header-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+/* Pilot Initiative Badges */
+.pilot-init-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-right: 0.35rem;
+}
+
+.init-8 { background-color: #7c3aed; color: #fff; }
+.init-7 { background-color: #9333ea; color: #fff; }
+.init-6 { background-color: #ea580c; color: #fff; } /* Orange */
+.init-5 { background-color: #d97706; color: #fff; } /* Amber */
+.init-4 { background-color: #0284c7; color: #fff; } /* Blue */
+.init-3 { background-color: #475569; color: #f1f5f9; } /* Slate */
+.init-2 { background-color: #334155; color: #cbd5e1; } /* Dark slate */
+.init-1 { background-color: #1e293b; color: #94a3b8; border: 1px solid #334155; }
+.init-0 { background-color: #0f172a; color: #64748b; border: 1px solid #1e293b; }
+
 /* Responsive */
 @media (max-width: 768px) {
   .app-header { padding: 0.75rem 1rem; }
@@ -965,3 +1133,4 @@ body {
   .toolbar-left, .toolbar-right { width: 100%; }
   .search-box { max-width: 100%; }
 }
+

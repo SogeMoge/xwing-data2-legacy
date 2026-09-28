@@ -168,11 +168,8 @@ function buildData() {
 
         const currentPointsStr = formatCostVal(p.cost);
 
-        let prevPointsStr = '';
+        let prevPointsStr = '-';
         let diff = null;
-        if (hist.pointsHistory) {
-          prevPointsStr = hist.pointsHistory['Mar 26'] || hist.pointsHistory['Dec 25'] || '';
-        }
 
         if (cardChanges) {
           const costChange = cardChanges.changes.find(c => c.type === 'cost');
@@ -229,11 +226,8 @@ function buildData() {
 
       const currentPointsStr = formatCostVal(u.cost);
 
-      let prevPointsStr = '';
+      let prevPointsStr = '-';
       let diff = null;
-      if (hist.pointsHistory) {
-        prevPointsStr = hist.pointsHistory['Mar 26'] || hist.pointsHistory['Dec 25'] || '';
-      }
 
       if (cardChanges) {
         const costChange = cardChanges.changes.find(c => c.type === 'cost');

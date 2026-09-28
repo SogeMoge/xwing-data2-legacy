@@ -6,7 +6,7 @@
   let changeFilter = 'all';
   let typeFilter = 'all';
   let showHistory = false;
-  let sortField = 'name';
+  let sortField = 'type';
   let sortAsc = true;
 
   // DOM Elements
@@ -460,42 +460,275 @@
     });
   }
 
+  function getTableColSpan() {
+    let base = 9;
+    if (showHistory && appData && appData.historyCycles) {
+      base += appData.historyCycles.filter(c => c !== 'Sep 26').length;
+    }
+    return base;
+  }
+
+  function groupPilotsByChassis(items) {
+    const groups = new Map();
+    items.forEach(p => {
+      const shipKey = p.shipXws || p.shipName || 'unknown';
+      if (!groups.has(shipKey)) {
+        const shipObj = (appData.ships && appData.ships[shipKey]) || {
+          name: p.shipName || p.type || shipKey,
+          xws: shipKey,
+          size: p.shipSize || 'Small',
+          fontGlyph: p.shipFontGlyph || '',
+          stats: [],
+          dial: []
+        };
+        groups.set(shipKey, {
+          ship: shipObj,
+          items: []
+        });
+      }
+      groups.get(shipKey).items.push(p);
+    });
+
+    const groupList = Array.from(groups.values());
+
+    // Sort chassis groups
+    groupList.sort((a, b) => {
+      const nameA = a.ship.name || '';
+      const nameB = b.ship.name || '';
+      if (sortField === 'type') {
+        return sortAsc ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
+      }
+      return nameA.localeCompare(nameB);
+    });
+
+    // Sort pilots within each chassis
+    groupList.forEach(grp => {
+      grp.items.sort((a, b) => {
+        if (sortField === 'cost') {
+          const costA = typeof a.cost === 'number' ? a.cost : (a.cost?.value ?? 999);
+          const costB = typeof b.cost === 'number' ? b.cost : (b.cost?.value ?? 999);
+          return sortAsc ? costA - costB : costB - costA;
+        }
+        if (sortField === 'name') {
+          return sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+        }
+        if (sortField === 'diff') {
+          const diffA = a.diff !== null && a.diff !== undefined ? a.diff : 0;
+          const diffB = b.diff !== null && b.diff !== undefined ? b.diff : 0;
+          return sortAsc ? diffA - diffB : diffB - diffA;
+        }
+
+        // Default within chassis: Initiative descending (I6 -> I1), then uniques (••• -> • -> generic), then cost descending
+        const initDiff = (b.initiative || 0) - (a.initiative || 0);
+        if (initDiff !== 0) return initDiff;
+
+        const limitA = a.limited !== undefined ? a.limited : 0;
+        const limitB = b.limited !== undefined ? b.limited : 0;
+        const limitDiff = limitB - limitA;
+        if (limitDiff !== 0) return limitDiff;
+
+        const costValA = typeof a.cost === 'number' ? a.cost : (a.cost?.value ?? 0);
+        const costValB = typeof b.cost === 'number' ? b.cost : (b.cost?.value ?? 0);
+        const costDiff = costValB - costValA;
+        if (costDiff !== 0) return costDiff;
+
+        return a.name.localeCompare(b.name);
+      });
+    });
+
+    return groupList;
+  }
+
+  function groupUpgradesBySlot(items) {
+    const groups = new Map();
+    items.forEach(u => {
+      const slotKey = u.type || 'Other';
+      if (!groups.has(slotKey)) {
+        groups.set(slotKey, {
+          slot: slotKey,
+          items: []
+        });
+      }
+      groups.get(slotKey).items.push(u);
+    });
+
+    const groupList = Array.from(groups.values());
+
+    const slotOrder = [
+      'Talent', 'Sensor', 'Cannon', 'Turret', 'Torpedo', 'Missile',
+      'Crew', 'Gunner', 'Astromech', 'Device', 'Payload', 'Illicit',
+      'Modification', 'Title', 'Configuration', 'Force Power', 'Tech',
+      'Tactical Relay', 'Hyperdrive', 'Hardpoint', 'Team', 'Cargo', 'Command'
+    ];
+
+    groupList.sort((a, b) => {
+      const idxA = slotOrder.indexOf(a.slot);
+      const idxB = slotOrder.indexOf(b.slot);
+      if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+      if (idxA !== -1) return -1;
+      if (idxB !== -1) return 1;
+      return a.slot.localeCompare(b.slot);
+    });
+
+    groupList.forEach(grp => {
+      grp.items.sort((a, b) => {
+        if (sortField === 'cost') {
+          const costA = typeof a.cost === 'number' ? a.cost : (a.cost?.value ?? 999);
+          const costB = typeof b.cost === 'number' ? b.cost : (b.cost?.value ?? 999);
+          return sortAsc ? costA - costB : costB - costA;
+        }
+        if (sortField === 'diff') {
+          const diffA = a.diff !== null && a.diff !== undefined ? a.diff : 0;
+          const diffB = b.diff !== null && b.diff !== undefined ? b.diff : 0;
+          return sortAsc ? diffA - diffB : diffB - diffA;
+        }
+        return sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+      });
+    });
+
+    return groupList;
+  }
+
+  function renderChassisHeaderRow(ship, pilotCount) {
+    if (!ship) return '';
+    const colSpan = getTableColSpan();
+
+    const statPills = [];
+    if (ship.stats && Array.isArray(ship.stats)) {
+      const statMap = {
+        'attack': { glyph: '%', cls: 'stat-attack', label: 'Attack' },
+        'agility': { glyph: '^', cls: 'stat-agility', label: 'Agility' },
+        'hull': { glyph: '&', cls: 'stat-hull', label: 'Hull' },
+        'shields': { glyph: '*', cls: 'stat-shields', label: 'Shields' },
+        'energy': { glyph: '(', cls: 'stat-energy', label: 'Energy' }
+      };
+      ship.stats.forEach(s => {
+        const meta = statMap[s.type] || { glyph: s.type[0], cls: 'stat-hull', label: s.type };
+        const arc = s.arc ? `<span class="game-symbol-glyph" style="font-size: 0.85em;">{</span>` : '';
+        statPills.push(`<span class="chassis-stat-pill ${meta.cls}" title="${meta.label}: ${s.value}">
+          <span class="xwing-icon">${meta.glyph}</span>${arc} ${s.value}
+        </span>`);
+      });
+    }
+
+    return `
+      <tr class="chassis-header-row" data-ship-xws="${ship.xws}">
+        <td colspan="${colSpan}">
+          <div class="chassis-header-content">
+            <div class="chassis-header-left">
+              ${ship.fontGlyph ? `<span class="xwing-ship chassis-header-glyph" title="${ship.name}">${ship.fontGlyph}</span>` : ''}
+              <span class="chassis-header-name">${ship.name}</span>
+              <span class="chassis-header-size">${ship.size}</span>
+              <div class="chassis-header-stats">${statPills.join('')}</div>
+            </div>
+            <div class="chassis-header-right">
+              <button class="chassis-dial-btn" data-ship="${ship.xws}" title="View Maneuver Dial for ${ship.name}">
+                <span>Dial</span> ⬡
+              </button>
+              <span class="chassis-pilot-count">${pilotCount} pilot${pilotCount === 1 ? '' : 's'}</span>
+            </div>
+          </div>
+        </td>
+      </tr>
+    `;
+  }
+
+  function renderSlotHeaderRow(slotType, upgradeCount) {
+    const colSpan = getTableColSpan();
+    const glyph = SLOT_ICONS[slotType] || '';
+
+    return `
+      <tr class="slot-header-row" data-slot="${slotType}">
+        <td colspan="${colSpan}">
+          <div class="slot-header-content">
+            <div class="slot-header-left">
+              ${glyph ? `<span class="slot-glyph slot-header-glyph">${glyph}</span>` : ''}
+              <span class="slot-header-name">${slotType}</span>
+            </div>
+            <div class="slot-header-right">
+              <span class="slot-card-count">${upgradeCount} card${upgradeCount === 1 ? '' : 's'}</span>
+            </div>
+          </div>
+        </td>
+      </tr>
+    `;
+  }
+
   function renderBody(items) {
     if (items.length === 0) {
-      tableBody.innerHTML = `<tr><td colspan="15" class="empty-state">No matching cards found.</td></tr>`;
+      tableBody.innerHTML = `<tr><td colspan="25" class="empty-state">No matching cards found.</td></tr>`;
       return;
     }
 
-    tableBody.innerHTML = items.map(item => {
-      if (currentTab === 'changes') {
-        return renderChangesRow(item);
-      }
-      return renderCardRow(item);
-    }).join('');
+    if (currentTab === 'changes') {
+      tableBody.innerHTML = items.map(item => renderChangesRow(item)).join('');
+      attachRowEvents();
+      return;
+    }
 
+    if (currentTab === 'upgrades') {
+      const grouped = groupUpgradesBySlot(items);
+      let html = '';
+      for (const group of grouped) {
+        html += renderSlotHeaderRow(group.slot, group.items.length);
+        html += group.items.map(item => renderCardRow(item)).join('');
+      }
+      tableBody.innerHTML = html;
+      attachRowEvents();
+      return;
+    }
+
+    // Faction tabs: group pilots by chassis
+    const grouped = groupPilotsByChassis(items);
+    let html = '';
+    for (const group of grouped) {
+      html += renderChassisHeaderRow(group.ship, group.items.length);
+      html += group.items.map(item => renderCardRow(item)).join('');
+    }
+    tableBody.innerHTML = html;
+    attachRowEvents();
+  }
+
+  function attachRowEvents() {
     tableBody.querySelectorAll('tr.clickable').forEach(tr => {
       tr.addEventListener('click', (e) => {
-        if (e.target.tagName === 'A' || e.target.closest('a')) return;
+        if (e.target.tagName === 'A' || e.target.closest('a') || e.target.closest('button')) return;
         const key = tr.dataset.key;
         openDrawer(key);
       });
     });
+
+    tableBody.querySelectorAll('button.chassis-dial-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const shipXws = btn.dataset.ship;
+        openShipDrawer(shipXws);
+      });
+    });
+
+    tableBody.querySelectorAll('tr.chassis-header-row').forEach(tr => {
+      tr.addEventListener('click', (e) => {
+        if (e.target.tagName === 'BUTTON' || e.target.closest('button')) return;
+        const shipXws = tr.dataset.shipXws;
+        if (shipXws) openShipDrawer(shipXws);
+      });
+    });
   }
 
-  function renderDiffBadge(diff, prevFormatted) {
-    if (diff === null || diff === undefined) {
-      if (prevFormatted && prevFormatted !== '-') {
-        return `<span class="diff-badge diff-changed">changed</span>`;
+  function renderDiffBadge(diff, hasCostChange, isNewCard) {
+    if (isNewCard) {
+      return `<span class="diff-badge diff-new" title="New card">NEW</span>`;
+    }
+    if (diff !== null && diff !== undefined && diff !== 0) {
+      if (diff < 0) {
+        return `<span class="diff-badge diff-buff" title="Buff: ${diff} points">${diff}</span>`;
       }
-      return `<span class="diff-badge diff-neutral">-</span>`;
-    }
-    if (diff < 0) {
-      return `<span class="diff-badge diff-buff" title="Buff: ${diff} points">${diff}</span>`;
-    }
-    if (diff > 0) {
       return `<span class="diff-badge diff-nerf" title="Nerf: +${diff} points">+${diff}</span>`;
     }
-    return `<span class="diff-badge diff-neutral">0</span>`;
+    if (hasCostChange) {
+      return `<span class="diff-badge diff-changed" title="Variable points updated">changed</span>`;
+    }
+    return `<span class="diff-badge diff-neutral">-</span>`;
   }
 
   function renderCommitChip(commit) {
@@ -511,9 +744,10 @@
     const paramChanges = changesList.filter(c => c.type !== 'cost');
     const defaultCommit = (changesList[0] && changesList[0].commit) || null;
 
+    const isNew = changesList.some(c => c.type === 'added');
     const diffHtml = costChange
-      ? renderDiffBadge(costChange.diff, costChange.oldFormatted)
-      : '<span class="diff-badge diff-neutral">-</span>';
+      ? renderDiffBadge(costChange.diff, true, false)
+      : (isNew ? renderDiffBadge(null, false, true) : '<span class="diff-badge diff-neutral">-</span>');
 
     const prevPointsHtml = costChange ? costChange.oldFormatted : '-';
 
@@ -551,6 +785,8 @@
   function renderCardRow(item) {
     const isPilot = item.kind === 'pilot' || item.slots;
     const hasChanges = item.recentChanges && item.recentChanges.length > 0;
+    const hasCostChange = hasChanges && item.recentChanges.some(c => c.type === 'cost');
+    const isNew = hasChanges && item.recentChanges.some(c => c.type === 'added');
     const formatChange = hasChanges && item.recentChanges.find(c => c.type === 'format');
     const kwChange = hasChanges && item.recentChanges.find(c => c.type === 'keywords');
     const slotsChange = hasChanges && item.recentChanges.find(c => c.type === 'slots');
@@ -625,6 +861,7 @@
       <td>
         <div class="card-name-container">
           <span class="card-title">
+            ${isPilot ? `<span class="pilot-init-badge init-${item.initiative}" title="Initiative ${item.initiative}">${item.initiative}</span>` : ''}
             ${bullets} ${item.name} ${extraTag}
           </span>
           ${item.caption ? `<span class="card-caption">${item.caption}</span>` : ''}
@@ -643,7 +880,7 @@
         ${kwChange ? `<span class="param-changed-badge" title="${kwChange.summary}">+Kw</span>` : ''}
       </td>
       <td><span class="points-curr">${item.pointsFormatted}</span></td>
-      <td>${renderDiffBadge(item.diff, item.prevPoints)}</td>
+      <td>${renderDiffBadge(item.diff, hasCostChange, isNew)}</td>
       <td>${renderCommitChip(commitObj)}</td>
       ${histCellsHtml}
     </tr>`;
@@ -757,6 +994,70 @@
         ${actionsHtml}
       </div>
     `;
+  }
+
+  function openShipDrawer(shipXws) {
+    if (!appData || !appData.ships) return;
+    const ship = appData.ships[shipXws];
+    if (!ship) return;
+
+    const drawerTitle = document.getElementById('drawerTitle');
+    const drawerContent = document.getElementById('drawerContent');
+
+    let titleGlyph = '';
+    if (ship.fontGlyph) {
+      titleGlyph = `<span class="xwing-ship" style="font-size: 1.8rem; margin-right: 0.5rem; color: var(--accent-blue);">${ship.fontGlyph}</span>`;
+    }
+
+    drawerTitle.innerHTML = `${titleGlyph} ${ship.name}`;
+
+    const statsActionsHtml = renderShipStatsAndActions(ship);
+    const dialHtml = renderManeuverDial(ship.dial);
+
+    // List pilots for this ship (matching current faction if on a faction tab)
+    const factionPilots = appData.pilots.filter(p => {
+      if (p.shipXws !== shipXws) return false;
+      if (currentTab !== 'changes' && currentTab !== 'upgrades' && p.faction !== currentTab) return false;
+      return true;
+    });
+
+    let pilotsSectionHtml = '';
+    if (factionPilots.length > 0) {
+      pilotsSectionHtml = `
+        <div class="detail-section">
+          <div class="detail-section-title">Pilots (${factionPilots.length})</div>
+          <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+            ${factionPilots.map(p => `
+              <div class="clickable" data-pilot-key="${p.key}" style="display: flex; justify-content: space-between; align-items: center; padding: 0.45rem 0.65rem; background: rgba(255,255,255,0.04); border-radius: 4px; font-size: 0.85rem; cursor: pointer; transition: background 0.15s;">
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                  <span class="pilot-init-badge init-${p.initiative}">${p.initiative}</span>
+                  <strong>${p.name}</strong>
+                  ${p.caption ? `<span class="card-caption" style="margin-left: 0.25rem;">${p.caption}</span>` : ''}
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span class="points-curr">${p.pointsFormatted}</span>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    drawerContent.innerHTML = `
+      ${statsActionsHtml}
+      ${dialHtml}
+      ${pilotsSectionHtml}
+    `;
+
+    drawerContent.querySelectorAll('[data-pilot-key]').forEach(el => {
+      el.addEventListener('click', () => {
+        const key = el.dataset.pilotKey;
+        openDrawer(key);
+      });
+    });
+
+    modalBackdrop.classList.add('open');
   }
 
   function openDrawer(key) {
