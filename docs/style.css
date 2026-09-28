@@ -389,10 +389,12 @@ body {
   border-color: var(--accent-blue);
 }
 
-.btn-toggle-active {
-  background-color: rgba(56, 189, 248, 0.15);
-  border-color: var(--accent-blue);
-  color: var(--accent-blue);
+.btn-toggle-active,
+.btn.btn-toggle-active {
+  background-color: rgba(56, 189, 248, 0.22) !important;
+  border-color: #38bdf8 !important;
+  color: #38bdf8 !important;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.3) !important;
 }
 
 /* Summary Stats Banner */

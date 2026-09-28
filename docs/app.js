@@ -5,8 +5,26 @@
   let formatFilter = 'all';
   let changeFilter = 'all';
   let typeFilter = 'all';
+  function getStoredBool(key, defaultValue) {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const val = window.localStorage.getItem(key);
+        if (val !== null) return val === 'true';
+      }
+    } catch (e) {}
+    return defaultValue;
+  }
+
+  function setStoredBool(key, value) {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        window.localStorage.setItem(key, value ? 'true' : 'false');
+      }
+    } catch (e) {}
+  }
+
   let showHistory = false;
-  let showHeaders = localStorage.getItem('xwing_show_headers') === 'true'; // false by default
+  let showHeaders = getStoredBool('xwing_show_headers', false);
   let sortField = 'type';
   let sortAsc = true;
 
@@ -285,7 +303,9 @@
     }
     if (toggleHeadersBtn) {
       toggleHeadersBtn.classList.toggle('btn-toggle-active', showHeaders);
-      toggleHeadersBtn.innerHTML = showHeaders ? '<span>🏷️ Hide Headers</span>' : '<span>🏷️ Show Headers</span>';
+      toggleHeadersBtn.innerHTML = showHeaders
+        ? '<span>🏷️ Chassis Headers: ON</span>'
+        : '<span>🏷️ Chassis Headers: OFF</span>';
     }
   }
 
@@ -318,12 +338,12 @@
     });
 
     if (toggleHeadersBtn) {
-      toggleHeadersBtn.addEventListener('click', () => {
+      toggleHeadersBtn.addEventListener('click', (e) => {
+        e.preventDefault();
         showHeaders = !showHeaders;
-        try {
-          localStorage.setItem('xwing_show_headers', showHeaders ? 'true' : 'false');
-        } catch (e) {}
+        setStoredBool('xwing_show_headers', showHeaders);
         updateHeadersVisibility();
+        render();
       });
     }
 
@@ -680,6 +700,35 @@
     `;
   }
 
+  function groupChangesByType(items) {
+    const groups = new Map();
+    items.forEach(c => {
+      const type = c.type || 'Other';
+      if (!groups.has(type)) {
+        groups.set(type, { type, items: [] });
+      }
+      groups.get(type).items.push(c);
+    });
+    return Array.from(groups.values()).sort((a, b) => a.type.localeCompare(b.type));
+  }
+
+  function renderChangesHeaderRow(type, count) {
+    return `
+      <tr class="chassis-header-row">
+        <td colspan="7">
+          <div class="chassis-header-content">
+            <div class="chassis-header-left">
+              <span class="chassis-header-name">${type}</span>
+            </div>
+            <div class="chassis-header-right">
+              <span class="chassis-pilot-count">${count} card${count === 1 ? '' : 's'}</span>
+            </div>
+          </div>
+        </td>
+      </tr>
+    `;
+  }
+
   function renderBody(items) {
     if (items.length === 0) {
       tableBody.innerHTML = `<tr><td colspan="25" class="empty-state">No matching cards found.</td></tr>`;
@@ -687,7 +736,17 @@
     }
 
     if (currentTab === 'changes') {
-      tableBody.innerHTML = items.map(item => renderChangesRow(item)).join('');
+      if (showHeaders) {
+        const grouped = groupChangesByType(items);
+        let html = '';
+        for (const group of grouped) {
+          html += renderChangesHeaderRow(group.type, group.items.length);
+          html += group.items.map(item => renderChangesRow(item)).join('');
+        }
+        tableBody.innerHTML = html;
+      } else {
+        tableBody.innerHTML = items.map(item => renderChangesRow(item)).join('');
+      }
       attachRowEvents();
       return;
     }
@@ -696,7 +755,9 @@
       const grouped = groupUpgradesBySlot(items);
       let html = '';
       for (const group of grouped) {
-        html += renderSlotHeaderRow(group.slot, group.items.length);
+        if (showHeaders) {
+          html += renderSlotHeaderRow(group.slot, group.items.length);
+        }
         html += group.items.map(item => renderCardRow(item)).join('');
       }
       tableBody.innerHTML = html;
@@ -708,7 +769,9 @@
     const grouped = groupPilotsByChassis(items);
     let html = '';
     for (const group of grouped) {
-      html += renderChassisHeaderRow(group.ship, group.items.length);
+      if (showHeaders) {
+        html += renderChassisHeaderRow(group.ship, group.items.length);
+      }
       html += group.items.map(item => renderCardRow(item)).join('');
     }
     tableBody.innerHTML = html;
