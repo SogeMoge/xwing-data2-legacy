@@ -72,8 +72,9 @@ async function createRelease(options = {}) {
   const defaultReleaseBody = `## What's Changed
 ${prLine}### Highlights
 - Points and balance adjustments aligned with **${cycleName}**.
+- Interactive Points Reference: [GitHub Pages](https://sogemoge.github.io/xwing-data2-legacy/)
 - Retrospect report: [${changelogFile}](https://github.com/${owner}/${repo}/blob/master/${changelogFile})
-- Retrospective points document: [X-Wing 2.0 Legacy Points Sheet](https://docs.google.com/spreadsheets/d/1kgEwq-1UtA7w8Q5sXAr_bt0AZHfaaZDnVRC9lnyAoBY)
+- Legacy points spreadsheet: [X-Wing 2.0 Legacy Points Sheet](https://docs.google.com/spreadsheets/d/1kgEwq-1UtA7w8Q5sXAr_bt0AZHfaaZDnVRC9lnyAoBY)
 
 **Full Changelog**: https://github.com/${owner}/${repo}/compare/${prevTag}...${version}`;
 

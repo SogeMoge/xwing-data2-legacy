@@ -39,8 +39,18 @@ xwing-data2-legacy/
 │   ├── pilots.test.js                  # Validates every ship and pilot against schemas & keywords
 │   ├── upgrades.test.js                # Validates every upgrade against schemas & keywords
 │   ├── quick-builds.test.js            # Validates quick builds and references valid XWS IDs
+│   ├── pages.test.js                   # Validates GitHub Pages dataset, fonts, and commit links
 │   └── xws.test.js                     # Enforces global uniqueness of XWS IDs
-├── scripts/                            # SCRAPING, INGESTION & ASSET TOOLS
+├── docs/                               # GITHUB PAGES INTERACTIVE APPLICATION
+│   ├── index.html                      # Single-page application UI with filters and tabs
+│   ├── style.css                       # Dark theme, xwing icon fonts, table layout
+│   ├── app.js                          # Client-side filtering, search, sorting, CSV export
+│   ├── data.json                       # Precomputed cards, diffs, commits, and retrospective history
+│   └── fonts/                          # TTF font files and JSON glyph mappings
+├── scripts/                            # SCRAPING, INGESTION, PAGES & ASSET TOOLS
+│   ├── generate-pages.js               # Master generator for GitHub Pages site
+│   ├── analyze-release.js              # Tag diff analyzer tracking points, parameters, and commit SHAs
+│   ├── generate-data.js                # Compiles docs/data.json with font glyphs & retrospective matrix
 │   ├── validate-json.js                # Fast zero-dependency JSON syntax validator
 │   ├── ffgscrape.js                    # Downloads raw JSON from FFG API
 │   ├── ffgprocess.js                   # Ingests downloaded cards into data/ files with git diffs
@@ -188,6 +198,12 @@ yarn run validate:tests
 # 3. Automatically format all data JSON files with Prettier
 yarn run format
 # or: npm run format
+
+# 4. Build and validate GitHub Pages web application
+npm run build:pages
+
+# 5. Preview GitHub Pages locally
+npm run serve:pages
 ```
 
 ### 6.3 Release & Versioning

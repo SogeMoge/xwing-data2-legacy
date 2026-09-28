@@ -89,6 +89,9 @@ npm run validate:tests
 
 # 3. Format changed files using Prettier
 npm run format
+
+# 4. Build and validate GitHub Pages web application
+npm run build:pages
 ```
 
 ### 6. Pull Request & Release Workflow
