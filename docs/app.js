@@ -477,20 +477,20 @@
     });
   }
 
-  function renderDiffBadge(diff, prevFormatted) {
-    if (diff === null || diff === undefined) {
-      if (prevFormatted && prevFormatted !== '-') {
-        return `<span class="diff-badge diff-changed">changed</span>`;
+  function renderDiffBadge(diff, hasCostChange, isNewCard) {
+    if (isNewCard) {
+      return `<span class="diff-badge diff-new" title="New card">NEW</span>`;
+    }
+    if (diff !== null && diff !== undefined && diff !== 0) {
+      if (diff < 0) {
+        return `<span class="diff-badge diff-buff" title="Buff: ${diff} points">${diff}</span>`;
       }
-      return `<span class="diff-badge diff-neutral">-</span>`;
-    }
-    if (diff < 0) {
-      return `<span class="diff-badge diff-buff" title="Buff: ${diff} points">${diff}</span>`;
-    }
-    if (diff > 0) {
       return `<span class="diff-badge diff-nerf" title="Nerf: +${diff} points">+${diff}</span>`;
     }
-    return `<span class="diff-badge diff-neutral">0</span>`;
+    if (hasCostChange) {
+      return `<span class="diff-badge diff-changed" title="Variable points updated">changed</span>`;
+    }
+    return `<span class="diff-badge diff-neutral">-</span>`;
   }
 
   function renderCommitChip(commit) {
@@ -506,9 +506,10 @@
     const paramChanges = changesList.filter(c => c.type !== 'cost');
     const defaultCommit = (changesList[0] && changesList[0].commit) || null;
 
+    const isNew = changesList.some(c => c.type === 'added');
     const diffHtml = costChange
-      ? renderDiffBadge(costChange.diff, costChange.oldFormatted)
-      : '<span class="diff-badge diff-neutral">-</span>';
+      ? renderDiffBadge(costChange.diff, true, false)
+      : (isNew ? renderDiffBadge(null, false, true) : '<span class="diff-badge diff-neutral">-</span>');
 
     const prevPointsHtml = costChange ? costChange.oldFormatted : '-';
 
@@ -546,6 +547,8 @@
   function renderCardRow(item) {
     const isPilot = item.kind === 'pilot' || item.slots;
     const hasChanges = item.recentChanges && item.recentChanges.length > 0;
+    const hasCostChange = hasChanges && item.recentChanges.some(c => c.type === 'cost');
+    const isNew = hasChanges && item.recentChanges.some(c => c.type === 'added');
     const formatChange = hasChanges && item.recentChanges.find(c => c.type === 'format');
     const kwChange = hasChanges && item.recentChanges.find(c => c.type === 'keywords');
     const slotsChange = hasChanges && item.recentChanges.find(c => c.type === 'slots');
@@ -638,7 +641,7 @@
         ${kwChange ? `<span class="param-changed-badge" title="${kwChange.summary}">+Kw</span>` : ''}
       </td>
       <td><span class="points-curr">${item.pointsFormatted}</span></td>
-      <td>${renderDiffBadge(item.diff, item.prevPoints)}</td>
+      <td>${renderDiffBadge(item.diff, hasCostChange, isNew)}</td>
       <td>${renderCommitChip(commitObj)}</td>
       ${histCellsHtml}
     </tr>`;
