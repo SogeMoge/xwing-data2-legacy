@@ -30,11 +30,18 @@ async function main() {
   // 1. Copy font assets
   copyFonts();
 
+  // Copy colors.json
+  const colorsSrc = path.join(repoRoot, 'data', 'colors.json');
+  const colorsDest = path.join(docsDir, 'colors.json');
+  if (fs.existsSync(colorsSrc)) {
+    fs.copyFileSync(colorsSrc, colorsDest);
+  }
+
   // 2. Build data.json
   const dataset = buildData();
 
   // 3. Validate output files
-  const requiredFiles = ['index.html', 'style.css', 'app.js', 'data.json', 'data.js'];
+  const requiredFiles = ['index.html', 'style.css', 'app.js', 'data.json', 'data.js', 'colors.json'];
   for (const f of requiredFiles) {
     const p = path.join(docsDir, f);
     if (!fs.existsSync(p)) {

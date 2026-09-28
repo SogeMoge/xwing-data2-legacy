@@ -28,6 +28,32 @@
   --wildspace-color: #a855f7;
   --epic-color: #f97316;
 
+  /* Official X-Wing 2.0 Color Palette (https://xhud.sirjorj.com/xwing.cgi/colors2) */
+  --xwing-initiative: #e77e29;
+  --xwing-cost: #41bef0;
+  --xwing-attack: #ed3638;
+  --xwing-agility: #6abe46;
+  --xwing-hull: #f0e531;
+  --xwing-shield: #82d1e1;
+  --xwing-charge: #fdbf10;
+  --xwing-force: #c4a0ca;
+  --xwing-energy: #e71583;
+
+  /* Difficulties & Actions */
+  --xwing-neutral: #ffffff;
+  --xwing-stress: #ec1f21;
+  --xwing-destress: #1e90ff;
+  --xwing-force-action: #c4a0ca;
+
+  /* Faction Accents */
+  --xwing-rebel: #cb120e;
+  --xwing-empire: #204e78;
+  --xwing-scum: #6abe46;
+  --xwing-resistance: #d87325;
+  --xwing-firstorder: #b42828;
+  --xwing-republic: #6c160f;
+  --xwing-separatist: #20308d;
+
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
@@ -389,12 +415,10 @@ body {
   border-color: var(--accent-blue);
 }
 
-.btn-toggle-active,
-.btn.btn-toggle-active {
-  background-color: rgba(56, 189, 248, 0.22) !important;
-  border-color: #38bdf8 !important;
-  color: #38bdf8 !important;
-  box-shadow: 0 0 8px rgba(56, 189, 248, 0.3) !important;
+.btn-toggle-active {
+  background-color: rgba(56, 189, 248, 0.15);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
 }
 
 /* Summary Stats Banner */
@@ -668,7 +692,7 @@ body {
 .points-curr {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--xwing-cost);
 }
 
 .points-hist {
@@ -814,13 +838,13 @@ body {
   font-weight: 700;
 }
 
-.stat-agility { color: #10b981; }
-.stat-hull { color: #eab308; }
-.stat-shields { color: #38bdf8; }
-.stat-energy { color: #ec4899; }
-.stat-force { color: #a855f7; }
-.stat-charge { color: #f59e0b; }
-.stat-attack { color: #ef4444; }
+.stat-agility { color: var(--xwing-agility) !important; }
+.stat-hull { color: var(--xwing-hull) !important; }
+.stat-shields { color: var(--xwing-shield) !important; }
+.stat-energy { color: var(--xwing-energy) !important; }
+.stat-force { color: var(--xwing-force) !important; }
+.stat-charge { color: var(--xwing-charge) !important; }
+.stat-attack { color: var(--xwing-attack) !important; }
 
 /* Ship Actions Bar */
 .ship-actions-bar {
@@ -833,17 +857,38 @@ body {
 .action-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.25rem 0.5rem;
+  gap: 0.35rem;
+  padding: 0.25rem 0.55rem;
   border-radius: 4px;
   font-size: 0.78rem;
-  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
   border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
-.action-difficulty-white { color: #f1f5f9; }
-.action-difficulty-red { color: #ef4444; border-color: rgba(239, 68, 68, 0.3); }
-.action-difficulty-purple { color: #c084fc; border-color: rgba(192, 132, 252, 0.3); }
+.action-pill.action-difficulty-white,
+.action-pill.action-difficulty-white .action-icon,
+.action-pill.action-difficulty-white .xwing-icon {
+  color: var(--xwing-neutral) !important;
+  border-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.action-pill.action-difficulty-red,
+.action-pill.action-difficulty-red .action-icon,
+.action-pill.action-difficulty-red .xwing-icon {
+  color: var(--xwing-stress) !important;
+  border-color: rgba(236, 31, 33, 0.4);
+  background-color: rgba(236, 31, 33, 0.12);
+}
+
+.action-pill.action-difficulty-purple,
+.action-pill.action-difficulty-purple .action-icon,
+.action-pill.action-difficulty-purple .xwing-icon {
+  color: var(--xwing-force-action) !important;
+  border-color: rgba(196, 160, 202, 0.4);
+  background-color: rgba(196, 160, 202, 0.12);
+}
 
 /* Maneuver Dial Matrix Table */
 .maneuver-dial-table {
@@ -881,27 +926,27 @@ body {
 }
 
 .maneuver-blue {
-  color: #60a5fa;
-  background-color: rgba(59, 130, 246, 0.15);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--xwing-destress) !important;
+  background-color: rgba(30, 144, 255, 0.15);
+  border: 1px solid rgba(30, 144, 255, 0.35);
 }
 
 .maneuver-white {
-  color: #f8fafc;
+  color: var(--xwing-neutral) !important;
   background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .maneuver-red {
-  color: #f87171;
-  background-color: rgba(239, 68, 68, 0.15);
-  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: var(--xwing-stress) !important;
+  background-color: rgba(236, 31, 33, 0.15);
+  border: 1px solid rgba(236, 31, 33, 0.35);
 }
 
 .maneuver-purple {
-  color: #c084fc;
-  background-color: rgba(168, 85, 247, 0.15);
-  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: var(--xwing-force-action) !important;
+  background-color: rgba(196, 160, 202, 0.15);
+  border: 1px solid rgba(196, 160, 202, 0.35);
 }
 
 /* In-text Game Symbols */
@@ -922,15 +967,17 @@ body {
   padding: 0 0.15rem;
 }
 
-.symbol-hit, .symbol-crit { color: #ef4444; }
-.symbol-focus { color: #22c55e; }
-.symbol-evade { color: #10b981; }
-.symbol-calculate { color: #a3e635; }
-.symbol-charge, .symbol-force { color: #c084fc; }
-.symbol-shield { color: #38bdf8; }
-.symbol-energy { color: #ec4899; }
-.symbol-arc { color: #f59e0b; }
-.symbol-action { color: #38bdf8; }
+.symbol-hit, .symbol-crit { color: var(--xwing-attack) !important; }
+.symbol-focus { color: var(--xwing-neutral) !important; }
+.symbol-evade { color: var(--xwing-agility) !important; }
+.symbol-calculate { color: var(--xwing-neutral) !important; }
+.symbol-charge { color: var(--xwing-charge) !important; }
+.symbol-force { color: var(--xwing-force) !important; }
+.symbol-shield { color: var(--xwing-shield) !important; }
+.symbol-hull { color: var(--xwing-hull) !important; }
+.symbol-energy { color: var(--xwing-energy) !important; }
+.symbol-arc { color: var(--xwing-attack) !important; }
+.symbol-action { color: var(--xwing-neutral) !important; }
 .symbol-maneuver { color: #cbd5e1; }
 
 /* History Timeline Table */
@@ -1055,11 +1102,13 @@ body {
   font-family: var(--font-mono);
 }
 
-.chassis-stat-pill.stat-attack { background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); }
-.chassis-stat-pill.stat-agility { background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); }
-.chassis-stat-pill.stat-hull { background: rgba(234, 179, 8, 0.15); border: 1px solid rgba(234, 179, 8, 0.3); }
-.chassis-stat-pill.stat-shields { background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); }
-.chassis-stat-pill.stat-energy { background: rgba(236, 72, 153, 0.15); border: 1px solid rgba(236, 72, 153, 0.3); }
+.chassis-stat-pill.stat-attack { background: rgba(237, 54, 56, 0.15); border: 1px solid rgba(237, 54, 56, 0.35); color: var(--xwing-attack) !important; }
+.chassis-stat-pill.stat-agility { background: rgba(106, 190, 70, 0.15); border: 1px solid rgba(106, 190, 70, 0.35); color: var(--xwing-agility) !important; }
+.chassis-stat-pill.stat-hull { background: rgba(240, 229, 49, 0.15); border: 1px solid rgba(240, 229, 49, 0.35); color: var(--xwing-hull) !important; }
+.chassis-stat-pill.stat-shields { background: rgba(130, 209, 225, 0.15); border: 1px solid rgba(130, 209, 225, 0.35); color: var(--xwing-shield) !important; }
+.chassis-stat-pill.stat-energy { background: rgba(231, 21, 131, 0.15); border: 1px solid rgba(231, 21, 131, 0.35); color: var(--xwing-energy) !important; }
+.chassis-stat-pill.stat-force { background: rgba(196, 160, 202, 0.15); border: 1px solid rgba(196, 160, 202, 0.35); color: var(--xwing-force) !important; }
+.chassis-stat-pill.stat-charge { background: rgba(253, 191, 16, 0.15); border: 1px solid rgba(253, 191, 16, 0.35); color: var(--xwing-charge) !important; }
 
 .chassis-dial-btn {
   background: rgba(56, 189, 248, 0.12);
@@ -1120,17 +1169,15 @@ body {
   line-height: 1;
   flex-shrink: 0;
   margin-right: 0.35rem;
+  background-color: var(--xwing-initiative) !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-.init-8 { background-color: #7c3aed; color: #fff; }
-.init-7 { background-color: #9333ea; color: #fff; }
-.init-6 { background-color: #ea580c; color: #fff; } /* Orange */
-.init-5 { background-color: #d97706; color: #fff; } /* Amber */
-.init-4 { background-color: #0284c7; color: #fff; } /* Blue */
-.init-3 { background-color: #475569; color: #f1f5f9; } /* Slate */
-.init-2 { background-color: #334155; color: #cbd5e1; } /* Dark slate */
-.init-1 { background-color: #1e293b; color: #94a3b8; border: 1px solid #334155; }
-.init-0 { background-color: #0f172a; color: #64748b; border: 1px solid #1e293b; }
+.init-8, .init-7, .init-6, .init-5, .init-4, .init-3, .init-2, .init-1, .init-0 {
+  background-color: var(--xwing-initiative) !important;
+  color: #ffffff !important;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

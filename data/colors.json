@@ -1,0 +1,112 @@
+{
+  "source": "https://xhud.sirjorj.com/xwing.cgi/colors2",
+  "attributes": {
+    "initiative": "#e77e29",
+    "cost": "#41bef0",
+    "attack": "#ed3638",
+    "agility": "#6abe46",
+    "hull": "#f0e531",
+    "shield": "#82d1e1",
+    "charge": "#fdbf10",
+    "force": "#c4a0ca",
+    "energy": "#e71583"
+  },
+  "difficulties": {
+    "neutral": "#ffffff",
+    "stress": "#ec1f21",
+    "destress": "#1e90ff",
+    "force": "#c4a0ca"
+  },
+  "actions": {
+    "white": "#ffffff",
+    "red": "#ec1f21",
+    "purple": "#c4a0ca"
+  },
+  "arcs": {
+    "attack": "#ed3638",
+    "rebelLight": "#df1e25",
+    "rebelDark": "#3a1212",
+    "imperialLight": "#6bb945",
+    "imperialDark": "#12391d",
+    "scumLight": "#f4d118",
+    "scumDark": "#3e3415",
+    "resistanceLight": "#e02027",
+    "resistanceDark": "#331111",
+    "firstOrderLight": "#64b646",
+    "firstOrderDark": "#12371c",
+    "republicLight": "#4faddd",
+    "republicDark": "#174661",
+    "separatistLight": "#f59d29",
+    "separatistDark": "#793d1a"
+  },
+  "factions": {
+    "rebelalliance": {
+      "fore": "#cb120e",
+      "back": "#b3b5ad",
+      "dial": "#822819",
+      "arcLight": "#df1e25",
+      "arcDark": "#3a1212"
+    },
+    "galacticempire": {
+      "fore": "#d6d6dd",
+      "back": "#204e78",
+      "dial": "#35393d",
+      "arcLight": "#6bb945",
+      "arcDark": "#12391d"
+    },
+    "scumandvillainy": {
+      "fore": "#b3b5ad",
+      "back": "#253a21",
+      "dial": "#3f3a27",
+      "arcLight": "#f4d118",
+      "arcDark": "#3e3415"
+    },
+    "resistance": {
+      "fore": "#d87325",
+      "back": "#404040",
+      "dial": "#e5653a",
+      "arcLight": "#e02027",
+      "arcDark": "#331111"
+    },
+    "firstorder": {
+      "fore": "#b42828",
+      "back": "#393a39",
+      "dial": "#32291f",
+      "arcLight": "#64b646",
+      "arcDark": "#12371c"
+    },
+    "galacticrepublic": {
+      "fore": "#eff3f3",
+      "back": "#6c160f",
+      "dial": "#8a6d3b",
+      "arcLight": "#4faddd",
+      "arcDark": "#174661"
+    },
+    "separatistalliance": {
+      "fore": "#20308d",
+      "back": "#d6d8d7",
+      "dial": "#337ab7",
+      "arcLight": "#f59d29",
+      "arcDark": "#793d1a"
+    }
+  },
+  "componentMapping": {
+    "actionWhite": "#ffffff",
+    "actionRed": "#ec1f21",
+    "actionPurple": "#c4a0ca",
+    "attackArc": "#ed3638",
+    "statAttack": "#ed3638",
+    "statAgility": "#6abe46",
+    "statHull": "#f0e531",
+    "statShield": "#82d1e1",
+    "statCharge": "#fdbf10",
+    "statForce": "#c4a0ca",
+    "statEnergy": "#e71583",
+    "initiative": "#e77e29",
+    "cost": "#41bef0",
+    "maneuverBlue": "#1e90ff",
+    "maneuverWhite": "#ffffff",
+    "maneuverRed": "#ec1f21",
+    "maneuverPurple": "#c4a0ca"
+  }
+}

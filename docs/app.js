@@ -5,26 +5,8 @@
   let formatFilter = 'all';
   let changeFilter = 'all';
   let typeFilter = 'all';
-  function getStoredBool(key, defaultValue) {
-    try {
-      if (typeof window !== 'undefined' && window.localStorage) {
-        const val = window.localStorage.getItem(key);
-        if (val !== null) return val === 'true';
-      }
-    } catch (e) {}
-    return defaultValue;
-  }
-
-  function setStoredBool(key, value) {
-    try {
-      if (typeof window !== 'undefined' && window.localStorage) {
-        window.localStorage.setItem(key, value ? 'true' : 'false');
-      }
-    } catch (e) {}
-  }
-
   let showHistory = false;
-  let showHeaders = getStoredBool('xwing_show_headers', false);
+  let showHeaders = localStorage.getItem('xwing_show_headers') === 'true'; // false by default
   let sortField = 'type';
   let sortAsc = true;
 
@@ -76,11 +58,11 @@
   // Bracketed game terminology to font glyph & style class
   const SYMBOL_MAP = {
     // Actions
-    'focus': { glyph: 'f', cls: 'symbol-focus', name: 'Focus' },
+    'focus': { glyph: 'f', cls: 'symbol-action', name: 'Focus' },
     'lock': { glyph: 'l', cls: 'symbol-action', name: 'Lock' },
     'target lock': { glyph: 'l', cls: 'symbol-action', name: 'Target Lock' },
-    'evade': { glyph: 'e', cls: 'symbol-evade', name: 'Evade' },
-    'calculate': { glyph: 'a', cls: 'symbol-calculate', name: 'Calculate' },
+    'evade': { glyph: 'e', cls: 'symbol-action', name: 'Evade' },
+    'calculate': { glyph: 'a', cls: 'symbol-action', name: 'Calculate' },
     'reinforce': { glyph: 'i', cls: 'symbol-action', name: 'Reinforce' },
     'cloak': { glyph: 'k', cls: 'symbol-action', name: 'Cloak' },
     'coordinate': { glyph: 'o', cls: 'symbol-action', name: 'Coordinate' },
@@ -102,7 +84,7 @@
     'shield': { glyph: '*', cls: 'symbol-shield', name: 'Shield' },
     'energy': { glyph: '(', cls: 'symbol-energy', name: 'Energy' },
     'agility': { glyph: '^', cls: 'symbol-evade', name: 'Agility' },
-    'hull': { glyph: '&', cls: 'symbol-action', name: 'Hull' },
+    'hull': { glyph: '&', cls: 'symbol-hull', name: 'Hull' },
 
     // Arcs
     'front arc': { glyph: '{', cls: 'symbol-arc', name: 'Front Arc' },
@@ -303,9 +285,7 @@
     }
     if (toggleHeadersBtn) {
       toggleHeadersBtn.classList.toggle('btn-toggle-active', showHeaders);
-      toggleHeadersBtn.innerHTML = showHeaders
-        ? '<span>🏷️ Chassis Headers: ON</span>'
-        : '<span>🏷️ Chassis Headers: OFF</span>';
+      toggleHeadersBtn.innerHTML = showHeaders ? '<span>🏷️ Hide Headers</span>' : '<span>🏷️ Show Headers</span>';
     }
   }
 
@@ -338,12 +318,12 @@
     });
 
     if (toggleHeadersBtn) {
-      toggleHeadersBtn.addEventListener('click', (e) => {
-        e.preventDefault();
+      toggleHeadersBtn.addEventListener('click', () => {
         showHeaders = !showHeaders;
-        setStoredBool('xwing_show_headers', showHeaders);
+        try {
+          localStorage.setItem('xwing_show_headers', showHeaders ? 'true' : 'false');
+        } catch (e) {}
         updateHeadersVisibility();
-        render();
       });
     }
 
@@ -646,11 +626,13 @@
         'agility': { glyph: '^', cls: 'stat-agility', label: 'Agility' },
         'hull': { glyph: '&', cls: 'stat-hull', label: 'Hull' },
         'shields': { glyph: '*', cls: 'stat-shields', label: 'Shields' },
-        'energy': { glyph: '(', cls: 'stat-energy', label: 'Energy' }
+        'energy': { glyph: '(', cls: 'stat-energy', label: 'Energy' },
+        'force': { glyph: 'h', cls: 'stat-force', label: 'Force' },
+        'charge': { glyph: 'g', cls: 'stat-charge', label: 'Charge' }
       };
       ship.stats.forEach(s => {
         const meta = statMap[s.type] || { glyph: s.type[0], cls: 'stat-hull', label: s.type };
-        const arc = s.arc ? `<span class="game-symbol-glyph" style="font-size: 0.85em;">{</span>` : '';
+        const arc = s.arc ? `<span class="game-symbol-glyph symbol-arc" style="font-size: 0.85em;">{</span>` : '';
         statPills.push(`<span class="chassis-stat-pill ${meta.cls}" title="${meta.label}: ${s.value}">
           <span class="xwing-icon">${meta.glyph}</span>${arc} ${s.value}
         </span>`);
@@ -700,35 +682,6 @@
     `;
   }
 
-  function groupChangesByType(items) {
-    const groups = new Map();
-    items.forEach(c => {
-      const type = c.type || 'Other';
-      if (!groups.has(type)) {
-        groups.set(type, { type, items: [] });
-      }
-      groups.get(type).items.push(c);
-    });
-    return Array.from(groups.values()).sort((a, b) => a.type.localeCompare(b.type));
-  }
-
-  function renderChangesHeaderRow(type, count) {
-    return `
-      <tr class="chassis-header-row">
-        <td colspan="7">
-          <div class="chassis-header-content">
-            <div class="chassis-header-left">
-              <span class="chassis-header-name">${type}</span>
-            </div>
-            <div class="chassis-header-right">
-              <span class="chassis-pilot-count">${count} card${count === 1 ? '' : 's'}</span>
-            </div>
-          </div>
-        </td>
-      </tr>
-    `;
-  }
-
   function renderBody(items) {
     if (items.length === 0) {
       tableBody.innerHTML = `<tr><td colspan="25" class="empty-state">No matching cards found.</td></tr>`;
@@ -736,17 +689,7 @@
     }
 
     if (currentTab === 'changes') {
-      if (showHeaders) {
-        const grouped = groupChangesByType(items);
-        let html = '';
-        for (const group of grouped) {
-          html += renderChangesHeaderRow(group.type, group.items.length);
-          html += group.items.map(item => renderChangesRow(item)).join('');
-        }
-        tableBody.innerHTML = html;
-      } else {
-        tableBody.innerHTML = items.map(item => renderChangesRow(item)).join('');
-      }
+      tableBody.innerHTML = items.map(item => renderChangesRow(item)).join('');
       attachRowEvents();
       return;
     }
@@ -755,9 +698,7 @@
       const grouped = groupUpgradesBySlot(items);
       let html = '';
       for (const group of grouped) {
-        if (showHeaders) {
-          html += renderSlotHeaderRow(group.slot, group.items.length);
-        }
+        html += renderSlotHeaderRow(group.slot, group.items.length);
         html += group.items.map(item => renderCardRow(item)).join('');
       }
       tableBody.innerHTML = html;
@@ -769,9 +710,7 @@
     const grouped = groupPilotsByChassis(items);
     let html = '';
     for (const group of grouped) {
-      if (showHeaders) {
-        html += renderChassisHeaderRow(group.ship, group.items.length);
-      }
+      html += renderChassisHeaderRow(group.ship, group.items.length);
       html += group.items.map(item => renderCardRow(item)).join('');
     }
     tableBody.innerHTML = html;
@@ -1047,7 +986,7 @@
     if (ship.stats && Array.isArray(ship.stats)) {
       statsHtml = `<div class="ship-stats-bar">${ship.stats.map(s => {
         const meta = statGlyphs[s.type] || { glyph: s.type[0], cls: 'stat-hull', label: s.type };
-        const arc = s.arc ? `<span class="game-symbol-glyph" style="font-size: 0.9em;">{</span>` : '';
+        const arc = s.arc ? `<span class="game-symbol-glyph symbol-arc" style="font-size: 0.9em;">{</span>` : '';
         return `<span class="ship-stat-pill ${meta.cls}" title="${meta.label}">
           <span class="xwing-icon">${meta.glyph}</span> ${arc} ${s.value}
         </span>`;
@@ -1059,19 +998,19 @@
     if (ship.actions && Array.isArray(ship.actions)) {
       actionsHtml = `<div class="ship-actions-bar">${ship.actions.map(a => {
         const actKey = a.type.toLowerCase().replace(/[^a-z]/g, '');
-        const meta = SYMBOL_MAP[actKey] || { glyph: a.type[0], cls: 'symbol-action' };
+        const meta = SYMBOL_MAP[actKey] || { glyph: a.type[0] };
         const diffCls = a.difficulty === 'Red' ? 'action-difficulty-red' : (a.difficulty === 'Purple' ? 'action-difficulty-purple' : 'action-difficulty-white');
 
         let linkedHtml = '';
         if (a.linked) {
           const lKey = a.linked.type.toLowerCase().replace(/[^a-z]/g, '');
-          const lMeta = SYMBOL_MAP[lKey] || { glyph: a.linked.type[0], cls: 'symbol-action' };
-          const lDiffCls = a.linked.difficulty === 'Red' ? 'action-difficulty-red' : 'action-difficulty-white';
-          linkedHtml = ` <span class="xwing-icon" style="color: var(--text-dim);">></span> <span class="action-pill ${lDiffCls}"><span class="xwing-icon ${lMeta.cls}">${lMeta.glyph}</span> ${a.linked.type}</span>`;
+          const lMeta = SYMBOL_MAP[lKey] || { glyph: a.linked.type[0] };
+          const lDiffCls = a.linked.difficulty === 'Red' ? 'action-difficulty-red' : (a.linked.difficulty === 'Purple' ? 'action-difficulty-purple' : 'action-difficulty-white');
+          linkedHtml = ` <span class="xwing-icon" style="color: var(--text-dim);">></span> <span class="action-pill ${lDiffCls}"><span class="xwing-icon action-icon">${lMeta.glyph}</span> ${a.linked.type}</span>`;
         }
 
         return `<span class="action-pill ${diffCls}">
-          <span class="xwing-icon ${meta.cls}">${meta.glyph}</span> ${a.type}
+          <span class="xwing-icon action-icon">${meta.glyph}</span> ${a.type}
         </span>${linkedHtml}`;
       }).join('')}</div>`;
     }

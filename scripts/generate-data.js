@@ -109,13 +109,18 @@ function buildData() {
   // Load font mappings
   const shipsMapPath = path.join(repoRoot, 'data', 'fonts', 'ships-map.json');
   const iconsMapPath = path.join(repoRoot, 'data', 'fonts', 'icons-map.json');
+  const colorsPath = path.join(repoRoot, 'data', 'colors.json');
   let shipsMap = {};
   let iconsMap = {};
+  let colors = {};
   if (fs.existsSync(shipsMapPath)) {
     shipsMap = JSON.parse(fs.readFileSync(shipsMapPath, 'utf8')).ships || {};
   }
   if (fs.existsSync(iconsMapPath)) {
     iconsMap = JSON.parse(fs.readFileSync(iconsMapPath, 'utf8')).icons || {};
+  }
+  if (fs.existsSync(colorsPath)) {
+    colors = JSON.parse(fs.readFileSync(colorsPath, 'utf8'));
   }
 
   // Analyze changes between previous release and current release
@@ -338,16 +343,17 @@ function buildData() {
       previousTag: prevTag,
       pointsCycleTag
     },
+    colors,
     factions: [
       { id: 'all', name: 'All Factions', color: '#888888' },
-      { id: 'rebelalliance', name: 'Rebel Alliance', color: '#d9534f', fontGlyph: iconsMap['rebel'] || '!' },
-      { id: 'galacticempire', name: 'Galactic Empire', color: '#999999', fontGlyph: iconsMap['empire'] || '@' },
-      { id: 'scumandvillainy', name: 'Scum & Villainy', color: '#5cb85c', fontGlyph: iconsMap['scum'] || '#' },
-      { id: 'resistance', name: 'Resistance', color: '#f0ad4e', fontGlyph: iconsMap['rebel'] || '!' },
-      { id: 'firstorder', name: 'First Order', color: '#d9534f', fontGlyph: iconsMap['firstorder'] || '+' },
-      { id: 'galacticrepublic', name: 'Galactic Republic', color: '#8a6d3b', fontGlyph: iconsMap['republic'] || '/' },
-      { id: 'separatistalliance', name: 'Separatist Alliance', color: '#337ab7', fontGlyph: iconsMap['separatists'] || '.' },
-      { id: 'upgrades', name: 'Generic Upgrades', color: '#f39c12', fontGlyph: iconsMap['modification'] || 'm' }
+      { id: 'rebelalliance', name: 'Rebel Alliance', color: (colors.factions && colors.factions.rebelalliance ? colors.factions.rebelalliance.fore : '#cb120e'), fontGlyph: iconsMap['rebel'] || '!' },
+      { id: 'galacticempire', name: 'Galactic Empire', color: (colors.factions && colors.factions.galacticempire ? colors.factions.galacticempire.back : '#204e78'), fontGlyph: iconsMap['empire'] || '@' },
+      { id: 'scumandvillainy', name: 'Scum & Villainy', color: (colors.attributes && colors.attributes.agility ? colors.attributes.agility : '#6abe46'), fontGlyph: iconsMap['scum'] || '#' },
+      { id: 'resistance', name: 'Resistance', color: (colors.factions && colors.factions.resistance ? colors.factions.resistance.fore : '#d87325'), fontGlyph: iconsMap['rebel'] || '!' },
+      { id: 'firstorder', name: 'First Order', color: (colors.factions && colors.factions.firstorder ? colors.factions.firstorder.fore : '#b42828'), fontGlyph: iconsMap['firstorder'] || '+' },
+      { id: 'galacticrepublic', name: 'Galactic Republic', color: (colors.factions && colors.factions.galacticrepublic ? colors.factions.galacticrepublic.back : '#6c160f'), fontGlyph: iconsMap['republic'] || '/' },
+      { id: 'separatistalliance', name: 'Separatist Alliance', color: (colors.factions && colors.factions.separatistalliance ? colors.factions.separatistalliance.fore : '#20308d'), fontGlyph: iconsMap['separatists'] || '.' },
+      { id: 'upgrades', name: 'Generic Upgrades', color: (colors.attributes && colors.attributes.charge ? colors.attributes.charge : '#fdbf10'), fontGlyph: iconsMap['modification'] || 'm' }
     ],
     fonts: {
       icons: iconsMap,

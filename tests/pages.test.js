@@ -13,6 +13,7 @@ describe('GitHub Pages & Data Generator Validation', () => {
       'app.js',
       'data.json',
       'data.js',
+      'colors.json',
       'fonts/xwing-miniatures.ttf',
       'fonts/xwing-miniatures-ships.ttf',
       'fonts/icons-map.json',
@@ -115,5 +116,41 @@ describe('GitHub Pages & Data Generator Validation', () => {
     const uniqueCols = new Set(cols);
     expect(uniqueCols.size).toBe(cols.length);
     expect(cols[cols.length - 1]).toBe('Sep 21');
+  });
+
+  test('Canonical X-Wing colors and component mapping are valid and complete', () => {
+    const colorsDataPath = path.join(repoRoot, 'data', 'colors.json');
+    const colorsDocsPath = path.join(docsDir, 'colors.json');
+    expect(fs.existsSync(colorsDataPath)).toBe(true);
+    expect(fs.existsSync(colorsDocsPath)).toBe(true);
+
+    const colors = JSON.parse(fs.readFileSync(colorsDataPath, 'utf8'));
+    expect(colors.source).toBe('https://xhud.sirjorj.com/xwing.cgi/colors2');
+    expect(colors.attributes.initiative).toBe('#e77e29');
+    expect(colors.attributes.cost).toBe('#41bef0');
+    expect(colors.attributes.attack).toBe('#ed3638');
+    expect(colors.attributes.agility).toBe('#6abe46');
+    expect(colors.attributes.hull).toBe('#f0e531');
+    expect(colors.attributes.shield).toBe('#82d1e1');
+    expect(colors.attributes.charge).toBe('#fdbf10');
+    expect(colors.attributes.force).toBe('#c4a0ca');
+    expect(colors.attributes.energy).toBe('#e71583');
+
+    expect(colors.actions.white).toBe('#ffffff');
+    expect(colors.actions.red).toBe('#ec1f21');
+    expect(colors.actions.purple).toBe('#c4a0ca');
+
+    expect(colors.arcs.attack).toBe('#ed3638');
+    expect(colors.componentMapping).toBeDefined();
+    expect(colors.componentMapping.actionWhite).toBe('#ffffff');
+    expect(colors.componentMapping.actionRed).toBe('#ec1f21');
+    expect(colors.componentMapping.actionPurple).toBe('#c4a0ca');
+    expect(colors.componentMapping.attackArc).toBe('#ed3638');
+
+    // Also check embedded colors in data.json
+    const raw = fs.readFileSync(dataJsonPath, 'utf8');
+    const data = JSON.parse(raw);
+    expect(data.colors).toBeDefined();
+    expect(data.colors.attributes.attack).toBe('#ed3638');
   });
 });
