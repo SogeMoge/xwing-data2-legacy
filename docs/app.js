@@ -6,6 +6,7 @@
   let changeFilter = 'all';
   let typeFilter = 'all';
   let showHistory = false;
+  let showHeaders = localStorage.getItem('xwing_show_headers') === 'true'; // false by default
   let sortField = 'type';
   let sortAsc = true;
 
@@ -15,8 +16,10 @@
   const formatSelect = document.getElementById('formatSelect');
   const changeSelect = document.getElementById('changeSelect');
   const typeSelect = document.getElementById('typeSelect');
+  const toggleHeadersBtn = document.getElementById('toggleHeadersBtn');
   const toggleHistoryBtn = document.getElementById('toggleHistoryBtn');
   const exportBtn = document.getElementById('exportBtn');
+  const dataTable = document.getElementById('dataTable');
   const tableHead = document.getElementById('tableHead');
   const tableBody = document.getElementById('tableBody');
   const rowCountEl = document.getElementById('rowCount');
@@ -276,6 +279,16 @@
     typeFilter = 'all';
   }
 
+  function updateHeadersVisibility() {
+    if (dataTable) {
+      dataTable.classList.toggle('hide-chassis-headers', !showHeaders);
+    }
+    if (toggleHeadersBtn) {
+      toggleHeadersBtn.classList.toggle('btn-toggle-active', showHeaders);
+      toggleHeadersBtn.innerHTML = showHeaders ? '<span>🏷️ Hide Headers</span>' : '<span>🏷️ Show Headers</span>';
+    }
+  }
+
   function setupFilters() {
     searchInput.addEventListener('input', e => {
       searchTerm = e.target.value.toLowerCase().trim();
@@ -303,6 +316,18 @@
       toggleHistoryBtn.innerHTML = showHistory ? '<span>📜 Hide History</span>' : '<span>📜 Show History</span>';
       render();
     });
+
+    if (toggleHeadersBtn) {
+      toggleHeadersBtn.addEventListener('click', () => {
+        showHeaders = !showHeaders;
+        try {
+          localStorage.setItem('xwing_show_headers', showHeaders ? 'true' : 'false');
+        } catch (e) {}
+        updateHeadersVisibility();
+      });
+    }
+
+    updateHeadersVisibility();
 
     exportBtn.addEventListener('click', exportCSV);
 
@@ -405,6 +430,7 @@
 
     renderHeader();
     renderBody(items);
+    updateHeadersVisibility();
   }
 
   function renderHeader() {
