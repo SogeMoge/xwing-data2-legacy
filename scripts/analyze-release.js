@@ -78,6 +78,12 @@ function formatCostVal(cost) {
   return JSON.stringify(cost);
 }
 
+function getNumericCost(cost) {
+  if (typeof cost === 'number') return cost;
+  if (cost && typeof cost.value === 'number') return cost.value;
+  return null;
+}
+
 function analyzeRelease(fromRef, toRef) {
   console.log(`Analyzing changes between ${fromRef} and ${toRef}...`);
 
@@ -144,9 +150,11 @@ function analyzeRelease(fromRef, toRef) {
           const oldCostStr = formatCostVal(oldP.cost);
           const newCostStr = formatCostVal(currP.cost);
           if (oldCostStr !== newCostStr) {
+            const oldNum = getNumericCost(oldP.cost);
+            const newNum = getNumericCost(currP.cost);
             let diff = null;
-            if (typeof oldP.cost === 'number' && typeof currP.cost === 'number') {
-              diff = currP.cost - oldP.cost;
+            if (oldNum !== null && newNum !== null) {
+              diff = newNum - oldNum;
             }
             cardChanges.push({
               type: 'cost',
@@ -297,9 +305,11 @@ function analyzeRelease(fromRef, toRef) {
         const oldCostStr = formatCostVal(oldU.cost);
         const newCostStr = formatCostVal(currU.cost);
         if (oldCostStr !== newCostStr) {
+          const oldNum = getNumericCost(oldU.cost);
+          const newNum = getNumericCost(currU.cost);
           let diff = null;
-          if (typeof oldU.cost === 'number' && typeof currU.cost === 'number') {
-            diff = currU.cost - oldU.cost;
+          if (oldNum !== null && newNum !== null) {
+            diff = newNum - oldNum;
           }
           cardChanges.push({
             type: 'cost',
