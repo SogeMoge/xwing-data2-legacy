@@ -155,9 +155,13 @@
 
   async function init() {
     try {
-      const res = await fetch('data.json');
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      appData = await res.json();
+      if (window.XWING_DATA) {
+        appData = window.XWING_DATA;
+      } else {
+        const res = await fetch('data.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        appData = await res.json();
+      }
       console.log('Loaded X-Wing dataset with font icons:', appData.meta);
 
       setupHeader();
@@ -166,7 +170,7 @@
       render();
     } catch (err) {
       console.error('Failed to load dataset:', err);
-      tableBody.innerHTML = `<tr><td colspan="10" class="empty-state">Failed to load data.json: ${err.message}</td></tr>`;
+      tableBody.innerHTML = `<tr><td colspan="10" class="empty-state">Failed to load data.json: ${err.message}. (If opening via file://, ensure data.js exists or use a local server like 'npm run serve:pages')</td></tr>`;
     }
   }
 

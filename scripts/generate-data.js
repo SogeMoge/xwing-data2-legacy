@@ -370,6 +370,10 @@ function buildData() {
   fs.writeFileSync(dataJsonPath, JSON.stringify(dataset, null, 2), 'utf8');
   console.log(`Generated ${dataJsonPath} (${(fs.statSync(dataJsonPath).size / 1024).toFixed(1)} KB)`);
 
+  const dataJsPath = path.join(docsDir, 'data.js');
+  fs.writeFileSync(dataJsPath, `window.XWING_DATA = ${JSON.stringify(dataset)};\n`, 'utf8');
+  console.log(`Generated ${dataJsPath} (${(fs.statSync(dataJsPath).size / 1024).toFixed(1)} KB)`);
+
   return dataset;
 }
 

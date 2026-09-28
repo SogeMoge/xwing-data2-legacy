@@ -12,6 +12,7 @@ describe('GitHub Pages & Data Generator Validation', () => {
       'style.css',
       'app.js',
       'data.json',
+      'data.js',
       'fonts/xwing-miniatures.ttf',
       'fonts/xwing-miniatures-ships.ttf',
       'fonts/icons-map.json',

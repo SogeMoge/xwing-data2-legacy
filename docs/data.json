@@ -2,11 +2,11 @@
   "meta": {
     "title": "X-Wing 2.0 Legacy Points Reference",
     "version": "3.12.0",
-    "generatedAt": "2026-09-28T15:08:00.534Z",
+    "generatedAt": "2026-09-28T15:19:45.652Z",
     "commit": {
-      "sha": "a2ceb32",
-      "fullSha": "a2ceb3256f8d61a689833fa8a23a5a0b153c1e29",
-      "date": "2026-09-27"
+      "sha": "1cc1d16",
+      "fullSha": "1cc1d167489a17027167857cb0e8838ae0dcadc3",
+      "date": "2026-09-28"
     },
     "repoUrl": "https://github.com/SogeMoge/xwing-data2-legacy",
     "latestTag": "3.12.0",

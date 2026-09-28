@@ -34,7 +34,7 @@ async function main() {
   const dataset = buildData();
 
   // 3. Validate output files
-  const requiredFiles = ['index.html', 'style.css', 'app.js', 'data.json'];
+  const requiredFiles = ['index.html', 'style.css', 'app.js', 'data.json', 'data.js'];
   for (const f of requiredFiles) {
     const p = path.join(docsDir, f);
     if (!fs.existsSync(p)) {
