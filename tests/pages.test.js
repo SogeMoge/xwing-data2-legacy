@@ -169,4 +169,33 @@ describe('GitHub Pages & Data Generator Validation', () => {
     expect(appJsContent).not.toMatch(/const isPilot = item\.kind === ['"]pilot['"] \|\| item\.slots;/);
     expect(appJsContent).toContain('isPilot && item.initiative !== undefined && item.initiative !== null');
   });
+
+  test('Upgrades with faction restrictions are properly tagged and routed to faction tabs', () => {
+    const raw = fs.readFileSync(dataJsonPath, 'utf8');
+    const data = JSON.parse(raw);
+
+    // Verify upgrades have factions array
+    const moldyCrow = data.upgrades.find(u => u.xws === 'moldycrow');
+    expect(moldyCrow).toBeDefined();
+    expect(moldyCrow.factions).toEqual(expect.arrayContaining(['rebelalliance', 'scumandvillainy']));
+
+    const theChild = data.upgrades.find(u => u.xws === 'thechild');
+    expect(theChild).toBeDefined();
+    expect(theChild.factions).toEqual(expect.arrayContaining(['rebelalliance', 'galacticempire', 'scumandvillainy']));
+
+    const bistan = data.upgrades.find(u => u.xws === 'bistan');
+    expect(bistan).toBeDefined();
+    expect(bistan.factions).toEqual(['rebelalliance']);
+
+    const agileGunner = data.upgrades.find(u => u.xws === 'agilegunner');
+    expect(agileGunner).toBeDefined();
+    expect(agileGunner.factions).toEqual([]);
+
+    // Check app.js logic
+    const appJsContent = fs.readFileSync(path.join(docsDir, 'app.js'), 'utf8');
+    expect(appJsContent).toContain('getUpgradeFactions');
+    expect(appJsContent).toContain('appData.upgrades.filter(u => getUpgradeFactions(u).length === 0)');
+    expect(appJsContent).toContain('appData.upgrades.filter(u => getUpgradeFactions(u).includes(currentTab))');
+  });
 });
+

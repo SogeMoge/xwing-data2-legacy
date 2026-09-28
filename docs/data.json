@@ -2,10 +2,10 @@
   "meta": {
     "title": "X-Wing 2.0 Legacy Points Reference",
     "version": "3.12.0",
-    "generatedAt": "2026-09-28T17:13:54.830Z",
+    "generatedAt": "2026-09-28T17:25:36.807Z",
     "commit": {
-      "sha": "5737895",
-      "fullSha": "5737895482cdfcdfd781b20c81488011a60c1009",
+      "sha": "1a5c34d",
+      "fullSha": "1a5c34d13fa8f7b078aeffdd6dbc3513143cd87a",
       "date": "2026-09-28"
     },
     "repoUrl": "https://github.com/SogeMoge/xwing-data2-legacy",
@@ -42125,6 +42125,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42158,6 +42161,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -42203,6 +42209,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42253,6 +42260,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42281,6 +42291,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42325,6 +42336,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42369,6 +42381,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42419,6 +42432,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42462,6 +42478,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -42507,6 +42526,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42551,6 +42573,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42594,6 +42619,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -42650,6 +42678,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42695,6 +42726,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42738,6 +42772,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -42783,6 +42820,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42826,6 +42866,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -42871,6 +42914,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -42914,6 +42960,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -42959,6 +43008,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43002,6 +43054,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -43047,6 +43102,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43089,6 +43147,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -43163,6 +43224,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43197,6 +43261,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43230,6 +43297,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -43274,6 +43344,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -43350,6 +43423,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43388,6 +43464,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43435,6 +43512,9 @@
           }
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43470,6 +43550,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -43495,6 +43576,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -43520,6 +43602,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -43545,6 +43628,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -43570,6 +43654,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -43595,6 +43680,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -43620,6 +43706,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -43645,6 +43732,7 @@
         "Astromech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -43673,6 +43761,7 @@
         "Cannon"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43711,6 +43800,7 @@
         "Cannon"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43749,6 +43839,7 @@
         "Cannon"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43787,6 +43878,7 @@
         "Cannon"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43825,6 +43917,7 @@
         "Cannon"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43864,6 +43957,7 @@
         "Cannon"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43903,6 +43997,7 @@
         "Cannon"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -43951,6 +44046,9 @@
             "X-wing"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -44015,6 +44113,7 @@
         "Cannon"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -44043,6 +44142,7 @@
         "Cargo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44081,6 +44181,7 @@
         "Cargo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44119,6 +44220,7 @@
         "Cargo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44157,6 +44259,7 @@
         "Cargo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44195,6 +44298,7 @@
         "Command"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44233,6 +44337,7 @@
         "Command"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44271,6 +44376,7 @@
         "Command"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44309,6 +44415,7 @@
         "Command"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44348,6 +44455,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44387,6 +44495,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44426,6 +44535,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44465,6 +44575,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44504,6 +44615,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44543,6 +44655,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44588,6 +44701,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44633,6 +44747,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44682,6 +44797,9 @@
             "eta2actis"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": false,
@@ -44733,6 +44851,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44771,6 +44892,7 @@
         "Command"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44809,6 +44931,7 @@
         "Command"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44847,6 +44970,7 @@
         "Command"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44885,6 +45009,7 @@
         "Command"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -44934,6 +45059,9 @@
         {
           "non-limited": false
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": false,
@@ -44985,6 +45113,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -45034,6 +45165,9 @@
             "Huge"
           ]
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": false,
@@ -45086,6 +45220,10 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance",
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -45121,6 +45259,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -45166,6 +45305,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -45216,6 +45356,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -45251,6 +45394,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -45295,6 +45439,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45339,6 +45484,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -45383,6 +45529,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45427,6 +45574,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45471,6 +45619,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45515,6 +45664,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -45559,6 +45709,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45612,6 +45763,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -45666,6 +45818,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45710,6 +45863,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45754,6 +45908,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -45798,6 +45953,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45865,6 +46021,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45932,6 +46089,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -45999,6 +46157,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46066,6 +46225,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46133,6 +46293,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46200,6 +46361,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46270,6 +46432,7 @@
           "standardized": true
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46322,6 +46485,9 @@
           "standardized": true
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46369,6 +46535,7 @@
           "standardized": true
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46417,6 +46584,7 @@
           "standardized": true
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46462,6 +46630,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46497,6 +46666,7 @@
         "Configuration"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -46522,6 +46692,7 @@
         "Configuration"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -46556,6 +46727,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46589,6 +46763,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -46626,6 +46803,9 @@
             "Darth Vader"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -46671,6 +46851,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46704,6 +46887,9 @@
             "galacticempire"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -46749,6 +46935,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46792,6 +46981,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -46837,6 +47029,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46870,6 +47065,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -46915,6 +47113,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -46948,6 +47149,9 @@
             "firstorder"
           ]
         }
+      ],
+      "factions": [
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -46983,6 +47187,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47017,6 +47224,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47050,6 +47260,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -47090,6 +47303,9 @@
           }
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47123,6 +47339,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -47168,6 +47387,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47202,6 +47424,9 @@
             "galacticempire"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -47246,6 +47471,9 @@
             "galacticempire"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -47292,6 +47520,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47330,6 +47561,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47374,6 +47606,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47412,6 +47647,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47456,6 +47692,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47494,6 +47733,9 @@
             "type": "Lock"
           }
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -47539,6 +47781,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47573,6 +47818,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47606,6 +47854,9 @@
             "galacticempire"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -47645,6 +47896,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47690,6 +47942,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47733,6 +47988,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -47778,6 +48036,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47811,6 +48072,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -47846,6 +48110,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47879,6 +48146,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -47914,6 +48184,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -47947,6 +48220,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -47982,6 +48258,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48016,6 +48295,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48049,6 +48331,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -48087,6 +48372,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48120,6 +48408,9 @@
             "galacticempire"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -48170,6 +48461,9 @@
           }
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48214,6 +48508,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48242,6 +48539,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48280,6 +48578,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48324,6 +48623,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48357,6 +48659,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -48402,6 +48707,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48436,6 +48744,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48469,6 +48780,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -48509,6 +48823,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48553,6 +48868,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48587,6 +48905,9 @@
             "firstorder"
           ]
         }
+      ],
+      "factions": [
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -48633,6 +48954,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48676,6 +48998,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -48721,6 +49046,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48754,6 +49082,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -48789,6 +49120,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48822,6 +49156,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -48857,6 +49194,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -48890,6 +49230,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -48925,6 +49268,10 @@
             "separatistalliance"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic",
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -48970,6 +49317,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49004,6 +49354,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49037,6 +49390,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -49082,6 +49438,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49125,6 +49484,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -49170,6 +49532,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49213,6 +49578,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -49259,6 +49627,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49292,6 +49663,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -49337,6 +49711,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49370,6 +49747,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -49428,6 +49808,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49484,6 +49867,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -49548,6 +49934,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49599,6 +49988,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -49642,6 +50032,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -49700,6 +50093,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49756,6 +50152,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -49825,6 +50224,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49892,6 +50294,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -49954,6 +50359,9 @@
             "type": "Rotate Arc"
           }
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -50027,6 +50435,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50088,6 +50499,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50122,6 +50534,10 @@
             "separatistalliance"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy",
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -50158,6 +50574,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50191,6 +50611,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -50227,6 +50650,11 @@
             "firstorder"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy",
+        "galacticempire",
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -50272,6 +50700,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50307,6 +50738,11 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire",
+        "rebelalliance",
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -50352,6 +50788,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50395,6 +50834,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -50446,6 +50888,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50496,6 +50941,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50541,6 +50989,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50585,6 +51037,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50618,6 +51073,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -50654,6 +51112,10 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic",
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50689,6 +51151,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50722,6 +51188,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -50767,6 +51236,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50810,6 +51282,9 @@
             "separatistalliance"
           ]
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -50856,6 +51331,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50901,6 +51380,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -50934,6 +51417,9 @@
             "galacticempire"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -50969,6 +51455,10 @@
             "separatistalliance"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy",
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -51006,6 +51496,9 @@
             "Gar Saxon"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -51051,6 +51544,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51095,6 +51591,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51130,6 +51629,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51164,6 +51667,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -51206,6 +51712,9 @@
             "Huge"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -51259,6 +51768,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51310,6 +51822,9 @@
             "Huge"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -51363,6 +51878,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51415,6 +51933,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51450,6 +51971,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -51476,6 +51998,7 @@
         "Gunner"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -51501,6 +52024,7 @@
         "Crew"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -51536,6 +52060,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -51565,6 +52093,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51603,6 +52132,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51641,6 +52171,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51679,6 +52210,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51717,6 +52249,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51755,6 +52288,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51798,6 +52332,9 @@
             "separatistalliance"
           ]
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -51845,6 +52382,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51883,6 +52421,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51946,6 +52485,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -51984,6 +52524,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52022,6 +52563,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52060,6 +52602,7 @@
         "Force Power"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52098,6 +52641,7 @@
         "Force Power"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52136,6 +52680,7 @@
         "Force Power"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52214,6 +52759,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52252,6 +52798,7 @@
         "Force Power"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52296,6 +52843,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52334,6 +52882,7 @@
         "Force Power"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52387,6 +52936,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52425,6 +52977,7 @@
         "Force Power"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52478,6 +53031,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52527,6 +53081,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52599,6 +53154,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52643,6 +53199,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52681,6 +53238,7 @@
         "Force Power"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52725,6 +53283,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52760,6 +53319,7 @@
         "Force Power"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -52798,6 +53358,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -52826,6 +53387,7 @@
         "Gunner"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52873,6 +53435,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52916,6 +53481,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -52961,6 +53529,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -52994,6 +53565,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -53029,6 +53603,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53063,6 +53640,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53096,6 +53676,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -53141,6 +53724,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53175,6 +53761,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53203,6 +53792,7 @@
         "Gunner"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53247,6 +53837,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53275,6 +53868,7 @@
         "Gunner"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53324,6 +53918,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53368,6 +53965,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53418,6 +54016,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53462,6 +54061,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53495,6 +54097,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -53530,6 +54135,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53563,6 +54171,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -53608,6 +54219,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53651,6 +54265,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -53708,6 +54325,9 @@
             "galacticrepublic"
           ]
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -53770,6 +54390,7 @@
         "Gunner"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53814,6 +54435,10 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "separatistalliance",
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -53867,6 +54492,7 @@
         "Gunner"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -53910,6 +54536,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -53968,6 +54597,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54001,6 +54633,9 @@
             "firstorder"
           ]
         }
+      ],
+      "factions": [
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -54052,6 +54687,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54085,6 +54723,9 @@
             "galacticempire"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -54131,6 +54772,10 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic",
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54172,6 +54817,10 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire",
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54210,6 +54859,7 @@
         "Hardpoint"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54248,6 +54898,7 @@
         "Hardpoint"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54286,6 +54937,7 @@
         "Hardpoint"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54324,6 +54976,7 @@
         "Hardpoint"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54362,6 +55015,7 @@
         "Hardpoint"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54411,6 +55065,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54450,6 +55105,7 @@
         "Cargo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54500,6 +55156,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54550,6 +55207,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54594,6 +55252,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -54639,6 +55298,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54677,6 +55337,7 @@
         "Illicit"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54715,6 +55376,7 @@
         "Illicit"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54753,6 +55415,7 @@
         "Illicit"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54802,6 +55465,7 @@
         "Illicit"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54847,6 +55511,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54891,6 +55556,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -54958,6 +55624,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -55002,6 +55669,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -55046,6 +55714,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -55084,6 +55753,7 @@
         "Illicit"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55154,6 +55824,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55192,6 +55866,7 @@
         "Illicit"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55236,6 +55911,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55281,6 +55957,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55325,6 +56002,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -55357,6 +56035,7 @@
         "Illicit"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -55390,6 +56069,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55437,6 +56117,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55475,6 +56156,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55513,6 +56195,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55551,6 +56234,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55589,6 +56273,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55639,6 +56324,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55683,6 +56371,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55722,6 +56413,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55760,6 +56452,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55799,6 +56492,7 @@
         "Device"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55838,6 +56532,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55876,6 +56571,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -55911,6 +56607,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -55943,6 +56640,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -55968,6 +56666,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -55993,6 +56692,7 @@
         "Missile"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -56028,6 +56728,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56073,6 +56774,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56126,6 +56828,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56164,6 +56867,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56214,6 +56918,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56258,6 +56963,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56296,6 +57002,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56340,6 +57047,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56378,6 +57086,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56422,6 +57131,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56467,6 +57177,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56511,6 +57222,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56561,6 +57273,9 @@
           }
         }
       ],
+      "factions": [
+        "galacticrepublic"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56605,6 +57320,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56643,6 +57359,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56694,6 +57411,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56732,6 +57450,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56779,6 +57498,7 @@
           "standardized": true
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56832,6 +57552,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56890,6 +57611,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56934,6 +57656,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -56978,6 +57701,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57028,6 +57752,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57078,6 +57803,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57113,6 +57841,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -57138,6 +57867,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -57163,6 +57893,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -57192,6 +57923,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -57217,6 +57949,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -57266,6 +57999,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -57291,6 +58027,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -57316,6 +58053,7 @@
         "Modification"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -57344,6 +58082,7 @@
         "Sensor"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57413,6 +58152,7 @@
         "Sensor"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57451,6 +58191,7 @@
         "Sensor"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57495,6 +58236,7 @@
         "Sensor"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57544,6 +58286,7 @@
         "Sensor"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57626,6 +58369,7 @@
         "Sensor"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -57651,6 +58395,7 @@
         "Sensor"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -57687,6 +58432,9 @@
         {
           "solitary": true
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -57735,6 +58483,9 @@
           "solitary": true
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57781,6 +58532,9 @@
         {
           "solitary": true
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -57829,6 +58583,9 @@
           "solitary": true
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57875,6 +58632,9 @@
         {
           "solitary": true
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -57946,6 +58706,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -57984,6 +58745,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58059,6 +58821,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58104,6 +58867,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58149,6 +58913,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58199,6 +58964,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58242,6 +59008,9 @@
             "firstorder"
           ]
         }
+      ],
+      "factions": [
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -58287,6 +59056,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58331,6 +59103,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58369,6 +59144,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58414,6 +59190,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58452,6 +59229,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58490,6 +59268,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58537,6 +59316,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58575,6 +59355,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58618,6 +59399,9 @@
             "galacticempire"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -58663,6 +59447,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58706,6 +59491,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -58754,6 +59542,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58801,6 +59590,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58839,6 +59629,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -58882,6 +59673,9 @@
             "separatistalliance"
           ]
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -58929,6 +59723,9 @@
         {
           "non-limited": true
         }
+      ],
+      "factions": [
+        "galacticrepublic"
       ],
       "keywords": [],
       "standard": true,
@@ -58983,6 +59780,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59027,6 +59825,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59071,6 +59870,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59114,6 +59914,9 @@
             "firstorder"
           ]
         }
+      ],
+      "factions": [
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -59160,6 +59963,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59209,6 +60013,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59253,6 +60058,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59298,6 +60104,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59342,6 +60149,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59385,6 +60193,9 @@
             "scumandvillainy"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -59430,6 +60241,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59473,6 +60287,9 @@
             "rebelalliance"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -59518,6 +60335,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59562,6 +60380,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59611,6 +60430,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59655,6 +60475,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59699,6 +60520,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59737,6 +60559,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -59772,6 +60595,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -59797,6 +60621,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -59822,6 +60647,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -59847,6 +60673,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -59872,6 +60699,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -59897,6 +60725,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -59922,6 +60751,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -59947,6 +60777,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -59984,6 +60815,9 @@
           "non-limited": true
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -60016,6 +60850,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -60048,6 +60883,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -60091,6 +60927,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": true,
@@ -60120,6 +60959,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60145,6 +60985,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60170,6 +61011,7 @@
         "Talent"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60198,6 +61040,7 @@
         "Team"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60236,6 +61079,7 @@
         "Team"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60274,6 +61118,7 @@
         "Team"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60312,6 +61157,7 @@
         "Team"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60350,6 +61196,7 @@
         "Team"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60388,6 +61235,7 @@
         "Team"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60426,6 +61274,7 @@
         "Team"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60464,6 +61313,7 @@
         "Team"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60509,6 +61359,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60553,6 +61406,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -60591,6 +61447,7 @@
         "Tech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -60634,6 +61491,9 @@
             "resistance"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -60683,6 +61543,9 @@
             "Large"
           ]
         }
+      ],
+      "factions": [
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -60737,6 +61600,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -60781,6 +61645,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -60842,6 +61707,7 @@
         "Tech"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -60890,6 +61756,9 @@
             "type": "Lock"
           }
         }
+      ],
+      "factions": [
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -60941,6 +61810,9 @@
             "firstorder"
           ]
         }
+      ],
+      "factions": [
+        "firstorder"
       ],
       "keywords": [],
       "standard": true,
@@ -61009,6 +61881,7 @@
           }
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61082,6 +61955,9 @@
           ]
         }
       ],
+      "factions": [
+        "firstorder"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61127,6 +62003,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61175,6 +62052,9 @@
             "firesprayclasspatrolcraft"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -61225,6 +62105,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61273,6 +62156,9 @@
             "vt49decimator"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -61323,6 +62209,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61371,6 +62260,9 @@
             "scurrgh6bomber"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -61421,6 +62313,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61469,6 +62364,9 @@
             "aggressorassaultfighter"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -61519,6 +62417,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61567,6 +62468,9 @@
             "firesprayclasspatrolcraft"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -61617,6 +62521,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61665,6 +62572,9 @@
             "g1astarfighter"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": true,
@@ -61716,6 +62626,10 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance",
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61765,6 +62679,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61813,6 +62730,10 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance",
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61852,6 +62773,9 @@
             "sheathipedeclassshuttle"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -61902,6 +62826,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -61950,6 +62877,9 @@
             "lambdaclasst4ashuttle"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": true,
@@ -62000,6 +62930,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -62049,6 +62982,9 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -62093,6 +63029,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -62141,6 +63078,9 @@
             "scavengedyt1300"
           ]
         }
+      ],
+      "factions": [
+        "resistance"
       ],
       "keywords": [],
       "standard": true,
@@ -62191,6 +63131,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -62239,6 +63182,9 @@
             "sithinfiltrator"
           ]
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": true,
@@ -62289,6 +63235,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -62337,6 +63286,9 @@
             "gozanticlasscruiser"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": false,
@@ -62387,6 +63339,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -62435,6 +63390,9 @@
             "croccruiser"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": false,
@@ -62485,6 +63443,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -62533,6 +63494,9 @@
             "cr90corelliancorvette"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": false,
@@ -62583,6 +63547,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -62631,6 +63598,9 @@
             "croccruiser"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": false,
@@ -62681,6 +63651,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -62729,6 +63702,9 @@
             "cr90corelliancorvette"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": false,
@@ -62779,6 +63755,9 @@
           ]
         }
       ],
+      "factions": [
+        "resistance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -62827,6 +63806,9 @@
             "cr90corelliancorvette"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": false,
@@ -62877,6 +63859,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -62925,6 +63910,9 @@
             "croccruiser"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": false,
@@ -62975,6 +63963,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -63023,6 +64014,9 @@
             "gozanticlasscruiser"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": false,
@@ -63073,6 +64067,9 @@
           ]
         }
       ],
+      "factions": [
+        "galacticempire"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -63121,6 +64118,9 @@
             "cr90corelliancorvette"
           ]
         }
+      ],
+      "factions": [
+        "rebelalliance"
       ],
       "keywords": [],
       "standard": false,
@@ -63171,6 +64171,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -63219,6 +64222,9 @@
             "gozanticlasscruiser"
           ]
         }
+      ],
+      "factions": [
+        "galacticempire"
       ],
       "keywords": [],
       "standard": false,
@@ -63270,6 +64276,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63309,6 +64319,9 @@
           ]
         }
       ],
+      "factions": [
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63347,6 +64360,9 @@
             "tridentclassassaultship"
           ]
         }
+      ],
+      "factions": [
+        "scumandvillainy"
       ],
       "keywords": [],
       "standard": false,
@@ -63392,6 +64408,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -63441,6 +64458,9 @@
           ]
         }
       ],
+      "factions": [
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -63489,6 +64509,9 @@
             "tridentclassassaultship"
           ]
         }
+      ],
+      "factions": [
+        "separatistalliance"
       ],
       "keywords": [],
       "standard": false,
@@ -63541,6 +64564,10 @@
           ]
         }
       ],
+      "factions": [
+        "scumandvillainy",
+        "rebelalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63592,6 +64619,10 @@
           ]
         }
       ],
+      "factions": [
+        "galacticrepublic",
+        "separatistalliance"
+      ],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63636,6 +64667,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63680,6 +64712,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63718,6 +64751,7 @@
         "Torpedo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63756,6 +64790,7 @@
         "Torpedo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63794,6 +64829,7 @@
         "Torpedo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63832,6 +64868,7 @@
         "Torpedo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63879,6 +64916,7 @@
         "Torpedo"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63923,6 +64961,7 @@
           ]
         }
       ],
+      "factions": [],
       "keywords": [],
       "standard": false,
       "wildspace": false,
@@ -63961,6 +65000,7 @@
         "Turret"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,
@@ -63999,6 +65039,7 @@
         "Turret"
       ],
       "restrictions": [],
+      "factions": [],
       "keywords": [],
       "standard": true,
       "wildspace": true,

@@ -218,6 +218,21 @@ function buildData() {
     });
   });
 
+function getUpgradeFactions(upgrade) {
+  if (!upgrade || !upgrade.restrictions || !Array.isArray(upgrade.restrictions)) {
+    return [];
+  }
+  const factions = new Set();
+  upgrade.restrictions.forEach(r => {
+    if (r.factions && Array.isArray(r.factions)) {
+      r.factions.forEach(f => {
+        if (typeof f === 'string') factions.add(f.toLowerCase().trim());
+      });
+    }
+  });
+  return Array.from(factions);
+}
+
   // Load Upgrades
   const upgrades = [];
   manifest.upgrades.forEach(upFile => {
@@ -261,6 +276,7 @@ function buildData() {
         slotFontGlyph: slotGlyph,
         slots: side.slots || [slotType],
         restrictions: u.restrictions || [],
+        factions: getUpgradeFactions(u),
         keywords: u.keywords || [],
         standard: Boolean(u.standard),
         wildspace: Boolean(u.wildspace),

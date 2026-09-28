@@ -259,6 +259,31 @@
     }
   }
 
+  function isPilotCard(item) {
+    if (!item) return false;
+    return item.kind === 'pilot' || (item.key && item.key.startsWith('pilot:')) || (item.initiative !== undefined && item.initiative !== null);
+  }
+
+  function getUpgradeFactions(item) {
+    if (item && Array.isArray(item.factions)) {
+      return item.factions;
+    }
+    if (!item || !item.restrictions || !Array.isArray(item.restrictions)) {
+      return [];
+    }
+    const factions = new Set();
+    item.restrictions.forEach(r => {
+      if (r.factions && Array.isArray(r.factions)) {
+        r.factions.forEach(f => {
+          if (typeof f === 'string') {
+            factions.add(f.toLowerCase().trim());
+          }
+        });
+      }
+    });
+    return Array.from(factions);
+  }
+
   function setupTabs() {
     tabsNav.innerHTML = '';
 
@@ -276,10 +301,10 @@
     tabsNav.appendChild(changesTab);
 
     // Generic Upgrades Tab
-    const upgradesCount = appData.upgrades.length;
+    const genericUpgradesCount = appData.upgrades.filter(u => getUpgradeFactions(u).length === 0).length;
     const upTab = document.createElement('button');
     upTab.className = `tab-btn tab-upgrades ${currentTab === 'upgrades' ? 'active' : ''}`;
-    upTab.innerHTML = `<span class="tab-faction-glyph">m</span><span>Generic Upgrades</span><span class="tab-count">${upgradesCount}</span>`;
+    upTab.innerHTML = `<span class="tab-faction-glyph">m</span><span>Generic Upgrades</span><span class="tab-count">${genericUpgradesCount}</span>`;
     upTab.addEventListener('click', () => {
       currentTab = 'upgrades';
       updateActiveTab();
@@ -301,9 +326,11 @@
 
     factionTabs.forEach(f => {
       const pCount = appData.pilots.filter(p => p.faction === f.id).length;
+      const uCount = appData.upgrades.filter(u => getUpgradeFactions(u).includes(f.id)).length;
+      const totalCount = pCount + uCount;
       const btn = document.createElement('button');
       btn.className = `tab-btn ${f.cls} ${currentTab === f.id ? 'active' : ''}`;
-      btn.innerHTML = `<span class="tab-faction-glyph">${f.glyph}</span><span>${f.name}</span><span class="tab-count">${pCount}</span>`;
+      btn.innerHTML = `<span class="tab-faction-glyph">${f.glyph}</span><span>${f.name}</span><span class="tab-count" title="${pCount} pilots, ${uCount} upgrades">${totalCount}</span>`;
       btn.addEventListener('click', () => {
         currentTab = f.id;
         updateActiveTab();
@@ -329,22 +356,56 @@
 
   function populateTypeFilter() {
     typeSelect.innerHTML = '<option value="all">All Chassis / Types</option>';
-    let types = new Set();
 
     if (currentTab === 'changes') {
+      const types = new Set();
       appData.summaryChanges.forEach(c => types.add(c.type));
+      Array.from(types).sort().forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        typeSelect.appendChild(opt);
+      });
     } else if (currentTab === 'upgrades') {
-      appData.upgrades.forEach(u => types.add(u.type));
+      const types = new Set();
+      appData.upgrades.filter(u => getUpgradeFactions(u).length === 0).forEach(u => types.add(u.type));
+      Array.from(types).sort().forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        typeSelect.appendChild(opt);
+      });
     } else {
-      appData.pilots.filter(p => p.faction === currentTab).forEach(p => types.add(p.shipName));
+      const chassisTypes = new Set();
+      const slotTypes = new Set();
+      appData.pilots.filter(p => p.faction === currentTab).forEach(p => chassisTypes.add(p.shipName));
+      appData.upgrades.filter(u => getUpgradeFactions(u).includes(currentTab)).forEach(u => slotTypes.add(u.type));
+
+      if (chassisTypes.size > 0) {
+        const groupEl = document.createElement('optgroup');
+        groupEl.label = 'Ships / Chassis';
+        Array.from(chassisTypes).sort().forEach(t => {
+          const opt = document.createElement('option');
+          opt.value = t;
+          opt.textContent = t;
+          groupEl.appendChild(opt);
+        });
+        typeSelect.appendChild(groupEl);
+      }
+
+      if (slotTypes.size > 0) {
+        const groupEl = document.createElement('optgroup');
+        groupEl.label = 'Upgrade Slots';
+        Array.from(slotTypes).sort().forEach(t => {
+          const opt = document.createElement('option');
+          opt.value = t;
+          opt.textContent = t;
+          groupEl.appendChild(opt);
+        });
+        typeSelect.appendChild(groupEl);
+      }
     }
 
-    Array.from(types).sort().forEach(t => {
-      const opt = document.createElement('option');
-      opt.value = t;
-      opt.textContent = t;
-      typeSelect.appendChild(opt);
-    });
     typeFilter = 'all';
   }
 
@@ -419,18 +480,18 @@
     if (currentTab === 'changes') {
       items = appData.summaryChanges;
     } else if (currentTab === 'upgrades') {
-      items = appData.upgrades;
+      items = appData.upgrades.filter(u => getUpgradeFactions(u).length === 0);
     } else {
-      items = appData.pilots.filter(p => p.faction === currentTab);
+      const factionPilots = appData.pilots.filter(p => p.faction === currentTab);
+      const factionUpgrades = appData.upgrades.filter(u => getUpgradeFactions(u).includes(currentTab));
+      items = [...factionPilots, ...factionUpgrades];
     }
 
     return items.filter(item => {
       if (formatFilter !== 'all') {
-        if (item.kind === 'pilot' || item.slots) {
-          if (formatFilter === 'standard' && !item.standard) return false;
-          if (formatFilter === 'wildspace' && !item.wildspace) return false;
-          if (formatFilter === 'epic' && !item.epic) return false;
-        }
+        if (formatFilter === 'standard' && !item.standard) return false;
+        if (formatFilter === 'wildspace' && !item.wildspace) return false;
+        if (formatFilter === 'epic' && !item.epic) return false;
       }
 
       if (changeFilter !== 'all') {
@@ -518,7 +579,7 @@
     } else {
       cols = [
         { id: 'format', label: 'Format', sortable: false },
-        { id: 'type', label: currentTab === 'upgrades' ? 'Slot' : 'Chassis', sortable: true },
+        { id: 'type', label: currentTab === 'upgrades' ? 'Slot' : (currentTab === 'changes' ? 'Type / Chassis' : 'Chassis / Slot'), sortable: true },
         { id: 'name', label: 'Name', sortable: true },
         { id: 'slots', label: 'Upgrade Bar', sortable: false },
         { id: 'restrictions', label: 'Restrictions', sortable: false },
@@ -775,13 +836,27 @@
       return;
     }
 
-    // Faction tabs: group pilots by chassis
-    const grouped = groupPilotsByChassis(items);
+    // Faction tabs: pilots grouped by chassis, followed by faction-restricted upgrades grouped by slot
+    const pilots = items.filter(isPilotCard);
+    const upgrades = items.filter(i => !isPilotCard(i));
+
     let html = '';
-    for (const group of grouped) {
-      html += renderChassisHeaderRow(group.ship, group.items.length);
-      html += group.items.map(item => renderCardRow(item)).join('');
+    if (pilots.length > 0) {
+      const groupedPilots = groupPilotsByChassis(pilots);
+      for (const group of groupedPilots) {
+        html += renderChassisHeaderRow(group.ship, group.items.length);
+        html += group.items.map(item => renderCardRow(item)).join('');
+      }
     }
+
+    if (upgrades.length > 0) {
+      const groupedUpgrades = groupUpgradesBySlot(upgrades);
+      for (const group of groupedUpgrades) {
+        html += renderSlotHeaderRow(group.slot, group.items.length);
+        html += group.items.map(item => renderCardRow(item)).join('');
+      }
+    }
+
     tableBody.innerHTML = html;
     attachRowEvents();
   }
@@ -880,7 +955,7 @@
   }
 
   function renderCardRow(item) {
-    const isPilot = item.kind === 'pilot' || (item.key && item.key.startsWith('pilot:')) || (item.initiative !== undefined && item.initiative !== null);
+    const isPilot = isPilotCard(item);
     const hasChanges = item.recentChanges && item.recentChanges.length > 0;
     const hasCostChange = hasChanges && item.recentChanges.some(c => c.type === 'cost');
     const isNew = hasChanges && item.recentChanges.some(c => c.type === 'added');
@@ -1168,7 +1243,7 @@
     const drawerTitle = document.getElementById('drawerTitle');
     const drawerContent = document.getElementById('drawerContent');
 
-    const isPilot = item.kind === 'pilot' || (item.key && item.key.startsWith('pilot:')) || Boolean(item.shipXws);
+    const isPilot = isPilotCard(item);
     const ship = isPilot && appData.ships ? appData.ships[item.shipXws] : null;
 
     let titleGlyph = '';
@@ -1240,12 +1315,29 @@
       `;
     }
 
+    let restrictionsHtml = '';
+    if (item.restrictions && item.restrictions.length > 0) {
+      const restText = item.restrictions.map(r => {
+        if (r.factions) return r.factions.join(', ');
+        if (r.sizes) return r.sizes.join(', ') + ' ship';
+        if (r.ships) return r.ships.join(', ');
+        return JSON.stringify(r);
+      }).join('; ');
+      restrictionsHtml = `
+        <div class="detail-section">
+          <div class="detail-section-title">Restrictions</div>
+          <div style="font-size: 0.9rem; color: var(--text-primary);">${restText}</div>
+        </div>
+      `;
+    }
+
     drawerContent.innerHTML = `
       ${imgHtml}
       ${statsActionsHtml}
       ${abilityHtml}
       ${shipAbilityHtml}
       ${dialHtml}
+      ${restrictionsHtml}
       ${changesSectionHtml}
       ${historySectionHtml}
     `;
@@ -1270,7 +1362,7 @@
     }
 
     const rows = items.map(item => {
-      const isPilot = item.kind === 'pilot' || (item.key && item.key.startsWith('pilot:')) || Boolean(item.shipXws);
+      const isPilot = isPilotCard(item);
       const type = item.shipName || item.type || '';
       const format = item.standard ? 'Standard' : (item.wildspace ? 'Wild Space' : 'Epic');
       const slots = isPilot ? (item.slots || []).join(', ') : (item.slots ? item.slots.join(', ') : '');
