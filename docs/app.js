@@ -880,7 +880,7 @@
   }
 
   function renderCardRow(item) {
-    const isPilot = item.kind === 'pilot' || item.slots;
+    const isPilot = item.kind === 'pilot' || (item.key && item.key.startsWith('pilot:')) || (item.initiative !== undefined && item.initiative !== null);
     const hasChanges = item.recentChanges && item.recentChanges.length > 0;
     const hasCostChange = hasChanges && item.recentChanges.some(c => c.type === 'cost');
     const isNew = hasChanges && item.recentChanges.some(c => c.type === 'added');
@@ -926,7 +926,7 @@
     }
 
     // Upgrade Bar / Slots rendered with font glyphs
-    const slotBarHtml = isPilot ? renderSlotBar(item.slots) : (item.slots ? renderSlotBar(item.slots) : '');
+    const slotBarHtml = isPilot ? renderSlotBar(item.slots) : (item.slots && item.slots.length > 0 ? renderSlotBar(item.slots) : '<span class="text-dim">-</span>');
 
     // Restrictions
     let restText = '';
@@ -958,7 +958,7 @@
       <td>
         <div class="card-name-container">
           <span class="card-title">
-            ${isPilot ? `<span class="pilot-init-badge init-${item.initiative}" title="Initiative ${item.initiative}">${item.initiative}</span>` : ''}
+            ${isPilot && item.initiative !== undefined && item.initiative !== null ? `<span class="pilot-init-badge init-${item.initiative}" title="Initiative ${item.initiative}">${item.initiative}</span>` : ''}
             ${bullets} ${item.name} ${extraTag}
           </span>
           ${item.caption ? `<span class="card-caption">${item.caption}</span>` : ''}
@@ -1168,7 +1168,7 @@
     const drawerTitle = document.getElementById('drawerTitle');
     const drawerContent = document.getElementById('drawerContent');
 
-    const isPilot = item.kind === 'pilot' || item.slots;
+    const isPilot = item.kind === 'pilot' || (item.key && item.key.startsWith('pilot:')) || Boolean(item.shipXws);
     const ship = isPilot && appData.ships ? appData.ships[item.shipXws] : null;
 
     let titleGlyph = '';
@@ -1270,7 +1270,7 @@
     }
 
     const rows = items.map(item => {
-      const isPilot = item.kind === 'pilot' || item.slots;
+      const isPilot = item.kind === 'pilot' || (item.key && item.key.startsWith('pilot:')) || Boolean(item.shipXws);
       const type = item.shipName || item.type || '';
       const format = item.standard ? 'Standard' : (item.wildspace ? 'Wild Space' : 'Epic');
       const slots = isPilot ? (item.slots || []).join(', ') : (item.slots ? item.slots.join(', ') : '');

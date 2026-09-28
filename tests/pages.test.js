@@ -163,4 +163,10 @@ describe('GitHub Pages & Data Generator Validation', () => {
     expect(appJsContent).toContain("'astromech':");
     expect(appJsContent).toContain('maneuver-template-chip');
   });
+
+  test('Upgrades do not display initiative badges in UI rendering logic', () => {
+    const appJsContent = fs.readFileSync(path.join(docsDir, 'app.js'), 'utf8');
+    expect(appJsContent).not.toMatch(/const isPilot = item\.kind === ['"]pilot['"] \|\| item\.slots;/);
+    expect(appJsContent).toContain('isPilot && item.initiative !== undefined && item.initiative !== null');
+  });
 });
