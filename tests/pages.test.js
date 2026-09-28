@@ -153,4 +153,14 @@ describe('GitHub Pages & Data Generator Validation', () => {
     expect(data.colors).toBeDefined();
     expect(data.colors.attributes.attack).toBe('#ed3638');
   });
+
+  test('Game text elements, slots, and template maneuvers are properly mapped to font glyphs', () => {
+    const appJsContent = fs.readFileSync(path.join(docsDir, 'app.js'), 'utf8');
+    expect(appJsContent).toContain("'configuration':");
+    expect(appJsContent).toContain("'turn left':");
+    expect(appJsContent).toContain("'turn right':");
+    expect(appJsContent).toContain("'torpedo':");
+    expect(appJsContent).toContain("'astromech':");
+    expect(appJsContent).toContain('maneuver-template-chip');
+  });
 });

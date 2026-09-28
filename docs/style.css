@@ -979,6 +979,34 @@ body {
 .symbol-arc { color: var(--xwing-attack) !important; }
 .symbol-action { color: var(--xwing-neutral) !important; }
 .symbol-maneuver { color: #cbd5e1; }
+.symbol-slot { color: var(--xwing-charge); font-size: 1.1em; }
+.symbol-base { color: #94a3b8; }
+
+.maneuver-template-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.05rem 0.35rem;
+  border-radius: 4px;
+  vertical-align: -0.15em;
+  line-height: 1;
+  font-family: var(--font-mono);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.maneuver-template-chip .maneuver-speed {
+  font-weight: 800;
+  font-size: 0.88em;
+  color: #ffffff;
+}
+
+.maneuver-template-chip .game-symbol-glyph {
+  font-size: 1.15em;
+  padding: 0;
+  color: #cbd5e1;
+}
 
 /* History Timeline Table */
 .history-table {

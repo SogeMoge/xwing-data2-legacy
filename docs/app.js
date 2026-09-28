@@ -105,11 +105,55 @@
     'bank right': { glyph: '9', cls: 'symbol-maneuver', name: 'Bank Right' },
     'straight': { glyph: '8', cls: 'symbol-maneuver', name: 'Straight' },
     'koiogran turn': { glyph: '2', cls: 'symbol-maneuver', name: 'Koiogran Turn' },
+    'k-turn': { glyph: '2', cls: 'symbol-maneuver', name: 'Koiogran Turn' },
     'segnors loop left': { glyph: '1', cls: 'symbol-maneuver', name: "Segnor's Loop Left" },
+    "segnor's loop left": { glyph: '1', cls: 'symbol-maneuver', name: "Segnor's Loop Left" },
+    's-loop left': { glyph: '1', cls: 'symbol-maneuver', name: "Segnor's Loop Left" },
     'segnors loop right': { glyph: '3', cls: 'symbol-maneuver', name: "Segnor's Loop Right" },
+    "segnor's loop right": { glyph: '3', cls: 'symbol-maneuver', name: "Segnor's Loop Right" },
+    's-loop right': { glyph: '3', cls: 'symbol-maneuver', name: "Segnor's Loop Right" },
     'tallon roll left': { glyph: ':', cls: 'symbol-maneuver', name: 'Tallon Roll Left' },
+    't-roll left': { glyph: ':', cls: 'symbol-maneuver', name: 'Tallon Roll Left' },
     'tallon roll right': { glyph: ';', cls: 'symbol-maneuver', name: 'Tallon Roll Right' },
-    'stationary': { glyph: '5', cls: 'symbol-maneuver', name: 'Stationary' }
+    't-roll right': { glyph: ';', cls: 'symbol-maneuver', name: 'Tallon Roll Right' },
+    'stationary': { glyph: '5', cls: 'symbol-maneuver', name: 'Stationary' },
+    'stop': { glyph: '5', cls: 'symbol-maneuver', name: 'Stationary' },
+    'reverse straight': { glyph: 'K', cls: 'symbol-maneuver', name: 'Reverse Straight' },
+    'reverse bank left': { glyph: 'J', cls: 'symbol-maneuver', name: 'Reverse Bank Left' },
+    'reverse bank right': { glyph: 'L', cls: 'symbol-maneuver', name: 'Reverse Bank Right' },
+
+    // Upgrade Slots
+    'configuration': { glyph: 'n', cls: 'symbol-slot', name: 'Configuration' },
+    'talent': { glyph: 'E', cls: 'symbol-slot', name: 'Talent' },
+    'sensor': { glyph: 'S', cls: 'symbol-slot', name: 'Sensor' },
+    'cannon': { glyph: 'C', cls: 'symbol-slot', name: 'Cannon' },
+    'torpedo': { glyph: 'P', cls: 'symbol-slot', name: 'Torpedo' },
+    'missile': { glyph: 'M', cls: 'symbol-slot', name: 'Missile' },
+    'crew': { glyph: 'W', cls: 'symbol-slot', name: 'Crew' },
+    'gunner': { glyph: 'Y', cls: 'symbol-slot', name: 'Gunner' },
+    'astromech': { glyph: 'A', cls: 'symbol-slot', name: 'Astromech' },
+    'device': { glyph: 'B', cls: 'symbol-slot', name: 'Device' },
+    'payload': { glyph: 'B', cls: 'symbol-slot', name: 'Payload' },
+    'illicit': { glyph: 'I', cls: 'symbol-slot', name: 'Illicit' },
+    'modification': { glyph: 'm', cls: 'symbol-slot', name: 'Modification' },
+    'title': { glyph: 't', cls: 'symbol-slot', name: 'Title' },
+    'force power': { glyph: 'F', cls: 'symbol-slot', name: 'Force Power' },
+    'tech': { glyph: 'X', cls: 'symbol-slot', name: 'Tech' },
+    'tactical relay': { glyph: 'Z', cls: 'symbol-slot', name: 'Tactical Relay' },
+    'hardpoint': { glyph: 'H', cls: 'symbol-slot', name: 'Hardpoint' },
+    'team': { glyph: 'T', cls: 'symbol-slot', name: 'Team' },
+    'cargo': { glyph: 'G', cls: 'symbol-slot', name: 'Cargo' },
+    'command': { glyph: 'V', cls: 'symbol-slot', name: 'Command' },
+    'turret': { glyph: 'U', cls: 'symbol-slot', name: 'Turret' },
+    'hyperdrive': { glyph: 'G', cls: 'symbol-slot', name: 'Hyperdrive' },
+
+    // Tokens, Sizes & Misc
+    'ordnance': { glyph: 'B', cls: 'symbol-slot', name: 'Ordnance' },
+    'victory': { glyph: '\u00d0', cls: 'symbol-slot', name: 'Victory' },
+    'fuse': { glyph: ',', cls: 'symbol-action', name: 'Fuse' },
+    'small': { glyph: '\u00c1', cls: 'symbol-base', name: 'Small Base' },
+    'medium': { glyph: '\u00c2', cls: 'symbol-base', name: 'Medium Base' },
+    'large': { glyph: '\u00c3', cls: 'symbol-base', name: 'Large Base' }
   };
 
   // Maneuver bearings and glyphs
@@ -146,11 +190,36 @@
 
   function renderGameText(text) {
     if (!text) return '';
-    return text.replace(/\[([^\]]+)\]/g, (match, term) => {
+
+    // 1. Handle speed-prefixed maneuvers like [1 [Turn Left]] or [3 [Straight]]
+    let processed = text.replace(/\[(\d)\s*\[([^\]]+)\]\]/g, (match, speed, bearing) => {
+      const key = bearing.toLowerCase().trim();
+      const mapped = SYMBOL_MAP[key];
+      if (mapped) {
+        return `<span class="maneuver-template-chip" title="Speed ${speed} ${mapped.name}"><span class="maneuver-speed">${speed}</span><span class="game-symbol-glyph ${mapped.cls}">${mapped.glyph}</span></span>`;
+      }
+      return `[${speed} [${bearing}]]`;
+    });
+
+    // 2. Handle double-bracketed expressions like [[Bank Left] or [Bank Right]] or [[Straight]]
+    processed = processed.replace(/\[\[([^\]]+)\]\s+or\s+\[([^\]]+)\]\]/g, (match, a, b) => {
+      return `[${a}] or [${b}]`;
+    });
+    processed = processed.replace(/\[\[([^\]]+)\]\]/g, (match, a) => {
+      return `[${a}]`;
+    });
+
+    // 3. Handle single-bracketed tokens [Term]
+    return processed.replace(/\[([^\]]+)\]/g, (match, term) => {
       const key = term.toLowerCase().trim();
       const mapped = SYMBOL_MAP[key];
       if (mapped) {
         return `<span class="game-symbol-glyph ${mapped.cls}" title="${mapped.name}">${mapped.glyph}</span>`;
+      }
+      const titleCase = term.charAt(0).toUpperCase() + term.slice(1).toLowerCase();
+      const slotGlyph = SLOT_ICONS[titleCase] || SLOT_ICONS[term];
+      if (slotGlyph) {
+        return `<span class="game-symbol-glyph symbol-slot" title="${term}">${slotGlyph}</span>`;
       }
       return `<span class="game-symbol" title="${term}">[${term}]</span>`;
     });
@@ -1124,6 +1193,13 @@
       </div>
     ` : '';
 
+    const shipAbilityHtml = item.shipAbility ? `
+      <div class="detail-section">
+        <div class="detail-section-title">Ship Ability: ${item.shipAbility.name}</div>
+        <div class="ability-text">${renderGameText(item.shipAbility.text)}</div>
+      </div>
+    ` : '';
+
     let historyRowsHtml = '';
     if (item.history && Object.keys(item.history).length > 0) {
       historyRowsHtml = Object.entries(item.history).map(([cycle, pts]) => {
@@ -1168,6 +1244,7 @@
       ${imgHtml}
       ${statsActionsHtml}
       ${abilityHtml}
+      ${shipAbilityHtml}
       ${dialHtml}
       ${changesSectionHtml}
       ${historySectionHtml}
