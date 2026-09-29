@@ -362,14 +362,54 @@ function getUpgradeFactions(upgrade) {
     colors,
     factions: [
       { id: 'all', name: 'All Factions', color: '#888888' },
-      { id: 'rebelalliance', name: 'Rebel Alliance', color: (colors.factions && colors.factions.rebelalliance ? colors.factions.rebelalliance.fore : '#cb120e'), fontGlyph: iconsMap['rebel'] || '!' },
-      { id: 'galacticempire', name: 'Galactic Empire', color: (colors.factions && colors.factions.galacticempire ? colors.factions.galacticempire.back : '#204e78'), fontGlyph: iconsMap['empire'] || '@' },
-      { id: 'scumandvillainy', name: 'Scum & Villainy', color: (colors.attributes && colors.attributes.agility ? colors.attributes.agility : '#6abe46'), fontGlyph: iconsMap['scum'] || '#' },
-      { id: 'resistance', name: 'Resistance', color: (colors.factions && colors.factions.resistance ? colors.factions.resistance.fore : '#d87325'), fontGlyph: iconsMap['rebel'] || '!' },
-      { id: 'firstorder', name: 'First Order', color: (colors.factions && colors.factions.firstorder ? colors.factions.firstorder.fore : '#b42828'), fontGlyph: iconsMap['firstorder'] || '+' },
-      { id: 'galacticrepublic', name: 'Galactic Republic', color: (colors.factions && colors.factions.galacticrepublic ? colors.factions.galacticrepublic.back : '#6c160f'), fontGlyph: iconsMap['republic'] || '/' },
-      { id: 'separatistalliance', name: 'Separatist Alliance', color: (colors.factions && colors.factions.separatistalliance ? colors.factions.separatistalliance.fore : '#20308d'), fontGlyph: iconsMap['separatists'] || '.' },
-      { id: 'upgrades', name: 'Generic Upgrades', color: (colors.attributes && colors.attributes.charge ? colors.attributes.charge : '#fdbf10'), fontGlyph: iconsMap['modification'] || 'm' }
+      {
+        id: 'rebelalliance',
+        name: 'Rebel Alliance',
+        color: (colors.factions && colors.factions.rebelalliance && colors.factions.rebelalliance.color) || (colors.componentMapping && colors.componentMapping.tabRebel) || '#cb120e',
+        fontGlyph: (colors.factions && colors.factions.rebelalliance && colors.factions.rebelalliance.glyph) || iconsMap['rebel'] || '!'
+      },
+      {
+        id: 'galacticempire',
+        name: 'Galactic Empire',
+        color: (colors.factions && colors.factions.galacticempire && colors.factions.galacticempire.color) || (colors.componentMapping && colors.componentMapping.tabEmpire) || '#d6d6dd',
+        fontGlyph: (colors.factions && colors.factions.galacticempire && colors.factions.galacticempire.glyph) || iconsMap['empire'] || '@'
+      },
+      {
+        id: 'scumandvillainy',
+        name: 'Scum & Villainy',
+        color: (colors.factions && colors.factions.scumandvillainy && colors.factions.scumandvillainy.color) || (colors.componentMapping && colors.componentMapping.tabScum) || '#f4d118',
+        fontGlyph: (colors.factions && colors.factions.scumandvillainy && colors.factions.scumandvillainy.glyph) || iconsMap['scum'] || '#'
+      },
+      {
+        id: 'resistance',
+        name: 'Resistance',
+        color: (colors.factions && colors.factions.resistance && colors.factions.resistance.color) || (colors.componentMapping && colors.componentMapping.tabResistance) || '#d87325',
+        fontGlyph: (colors.factions && colors.factions.resistance && colors.factions.resistance.glyph) || iconsMap['rebel'] || '!'
+      },
+      {
+        id: 'firstorder',
+        name: 'First Order',
+        color: (colors.factions && colors.factions.firstorder && colors.factions.firstorder.color) || (colors.componentMapping && colors.componentMapping.tabFirstOrder) || '#b42828',
+        fontGlyph: (colors.factions && colors.factions.firstorder && colors.factions.firstorder.glyph) || iconsMap['firstorder'] || '+'
+      },
+      {
+        id: 'galacticrepublic',
+        name: 'Galactic Republic',
+        color: (colors.factions && colors.factions.galacticrepublic && colors.factions.galacticrepublic.color) || (colors.componentMapping && colors.componentMapping.tabRepublic) || '#4faddd',
+        fontGlyph: (colors.factions && colors.factions.galacticrepublic && colors.factions.galacticrepublic.glyph) || iconsMap['republic'] || '/'
+      },
+      {
+        id: 'separatistalliance',
+        name: 'Separatist Alliance',
+        color: (colors.factions && colors.factions.separatistalliance && colors.factions.separatistalliance.color) || (colors.componentMapping && colors.componentMapping.tabSeparatist) || '#337ab7',
+        fontGlyph: (colors.factions && colors.factions.separatistalliance && colors.factions.separatistalliance.glyph) || iconsMap['separatists'] || '.'
+      },
+      {
+        id: 'upgrades',
+        name: 'Generic Upgrades',
+        color: (colors.attributes && colors.attributes.charge ? colors.attributes.charge : '#fdbf10'),
+        fontGlyph: iconsMap['modification'] || 'm'
+      }
     ],
     fonts: {
       icons: iconsMap,

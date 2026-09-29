@@ -45,14 +45,14 @@
   --xwing-destress: #1e90ff;
   --xwing-force-action: #c4a0ca;
 
-  /* Faction Accents */
+  /* Faction Accents from colors.json */
   --xwing-rebel: #cb120e;
-  --xwing-empire: #204e78;
-  --xwing-scum: #6abe46;
+  --xwing-empire: #d6d6dd;
+  --xwing-scum: #f4d118;
   --xwing-resistance: #d87325;
   --xwing-firstorder: #b42828;
-  --xwing-republic: #6c160f;
-  --xwing-separatist: #20308d;
+  --xwing-republic: #4faddd;
+  --xwing-separatist: #337ab7;
 
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
@@ -254,7 +254,7 @@ body {
 
 .tab-btn.active {
   color: #fff;
-  border-bottom-color: var(--accent-blue);
+  border-bottom-color: var(--tab-color, var(--accent-blue));
   background-color: var(--bg-primary);
 }
 
@@ -274,36 +274,46 @@ body {
 }
 
 .tab-btn.active .tab-count {
-  background-color: rgba(56, 189, 248, 0.2);
-  color: var(--accent-blue);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--tab-color, var(--accent-blue));
 }
 
-/* Tab Icon Colors */
-.tab-rebel.active { border-bottom-color: #ef4444; }
-.tab-rebel .tab-faction-glyph { color: #ef4444; }
+/* Tab Icon Colors from colors.json */
+.tab-rebel { --tab-color: var(--xwing-rebel); }
+.tab-rebel.active { border-bottom-color: var(--xwing-rebel); }
+.tab-rebel .tab-faction-glyph { color: var(--xwing-rebel); }
 
-.tab-empire.active { border-bottom-color: #94a3b8; }
-.tab-empire .tab-faction-glyph { color: #cbd5e1; }
+.tab-empire { --tab-color: var(--xwing-empire); }
+.tab-empire.active { border-bottom-color: var(--xwing-empire); }
+.tab-empire .tab-faction-glyph { color: var(--xwing-empire); }
 
-.tab-scum.active { border-bottom-color: #10b981; }
-.tab-scum .tab-faction-glyph { color: #10b981; }
+.tab-scum { --tab-color: var(--xwing-scum); }
+.tab-scum.active { border-bottom-color: var(--xwing-scum); }
+.tab-scum .tab-faction-glyph { color: var(--xwing-scum); }
 
-.tab-resistance.active { border-bottom-color: #f59e0b; }
-.tab-resistance .tab-faction-glyph { color: #f59e0b; }
+.tab-resistance { --tab-color: var(--xwing-resistance); }
+.tab-resistance.active { border-bottom-color: var(--xwing-resistance); }
+.tab-resistance .tab-faction-glyph { color: var(--xwing-resistance); }
 
-.tab-firstorder.active { border-bottom-color: #dc2626; }
-.tab-firstorder .tab-faction-glyph { color: #dc2626; }
+.tab-firstorder { --tab-color: var(--xwing-firstorder); }
+.tab-firstorder.active { border-bottom-color: var(--xwing-firstorder); }
+.tab-firstorder .tab-faction-glyph { color: var(--xwing-firstorder); }
 
-.tab-republic.active { border-bottom-color: #d97706; }
-.tab-republic .tab-faction-glyph { color: #d97706; }
+.tab-republic { --tab-color: var(--xwing-republic); }
+.tab-republic.active { border-bottom-color: var(--xwing-republic); }
+.tab-republic .tab-faction-glyph { color: var(--xwing-republic); }
 
-.tab-separatist.active { border-bottom-color: #2563eb; }
-.tab-separatist .tab-faction-glyph { color: #3b82f6; }
+.tab-separatist { --tab-color: var(--xwing-separatist); }
+.tab-separatist.active { border-bottom-color: var(--xwing-separatist); }
+.tab-separatist .tab-faction-glyph { color: var(--xwing-separatist); }
 
-.tab-upgrades.active { border-bottom-color: #eab308; }
-.tab-upgrades .tab-faction-glyph { color: #eab308; }
+.tab-upgrades { --tab-color: #fdbf10; }
+.tab-upgrades.active { border-bottom-color: #fdbf10; }
+.tab-upgrades .tab-faction-glyph { color: #fdbf10; }
 
+.tab-changes { --tab-color: #38bdf8; }
 .tab-changes.active { border-bottom-color: #38bdf8; }
+.tab-changes .tab-faction-glyph { font-family: var(--font-sans); }
 
 /* Main Content Area */
 .app-main {

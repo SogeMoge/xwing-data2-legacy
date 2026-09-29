@@ -41,6 +41,8 @@
   },
   "factions": {
     "rebelalliance": {
+      "color": "#cb120e",
+      "glyph": "!",
       "fore": "#cb120e",
       "back": "#b3b5ad",
       "dial": "#822819",
@@ -48,6 +50,8 @@
       "arcDark": "#3a1212"
     },
     "galacticempire": {
+      "color": "#d6d6dd",
+      "glyph": "@",
       "fore": "#d6d6dd",
       "back": "#204e78",
       "dial": "#35393d",
@@ -55,6 +59,8 @@
       "arcDark": "#12391d"
     },
     "scumandvillainy": {
+      "color": "#f4d118",
+      "glyph": "#",
       "fore": "#b3b5ad",
       "back": "#253a21",
       "dial": "#3f3a27",
@@ -62,6 +68,8 @@
       "arcDark": "#3e3415"
     },
     "resistance": {
+      "color": "#d87325",
+      "glyph": "!",
       "fore": "#d87325",
       "back": "#404040",
       "dial": "#e5653a",
@@ -69,6 +77,8 @@
       "arcDark": "#331111"
     },
     "firstorder": {
+      "color": "#b42828",
+      "glyph": "+",
       "fore": "#b42828",
       "back": "#393a39",
       "dial": "#32291f",
@@ -76,6 +86,8 @@
       "arcDark": "#12371c"
     },
     "galacticrepublic": {
+      "color": "#4faddd",
+      "glyph": "/",
       "fore": "#eff3f3",
       "back": "#6c160f",
       "dial": "#8a6d3b",
@@ -83,6 +95,8 @@
       "arcDark": "#174661"
     },
     "separatistalliance": {
+      "color": "#337ab7",
+      "glyph": ".",
       "fore": "#20308d",
       "back": "#d6d8d7",
       "dial": "#337ab7",
@@ -107,6 +121,13 @@
     "maneuverBlue": "#1e90ff",
     "maneuverWhite": "#ffffff",
     "maneuverRed": "#ec1f21",
-    "maneuverPurple": "#c4a0ca"
+    "maneuverPurple": "#c4a0ca",
+    "tabRebel": "#cb120e",
+    "tabEmpire": "#d6d6dd",
+    "tabScum": "#f4d118",
+    "tabResistance": "#d87325",
+    "tabFirstOrder": "#b42828",
+    "tabRepublic": "#4faddd",
+    "tabSeparatist": "#337ab7"
   }
 }

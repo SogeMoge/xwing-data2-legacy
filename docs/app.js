@@ -313,24 +313,31 @@
     });
     tabsNav.appendChild(upTab);
 
-    // Faction Tabs with font glyphs
-    const factionTabs = [
-      { id: 'rebelalliance', name: 'Rebel Alliance', glyph: '!', cls: 'tab-rebel' },
-      { id: 'galacticempire', name: 'Galactic Empire', glyph: '@', cls: 'tab-empire' },
-      { id: 'scumandvillainy', name: 'Scum & Villainy', glyph: '#', cls: 'tab-scum' },
-      { id: 'resistance', name: 'Resistance', glyph: '!', cls: 'tab-resistance' },
-      { id: 'firstorder', name: 'First Order', glyph: '+', cls: 'tab-firstorder' },
-      { id: 'galacticrepublic', name: 'Galactic Republic', glyph: '/', cls: 'tab-republic' },
-      { id: 'separatistalliance', name: 'Separatist Alliance', glyph: '.', cls: 'tab-separatist' }
+    // Faction Tabs with font glyphs and colors from color list
+    const factionDefs = [
+      { id: 'rebelalliance', name: 'Rebel Alliance', cls: 'tab-rebel', tabKey: 'tabRebel', defaultGlyph: '!', defaultColor: '#cb120e' },
+      { id: 'galacticempire', name: 'Galactic Empire', cls: 'tab-empire', tabKey: 'tabEmpire', defaultGlyph: '@', defaultColor: '#d6d6dd' },
+      { id: 'scumandvillainy', name: 'Scum & Villainy', cls: 'tab-scum', tabKey: 'tabScum', defaultGlyph: '#', defaultColor: '#f4d118' },
+      { id: 'resistance', name: 'Resistance', cls: 'tab-resistance', tabKey: 'tabResistance', defaultGlyph: '!', defaultColor: '#d87325' },
+      { id: 'firstorder', name: 'First Order', cls: 'tab-firstorder', tabKey: 'tabFirstOrder', defaultGlyph: '+', defaultColor: '#b42828' },
+      { id: 'galacticrepublic', name: 'Galactic Republic', cls: 'tab-republic', tabKey: 'tabRepublic', defaultGlyph: '/', defaultColor: '#4faddd' },
+      { id: 'separatistalliance', name: 'Separatist Alliance', cls: 'tab-separatist', tabKey: 'tabSeparatist', defaultGlyph: '.', defaultColor: '#337ab7' }
     ];
 
-    factionTabs.forEach(f => {
+    factionDefs.forEach(f => {
       const pCount = appData.pilots.filter(p => p.faction === f.id).length;
       const uCount = appData.upgrades.filter(u => getUpgradeFactions(u).includes(f.id)).length;
       const totalCount = pCount + uCount;
+
+      const fData = (appData.factions || []).find(item => item.id === f.id);
+      const fColorConfig = appData.colors && appData.colors.factions && appData.colors.factions[f.id];
+      const glyph = (fColorConfig && fColorConfig.glyph) || (fData && fData.fontGlyph) || f.defaultGlyph;
+      const color = (fColorConfig && fColorConfig.color) || (appData.colors && appData.colors.componentMapping && appData.colors.componentMapping[f.tabKey]) || (fData && fData.color) || f.defaultColor;
+
       const btn = document.createElement('button');
       btn.className = `tab-btn ${f.cls} ${currentTab === f.id ? 'active' : ''}`;
-      btn.innerHTML = `<span class="tab-faction-glyph">${f.glyph}</span><span>${f.name}</span><span class="tab-count" title="${pCount} pilots, ${uCount} upgrades">${totalCount}</span>`;
+      btn.style.setProperty('--tab-color', color);
+      btn.innerHTML = `<span class="tab-faction-glyph" style="color: ${color};">${glyph}</span><span>${f.name}</span><span class="tab-count" title="${pCount} pilots, ${uCount} upgrades">${totalCount}</span>`;
       btn.addEventListener('click', () => {
         currentTab = f.id;
         updateActiveTab();

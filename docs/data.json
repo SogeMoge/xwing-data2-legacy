@@ -2,10 +2,10 @@
   "meta": {
     "title": "X-Wing 2.0 Legacy Points Reference",
     "version": "3.12.0",
-    "generatedAt": "2026-09-28T17:25:36.807Z",
+    "generatedAt": "2026-09-29T19:57:48.511Z",
     "commit": {
-      "sha": "1a5c34d",
-      "fullSha": "1a5c34d13fa8f7b078aeffdd6dbc3513143cd87a",
+      "sha": "4fa687b",
+      "fullSha": "4fa687beac8a432047d198e5e78aba4133051126",
       "date": "2026-09-28"
     },
     "repoUrl": "https://github.com/SogeMoge/xwing-data2-legacy",
@@ -56,6 +56,8 @@
     },
     "factions": {
       "rebelalliance": {
+        "color": "#cb120e",
+        "glyph": "!",
         "fore": "#cb120e",
         "back": "#b3b5ad",
         "dial": "#822819",
@@ -63,6 +65,8 @@
         "arcDark": "#3a1212"
       },
       "galacticempire": {
+        "color": "#d6d6dd",
+        "glyph": "@",
         "fore": "#d6d6dd",
         "back": "#204e78",
         "dial": "#35393d",
@@ -70,6 +74,8 @@
         "arcDark": "#12391d"
       },
       "scumandvillainy": {
+        "color": "#f4d118",
+        "glyph": "#",
         "fore": "#b3b5ad",
         "back": "#253a21",
         "dial": "#3f3a27",
@@ -77,6 +83,8 @@
         "arcDark": "#3e3415"
       },
       "resistance": {
+        "color": "#d87325",
+        "glyph": "!",
         "fore": "#d87325",
         "back": "#404040",
         "dial": "#e5653a",
@@ -84,6 +92,8 @@
         "arcDark": "#331111"
       },
       "firstorder": {
+        "color": "#b42828",
+        "glyph": "+",
         "fore": "#b42828",
         "back": "#393a39",
         "dial": "#32291f",
@@ -91,6 +101,8 @@
         "arcDark": "#12371c"
       },
       "galacticrepublic": {
+        "color": "#4faddd",
+        "glyph": "/",
         "fore": "#eff3f3",
         "back": "#6c160f",
         "dial": "#8a6d3b",
@@ -98,6 +110,8 @@
         "arcDark": "#174661"
       },
       "separatistalliance": {
+        "color": "#337ab7",
+        "glyph": ".",
         "fore": "#20308d",
         "back": "#d6d8d7",
         "dial": "#337ab7",
@@ -122,7 +136,14 @@
       "maneuverBlue": "#1e90ff",
       "maneuverWhite": "#ffffff",
       "maneuverRed": "#ec1f21",
-      "maneuverPurple": "#c4a0ca"
+      "maneuverPurple": "#c4a0ca",
+      "tabRebel": "#cb120e",
+      "tabEmpire": "#d6d6dd",
+      "tabScum": "#f4d118",
+      "tabResistance": "#d87325",
+      "tabFirstOrder": "#b42828",
+      "tabRepublic": "#4faddd",
+      "tabSeparatist": "#337ab7"
     }
   },
   "factions": [
@@ -140,13 +161,13 @@
     {
       "id": "galacticempire",
       "name": "Galactic Empire",
-      "color": "#204e78",
+      "color": "#d6d6dd",
       "fontGlyph": "@"
     },
     {
       "id": "scumandvillainy",
       "name": "Scum & Villainy",
-      "color": "#6abe46",
+      "color": "#f4d118",
       "fontGlyph": "#"
     },
     {
@@ -164,13 +185,13 @@
     {
       "id": "galacticrepublic",
       "name": "Galactic Republic",
-      "color": "#6c160f",
+      "color": "#4faddd",
       "fontGlyph": "/"
     },
     {
       "id": "separatistalliance",
       "name": "Separatist Alliance",
-      "color": "#20308d",
+      "color": "#337ab7",
       "fontGlyph": "."
     },
     {
