@@ -664,6 +664,11 @@
     "cost": {
       "value": 4
     },
+    "restrictions": [
+      {
+        "factions": ["separatistalliance","scumandvillainy"]
+      }
+    ],
     "standard": true,
     "wildspace": true,
     "epic": true,
@@ -711,6 +716,11 @@
     "cost": {
       "value": 2
     },
+    "restrictions": [
+      {
+        "factions": ["rebelalliance"]
+      }
+    ],
     "standard": true,
     "wildspace": true,
     "epic": true,

@@ -1,0 +1,94 @@
+{
+  "cards": [
+    {
+      "title": "Damaged Circuitry",
+      "amount": 5,
+      "type": "Ship",
+      "text": "When you recover [Energy] during the End Phase, recover 1 fewer [Energy], to a minimum of 0. Action: Repair this card.",
+      "precisionTitle": "Turret Disabled",
+      "precisionArc": "[Left Arc] or [Right Arc]",
+      "precisionText": "The attacker chooses 1 of your [Hardpoint] upgrades that is not Offline. Flip that card."
+    },
+    {
+      "title": "Scrambled Orders",
+      "amount": 3,
+      "type": "Crew",
+      "text": "Before you engage, gain 2 jam tokens. Then repair this card.",
+      "precisionTitle": "Turret Disabled",
+      "precisionArc": "[Left Arc] or [Right Arc]",
+      "precisionText": "The attacker chooses 1 of your [Hardpoint] upgrades that is not Offline. Flip that card."
+    },
+    {
+      "title": "Hull Rupture",
+      "amount": 2,
+      "type": "Ship",
+      "text": "After defending, if you suffered [Hit] or [Critical Hit] damage, suffer 1 additional [Hit] damage for each of your faceup damage cards. Then repair this card. Action: Repair this card.",
+      "precisionTitle": "Turret Disabled",
+      "precisionArc": "[Left Arc] or [Right Arc]",
+      "precisionText": "The attacker chooses 1 of your [Hardpoint] upgrades that is not Offline. Flip that card."
+    },
+    {
+      "title": "Stabilizers Damaged",
+      "amount": 3,
+      "type": "Ship",
+      "text": "Increase the difficulty of your left and right maneuvers.",
+      "precisionTitle": "Drive Damaged",
+      "precisionArc": "[Full Rear Arc]",
+      "precisionText": "Gain 2 ion tokens."
+    },
+    {
+      "title": "Power Surge",
+      "amount": 4,
+      "type": "Ship",
+      "text": "After you execute a maneuver, lose 1 [Energy] plus 1 [Energy] per ion token you have. Then repair this card.",
+      "precisionTitle": "Drive Damaged",
+      "precisionArc": "[Full Rear Arc]",
+      "precisionText": "Gain 2 ion tokens."
+    },
+    {
+      "title": "Engine Coolant Leak",
+      "amount": 3,
+      "type": "Ship",
+      "text": "After you execute a speed 3-5 maneuver, roll 1 attack die. On a [Hit] or [Critical Hit] result, suffer 1 matching damage, then repair this card. Action: Repair this card.",
+      "precisionTitle": "Drive Damaged",
+      "precisionArc": "[Full Rear Arc]",
+      "precisionText": "Gain 2 ion tokens."
+    },
+    {
+      "title": "Panicked Crew",
+      "amount": 3,
+      "type": "Crew",
+      "text": "You cannot gain green tokens or perform the [Coordinate] or [Jam] action. Action: Repair this card.",
+      "precisionTitle": "Controls Disrupted",
+      "precisionArc": "[Full Front Arc]",
+      "precisionText": "Gain 1 jam token."
+    },
+    {
+      "title": "Exploding Consoles",
+      "amount": 2,
+      "type": "Ship",
+      "text": "After you perform an action, roll 1 attack die. On a [Hit] or [Critical Hit] result, suffer 1 [Hit] damage, then repair this card.",
+      "precisionTitle": "Controls Disrupted",
+      "precisionArc": "[Full Front Arc]",
+      "precisionText": "Gain 1 jam token."
+    },
+    {
+      "title": "Crew Shaken",
+      "amount": 3,
+      "type": "Crew",
+      "text": "After you overlap a ship or obstacle, suffer 2 [Critical Hit] damage, then repair this card.",
+      "precisionTitle": "Controls Disrupted",
+      "precisionArc": "[Full Front Arc]",
+      "precisionText": "Gain 1 jam token."
+    },
+    {
+      "title": "Atmosphere Leak",
+      "amount": 2,
+      "type": "Crew",
+      "text": "You cannot perform actions on your upgrade cards. Action: Repair this card.",
+      "precisionTitle": "Bridge Hit!",
+      "precisionArc": "[Bullseye Arc]",
+      "precisionText": "Lose all [Charge] from each of your [Crew] upgrades. Lose all of your [Force]."
+    }
+  ]
+}
