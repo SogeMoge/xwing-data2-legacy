@@ -44,8 +44,11 @@ xwing-data2-legacy/
 ├── docs/                               # GITHUB PAGES INTERACTIVE APPLICATION
 │   ├── ARCHITECTURE.md                 # System architecture & retrospective analytics reference for AI & maintainers
 │   ├── DESIGN_SYSTEM.md                # UI/UX design tokens, font glyphs, and interaction specifications
-│   ├── index.html                      # Single-page application UI with filters and tabs
+│   ├── TACTICAL_TERMINAL_POC.md        # Star Wars Tactical Terminal HUD PoC design & reference specification
+│   ├── index.html                      # Standard points reference UI with filters and tabs
+│   ├── poc-terminal.html               # Interactive Star Wars Tactical Terminal HUD interface (PoC)
 │   ├── style.css                       # Dark theme, xwing icon fonts, table layout
+│   ├── terminal.css                    # Tactical terminal theme: CRT scanlines, chiclet keys, targeting reticles
 │   ├── app.js                          # Client-side filtering, search, sorting, CSV export
 │   ├── data.json                       # Precomputed cards, diffs, commits, and retrospective history
 │   ├── history.json                    # Partitioned retrospective history matrix

@@ -9,7 +9,9 @@ describe('GitHub Pages & Data Generator Validation', () => {
   test('Docs directory contains required static files', () => {
     const requiredFiles = [
       'index.html',
+      'poc-terminal.html',
       'style.css',
+      'terminal.css',
       'app.js',
       'data.json',
       'data.js',
