@@ -40,8 +40,8 @@ flowchart TD
     end
 
     subgraph StaticArtifacts ["Static Distribution (docs/)"]
-        DataJson["docs/data.json (70K lines)"]
-        DataJs["docs/data.js (window.XWING_DATA)"]
+        DataJson["docs/data.json & docs/data.js (Active Data)"]
+        HistoryJson["docs/history.json & docs/history.js (Partitioned History)"]
         SPA["docs/index.html & docs/app.js & style.css"]
         FontAssets["docs/fonts/* (TTF & glyph maps)"]
     end
@@ -60,7 +60,7 @@ flowchart TD
     DataGen --> PagesGen
 
     PagesGen --> DataJson
-    PagesGen --> DataJs
+    PagesGen --> HistoryJson
     PagesGen --> SPA
     PagesGen --> FontAssets
 
@@ -100,12 +100,16 @@ flowchart TD
 * **Persistence**: Stored in [`data/retrospective/points_history.json`](file:///g:/xwing-data2-legacy.git/data/retrospective/points_history.json), keyed by `${cardType}:${xws}`.
 
 ### 3.3 Data & Site Compilers (`scripts/generate-data.js` & `scripts/generate-pages.js`)
-* **Bundle Generation**:
-  * Ingests manifests, pilots, upgrades, chassis definitions, and font mappings.
-  * Generates [`docs/data.json`](file:///g:/xwing-data2-legacy.git/docs/data.json) (~2.5 MB).
+* **Partitioned Bundle Architecture**:
+  * Ingests manifests, pilots, upgrades, chassis definitions, font mappings, and git diffs.
+  * Emits **primary payload**: [`docs/data.json`](file:///g:/xwing-data2-legacy.git/docs/data.json) and [`docs/data.js`](file:///g:/xwing-data2-legacy.git/docs/data.js) containing all active pilots, upgrades, chassis, dials, format flags, and recent release changes without the historical matrix bloat.
+  * Emits **partitioned retrospective history**: [`docs/history.json`](file:///g:/xwing-data2-legacy.git/docs/history.json) (~285 KB) and [`docs/history.js`](file:///g:/xwing-data2-legacy.git/docs/history.js) (~189 KB) containing the 16-cycle historical points matrix keyed by card identifier.
 * **Dual Distribution Strategy (Zero-Server `file://` Support)**:
-  * Simultaneously writes [`docs/data.js`](file:///g:/xwing-data2-legacy.git/docs/data.js) containing `window.XWING_DATA = {...};`.
-  * When `index.html` is opened directly via double-click in a file manager (`file:///`), modern browsers block `fetch('data.json')` due to CORS. The application detects `window.XWING_DATA` synchronously, providing instant offline browsing without requiring an HTTP server.
+  * In parallel with JSON files, generates `.js` companion files declares (`window.XWING_DATA` and `window.XWING_HISTORY`).
+  * When opened via `file:///`, browser CORS security prohibits local `fetch()`. The application gracefully falls back to synchronous globals or dynamic `<script>` injection, providing full offline portability without a web server.
+* **Asynchronous On-Demand Lazy Loading**:
+  * Initial page load executes in milliseconds since `history.json` is not requested upfront.
+  * Clicking **"📜 Show History"**, inspecting a card drawer, or exporting full CSV dynamically triggers `ensureHistoryLoaded()`, binding historical points to the in-memory cards on demand.
 
 ### 3.4 Interactive Client (`docs/app.js`, `docs/style.css`, `docs/index.html`)
 * **Design & Typography**:
@@ -199,9 +203,9 @@ npm run serve:pages
 
 ## 7. Recommended Next Evolution Steps
 
-1. **Partition Retrospective History (Chunking)**:
-   * Move the ~1.2 MB retrospective history matrix from `docs/data.json` into a separate `docs/history.json`.
-   * Lazy-load `history.json` on-demand only when the user clicks **"📜 Show History"**, reducing the initial payload to <200 KB.
+1. **[COMPLETED] Partition Retrospective History (Chunking)**:
+   * Extracted the retrospective history matrix from `docs/data.json` into standalone `docs/history.json` and `docs/history.js` bundles.
+   * Implemented on-demand lazy loading via `ensureHistoryLoaded()` in `docs/app.js` with button loading indicators, drawer fallback placeholders, and offline `file://` script injection fallback.
 2. **URL Deep-Linking**:
    * Implement URL hash routing (e.g. `/#galacticempire/pilot:soontirfel`) to allow direct linking and sharing of specific cards and chassis drawers.
 3. **Release Archive Diff Inspector**:

@@ -6,6 +6,9 @@
   let changeFilter = 'all';
   let typeFilter = 'all';
   let showHistory = false;
+  let historyLoaded = false;
+  let historyLoading = false;
+  let historyMap = {};
   let showHeaders = localStorage.getItem('xwing_show_headers') === 'true'; // false by default
   let sortField = 'type';
   let sortAsc = true;
@@ -223,6 +226,83 @@
       }
       return `<span class="game-symbol" title="${term}">[${term}]</span>`;
     });
+  }
+
+  function attachHistoryToItems() {
+    if (!appData) return;
+    (appData.pilots || []).forEach(p => {
+      p.history = historyMap[p.key] || p.history || {};
+    });
+    (appData.upgrades || []).forEach(u => {
+      u.history = historyMap[u.key] || u.history || {};
+    });
+    (appData.summaryChanges || []).forEach(c => {
+      c.history = historyMap[c.key] || c.history || {};
+    });
+  }
+
+  async function ensureHistoryLoaded() {
+    if (historyLoaded) return historyMap;
+    if (historyLoading) {
+      while (historyLoading) {
+        await new Promise(r => setTimeout(r, 50));
+      }
+      return historyMap;
+    }
+
+    historyLoading = true;
+    try {
+      if (window.XWING_HISTORY && window.XWING_HISTORY.history) {
+        historyMap = window.XWING_HISTORY.history;
+        historyLoaded = true;
+        attachHistoryToItems();
+        return historyMap;
+      }
+
+      // In local file:// mode, fetch() is blocked by browser CORS policy.
+      // Detect file protocol or null origin to load history.js directly via script tag without triggering console errors.
+      const isFileProtocol = window.location.protocol === 'file:' || (!window.location.origin || window.location.origin === 'null');
+
+      if (!isFileProtocol) {
+        try {
+          const res = await fetch('history.json');
+          if (res.ok) {
+            const data = await res.json();
+            historyMap = data.history || {};
+            historyLoaded = true;
+            attachHistoryToItems();
+            return historyMap;
+          }
+        } catch (fetchErr) {
+          console.warn('Fetch history.json failed, falling back to script injection:', fetchErr);
+        }
+      }
+
+      // Dynamic script injection for local file:// mode or fetch fallback
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'history.js';
+        script.onload = () => {
+          if (window.XWING_HISTORY && window.XWING_HISTORY.history) {
+            historyMap = window.XWING_HISTORY.history;
+            historyLoaded = true;
+            attachHistoryToItems();
+            resolve();
+          } else {
+            reject(new Error('window.XWING_HISTORY not found after history.js loaded'));
+          }
+        };
+        script.onerror = (e) => reject(new Error('Failed to load history.js: ' + e));
+        document.head.appendChild(script);
+      });
+
+      return historyMap;
+    } catch (err) {
+      console.error('Error loading retrospective history:', err);
+      throw err;
+    } finally {
+      historyLoading = false;
+    }
   }
 
   async function init() {
@@ -447,7 +527,22 @@
       render();
     });
 
-    toggleHistoryBtn.addEventListener('click', () => {
+    toggleHistoryBtn.addEventListener('click', async () => {
+      if (!showHistory && !historyLoaded) {
+        toggleHistoryBtn.classList.add('btn-toggle-active');
+        toggleHistoryBtn.innerHTML = '<span>⏳ Loading History...</span>';
+        toggleHistoryBtn.disabled = true;
+        try {
+          await ensureHistoryLoaded();
+        } catch (e) {
+          alert('Could not load retrospective points history: ' + e.message);
+          toggleHistoryBtn.classList.remove('btn-toggle-active');
+          toggleHistoryBtn.innerHTML = '<span>📜 Show History</span>';
+          return;
+        } finally {
+          toggleHistoryBtn.disabled = false;
+        }
+      }
       showHistory = !showHistory;
       toggleHistoryBtn.classList.toggle('btn-toggle-active', showHistory);
       toggleHistoryBtn.innerHTML = showHistory ? '<span>📜 Hide History</span>' : '<span>📜 Show History</span>';
@@ -1283,13 +1378,42 @@
     ` : '';
 
     let historyRowsHtml = '';
-    if (item.history && Object.keys(item.history).length > 0) {
-      historyRowsHtml = Object.entries(item.history).map(([cycle, pts]) => {
+    const currentHist = (item.history && Object.keys(item.history).length > 0) ? item.history : (historyMap[item.key] || {});
+    if (Object.keys(currentHist).length > 0) {
+      historyRowsHtml = Object.entries(currentHist).map(([cycle, pts]) => {
         return `<tr>
           <td><strong>${cycle}</strong></td>
           <td style="font-family: var(--font-mono); font-weight: 600;">${pts}</td>
         </tr>`;
       }).join('');
+    } else if (!historyLoaded) {
+      historyRowsHtml = `<tr><td colspan="2" id="drawerHistPlaceholder" style="text-align: center; color: var(--text-dim); padding: 0.75rem;">
+        <span>⏳ Loading retrospective history...</span>
+      </td></tr>`;
+      ensureHistoryLoaded().then(() => {
+        const updatedHist = historyMap[item.key] || {};
+        const placeholder = document.getElementById('drawerHistPlaceholder');
+        if (placeholder && placeholder.parentElement) {
+          const tbody = placeholder.parentElement.parentElement;
+          if (tbody) {
+            if (Object.keys(updatedHist).length > 0) {
+              tbody.innerHTML = Object.entries(updatedHist).map(([cycle, pts]) => {
+                return `<tr>
+                  <td><strong>${cycle}</strong></td>
+                  <td style="font-family: var(--font-mono); font-weight: 600;">${pts}</td>
+                </tr>`;
+              }).join('');
+            } else {
+              tbody.innerHTML = `<tr><td>Current (Sep 26)</td><td>${item.pointsFormatted}</td></tr>`;
+            }
+          }
+        }
+      }).catch(() => {
+        const placeholder = document.getElementById('drawerHistPlaceholder');
+        if (placeholder && placeholder.parentElement) {
+          placeholder.parentElement.innerHTML = `<tr><td>Current (Sep 26)</td><td>${item.pointsFormatted}</td></tr>`;
+        }
+      });
     } else {
       historyRowsHtml = `<tr><td>Current (Sep 26)</td><td>${item.pointsFormatted}</td></tr>`;
     }
@@ -1356,7 +1480,20 @@
     modalBackdrop.classList.remove('open');
   }
 
-  function exportCSV() {
+  async function exportCSV() {
+    if (showHistory && !historyLoaded) {
+      exportBtn.disabled = true;
+      exportBtn.innerHTML = '<span>⏳ Exporting...</span>';
+      try {
+        await ensureHistoryLoaded();
+      } catch (e) {
+        console.warn('Could not load history for export:', e);
+      } finally {
+        exportBtn.disabled = false;
+        exportBtn.innerHTML = '<span>📥 Export CSV</span>';
+      }
+    }
+
     const items = sortItems(getFilteredItems());
     if (items.length === 0) {
       alert('No items to export.');

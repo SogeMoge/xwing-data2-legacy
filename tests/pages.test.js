@@ -13,6 +13,8 @@ describe('GitHub Pages & Data Generator Validation', () => {
       'app.js',
       'data.json',
       'data.js',
+      'history.json',
+      'history.js',
       'colors.json',
       'fonts/xwing-miniatures.ttf',
       'fonts/xwing-miniatures-ships.ttf',
@@ -95,6 +97,26 @@ describe('GitHub Pages & Data Generator Validation', () => {
         }
       }
     }
+  });
+
+  test('history.json and history.js contain valid partitioned retrospective matrix', () => {
+    const historyJsonPath = path.join(docsDir, 'history.json');
+    const historyJsPath = path.join(docsDir, 'history.js');
+    expect(fs.existsSync(historyJsonPath)).toBe(true);
+    expect(fs.existsSync(historyJsPath)).toBe(true);
+
+    const historyData = JSON.parse(fs.readFileSync(historyJsonPath, 'utf8'));
+    expect(historyData.meta).toBeDefined();
+    expect(Array.isArray(historyData.meta.cycles)).toBe(true);
+    expect(historyData.meta.cycles.length).toBeGreaterThanOrEqual(16);
+
+    expect(typeof historyData.history).toBe('object');
+    const cardKeys = Object.keys(historyData.history);
+    expect(cardKeys.length).toBeGreaterThan(1000);
+
+    // Test history.js format
+    const jsContent = fs.readFileSync(historyJsPath, 'utf8');
+    expect(jsContent).toContain('window.XWING_HISTORY =');
   });
 
   test('Ship font glyphs coverage is complete or mapped', () => {

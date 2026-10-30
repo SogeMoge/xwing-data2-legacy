@@ -211,7 +211,7 @@ function buildData() {
           shipIcon: shipData.icon || '',
           shipFontGlyph: shipGlyph,
           faction,
-          history: hist.pointsHistory || {},
+          history: {},
           recentChanges: cardChanges ? cardChanges.changes : []
         });
       });
@@ -285,7 +285,7 @@ function getUpgradeFactions(upgrade) {
         ability: side.ability || side.text || '',
         image: side.image || '',
         artwork: side.artwork || '',
-        history: hist.pointsHistory || {},
+        history: {},
         recentChanges: cardChanges ? cardChanges.changes : []
       });
     });
@@ -429,6 +429,35 @@ function getUpgradeFactions(upgrade) {
   const dataJsPath = path.join(docsDir, 'data.js');
   fs.writeFileSync(dataJsPath, `window.XWING_DATA = ${JSON.stringify(dataset)};\n`, 'utf8');
   console.log(`Generated ${dataJsPath} (${(fs.statSync(dataJsPath).size / 1024).toFixed(1)} KB)`);
+
+  // Build partitioned retrospective history dataset
+  const historyMap = {};
+  if (pointsHistory && typeof pointsHistory === 'object') {
+    Object.entries(pointsHistory).forEach(([cardKey, cardData]) => {
+      if (cardData && cardData.pointsHistory && Object.keys(cardData.pointsHistory).length > 0) {
+        historyMap[cardKey] = cardData.pointsHistory;
+      }
+    });
+  }
+
+  const historyDataset = {
+    meta: {
+      title: 'X-Wing 2.0 Legacy Retrospective Points History',
+      version: pkg.version,
+      generatedAt: new Date().toISOString(),
+      cycles: standardCycleOrder,
+      totalCards: Object.keys(historyMap).length
+    },
+    history: historyMap
+  };
+
+  const historyJsonPath = path.join(docsDir, 'history.json');
+  fs.writeFileSync(historyJsonPath, JSON.stringify(historyDataset, null, 2), 'utf8');
+  console.log(`Generated ${historyJsonPath} (${(fs.statSync(historyJsonPath).size / 1024).toFixed(1)} KB)`);
+
+  const historyJsPath = path.join(docsDir, 'history.js');
+  fs.writeFileSync(historyJsPath, `window.XWING_HISTORY = ${JSON.stringify(historyDataset)};\n`, 'utf8');
+  console.log(`Generated ${historyJsPath} (${(fs.statSync(historyJsPath).size / 1024).toFixed(1)} KB)`);
 
   return dataset;
 }
