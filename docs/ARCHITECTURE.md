@@ -133,6 +133,7 @@ flowchart TD
   * Full card image/artwork preview.
   * Maneuver dial matrix (speeds 0–5 color-coded: blue, white, red, purple).
   * Errata diff history and full retrospective points history table.
+* **Design Specification Reference**: For exhaustive token tables, color mappings, font glyph charts, and interaction states, see [`docs/DESIGN_SYSTEM.md`](DESIGN_SYSTEM.md).
 
 ### 3.5 CI/CD & Automated Quality Gates (`.github/workflows/deploy-pages.yml`, `tests/pages.test.js`)
 * **Zero-Touch Automation**: Deploys to GitHub Pages on every release publication or push to `master`.

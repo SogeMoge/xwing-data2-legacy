@@ -43,10 +43,12 @@ xwing-data2-legacy/
 │   └── xws.test.js                     # Enforces global uniqueness of XWS IDs
 ├── docs/                               # GITHUB PAGES INTERACTIVE APPLICATION
 │   ├── ARCHITECTURE.md                 # System architecture & retrospective analytics reference for AI & maintainers
+│   ├── DESIGN_SYSTEM.md                # UI/UX design tokens, font glyphs, and interaction specifications
 │   ├── index.html                      # Single-page application UI with filters and tabs
 │   ├── style.css                       # Dark theme, xwing icon fonts, table layout
 │   ├── app.js                          # Client-side filtering, search, sorting, CSV export
 │   ├── data.json                       # Precomputed cards, diffs, commits, and retrospective history
+│   ├── history.json                    # Partitioned retrospective history matrix
 │   └── fonts/                          # TTF font files and JSON glyph mappings
 ├── scripts/                            # SCRAPING, INGESTION, PAGES & ASSET TOOLS
 │   ├── generate-pages.js               # Master generator for GitHub Pages site
@@ -214,6 +216,7 @@ npm run serve:pages
   - `MAJOR`: Breaking schema changes that alter the shape expected by downstream consumers.
 - Version is synchronized in both [`package.json`](package.json) and [`data/manifest.json`](data/manifest.json).
 
-### 6.4 Web Reference & Retrospective Points Architecture
-- For full architectural specifications, data compilation flow, release diffing logic, and comparative evaluation against Google Sheets, consult [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+### 6.4 Web Reference, Architecture & Design System
+- **Architecture & Release Diffing**: For full architectural specifications, data compilation flow, release diffing logic, and comparative evaluation against Google Sheets, consult [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+- **UI/UX & Design Tokens**: For the complete design system, CSS tokens, canonical color palettes from SirJorj, icon/ship font mappings, and component interaction states, consult [`docs/DESIGN_SYSTEM.md`](docs/DESIGN_SYSTEM.md).
 
