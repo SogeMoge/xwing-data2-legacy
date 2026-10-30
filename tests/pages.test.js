@@ -82,7 +82,7 @@ describe('GitHub Pages & Data Generator Validation', () => {
 
     // Retrospective history columns
     expect(Array.isArray(data.historyCycles)).toBe(true);
-    expect(data.historyCycles.length).toBeGreaterThanOrEqual(16);
+    expect(data.historyCycles.length).toBeGreaterThanOrEqual(14);
 
     // Summary changes
     expect(Array.isArray(data.summaryChanges)).toBe(true);
@@ -110,7 +110,7 @@ describe('GitHub Pages & Data Generator Validation', () => {
     const historyData = JSON.parse(fs.readFileSync(historyJsonPath, 'utf8'));
     expect(historyData.meta).toBeDefined();
     expect(Array.isArray(historyData.meta.cycles)).toBe(true);
-    expect(historyData.meta.cycles.length).toBeGreaterThanOrEqual(16);
+    expect(historyData.meta.cycles.length).toBeGreaterThanOrEqual(14);
 
     expect(typeof historyData.history).toBe('object');
     const cardKeys = Object.keys(historyData.history);
@@ -140,6 +140,10 @@ describe('GitHub Pages & Data Generator Validation', () => {
     const uniqueCols = new Set(cols);
     expect(uniqueCols.size).toBe(cols.length);
     expect(cols[cols.length - 1]).toBe('Sep 21');
+    expect(cols).not.toContain('Sept 23');
+    expect(cols).not.toContain('Sept 22');
+    expect(cols).toContain('Sep 23');
+    expect(cols).toContain('Sep 22');
   });
 
   test('Canonical X-Wing colors and component mapping are valid and complete', () => {

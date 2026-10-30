@@ -298,12 +298,10 @@ function getUpgradeFactions(upgrade) {
     'Mar 25',
     'Sep 24',
     'Mar 24',
-    'Sept 23',
     'Sep 23',
     'Mar 23',
     'Dec 22',
     'Oct 22',
-    'Sept 22',
     'Sep 22',
     'May 22',
     'Apr 22',
@@ -435,7 +433,14 @@ function getUpgradeFactions(upgrade) {
   if (pointsHistory && typeof pointsHistory === 'object') {
     Object.entries(pointsHistory).forEach(([cardKey, cardData]) => {
       if (cardData && cardData.pointsHistory && Object.keys(cardData.pointsHistory).length > 0) {
-        historyMap[cardKey] = cardData.pointsHistory;
+        const normalizedPts = {};
+        for (const [cycle, pts] of Object.entries(cardData.pointsHistory)) {
+          let c = cycle.trim();
+          if (c === 'Sept 23') c = 'Sep 23';
+          if (c === 'Sept 22') c = 'Sep 22';
+          normalizedPts[c] = pts;
+        }
+        historyMap[cardKey] = normalizedPts;
       }
     });
   }

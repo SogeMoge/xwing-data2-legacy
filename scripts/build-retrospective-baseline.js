@@ -93,7 +93,9 @@ sheetRaw.valueRanges.forEach((vr) => {
   const headerRow = rows[2] || [];
   const cycleCols = [];
   for (let c = 6; c < headerRow.length; c++) {
-    const cycle = (headerRow[c] || '').trim();
+    let cycle = (headerRow[c] || '').trim();
+    if (cycle === 'Sept 23') cycle = 'Sep 23';
+    if (cycle === 'Sept 22') cycle = 'Sep 22';
     if (cycle && cycle !== 'Change vs previous') {
       cycleCols.push({ colIndex: c, cycleName: cycle });
     }
