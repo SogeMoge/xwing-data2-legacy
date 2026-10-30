@@ -305,8 +305,61 @@
     }
   }
 
+  function setupTheme() {
+    const btnTerminal = document.getElementById('btnThemeTerminal');
+    const btnStandard = document.getElementById('btnThemeStandard');
+    if (!btnTerminal || !btnStandard) return;
+
+    let savedTheme = null;
+    try {
+      savedTheme = localStorage.getItem('xwing_theme');
+    } catch (e) {}
+
+    const isTerminal = savedTheme !== 'standard';
+
+    function applyThemeState(termActive) {
+      document.body.classList.toggle('terminal-theme', termActive);
+
+      btnTerminal.classList.toggle('active', termActive);
+      btnTerminal.setAttribute('aria-pressed', termActive ? 'true' : 'false');
+
+      btnStandard.classList.toggle('active', !termActive);
+      btnStandard.setAttribute('aria-pressed', !termActive ? 'true' : 'false');
+
+      const brandTitle = document.querySelector('.brand-title');
+      const brandSubtitle = document.querySelector('.brand-subtitle');
+      if (brandTitle && brandSubtitle) {
+        if (termActive) {
+          brandTitle.textContent = 'X-Wing 2.0 Legacy // Tactical HUD';
+          brandSubtitle.textContent = 'Tactical Flight Computer & Points Collation Terminal';
+        } else {
+          brandTitle.textContent = 'X-Wing 2.0 Legacy Points';
+          brandSubtitle.textContent = 'Interactive Points Document & Balance Retrospect';
+        }
+      }
+    }
+
+    applyThemeState(isTerminal);
+
+    btnTerminal.addEventListener('click', () => {
+      try {
+        localStorage.setItem('xwing_theme', 'terminal');
+      } catch (e) {}
+      applyThemeState(true);
+    });
+
+    btnStandard.addEventListener('click', () => {
+      try {
+        localStorage.setItem('xwing_theme', 'standard');
+      } catch (e) {}
+      applyThemeState(false);
+    });
+  }
+
   async function init() {
     try {
+      setupTheme();
+
       if (window.XWING_DATA) {
         appData = window.XWING_DATA;
       } else {

@@ -611,3 +611,221 @@ body.terminal-theme .action-pill {
   text-transform: uppercase;
   border-radius: 2px;
 }
+
+/* --------------------------------------------------------------------------
+   11. Star Wars Segmented Avionics Theme Switcher
+   -------------------------------------------------------------------------- */
+body.terminal-theme .theme-switch-group {
+  background: #090e18;
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 240, 255, 0.08);
+}
+
+body.terminal-theme .theme-switch-label {
+  font-family: var(--font-term-mono);
+  color: #00f0ff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.4);
+}
+
+body.terminal-theme .theme-btn {
+  font-family: var(--font-term-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  padding: 0.22rem 0.55rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.terminal-theme .theme-btn:hover {
+  color: #cbd5e1;
+  background: rgba(0, 240, 255, 0.06);
+}
+
+body.terminal-theme .theme-btn.active {
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.14);
+  border-color: rgba(0, 240, 255, 0.4);
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 6px rgba(0, 240, 255, 0.2);
+}
+
+body.terminal-theme .theme-led {
+  background-color: #1e293b;
+}
+
+body.terminal-theme .theme-btn.active .theme-led {
+  background-color: #00f0ff;
+  box-shadow: 0 0 8px #00f0ff;
+}
+
+/* When standard is active while in standard mode, amber LED diode */
+body:not(.terminal-theme) .theme-btn#btnThemeStandard.active {
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+body:not(.terminal-theme) .theme-btn#btnThemeStandard.active .theme-led {
+  background-color: #f59e0b;
+  box-shadow: 0 0 6px #f59e0b;
+}
+
+/* --------------------------------------------------------------------------
+   12. Star Wars Avionics Telemetry Scrollbars
+   Inspired by Death Star targeting channels, cockpit telemetry scales & Echo Base HUDs
+   -------------------------------------------------------------------------- */
+
+/* Firefox standard scrollbar */
+html:has(body.terminal-theme),
+body.terminal-theme,
+body.terminal-theme *,
+body.terminal-theme .table-wrapper,
+body.terminal-theme .tabs-nav,
+body.terminal-theme .drawer-body {
+  scrollbar-width: thin;
+  scrollbar-color: #00f0ff #05080e;
+}
+
+/* WebKit / Chromium / Edge / Safari Viewport & Element Scrollbars */
+html:has(body.terminal-theme)::-webkit-scrollbar,
+body.terminal-theme::-webkit-scrollbar,
+body.terminal-theme *::-webkit-scrollbar,
+body.terminal-theme .table-wrapper::-webkit-scrollbar,
+body.terminal-theme .tabs-nav::-webkit-scrollbar,
+body.terminal-theme .drawer-body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Recessed Inset Metal Channel with Telemetry Calibrated Scale Notches */
+html:has(body.terminal-theme)::-webkit-scrollbar-track,
+body.terminal-theme::-webkit-scrollbar-track,
+body.terminal-theme *::-webkit-scrollbar-track,
+body.terminal-theme .table-wrapper::-webkit-scrollbar-track,
+body.terminal-theme .tabs-nav::-webkit-scrollbar-track,
+body.terminal-theme .drawer-body::-webkit-scrollbar-track {
+  background-color: #05080e;
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 7px,
+    rgba(0, 240, 255, 0.08) 7px,
+    rgba(0, 240, 255, 0.08) 8px
+  );
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-track:horizontal,
+body.terminal-theme::-webkit-scrollbar-track:horizontal,
+body.terminal-theme *::-webkit-scrollbar-track:horizontal,
+body.terminal-theme .table-wrapper::-webkit-scrollbar-track:horizontal,
+body.terminal-theme .tabs-nav::-webkit-scrollbar-track:horizontal,
+body.terminal-theme .drawer-body::-webkit-scrollbar-track:horizontal {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 7px,
+    rgba(0, 240, 255, 0.08) 7px,
+    rgba(0, 240, 255, 0.08) 8px
+  );
+}
+
+/* Sharp Phosphor Chiclet Slider Thumb with Tactile Ribs */
+html:has(body.terminal-theme)::-webkit-scrollbar-thumb,
+body.terminal-theme::-webkit-scrollbar-thumb,
+body.terminal-theme *::-webkit-scrollbar-thumb,
+body.terminal-theme .table-wrapper::-webkit-scrollbar-thumb,
+body.terminal-theme .tabs-nav::-webkit-scrollbar-thumb,
+body.terminal-theme .drawer-body::-webkit-scrollbar-thumb {
+  background-color: #00f0ff;
+  border-radius: 1px;
+  border: 1px solid #00f0ff;
+  box-shadow: 0 0 6px rgba(0, 240, 255, 0.6), inset 0 0 2px rgba(255, 255, 255, 0.8);
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.35) 0px,
+    rgba(0, 0, 0, 0.35) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  min-height: 28px;
+  min-width: 28px;
+}
+
+/* Hover Overclock State: Intense Neon Cyan */
+html:has(body.terminal-theme)::-webkit-scrollbar-thumb:hover,
+body.terminal-theme::-webkit-scrollbar-thumb:hover,
+body.terminal-theme *::-webkit-scrollbar-thumb:hover {
+  background-color: #38bdf8;
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px #00f0ff, inset 0 0 4px #ffffff;
+}
+
+/* Active Drag State: Tactical Amber Lock-On */
+html:has(body.terminal-theme)::-webkit-scrollbar-thumb:active,
+body.terminal-theme::-webkit-scrollbar-thumb:active,
+body.terminal-theme *::-webkit-scrollbar-thumb:active {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.85), inset 0 0 4px #ffffff;
+}
+
+/* Channel Junction / Corner */
+html:has(body.terminal-theme)::-webkit-scrollbar-corner,
+body.terminal-theme::-webkit-scrollbar-corner,
+body.terminal-theme *::-webkit-scrollbar-corner {
+  background-color: #03060a;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+/* Tactical Chevron Stepper Buttons (Up / Down / Left / Right) */
+html:has(body.terminal-theme)::-webkit-scrollbar-button:single-button:vertical:decrement,
+body.terminal-theme::-webkit-scrollbar-button:single-button:vertical:decrement,
+body.terminal-theme *::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: 12px;
+  width: 10px;
+  background: #080d17 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='5,2 2,7 8,7' fill='%2300f0ff'/></svg>") center no-repeat;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-button:single-button:vertical:increment,
+body.terminal-theme::-webkit-scrollbar-button:single-button:vertical:increment,
+body.terminal-theme *::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: 12px;
+  width: 10px;
+  background: #080d17 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='5,8 2,3 8,3' fill='%2300f0ff'/></svg>") center no-repeat;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-button:single-button:horizontal:decrement,
+body.terminal-theme::-webkit-scrollbar-button:single-button:horizontal:decrement,
+body.terminal-theme *::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  height: 10px;
+  width: 12px;
+  background: #080d17 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='2,5 7,2 7,8' fill='%2300f0ff'/></svg>") center no-repeat;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-button:single-button:horizontal:increment,
+body.terminal-theme::-webkit-scrollbar-button:single-button:horizontal:increment,
+body.terminal-theme *::-webkit-scrollbar-button:single-button:horizontal:increment {
+  height: 10px;
+  width: 12px;
+  background: #080d17 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='8,5 3,2 3,8' fill='%2300f0ff'/></svg>") center no-repeat;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-button:hover,
+body.terminal-theme::-webkit-scrollbar-button:hover,
+body.terminal-theme *::-webkit-scrollbar-button:hover {
+  background-color: rgba(0, 240, 255, 0.2);
+  border-color: #00f0ff;
+}
+
+
+

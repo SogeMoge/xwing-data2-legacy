@@ -3,25 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>X-Wing 2.0 Legacy — Points & Balance Reference</title>
-  <meta name="description" content="Official human-readable points and balance reference for Star Wars: X-Wing Miniatures Game (Second Edition / 2.0 Legacy), generated from xwing-data2-legacy repository with full retrospective history, ship and upgrade fonts, and commit interlinks.">
+  <title>X-Wing 2.0 Legacy // Tactical HUD & Points Reference</title>
+  <meta name="description" content="Official points, chassis diagnostics, and balance reference for Star Wars: X-Wing Miniatures Game (Second Edition / 2.0 Legacy), styled with an authentic Star Wars Tactical Terminal HUD interface, retrospective history, and commit tracking.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="terminal.css">
   <link rel="icon" type="image/png" href="https://infinitearenas.com/xw2/images/shipicons/rebel/t65xwing.png">
 </head>
-<body>
+<body class="terminal-theme">
 
   <!-- App Header -->
   <header class="app-header">
     <div class="header-top">
       <div class="brand-section">
-        <span class="brand-logo-glyph" title="X-Wing">x</span>
+        <span class="brand-logo-glyph" title="X-Wing Tactical Terminal">x</span>
         <div>
-          <h1 class="brand-title">X-Wing 2.0 Legacy Points</h1>
-          <p class="brand-subtitle">Interactive Points Document & Balance Retrospect</p>
+          <h1 class="brand-title">X-Wing 2.0 Legacy // Tactical HUD</h1>
+          <p class="brand-subtitle">Tactical Flight Computer & Points Collation Terminal</p>
         </div>
       </div>
       <div class="header-badges">
-        <a class="badge" href="poc-terminal.html" style="color: #00f0ff; border-color: rgba(0, 240, 255, 0.4); text-shadow: 0 0 6px rgba(0, 240, 255, 0.4);" title="Preview Star Wars Tactical Terminal HUD Proof of Concept">🖥️ Tactical Terminal PoC</a>
+        <div class="theme-switch-group" role="group" aria-label="Interface Mode">
+          <span class="theme-switch-label">UI:</span>
+          <button type="button" class="theme-btn active" id="btnThemeTerminal" title="Switch to Star Wars Tactical HUD">
+            <span class="theme-led"></span>Tactical HUD
+          </button>
+          <button type="button" class="theme-btn" id="btnThemeStandard" title="Switch to Standard Clean View">
+            <span class="theme-led"></span>Standard View
+          </button>
+        </div>
         <a id="releaseBadge" class="badge badge-version" href="https://github.com/SogeMoge/xwing-data2-legacy/releases" target="_blank" rel="noopener noreferrer">Release 3.12.0</a>
         <a id="commitBadge" class="badge badge-commit" href="https://github.com/SogeMoge/xwing-data2-legacy" target="_blank" rel="noopener noreferrer">commit</a>
         <a class="badge badge-link" href="https://github.com/SogeMoge/xwing-data2-legacy" target="_blank" rel="noopener noreferrer">
@@ -87,9 +96,9 @@
 
     <!-- Summary Stats -->
     <div class="stats-banner">
-      <span id="rowCount">Loading cards...</span>
-      <span style="font-size: 0.78rem; color: var(--text-dim);">
-        Click any card row to view card art, stats, dial, and full historical timeline.
+      <span id="rowCount">Scanning tactical database...</span>
+      <span style="font-family: var(--font-term-mono, monospace); font-size: 0.76rem; color: #38bdf8;">
+        [TACTICAL LOG: SELECT ENTITY FOR WIREFRAME DIAGNOSTICS & FLIGHT ENVELOPE]
       </span>
     </div>
 

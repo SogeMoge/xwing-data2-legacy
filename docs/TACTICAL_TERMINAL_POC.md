@@ -1,9 +1,10 @@
 # Star Wars Tactical Terminal HUD — Proof of Concept Design Specification
 
 > **Audience**: AI Agents, UI Engineers & Game UI Designers  
-> **Status**: Interactive Proof of Concept (Living Design Document)  
+> **Status**: Primary Default Interface (with Live Theme Switcher)  
 > **Location**: [`docs/`](file:///g:/xwing-data2-legacy.git/docs/)  
-> **Live PoC**: [`docs/poc-terminal.html`](file:///g:/xwing-data2-legacy.git/docs/poc-terminal.html)  
+> **Primary Interface**: [`docs/index.html`](file:///g:/xwing-data2-legacy.git/docs/index.html) (Default: Tactical HUD)  
+> **Dedicated Alias**: [`docs/poc-terminal.html`](file:///g:/xwing-data2-legacy.git/docs/poc-terminal.html)  
 > **Theme Stylesheet**: [`docs/terminal.css`](file:///g:/xwing-data2-legacy.git/docs/terminal.css)  
 > **Source References**: `C:\Users\sogemoge\Pictures\StarWarsInterfacesReferences`  
 
@@ -13,9 +14,9 @@
 
 The standard reference interface was evaluated as being overly conventional—resembling a standard modern dark-mode SaaS dashboard rather than an authentic in-universe artifact from the *Star Wars* galaxy. 
 
-To bridge this gap, we constructed a **Proof of Concept (PoC) Star Wars Tactical Terminal HUD**. This interface transforms the points reference into a physical military computer terminal—evoking the targeting computers of T-65 X-wings, the tactical briefing monitors of Yavin IV and the Resistance base, and the command consoles of Imperial Star Destroyers and Death Star stations.
+To bridge this gap, we constructed the **Star Wars Tactical Terminal HUD**. This interface transforms the points reference into a physical military computer terminal—evoking the targeting computers of T-65 X-wings, the tactical briefing monitors of Yavin IV and the Resistance base, and the command consoles of Imperial Star Destroyers and Death Star stations.
 
-The interactive PoC is implemented in [`docs/poc-terminal.html`](file:///g:/xwing-data2-legacy.git/docs/poc-terminal.html) backed by [`docs/terminal.css`](file:///g:/xwing-data2-legacy.git/docs/terminal.css), running on the existing zero-dependency dataset (`data.js` / `history.js` / `app.js`) without disrupting the standard view.
+Following review, this design has been promoted to the **default primary interface** of the website at [`docs/index.html`](file:///g:/xwing-data2-legacy.git/docs/index.html). An interactive theme switcher button in the header allows instantaneous switching between the Tactical HUD and the clean Standard View, with user preferences persisted in `localStorage`.
 
 ---
 
@@ -153,5 +154,10 @@ When modifying [`docs/terminal.css`](file:///g:/xwing-data2-legacy.git/docs/term
 2. **Respect Color Invariants**:
    * All primary HUD borders, highlights, and active telemetry should use `var(--term-cyan)` (`#00f0ff`), `var(--term-amber)` (`#f59e0b`), or `var(--term-green)` (`#2fe48d`).
    * Faction accents must always preserve the canonical faction color tokens from `data/colors.json`.
-3. **Preserve Shared Logic**:
+3. **Avionics Telemetry Scrollbars**:
+   * Scroll tracks are recessed dark metal channels with calibrated 8px interval ruler notches (`repeating-linear-gradient`).
+   * Slider thumbs are square phosphor cyan blocks with tactile horizontal ribs and a subtle cyan glow.
+   * On hover/active drag, thumbs shift from overclock cyan (`#38bdf8`) to tactical lock-on amber (`#f59e0b`).
+   * Stepper end buttons render crisp inline vector chevrons (`▲` / `▼` / `◄` / `►`).
+4. **Preserve Shared Logic**:
    * [`docs/poc-terminal.html`](file:///g:/xwing-data2-legacy.git/docs/poc-terminal.html) shares [`docs/app.js`](file:///g:/xwing-data2-legacy.git/docs/app.js) with `index.html`. Do not introduce divergent DOM IDs or event handlers that break shared logic.

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>X-Wing 2.0 Legacy — Tactical Terminal HUD (PoC)</title>
-  <meta name="description" content="Star Wars Tactical Terminal HUD proof of concept interface for X-Wing 2.0 Legacy Points Reference.">
+  <title>X-Wing 2.0 Legacy // Tactical HUD & Points Reference</title>
+  <meta name="description" content="Official points, chassis diagnostics, and balance reference for Star Wars: X-Wing Miniatures Game (Second Edition / 2.0 Legacy), styled with an authentic Star Wars Tactical Terminal HUD interface, retrospective history, and commit tracking.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="terminal.css">
   <link rel="icon" type="image/png" href="https://infinitearenas.com/xw2/images/shipicons/rebel/t65xwing.png">
@@ -22,7 +22,15 @@
         </div>
       </div>
       <div class="header-badges">
-        <a class="badge" href="index.html" style="color: #f59e0b; border-color: rgba(245, 158, 11, 0.4);" title="Switch back to standard interface view">⚙️ Standard View</a>
+        <div class="theme-switch-group" role="group" aria-label="Interface Mode">
+          <span class="theme-switch-label">UI:</span>
+          <button type="button" class="theme-btn active" id="btnThemeTerminal" title="Switch to Star Wars Tactical HUD">
+            <span class="theme-led"></span>Tactical HUD
+          </button>
+          <button type="button" class="theme-btn" id="btnThemeStandard" title="Switch to Standard Clean View">
+            <span class="theme-led"></span>Standard View
+          </button>
+        </div>
         <a id="releaseBadge" class="badge badge-version" href="https://github.com/SogeMoge/xwing-data2-legacy/releases" target="_blank" rel="noopener noreferrer">Release 3.12.0</a>
         <a id="commitBadge" class="badge badge-commit" href="https://github.com/SogeMoge/xwing-data2-legacy" target="_blank" rel="noopener noreferrer">commit</a>
         <a class="badge badge-link" href="https://github.com/SogeMoge/xwing-data2-legacy" target="_blank" rel="noopener noreferrer">
@@ -89,7 +97,7 @@
     <!-- Summary Stats -->
     <div class="stats-banner">
       <span id="rowCount">Scanning tactical database...</span>
-      <span style="font-family: var(--font-term-mono); font-size: 0.76rem; color: #38bdf8;">
+      <span style="font-family: var(--font-term-mono, monospace); font-size: 0.76rem; color: #38bdf8;">
         [TACTICAL LOG: SELECT ENTITY FOR WIREFRAME DIAGNOSTICS & FLIGHT ENVELOPE]
       </span>
     </div>
@@ -113,7 +121,7 @@
     <div class="drawer">
       <div class="drawer-header">
         <div class="drawer-title-box">
-          <h2 class="drawer-title" id="drawerTitle">Entity Diagnostics</h2>
+          <h2 class="drawer-title" id="drawerTitle">Card Details</h2>
         </div>
         <button class="drawer-close" id="modalClose" aria-label="Close">&times;</button>
       </div>
