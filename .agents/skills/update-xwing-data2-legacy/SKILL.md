@@ -8,7 +8,7 @@ description: >-
 
 This skill guides the agent through modifying and maintaining the [xwing-data2-legacy](file:///p:/xwing-data2-legacy) repository.
 
-For the full architectural breakdown, data schemas, and invariants, consult the project's [AGENTS.md](file:///p:/xwing-data2-legacy/AGENTS.md).
+For the full architectural breakdown, data schemas, and invariants, consult the project's [AGENTS.md](file:///g:/xwing-data2-legacy.git/AGENTS.md) and the [Points Reference & Retrospective Web Architecture](file:///g:/xwing-data2-legacy.git/docs/ARCHITECTURE.md).
 
 ## Mandatory Rules for New Content
 

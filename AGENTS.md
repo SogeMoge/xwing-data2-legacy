@@ -42,6 +42,7 @@ xwing-data2-legacy/
 │   ├── pages.test.js                   # Validates GitHub Pages dataset, fonts, and commit links
 │   └── xws.test.js                     # Enforces global uniqueness of XWS IDs
 ├── docs/                               # GITHUB PAGES INTERACTIVE APPLICATION
+│   ├── ARCHITECTURE.md                 # System architecture & retrospective analytics reference for AI & maintainers
 │   ├── index.html                      # Single-page application UI with filters and tabs
 │   ├── style.css                       # Dark theme, xwing icon fonts, table layout
 │   ├── app.js                          # Client-side filtering, search, sorting, CSV export
@@ -212,4 +213,7 @@ npm run serve:pages
   - `MINOR`: Points updates, new content added (pilots, ships, upgrades) or backward-compatible schema changes.
   - `MAJOR`: Breaking schema changes that alter the shape expected by downstream consumers.
 - Version is synchronized in both [`package.json`](package.json) and [`data/manifest.json`](data/manifest.json).
+
+### 6.4 Web Reference & Retrospective Points Architecture
+- For full architectural specifications, data compilation flow, release diffing logic, and comparative evaluation against Google Sheets, consult [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
