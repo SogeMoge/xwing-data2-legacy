@@ -172,8 +172,10 @@ The application viewport is split into five functional vertical tiers:
   2. Faction title (`.tab-label`).
   3. Pill counter (`.tab-count`) displaying total pilots + upgrades.
 * **Mobile Presentation (`body.mobile-view` and `@media (max-width: 840px)`)**:
-  * Faction tabs and generic upgrades collapse into **icon-only buttons** (`width: 40px; height: 38px; padding: 0;`).
+  * All tabs (Recent Changes `⚡`, Generic Upgrades `m`, and all 7 factions) collapse into **icon-only buttons** (`width: 40px; height: 38px; padding: 0;`).
   * Text labels and count badges are hidden (`display: none !important;`).
+  * **No Active Indicators**: Underline indicator bars (`border-bottom`) and active dot indicators (`::before`) are removed, leaving just clean icons.
+  * Active state is indicated purely by icon highlight (`opacity: 1` and glowing drop-shadow vs `0.45` muted for inactive) and a subtle background fill.
   * Glyph font-size increased to `1.35rem` with hover/touch `title` tooltips.
   * Generic Upgrades tab standardized to the **Modification icon** (`'m'` in `xwing-miniatures` font).
   * Release version badge (`#releaseBadge`) remains visible in the header on mobile.

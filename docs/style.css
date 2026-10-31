@@ -1547,11 +1547,15 @@ body {
   .tabs-nav::-webkit-scrollbar {
     display: none;
   }
-  .tab-btn:not(.tab-changes) .tab-label,
-  .tab-btn:not(.tab-changes) .tab-count {
+  /* Mobile Tabs: Just Icons, No active indicator line or dots, No labels, No counts */
+  .tab-btn .tab-label,
+  .tab-btn .tab-count {
     display: none !important;
   }
-  .tab-btn:not(.tab-changes) {
+  .tab-btn::before {
+    display: none !important;
+  }
+  .tab-btn {
     width: 40px;
     min-width: 40px;
     height: 38px;
@@ -1560,20 +1564,28 @@ body {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    border-radius: 6px !important;
+    background: transparent;
   }
-  .tab-btn:not(.tab-changes) .tab-faction-glyph {
+  .tab-btn .tab-faction-glyph {
     font-size: 1.35rem;
     line-height: 1;
     margin: 0;
+    opacity: 0.45;
+    transition: opacity 0.2s, transform 0.2s;
   }
-  .tab-btn.tab-changes {
-    padding: 0.35rem 0.6rem;
-    height: 38px;
-    font-size: 0.75rem;
-    flex-shrink: 0;
+  .tab-btn.active {
+    border-bottom: none !important;
+    border-bottom-color: transparent !important;
+    box-shadow: none !important;
+    background-color: var(--bg-tertiary) !important;
   }
-  .tab-btn.tab-changes .tab-count {
-    display: none !important;
+  .tab-btn.active .tab-faction-glyph {
+    opacity: 1;
+    transform: scale(1.1);
   }
 
   /* Keep Version Picker (#releaseBadge) visible on mobile */
@@ -1839,11 +1851,14 @@ body.mobile-view .tabs-nav {
 body.mobile-view .tabs-nav::-webkit-scrollbar {
   display: none;
 }
-body.mobile-view .tab-btn:not(.tab-changes) .tab-label,
-body.mobile-view .tab-btn:not(.tab-changes) .tab-count {
+body.mobile-view .tab-btn .tab-label,
+body.mobile-view .tab-btn .tab-count {
   display: none !important;
 }
-body.mobile-view .tab-btn:not(.tab-changes) {
+body.mobile-view .tab-btn::before {
+  display: none !important;
+}
+body.mobile-view .tab-btn {
   width: 40px;
   min-width: 40px;
   height: 38px;
@@ -1852,20 +1867,28 @@ body.mobile-view .tab-btn:not(.tab-changes) {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  border-radius: 6px !important;
+  background: transparent;
 }
-body.mobile-view .tab-btn:not(.tab-changes) .tab-faction-glyph {
+body.mobile-view .tab-btn .tab-faction-glyph {
   font-size: 1.35rem;
   line-height: 1;
   margin: 0;
+  opacity: 0.45;
+  transition: opacity 0.2s, transform 0.2s;
 }
-body.mobile-view .tab-btn.tab-changes {
-  padding: 0.35rem 0.6rem;
-  height: 38px;
-  font-size: 0.75rem;
-  flex-shrink: 0;
+body.mobile-view .tab-btn.active {
+  border-bottom: none !important;
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+  background-color: var(--bg-tertiary) !important;
 }
-body.mobile-view .tab-btn.tab-changes .tab-count {
-  display: none !important;
+body.mobile-view .tab-btn.active .tab-faction-glyph {
+  opacity: 1;
+  transform: scale(1.1);
 }
 body.mobile-view #releaseBadge.badge-version {
   display: inline-flex !important;

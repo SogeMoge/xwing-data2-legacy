@@ -994,6 +994,58 @@ body.terminal-theme.mobile-view .chassis-cell .chassis-icon-glyph {
   filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.4));
 }
 
+/* Mobile Tactical Tabs: Just Icons, No active indicator LED or underline */
+body.terminal-theme.mobile-view .tab-btn,
+@media (max-width: 840px) {
+  body.terminal-theme .tab-btn::before {
+    display: none !important;
+  }
+  body.terminal-theme .tab-btn {
+    border: 1px solid transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    margin: 0 !important;
+  }
+  body.terminal-theme .tab-btn .tab-faction-glyph {
+    opacity: 0.45;
+  }
+  body.terminal-theme .tab-btn.active {
+    border-color: rgba(0, 240, 255, 0.4) !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: rgba(0, 240, 255, 0.12) !important;
+  }
+  body.terminal-theme .tab-btn.active .tab-faction-glyph {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px var(--tab-color, var(--term-cyan)));
+  }
+}
+
+body.terminal-theme.mobile-view .tab-btn {
+  border: 1px solid transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  margin: 0 !important;
+}
+body.terminal-theme.mobile-view .tab-btn::before {
+  display: none !important;
+}
+body.terminal-theme.mobile-view .tab-btn .tab-faction-glyph {
+  opacity: 0.45;
+}
+body.terminal-theme.mobile-view .tab-btn.active {
+  border-color: rgba(0, 240, 255, 0.4) !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: rgba(0, 240, 255, 0.12) !important;
+}
+body.terminal-theme.mobile-view .tab-btn.active .tab-faction-glyph {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px var(--tab-color, var(--term-cyan)));
+}
+
 /* --------------------------------------------------------------------------
    Tactical HUD Points Trend Graph in Card Detail Drawer
    -------------------------------------------------------------------------- */
