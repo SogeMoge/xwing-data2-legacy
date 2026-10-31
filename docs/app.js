@@ -33,6 +33,9 @@
   const mobFilterToggleBtn = document.getElementById('mobFilterToggleBtn');
   const mobFilterCountBadge = document.getElementById('mobFilterCountBadge');
   const toolbarCollapsible = document.getElementById('toolbarCollapsible');
+  const mobViewToggleBtn = document.getElementById('mobViewToggleBtn');
+  const toolbarViewCollapsible = document.getElementById('toolbarViewCollapsible');
+  const tableScrollHint = document.getElementById('tableScrollHint');
 
   // Upgrade slot icon letter codes (xwing-miniatures font glyphs)
   const SLOT_ICONS = {
@@ -359,9 +362,97 @@
     });
   }
 
+  function setupLayout() {
+    const btnAuto = document.getElementById('btnLayoutAuto');
+    const btnMobile = document.getElementById('btnLayoutMobile');
+    const btnDesktop = document.getElementById('btnLayoutDesktop');
+
+    let savedMode = 'auto';
+    try {
+      savedMode = localStorage.getItem('xwing_view_layout') || 'auto';
+    } catch (e) { }
+
+    function detectIsMobileDevice() {
+      // 1. Touch device detection (touchscreens, mobile phones, foldables)
+      const hasTouch = (('ontouchstart' in window) || (navigator.maxTouchPoints > 0));
+
+      // 2. Physical screen dimension check (handles Android Chrome with "Desktop site" enabled where window.innerWidth is spoofed to 980px/1024px)
+      const screenMin = Math.min(window.screen.width || 9999, window.screen.height || 9999);
+      const isMobilePhysicalScreen = screenMin <= 840;
+
+      // 3. User agent check (OnePlus, Android, iPhone, Mobile browsers)
+      const ua = navigator.userAgent || '';
+      const isMobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS|OnePlus/i.test(ua);
+
+      // 4. Viewport width check
+      const isNarrowViewport = window.innerWidth <= 840;
+
+      if (isNarrowViewport) return true;
+      if (isMobileUA && isMobilePhysicalScreen) return true;
+      if (hasTouch && isMobilePhysicalScreen) return true;
+
+      return false;
+    }
+
+    function applyLayout(mode) {
+      savedMode = mode;
+      try {
+        localStorage.setItem('xwing_view_layout', mode);
+      } catch (e) { }
+
+      let isMobile = false;
+      if (mode === 'mobile') {
+        isMobile = true;
+      } else if (mode === 'desktop') {
+        isMobile = false;
+      } else {
+        isMobile = detectIsMobileDevice();
+      }
+
+      document.body.classList.toggle('mobile-view', isMobile);
+
+      if (btnAuto) {
+        btnAuto.classList.toggle('active', mode === 'auto');
+        btnAuto.setAttribute('aria-pressed', mode === 'auto' ? 'true' : 'false');
+      }
+      if (btnMobile) {
+        btnMobile.classList.toggle('active', mode === 'mobile');
+        btnMobile.setAttribute('aria-pressed', mode === 'mobile' ? 'true' : 'false');
+      }
+      if (btnDesktop) {
+        btnDesktop.classList.toggle('active', mode === 'desktop');
+        btnDesktop.setAttribute('aria-pressed', mode === 'desktop' ? 'true' : 'false');
+      }
+    }
+
+    applyLayout(savedMode);
+
+    if (btnAuto) btnAuto.addEventListener('click', () => applyLayout('auto'));
+    if (btnMobile) btnMobile.addEventListener('click', () => applyLayout('mobile'));
+    if (btnDesktop) btnDesktop.addEventListener('click', () => applyLayout('desktop'));
+
+    // Dynamic re-detection on window resize or foldable fold/unfold orientation change
+    window.addEventListener('resize', () => {
+      if (savedMode === 'auto') {
+        const isMobile = detectIsMobileDevice();
+        document.body.classList.toggle('mobile-view', isMobile);
+      }
+    });
+
+    window.addEventListener('orientationchange', () => {
+      if (savedMode === 'auto') {
+        setTimeout(() => {
+          const isMobile = detectIsMobileDevice();
+          document.body.classList.toggle('mobile-view', isMobile);
+        }, 150);
+      }
+    });
+  }
+
   async function init() {
     try {
       setupTheme();
+      setupLayout();
 
       if (window.XWING_DATA) {
         appData = window.XWING_DATA;
@@ -427,7 +518,8 @@
     const changesCount = appData.summaryChanges.length;
     const changesTab = document.createElement('button');
     changesTab.className = `tab-btn tab-changes ${currentTab === 'changes' ? 'active' : ''}`;
-    changesTab.innerHTML = `<span class="tab-faction-glyph">⚡</span><span>Recent Changes</span><span class="tab-count">${changesCount}</span>`;
+    changesTab.title = `Recent Changes (${changesCount})`;
+    changesTab.innerHTML = `<span class="tab-faction-glyph">⚡</span><span class="tab-label">Recent Changes</span><span class="tab-count">${changesCount}</span>`;
     changesTab.addEventListener('click', () => {
       currentTab = 'changes';
       updateActiveTab();
@@ -436,11 +528,12 @@
     });
     tabsNav.appendChild(changesTab);
 
-    // Generic Upgrades Tab
+    // Generic Upgrades Tab (Modification icon 'm' is standard for generic upgrades)
     const genericUpgradesCount = appData.upgrades.filter(u => getUpgradeFactions(u).length === 0).length;
     const upTab = document.createElement('button');
     upTab.className = `tab-btn tab-upgrades ${currentTab === 'upgrades' ? 'active' : ''}`;
-    upTab.innerHTML = `<span class="tab-faction-glyph">m</span><span>Generic Upgrades</span><span class="tab-count">${genericUpgradesCount}</span>`;
+    upTab.title = `Generic Upgrades (${genericUpgradesCount})`;
+    upTab.innerHTML = `<span class="tab-faction-glyph">m</span><span class="tab-label">Generic Upgrades</span><span class="tab-count">${genericUpgradesCount}</span>`;
     upTab.addEventListener('click', () => {
       currentTab = 'upgrades';
       updateActiveTab();
@@ -472,8 +565,9 @@
 
       const btn = document.createElement('button');
       btn.className = `tab-btn ${f.cls} ${currentTab === f.id ? 'active' : ''}`;
+      btn.title = `${f.name} (${totalCount})`;
       btn.style.setProperty('--tab-color', color);
-      btn.innerHTML = `<span class="tab-faction-glyph" style="color: ${color};">${glyph}</span><span>${f.name}</span><span class="tab-count" title="${pCount} pilots, ${uCount} upgrades">${totalCount}</span>`;
+      btn.innerHTML = `<span class="tab-faction-glyph" style="color: ${color};">${glyph}</span><span class="tab-label">${f.name}</span><span class="tab-count" title="${pCount} pilots, ${uCount} upgrades">${totalCount}</span>`;
       btn.addEventListener('click', () => {
         currentTab = f.id;
         updateActiveTab();
@@ -568,9 +662,12 @@
     if (formatFilter !== 'all') count++;
     if (changeFilter !== 'all') count++;
     if (typeFilter !== 'all') count++;
-    if (showHistory) count++;
     mobFilterCountBadge.textContent = `(${count})`;
     mobFilterToggleBtn.classList.toggle('has-active-filters', count > 0);
+
+    if (mobViewToggleBtn) {
+      mobViewToggleBtn.classList.toggle('has-active-view', showHistory || !showHeaders);
+    }
   }
 
   function setupFilters() {
@@ -579,6 +676,22 @@
         const isOpen = toolbarCollapsible.classList.toggle('open');
         mobFilterToggleBtn.classList.toggle('active', isOpen);
         mobFilterToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        if (isOpen && toolbarViewCollapsible) {
+          toolbarViewCollapsible.classList.remove('open');
+          if (mobViewToggleBtn) mobViewToggleBtn.classList.remove('active');
+        }
+      });
+    }
+
+    if (mobViewToggleBtn && toolbarViewCollapsible) {
+      mobViewToggleBtn.addEventListener('click', () => {
+        const isOpen = toolbarViewCollapsible.classList.toggle('open');
+        mobViewToggleBtn.classList.toggle('active', isOpen);
+        mobViewToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        if (isOpen && toolbarCollapsible) {
+          toolbarCollapsible.classList.remove('open');
+          if (mobFilterToggleBtn) mobFilterToggleBtn.classList.remove('active');
+        }
       });
     }
 
@@ -624,6 +737,13 @@
       showHistory = !showHistory;
       toggleHistoryBtn.classList.toggle('btn-toggle-active', showHistory);
       toggleHistoryBtn.innerHTML = showHistory ? '<span>📜 Hide History</span>' : '<span>📜 Show History</span>';
+      
+      if (tableScrollHint) {
+        tableScrollHint.innerHTML = showHistory
+          ? '<span>↔ Swipe left for upgrade slots, format, points & history</span>'
+          : '<span>↔ Swipe left for upgrade slots, format & points</span>';
+      }
+
       updateActiveFilterCount();
       render();
     });
@@ -635,6 +755,7 @@
           localStorage.setItem('xwing_show_headers', showHeaders ? 'true' : 'false');
         } catch (e) { }
         updateHeadersVisibility();
+        updateActiveFilterCount();
       });
     }
 
@@ -769,13 +890,13 @@
       cols = [
         { id: 'name', label: 'Name', sortable: true, sticky: true },
         { id: 'type', label: currentTab === 'upgrades' ? 'Slot' : 'Chassis / Slot', sortable: true },
-        { id: 'cost', label: 'Sep 26', sortable: true },
-        { id: 'diff', label: 'Diff', sortable: true },
         { id: 'slots', label: 'Upgrade Bar', sortable: false },
         { id: 'format', label: 'Format', sortable: false },
         { id: 'restrictions', label: 'Restrictions', sortable: false },
         { id: 'keywords', label: 'Keywords', sortable: false },
-        { id: 'commit', label: 'Commit', sortable: false }
+        { id: 'commit', label: 'Commit', sortable: false },
+        { id: 'cost', label: 'Sep 26', sortable: true },
+        { id: 'diff', label: 'Diff', sortable: true }
       ];
 
       if (showHistory) {
@@ -1242,8 +1363,6 @@
         </div>
       </td>
       <td class="col-type">${typeHtml}</td>
-      <td class="col-cost"><span class="points-curr">${item.pointsFormatted}</span></td>
-      <td class="col-diff">${renderDiffBadge(item.diff, hasCostChange, isNew)}</td>
       <td class="col-slots">
         ${slotBarHtml}
         ${slotsChange ? `<span class="param-changed-badge" title="${slotsChange.summary}">Slots</span>` : ''}
@@ -1261,6 +1380,8 @@
         ${kwChange ? `<span class="param-changed-badge" title="${kwChange.summary}">+Kw</span>` : ''}
       </td>
       <td class="col-commit">${renderCommitChip(commitObj)}</td>
+      <td class="col-cost"><span class="points-curr">${item.pointsFormatted}</span></td>
+      <td class="col-diff">${renderDiffBadge(item.diff, hasCostChange, isNew)}</td>
       ${histCellsHtml}
     </tr>`;
   }
@@ -1439,6 +1560,174 @@
     modalBackdrop.classList.add('open');
   }
 
+  function renderPointsTrendGraph(currentHist, currentCost) {
+    if (!currentHist && !currentCost) return '';
+
+    // Collect all cycles in chronological order (oldest to newest)
+    const cyclesList = (appData && appData.historyCycles && appData.historyCycles.length > 0)
+      ? appData.historyCycles.slice().reverse()
+      : ["Sep 21", "Apr 22", "May 22", "Sep 22", "Oct 22", "Dec 22", "Mar 23", "Sep 23", "Mar 24", "Sep 24", "Mar 25", "Dec 25", "Mar 26", "Sep 26"];
+
+    const dataPoints = [];
+    cyclesList.forEach(cycle => {
+      let rawVal = currentHist ? currentHist[cycle] : undefined;
+      if (cycle === 'Sep 26' && (rawVal === undefined || rawVal === null || rawVal === '')) {
+        rawVal = currentCost;
+      }
+      if (rawVal !== undefined && rawVal !== null && rawVal !== '' && rawVal !== '-') {
+        const strVal = String(rawVal).trim();
+        if (/^-?\d+(\.\d+)?$/.test(strVal)) {
+          const num = parseFloat(strVal);
+          if (!isNaN(num)) {
+            dataPoints.push({
+              cycle,
+              val: num,
+              raw: strVal
+            });
+          }
+        }
+      }
+    });
+
+    if (dataPoints.length === 0) {
+      return `
+        <div class="timeline-graph-empty">
+          <span>⚡ Variable point cost depends on ship attributes (see timeline below).</span>
+        </div>
+      `;
+    }
+
+    if (dataPoints.length === 1) {
+      const p = dataPoints[0];
+      return `
+        <div class="timeline-graph-single">
+          <div class="timeline-trend-badge trend-stable">
+            <span class="trend-icon">★</span>
+            <span class="trend-label">Introduced in ${p.cycle}: <strong>${p.val} pts</strong> (Current)</span>
+          </div>
+        </div>
+      `;
+    }
+
+    const firstPt = dataPoints[0];
+    const lastPt = dataPoints[dataPoints.length - 1];
+    const delta = lastPt.val - firstPt.val;
+
+    let trendClass = 'trend-stable';
+    let trendIcon = '➡️';
+    let trendText = `Stable across ${dataPoints.length} cycles (${lastPt.val} pts)`;
+
+    if (delta < 0) {
+      trendClass = 'trend-buff';
+      trendIcon = '▼';
+      trendText = `Buff: ${delta} pts since ${firstPt.cycle} (${firstPt.val} → ${lastPt.val})`;
+    } else if (delta > 0) {
+      trendClass = 'trend-nerf';
+      trendIcon = '▲';
+      trendText = `Nerf: +${delta} pts since ${firstPt.cycle} (${firstPt.val} → ${lastPt.val})`;
+    }
+
+    const svgWidth = 520;
+    const svgHeight = 135;
+    const padL = 36;
+    const padR = 24;
+    const padT = 20;
+    const padB = 26;
+
+    const plotW = svgWidth - padL - padR;
+    const plotH = svgHeight - padT - padB;
+
+    let minVal = Math.min(...dataPoints.map(d => d.val));
+    let maxVal = Math.max(...dataPoints.map(d => d.val));
+    if (minVal === maxVal) {
+      minVal = Math.max(0, minVal - 2);
+      maxVal = maxVal + 2;
+    } else {
+      const span = maxVal - minVal;
+      const margin = Math.max(1, Math.ceil(span * 0.15));
+      minVal = Math.max(0, minVal - margin);
+      maxVal = maxVal + margin;
+    }
+
+    const n = dataPoints.length;
+    const coords = dataPoints.map((d, idx) => {
+      const x = padL + (idx / (n - 1)) * plotW;
+      const yRatio = (d.val - minVal) / (maxVal - minVal);
+      const y = padT + (1 - yRatio) * plotH;
+      return { ...d, x: Math.round(x * 10) / 10, y: Math.round(y * 10) / 10 };
+    });
+
+    const linePath = coords.map((c, i) => `${i === 0 ? 'M' : 'L'} ${c.x} ${c.y}`).join(' ');
+    const bottomY = padT + plotH;
+    const areaPath = `${linePath} L ${coords[coords.length - 1].x} ${bottomY} L ${coords[0].x} ${bottomY} Z`;
+
+    const midVal = Math.round((minVal + maxVal) / 2);
+    const midY = padT + (1 - (midVal - minVal) / (maxVal - minVal)) * plotH;
+    const maxY = padT;
+    const minY = bottomY;
+
+    function formatCycleLabel(cycle) {
+      const parts = cycle.split(' ');
+      if (parts.length === 2) {
+        return `${parts[0].slice(0, 1)}'${parts[1].slice(2)}`;
+      }
+      return cycle;
+    }
+
+    const gridHtml = `
+      <line x1="${padL}" y1="${minY}" x2="${padL + plotW}" y2="${minY}" class="graph-grid-line" />
+      <line x1="${padL}" y1="${midY}" x2="${padL + plotW}" y2="${midY}" class="graph-grid-line dashed" />
+      <line x1="${padL}" y1="${maxY}" x2="${padL + plotW}" y2="${maxY}" class="graph-grid-line dashed" />
+      <text x="${padL - 6}" y="${minY + 3}" class="graph-axis-label">${Math.round(minVal)}</text>
+      <text x="${padL - 6}" y="${midY + 3}" class="graph-axis-label">${midVal}</text>
+      <text x="${padL - 6}" y="${maxY + 3}" class="graph-axis-label">${Math.round(maxVal)}</text>
+    `;
+
+    let dotsHtml = '';
+    coords.forEach((c, idx) => {
+      let dotColorClass = 'dot-neutral';
+      if (idx > 0) {
+        if (c.val < coords[idx - 1].val) dotColorClass = 'dot-buff';
+        else if (c.val > coords[idx - 1].val) dotColorClass = 'dot-nerf';
+      }
+
+      const valChanged = (idx === 0 || idx === coords.length - 1 || c.val !== coords[idx - 1].val);
+      const textLabel = valChanged ? `<text x="${c.x}" y="${Math.max(12, c.y - 7)}" class="graph-point-label">${c.val}</text>` : '';
+
+      dotsHtml += `
+        <g class="graph-point-group">
+          <title>${c.cycle}: ${c.val} pts</title>
+          <circle cx="${c.x}" cy="${c.y}" r="4" class="graph-dot ${dotColorClass}" />
+          ${textLabel}
+          <text x="${c.x}" y="${svgHeight - 8}" class="graph-x-label">${formatCycleLabel(c.cycle)}</text>
+        </g>
+      `;
+    });
+
+    return `
+      <div class="timeline-graph-wrapper">
+        <div class="timeline-trend-badge ${trendClass}">
+          <span class="trend-icon">${trendIcon}</span>
+          <span class="trend-label">Points Trend: <strong>${trendText}</strong></span>
+        </div>
+        <div class="timeline-svg-container">
+          <svg class="timeline-svg" viewBox="0 0 ${svgWidth} ${svgHeight}" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="trendAreaGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--term-cyan, #38bdf8)" stop-opacity="0.28" />
+                <stop offset="100%" stop-color="var(--term-cyan, #38bdf8)" stop-opacity="0.0" />
+              </linearGradient>
+            </defs>
+            ${gridHtml}
+            <path d="${areaPath}" fill="url(#trendAreaGrad)" class="graph-area-path" />
+            <path d="${linePath}" fill="none" class="graph-line-path" />
+            ${dotsHtml}
+          </svg>
+        </div>
+      </div>
+    `;
+  }
+
   function openDrawer(key) {
     if (!appData) return;
     const item = appData.pilots.find(p => p.key === key)
@@ -1497,6 +1786,10 @@
       </td></tr>`;
       ensureHistoryLoaded().then(() => {
         const updatedHist = historyMap[item.key] || {};
+        const graphContainer = document.getElementById('drawerHistGraphContainer');
+        if (graphContainer) {
+          graphContainer.innerHTML = renderPointsTrendGraph(updatedHist, item.pointsFormatted);
+        }
         const placeholder = document.getElementById('drawerHistPlaceholder');
         if (placeholder && placeholder.parentElement) {
           const tbody = placeholder.parentElement.parentElement;
@@ -1526,6 +1819,9 @@
     const historySectionHtml = `
       <div class="detail-section">
         <div class="detail-section-title">Retrospective Points Timeline</div>
+        <div id="drawerHistGraphContainer">
+          ${renderPointsTrendGraph(currentHist, item.pointsFormatted)}
+        </div>
         <table class="history-table">
           <thead><tr><th>Update Cycle</th><th>Points</th></tr></thead>
           <tbody>${historyRowsHtml}</tbody>

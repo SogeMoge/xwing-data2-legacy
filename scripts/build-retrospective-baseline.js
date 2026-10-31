@@ -1,183 +1,233 @@
+const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 const repoRoot = path.resolve(__dirname, '..');
-const manifestPath = path.join(repoRoot, 'data', 'manifest.json');
-const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 
-// Load all pilots from the repo
-const pilots = [];
-manifest.pilots.forEach(f => {
-  f.ships.forEach(s => {
-    const ship = JSON.parse(fs.readFileSync(path.join(repoRoot, s), 'utf8'));
+/**
+ * Retrospective Baseline Builder for X-Wing 2.0 Legacy
+ *
+ * NOTE: The Google Sheet is used ONLY for visual reference and MUST NOT be used
+ * as a data source. All points data and card definitions MUST be derived
+ * exclusively from xwing-data2-legacy repository files and git release tags.
+ */
+
+// Balance update release tags in xwing-data2-legacy
+const cycleRefs = [
+  { cycle: 'Sep 26', ref: 'HEAD' },     // Release 3.11.0 / 3.12.0
+  { cycle: 'Mar 26', ref: '3.10.0' },   // March 2026 points update
+  { cycle: 'Dec 25', ref: '3.9.0' },    // December 2025 points update
+  { cycle: 'Mar 25', ref: '3.6.0' },    // March 2025 points update
+  { cycle: 'Sep 24', ref: '3.5.0' },    // September 2024 points update
+  { cycle: 'Mar 24', ref: '3.2.0' },    // March 2024 points update
+  { cycle: 'Sep 23', ref: '3.0.0' },    // September 2023 points update
+  { cycle: 'Dec 22', ref: '2.5.3' },    // Final 2.0 baseline
+  { cycle: 'Sep 21', ref: '2.4.0' }     // Wave 10 / Sep 2021
+];
+
+function formatCost(cost) {
+  if (cost === undefined || cost === null) return null;
+  if (typeof cost === 'number' || typeof cost === 'string') return String(cost);
+  if (typeof cost === 'object') {
+    if (cost.value !== undefined) return String(cost.value);
+    if (cost.variable) {
+      if (cost.values && typeof cost.values === 'object') {
+        const pairs = Object.entries(cost.values).map(([k, v]) => `${k}=${v}`).join(' / ');
+        return `${cost.variable} ${pairs}`;
+      }
+      return String(cost.variable);
+    }
+  }
+  return null;
+}
+
+// Temporary cache directory for tag extraction
+const tmpDir = path.join(os.tmpdir(), 'xwing-legacy-tag-cache');
+if (!fs.existsSync(tmpDir)) {
+  fs.mkdirSync(tmpDir, { recursive: true });
+}
+
+// Extract tags from git
+console.log('Extracting release points from xwing-data2-legacy git history...');
+cycleRefs.forEach(({ ref }) => {
+  if (ref === 'HEAD') return;
+  const tagDir = path.join(tmpDir, ref);
+  if (!fs.existsSync(tagDir)) {
+    fs.mkdirSync(tagDir, { recursive: true });
+    try {
+      execSync(`git archive ${ref} data/ | tar -x -C "${tagDir}"`, {
+        cwd: repoRoot,
+        maxBuffer: 50 * 1024 * 1024
+      });
+    } catch (e) {
+      console.warn(`Warning: Could not extract git archive for ${ref}: ${e.message}`);
+    }
+  }
+});
+
+// Build card cost map across cycles
+const tagCardCosts = {}; // cycle -> { key: costStr }
+
+cycleRefs.forEach(({ cycle, ref }) => {
+  const cardMap = {};
+  tagCardCosts[cycle] = cardMap;
+
+  const baseDir = ref === 'HEAD' ? repoRoot : path.join(tmpDir, ref);
+  const mPath = path.join(baseDir, 'data', 'manifest.json');
+  if (!fs.existsSync(mPath)) return;
+
+  const manifest = JSON.parse(fs.readFileSync(mPath, 'utf8'));
+
+  if (manifest.pilots) {
+    manifest.pilots.forEach(f => {
+      if (f.ships) {
+        f.ships.forEach(sRel => {
+          const sPath = path.join(baseDir, sRel);
+          if (fs.existsSync(sPath)) {
+            try {
+              const ship = JSON.parse(fs.readFileSync(sPath, 'utf8'));
+              if (ship.pilots) {
+                ship.pilots.forEach(p => {
+                  const val = formatCost(p.cost);
+                  if (val !== null) {
+                    cardMap[`pilot:${p.xws}`] = val;
+                  }
+                });
+              }
+            } catch (e) {}
+          }
+        });
+      }
+    });
+  }
+
+  if (manifest.upgrades) {
+    manifest.upgrades.forEach(uRel => {
+      const uPath = path.join(baseDir, uRel);
+      if (fs.existsSync(uPath)) {
+        try {
+          const upList = JSON.parse(fs.readFileSync(uPath, 'utf8'));
+          if (Array.isArray(upList)) {
+            upList.forEach(u => {
+              const val = formatCost(u.cost);
+              if (val !== null) {
+                cardMap[`upgrade:${u.xws}`] = val;
+              }
+            });
+          }
+        } catch (e) {}
+      }
+    });
+  }
+});
+
+// Load existing retrospective history to preserve older intermediate cycles (e.g. Mar 23)
+const currentHistoryPath = path.join(repoRoot, 'data', 'retrospective', 'points_history.json');
+let currentHistory = {};
+if (fs.existsSync(currentHistoryPath)) {
+  try {
+    currentHistory = JSON.parse(fs.readFileSync(currentHistoryPath, 'utf8'));
+  } catch (e) {
+    currentHistory = {};
+  }
+}
+
+// Load active database manifest
+const activeManifestPath = path.join(repoRoot, 'data', 'manifest.json');
+const activeManifest = JSON.parse(fs.readFileSync(activeManifestPath, 'utf8'));
+
+const finalHistory = {};
+
+// 1. Process Pilots strictly from data/pilots
+activeManifest.pilots.forEach(f => {
+  f.ships.forEach(sRel => {
+    const ship = JSON.parse(fs.readFileSync(path.join(repoRoot, sRel), 'utf8'));
     ship.pilots.forEach(p => {
-      pilots.push({
-        ...p,
-        shipName: ship.name,
-        shipSize: ship.size,
-        faction: f.faction,
-        shipXws: ship.xws
+      const key = `pilot:${p.xws}`;
+      const existing = currentHistory[key] || {};
+      const isCorrupted = existing.restrictions && !existing.upgradeBar;
+
+      const pts = {};
+      if (!isCorrupted && existing.pointsHistory) {
+        Object.assign(pts, existing.pointsHistory);
+      }
+
+      // Authoritative points from git releases
+      cycleRefs.forEach(({ cycle }) => {
+        if (tagCardCosts[cycle] && tagCardCosts[cycle][key] !== undefined) {
+          pts[cycle] = tagCardCosts[cycle][key];
+        }
       });
+
+      // If this pilot was corrupted by an upgrade in the legacy dump, restore intermediate cycles
+      if (isCorrupted) {
+        const fallback = pts['Dec 22'] || pts['Sep 23'] || pts['Sep 26'];
+        if (fallback && !pts['Mar 23']) {
+          pts['Mar 23'] = fallback;
+        }
+      }
+
+      finalHistory[key] = {
+        key,
+        xws: p.xws,
+        cardType: 'pilot',
+        tab: f.faction,
+        name: p.name,
+        sheetName: p.name,
+        type: ship.name,
+        format: p.standard ? 'Standard' : (p.wildspace ? 'Wild Space' : (p.epic ? 'Epic' : '')),
+        upgradeBar: (p.slots || []).join(', '),
+        restrictions: '',
+        keywords: (p.keywords || []).join(', '),
+        pointsHistory: pts
+      };
     });
   });
 });
 
-// Load all upgrades from the repo
-const upgrades = [];
-manifest.upgrades.forEach(u => {
-  const upList = JSON.parse(fs.readFileSync(path.join(repoRoot, u), 'utf8'));
-  upList.forEach(up => {
-    upgrades.push(up);
-  });
-});
+// 2. Process Upgrades strictly from data/upgrades
+activeManifest.upgrades.forEach(uRel => {
+  const upList = JSON.parse(fs.readFileSync(path.join(repoRoot, uRel), 'utf8'));
+  const defaultSlot = path.basename(uRel, '.json');
+  upList.forEach(u => {
+    const key = `upgrade:${u.xws}`;
+    const side = (u.sides && u.sides[0]) || {};
+    const existing = currentHistory[key] || {};
 
-console.log(`Loaded ${pilots.length} pilots and ${upgrades.length} upgrades from database.`);
-
-// Load step 93 raw spreadsheet dump
-const step93Path = 'C:/Users/valte/.gemini/antigravity/brain/adb86fc0-52a7-4cfd-ab03-34931c546efe/.system_generated/steps/93/output.txt';
-if (!fs.existsSync(step93Path)) {
-  console.log('Baseline step 93 raw dump not found, skipping rebuild.');
-  process.exit(0);
-}
-const sheetRaw = JSON.parse(fs.readFileSync(step93Path, 'utf8'));
-
-function norm(s) {
-  if (!s) return '';
-  return s.toString()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/[•●]/g, '')
-    .replace(/[“”"']/g, '')
-    .replace(/\s*\([^)]*\)/g, '')
-    .replace(/[^a-zA-Z0-9]/g, '')
-    .toLowerCase();
-}
-
-const FACTION_MAP = {
-  'Rebel Alliance': 'rebelalliance',
-  'Galactic Empire': 'galacticempire',
-  'Scum and Villiany': 'scumandvillainy',
-  'Resistance': 'resistance',
-  'First Order': 'firstorder',
-  'Galactic Republic': 'galacticrepublic',
-  'Separatist Alliance': 'separatistalliance'
-};
-
-const ALIASES = {
-  'protoncannon': 'protoncannons',
-  'vectoredcanonsrz1': 'vectoredcannons',
-  'vectoredcanons': 'vectoredcannons',
-  'kuil': 'kuiil',
-  'pellimotto': 'pelimotto',
-  'holokland': 'holokand',
-  'depabilloba': 'depabillaba',
-  'essararill': 'essaratill',
-  'rhysdallow': 'rhysdallows',
-  'oomuplinkprototype': '00muplinkprototype',
-  'g4rg0rvm': 'g4rgorvm',
-  'firstordercollaborator': 'firstordercollaborators',
-  'reapersquadronpilot': 'reapersquadronscout',
-  'previsla': 'previzsla',
-  'landingstrutsopen': 'landingstruts'
-};
-
-// Historical record keyed by xws or unique ID
-const cardHistory = {};
-
-sheetRaw.valueRanges.forEach((vr) => {
-  const tabName = vr.range.split('!')[0].replace(/'/g, '');
-  const rows = vr.values;
-  const isUpgrades = tabName === 'Generic upgrades';
-  const factionSlug = FACTION_MAP[tabName];
-
-  // Header row is index 2 (row 3)
-  const headerRow = rows[2] || [];
-  const cycleCols = [];
-  for (let c = 6; c < headerRow.length; c++) {
-    let cycle = (headerRow[c] || '').trim();
-    if (cycle === 'Sept 23') cycle = 'Sep 23';
-    if (cycle === 'Sept 22') cycle = 'Sep 22';
-    if (cycle && cycle !== 'Change vs previous') {
-      cycleCols.push({ colIndex: c, cycleName: cycle });
-    }
-  }
-
-  for (let r = 3; r < rows.length; r++) {
-    const row = rows[r];
-    if (!row || !row[2]) continue;
-    const format = (row[0] || '').trim();
-    const type = (row[1] || '').trim();
-    const originalName = (row[2] || '').trim();
-
-    let rawName = originalName;
-    if (rawName.includes('/')) {
-      rawName = rawName.split('/')[0].trim();
-    }
-    let nName = norm(rawName);
-    if (ALIASES[nName]) nName = ALIASES[nName];
-
-    const isSLInSheet = originalName.includes('SL') && !originalName.includes('LSL');
-    const isLSLInSheet = originalName.includes('LSL') || (!originalName.includes('SL') && (originalName.includes('(BoY)') || originalName.includes('(BoE)') || originalName.includes('(SoC)') || originalName.includes('(PnP)')));
-
-    let matchedCard = null;
-    let cardType = isUpgrades ? 'upgrade' : 'pilot';
-
-    if (isUpgrades) {
-      matchedCard = upgrades.find(u => {
-        const nu = norm(u.name);
-        return nu === nName || ALIASES[nu] === nName;
-      });
-    } else {
-      let candidates = pilots.filter(p => p.faction === factionSlug && (norm(p.name) === nName || ALIASES[norm(p.name)] === nName));
-      if (type) {
-        const shipFiltered = candidates.filter(p => norm(p.shipName) === norm(type));
-        if (shipFiltered.length > 0) candidates = shipFiltered;
-      }
-
-      if (candidates.length === 1) {
-        matchedCard = candidates[0];
-      } else if (candidates.length > 1) {
-        if (isSLInSheet) {
-          matchedCard = candidates.find(p => p.standardLoadout && !p.xws.endsWith('-lsl')) || candidates[0];
-        } else if (isLSLInSheet) {
-          matchedCard = candidates.find(p => p.xws.endsWith('-lsl')) || candidates[0];
-        } else {
-          matchedCard = candidates[0];
-        }
-      } else {
-        matchedCard = pilots.find(p => norm(p.name) === nName || ALIASES[norm(p.name)] === nName);
-        if (!matchedCard) {
-          matchedCard = upgrades.find(u => norm(u.name) === nName || ALIASES[norm(u.name)] === nName);
-          if (matchedCard) cardType = 'upgrade';
-        }
-      }
+    const pts = {};
+    if (existing.pointsHistory) {
+      Object.assign(pts, existing.pointsHistory);
     }
 
-    const xws = matchedCard ? matchedCard.xws : (isUpgrades ? `upgrade:${nName}` : `pilot:${factionSlug}:${nName}`);
-    const key = `${cardType}:${xws}`;
+    // Recover upgrade points if previously misplaced under pilot:
+    const pilotMistake = currentHistory[`pilot:${u.xws}`];
+    if (pilotMistake && pilotMistake.restrictions && !pilotMistake.upgradeBar && pilotMistake.pointsHistory) {
+      Object.assign(pts, pilotMistake.pointsHistory);
+    }
 
-    const points = {};
-    cycleCols.forEach(({ colIndex, cycleName }) => {
-      const val = (row[colIndex] || '').trim();
-      if (val) {
-        points[cycleName] = val;
+    // Authoritative points from git releases
+    cycleRefs.forEach(({ cycle }) => {
+      if (tagCardCosts[cycle] && tagCardCosts[cycle][key] !== undefined) {
+        pts[cycle] = tagCardCosts[cycle][key];
       }
     });
 
-    cardHistory[key] = {
+    finalHistory[key] = {
       key,
-      xws: matchedCard ? matchedCard.xws : null,
-      cardType,
-      tab: tabName,
-      name: matchedCard ? matchedCard.name : originalName,
-      sheetName: originalName,
-      type: matchedCard ? (cardType === 'pilot' ? matchedCard.shipName : type) : type,
-      format,
-      upgradeBar: row[3] || '',
-      restrictions: row[4] || '',
-      keywords: row[5] || '',
-      pointsHistory: points
+      xws: u.xws,
+      cardType: 'upgrade',
+      tab: 'Generic upgrades',
+      name: u.name,
+      sheetName: u.name,
+      type: side.type || defaultSlot,
+      format: u.standard ? 'Standard' : (u.wildspace ? 'Wild Space' : (u.epic ? 'Epic' : '')),
+      upgradeBar: '',
+      restrictions: (u.restrictions || []).map(r => JSON.stringify(r)).join('; '),
+      keywords: (u.keywords || []).join(', '),
+      pointsHistory: pts
     };
-  }
+  });
 });
 
 const outDir = path.join(repoRoot, 'data', 'retrospective');
@@ -185,6 +235,5 @@ if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
 }
 
-const outPath = path.join(outDir, 'points_history.json');
-fs.writeFileSync(outPath, JSON.stringify(cardHistory, null, 2), 'utf8');
-console.log(`Saved baseline retrospective data for ${Object.keys(cardHistory).length} cards to ${outPath}`);
+fs.writeFileSync(currentHistoryPath, JSON.stringify(finalHistory, null, 2), 'utf8');
+console.log(`Saved retrospective history for ${Object.keys(finalHistory).length} cards to ${currentHistoryPath}`);

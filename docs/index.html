@@ -31,6 +31,18 @@
             <span class="theme-led"></span>Standard View
           </button>
         </div>
+        <div class="layout-switch-group" role="group" aria-label="View Layout">
+          <span class="theme-switch-label">View:</span>
+          <button type="button" class="layout-btn active" id="btnLayoutAuto" title="Automatically adapt to device screen">
+            <span class="theme-led"></span>Auto
+          </button>
+          <button type="button" class="layout-btn" id="btnLayoutMobile" title="Force Compact Mobile Table & Drawer">
+            <span class="theme-led"></span>Mobile
+          </button>
+          <button type="button" class="layout-btn" id="btnLayoutDesktop" title="Force Full Desktop Table">
+            <span class="theme-led"></span>Desktop
+          </button>
+        </div>
         <a id="releaseBadge" class="badge badge-version" href="https://github.com/SogeMoge/xwing-data2-legacy/releases" target="_blank" rel="noopener noreferrer">Release 3.12.0</a>
         <a id="commitBadge" class="badge badge-commit" href="https://github.com/SogeMoge/xwing-data2-legacy" target="_blank" rel="noopener noreferrer">commit</a>
         <a class="badge badge-link" href="https://github.com/SogeMoge/xwing-data2-legacy" target="_blank" rel="noopener noreferrer">
@@ -65,6 +77,10 @@
           <span class="mob-filter-label">Filters</span>
           <span id="mobFilterCountBadge" class="mob-filter-count-badge">(0)</span>
         </button>
+        <button type="button" id="mobViewToggleBtn" class="mob-filter-toggle-btn mob-view-toggle-btn" aria-expanded="false" aria-controls="toolbarViewCollapsible" title="Toggle View Options">
+          <span class="mob-filter-icon">👁️</span>
+          <span class="mob-filter-label">View</span>
+        </button>
       </div>
 
       <div id="toolbarCollapsible" class="toolbar-collapsible">
@@ -88,7 +104,9 @@
             <option value="all">All Chassis / Types</option>
           </select>
         </div>
+      </div>
 
+      <div id="toolbarViewCollapsible" class="toolbar-view-collapsible">
         <div class="toolbar-actions-group">
           <button id="toggleHeadersBtn" class="btn btn-secondary" title="Toggle chassis and slot group headers to display more rows at once">
             <span>🏷️ Show Headers</span>
@@ -105,7 +123,7 @@
 
     <!-- Scroll hint indicator on mobile -->
     <div class="table-scroll-hint" id="tableScrollHint">
-      <span>↔ Swipe left for upgrade slots, format & history</span>
+      <span>↔ Swipe left for upgrade slots, format & points</span>
     </div>
 
     <!-- Summary Stats -->

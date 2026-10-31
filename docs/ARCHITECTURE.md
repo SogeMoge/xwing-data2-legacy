@@ -91,13 +91,15 @@ flowchart TD
     * Pull Request: `https://github.com/SogeMoge/xwing-data2-legacy/pull/<pr>`
 
 ### 3.2 Retrospective Baseline Engine (`scripts/build-retrospective-baseline.js`)
-* **Historical Matrix**: Ingests historical data spanning 16 balance cycles dating back to **Sep 21**:
-  * Cycles: `Sep 21`, `Apr 22`, `May 22`, `Sep 22`, `Sept 22`, `Oct 22`, `Dec 22`, `Mar 23`, `Sep 23`, `Sept 23`, `Mar 24`, `Sep 24`, `Mar 25`, `Dec 25`, `Mar 26`, `Sep 26`.
-* **Disambiguation & Aliasing**: Matches sheet rows against repository `xws` identifiers:
-  * Applies normalization (`normalize("NFD")`, stripping accents, quotes, and punctuation).
-  * Reconciles committee typos via `ALIASES` map (e.g. `oomuplinkprototype` → `00muplinkprototype`, `kuil` → `kuiil`).
-  * Resolves Standard Loadout collisions: differentiates fixed Standard Loadout cards (`standardLoadout: [...]`) from configurable Legacy Standard Loadout cards (`<name>-lsl`).
-* **Persistence**: Stored in [`data/retrospective/points_history.json`](file:///g:/xwing-data2-legacy.git/data/retrospective/points_history.json), keyed by `${cardType}:${xws}`.
+* **Authoritative Data Source**:
+  * **Strict Data Rule**: External spreadsheets (e.g. Google Sheets) are used **strictly for visual reference** and **MUST NOT be used as a data source**.
+  * All points history, card schemas, and identities are derived exclusively from `xwing-data2-legacy` repository files (`data/pilots/**/*.json`, `data/upgrades/*.json`) and git release tags (`3.11.0`, `3.10.0`, `3.9.0`, `3.6.0`, `3.5.0`, `3.2.0`, `3.0.0`, `2.5.3`, `2.4.0`).
+* **Namespace Isolation & Pilot vs. Upgrade Disambiguation**:
+  * Every card belongs strictly to its card type namespace: `pilot:${xws}` for pilots and `upgrade:${xws}` for upgrades.
+  * Eliminates cross-contamination where faction-restricted upgrades sharing a character name (e.g., “Zeb” Orrelios Crew vs. Attack Shuttle pilot; “Chopper” Crew vs. Gauntlet Fighter pilot; Darth Vader Crew vs. TIE Advanced x1 pilot; Luke Skywalker Gunner vs. T-65 pilot) previously collided.
+* **Historical Release Matrix**:
+  * Tracks points evolution across historical balance update cycles: `Sep 26` (HEAD / 3.11.0), `Mar 26` (3.10.0), `Dec 25` (3.9.0), `Mar 25` (3.6.0), `Sep 24` (3.5.0), `Mar 24` (3.2.0), `Sep 23` (3.0.0), `Dec 22` (2.5.3), and `Sep 21` (2.4.0), preserving stable legacy points for all intermediate intervals.
+* **Persistence**: Stored in [`data/retrospective/points_history.json`](file:///g:/xwing-data2-legacy.git/data/retrospective/points_history.json), keyed cleanly by `${cardType}:${xws}`.
 
 ### 3.3 Data & Site Compilers (`scripts/generate-data.js` & `scripts/generate-pages.js`)
 * **Partitioned Bundle Architecture**:
@@ -116,12 +118,23 @@ flowchart TD
   * Modern cockpit dark theme utilizing SirJorj's canonical color tokens (`data/colors.json`).
   * Custom TTF font icons: `xwing-miniatures.ttf` (arcs, actions, dice, upgrade slots) and `xwing-miniatures-ships.ttf` (ship chassis silhouettes).
   * Dynamic symbol injection: bracketed text like `[Focus]` or `[1 [Straight]]` is converted into styled font glyphs and maneuver chips.
-* **Navigation & Filtering**:
+* **Navigation & Mobile Architecture**:
   * Faction tabs with official faction glyphs and colors.
-  * Generic Upgrades tab with faction-restricted upgrades segregated into their respective factions.
+  * Generic Upgrades tab standardized to the modification upgrade icon (`'m'` in `xwing-miniatures`).
+  * **Mobile Icon-Only Navigation**: On mobile screens (`body.mobile-view` and `@media (max-width: 840px)`), faction tabs and generic upgrades collapse to compact 40×38px icon buttons (`font-size: 1.35rem`), omitting labels and count badges so all 8 tabs fit horizontally without excessive scrolling. Desktop maintains full text, icons, count pills, and the release version badge (`#releaseBadge`).
+  * **Device & Foldable Detection (`setupLayout`)**: 3-way layout switcher (`Auto` / `Mobile` / `Desktop`) saved to `localStorage`. Automatic detection checks touch capabilities, physical screen dimensions (preventing false desktop zoom on foldables like OnePlus Open), mobile user agents, and viewport widths.
+* **Toolbar Architecture (Filters vs. View Split)**:
   * Multi-field search (card name, chassis, ability text, keywords).
-  * Format selector (Standard, Wild Space, Epic).
-  * Change filter (Only Changed, Buffs, Nerfs, Parameter changes).
+  * On mobile: Toolbar row holds Search Input, `Filters (X)` button, and `View` button side-by-side.
+    * **`Filters` Drawer**: Contains Format (Standard, Wild Space, Epic), Changes (Only Changed, Buffs, Nerfs, Parameter changes), and Chassis/Type selectors.
+    * **`View` Drawer**: Contains display and output actions: `Show/Hide Headers`, `Show/Hide History`, and `Export CSV`.
+    * Toggling either drawer automatically collapses the other; active view options show visual feedback on the `View` button.
+  * On desktop: All selectors and action buttons remain visible inline across the toolbar with zero layout disruption.
+* **Table Column Sequence & Sticky 4-Col Mobile Layout**:
+  * **Column Reordering**: The active points columns (`Sep 26` and `Diff`) are positioned at the end of the table right before the retrospective history columns:
+    `Name` (sticky) | `Chassis/Slot` (icon) | `Upgrade Bar` | `Format` | `Restrictions` | `Keywords` | `Commit` | `Sep 26` | `Diff` | *(History Cycles...)*
+  * **Variant 2 Sticky 4-Col Table**: On mobile, the `Name` column (`col-sticky-name`) stays anchored at `left: 0` during horizontal swipes. Chassis and slot type cells render as icon-only glyphs with tap/hover popover tooltips.
+  * **Swipe Hint**: Dynamic horizontal scroll hint (`"↔ Swipe left for upgrade slots, format & points"`, appending `"& history"` when history columns are active).
 * **Spreadsheet Emulation ("Show History")**:
   * Toggles 16+ side-by-side historical points columns matching the Google Sheet layout.
   * Dynamic multi-column sorting (Chassis, Name, Cost, Diff).
@@ -131,8 +144,15 @@ flowchart TD
   * Header toggle button (`showHeaders`) stored in `localStorage` to maximize table density.
 * **Card Details Slide-out Drawer**:
   * Full card image/artwork preview.
+  * Ship statistics bar and action bar.
   * Maneuver dial matrix (speeds 0–5 color-coded: blue, white, red, purple).
-  * Errata diff history and full retrospective points history table.
+  * Ability text with dynamic game symbols.
+  * Errata diff history with direct commit SHAs and PR links.
+  * **Retrospective Points Timeline & SVG Trend Graph (`renderPointsTrendGraph`)**:
+    * Responsive vector sparkline displaying historical points progression from the earliest cycle (`Sep 21`) to `Sep 26`.
+    * Net points delta badges (Buff: `-X pts`, Nerf: `+X pts`, Stable: `0 pts`, Initial release).
+    * Avionics HUD styling: glowing curve, gradient fill beneath, min/mid/max gridlines, data dot tooltips, and abbreviated X-axis cycle labels.
+    * Asynchronous re-rendering when retrospective history loads on demand, with robust fallback for variable-cost and single-cycle cards.
 * **Design Specification Reference**: For exhaustive token tables, color mappings, font glyph charts, and interaction states, see [`docs/DESIGN_SYSTEM.md`](DESIGN_SYSTEM.md).
 
 ### 3.5 CI/CD & Automated Quality Gates (`.github/workflows/deploy-pages.yml`, `tests/pages.test.js`)
@@ -207,7 +227,14 @@ npm run serve:pages
 1. **[COMPLETED] Partition Retrospective History (Chunking)**:
    * Extracted the retrospective history matrix from `docs/data.json` into standalone `docs/history.json` and `docs/history.js` bundles.
    * Implemented on-demand lazy loading via `ensureHistoryLoaded()` in `docs/app.js` with button loading indicators, drawer fallback placeholders, and offline `file://` script injection fallback.
-2. **URL Deep-Linking**:
+2. **[COMPLETED] Sticky 4-Col Mobile Optimization & Toolbar Split**:
+   * Compact icon-only faction & generic upgrade navigation ribbon on mobile.
+   * Variant 2 Sticky 4-Col table layout with fixed name column and icon-only chassis/slot cells with tap tooltips.
+   * Refactored mobile toolbar with dedicated `Filters` and `View` collapsible drawers.
+   * Columns reordered placing `Sep 26` and `Diff` adjacent to retrospective history.
+3. **[COMPLETED] Retrospective Points Timeline Trend Graph**:
+   * Embedded SVG trend line chart in Card Detail Drawer displaying chronological points progression from `Sep 21` to `Sep 26` with net change indicators (Buff/Nerf/Stable), gradient glow, and asynchronous re-rendering.
+4. **URL Deep-Linking**:
    * Implement URL hash routing (e.g. `/#galacticempire/pilot:soontirfel`) to allow direct linking and sharing of specific cards and chassis drawers.
-3. **Release Archive Diff Inspector**:
+5. **Release Archive Diff Inspector**:
    * Add a dropdown allowing users to select and compare any two arbitrary historical releases (e.g., `3.9.0` vs `3.10.0`), computed from cached tag diff manifests.

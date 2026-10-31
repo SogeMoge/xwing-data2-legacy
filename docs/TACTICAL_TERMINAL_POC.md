@@ -101,6 +101,24 @@ The maneuver dial matrix in the slide-out drawer is styled as an authentic targe
   * **Purple (Force)**: Mystic force purple (`#c4a0ca` glow).
 * On hover, individual maneuver glyphs scale up (`transform: scale(1.2)`), resembling active vector target selection.
 
+### 3.6 Tactical Vector Points Trend Graph (Oscilloscope Monitor)
+The Retrospective Points Timeline in the card drawer features a live vector oscilloscope graph (`renderPointsTrendGraph`):
+* **Cathode Vector Beam**: Luminous neon cyan sparkline curve (`stroke: var(--term-cyan)` with drop shadow glow `drop-shadow(0 0 5px rgba(0, 240, 255, 0.7))`).
+* **Subpixel Telemetry Grid**: Phosphor coordinate grid lines with dashed lines (`stroke-dasharray: 3 3`) marking minimum, median, and maximum historical point thresholds.
+* **Telemetry Data Points**: Circular targeting nodes along the timeline; points shift color on balance events:
+  * **Net Buff**: Cyan illuminated targeting dot (`#00f0ff`).
+  * **Net Nerf**: Warning red targeting dot (`#ff3355` with red drop shadow).
+  * **Stable**: Tactical dark neutral node with cyan border.
+* **Telemetry Readouts**: Slashed-zero monospace labels (`'Share Tech Mono'`) showing exact point values and abbreviated cycle timestamps along the time axis.
+* **Balance Delta Status**: Top-mounted status badge reading `Points Trend: Buff -X pts` or `Nerf +X pts`.
+
+### 3.7 Mobile Tactical Layout & Pinned Telemetry (Variant 2)
+On mobile displays (`body.terminal-theme.mobile-view` and `@media (max-width: 840px)`):
+* **Command Channel Ribbons (Faction Tabs)**: Faction tabs and generic upgrades collapse into 40×38px icon buttons with cyan phosphor drop-shadows, leaving space for the version picker.
+* **Sticky Target Lock Column**: The `Name` column (`col-sticky-name`) stays anchored at `left: 0` with a dark navy background (`#070b13`) and cyan tactical edge border (`1px solid #1e334d`).
+* **Icon-Only Telemetry Cells**: Chassis silhouettes and upgrade slots render as glowing vector glyphs (`filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.4))`) with tap popover tooltips.
+* **Split Command Toolbar**: Mobile toolbar features side-by-side pushbuttons: `[ ⚙️ Filters ]` (format/change/type) and `[ 👁️ View ]` (headers/history/export) with active cyan diode backlights.
+
 ---
 
 ## 4. Typography & Font System

@@ -167,24 +167,38 @@ The application viewport is split into five functional vertical tiers:
 ### 4.2 Faction Navigation Bar (`.tabs-nav`)
 * Horizontally scrollable bar with styled tab buttons (`.tab-btn`).
 * Active tab features a 3px colored bottom border matching the faction's canonical color.
-* Each tab button contains:
+* **Desktop Presentation**:
   1. Vector faction glyph (`.tab-faction-glyph`).
-  2. Faction title.
+  2. Faction title (`.tab-label`).
   3. Pill counter (`.tab-count`) displaying total pilots + upgrades.
+* **Mobile Presentation (`body.mobile-view` and `@media (max-width: 840px)`)**:
+  * Faction tabs and generic upgrades collapse into **icon-only buttons** (`width: 40px; height: 38px; padding: 0;`).
+  * Text labels and count badges are hidden (`display: none !important;`).
+  * Glyph font-size increased to `1.35rem` with hover/touch `title` tooltips.
+  * Generic Upgrades tab standardized to the **Modification icon** (`'m'` in `xwing-miniatures` font).
+  * Release version badge (`#releaseBadge`) remains visible in the header on mobile.
 
 ### 4.3 Controls Toolbar (`.toolbar`)
 * **Live Search (`.search-input`)**: Real-time debounce-free filtering matching card name, chassis, ability text, keywords, and caption.
-* **Filter Selectors (`.select-filter`)**:
-  * *Format*: All Formats, Standard, Wild Space, Epic.
-  * *Changes*: All Cards, Only Changed Cards, Buffs, Nerfs, Parameter Changes.
-  * *Chassis/Slot*: Dynamically grouped optgroups based on current active tab.
-* **Action Buttons (`.btn-secondary`)**:
-  * `🏷️ Show/Hide Headers`: Toggles `.hide-chassis-headers` class on `dataTable` and persists choice in `localStorage('xwing_show_headers')`.
-  * `📜 Show/Hide History`: Lazy-loads `docs/history.json` and injects 16 historical cycle columns.
-  * `📥 Export CSV`: Serializes currently filtered rows into a standard CSV download.
+* **Mobile Toolbar Structure**:
+  * Top row hosts `.search-box`, `#mobFilterToggleBtn` (`⚙️ Filters (X)`), and `#mobViewToggleBtn` (`👁️ View`).
+  * **`Filters` Drawer (`#toolbarCollapsible`)**: Collapsible panel holding Format selector, Changes selector, and Chassis/Slot optgroups.
+  * **`View` Drawer (`#toolbarViewCollapsible`)**: Collapsible panel holding display and export controls: `🏷️ Show Headers`, `📜 Show History`, and `📥 Export CSV`.
+  * Toggling either panel automatically collapses the other. Non-default view options trigger visual highlight styling on the `View` button.
+* **Desktop Toolbar Structure**:
+  * All 3 filter selects (`#formatSelect`, `#changeSelect`, `#typeSelect`) and 3 action buttons (`#toggleHeadersBtn`, `#toggleHistoryBtn`, `#exportBtn`) display inline horizontally across the toolbar without collapsing.
+* **Swipe Hint (`#tableScrollHint`)**:
+  * Appears above table on mobile: `"↔ Swipe left for upgrade slots, format & points"`.
+  * Dynamically appends `"& history"` when retrospective history columns are toggled on.
 
 ### 4.4 Data Table (`.data-table`)
 * **Sticky Header (`position: sticky; top: 0; z-index: 10`)**: Header stays fixed while table scrolls vertically within `.table-wrapper`.
+* **Column Sequence**:
+  `Name` (sticky) | `Chassis/Slot` (icon) | `Upgrade Bar` | `Format` | `Restrictions` | `Keywords` | `Commit` | **`Sep 26`** | **`Diff`** | *(History Cycles...)*
+  * `Sep 26` (`col-cost`) and `Diff` (`col-diff`) are positioned at the end of the main table immediately preceding historical cycles.
+* **Variant 2: Sticky 4-Col Mobile Table**:
+  * Name column (`col-sticky-name`) stays sticky on the left edge (`left: 0; z-index: 6;`) during horizontal panning with a subtle drop shadow separator.
+  * Chassis and slot type cells (`col-type`) render as **icon-only glyphs** on mobile (ship silhouettes or upgrade slot symbols) with touch/click popover tooltips for immediate identification.
 * **Chassis Header Row (`.chassis-header-row`)**:
   * Deep horizontal gradient (`#182333` → `#111827`).
   * Ship silhouette vector glyph.
@@ -212,7 +226,13 @@ The application viewport is split into five functional vertical tiers:
   5. **Maneuver Dial Matrix Table**: 8-column layout (Speeds 5 to 0; Left Turn, Left Bank, Straight, Right Bank, Right Turn, K-Turn/Stationary, S-Loop/T-Roll Left & Right) color-coded by bearing difficulty.
   6. Restrictions & Keyword Chips.
   7. Errata & Parameter change breakdown with commit links.
-  8. Full Retrospective Points Timeline table.
+  8. **Retrospective Points Timeline & Points Trend Graph (`renderPointsTrendGraph`)**:
+     * Visual SVG sparkline illustrating points progression chronologically from `Sep 21` to `Sep 26`.
+     * Trend status badge: Net Buff (`▼ Buff: -X pts`), Net Nerf (`▲ Nerf: +X pts`), Stable (`■ Stable`), or Initial Release (`★ Introduced: X pts`).
+     * Tactical HUD aesthetic: Glowing neon curve, gradient fill beneath, min/mid/max gridlines, data dot tooltips, and abbreviated X-axis cycle labels.
+     * Real-time re-rendering when retrospective history loads asynchronously.
+     * Clean fallback for variable-cost upgrades.
+  9. Retrospective Points History Table.
 
 ---
 
@@ -228,6 +248,8 @@ stateDiagram-v2
         FilteredView --> FilteredView: Search text input
         FilteredView --> FilteredView: Change tab (Faction/Upgrades/Changes)
         FilteredView --> FilteredView: Filter format / change type / chassis
+        FilteredView --> FilteredView: Toggle Filters / View drawer (Mobile)
+        FilteredView --> FilteredView: Switch Layout (Auto / Mobile / Desktop)
         FilteredView --> FilteredView: Sort column (Name, Cost, Diff)
     }
 
@@ -245,14 +267,17 @@ stateDiagram-v2
   1. Primary selected sort column.
   2. Default: Initiative descending (`I6` → `I1`), uniqueness descending (`•••` → `•` → generic), points descending, then alphabetical.
 
-### 5.2 Responsive Breakpoints
-* **Desktop (>1024px)**: Full dual-column toolbar, max-height table viewport, slide-out drawer max-width 600px.
-* **Tablet (768px - 1024px)**: Auto-wrapping toolbar filters, table wrapper horizontal scroll active.
-* **Mobile (<768px)**:
-  * Header and toolbar collapse into a single vertical column.
-  * Search input expands to 100% width.
+### 5.2 Responsive Breakpoints & Device Adaptation
+* **Desktop (>840px)**: Full multi-column toolbar, max-height table viewport, slide-out drawer max-width 600px, inline filters and actions.
+* **Mobile (<840px & Touch Devices)**:
+  * Icon-only faction & generic upgrade navigation ribbon.
+  * Search row with dedicated `Filters` and `View` toggle buttons.
+  * Variant 2 Sticky 4-Col table with pinned `Name` column and icon-only chassis/slot cells.
   * Drawer spans 100% viewport width.
-  * Sticky table headers remain active with horizontal scrolling.
+* **Layout Switcher (`setupLayout`)**:
+  * 3-way segmented switcher in header: `Auto` (automatic multi-tier hardware/screen detection), `Mobile` (forced compact table & drawer), `Desktop` (forced full desktop layout).
+  * State persisted in `localStorage('xwing_view_layout')`.
+  * Multi-tier detection evaluates touch capability, user agent strings, viewport width, and physical screen dimensions (preventing foldables like OnePlus Open from false desktop zoom).
 
 ---
 

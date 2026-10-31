@@ -615,7 +615,8 @@ body.terminal-theme .action-pill {
 /* --------------------------------------------------------------------------
    11. Star Wars Segmented Avionics Theme Switcher
    -------------------------------------------------------------------------- */
-body.terminal-theme .theme-switch-group {
+body.terminal-theme .theme-switch-group,
+body.terminal-theme .layout-switch-group {
   background: #090e18;
   border: 1px solid #1e293b;
   border-radius: 4px;
@@ -631,7 +632,8 @@ body.terminal-theme .theme-switch-label {
   text-shadow: 0 0 4px rgba(0, 240, 255, 0.4);
 }
 
-body.terminal-theme .theme-btn {
+body.terminal-theme .theme-btn,
+body.terminal-theme .layout-btn {
   font-family: var(--font-term-mono);
   font-size: 0.72rem;
   letter-spacing: 0.04em;
@@ -642,12 +644,14 @@ body.terminal-theme .theme-btn {
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-body.terminal-theme .theme-btn:hover {
+body.terminal-theme .theme-btn:hover,
+body.terminal-theme .layout-btn:hover {
   color: #cbd5e1;
   background: rgba(0, 240, 255, 0.06);
 }
 
-body.terminal-theme .theme-btn.active {
+body.terminal-theme .theme-btn.active,
+body.terminal-theme .layout-btn.active {
   color: #00f0ff;
   background: rgba(0, 240, 255, 0.14);
   border-color: rgba(0, 240, 255, 0.4);
@@ -659,7 +663,8 @@ body.terminal-theme .theme-led {
   background-color: #1e293b;
 }
 
-body.terminal-theme .theme-btn.active .theme-led {
+body.terminal-theme .theme-btn.active .theme-led,
+body.terminal-theme .layout-btn.active .theme-led {
   background-color: #00f0ff;
   box-shadow: 0 0 8px #00f0ff;
 }
@@ -853,13 +858,14 @@ body.terminal-theme .chassis-tooltip::after {
   border-color: var(--term-cyan) transparent transparent transparent;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px), (pointer: coarse) and (max-width: 960px) {
   body.terminal-theme .app-header {
     border-bottom: 2px solid var(--term-cyan);
     box-shadow: 0 2px 12px rgba(0, 240, 255, 0.2);
   }
 
-  body.terminal-theme .mob-filter-toggle-btn {
+  body.terminal-theme .mob-filter-toggle-btn,
+  body.terminal-theme .mob-view-toggle-btn {
     font-family: var(--font-term-mono);
     color: #94a3b8;
     background: #090e18;
@@ -868,7 +874,9 @@ body.terminal-theme .chassis-tooltip::after {
   }
 
   body.terminal-theme .mob-filter-toggle-btn.active,
-  body.terminal-theme .mob-filter-toggle-btn.has-active-filters {
+  body.terminal-theme .mob-filter-toggle-btn.has-active-filters,
+  body.terminal-theme .mob-view-toggle-btn.active,
+  body.terminal-theme .mob-view-toggle-btn.has-active-view {
     border-color: var(--term-cyan);
     color: var(--term-cyan);
     background: rgba(0, 240, 255, 0.12);
@@ -879,7 +887,8 @@ body.terminal-theme .chassis-tooltip::after {
     color: var(--term-cyan);
   }
 
-  body.terminal-theme .toolbar-collapsible {
+  body.terminal-theme .toolbar-collapsible,
+  body.terminal-theme .toolbar-view-collapsible {
     background: #070b13;
     border: 1px solid var(--term-cyan);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 240, 255, 0.25);
@@ -916,6 +925,159 @@ body.terminal-theme .chassis-tooltip::after {
     color: var(--term-cyan);
     filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.4));
   }
+}
+
+/* Explicit body.terminal-theme.mobile-view overrides */
+body.terminal-theme.mobile-view .app-header {
+  border-bottom: 2px solid var(--term-cyan);
+  box-shadow: 0 2px 12px rgba(0, 240, 255, 0.2);
+}
+
+body.terminal-theme.mobile-view .mob-filter-toggle-btn,
+body.terminal-theme.mobile-view .mob-view-toggle-btn {
+  font-family: var(--font-term-mono);
+  color: #94a3b8;
+  background: #090e18;
+  border: 1px solid #1e293b;
+  letter-spacing: 0.05em;
+}
+
+body.terminal-theme.mobile-view .mob-filter-toggle-btn.active,
+body.terminal-theme.mobile-view .mob-filter-toggle-btn.has-active-filters,
+body.terminal-theme.mobile-view .mob-view-toggle-btn.active,
+body.terminal-theme.mobile-view .mob-view-toggle-btn.has-active-view {
+  border-color: var(--term-cyan);
+  color: var(--term-cyan);
+  background: rgba(0, 240, 255, 0.12);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+}
+
+body.terminal-theme.mobile-view .mob-filter-count-badge {
+  color: var(--term-cyan);
+}
+
+body.terminal-theme.mobile-view .toolbar-collapsible,
+body.terminal-theme.mobile-view .toolbar-view-collapsible {
+  background: #070b13;
+  border: 1px solid var(--term-cyan);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 240, 255, 0.25);
+}
+
+body.terminal-theme.mobile-view .data-table th.col-sticky-name,
+body.terminal-theme.mobile-view .data-table td.col-sticky-name {
+  position: sticky;
+  left: 0;
+  z-index: 6;
+  background-color: #070b13 !important;
+  border-right: 1px solid #1e334d;
+  box-shadow: 3px 0 6px -2px rgba(0, 0, 0, 0.8), 1px 0 4px rgba(0, 240, 255, 0.1);
+}
+
+body.terminal-theme.mobile-view .data-table th.col-sticky-name {
+  z-index: 25;
+  background-color: #090e18 !important;
+  border-bottom: 2px solid var(--term-cyan);
+}
+
+body.terminal-theme.mobile-view .data-table tr:hover td.col-sticky-name {
+  background-color: #0e1726 !important;
+}
+
+body.terminal-theme.mobile-view .col-cost {
+  font-family: var(--font-term-mono);
+  color: var(--term-cyan);
+  font-weight: 700;
+}
+
+body.terminal-theme.mobile-view .chassis-cell .chassis-icon-glyph {
+  color: var(--term-cyan);
+  filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.4));
+}
+
+/* --------------------------------------------------------------------------
+   Tactical HUD Points Trend Graph in Card Detail Drawer
+   -------------------------------------------------------------------------- */
+body.terminal-theme .timeline-graph-wrapper {
+  background: rgba(7, 11, 19, 0.9);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: inset 0 0 12px rgba(0, 240, 255, 0.08), 0 0 14px rgba(0, 0, 0, 0.8);
+}
+
+body.terminal-theme .timeline-trend-badge {
+  font-family: var(--font-term-mono);
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+}
+
+body.terminal-theme .timeline-trend-badge.trend-buff {
+  background: rgba(0, 240, 255, 0.12);
+  color: var(--term-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+}
+
+body.terminal-theme .timeline-trend-badge.trend-nerf {
+  background: rgba(255, 51, 85, 0.12);
+  color: #ff3355;
+  border: 1px solid rgba(255, 51, 85, 0.4);
+  text-shadow: 0 0 6px rgba(255, 51, 85, 0.5);
+}
+
+body.terminal-theme .timeline-trend-badge.trend-stable {
+  background: rgba(148, 163, 184, 0.1);
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+body.terminal-theme .graph-grid-line {
+  stroke: rgba(0, 240, 255, 0.15);
+}
+
+body.terminal-theme .graph-axis-label {
+  fill: #64748b;
+  font-family: var(--font-term-mono);
+  font-size: 8.5px;
+}
+
+body.terminal-theme .graph-line-path {
+  stroke: var(--term-cyan);
+  stroke-width: 2.2;
+  filter: drop-shadow(0 0 5px rgba(0, 240, 255, 0.7));
+}
+
+body.terminal-theme .graph-dot {
+  fill: #05080e;
+  stroke: var(--term-cyan);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 4px var(--term-cyan));
+}
+
+body.terminal-theme .graph-dot:hover {
+  fill: var(--term-cyan);
+  stroke: #ffffff;
+}
+
+body.terminal-theme .graph-dot.dot-buff {
+  stroke: var(--term-cyan);
+}
+
+body.terminal-theme .graph-dot.dot-nerf {
+  stroke: #ff3355;
+  filter: drop-shadow(0 0 4px #ff3355);
+}
+
+body.terminal-theme .graph-point-label {
+  fill: var(--term-cyan);
+  font-family: var(--font-term-mono);
+  font-size: 9.5px;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 240, 255, 0.6);
+}
+
+body.terminal-theme .graph-x-label {
+  fill: #64748b;
+  font-family: var(--font-term-mono);
+  font-size: 8.5px;
 }
 
 
