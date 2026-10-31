@@ -11,6 +11,8 @@
     "validate:tests": "jest tests",
     "validate:tests:watch": "jest --watch tests",
     "format": "prettier --loglevel warn --write \"data/**/*.json\"",
+    "build:pages": "node scripts/generate-pages.js",
+    "serve:pages": "npx serve docs",
     "changelog": "git log --pretty=format:'- %s (%h)' --no-merges"
   },
   "devDependencies": {

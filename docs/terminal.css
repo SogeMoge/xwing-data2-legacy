@@ -1,0 +1,1136 @@
+/* ==========================================================================
+   STAR WARS TACTICAL TERMINAL HUD — PROOF OF CONCEPT THEME
+   Inspired by Rebel / Resistance Briefing Monitors, Echo Base, and Death Star HUDs
+   References: C:\Users\sogemoge\Pictures\StarWarsInterfacesReferences
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap');
+
+:root {
+  /* Terminal Phosphor Palettes */
+  --term-amber: #f59e0b;
+  --term-amber-glow: rgba(245, 158, 11, 0.45);
+  --term-cyan: #00f0ff;
+  --term-cyan-glow: rgba(0, 240, 255, 0.4);
+  --term-green: #2fe48d;
+  --term-green-glow: rgba(47, 228, 141, 0.45);
+  --term-red: #ff3344;
+  --term-red-glow: rgba(255, 51, 68, 0.45);
+  --term-purple: #c4a0ca;
+
+  /* Cockpit & Chassis Metal Housing */
+  --term-bezel: #0b0f17;
+  --term-bezel-border: #1e293b;
+  --term-chassis: #05080d;
+  --term-screen-bg: #03070d;
+  --term-grid: rgba(0, 240, 255, 0.04);
+  --term-grid-fine: rgba(0, 240, 255, 0.02);
+  --term-bracket: #00f0ff;
+
+  /* Fonts */
+  --font-term-display: 'Orbitron', -apple-system, sans-serif;
+  --font-term-ui: 'Rajdhani', -apple-system, sans-serif;
+  --font-term-mono: 'Share Tech Mono', ui-monospace, monospace;
+}
+
+/* --------------------------------------------------------------------------
+   1. Cockpit Terminal Enclosure & CRT Scanline Overlay
+   -------------------------------------------------------------------------- */
+body.terminal-theme {
+  background-color: var(--term-chassis);
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.05) 0%, transparent 60%),
+    linear-gradient(rgba(0, 240, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+  color: #d1fae5;
+  font-family: var(--font-term-ui);
+  letter-spacing: 0.02em;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Subtle CRT Raster Scanlines */
+body.terminal-theme::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+              linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 999;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+/* CRT Screen Vignette */
+body.terminal-theme::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 70%, rgba(2, 6, 12, 0.8) 100%);
+  z-index: 998;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   2. Terminal Header & Hardware Console Top Bar
+   -------------------------------------------------------------------------- */
+body.terminal-theme .app-header {
+  background: linear-gradient(180deg, #101725 0%, #080d14 100%);
+  border-bottom: 2px solid #00f0ff;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.5rem;
+  position: relative;
+}
+
+/* Technical Header Corner Indicators */
+body.terminal-theme .app-header::before {
+  content: "// SEC-07 // TACTICAL TACTILE HUD // SYS.VER: 3.12.0 // IFF: ALLIED";
+  position: absolute;
+  top: 4px;
+  right: 1.5rem;
+  font-family: var(--font-term-mono);
+  font-size: 0.65rem;
+  color: rgba(0, 240, 255, 0.5);
+  letter-spacing: 0.15em;
+}
+
+body.terminal-theme .brand-title {
+  font-family: var(--font-term-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.3);
+  text-transform: uppercase;
+}
+
+body.terminal-theme .brand-subtitle {
+  font-family: var(--font-term-mono);
+  font-size: 0.78rem;
+  color: #38bdf8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+body.terminal-theme .brand-logo-glyph {
+  color: var(--term-cyan) !important;
+  text-shadow: 0 0 12px var(--term-cyan-glow);
+  filter: drop-shadow(0 0 6px rgba(0, 240, 255, 0.6));
+}
+
+/* Hardware Badges */
+body.terminal-theme .badge {
+  font-family: var(--font-term-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  background-color: #0b1320;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 240, 255, 0.15);
+}
+
+body.terminal-theme .badge-version {
+  color: var(--term-cyan);
+  border-color: var(--term-cyan);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.25);
+}
+
+body.terminal-theme .badge-commit {
+  color: var(--term-green);
+  border-color: rgba(47, 228, 141, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   3. Tactical Faction Channel Tabs (Chiclet Switch Array)
+   -------------------------------------------------------------------------- */
+body.terminal-theme .tabs-nav {
+  background: #060a12;
+  border-bottom: 2px solid #1e293b;
+  padding: 0.5rem 1.5rem 0;
+  gap: 0.45rem;
+}
+
+body.terminal-theme .tab-btn {
+  font-family: var(--font-term-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #101826 0%, #090e17 100%);
+  border: 1px solid #1e293b;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  padding: 0.55rem 0.95rem;
+  color: #94a3b8;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Tactical illuminated LED indicator on each tab */
+body.terminal-theme .tab-btn::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #334155;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  margin-right: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+body.terminal-theme .tab-btn:hover {
+  background: linear-gradient(180deg, #162235 0%, #0d1624 100%);
+  color: #fff;
+  border-color: #38bdf8;
+}
+
+body.terminal-theme .tab-btn.active {
+  background: linear-gradient(180deg, #19273c 0%, #0e1726 100%);
+  color: #fff;
+  border-color: var(--tab-color, var(--term-cyan));
+  border-bottom: 3px solid var(--tab-color, var(--term-cyan));
+  box-shadow: 0 -2px 10px rgba(0, 240, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+body.terminal-theme .tab-btn.active::before {
+  background-color: var(--tab-color, var(--term-cyan));
+  box-shadow: 0 0 8px var(--tab-color, var(--term-cyan));
+}
+
+body.terminal-theme .tab-faction-glyph {
+  font-size: 1.15rem;
+  filter: drop-shadow(0 0 4px var(--tab-color));
+}
+
+body.terminal-theme .tab-count {
+  font-family: var(--font-term-mono);
+  font-size: 0.7rem;
+  background-color: #05080e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   4. Tactical Command Toolbar & Targeting Reticles
+   -------------------------------------------------------------------------- */
+body.terminal-theme .toolbar {
+  background: linear-gradient(180deg, #0d1421 0%, #070c14 100%);
+  border: 1px solid #1e293b;
+  border-left: 4px solid var(--term-cyan);
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 240, 255, 0.03);
+  position: relative;
+  padding: 0.65rem 1rem;
+}
+
+/* Inset Corner Targeting Brackets for Toolbar */
+body.terminal-theme .toolbar::after {
+  content: 'TARGETING COMPUTER // READY';
+  position: absolute;
+  top: -9px;
+  right: 12px;
+  font-family: var(--font-term-mono);
+  font-size: 0.62rem;
+  background: #05080d;
+  padding: 0 0.5rem;
+  color: var(--term-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  letter-spacing: 0.1em;
+}
+
+/* Inputs styled as tactical CRT displays */
+body.terminal-theme .search-input,
+body.terminal-theme .select-filter {
+  background: #050912;
+  border: 1px solid #23344d;
+  color: #e0f2fe;
+  font-family: var(--font-term-mono);
+  font-size: 0.85rem;
+  border-radius: 2px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s;
+}
+
+body.terminal-theme .search-input:focus,
+body.terminal-theme .select-filter:focus {
+  border-color: var(--term-cyan);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.35), inset 0 2px 4px rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+/* Backlit Tactical Chiclet Buttons (from references) */
+body.terminal-theme .btn {
+  font-family: var(--font-term-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 3px;
+  padding: 0.45rem 0.9rem;
+  position: relative;
+  border: 1px solid #2a3d58;
+  background: linear-gradient(180deg, #162438 0%, #0d1726 100%);
+  color: #cbd5e1;
+  box-shadow: 0 2px 0 #070d16, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: all 0.15s ease;
+}
+
+body.terminal-theme .btn:hover {
+  background: linear-gradient(180deg, #1e3350 0%, #112035 100%);
+  border-color: var(--term-cyan);
+  color: #fff;
+  box-shadow: 0 2px 0 #070d16, 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+body.terminal-theme .btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 #070d16, inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+body.terminal-theme .btn-toggle-active {
+  background: linear-gradient(180deg, #0e2a47 0%, #081d33 100%);
+  border-color: var(--term-cyan);
+  color: var(--term-cyan);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.35), inset 0 1px 0 rgba(0, 240, 255, 0.3);
+}
+
+/* --------------------------------------------------------------------------
+   5. Tactical Data Grid Table & Radar View
+   -------------------------------------------------------------------------- */
+body.terminal-theme .table-wrapper {
+  background: #040810;
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(0, 240, 255, 0.02);
+  position: relative;
+}
+
+/* Corner Reticle Marks on the Table Container */
+body.terminal-theme .table-wrapper::before,
+body.terminal-theme .table-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  z-index: 15;
+}
+
+body.terminal-theme .table-wrapper::before {
+  top: 0; left: 0;
+  border-top: 2px solid var(--term-cyan);
+  border-left: 2px solid var(--term-cyan);
+}
+
+body.terminal-theme .table-wrapper::after {
+  bottom: 0; right: 0;
+  border-bottom: 2px solid var(--term-cyan);
+  border-right: 2px solid var(--term-cyan);
+}
+
+body.terminal-theme .data-table th {
+  background: #090e18;
+  color: #38bdf8;
+  font-family: var(--font-term-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #00f0ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.terminal-theme .data-table th:hover {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.6);
+}
+
+body.terminal-theme .data-table td {
+  border-bottom: 1px solid rgba(30, 41, 59, 0.6);
+  font-size: 0.88rem;
+}
+
+body.terminal-theme .data-table tr:hover td {
+  background-color: rgba(0, 240, 255, 0.04) !important;
+}
+
+/* Modified row soft blue border */
+body.terminal-theme .cell-highlight-blue {
+  background-color: rgba(0, 240, 255, 0.05) !important;
+  border-left: 3px solid var(--term-cyan) !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. Chassis Header Bars (Ship Wireframe HUDs)
+   -------------------------------------------------------------------------- */
+body.terminal-theme .chassis-header-row td {
+  background: linear-gradient(90deg, #0e1726 0%, #090f1a 100%) !important;
+  border-top: 2px solid #24354d !important;
+  border-bottom: 1px solid #162438 !important;
+  position: relative;
+}
+
+body.terminal-theme .chassis-header-name {
+  font-family: var(--font-term-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+body.terminal-theme .chassis-header-glyph {
+  font-size: 2rem;
+  color: var(--term-cyan);
+  filter: drop-shadow(0 0 8px var(--term-cyan-glow));
+}
+
+body.terminal-theme .chassis-header-size {
+  font-family: var(--font-term-mono);
+  font-size: 0.68rem;
+  border-radius: 2px;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--term-cyan);
+  letter-spacing: 0.08em;
+}
+
+body.terminal-theme .chassis-stat-pill {
+  font-family: var(--font-term-mono);
+  font-size: 0.72rem;
+  border-radius: 2px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+body.terminal-theme .chassis-dial-btn {
+  font-family: var(--font-term-display);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--term-cyan);
+  color: var(--term-cyan);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.2);
+}
+
+body.terminal-theme .chassis-dial-btn:hover {
+  background: rgba(0, 240, 255, 0.25);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+   7. Pilot Initiative & Card Cells
+   -------------------------------------------------------------------------- */
+body.terminal-theme .pilot-init-badge {
+  font-family: var(--font-term-display);
+  font-weight: 900;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #f97316 0%, #ea580c 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 0 8px rgba(249, 115, 22, 0.5);
+  border: 1px solid #ffedd5;
+}
+
+body.terminal-theme .card-title {
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: 0.02em;
+}
+
+body.terminal-theme .points-curr {
+  font-family: var(--font-term-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--term-cyan);
+  text-shadow: 0 0 6px var(--term-cyan-glow);
+}
+
+/* Diff Badges */
+body.terminal-theme .diff-buff {
+  background-color: #064e3b;
+  border-color: #10b981;
+  color: #a7f3d0;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.3);
+}
+
+body.terminal-theme .diff-nerf {
+  background-color: #7f1d1d;
+  border-color: #ef4444;
+  color: #fca5a5;
+  box-shadow: 0 0 6px rgba(239, 68, 68, 0.3);
+}
+
+body.terminal-theme .param-changed-badge {
+  font-family: var(--font-term-mono);
+  font-size: 0.68rem;
+  background: #0d2038;
+  border-color: var(--term-cyan);
+  color: #7dd3fc;
+  box-shadow: 0 0 6px rgba(0, 240, 255, 0.25);
+}
+
+body.terminal-theme .commit-chip {
+  font-family: var(--font-term-mono);
+  font-size: 0.72rem;
+  background: rgba(0, 240, 255, 0.06);
+  border-color: rgba(0, 240, 255, 0.35);
+  color: var(--term-cyan);
+}
+
+body.terminal-theme .commit-chip:hover {
+  background: rgba(0, 240, 255, 0.2);
+  color: #fff;
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   8. Slide-Out Diagnostic & Targeting Drawer
+   -------------------------------------------------------------------------- */
+body.terminal-theme .drawer {
+  background: #050a12;
+  border-left: 2px solid var(--term-cyan);
+  box-shadow: -10px 0 35px rgba(0, 240, 255, 0.15), -20px 0 50px rgba(0, 0, 0, 0.8);
+}
+
+body.terminal-theme .drawer-header {
+  background: linear-gradient(180deg, #101725 0%, #080d14 100%);
+  border-bottom: 2px solid #1e293b;
+  padding: 1rem 1.5rem;
+}
+
+body.terminal-theme .drawer-title {
+  font-family: var(--font-term-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+body.terminal-theme .detail-section {
+  background: #080d18;
+  border: 1px solid #1e293b;
+  border-left: 3px solid var(--term-cyan);
+  border-radius: 2px;
+  position: relative;
+}
+
+body.terminal-theme .detail-section-title {
+  font-family: var(--font-term-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--term-cyan);
+  text-shadow: 0 0 5px rgba(0, 240, 255, 0.3);
+}
+
+/* --------------------------------------------------------------------------
+   9. Targeting Computer Maneuver Dial (Death Star Trench Matrix Style)
+   -------------------------------------------------------------------------- */
+body.terminal-theme .maneuver-dial-table {
+  background: #03060c;
+  border: 1px solid #162438;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+body.terminal-theme .maneuver-dial-table td {
+  border-color: #162438;
+}
+
+body.terminal-theme .dial-speed-cell {
+  font-family: var(--font-term-display);
+  font-size: 0.85rem;
+  color: #38bdf8;
+  background-color: #060c16;
+}
+
+body.terminal-theme .maneuver-glyph {
+  font-size: 1.4rem;
+  border-radius: 2px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+body.terminal-theme .maneuver-glyph:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+body.terminal-theme .maneuver-blue {
+  color: var(--term-cyan) !important;
+  background: rgba(0, 240, 255, 0.12);
+  border: 1px solid var(--term-cyan);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+body.terminal-theme .maneuver-white {
+  color: #f8fafc !important;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+body.terminal-theme .maneuver-red {
+  color: var(--term-red) !important;
+  background: rgba(255, 51, 68, 0.15);
+  border: 1px solid var(--term-red);
+  box-shadow: 0 0 8px rgba(255, 51, 68, 0.45);
+}
+
+body.terminal-theme .maneuver-purple {
+  color: var(--term-purple) !important;
+  background: rgba(196, 160, 202, 0.15);
+  border: 1px solid var(--term-purple);
+  box-shadow: 0 0 8px rgba(196, 160, 202, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   10. Action & Stat Pills
+   -------------------------------------------------------------------------- */
+body.terminal-theme .ship-stat-pill {
+  font-family: var(--font-term-mono);
+  border-radius: 2px;
+  background: #090e18;
+  border: 1px solid #1e293b;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+body.terminal-theme .action-pill {
+  font-family: var(--font-term-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   11. Star Wars Segmented Avionics Theme Switcher
+   -------------------------------------------------------------------------- */
+body.terminal-theme .theme-switch-group,
+body.terminal-theme .layout-switch-group {
+  background: #090e18;
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 240, 255, 0.08);
+}
+
+body.terminal-theme .theme-switch-label {
+  font-family: var(--font-term-mono);
+  color: #00f0ff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(0, 240, 255, 0.4);
+}
+
+body.terminal-theme .theme-btn,
+body.terminal-theme .layout-btn {
+  font-family: var(--font-term-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  padding: 0.22rem 0.55rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.terminal-theme .theme-btn:hover,
+body.terminal-theme .layout-btn:hover {
+  color: #cbd5e1;
+  background: rgba(0, 240, 255, 0.06);
+}
+
+body.terminal-theme .theme-btn.active,
+body.terminal-theme .layout-btn.active {
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.14);
+  border-color: rgba(0, 240, 255, 0.4);
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 6px rgba(0, 240, 255, 0.2);
+}
+
+body.terminal-theme .theme-led {
+  background-color: #1e293b;
+}
+
+body.terminal-theme .theme-btn.active .theme-led,
+body.terminal-theme .layout-btn.active .theme-led {
+  background-color: #00f0ff;
+  box-shadow: 0 0 8px #00f0ff;
+}
+
+/* When standard is active while in standard mode, amber LED diode */
+body:not(.terminal-theme) .theme-btn#btnThemeStandard.active {
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+body:not(.terminal-theme) .theme-btn#btnThemeStandard.active .theme-led {
+  background-color: #f59e0b;
+  box-shadow: 0 0 6px #f59e0b;
+}
+
+/* --------------------------------------------------------------------------
+   12. Star Wars Avionics Telemetry Scrollbars
+   Inspired by Death Star targeting channels, cockpit telemetry scales & Echo Base HUDs
+   -------------------------------------------------------------------------- */
+
+/* Firefox standard scrollbar */
+html:has(body.terminal-theme),
+body.terminal-theme,
+body.terminal-theme *,
+body.terminal-theme .table-wrapper,
+body.terminal-theme .tabs-nav,
+body.terminal-theme .drawer-body {
+  scrollbar-width: thin;
+  scrollbar-color: #00f0ff #05080e;
+}
+
+/* WebKit / Chromium / Edge / Safari Viewport & Element Scrollbars */
+html:has(body.terminal-theme)::-webkit-scrollbar,
+body.terminal-theme::-webkit-scrollbar,
+body.terminal-theme *::-webkit-scrollbar,
+body.terminal-theme .table-wrapper::-webkit-scrollbar,
+body.terminal-theme .tabs-nav::-webkit-scrollbar,
+body.terminal-theme .drawer-body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Recessed Inset Metal Channel with Telemetry Calibrated Scale Notches */
+html:has(body.terminal-theme)::-webkit-scrollbar-track,
+body.terminal-theme::-webkit-scrollbar-track,
+body.terminal-theme *::-webkit-scrollbar-track,
+body.terminal-theme .table-wrapper::-webkit-scrollbar-track,
+body.terminal-theme .tabs-nav::-webkit-scrollbar-track,
+body.terminal-theme .drawer-body::-webkit-scrollbar-track {
+  background-color: #05080e;
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 7px,
+    rgba(0, 240, 255, 0.08) 7px,
+    rgba(0, 240, 255, 0.08) 8px
+  );
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-track:horizontal,
+body.terminal-theme::-webkit-scrollbar-track:horizontal,
+body.terminal-theme *::-webkit-scrollbar-track:horizontal,
+body.terminal-theme .table-wrapper::-webkit-scrollbar-track:horizontal,
+body.terminal-theme .tabs-nav::-webkit-scrollbar-track:horizontal,
+body.terminal-theme .drawer-body::-webkit-scrollbar-track:horizontal {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 7px,
+    rgba(0, 240, 255, 0.08) 7px,
+    rgba(0, 240, 255, 0.08) 8px
+  );
+}
+
+/* Sharp Phosphor Chiclet Slider Thumb with Tactile Ribs */
+html:has(body.terminal-theme)::-webkit-scrollbar-thumb,
+body.terminal-theme::-webkit-scrollbar-thumb,
+body.terminal-theme *::-webkit-scrollbar-thumb,
+body.terminal-theme .table-wrapper::-webkit-scrollbar-thumb,
+body.terminal-theme .tabs-nav::-webkit-scrollbar-thumb,
+body.terminal-theme .drawer-body::-webkit-scrollbar-thumb {
+  background-color: #00f0ff;
+  border-radius: 1px;
+  border: 1px solid #00f0ff;
+  box-shadow: 0 0 6px rgba(0, 240, 255, 0.6), inset 0 0 2px rgba(255, 255, 255, 0.8);
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.35) 0px,
+    rgba(0, 0, 0, 0.35) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  min-height: 28px;
+  min-width: 28px;
+}
+
+/* Hover Overclock State: Intense Neon Cyan */
+html:has(body.terminal-theme)::-webkit-scrollbar-thumb:hover,
+body.terminal-theme::-webkit-scrollbar-thumb:hover,
+body.terminal-theme *::-webkit-scrollbar-thumb:hover {
+  background-color: #38bdf8;
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px #00f0ff, inset 0 0 4px #ffffff;
+}
+
+/* Active Drag State: Tactical Amber Lock-On */
+html:has(body.terminal-theme)::-webkit-scrollbar-thumb:active,
+body.terminal-theme::-webkit-scrollbar-thumb:active,
+body.terminal-theme *::-webkit-scrollbar-thumb:active {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.85), inset 0 0 4px #ffffff;
+}
+
+/* Channel Junction / Corner */
+html:has(body.terminal-theme)::-webkit-scrollbar-corner,
+body.terminal-theme::-webkit-scrollbar-corner,
+body.terminal-theme *::-webkit-scrollbar-corner {
+  background-color: #03060a;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+/* Tactical Chevron Stepper Buttons (Up / Down / Left / Right) */
+html:has(body.terminal-theme)::-webkit-scrollbar-button:single-button:vertical:decrement,
+body.terminal-theme::-webkit-scrollbar-button:single-button:vertical:decrement,
+body.terminal-theme *::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: 12px;
+  width: 10px;
+  background: #080d17 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='5,2 2,7 8,7' fill='%2300f0ff'/></svg>") center no-repeat;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-button:single-button:vertical:increment,
+body.terminal-theme::-webkit-scrollbar-button:single-button:vertical:increment,
+body.terminal-theme *::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: 12px;
+  width: 10px;
+  background: #080d17 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='5,8 2,3 8,3' fill='%2300f0ff'/></svg>") center no-repeat;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-button:single-button:horizontal:decrement,
+body.terminal-theme::-webkit-scrollbar-button:single-button:horizontal:decrement,
+body.terminal-theme *::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  height: 10px;
+  width: 12px;
+  background: #080d17 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='2,5 7,2 7,8' fill='%2300f0ff'/></svg>") center no-repeat;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-button:single-button:horizontal:increment,
+body.terminal-theme::-webkit-scrollbar-button:single-button:horizontal:increment,
+body.terminal-theme *::-webkit-scrollbar-button:single-button:horizontal:increment {
+  height: 10px;
+  width: 12px;
+  background: #080d17 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polygon points='8,5 3,2 3,8' fill='%2300f0ff'/></svg>") center no-repeat;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+html:has(body.terminal-theme)::-webkit-scrollbar-button:hover,
+body.terminal-theme::-webkit-scrollbar-button:hover,
+body.terminal-theme *::-webkit-scrollbar-button:hover {
+  background-color: rgba(0, 240, 255, 0.2);
+  border-color: #00f0ff;
+}
+
+/* ==========================================================================
+   Tactical HUD Mobile Responsive & Variant 2 Sticky 4-Col Table
+   ========================================================================== */
+body.terminal-theme .table-scroll-hint {
+  font-family: var(--font-term-mono);
+  color: var(--term-cyan);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.4);
+}
+
+body.terminal-theme .chassis-tooltip {
+  background: #090e18;
+  color: var(--term-cyan);
+  border: 1px solid var(--term-cyan);
+  font-family: var(--font-term-mono);
+  font-size: 0.72rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.85), 0 0 8px rgba(0, 240, 255, 0.35);
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+}
+
+body.terminal-theme .chassis-tooltip::after {
+  border-color: var(--term-cyan) transparent transparent transparent;
+}
+
+@media (max-width: 840px), (pointer: coarse) and (max-width: 960px) {
+  body.terminal-theme .app-header {
+    border-bottom: 2px solid var(--term-cyan);
+    box-shadow: 0 2px 12px rgba(0, 240, 255, 0.2);
+  }
+
+  body.terminal-theme .mob-filter-toggle-btn,
+  body.terminal-theme .mob-view-toggle-btn {
+    font-family: var(--font-term-mono);
+    color: #94a3b8;
+    background: #090e18;
+    border: 1px solid #1e293b;
+    letter-spacing: 0.05em;
+  }
+
+  body.terminal-theme .mob-filter-toggle-btn.active,
+  body.terminal-theme .mob-filter-toggle-btn.has-active-filters,
+  body.terminal-theme .mob-view-toggle-btn.active,
+  body.terminal-theme .mob-view-toggle-btn.has-active-view {
+    border-color: var(--term-cyan);
+    color: var(--term-cyan);
+    background: rgba(0, 240, 255, 0.12);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+  }
+
+  body.terminal-theme .mob-filter-count-badge {
+    color: var(--term-cyan);
+  }
+
+  body.terminal-theme .toolbar-collapsible,
+  body.terminal-theme .toolbar-view-collapsible {
+    background: #070b13;
+    border: 1px solid var(--term-cyan);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 240, 255, 0.25);
+  }
+
+  /* Variant 2 Sticky 4-Col HUD Table */
+  body.terminal-theme .data-table th.col-sticky-name,
+  body.terminal-theme .data-table td.col-sticky-name {
+    position: sticky;
+    left: 0;
+    z-index: 6;
+    background-color: #070b13 !important;
+    border-right: 1px solid #1e334d;
+    box-shadow: 3px 0 6px -2px rgba(0, 0, 0, 0.8), 1px 0 4px rgba(0, 240, 255, 0.1);
+  }
+
+  body.terminal-theme .data-table th.col-sticky-name {
+    z-index: 25;
+    background-color: #090e18 !important;
+    border-bottom: 2px solid var(--term-cyan);
+  }
+
+  body.terminal-theme .data-table tr:hover td.col-sticky-name {
+    background-color: #0e1726 !important;
+  }
+
+  body.terminal-theme .col-cost {
+    font-family: var(--font-term-mono);
+    color: var(--term-cyan);
+    font-weight: 700;
+  }
+
+  body.terminal-theme .chassis-cell .chassis-icon-glyph {
+    color: var(--term-cyan);
+    filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.4));
+  }
+}
+
+/* Explicit body.terminal-theme.mobile-view overrides */
+body.terminal-theme.mobile-view .app-header {
+  border-bottom: 2px solid var(--term-cyan);
+  box-shadow: 0 2px 12px rgba(0, 240, 255, 0.2);
+}
+
+body.terminal-theme.mobile-view .mob-filter-toggle-btn,
+body.terminal-theme.mobile-view .mob-view-toggle-btn {
+  font-family: var(--font-term-mono);
+  color: #94a3b8;
+  background: #090e18;
+  border: 1px solid #1e293b;
+  letter-spacing: 0.05em;
+}
+
+body.terminal-theme.mobile-view .mob-filter-toggle-btn.active,
+body.terminal-theme.mobile-view .mob-filter-toggle-btn.has-active-filters,
+body.terminal-theme.mobile-view .mob-view-toggle-btn.active,
+body.terminal-theme.mobile-view .mob-view-toggle-btn.has-active-view {
+  border-color: var(--term-cyan);
+  color: var(--term-cyan);
+  background: rgba(0, 240, 255, 0.12);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+}
+
+body.terminal-theme.mobile-view .mob-filter-count-badge {
+  color: var(--term-cyan);
+}
+
+body.terminal-theme.mobile-view .toolbar-collapsible,
+body.terminal-theme.mobile-view .toolbar-view-collapsible {
+  background: #070b13;
+  border: 1px solid var(--term-cyan);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 240, 255, 0.25);
+}
+
+body.terminal-theme.mobile-view .data-table th.col-sticky-name,
+body.terminal-theme.mobile-view .data-table td.col-sticky-name {
+  position: sticky;
+  left: 0;
+  z-index: 6;
+  background-color: #070b13 !important;
+  border-right: 1px solid #1e334d;
+  box-shadow: 3px 0 6px -2px rgba(0, 0, 0, 0.8), 1px 0 4px rgba(0, 240, 255, 0.1);
+}
+
+body.terminal-theme.mobile-view .data-table th.col-sticky-name {
+  z-index: 25;
+  background-color: #090e18 !important;
+  border-bottom: 2px solid var(--term-cyan);
+}
+
+body.terminal-theme.mobile-view .data-table tr:hover td.col-sticky-name {
+  background-color: #0e1726 !important;
+}
+
+body.terminal-theme.mobile-view .col-cost {
+  font-family: var(--font-term-mono);
+  color: var(--term-cyan);
+  font-weight: 700;
+}
+
+body.terminal-theme.mobile-view .chassis-cell .chassis-icon-glyph {
+  color: var(--term-cyan);
+  filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.4));
+}
+
+/* Mobile Tactical Tabs: Just Icons, No active indicator LED or underline */
+body.terminal-theme.mobile-view .tab-btn,
+@media (max-width: 840px) {
+  body.terminal-theme .tab-btn::before {
+    display: none !important;
+  }
+  body.terminal-theme .tab-btn {
+    border: 1px solid transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    margin: 0 !important;
+  }
+  body.terminal-theme .tab-btn .tab-faction-glyph {
+    opacity: 0.45;
+  }
+  body.terminal-theme .tab-btn.active {
+    border-color: rgba(0, 240, 255, 0.4) !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: rgba(0, 240, 255, 0.12) !important;
+  }
+  body.terminal-theme .tab-btn.active .tab-faction-glyph {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px var(--tab-color, var(--term-cyan)));
+  }
+}
+
+body.terminal-theme.mobile-view .tab-btn {
+  border: 1px solid transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  margin: 0 !important;
+}
+body.terminal-theme.mobile-view .tab-btn::before {
+  display: none !important;
+}
+body.terminal-theme.mobile-view .tab-btn .tab-faction-glyph {
+  opacity: 0.45;
+}
+body.terminal-theme.mobile-view .tab-btn.active {
+  border-color: rgba(0, 240, 255, 0.4) !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: rgba(0, 240, 255, 0.12) !important;
+}
+body.terminal-theme.mobile-view .tab-btn.active .tab-faction-glyph {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px var(--tab-color, var(--term-cyan)));
+}
+
+/* --------------------------------------------------------------------------
+   Tactical HUD Points Trend Graph in Card Detail Drawer
+   -------------------------------------------------------------------------- */
+body.terminal-theme .timeline-graph-wrapper {
+  background: rgba(7, 11, 19, 0.9);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: inset 0 0 12px rgba(0, 240, 255, 0.08), 0 0 14px rgba(0, 0, 0, 0.8);
+}
+
+body.terminal-theme .timeline-trend-badge {
+  font-family: var(--font-term-mono);
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+}
+
+body.terminal-theme .timeline-trend-badge.trend-buff {
+  background: rgba(0, 240, 255, 0.12);
+  color: var(--term-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+}
+
+body.terminal-theme .timeline-trend-badge.trend-nerf {
+  background: rgba(255, 51, 85, 0.12);
+  color: #ff3355;
+  border: 1px solid rgba(255, 51, 85, 0.4);
+  text-shadow: 0 0 6px rgba(255, 51, 85, 0.5);
+}
+
+body.terminal-theme .timeline-trend-badge.trend-stable {
+  background: rgba(148, 163, 184, 0.1);
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+body.terminal-theme .graph-grid-line {
+  stroke: rgba(0, 240, 255, 0.15);
+}
+
+body.terminal-theme .graph-axis-label {
+  fill: #64748b;
+  font-family: var(--font-term-mono);
+  font-size: 8.5px;
+}
+
+body.terminal-theme .graph-line-path {
+  stroke: var(--term-cyan);
+  stroke-width: 2.2;
+  filter: drop-shadow(0 0 5px rgba(0, 240, 255, 0.7));
+}
+
+body.terminal-theme .graph-dot {
+  fill: #05080e;
+  stroke: var(--term-cyan);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 4px var(--term-cyan));
+}
+
+body.terminal-theme .graph-dot:hover {
+  fill: var(--term-cyan);
+  stroke: #ffffff;
+}
+
+body.terminal-theme .graph-dot.dot-buff {
+  stroke: var(--term-cyan);
+}
+
+body.terminal-theme .graph-dot.dot-nerf {
+  stroke: #ff3355;
+  filter: drop-shadow(0 0 4px #ff3355);
+}
+
+body.terminal-theme .graph-point-label {
+  fill: var(--term-cyan);
+  font-family: var(--font-term-mono);
+  font-size: 9.5px;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 240, 255, 0.6);
+}
+
+body.terminal-theme .graph-x-label {
+  fill: #64748b;
+  font-family: var(--font-term-mono);
+  font-size: 8.5px;
+}
+
+
+

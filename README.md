@@ -40,7 +40,21 @@ You can run these scripts using `npm` or `yarn`. For example:
 | `npm run validate:json` / `yarn run validate:json` | Validate that all `.json` files contain valid JSON                                                                                                          |
 | `npm test` / `npm run validate:tests`              | Run all unit tests                                                                                                                                          |
 | `npm run validate:tests:watch`                     | Run all unit tests in watch mode                                                                                                                            |
+| `npm run build:pages`                              | Build the interactive GitHub Pages website and dataset in `docs/`                                                                                           |
+| `npm run serve:pages`                              | Preview the GitHub Pages website locally                                                                                                                    |
 | `npm run changelog A...B`                          | Generate a changelog between commits `A` and `B`, to be used in the release description on GitHub.<br />Example usage: `npm run changelog 1.24.0...1.25.0` |
+
+## Interactive Web Reference (GitHub Pages)
+
+The repository automatically generates an interactive points reference website on each release, hosted at:
+👉 **[https://sogemoge.github.io/xwing-data2-legacy/](https://sogemoge.github.io/xwing-data2-legacy/)**
+
+Features:
+- Live cards, points, and upgrade slots with custom Legacy-ready fonts (`xwing-miniatures` & `xwing-miniatures-ships`).
+- Instant points diff highlights (buffs/nerfs) and non-points parameter changes (format moves, keywords, slot bar, restrictions).
+- Side-by-side retrospective points history dating back to Sep 21.
+- Direct commit interlinks (`https://github.com/SogeMoge/xwing-data2-legacy/commit/<sha>`) for all card changes.
+
 
 ## Creating a pull request
 

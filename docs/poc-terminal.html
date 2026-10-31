@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-Wing 2.0 Legacy // Tactical HUD & Points Reference</title>
+  <meta name="description" content="Official points, chassis diagnostics, and balance reference for Star Wars: X-Wing Miniatures Game (Second Edition / 2.0 Legacy), styled with an authentic Star Wars Tactical Terminal HUD interface, retrospective history, and commit tracking.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="terminal.css">
+  <link rel="icon" type="image/png" href="https://infinitearenas.com/xw2/images/shipicons/rebel/t65xwing.png">
+</head>
+<body class="terminal-theme">
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-top">
+      <div class="brand-section">
+        <span class="brand-logo-glyph" title="X-Wing Tactical Terminal">x</span>
+        <div>
+          <h1 class="brand-title">X-Wing 2.0 Legacy // Tactical HUD</h1>
+          <p class="brand-subtitle">Tactical Flight Computer & Points Collation Terminal</p>
+        </div>
+      </div>
+      <div class="header-badges">
+        <div class="theme-switch-group" role="group" aria-label="Interface Mode">
+          <span class="theme-switch-label">UI:</span>
+          <button type="button" class="theme-btn active" id="btnThemeTerminal" title="Switch to Star Wars Tactical HUD">
+            <span class="theme-led"></span>Tactical HUD
+          </button>
+          <button type="button" class="theme-btn" id="btnThemeStandard" title="Switch to Standard Clean View">
+            <span class="theme-led"></span>Standard View
+          </button>
+        </div>
+        <div class="layout-switch-group" role="group" aria-label="View Layout">
+          <span class="theme-switch-label">View:</span>
+          <button type="button" class="layout-btn active" id="btnLayoutAuto" title="Automatically adapt to device screen">
+            <span class="theme-led"></span>Auto
+          </button>
+          <button type="button" class="layout-btn" id="btnLayoutMobile" title="Force Compact Mobile Table & Drawer">
+            <span class="theme-led"></span>Mobile
+          </button>
+          <button type="button" class="layout-btn" id="btnLayoutDesktop" title="Force Full Desktop Table">
+            <span class="theme-led"></span>Desktop
+          </button>
+        </div>
+        <a id="releaseBadge" class="badge badge-version" href="https://github.com/SogeMoge/xwing-data2-legacy/releases" target="_blank" rel="noopener noreferrer">Release 3.12.0</a>
+        <a id="commitBadge" class="badge badge-commit" href="https://github.com/SogeMoge/xwing-data2-legacy" target="_blank" rel="noopener noreferrer">commit</a>
+        <a class="badge badge-link" href="https://github.com/SogeMoge/xwing-data2-legacy" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>Repository</span>
+        </a>
+        <a class="badge badge-link" href="https://docs.google.com/spreadsheets/d/1kgEwq-1UtA7w8Q5sXAr_bt0AZHfaaZDnVRC9lnyAoBY" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Google Sheet</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Faction & Category Navigation Tabs -->
+  <nav class="tabs-nav" id="tabsNav">
+    <!-- Populated by app.js -->
+  </nav>
+
+  <!-- Main Content -->
+  <main class="app-main">
+    
+    <!-- Controls Toolbar -->
+    <div class="toolbar">
+      <div class="toolbar-search-row">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search cards, chassis, keywords, telemetry..." autocomplete="off">
+        </div>
+        <button type="button" id="mobFilterToggleBtn" class="mob-filter-toggle-btn" aria-expanded="false" aria-controls="toolbarCollapsible" title="Toggle Filters">
+          <span class="mob-filter-icon">⚙️</span>
+          <span class="mob-filter-label">Filters</span>
+          <span id="mobFilterCountBadge" class="mob-filter-count-badge">(0)</span>
+        </button>
+        <button type="button" id="mobViewToggleBtn" class="mob-filter-toggle-btn mob-view-toggle-btn" aria-expanded="false" aria-controls="toolbarViewCollapsible" title="Toggle View Options">
+          <span class="mob-filter-icon">👁️</span>
+          <span class="mob-filter-label">View</span>
+        </button>
+      </div>
+
+      <div id="toolbarCollapsible" class="toolbar-collapsible">
+        <div class="toolbar-filters-group">
+          <select id="formatSelect" class="select-filter">
+            <option value="all">All Formats</option>
+            <option value="standard">Standard</option>
+            <option value="wildspace">Wild Space</option>
+            <option value="epic">Epic</option>
+          </select>
+
+          <select id="changeSelect" class="select-filter">
+            <option value="all">All Cards</option>
+            <option value="changed">Only Changed Cards</option>
+            <option value="buffs">Points Buffs (Cheaper)</option>
+            <option value="nerfs">Points Nerfs (Costlier)</option>
+            <option value="params">Parameter Changes (Format/Kw/Slots)</option>
+          </select>
+
+          <select id="typeSelect" class="select-filter">
+            <option value="all">All Chassis / Types</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="toolbarViewCollapsible" class="toolbar-view-collapsible">
+        <div class="toolbar-actions-group">
+          <button id="toggleHeadersBtn" class="btn btn-secondary" title="Toggle chassis and slot group headers to display more rows at once">
+            <span>🏷️ Show Headers</span>
+          </button>
+          <button id="toggleHistoryBtn" class="btn btn-secondary" title="Show all historical points columns side-by-side like the Google Spreadsheet">
+            <span>📜 Show History</span>
+          </button>
+          <button id="exportBtn" class="btn btn-secondary" title="Export visible table to CSV">
+            <span>📥 Export CSV</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint indicator on mobile -->
+    <div class="table-scroll-hint" id="tableScrollHint">
+      <span>↔ Swipe left for upgrade slots, format & points</span>
+    </div>
+
+    <!-- Summary Stats -->
+    <div class="stats-banner">
+      <span id="rowCount">Scanning tactical database...</span>
+      <span style="font-family: var(--font-term-mono, monospace); font-size: 0.76rem; color: #38bdf8;">
+        [TACTICAL LOG: SELECT ENTITY FOR WIREFRAME DIAGNOSTICS & FLIGHT ENVELOPE]
+      </span>
+    </div>
+
+    <!-- Data Table Container -->
+    <div class="table-wrapper">
+      <table class="data-table" id="dataTable">
+        <thead id="tableHead">
+          <!-- Populated by app.js -->
+        </thead>
+        <tbody id="tableBody">
+          <!-- Populated by app.js -->
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <!-- Card Detail Modal / Drawer -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="drawer">
+      <div class="drawer-header">
+        <div class="drawer-title-box">
+          <h2 class="drawer-title" id="drawerTitle">Card Details</h2>
+        </div>
+        <button class="drawer-close" id="modalClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="drawer-body" id="drawerContent">
+        <!-- Populated on click -->
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

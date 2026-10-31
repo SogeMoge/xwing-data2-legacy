@@ -39,8 +39,24 @@ xwing-data2-legacy/
 │   ├── pilots.test.js                  # Validates every ship and pilot against schemas & keywords
 │   ├── upgrades.test.js                # Validates every upgrade against schemas & keywords
 │   ├── quick-builds.test.js            # Validates quick builds and references valid XWS IDs
+│   ├── pages.test.js                   # Validates GitHub Pages dataset, fonts, and commit links
 │   └── xws.test.js                     # Enforces global uniqueness of XWS IDs
-├── scripts/                            # SCRAPING, INGESTION & ASSET TOOLS
+├── docs/                               # GITHUB PAGES INTERACTIVE APPLICATION
+│   ├── ARCHITECTURE.md                 # System architecture & retrospective analytics reference for AI & maintainers
+│   ├── DESIGN_SYSTEM.md                # UI/UX design tokens, font glyphs, and interaction specifications
+│   ├── TACTICAL_TERMINAL_POC.md        # Star Wars Tactical Terminal HUD PoC design & reference specification
+│   ├── index.html                      # Standard points reference UI with filters and tabs
+│   ├── poc-terminal.html               # Interactive Star Wars Tactical Terminal HUD interface (PoC)
+│   ├── style.css                       # Dark theme, xwing icon fonts, table layout
+│   ├── terminal.css                    # Tactical terminal theme: CRT scanlines, chiclet keys, targeting reticles
+│   ├── app.js                          # Client-side filtering, search, sorting, CSV export
+│   ├── data.json                       # Precomputed cards, diffs, commits, and retrospective history
+│   ├── history.json                    # Partitioned retrospective history matrix
+│   └── fonts/                          # TTF font files and JSON glyph mappings
+├── scripts/                            # SCRAPING, INGESTION, PAGES & ASSET TOOLS
+│   ├── generate-pages.js               # Master generator for GitHub Pages site
+│   ├── analyze-release.js              # Tag diff analyzer tracking points, parameters, and commit SHAs
+│   ├── generate-data.js                # Compiles docs/data.json with font glyphs & retrospective matrix
 │   ├── validate-json.js                # Fast zero-dependency JSON syntax validator
 │   ├── ffgscrape.js                    # Downloads raw JSON from FFG API
 │   ├── ffgprocess.js                   # Ingests downloaded cards into data/ files with git diffs
@@ -188,6 +204,12 @@ yarn run validate:tests
 # 3. Automatically format all data JSON files with Prettier
 yarn run format
 # or: npm run format
+
+# 4. Build and validate GitHub Pages web application
+npm run build:pages
+
+# 5. Preview GitHub Pages locally
+npm run serve:pages
 ```
 
 ### 6.3 Release & Versioning
@@ -196,4 +218,8 @@ yarn run format
   - `MINOR`: Points updates, new content added (pilots, ships, upgrades) or backward-compatible schema changes.
   - `MAJOR`: Breaking schema changes that alter the shape expected by downstream consumers.
 - Version is synchronized in both [`package.json`](package.json) and [`data/manifest.json`](data/manifest.json).
+
+### 6.4 Web Reference, Architecture & Design System
+- **Architecture & Release Diffing**: For full architectural specifications, data compilation flow, release diffing logic, and comparative evaluation against Google Sheets, consult [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+- **UI/UX & Design Tokens**: For the complete design system, CSS tokens, canonical color palettes from SirJorj, icon/ship font mappings, and component interaction states, consult [`docs/DESIGN_SYSTEM.md`](docs/DESIGN_SYSTEM.md).
 
