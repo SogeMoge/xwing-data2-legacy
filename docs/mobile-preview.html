@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-Wing 2.0 Legacy — Mobile UI Variants Interactive Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="terminal.css">
+  <link rel="icon" type="image/png" href="https://infinitearenas.com/xw2/images/shipicons/rebel/t65xwing.png">
+  <style>
+    /* Simulator Container Styles */
+    body.sim-body {
+      background: #030509;
+      color: #e2e8f0;
+      font-family: var(--font-term-ui, sans-serif);
+      margin: 0;
+      padding: 1rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sim-topbar {
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 1.25rem;
+      background: #090e18;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 0.85rem 1.25rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    }
+
+    .sim-topbar-title {
+      font-family: var(--font-term-display, sans-serif);
+      font-size: 1.1rem;
+      color: var(--term-cyan, #00f0ff);
+      margin: 0 0 0.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sim-variant-selector {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .sim-vbtn {
+      flex: 1;
+      min-width: 200px;
+      background: #111a29;
+      border: 1px solid #24354d;
+      color: #94a3b8;
+      padding: 0.55rem 0.85rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .sim-vbtn:hover {
+      color: #fff;
+      border-color: var(--term-cyan, #00f0ff);
+    }
+
+    .sim-vbtn.active {
+      background: rgba(0, 240, 255, 0.15);
+      border-color: var(--term-cyan, #00f0ff);
+      color: var(--term-cyan, #00f0ff);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+    }
+
+    .sim-vbtn .sim-led {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #334155;
+    }
+
+    .sim-vbtn.active .sim-led {
+      background: var(--term-cyan, #00f0ff);
+      box-shadow: 0 0 8px var(--term-cyan, #00f0ff);
+    }
+
+    /* Device Mockup Shell */
+    .device-shell {
+      width: 100%;
+      max-width: 390px;
+      height: 820px;
+      background: #05080e;
+      border: 2px solid #24354d;
+      border-radius: 36px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85), 0 0 20px rgba(0, 240, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Device Speaker / Notch */
+    .device-notch {
+      width: 130px;
+      height: 22px;
+      background: #0b111c;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 50;
+      flex-shrink: 0;
+    }
+
+    .device-speaker {
+      width: 44px;
+      height: 4px;
+      background: #1e293b;
+      border-radius: 2px;
+    }
+
+    /* Device Viewport Inside */
+    .device-viewport {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: relative;
+      background: #03070d;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Compact Mobile Header */
+    .mob-header {
+      padding: 0.6rem 0.85rem;
+      background: #090e18;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .mob-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .mob-brand-glyph {
+      font-family: 'xwing-miniatures-ships';
+      font-size: 1.4rem;
+      color: #ef4444;
+      line-height: 1;
+    }
+
+    .mob-brand-title {
+      font-family: var(--font-term-display, sans-serif);
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.05em;
+    }
+
+    .mob-brand-title span {
+      color: var(--term-cyan, #00f0ff);
+      font-size: 0.72rem;
+    }
+
+    /* Compact Search & Filter Row */
+    .mob-controls-row {
+      padding: 0.5rem 0.85rem;
+      background: #070b13;
+      border-bottom: 1px solid #162438;
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .mob-search-box {
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .mob-search-input {
+      width: 100%;
+      background: #040810;
+      border: 1px solid #1e293b;
+      color: #e2e8f0;
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.78rem;
+      padding: 0.4rem 0.5rem 0.4rem 1.8rem;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    .mob-search-input:focus {
+      border-color: var(--term-cyan, #00f0ff);
+      box-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+    }
+
+    .mob-search-icon {
+      position: absolute;
+      left: 0.55rem;
+      font-size: 0.75rem;
+      color: #64748b;
+      pointer-events: none;
+    }
+
+    .mob-filter-btn {
+      background: #111a29;
+      border: 1px solid #24354d;
+      color: #94a3b8;
+      padding: 0.4rem 0.65rem;
+      border-radius: 4px;
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.72rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .mob-filter-btn.active {
+      color: var(--term-cyan, #00f0ff);
+      border-color: var(--term-cyan, #00f0ff);
+      background: rgba(0, 240, 255, 0.12);
+    }
+
+    /* Expandable Filter Overlay Drawer */
+    .mob-filter-drawer {
+      display: none;
+      background: #090e18;
+      border-bottom: 2px solid var(--term-cyan, #00f0ff);
+      padding: 0.75rem 0.85rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+      flex-shrink: 0;
+    }
+
+    .mob-filter-drawer.open {
+      display: block;
+      animation: slideDown 0.2s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mob-filter-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .mob-filter-grid select {
+      background: #040810;
+      border: 1px solid #1e293b;
+      color: #cbd5e1;
+      padding: 0.35rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: var(--font-term-mono, monospace);
+      width: 100%;
+    }
+
+    .mob-filter-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .mob-filter-actions button {
+      flex: 1;
+      background: #111a29;
+      border: 1px solid #24354d;
+      color: #94a3b8;
+      padding: 0.35rem;
+      font-size: 0.72rem;
+      border-radius: 4px;
+      font-family: var(--font-term-mono, monospace);
+      cursor: pointer;
+    }
+
+    /* Faction Tab Ribbon */
+    .mob-tabs {
+      display: flex;
+      overflow-x: auto;
+      background: #05080e;
+      border-bottom: 1px solid #162438;
+      padding: 0.25rem 0.5rem 0;
+      gap: 0.25rem;
+      flex-shrink: 0;
+      scrollbar-width: none;
+    }
+
+    .mob-tabs::-webkit-scrollbar { display: none; }
+
+    .mob-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.35rem 0.6rem;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: #64748b;
+      font-size: 0.72rem;
+      font-family: var(--font-term-display, sans-serif);
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .mob-tab.active {
+      color: #fff;
+      border-bottom-color: var(--term-cyan, #00f0ff);
+      text-shadow: 0 0 6px rgba(0, 240, 255, 0.4);
+    }
+
+    /* Content Area */
+    .mob-content {
+      flex: 1;
+      padding: 0.6rem 0.65rem 2rem;
+      overflow-y: auto;
+    }
+
+    /* ==========================================================================
+       VARIANT 1: TACTICAL AVIONICS CARD STRIPS
+       ========================================================================== */
+    .card-strip {
+      background: #080d17;
+      border: 1px solid #1e293b;
+      border-radius: 4px;
+      margin-bottom: 0.55rem;
+      padding: 0.55rem 0.65rem;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: all 0.15s ease;
+    }
+
+    .card-strip:hover {
+      border-color: var(--term-cyan, #00f0ff);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.25);
+    }
+
+    /* Corner targeting reticles */
+    .card-strip::before, .card-strip::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      pointer-events: none;
+    }
+    .card-strip::before {
+      top: 0; left: 0;
+      border-top: 2px solid var(--term-cyan, #00f0ff);
+      border-left: 2px solid var(--term-cyan, #00f0ff);
+    }
+    .card-strip::after {
+      bottom: 0; right: 0;
+      border-bottom: 2px solid var(--term-cyan, #00f0ff);
+      border-right: 2px solid var(--term-cyan, #00f0ff);
+    }
+
+    .card-strip-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .card-strip-namebox {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      overflow: hidden;
+    }
+
+    .card-strip-init {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      background: var(--xwing-initiative, #e77e29);
+      color: #fff;
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.72rem;
+      font-weight: 800;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .card-strip-name {
+      font-family: var(--font-term-display, sans-serif);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-strip-pointsbox {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex-shrink: 0;
+    }
+
+    .card-strip-points {
+      background: rgba(0, 240, 255, 0.12);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      color: var(--term-cyan, #00f0ff);
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.15rem 0.45rem;
+      border-radius: 3px;
+      text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+    }
+
+    .card-strip-diff {
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15rem 0.35rem;
+      border-radius: 3px;
+    }
+    .diff-buff { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+    .diff-nerf { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+    .diff-same { color: #64748b; }
+
+    .card-strip-mid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.72rem;
+      color: #94a3b8;
+      border-top: 1px solid #162438;
+      padding-top: 0.3rem;
+    }
+
+    .card-strip-chassis {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: #cbd5e1;
+      font-family: var(--font-term-ui, sans-serif);
+    }
+
+    .card-strip-chassis-glyph {
+      font-family: 'xwing-miniatures-ships';
+      font-size: 0.95rem;
+      color: #94a3b8;
+    }
+
+    .card-strip-slots {
+      display: flex;
+      gap: 0.25rem;
+    }
+
+    .card-strip-slot-glyph {
+      font-family: 'xwing-miniatures';
+      font-size: 0.75rem;
+      color: #00f0ff;
+      opacity: 0.85;
+    }
+
+    /* ==========================================================================
+       VARIANT 2: STICKY PRIORITIZED 4-COLUMN TABLE
+       ========================================================================== */
+    .table-v2-wrapper {
+      overflow-x: auto;
+      border: 1px solid #1e293b;
+      border-radius: 4px;
+      background: #040810;
+      position: relative;
+    }
+
+    .table-v2 {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.76rem;
+      text-align: left;
+    }
+
+    .table-v2 th, .table-v2 td {
+      padding: 0.45rem 0.5rem;
+      border-bottom: 1px solid #162438;
+      white-space: nowrap;
+    }
+
+    .table-v2 th {
+      background: #090e18;
+      color: var(--term-cyan, #00f0ff);
+      font-family: var(--font-term-display, sans-serif);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    /* Sticky Leftmost Pilot Name Column */
+    .table-v2 th.col-sticky-name,
+    .table-v2 td.col-sticky-name {
+      position: sticky;
+      left: 0;
+      background: #080d17;
+      z-index: 5;
+      border-right: 1px solid #23344d;
+      min-width: 140px;
+      max-width: 155px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .table-v2 th.col-sticky-name {
+      z-index: 15;
+      background: #0a111e;
+    }
+
+    .table-v2-namebox {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .table-v2-init {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      background: var(--xwing-initiative, #e77e29);
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 800;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .table-v2-pts {
+      font-family: var(--font-term-mono, monospace);
+      font-weight: 700;
+      color: var(--term-cyan, #00f0ff);
+    }
+
+    /* Variant 2 Icon-Only Chassis with Hover/Tap Tooltip */
+    .table-v2 .col-type {
+      width: 44px;
+      min-width: 44px;
+      text-align: center;
+      padding: 0.35rem 0.2rem !important;
+    }
+
+    .table-v2 .chassis-cell {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .table-v2 .chassis-cell .xwing-ship {
+      font-size: 1.35rem;
+      color: var(--term-cyan, #00f0ff);
+      filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.4));
+    }
+
+    .table-v2 .chassis-tooltip {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #090e18;
+      color: var(--term-cyan, #00f0ff);
+      border: 1px solid var(--term-cyan, #00f0ff);
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.7rem;
+      font-weight: 700;
+      white-space: nowrap;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.85), 0 0 8px rgba(0, 240, 255, 0.4);
+      z-index: 100;
+      pointer-events: none;
+    }
+
+    .table-v2 .chassis-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 4px;
+      border-style: solid;
+      border-color: var(--term-cyan, #00f0ff) transparent transparent transparent;
+    }
+
+    .table-v2 .chassis-cell:hover .chassis-tooltip,
+    .table-v2 .chassis-cell:focus .chassis-tooltip,
+    .table-v2 .chassis-cell.active-tip .chassis-tooltip {
+      display: block;
+      animation: tipSlide 0.15s ease-out;
+    }
+
+    @keyframes tipSlide {
+      from { opacity: 0; transform: translate(-50%, 4px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+
+    .scroll-hint-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.3rem;
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.65rem;
+      color: var(--term-cyan, #00f0ff);
+      margin-bottom: 0.3rem;
+      opacity: 0.8;
+    }
+
+    /* ==========================================================================
+       VARIANT 3: HYBRID EXPANDABLE TELEMETRY LIST
+       ========================================================================== */
+    .hybrid-item {
+      background: #080d17;
+      border: 1px solid #1e293b;
+      border-radius: 4px;
+      margin-bottom: 0.4rem;
+      overflow: hidden;
+      transition: all 0.2s;
+    }
+
+    .hybrid-item.open {
+      border-color: var(--term-cyan, #00f0ff);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+    }
+
+    .hybrid-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.45rem 0.65rem;
+      cursor: pointer;
+      background: #0b1220;
+    }
+
+    .hybrid-bar:hover {
+      background: #111a2c;
+    }
+
+    .hybrid-left {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      overflow: hidden;
+    }
+
+    .hybrid-title {
+      font-family: var(--font-term-display, sans-serif);
+      font-size: 0.82rem;
+      color: #fff;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .hybrid-sub {
+      font-size: 0.7rem;
+      color: #94a3b8;
+    }
+
+    .hybrid-right {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .hybrid-pts {
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--term-cyan, #00f0ff);
+    }
+
+    .hybrid-arrow {
+      color: #64748b;
+      font-size: 0.72rem;
+      transition: transform 0.2s;
+    }
+
+    .hybrid-item.open .hybrid-arrow {
+      transform: rotate(180deg);
+      color: var(--term-cyan, #00f0ff);
+    }
+
+    .hybrid-body {
+      display: none;
+      padding: 0.65rem;
+      background: #040810;
+      border-top: 1px solid #1e293b;
+      font-size: 0.76rem;
+    }
+
+    .hybrid-item.open .hybrid-body {
+      display: block;
+    }
+
+    .hybrid-slots-row {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.4rem;
+      color: #cbd5e1;
+    }
+
+    .hybrid-ability-text {
+      color: #94a3b8;
+      line-height: 1.4;
+      font-size: 0.72rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hybrid-action-btn {
+      width: 100%;
+      background: rgba(0, 240, 255, 0.12);
+      border: 1px solid var(--term-cyan, #00f0ff);
+      color: var(--term-cyan, #00f0ff);
+      font-family: var(--font-term-mono, monospace);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.35rem;
+      border-radius: 3px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="sim-body terminal-theme">
+
+  <!-- Variant Control Bar -->
+  <div class="sim-topbar">
+    <div class="sim-topbar-title">
+      <span>📱 Mobile View Architectural Variants Simulator</span>
+      <a href="index.html" style="font-size: 0.75rem; color: #94a3b8; text-decoration: none;">← Back to App</a>
+    </div>
+    <div class="sim-variant-selector">
+      <button class="sim-vbtn active" id="btnV1" onclick="switchVariant('v1')">
+        <span class="sim-led"></span>Variant 1: Tactical Card Strips
+      </button>
+      <button class="sim-vbtn" id="btnV2" onclick="switchVariant('v2')">
+        <span class="sim-led"></span>Variant 2: Sticky 4-Col Table
+      </button>
+      <button class="sim-vbtn" id="btnV3" onclick="switchVariant('v3')">
+        <span class="sim-led"></span>Variant 3: Hybrid Expandable List
+      </button>
+    </div>
+  </div>
+
+  <!-- Interactive Device Mockup Shell (390px iPhone/Android width) -->
+  <div class="device-shell">
+    
+    <!-- Notch / Camera -->
+    <div class="device-notch">
+      <div class="device-speaker"></div>
+    </div>
+
+    <!-- Viewport -->
+    <div class="device-viewport">
+      
+      <!-- Compact Mobile Header -->
+      <header class="mob-header">
+        <div class="mob-brand">
+          <span class="mob-brand-glyph">x</span>
+          <div class="mob-brand-title">X-Wing 2.0 <span>// HUD</span></div>
+        </div>
+        <div style="display: flex; gap: 0.3rem;">
+          <div class="theme-switch-group" style="padding: 1px 3px;">
+            <button class="theme-btn active" style="font-size: 0.65rem; padding: 0.15rem 0.35rem;"><span class="theme-led"></span>HUD</button>
+            <button class="theme-btn" style="font-size: 0.65rem; padding: 0.15rem 0.35rem;"><span class="theme-led"></span>Std</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Compact Search & Expandable Filters Row -->
+      <div class="mob-controls-row">
+        <div class="mob-search-box">
+          <span class="mob-search-icon">🔍</span>
+          <input type="text" id="simSearchInput" class="mob-search-input" placeholder="Search pilots, chassis..." oninput="handleSearch(this.value)">
+        </div>
+        <button class="mob-filter-btn" id="simFilterBtn" onclick="toggleFilterDrawer()">
+          <span>⚙️ Filters</span><span id="filterCountBadge" style="color: var(--term-cyan);">(0)</span>
+        </button>
+      </div>
+
+      <!-- Expandable Filter Drawer (Frees ~400px of vertical space) -->
+      <div class="mob-filter-drawer" id="simFilterDrawer">
+        <div class="mob-filter-grid">
+          <select id="simFormatSelect" onchange="applyFilters()">
+            <option value="all">All Formats</option>
+            <option value="standard">Standard</option>
+            <option value="wildspace">Wild Space</option>
+          </select>
+          <select id="simChangeSelect" onchange="applyFilters()">
+            <option value="all">All Cards</option>
+            <option value="changed">Only Changed</option>
+            <option value="buffs">Buffs (Cheaper)</option>
+            <option value="nerfs">Nerfs (Costlier)</option>
+          </select>
+        </div>
+        <div class="mob-filter-actions">
+          <button onclick="toggleHistorySim()">📜 Toggle History</button>
+          <button onclick="toggleHeadersSim()">🏷️ Toggle Headers</button>
+        </div>
+      </div>
+
+      <!-- Faction Ribbon -->
+      <nav class="mob-tabs" id="simTabs">
+        <button class="mob-tab active" onclick="switchFaction('rebelalliance')">! Rebel</button>
+        <button class="mob-tab" onclick="switchFaction('galacticempire')">@ Empire</button>
+        <button class="mob-tab" onclick="switchFaction('scumandvillainy')"># Scum</button>
+        <button class="mob-tab" onclick="switchFaction('resistance')">! Resistance</button>
+        <button class="mob-tab" onclick="switchFaction('firstorder')">+ First Order</button>
+        <button class="mob-tab" onclick="switchFaction('galacticrepublic')">/ Republic</button>
+        <button class="mob-tab" onclick="switchFaction('separatistalliance')">. Separatist</button>
+      </nav>
+
+      <!-- Content Area where Variants Render -->
+      <div class="mob-content" id="simContent">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    let currentVariant = 'v1';
+    let currentFaction = 'rebelalliance';
+    let filterDrawerOpen = false;
+    let showHistory = false;
+    let searchTerm = '';
+
+    const SAMPLE_PILOTS = [
+      { init: 6, name: "Wedge Antilles", chassis: "T-65 X-Wing", glyph: "x", cost: "54", diff: -2, slots: ['Talent', 'Torpedo', 'Astromech', 'Modification'], ability: "While you perform a primary attack, the defender rolls 1 fewer defense die." },
+      { init: 5, name: "Luke Skywalker", chassis: "T-65 X-Wing", glyph: "x", cost: "61", diff: 0, slots: ['Force Power', 'Torpedo', 'Astromech', 'Modification'], ability: "After you defend, you may recover 1 Force charge." },
+      { init: 4, name: "Thane Kyrell", chassis: "T-65 X-Wing", glyph: "x", cost: "47", diff: -1, slots: ['Talent', 'Torpedo', 'Astromech', 'Modification'], ability: "While you attack, if the defender is in your firing arc, you may flip 1 damage card faceup." },
+      { init: 3, name: "Biggs Darklighter", chassis: "T-65 X-Wing", glyph: "x", cost: "48", diff: 2, slots: ['Torpedo', 'Astromech', 'Modification'], ability: "While another friendly ship defends, you may choose to suffer 1 damage." },
+      { init: 2, name: "Blue Squadron Escort", chassis: "T-65 X-Wing", glyph: "x", cost: "41", diff: 0, slots: ['Torpedo', 'Astromech', 'Modification'], ability: "T-65 X-wing line pilot of the Alliance fleet." },
+      { init: 5, name: "Hera Syndulla", chassis: "A/SF-01 B-Wing", glyph: "b", cost: "55", diff: -3, slots: ['Talent', 'Sensor', 'Cannon', 'Cannon', 'Torpedo', 'Modification'], ability: "While another friendly ship performs an attack, you may transfer 1 focus token." },
+      { init: 4, name: "Ten Numb", chassis: "A/SF-01 B-Wing", glyph: "b", cost: "48", diff: 0, slots: ['Talent', 'Sensor', 'Cannon', 'Torpedo', 'Modification'], ability: "While you defend or perform an attack, you may spend 1 stress token to change 1 focus result." }
+    ];
+
+    const SLOT_GLYPHS = {
+      'Talent': 'E', 'Sensor': 'S', 'Cannon': 'C', 'Torpedo': 'P', 'Missile': 'M',
+      'Crew': 'W', 'Astromech': 'A', 'Modification': 'm', 'Force Power': 'F'
+    };
+
+    function switchVariant(v) {
+      currentVariant = v;
+      document.querySelectorAll('.sim-vbtn').forEach(b => b.classList.remove('active'));
+      if (v === 'v1') document.getElementById('btnV1').classList.add('active');
+      if (v === 'v2') document.getElementById('btnV2').classList.add('active');
+      if (v === 'v3') document.getElementById('btnV3').classList.add('active');
+      render();
+    }
+
+    function toggleFilterDrawer() {
+      filterDrawerOpen = !filterDrawerOpen;
+      document.getElementById('simFilterDrawer').classList.toggle('open', filterDrawerOpen);
+      document.getElementById('simFilterBtn').classList.toggle('active', filterDrawerOpen);
+    }
+
+    function handleSearch(val) {
+      searchTerm = val.toLowerCase().trim();
+      render();
+    }
+
+    function switchFaction(f) {
+      currentFaction = f;
+      document.querySelectorAll('.mob-tab').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+      render();
+    }
+
+    function toggleHistorySim() {
+      showHistory = !showHistory;
+      render();
+    }
+
+    function toggleHeadersSim() {
+      alert("Headers toggled");
+    }
+
+    function render() {
+      const container = document.getElementById('simContent');
+      let pilots = SAMPLE_PILOTS;
+      if (searchTerm) {
+        pilots = pilots.filter(p => p.name.toLowerCase().includes(searchTerm) || p.chassis.toLowerCase().includes(searchTerm));
+      }
+
+      if (currentVariant === 'v1') {
+        renderVariant1(container, pilots);
+      } else if (currentVariant === 'v2') {
+        renderVariant2(container, pilots);
+      } else if (currentVariant === 'v3') {
+        renderVariant3(container, pilots);
+      }
+    }
+
+    // VARIANT 1: Tactical Avionics Card Strips
+    function renderVariant1(container, pilots) {
+      container.innerHTML = pilots.map(p => {
+        const diffCls = p.diff < 0 ? 'diff-buff' : (p.diff > 0 ? 'diff-nerf' : 'diff-same');
+        const diffText = p.diff < 0 ? `${p.diff} ▼` : (p.diff > 0 ? `+${p.diff} ▲` : '—');
+        const slotsHtml = p.slots.map(s => `<span class="card-strip-slot-glyph" title="${s}">${SLOT_GLYPHS[s] || 'm'}</span>`).join('');
+
+        return `
+          <div class="card-strip" onclick="alert('Viewing full avionics drawer for: ${p.name}')">
+            <div class="card-strip-top">
+              <div class="card-strip-namebox">
+                <span class="card-strip-init">${p.init}</span>
+                <span class="card-strip-name">${p.name}</span>
+              </div>
+              <div class="card-strip-pointsbox">
+                <span class="card-strip-points">${p.cost} PTS</span>
+                <span class="card-strip-diff ${diffCls}">${diffText}</span>
+              </div>
+            </div>
+            <div class="card-strip-mid">
+              <div class="card-strip-chassis">
+                <span class="card-strip-chassis-glyph">${p.glyph}</span>
+                <span>${p.chassis}</span>
+              </div>
+              <div class="card-strip-slots">${slotsHtml}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // VARIANT 2: Prioritized 4-Column Sticky Table (with Icon-Only Chassis & Tooltip)
+    function renderVariant2(container, pilots) {
+      let extraColsHead = showHistory ? '<th>Mar 26</th><th>Dec 25</th><th>Sep 24</th>' : '<th>Slots</th>';
+      let hint = `<div class="scroll-hint-indicator"><span>↔ Scroll for more columns</span></div>`;
+
+      let rows = pilots.map(p => {
+        const diffCls = p.diff < 0 ? 'diff-buff' : (p.diff > 0 ? 'diff-nerf' : 'diff-same');
+        const diffText = p.diff < 0 ? `${p.diff}` : (p.diff > 0 ? `+${p.diff}` : '—');
+        let extraCols = showHistory ? `<td>${p.cost}</td><td>${p.cost}</td><td>${p.cost}</td>` : `<td><span style="font-family: 'xwing-miniatures'; color: var(--term-cyan); font-size: 0.8rem;">EPAm</span></td>`;
+
+        return `
+          <tr>
+            <td class="col-sticky-name">
+              <div class="table-v2-namebox">
+                <span class="table-v2-init">${p.init}</span>
+                <span style="font-weight: 700; color: #fff;">${p.name}</span>
+              </div>
+            </td>
+            <td class="col-type">
+              <div class="chassis-cell" title="${p.chassis}" onclick="toggleCellTip(this)">
+                <span class="xwing-ship">${p.glyph}</span>
+                <span class="chassis-tooltip">${p.chassis}</span>
+              </div>
+            </td>
+            <td class="table-v2-pts">${p.cost}</td>
+            <td class="${diffCls}">${diffText}</td>
+            ${extraCols}
+          </tr>
+        `;
+      }).join('');
+
+      container.innerHTML = `
+        ${hint}
+        <div class="table-v2-wrapper">
+          <table class="table-v2">
+            <thead>
+              <tr>
+                <th class="col-sticky-name">Pilot Name</th>
+                <th class="col-type" title="Chassis">Type</th>
+                <th>Sep 26</th>
+                <th>Diff</th>
+                ${extraColsHead}
+              </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    function toggleCellTip(el) {
+      const wasActive = el.classList.contains('active-tip');
+      document.querySelectorAll('.chassis-cell.active-tip').forEach(c => c.classList.remove('active-tip'));
+      if (!wasActive) {
+        el.classList.add('active-tip');
+        setTimeout(() => el.classList.remove('active-tip'), 2500);
+      }
+    }
+
+    // VARIANT 3: Hybrid Expandable Telemetry List
+    function renderVariant3(container, pilots) {
+      container.innerHTML = pilots.map((p, idx) => {
+        const isOpen = idx === 0 ? 'open' : '';
+        const slotsHtml = p.slots.map(s => `<span style="font-family: 'xwing-miniatures'; color: var(--term-cyan); margin-right: 0.25rem;">${SLOT_GLYPHS[s] || 'm'}</span>`).join('');
+
+        return `
+          <div class="hybrid-item ${isOpen}" id="hybrid_${idx}">
+            <div class="hybrid-bar" onclick="toggleHybrid(${idx})">
+              <div class="hybrid-left">
+                <span class="card-strip-init">${p.init}</span>
+                <div>
+                  <div class="hybrid-title">${p.name}</div>
+                  <div class="hybrid-sub">${p.chassis}</div>
+                </div>
+              </div>
+              <div class="hybrid-right">
+                <span class="hybrid-pts">${p.cost} PTS</span>
+                <span class="hybrid-arrow">▼</span>
+              </div>
+            </div>
+            <div class="hybrid-body">
+              <div class="hybrid-slots-row">
+                <span style="color: #64748b;">Upgrade Bar:</span>
+                <div>${slotsHtml}</div>
+              </div>
+              <div class="hybrid-ability-text">
+                <strong style="color: var(--term-cyan);">Ability:</strong> ${p.ability}
+              </div>
+              <button class="hybrid-action-btn" onclick="alert('Viewing full flight telemetry for ${p.name}')">
+                [ VIEW FULL FLIGHT TELEMETRY & DIAL ]
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function toggleHybrid(idx) {
+      const el = document.getElementById(`hybrid_${idx}`);
+      if (el) el.classList.toggle('open');
+    }
+
+    // Initial render
+    render();
+  </script>
+</body>
+</html>

@@ -55,43 +55,57 @@
     
     <!-- Controls Toolbar -->
     <div class="toolbar">
-      <div class="toolbar-left">
+      <div class="toolbar-search-row">
         <div class="search-box">
           <span class="search-icon">🔍</span>
           <input type="text" id="searchInput" class="search-input" placeholder="Search cards, chassis, keywords, telemetry..." autocomplete="off">
         </div>
-
-        <select id="formatSelect" class="select-filter">
-          <option value="all">All Formats</option>
-          <option value="standard">Standard</option>
-          <option value="wildspace">Wild Space</option>
-          <option value="epic">Epic</option>
-        </select>
-
-        <select id="changeSelect" class="select-filter">
-          <option value="all">All Cards</option>
-          <option value="changed">Only Changed Cards</option>
-          <option value="buffs">Points Buffs (Cheaper)</option>
-          <option value="nerfs">Points Nerfs (Costlier)</option>
-          <option value="params">Parameter Changes (Format/Kw/Slots)</option>
-        </select>
-
-        <select id="typeSelect" class="select-filter">
-          <option value="all">All Chassis / Types</option>
-        </select>
-      </div>
-
-      <div class="toolbar-right">
-        <button id="toggleHeadersBtn" class="btn btn-secondary" title="Toggle chassis and slot group headers to display more rows at once">
-          <span>🏷️ Show Headers</span>
-        </button>
-        <button id="toggleHistoryBtn" class="btn btn-secondary" title="Show all historical points columns side-by-side like the Google Spreadsheet">
-          <span>📜 Show History</span>
-        </button>
-        <button id="exportBtn" class="btn btn-secondary" title="Export visible table to CSV">
-          <span>📥 Export CSV</span>
+        <button type="button" id="mobFilterToggleBtn" class="mob-filter-toggle-btn" aria-expanded="false" aria-controls="toolbarCollapsible" title="Toggle Filters">
+          <span class="mob-filter-icon">⚙️</span>
+          <span class="mob-filter-label">Filters</span>
+          <span id="mobFilterCountBadge" class="mob-filter-count-badge">(0)</span>
         </button>
       </div>
+
+      <div id="toolbarCollapsible" class="toolbar-collapsible">
+        <div class="toolbar-filters-group">
+          <select id="formatSelect" class="select-filter">
+            <option value="all">All Formats</option>
+            <option value="standard">Standard</option>
+            <option value="wildspace">Wild Space</option>
+            <option value="epic">Epic</option>
+          </select>
+
+          <select id="changeSelect" class="select-filter">
+            <option value="all">All Cards</option>
+            <option value="changed">Only Changed Cards</option>
+            <option value="buffs">Points Buffs (Cheaper)</option>
+            <option value="nerfs">Points Nerfs (Costlier)</option>
+            <option value="params">Parameter Changes (Format/Kw/Slots)</option>
+          </select>
+
+          <select id="typeSelect" class="select-filter">
+            <option value="all">All Chassis / Types</option>
+          </select>
+        </div>
+
+        <div class="toolbar-actions-group">
+          <button id="toggleHeadersBtn" class="btn btn-secondary" title="Toggle chassis and slot group headers to display more rows at once">
+            <span>🏷️ Show Headers</span>
+          </button>
+          <button id="toggleHistoryBtn" class="btn btn-secondary" title="Show all historical points columns side-by-side like the Google Spreadsheet">
+            <span>📜 Show History</span>
+          </button>
+          <button id="exportBtn" class="btn btn-secondary" title="Export visible table to CSV">
+            <span>📥 Export CSV</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint indicator on mobile -->
+    <div class="table-scroll-hint" id="tableScrollHint">
+      <span>↔ Swipe left for upgrade slots, format & history</span>
     </div>
 
     <!-- Summary Stats -->

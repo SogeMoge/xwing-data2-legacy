@@ -827,5 +827,96 @@ body.terminal-theme *::-webkit-scrollbar-button:hover {
   border-color: #00f0ff;
 }
 
+/* ==========================================================================
+   Tactical HUD Mobile Responsive & Variant 2 Sticky 4-Col Table
+   ========================================================================== */
+body.terminal-theme .table-scroll-hint {
+  font-family: var(--font-term-mono);
+  color: var(--term-cyan);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.4);
+}
+
+body.terminal-theme .chassis-tooltip {
+  background: #090e18;
+  color: var(--term-cyan);
+  border: 1px solid var(--term-cyan);
+  font-family: var(--font-term-mono);
+  font-size: 0.72rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.85), 0 0 8px rgba(0, 240, 255, 0.35);
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+}
+
+body.terminal-theme .chassis-tooltip::after {
+  border-color: var(--term-cyan) transparent transparent transparent;
+}
+
+@media (max-width: 768px) {
+  body.terminal-theme .app-header {
+    border-bottom: 2px solid var(--term-cyan);
+    box-shadow: 0 2px 12px rgba(0, 240, 255, 0.2);
+  }
+
+  body.terminal-theme .mob-filter-toggle-btn {
+    font-family: var(--font-term-mono);
+    color: #94a3b8;
+    background: #090e18;
+    border: 1px solid #1e293b;
+    letter-spacing: 0.05em;
+  }
+
+  body.terminal-theme .mob-filter-toggle-btn.active,
+  body.terminal-theme .mob-filter-toggle-btn.has-active-filters {
+    border-color: var(--term-cyan);
+    color: var(--term-cyan);
+    background: rgba(0, 240, 255, 0.12);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+  }
+
+  body.terminal-theme .mob-filter-count-badge {
+    color: var(--term-cyan);
+  }
+
+  body.terminal-theme .toolbar-collapsible {
+    background: #070b13;
+    border: 1px solid var(--term-cyan);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 240, 255, 0.25);
+  }
+
+  /* Variant 2 Sticky 4-Col HUD Table */
+  body.terminal-theme .data-table th.col-sticky-name,
+  body.terminal-theme .data-table td.col-sticky-name {
+    position: sticky;
+    left: 0;
+    z-index: 6;
+    background-color: #070b13 !important;
+    border-right: 1px solid #1e334d;
+    box-shadow: 3px 0 6px -2px rgba(0, 0, 0, 0.8), 1px 0 4px rgba(0, 240, 255, 0.1);
+  }
+
+  body.terminal-theme .data-table th.col-sticky-name {
+    z-index: 25;
+    background-color: #090e18 !important;
+    border-bottom: 2px solid var(--term-cyan);
+  }
+
+  body.terminal-theme .data-table tr:hover td.col-sticky-name {
+    background-color: #0e1726 !important;
+  }
+
+  body.terminal-theme .col-cost {
+    font-family: var(--font-term-mono);
+    color: var(--term-cyan);
+    font-weight: 700;
+  }
+
+  body.terminal-theme .chassis-cell .chassis-icon-glyph {
+    color: var(--term-cyan);
+    filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.4));
+  }
+}
+
 
 

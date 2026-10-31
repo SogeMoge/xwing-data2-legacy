@@ -1,4 +1,4 @@
-(function() {
+(function () {
   let appData = null;
   let currentTab = 'changes';
   let searchTerm = '';
@@ -30,6 +30,9 @@
   const commitBadge = document.getElementById('commitBadge');
   const modalBackdrop = document.getElementById('modalBackdrop');
   const modalClose = document.getElementById('modalClose');
+  const mobFilterToggleBtn = document.getElementById('mobFilterToggleBtn');
+  const mobFilterCountBadge = document.getElementById('mobFilterCountBadge');
+  const toolbarCollapsible = document.getElementById('toolbarCollapsible');
 
   // Upgrade slot icon letter codes (xwing-miniatures font glyphs)
   const SLOT_ICONS = {
@@ -313,7 +316,7 @@
     let savedTheme = null;
     try {
       savedTheme = localStorage.getItem('xwing_theme');
-    } catch (e) {}
+    } catch (e) { }
 
     const isTerminal = savedTheme !== 'standard';
 
@@ -344,14 +347,14 @@
     btnTerminal.addEventListener('click', () => {
       try {
         localStorage.setItem('xwing_theme', 'terminal');
-      } catch (e) {}
+      } catch (e) { }
       applyThemeState(true);
     });
 
     btnStandard.addEventListener('click', () => {
       try {
         localStorage.setItem('xwing_theme', 'standard');
-      } catch (e) {}
+      } catch (e) { }
       applyThemeState(false);
     });
   }
@@ -559,7 +562,26 @@
     }
   }
 
+  function updateActiveFilterCount() {
+    if (!mobFilterCountBadge || !mobFilterToggleBtn) return;
+    let count = 0;
+    if (formatFilter !== 'all') count++;
+    if (changeFilter !== 'all') count++;
+    if (typeFilter !== 'all') count++;
+    if (showHistory) count++;
+    mobFilterCountBadge.textContent = `(${count})`;
+    mobFilterToggleBtn.classList.toggle('has-active-filters', count > 0);
+  }
+
   function setupFilters() {
+    if (mobFilterToggleBtn && toolbarCollapsible) {
+      mobFilterToggleBtn.addEventListener('click', () => {
+        const isOpen = toolbarCollapsible.classList.toggle('open');
+        mobFilterToggleBtn.classList.toggle('active', isOpen);
+        mobFilterToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
     searchInput.addEventListener('input', e => {
       searchTerm = e.target.value.toLowerCase().trim();
       render();
@@ -567,16 +589,19 @@
 
     formatSelect.addEventListener('change', e => {
       formatFilter = e.target.value;
+      updateActiveFilterCount();
       render();
     });
 
     changeSelect.addEventListener('change', e => {
       changeFilter = e.target.value;
+      updateActiveFilterCount();
       render();
     });
 
     typeSelect.addEventListener('change', e => {
       typeFilter = e.target.value;
+      updateActiveFilterCount();
       render();
     });
 
@@ -599,6 +624,7 @@
       showHistory = !showHistory;
       toggleHistoryBtn.classList.toggle('btn-toggle-active', showHistory);
       toggleHistoryBtn.innerHTML = showHistory ? '<span>📜 Hide History</span>' : '<span>📜 Show History</span>';
+      updateActiveFilterCount();
       render();
     });
 
@@ -607,12 +633,13 @@
         showHeaders = !showHeaders;
         try {
           localStorage.setItem('xwing_show_headers', showHeaders ? 'true' : 'false');
-        } catch (e) {}
+        } catch (e) { }
         updateHeadersVisibility();
       });
     }
 
     updateHeadersVisibility();
+    updateActiveFilterCount();
 
     exportBtn.addEventListener('click', exportCSV);
 
@@ -626,6 +653,13 @@
     }
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') closeModal();
+    });
+
+    // Dismiss active chassis/slot tooltip on click outside
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.chassis-cell')) {
+        document.querySelectorAll('.chassis-cell.active-tip').forEach(c => c.classList.remove('active-tip'));
+      }
     });
   }
 
@@ -723,8 +757,8 @@
 
     if (currentTab === 'changes') {
       cols = [
+        { id: 'name', label: 'Name', sortable: true, sticky: true },
         { id: 'type', label: 'Type / Chassis', sortable: true },
-        { id: 'name', label: 'Name', sortable: true },
         { id: 'cost', label: 'Current Points', sortable: true },
         { id: 'diff', label: 'Diff', sortable: true },
         { id: 'prevPoints', label: 'Previous Points', sortable: false },
@@ -733,14 +767,14 @@
       ];
     } else {
       cols = [
-        { id: 'format', label: 'Format', sortable: false },
-        { id: 'type', label: currentTab === 'upgrades' ? 'Slot' : (currentTab === 'changes' ? 'Type / Chassis' : 'Chassis / Slot'), sortable: true },
-        { id: 'name', label: 'Name', sortable: true },
+        { id: 'name', label: 'Name', sortable: true, sticky: true },
+        { id: 'type', label: currentTab === 'upgrades' ? 'Slot' : 'Chassis / Slot', sortable: true },
+        { id: 'cost', label: 'Sep 26', sortable: true },
+        { id: 'diff', label: 'Diff', sortable: true },
         { id: 'slots', label: 'Upgrade Bar', sortable: false },
+        { id: 'format', label: 'Format', sortable: false },
         { id: 'restrictions', label: 'Restrictions', sortable: false },
         { id: 'keywords', label: 'Keywords', sortable: false },
-        { id: 'cost', label: 'Sep 26', sortable: true },
-        { id: 'diff', label: 'Change vs prev', sortable: true },
         { id: 'commit', label: 'Commit', sortable: false }
       ];
 
@@ -752,7 +786,7 @@
     }
 
     tableHead.innerHTML = `<tr>${cols.map(c => `
-      <th class="${c.sortable ? 'sortable' : ''} ${c.isHistory ? 'th-history' : ''}" data-col="${c.id}">
+      <th class="${c.sortable ? 'sortable' : ''} ${c.isHistory ? 'th-history' : ''} ${c.sticky ? 'col-sticky-name' : ''} col-${c.id.toLowerCase().replace(/[^a-z0-9]/g, '')}" data-col="${c.id}">
         ${c.label} ${sortField === c.id ? (sortAsc ? '▲' : '▼') : ''}
       </th>
     `).join('')}</tr>`;
@@ -1020,6 +1054,18 @@
     tableBody.querySelectorAll('tr.clickable').forEach(tr => {
       tr.addEventListener('click', (e) => {
         if (e.target.tagName === 'A' || e.target.closest('a') || e.target.closest('button')) return;
+        const chassisCell = e.target.closest('.chassis-cell');
+        if (chassisCell) {
+          const wasActive = chassisCell.classList.contains('active-tip');
+          document.querySelectorAll('.chassis-cell.active-tip').forEach(c => c.classList.remove('active-tip'));
+          if (!wasActive) {
+            chassisCell.classList.add('active-tip');
+            setTimeout(() => {
+              chassisCell.classList.remove('active-tip');
+            }, 3000);
+          }
+          return;
+        }
         const key = tr.dataset.key;
         openDrawer(key);
       });
@@ -1084,28 +1130,31 @@
 
     let typeIconHtml = '';
     if (item.shipFontGlyph) {
-      typeIconHtml = `<span class="xwing-ship" title="${item.type}">${item.shipFontGlyph}</span>`;
+      typeIconHtml = `<span class="xwing-ship chassis-icon-glyph" title="${item.type}">${item.shipFontGlyph}</span>`;
     } else if (item.slotFontGlyph) {
-      typeIconHtml = `<span class="slot-glyph" title="${item.type}">${item.slotFontGlyph}</span>`;
+      typeIconHtml = `<span class="slot-glyph chassis-icon-glyph" title="${item.type}">${item.slotFontGlyph}</span>`;
+    } else {
+      typeIconHtml = `<span class="chassis-fallback-glyph">★</span>`;
     }
 
     return `<tr class="clickable" data-key="${item.key}">
-      <td>
-        <div class="chassis-cell">
-          ${typeIconHtml}
-          <span style="font-weight: 600;">${item.type}</span>
-        </div>
-      </td>
-      <td>
+      <td class="col-sticky-name">
         <div class="card-name-container">
           <span class="card-title">${item.name}</span>
         </div>
       </td>
-      <td><span class="points-curr">${item.pointsFormatted}</span></td>
-      <td>${diffHtml}</td>
-      <td><span class="points-hist">${prevPointsHtml}</span></td>
-      <td>${paramsHtml}</td>
-      <td>${renderCommitChip(defaultCommit)}</td>
+      <td class="col-type">
+        <div class="chassis-cell" title="${item.type}" data-chassis="${item.type}" tabindex="0" role="button" aria-label="${item.type}">
+          ${typeIconHtml}
+          <span class="chassis-text-label" style="font-weight: 600;">${item.type}</span>
+          <span class="chassis-tooltip">${item.type}</span>
+        </div>
+      </td>
+      <td class="col-cost"><span class="points-curr">${item.pointsFormatted}</span></td>
+      <td class="col-diff">${diffHtml}</td>
+      <td class="col-prevpoints"><span class="points-hist">${prevPointsHtml}</span></td>
+      <td class="col-paramchanges">${paramsHtml}</td>
+      <td class="col-commit">${renderCommitChip(defaultCommit)}</td>
     </tr>`;
   }
 
@@ -1141,17 +1190,20 @@
       extraTag = '<span class="card-tag tag-sl">SL</span>';
     }
 
-    // Chassis / Ship Cell with xwing-miniatures-ships font
+    // Chassis / Ship Cell with xwing-miniatures-ships / xwing-miniatures font
+    const typeDisplayName = isPilot ? (item.shipName || item.type) : item.type;
     let typeHtml = '';
     if (isPilot) {
-      typeHtml = `<div class="chassis-cell">
-        ${item.shipFontGlyph ? `<span class="xwing-ship" title="${item.shipName}">${item.shipFontGlyph}</span>` : ''}
-        <span>${item.shipName || item.type}</span>
+      typeHtml = `<div class="chassis-cell" title="${typeDisplayName}" data-chassis="${typeDisplayName}" tabindex="0" role="button" aria-label="${typeDisplayName}">
+        ${item.shipFontGlyph ? `<span class="xwing-ship chassis-icon-glyph" title="${typeDisplayName}">${item.shipFontGlyph}</span>` : `<span class="chassis-fallback-glyph">🚀</span>`}
+        <span class="chassis-text-label">${typeDisplayName}</span>
+        <span class="chassis-tooltip">${typeDisplayName}</span>
       </div>`;
     } else {
-      typeHtml = `<div class="slot-name-badge">
-        ${item.slotFontGlyph ? `<span class="slot-glyph" title="${item.type}">${item.slotFontGlyph}</span>` : ''}
-        <span>${item.type}</span>
+      typeHtml = `<div class="chassis-cell slot-cell" title="${typeDisplayName}" data-chassis="${typeDisplayName}" tabindex="0" role="button" aria-label="${typeDisplayName}">
+        ${item.slotFontGlyph ? `<span class="slot-glyph chassis-icon-glyph" title="${typeDisplayName}">${item.slotFontGlyph}</span>` : `<span class="chassis-fallback-glyph">⚡</span>`}
+        <span class="chassis-text-label">${typeDisplayName}</span>
+        <span class="chassis-tooltip">${typeDisplayName}</span>
       </div>`;
     }
 
@@ -1175,17 +1227,12 @@
     if (showHistory) {
       appData.historyCycles.filter(c => c !== 'Sep 26').forEach(cycle => {
         const val = (item.history && item.history[cycle]) || '-';
-        histCellsHtml += `<td class="td-history"><span class="points-hist">${val}</span></td>`;
+        histCellsHtml += `<td class="td-history col-hist-${cycle.toLowerCase().replace(/[^a-z0-9]/g, '')}"><span class="points-hist">${val}</span></td>`;
       });
     }
 
     return `<tr class="clickable ${hasChanges ? 'cell-highlight-blue' : ''}" data-key="${item.key}">
-      <td>
-        <span class="${formatClass}">${formatLabel}</span>
-        ${formatChange ? `<span class="param-changed-badge" title="${formatChange.summary}">Moved</span>` : ''}
-      </td>
-      <td>${typeHtml}</td>
-      <td>
+      <td class="col-sticky-name">
         <div class="card-name-container">
           <span class="card-title">
             ${isPilot && item.initiative !== undefined && item.initiative !== null ? `<span class="pilot-init-badge init-${item.initiative}" title="Initiative ${item.initiative}">${item.initiative}</span>` : ''}
@@ -1194,21 +1241,26 @@
           ${item.caption ? `<span class="card-caption">${item.caption}</span>` : ''}
         </div>
       </td>
-      <td>
+      <td class="col-type">${typeHtml}</td>
+      <td class="col-cost"><span class="points-curr">${item.pointsFormatted}</span></td>
+      <td class="col-diff">${renderDiffBadge(item.diff, hasCostChange, isNew)}</td>
+      <td class="col-slots">
         ${slotBarHtml}
         ${slotsChange ? `<span class="param-changed-badge" title="${slotsChange.summary}">Slots</span>` : ''}
       </td>
-      <td>
+      <td class="col-format">
+        <span class="${formatClass}">${formatLabel}</span>
+        ${formatChange ? `<span class="param-changed-badge" title="${formatChange.summary}">Moved</span>` : ''}
+      </td>
+      <td class="col-restrictions">
         <span style="font-size: 0.78rem; color: var(--text-muted);">${restText || '-'}</span>
         ${restChange ? `<span class="param-changed-badge" title="${restChange.summary}">Updated</span>` : ''}
       </td>
-      <td>
+      <td class="col-keywords">
         ${kwHtml || '<span class="text-dim">-</span>'}
         ${kwChange ? `<span class="param-changed-badge" title="${kwChange.summary}">+Kw</span>` : ''}
       </td>
-      <td><span class="points-curr">${item.pointsFormatted}</span></td>
-      <td>${renderDiffBadge(item.diff, hasCostChange, isNew)}</td>
-      <td>${renderCommitChip(commitObj)}</td>
+      <td class="col-commit">${renderCommitChip(commitObj)}</td>
       ${histCellsHtml}
     </tr>`;
   }

@@ -399,6 +399,44 @@ body {
   border: 1px solid var(--border-color);
 }
 
+.toolbar-search-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex: 1;
+}
+
+.mob-filter-toggle-btn {
+  display: none;
+}
+
+.toolbar-collapsible {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex: 2;
+  flex-wrap: wrap;
+}
+
+.toolbar-filters-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.toolbar-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.table-scroll-hint {
+  display: none;
+}
+
 .toolbar-left {
   display: flex;
   align-items: center;
@@ -701,12 +739,67 @@ body {
   color: #c7d2fe;
 }
 
-/* Ship Chassis Cell */
+/* Ship Chassis & Slot Cell */
 .chassis-cell {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.45rem;
   white-space: nowrap;
+}
+
+.chassis-cell .chassis-icon-glyph {
+  font-size: 1.25rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chassis-cell .chassis-text-label {
+  display: inline;
+}
+
+.chassis-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0b111c;
+  color: #38bdf8;
+  border: 1px solid #1e3a5f;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.chassis-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: #1e3a5f transparent transparent transparent;
+}
+
+.chassis-cell:hover .chassis-tooltip,
+.chassis-cell:focus .chassis-tooltip,
+.chassis-cell.active-tip .chassis-tooltip {
+  display: block;
+  animation: tipFadeIn 0.15s ease-out;
+}
+
+@keyframes tipFadeIn {
+  from { opacity: 0; transform: translate(-50%, 4px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
 }
 
 /* Upgrade Slot Glyphs */
@@ -1281,11 +1374,260 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .app-header { padding: 0.75rem 1rem; }
-  .app-main { padding: 0.75rem 1rem; }
-  .toolbar { flex-direction: column; align-items: stretch; }
-  .toolbar-left, .toolbar-right { width: 100%; }
-  .search-box { max-width: 100%; }
+  .app-header {
+    padding: 0.5rem 0.75rem;
+  }
+  .brand-section {
+    gap: 0.5rem;
+  }
+  .brand-logo-glyph {
+    font-size: 1.6rem;
+    width: 32px;
+    height: 32px;
+  }
+  .brand-title {
+    font-size: 0.95rem;
+  }
+  .brand-subtitle,
+  .badge-commit,
+  .badge-link {
+    display: none !important;
+  }
+  .header-badges {
+    gap: 0.35rem;
+  }
+  .theme-switch-group {
+    padding: 2px 4px;
+  }
+  .theme-switch-label {
+    display: none;
+  }
+  .theme-btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.45rem;
+  }
+  .app-main {
+    padding: 0.5rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  /* Compact Mobile Navigation */
+  .tabs-nav {
+    padding: 0.25rem 0.4rem 0;
+    gap: 0.2rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tabs-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .tab-btn {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.55rem;
+  }
+
+  /* Responsive Toolbar & Collapsible Filter Panel */
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.45rem 0.65rem;
+    gap: 0.4rem;
+  }
+  .toolbar-search-row {
+    display: flex;
+    gap: 0.4rem;
+    width: 100%;
+    align-items: center;
+  }
+  .search-box {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+  }
+  .search-input {
+    padding: 0.4rem 0.6rem 0.4rem 2rem;
+    font-size: 0.8rem;
+  }
+  .search-icon {
+    left: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .mob-filter-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.65rem;
+    background: #111a29;
+    border: 1px solid #24354d;
+    color: #94a3b8;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .mob-filter-toggle-btn.active,
+  .mob-filter-toggle-btn.has-active-filters {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    background: rgba(56, 189, 248, 0.12);
+  }
+  .mob-filter-count-badge {
+    color: var(--accent-blue);
+    font-weight: 800;
+  }
+
+  .toolbar-collapsible {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: #090e18;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  }
+  .toolbar-collapsible.open {
+    display: flex;
+    animation: drawerSlideDown 0.2s ease-out;
+  }
+  @keyframes drawerSlideDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .toolbar-filters-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    width: 100%;
+  }
+  .toolbar-filters-group select {
+    width: 100%;
+  }
+  .toolbar-actions-group {
+    display: flex;
+    gap: 0.4rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .toolbar-actions-group .btn {
+    flex: 1;
+    min-width: 90px;
+    font-size: 0.72rem;
+    padding: 0.35rem 0.5rem;
+    justify-content: center;
+  }
+
+  /* Stats banner on mobile */
+  .stats-banner {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.72rem;
+  }
+
+  /* Mobile Scroll Hint */
+  .table-scroll-hint {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.3rem;
+    font-size: 0.68rem;
+    color: #64748b;
+    padding: 0 0.5rem 0.3rem;
+  }
+
+  /* Variant 2: Sticky 4-Col Mobile Table */
+  .data-table th.col-sticky-name,
+  .data-table td.col-sticky-name {
+    position: sticky;
+    left: 0;
+    z-index: 6;
+    background-color: #0d121c;
+    border-right: 1px solid #1e293b;
+    box-shadow: 3px 0 6px -2px rgba(0, 0, 0, 0.6);
+    min-width: 125px;
+    max-width: 140px;
+    overflow: hidden;
+  }
+  .data-table th.col-sticky-name {
+    z-index: 25;
+    background-color: #121822;
+  }
+  .data-table tr:hover td.col-sticky-name {
+    background-color: #172030 !important;
+  }
+  .card-name-container {
+    overflow: hidden;
+  }
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+  }
+  .card-caption {
+    font-size: 0.68rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Chassis / Slot Icon-Only on Mobile */
+  .col-type,
+  .data-table th.col-type,
+  .data-table td.col-type {
+    width: 44px;
+    min-width: 44px;
+    max-width: 48px;
+    padding: 0.35rem 0.2rem !important;
+    text-align: center;
+  }
+  .chassis-cell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .chassis-cell .chassis-text-label {
+    display: none !important;
+  }
+  .chassis-cell .chassis-icon-glyph {
+    font-size: 1.35rem;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  /* Points and Diff column on Mobile */
+  .col-cost,
+  .data-table th.col-cost,
+  .data-table td.col-cost {
+    width: 50px;
+    min-width: 48px;
+    text-align: right;
+    padding: 0.35rem 0.4rem !important;
+  }
+  .col-diff,
+  .data-table th.col-diff,
+  .data-table td.col-diff {
+    width: 44px;
+    min-width: 42px;
+    text-align: center;
+    padding: 0.35rem 0.3rem !important;
+  }
+
+  /* Keep Chassis Group Headers content visible when scrolled */
+  .chassis-header-content,
+  .slot-header-content {
+    position: sticky;
+    left: 0.5rem;
+    width: fit-content;
+    max-width: calc(100vw - 2.5rem);
+  }
 }
 
 /* Standard View Styled Scrollbars (Vertical & Horizontal Containers) */
